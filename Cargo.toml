@@ -1,0 +1,12 @@
+[package]
+name = "pubid-rs"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Rust PubID models: schema-driven materialization over PG artifacts via parsanol"
+publish = false
+
+[dependencies]
+parsanol = { path = "../../parsanol/parsanol-rs/parsanol" }
+serde = "1"
+serde_json = "1"
