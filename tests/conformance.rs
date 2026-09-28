@@ -1,11 +1,11 @@
 //! RS2: corpus/suite conformance over the native engine, plus RS1
 //! materialization checks. Runs against the sibling pubid-grammar
-//! artifacts (PG_ARTIFACT_DIR overrides).
+//! artifacts (PARG_ARTIFACT_DIR overrides).
 
 use pubid_rs::Pubid;
 
 fn artifacts_dir() -> String {
-    std::env::var("PG_ARTIFACT_DIR").unwrap_or_else(|_| {
+    std::env::var("PARG_ARTIFACT_DIR").unwrap_or_else(|_| {
         for ancestor in std::path::Path::new(env!("CARGO_MANIFEST_DIR"))
             .ancestors()
             .skip(1)
@@ -18,7 +18,7 @@ fn artifacts_dir() -> String {
                 return candidate.to_string_lossy().to_string();
             }
         }
-        panic!("artifacts dir not found (set PG_ARTIFACT_DIR)")
+        panic!("artifacts dir not found (set PARG_ARTIFACT_DIR)")
     })
 }
 
