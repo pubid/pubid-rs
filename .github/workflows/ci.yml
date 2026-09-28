@@ -38,5 +38,5 @@ jobs:
 
       - name: Conformance (PG artifacts)
         env:
-          PG_ARTIFACT_DIR: ${{ github.workspace }}/pubid-grammar/artifacts
+          PARG_ARTIFACT_DIR: ${{ github.workspace }}/pubid-grammar/artifacts
         run: cargo test
