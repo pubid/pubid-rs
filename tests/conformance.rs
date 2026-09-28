@@ -6,8 +6,14 @@ use pubid_rs::Pubid;
 
 fn artifacts_dir() -> String {
     std::env::var("PG_ARTIFACT_DIR").unwrap_or_else(|_| {
-        for ancestor in std::path::Path::new(env!("CARGO_MANIFEST_DIR")).ancestors().skip(1) {
-            let candidate = ancestor.join("pubid").join("pubid-grammar").join("artifacts");
+        for ancestor in std::path::Path::new(env!("CARGO_MANIFEST_DIR"))
+            .ancestors()
+            .skip(1)
+        {
+            let candidate = ancestor
+                .join("pubid")
+                .join("pubid-grammar")
+                .join("artifacts");
             if candidate.is_dir() {
                 return candidate.to_string_lossy().to_string();
             }
