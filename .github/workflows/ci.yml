@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  test:
+    name: Build + clippy + conformance
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # The conformance suite runs against the baked PG artifacts and
+      # pgtest suites. Until pubid-grammar's ocp-and-schemas branch
+      # merges to its main, pin the branch that carries them.
+      - uses: actions/checkout@v4
+        with:
+          repository: pubid/pubid-grammar
+          ref: ocp-and-schemas
+          path: pubid-grammar
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy, rustfmt
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Formatting
+        run: cargo fmt --check
+
+      - name: Clippy
+        run: cargo clippy --all-targets -- -D warnings
+
+      - name: Build
+        run: cargo build --all-targets
+
+      - name: Conformance (PG artifacts)
+        env:
+          PG_ARTIFACT_DIR: ${{ github.workspace }}/pubid-grammar/artifacts
+        run: cargo test

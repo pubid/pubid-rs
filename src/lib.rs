@@ -19,10 +19,7 @@ pub fn load_artifact(path: impl AsRef<std::path::Path>) -> Result<parsanol::PgAr
 /// Schema-driven materialization (mirrors pubid-ts `materializeFromSchema`):
 /// the schema's fields define the attribute set; `*`/`1*` cards become
 /// arrays, `0..1` becomes nullable.
-pub fn materialize_from_schema(
-    schema: &Value,
-    bound: &Value,
-) -> Result<(String, Value)> {
+pub fn materialize_from_schema(schema: &Value, bound: &Value) -> Result<(String, Value)> {
     let entry = schema["root"]
         .as_str()
         .ok_or("schema entry has no root")?
@@ -33,7 +30,10 @@ pub fn materialize_from_schema(
         .ok_or("schema entry has no fields")?
     {
         let leaf = path.rsplit("].").next().unwrap_or(path);
-        let card = requirements.get("card").and_then(Value::as_str).unwrap_or("1");
+        let card = requirements
+            .get("card")
+            .and_then(Value::as_str)
+            .unwrap_or("1");
         let value = bound.get(leaf);
         let materialized = if card.ends_with('*') {
             Value::Array(match value {
@@ -74,7 +74,10 @@ impl Pubid {
                     .map(str::to_string)
             })
             .ok_or("artifact has no default_entry; pass an entry")?;
-        Ok(Self { artifact: load_artifact(path)?, entry })
+        Ok(Self {
+            artifact: load_artifact(path)?,
+            entry,
+        })
     }
 
     /// Parse and bind; `None` when the input does not parse.
