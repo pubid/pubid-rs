@@ -7,6 +7,6 @@ description = "Rust PubID models: schema-driven materialization over PG artifact
 publish = false
 
 [dependencies]
-parsanol = { git = "https://github.com/parsanol/parsanol-rs", rev = "d0b9c8aa715b120e015de5dd2e26957e6f00f4f5" }
+parsanol = "0.9"
 serde = "1"
 serde_json = "1"
