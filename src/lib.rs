@@ -1,19 +1,19 @@
-//! RS1 (TODO 12): schema-driven value materialization over PG artifacts.
+//! RS1 (TODO 12): schema-driven value materialization over PARG artifacts.
 //!
 //! The artifact is the contract: schemas, corpora and gates all run
-//! against checksum-verified envelopes through `parsanol::pg`. v1 is a
+//! against checksum-verified envelopes through `parsanol::parg`. v1 is a
 //! schema-driven serde `Value` model; typed structs can replace it
 //! behind the same materialize boundary later.
 
 use serde_json::Value;
 use std::error::Error;
 
-/// Errors raised while loading or evaluating PG artifacts.
+/// Errors raised while loading or evaluating PARG artifacts.
 pub type Result<T> = std::result::Result<T, Box<dyn Error>>;
 
 /// Load and checksum-verify an artifact from disk.
-pub fn load_artifact(path: impl AsRef<std::path::Path>) -> Result<parsanol::PgArtifact> {
-    Ok(parsanol::PgArtifact::from_path(path)?)
+pub fn load_artifact(path: impl AsRef<std::path::Path>) -> Result<parsanol::PargArtifact> {
+    Ok(parsanol::PargArtifact::from_path(path)?)
 }
 
 /// Schema-driven materialization (mirrors pubid-ts `materializeFromSchema`):
@@ -55,7 +55,7 @@ pub fn materialize_from_schema(schema: &Value, bound: &Value) -> Result<(String,
 
 /// A loaded artifact plus its schema, ready to parse and materialize.
 pub struct Pubid {
-    artifact: parsanol::PgArtifact,
+    artifact: parsanol::PargArtifact,
     entry: String,
 }
 
@@ -88,7 +88,7 @@ impl Pubid {
     /// Parse, bind, and materialize through the schema.
     pub fn materialize(&self, input: &str) -> Option<(String, Value)> {
         let bound = self.parse_and_bind(input)?;
-        let schema = parsanol::pg::schema::from_artifact(&self.artifact).ok()?;
+        let schema = parsanol::parg::schema::from_artifact(&self.artifact).ok()?;
         materialize_from_schema(schema.get(&self.entry)?, &bound).ok()
     }
 
