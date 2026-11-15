@@ -1,0 +1,37 @@
+---
+- id: doi.resource.0001
+  identifier:
+    _type: pubid:doi:resource
+    prefix: '10.1000'
+    suffix: '182'
+  representations:
+    human: doi:10.1000/182
+    urn: urn:doi
+  style: v3
+  non_normalized_aliases:
+  - spelling: https://doi.org/10.1000/182
+    style: v3
+- id: doi.resource.0002
+  identifier:
+    _type: pubid:doi:resource
+    prefix: '10.1006'
+    suffix: jmbi.1998.2354
+  representations:
+    human: doi:10.1006/jmbi.1998.2354
+    urn: urn:doi
+  style: v3
+  non_normalized_aliases:
+  - spelling: 10.1006/jmbi.1998.2354
+    style: v3
+- id: doi.resource.0003
+  identifier:
+    _type: pubid:doi:resource
+    prefix: '10.6028'
+    suffix: NIST.2022-04-15.001
+  representations:
+    human: doi:10.6028/NIST.2022-04-15.001
+    urn: urn:doi
+  style: v3
+  non_normalized_aliases:
+  - spelling: DOI:10.6028/NIST.2022-04-15.001
+    style: v3

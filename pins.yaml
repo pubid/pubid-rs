@@ -1,0 +1,16 @@
+# Pinned upstream refs for pubid-rs.
+#
+# Every vendored artifact and fixture in this repository is byte-copied
+# from these refs; CI re-fetches both files at the pinned ref and fails
+# on any drift. Update both pins together when refreshing the vendored
+# copies, and record what changed in the pin comment.
+#
+# pubid-testsuite main (adecf10cef5c, testsuite#112 + its regeneration
+# round): the IALA legacy A-session corpus round (pubid#734) - the
+# corpus tree the vendored doi fixture slice was byte-copied from.
+testsuite_ref: adecf10cef5c62b99222e459c4ccccdaedb13774
+# pubid-grammar main (94f1a12fee1c): the IEC dotted supplement
+# sub-number parse (#725); the doi artifact is byte-identical across the
+# round - the artifact pubid-core/artifacts/doi.json was byte-copied
+# from.
+grammar_ref: 94f1a12fee1c2eba202a896fddd25dc8921cda81

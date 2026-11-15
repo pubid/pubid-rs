@@ -1,0 +1,16 @@
+[package]
+name = "conformance"
+description = "pubid-testsuite conformance runner: parse, render, compare, report"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+publish = false
+
+[[bin]]
+name = "conformance"
+path = "src/main.rs"
+
+[dependencies]
+pubid-core.workspace = true

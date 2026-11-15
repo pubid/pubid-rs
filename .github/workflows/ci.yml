@@ -15,11 +15,35 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/checkout@v4
+      - name: Read pinned refs (pins.yaml is the single source)
+        id: pins
+        run: |
+          echo "grammar_ref=$(sed -n 's/^grammar_ref: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
+          echo "testsuite_ref=$(sed -n 's/^testsuite_ref: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout pinned pubid-grammar
+        uses: actions/checkout@v4
         with:
           repository: pubid/pubid-grammar
-          ref: main
+          ref: ${{ steps.pins.outputs.grammar_ref }}
           path: pubid-grammar
+
+      - name: Checkout pinned pubid-testsuite
+        uses: actions/checkout@v4
+        with:
+          repository: pubid/pubid-testsuite
+          ref: ${{ steps.pins.outputs.testsuite_ref }}
+          path: pubid-testsuite
+
+      - name: Vendored copies match the pinned refs (drift gate)
+        run: |
+          cmp pubid-grammar/artifacts/doi.json crates/pubid-core/artifacts/doi.json
+          cmp pubid-testsuite/tests/doi/resource.yaml \
+              crates/pubid-core/fixtures/testsuite/doi/resource.yaml
+          cmp pubid-testsuite/tests/doi/_negative.yaml \
+              crates/pubid-core/fixtures/testsuite/doi/_negative.yaml
+          cmp pubid-testsuite/tests/doi/_status.yaml \
+              crates/pubid-core/fixtures/testsuite/doi/_status.yaml
 
       - uses: dtolnay/rust-toolchain@stable
         with:
@@ -36,7 +60,16 @@ jobs:
       - name: Build
         run: cargo build --all-targets
 
-      - name: Conformance (PG artifacts)
-        env:
-          PARG_ARTIFACT_DIR: ${{ github.workspace }}/pubid-grammar/artifacts
+      - name: Tests (vendored artifact + smoke slice)
         run: cargo test
+
+      - name: Conformance (vendored slice)
+        run: cargo run -q -p conformance -- --flavor doi
+
+      - name: Conformance (pinned testsuite checkout)
+        run: cargo run -q -p conformance -- --testsuite pubid-testsuite/tests --flavor doi
+
+      - name: CLI smoke
+        run: |
+          cargo run -q -p pubid-cli -- parse doi "doi:10.1000/182"
+          cargo run -q -p pubid-cli -- smoke

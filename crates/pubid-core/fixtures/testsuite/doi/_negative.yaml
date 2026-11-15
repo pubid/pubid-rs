@@ -1,0 +1,21 @@
+---
+- id: doi.neg.malformed.0001
+  input: 'doi:'
+  expect:
+    error:
+      code: unclassified
+- id: doi.neg.malformed.0002
+  input: doi:10
+  expect:
+    error:
+      code: unclassified
+- id: doi.neg.malformed.0003
+  input: doi:10.X/abc
+  expect:
+    error:
+      code: unclassified
+- id: doi.neg.malformed.0004
+  input: doi:10.1000/
+  expect:
+    error:
+      code: unclassified

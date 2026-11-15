@@ -1,0 +1,133 @@
+//! pubid-core: the Rust PubID models over parsanol PARG artifacts.
+//!
+//! The artifact is the contract. Grammars live in pubid-grammar and are
+//! baked into checksummed PARG envelopes; this crate loads them through
+//! the parsanol engine (parse → bound hash), layers the flavor
+//! semantics on top (canonical hash, human, URN), and runs the
+//! pubid-testsuite corpus through the same parse → render → compare
+//! pipeline as the Ruby `Pubid::Conformance::Runner` and pubid-ts.
+//!
+//! - `artifact`: the embedded, checksum-verified envelopes
+//! - `doi`: the first ported flavor (the end-to-end smoke)
+//! - `conformance`: the corpus wire contract and the checker
+//! - `Pubid` / `materialize_from_schema`: the schema-driven
+//!   materialization boundary kept from the first bootstrap (RS1)
+
+pub mod artifact;
+pub mod conformance;
+pub mod doi;
+pub mod error;
+
+use serde_json::Value;
+
+pub use artifact::{doi_artifact, load_artifact, DOI_ARTIFACT};
+pub use conformance::{DoiImpl, FlavorCorpus, FlavorImpl, FlavorReport, Identifier, Outcome};
+pub use doi::DoiIdentifier;
+pub use error::{Error, Result};
+
+/// Schema-driven materialization (mirrors pubid-ts
+/// `materializeFromSchema`): the schema's fields define the attribute
+/// set; `*`/`1*` cards become arrays, `0..1` becomes nullable.
+pub fn materialize_from_schema(schema: &Value, bound: &Value) -> Result<(String, Value)> {
+    let entry = schema["root"]
+        .as_str()
+        .ok_or_else(|| Error::InvalidHash {
+            detail: "schema entry has no root".to_string(),
+        })?
+        .to_string();
+    let mut attributes = serde_json::Map::new();
+    for (path, requirements) in schema["fields"]
+        .as_object()
+        .ok_or_else(|| Error::InvalidHash {
+            detail: "schema entry has no fields".to_string(),
+        })?
+    {
+        let leaf = path.rsplit("].").next().unwrap_or(path);
+        let card = requirements
+            .get("card")
+            .and_then(Value::as_str)
+            .unwrap_or("1");
+        let value = bound.get(leaf);
+        let materialized = if card.ends_with('*') {
+            Value::Array(match value {
+                Some(Value::Array(items)) => items.clone(),
+                Some(v) => vec![v.clone()],
+                None => Vec::new(),
+            })
+        } else if card == "0..1" {
+            value.cloned().unwrap_or(Value::Null)
+        } else if let Some(v) = value {
+            v.clone()
+        } else {
+            continue; // absent scalar: not part of the attribute set
+        };
+        attributes.insert(leaf.to_string(), materialized);
+    }
+    Ok((entry, Value::Object(attributes)))
+}
+
+/// A loaded artifact plus its schema, ready to parse and materialize.
+pub struct Pubid {
+    artifact: parsanol::PargArtifact,
+    schema: Option<Value>,
+    entry: String,
+}
+
+impl Pubid {
+    /// Load an artifact from disk; the entry defaults to the
+    /// compiler-baked `default_entry`.
+    pub fn load(path: impl AsRef<std::path::Path>, entry: Option<&str>) -> Result<Self> {
+        let artifact = load_artifact(path)?;
+        let schema = parsanol::parg::schema::from_artifact(&artifact)
+            .map_err(|err| Error::Artifact(err.to_string()))?;
+        let entry = entry
+            .map(str::to_string)
+            .or_else(|| artifact.default_entry().map(str::to_string))
+            .ok_or_else(|| {
+                Error::Artifact("artifact has no default_entry; pass an entry".to_string())
+            })?;
+        Ok(Self {
+            artifact,
+            schema: Some(schema),
+            entry,
+        })
+    }
+
+    /// Load an embedded, checksum-verified artifact.
+    pub fn embedded_doi() -> Result<Self> {
+        let artifact = doi_artifact()?.clone();
+        let schema = parsanol::parg::schema::from_artifact(&artifact)
+            .map_err(|err| Error::Artifact(err.to_string()))?;
+        let entry = artifact
+            .default_entry()
+            .unwrap_or(DoiIdentifier::ENTRY)
+            .to_string();
+        Ok(Self {
+            artifact,
+            schema: Some(schema),
+            entry,
+        })
+    }
+
+    /// The entry this handle parses through.
+    pub fn entry(&self) -> &str {
+        &self.entry
+    }
+
+    /// Parse and bind; `None` when the input does not parse.
+    pub fn parse_and_bind(&self, input: &str) -> Option<Value> {
+        self.artifact.parse_and_bind(&self.entry, input).ok()
+    }
+
+    /// Parse, bind, and materialize through the schema.
+    pub fn materialize(&self, input: &str) -> Option<(String, Value)> {
+        let bound = self.parse_and_bind(input)?;
+        let schema = self.schema.as_ref()?.get(&self.entry)?;
+        materialize_from_schema(schema, &bound).ok()
+    }
+
+    /// Embedded-suite runner (RS2); empty means green.
+    pub fn run_tests(&self) -> Vec<String> {
+        self.artifact.run_tests()
+    }
+}
