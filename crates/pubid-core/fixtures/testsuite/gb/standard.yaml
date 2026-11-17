@@ -1,0 +1,98 @@
+---
+- id: gb.standard.0001
+  identifier:
+    _type: pubid:gb:standard
+    publisher: GB
+    number: '1234'
+    year: '2010'
+  representations:
+    human: GB 1234-2010
+    urn: urn:gb:gb:1234:2010
+  style: v3
+- id: gb.standard.0002
+  identifier:
+    _type: pubid:gb:standard
+    publisher: GB
+    mandate: T
+    number: '20223'
+    year: '2006'
+  representations:
+    human: GB/T 20223-2006
+    urn: urn:gb:gb:20223:2006
+  style: v3
+- id: gb.standard.0004
+  identifier:
+    _type: pubid:gb:standard
+    publisher: GB
+    mandate: T
+    number: '5606'
+    part: '1'
+    year: '2004'
+  representations:
+    human: GB/T 5606.1-2004
+    urn: urn:gb:gb:5606:-1:2004
+  style: v3
+- id: gb.standard.0005
+  identifier:
+    _type: pubid:gb:standard
+    publisher: GB
+    mandate: Z
+    number: '123'
+    year: '2008'
+  representations:
+    human: GB/Z 123-2008
+    urn: urn:gb:gb:123:2008
+  style: v3
+- id: gb.standard.0006
+  identifier:
+    _type: pubid:gb:standard
+    publisher: GBn
+    number: '123'
+    year: '1990'
+  representations:
+    human: GBn 123-1990
+    urn: urn:gb:gbn:123:1990
+  style: v3
+- id: gb.standard.0007
+  identifier:
+    _type: pubid:gb:standard
+    publisher: GBn
+    mandate: T
+    number: '123'
+    year: '1990'
+  representations:
+    human: GBn/T 123-1990
+    urn: urn:gb:gbn:123:1990
+  style: v3
+- id: gb.standard.0008
+  identifier:
+    _type: pubid:gb:standard
+    publisher: HB
+    mandate: Z
+    number: '12'
+    year: '2010'
+  representations:
+    human: HB/Z 12-2010
+    urn: urn:gb:hb:12:2010
+  style: v3
+- id: gb.standard.0009
+  identifier:
+    _type: pubid:gb:standard
+    publisher: JB
+    mandate: T
+    number: '13368'
+    year: '2018'
+  representations:
+    human: JB/T 13368-2018
+    urn: urn:gb:jb:13368:2018
+  style: v3
+- id: gb.standard.0010
+  identifier:
+    _type: pubid:gb:standard
+    publisher: T/GZAEPI
+    number: '001'
+    year: '2018'
+  representations:
+    human: T/GZAEPI 001-2018
+    urn: urn:gb:t/gzaepi:001:2018
+  style: v3

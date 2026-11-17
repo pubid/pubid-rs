@@ -1,7 +1,7 @@
 # Vendored fixture provenance
 
 The flavor directories beside this note (doi, isbn, iana, oasis, xsf,
-un, ogc, ietf, w3c) hold the byte-copied pubid-testsuite corpora (see
+un, ogc, ietf, w3c, ansi, ecma, gb, gost) hold the byte-copied pubid-testsuite corpora (see
 `/pins.yaml`, `testsuite_ref`). Every slice was copied from
 `pubid/pubid-testsuite@e6cf11b9821929f2c4deed431113bdfca67e81d6`
 (`tests/<flavor>/`). The doi slice is byte-identical across the round
@@ -16,6 +16,25 @@ file drifts from that ref.
 
 File sha256s at the pinned ref:
 
+- ansi:
+  - `_status.yaml` sha256 da8b5c732041f6936d83e8f046b33824cea9c87e149da4d107ae8efd143a050f
+  - `standard.yaml` sha256 0f0ac3afbc09e16dafa39aae833fad25e9ecff76c1671474eba277f25aee4c38
+- ecma:
+  - `_status.yaml` sha256 da8b5c732041f6936d83e8f046b33824cea9c87e149da4d107ae8efd143a050f
+  - `memento.yaml` sha256 a4fbb12f195a199daa7fa6a2860fd0c7b88e80500ee85e75636e5aa5eb1c3a48
+  - `standard.yaml` sha256 ce741224d0e0a489edaf93428eaa2868cb22e8ca9ac0c37c06d6800fdf0e1c2c
+  - `technical_report.yaml` sha256 23952bcbe3b972f70ac2a11fd04881388ad75d5f6ac606477e12226535f02827
+- gb:
+  - `_negative.yaml` sha256 183e20b3fbf98cdcf8fabe91887ebd7dba300e0a982cc14d79ccb24b36c95d29
+  - `_status.yaml` sha256 da8b5c732041f6936d83e8f046b33824cea9c87e149da4d107ae8efd143a050f
+  - `all_parts.yaml` sha256 95ea69aebd8d1962b48bfb2b22ccec31fd484913cb37ed1976550501a8fe1e66
+  - `standard.yaml` sha256 26bec7ab6cd6eae89a304fe774f2c489d7bdcff372b4050696f1a000f3caeb0e
+- gost:
+  - `_status.yaml` sha256 da8b5c732041f6936d83e8f046b33824cea9c87e149da4d107ae8efd143a050f
+  - `harmonized.yaml` sha256 b00453247e0cf93305796cd9808b742693541c6cbd5bb6077ab1bd3711317ffd
+  - `identical_adoption.yaml` sha256 1e3b57761f0a591d5649c72194875cec71b8a0a5413b48fed27681ad1faa7011
+  - `interstate_standard.yaml` sha256 a00d9e9ab2752c7c9ef29a3d0d9a743074ec6881229018bef345abca29194798
+  - `national_standard.yaml` sha256 66c68be7d8b0fe9c152e02a3cd64859ccfd596541d0defc28041b00b07e449f4
 - doi:
   - `_negative.yaml` sha256 0a14710dcc63dfc47200fdd7d7b10bfd2e039a8ec52e748cffc78820adeaa44c
   - `_status.yaml` sha256 da8b5c732041f6936d83e8f046b33824cea9c87e149da4d107ae8efd143a050f

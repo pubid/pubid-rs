@@ -17,12 +17,15 @@ use yaml_rust2::{Yaml, YamlLoader};
 use crate::api::ApiKind;
 use crate::amca::AmcaKind;
 use crate::doi::DoiIdentifier;
+use crate::ecma::EcmaKind;
+use crate::gb::GbKind;
+use crate::gost::GostKind;
 use crate::nesc::NescKind;
 use crate::error::{Error, Result};
 use crate::{
-    AmcaIdentifier, ApiIdentifier, IanaIdentifier, IetfIdentifier, IsbnIdentifier,
-    NescIdentifier, OasisIdentifier, OgcIdentifier, IreIdentifier, UnIdentifier, W3cIdentifier,
-    XsfIdentifier,
+    AmcaIdentifier, AnsiIdentifier, ApiIdentifier, EcmaIdentifier, GbIdentifier, GostIdentifier,
+    IanaIdentifier, IetfIdentifier, IsbnIdentifier, NescIdentifier, OasisIdentifier, OgcIdentifier,
+    IreIdentifier, UnIdentifier, W3cIdentifier, XsfIdentifier,
 };
 
 // ---------------------------------------------------------------------------
@@ -59,6 +62,14 @@ pub enum Identifier {
     Nesc(NescIdentifier),
     /// An IRE identifier (the pre-IEEE radio-engineers series).
     Ire(IreIdentifier),
+    /// An ANSI identifier (standards and copublished editions).
+    Ansi(AnsiIdentifier),
+    /// An ECMA identifier (standard / technical report / memento).
+    Ecma(EcmaIdentifier),
+    /// A GB identifier (Chinese national standards, all-parts).
+    Gb(GbIdentifier),
+    /// A GOST identifier (interstate/national/harmonized/identical).
+    Gost(GostIdentifier),
 }
 
 impl Identifier {
@@ -78,6 +89,10 @@ impl Identifier {
             Identifier::Amca(id) => id.to_hash(),
             Identifier::Nesc(id) => id.to_hash(),
             Identifier::Ire(id) => id.to_hash(),
+            Identifier::Ansi(id) => id.to_hash(),
+            Identifier::Ecma(id) => id.to_hash(),
+            Identifier::Gb(id) => id.to_hash(),
+            Identifier::Gost(id) => id.to_hash(),
         }
     }
 
@@ -97,6 +112,10 @@ impl Identifier {
             Identifier::Amca(id) => id.to_human(),
             Identifier::Nesc(id) => id.to_human(),
             Identifier::Ire(id) => id.to_human(),
+            Identifier::Ansi(id) => id.to_human(),
+            Identifier::Ecma(id) => id.to_human(),
+            Identifier::Gb(id) => id.to_human(),
+            Identifier::Gost(id) => id.to_human(),
         }
     }
 
@@ -116,6 +135,10 @@ impl Identifier {
             Identifier::Amca(id) => Some(id.to_urn()),
             Identifier::Nesc(id) => Some(id.to_urn()),
             Identifier::Ire(id) => Some(id.to_urn()),
+            Identifier::Ansi(id) => Some(id.to_urn()),
+            Identifier::Ecma(id) => Some(id.to_urn()),
+            Identifier::Gb(id) => Some(id.to_urn()),
+            Identifier::Gost(id) => Some(id.to_urn()),
         }
     }
 
@@ -140,6 +163,16 @@ impl Identifier {
             }
             _ if kind.starts_with("pubid:w3c:") => {
                 Ok(Identifier::W3c(W3cIdentifier::from_hash(hash)?))
+            }
+            AnsiIdentifier::TYPE => Ok(Identifier::Ansi(AnsiIdentifier::from_hash(hash)?)),
+            _ if kind.starts_with(EcmaKind::KIND_PREFIX) => {
+                Ok(Identifier::Ecma(EcmaIdentifier::from_hash(hash)?))
+            }
+            _ if kind.starts_with(GbKind::KIND_PREFIX) => {
+                Ok(Identifier::Gb(GbIdentifier::from_hash(hash)?))
+            }
+            _ if kind.starts_with(GostKind::KIND_PREFIX) => {
+                Ok(Identifier::Gost(GostIdentifier::from_hash(hash)?))
             }
             IreIdentifier::TYPE => Ok(Identifier::Ire(IreIdentifier::from_hash(hash)?)),
             _ if kind.starts_with(ApiKind::KIND_PREFIX) => {
@@ -216,6 +249,10 @@ flavor_impls!(
     "amca" => AmcaImpl, Amca, AmcaIdentifier,
     "nesc" => NescImpl, Nesc, NescIdentifier,
     "ire" => IreImpl, Ire, IreIdentifier,
+    "ansi" => AnsiImpl, Ansi, AnsiIdentifier,
+    "ecma" => EcmaImpl, Ecma, EcmaIdentifier,
+    "gb" => GbImpl, Gb, GbIdentifier,
+    "gost" => GostImpl, Gost, GostIdentifier,
 );
 
 // ---------------------------------------------------------------------------
@@ -419,6 +456,26 @@ vendored_corpora!(
         ("nesc_standard.yaml", NESC_STANDARD),
     ],
     "ire" => [("ire.yaml", IRE_IRE)],
+    "ansi" => [("standard.yaml", ANSI_STANDARD), ("_status.yaml", ANSI_STATUS)],
+    "ecma" => [
+        ("memento.yaml", ECMA_MEMENTO),
+        ("standard.yaml", ECMA_STANDARD),
+        ("technical_report.yaml", ECMA_TECHNICAL_REPORT),
+        ("_status.yaml", ECMA_STATUS),
+    ],
+    "gb" => [
+        ("all_parts.yaml", GB_ALL_PARTS),
+        ("standard.yaml", GB_STANDARD),
+        ("_negative.yaml", GB_NEGATIVE),
+        ("_status.yaml", GB_STATUS),
+    ],
+    "gost" => [
+        ("harmonized.yaml", GOST_HARMONIZED),
+        ("identical_adoption.yaml", GOST_IDENTICAL_ADOPTION),
+        ("interstate_standard.yaml", GOST_INTERSTATE_STANDARD),
+        ("national_standard.yaml", GOST_NATIONAL_STANDARD),
+        ("_status.yaml", GOST_STATUS),
+    ],
 );
 
 /// The doi vendored slice (the bootstrap flavor's accessor, kept for

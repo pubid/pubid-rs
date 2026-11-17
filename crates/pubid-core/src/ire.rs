@@ -251,7 +251,9 @@ mod tests {
         assert_eq!(id.number, "15 S1");
         assert!(id.parts.is_empty());
         assert_eq!(id.to_human(), "IRE Standard 15 S1");
-        assert_eq!(id.to_urn(), "urn:ieee:ire:standard.15 S1");
+        // The type word is its own URN segment (the reference's
+        // UrnGenerator joins the parts with colons).
+        assert_eq!(id.to_urn(), "urn:ieee:ire:standard:15 S1");
     }
 
     #[test]

@@ -1,0 +1,571 @@
+---
+- id: gost.national_standard.0152
+  identifier:
+    _type: pubid:gost:national-standard
+    number: '1.0'
+    year: '2015'
+  representations:
+    human: GOST R 1.0-2015
+    urn: urn:gost:std:r:1.0:2015
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р 1.0-2015
+    style: v3
+- id: gost.national_standard.0153
+  identifier:
+    _type: pubid:gost:national-standard
+    number: '1.5'
+    year: '2012'
+  representations:
+    human: GOST R 1.5-2012
+    urn: urn:gost:std:r:1.5:2012
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р 1.5-2012
+    style: v3
+- id: gost.national_standard.0154
+  identifier:
+    _type: pubid:gost:national-standard
+    number: 12.4.202
+    year: '99'
+  representations:
+    human: GOST R 12.4.202-99
+    urn: urn:gost:std:r:12.4.202:99
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р 12.4.202-99
+    style: v3
+- id: gost.national_standard.0155
+  identifier:
+    _type: pubid:gost:national-standard
+    number: '3.001'
+    year: '2023'
+  representations:
+    human: GOST R 3.001-2023
+    urn: urn:gost:std:r:3.001:2023
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р 3.001-2023
+    style: v3
+- id: gost.national_standard.0156
+  identifier:
+    _type: pubid:gost:national-standard
+    number: '34.10'
+    year: '2001'
+  representations:
+    human: GOST R 34.10-2001
+    urn: urn:gost:std:r:34.10:2001
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р 34.10-2001
+    style: v3
+- id: gost.national_standard.0157
+  identifier:
+    _type: pubid:gost:national-standard
+    number: '34.10'
+    year: '2012'
+  representations:
+    human: GOST R 34.10-2012
+    urn: urn:gost:std:r:34.10:2012
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р 34.10-2012
+    style: v3
+- id: gost.national_standard.0158
+  identifier:
+    _type: pubid:gost:national-standard
+    number: '34.11'
+    year: '2012'
+  representations:
+    human: GOST R 34.11-2012
+    urn: urn:gost:std:r:34.11:2012
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р 34.11-2012
+    style: v3
+- id: gost.national_standard.0159
+  identifier:
+    _type: pubid:gost:national-standard
+    number: '34.11'
+    year: '94'
+  representations:
+    human: GOST R 34.11-94
+    urn: urn:gost:std:r:34.11:94
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р 34.11-94
+    style: v3
+- id: gost.national_standard.0160
+  identifier:
+    _type: pubid:gost:national-standard
+    number: '34.12'
+    year: '2015'
+  representations:
+    human: GOST R 34.12-2015
+    urn: urn:gost:std:r:34.12:2015
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р 34.12-2015
+    style: v3
+- id: gost.national_standard.0161
+  identifier:
+    _type: pubid:gost:national-standard
+    number: '52990.5'
+    year: '2010'
+  representations:
+    human: GOST R 52990.5-2010
+    urn: urn:gost:std:r:52990.5:2010
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р 52990.5-2010
+    style: v3
+- id: gost.national_standard.0162
+  identifier:
+    _type: pubid:gost:national-standard
+    number: '53195'
+    year: '2008'
+  representations:
+    human: GOST R 53195-2008
+    urn: urn:gost:std:r:53195:2008
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р 53195-2008
+    style: v3
+- id: gost.national_standard.0163
+  identifier:
+    _type: pubid:gost:national-standard
+    number: '53480'
+    year: '2009'
+  representations:
+    human: GOST R 53480-2009
+    urn: urn:gost:std:r:53480:2009
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р 53480-2009
+    style: v3
+- id: gost.national_standard.0164
+  identifier:
+    _type: pubid:gost:national-standard
+    number: '57415'
+    year: '2017'
+  representations:
+    human: GOST R 57415-2017
+    urn: urn:gost:std:r:57415:2017
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р 57415-2017
+    style: v3
+- id: gost.national_standard.0166
+  identifier:
+    _type: pubid:gost:national-standard
+    number: '57416'
+    year: '2017'
+  representations:
+    human: GOST R 57416-2017
+    urn: urn:gost:std:r:57416:2017
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р 57416-2017
+    style: v3
+- id: gost.national_standard.0168
+  identifier:
+    _type: pubid:gost:national-standard
+    number: '58904'
+    year: '2020'
+  representations:
+    human: GOST R 58904-2020
+    urn: urn:gost:std:r:58904:2020
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р 58904-2020
+    style: v3
+- id: gost.national_standard.0170
+  identifier:
+    _type: pubid:gost:national-standard
+    number: '71039'
+    year: '2023'
+  representations:
+    human: GOST R 71039-2023
+    urn: urn:gost:std:r:71039:2023
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р 71039— 2023
+    style: v3
+  - spelling: ГОСТ Р 71039—2023
+    style: v3
+- id: gost.national_standard.0171
+  identifier:
+    _type: pubid:gost:national-standard
+    number: '71463'
+    year: '2024'
+  representations:
+    human: GOST R 71463-2024
+    urn: urn:gost:std:r:71463:2024
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р 71463-2024
+    style: v3
+- id: gost.national_standard.0172
+  identifier:
+    _type: pubid:gost:national-standard
+    number: '8.595'
+    year: '2004'
+  representations:
+    human: GOST R 8.595-2004
+    urn: urn:gost:std:r:8.595:2004
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р 8.595-2004
+    style: v3
+- id: gost.national_standard.0173
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: IEC
+    number: 60095-2
+    year: '2023'
+  representations:
+    human: GOST R IEC 60095-2-2023
+    urn: urn:gost:std:r:60095-2:2023
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р МЭК 60095-2-2023
+    style: v3
+- id: gost.national_standard.0174
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: IEC
+    number: 60095-4
+    year: '2023'
+  representations:
+    human: GOST R IEC 60095-4-2023
+    urn: urn:gost:std:r:60095-4:2023
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р МЭК 60095-4-2023
+    style: v3
+- id: gost.national_standard.0175
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: IEC
+    number: '60230'
+    year: '2022'
+  representations:
+    human: GOST R IEC 60230-2022
+    urn: urn:gost:std:r:60230:2022
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р МЭК 60230-2022
+    style: v3
+- id: gost.national_standard.0176
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: IEC
+    number: '60623'
+    year: '2019'
+  representations:
+    human: GOST R IEC 60623-2019
+    urn: urn:gost:std:r:60623:2019
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р МЭК 60623-2019
+    style: v3
+- id: gost.national_standard.0177
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: IEC
+    number: 60793-1-22
+    year: '2012'
+  representations:
+    human: GOST R IEC 60793-1-22-2012
+    urn: urn:gost:std:r:60793-1-22:2012
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р МЭК 60793-1-22-2012
+    style: v3
+- id: gost.national_standard.0178
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: IEC
+    number: 60793-1-32
+    year: '2010'
+  representations:
+    human: GOST R IEC 60793-1-32-2010
+    urn: urn:gost:std:r:60793-1-32:2010
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р МЭК 60793-1-32-2010
+    style: v3
+- id: gost.national_standard.0179
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: IEC
+    number: 60793-1-40
+    year: '2012'
+  representations:
+    human: GOST R IEC 60793-1-40-2012
+    urn: urn:gost:std:r:60793-1-40:2012
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р МЭК 60793-1-40-2012
+    style: v3
+- id: gost.national_standard.0180
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: IEC
+    number: 60794-1-22
+    year: '2017'
+  representations:
+    human: GOST R IEC 60794-1-22-2017
+    urn: urn:gost:std:r:60794-1-22:2017
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р МЭК 60794-1-22-2017
+    style: v3
+- id: gost.national_standard.0181
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: IEC
+    number: 60794-1-23
+    year: '2017'
+  representations:
+    human: GOST R IEC 60794-1-23-2017
+    urn: urn:gost:std:r:60794-1-23:2017
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р МЭК 60794-1-23-2017
+    style: v3
+- id: gost.national_standard.0182
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: IEC
+    number: 61951-1
+    year: '2019'
+  representations:
+    human: GOST R IEC 61951-1-2019
+    urn: urn:gost:std:r:61951-1:2019
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р МЭК 61951-1-2019
+    style: v3
+- id: gost.national_standard.0183
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: IEC
+    number: 61951-2
+    year: '2019'
+  representations:
+    human: GOST R IEC 61951-2-2019
+    urn: urn:gost:std:r:61951-2:2019
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р МЭК 61951-2-2019
+    style: v3
+- id: gost.national_standard.0184
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: IEC
+    number: '62279'
+    year: '2016'
+  representations:
+    human: GOST R IEC 62279-2016
+    urn: urn:gost:std:r:62279:2016
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р МЭК 62279-2016
+    style: v3
+- id: gost.national_standard.0185
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: ISO
+    number: 13909-1
+    year: '2010'
+  representations:
+    human: GOST R ISO 13909-1-2010
+    urn: urn:gost:std:r:13909-1:2010
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р ИСО 13909-1-2010
+    style: v3
+- id: gost.national_standard.0186
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: ISO
+    number: '18283'
+    year: '2010'
+  representations:
+    human: GOST R ISO 18283-2010
+    urn: urn:gost:std:r:18283:2010
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р ИСО 18283-2010
+    style: v3
+- id: gost.national_standard.0187
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: ISO
+    number: 20816-1
+    year: '2021'
+  representations:
+    human: GOST R ISO 20816-1-2021
+    urn: urn:gost:std:r:20816-1:2021
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р ИСО 20816-1-2021
+    style: v3
+- id: gost.national_standard.0188
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: ISO
+    number: '9001'
+    year: '2015'
+  representations:
+    human: GOST R ISO 9001-2015
+    urn: urn:gost:std:r:9001:2015
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р ИСО 9001-2015
+    style: v3
+- id: gost.national_standard.0189
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: ISO/IEC
+    number: 15426-2
+    year: '2016'
+  representations:
+    human: GOST R ISO/IEC 15426-2-2016
+    urn: urn:gost:std:r:15426-2:2016
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р ИСО/МЭК 15426-2-2016
+    style: v3
+- id: gost.national_standard.0190
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: ISO/IEC
+    number: 24727-1
+    year: '2016'
+  representations:
+    human: GOST R ISO/IEC 24727-1-2016
+    urn: urn:gost:std:r:24727-1:2016
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р ИСО/МЭК 24727-1-2016
+    style: v3
+- id: gost.national_standard.0191
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: ISO/IEC
+    number: 24789-1
+    year: '2016'
+  representations:
+    human: GOST R ISO/IEC 24789-1-2016
+    urn: urn:gost:std:r:24789-1:2016
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р ИСО/МЭК 24789-1-2016
+    style: v3
+- id: gost.national_standard.0192
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: ISO/IEC
+    number: 24789-2
+    year: '2016'
+  representations:
+    human: GOST R ISO/IEC 24789-2-2016
+    urn: urn:gost:std:r:24789-2:2016
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р ИСО/МЭК 24789-2-2016
+    style: v3
+- id: gost.national_standard.0193
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: ISO/IEC
+    number: '25001'
+    year: '2017'
+  representations:
+    human: GOST R ISO/IEC 25001-2017
+    urn: urn:gost:std:r:25001:2017
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р ИСО/МЭК 25001-2017
+    style: v3
+- id: gost.national_standard.0194
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: ISO/IEC
+    number: '33004'
+    year: '2017'
+  representations:
+    human: GOST R ISO/IEC 33004-2017
+    urn: urn:gost:std:r:33004:2017
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р ИСО/МЭК 33004-2017
+    style: v3
+- id: gost.national_standard.0195
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: ISO/IEC
+    number: 8825-3
+    year: '2016'
+  representations:
+    human: GOST R ISO/IEC 8825-3-2016
+    urn: urn:gost:std:r:8825-3:2016
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р ИСО/МЭК 8825-3-2016
+    style: v3
+- id: gost.national_standard.0196
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: ISO/IEC
+    subtype: ISP
+    number: 10609-9
+    year: '95'
+  representations:
+    human: GOST R ISO/IEC ISP 10609-9-95
+    urn: urn:gost:std:r:10609-9:95
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р ИСО/МЭК МФС 10609-9-95
+    style: v3
+- id: gost.national_standard.0197
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: ISO/TR
+    number: 12100-1
+    year: '2001'
+  representations:
+    human: GOST R ISO/TR 12100-1-2001
+    urn: urn:gost:std:r:12100-1:2001
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р ИСО/ТО 12100-1-2001
+    style: v3
+- id: gost.national_standard.0198
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: ISO/TS
+    number: '16949'
+    year: '2009'
+  representations:
+    human: GOST R ISO/TS 16949-2009
+    urn: urn:gost:std:r:16949:2009
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р ИСО/ТУ 16949-2009
+    style: v3
+- id: gost.national_standard.0199
+  identifier:
+    _type: pubid:gost:national-standard
+    copublisher: ИСО/ТС
+    number: 10303-439
+    year: '2016'
+  representations:
+    human: GOST R ИСО/ТС 10303-439-2016
+    urn: urn:gost:std:r:10303-439:2016
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ Р ИСО/ТС 10303-439-2016
+    style: v3

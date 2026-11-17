@@ -1,0 +1,621 @@
+---
+- id: ecma.technical_report.0065
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '100'
+  representations:
+    human: ECMA TR/100
+    urn: urn:ecma:tr:100
+  style: v3
+- id: ecma.technical_report.0066
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '100'
+    edition: '1'
+  representations:
+    human: ECMA TR/100 ed1
+    urn: urn:ecma:tr:100:ed-1
+  style: v3
+- id: ecma.technical_report.0067
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '101'
+  representations:
+    human: ECMA TR/101
+    urn: urn:ecma:tr:101
+  style: v3
+- id: ecma.technical_report.0068
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '101'
+    edition: '2'
+  representations:
+    human: ECMA TR/101 ed2
+    urn: urn:ecma:tr:101:ed-2
+  style: v3
+- id: ecma.technical_report.0069
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '102'
+    edition: '1'
+  representations:
+    human: ECMA TR/102 ed1
+    urn: urn:ecma:tr:102:ed-1
+  style: v3
+- id: ecma.technical_report.0070
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '103'
+    edition: '1'
+  representations:
+    human: ECMA TR/103 ed1
+    urn: urn:ecma:tr:103:ed-1
+  style: v3
+- id: ecma.technical_report.0071
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '104'
+  representations:
+    human: ECMA TR/104
+    urn: urn:ecma:tr:104
+  style: v3
+- id: ecma.technical_report.0072
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '104'
+    edition: '2'
+  representations:
+    human: ECMA TR/104 ed2
+    urn: urn:ecma:tr:104:ed-2
+  style: v3
+- id: ecma.technical_report.0073
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '105'
+    edition: '1'
+  representations:
+    human: ECMA TR/105 ed1
+    urn: urn:ecma:tr:105:ed-1
+  style: v3
+- id: ecma.technical_report.0074
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '106'
+    edition: '1'
+  representations:
+    human: ECMA TR/106 ed1
+    urn: urn:ecma:tr:106:ed-1
+  style: v3
+- id: ecma.technical_report.0075
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '107'
+  representations:
+    human: ECMA TR/107
+    urn: urn:ecma:tr:107
+  style: v3
+- id: ecma.technical_report.0076
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '107'
+    edition: '3'
+  representations:
+    human: ECMA TR/107 ed3
+    urn: urn:ecma:tr:107:ed-3
+  style: v3
+- id: ecma.technical_report.0077
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '108'
+    edition: '1'
+  representations:
+    human: ECMA TR/108 ed1
+    urn: urn:ecma:tr:108:ed-1
+  style: v3
+- id: ecma.technical_report.0078
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '109'
+    edition: '1'
+  representations:
+    human: ECMA TR/109 ed1
+    urn: urn:ecma:tr:109:ed-1
+  style: v3
+- id: ecma.technical_report.0079
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '110'
+    edition: '1'
+  representations:
+    human: ECMA TR/110 ed1
+    urn: urn:ecma:tr:110:ed-1
+  style: v3
+- id: ecma.technical_report.0080
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '111'
+    edition: '1'
+  representations:
+    human: ECMA TR/111 ed1
+    urn: urn:ecma:tr:111:ed-1
+  style: v3
+- id: ecma.technical_report.0081
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '112'
+    edition: '1'
+  representations:
+    human: ECMA TR/112 ed1
+    urn: urn:ecma:tr:112:ed-1
+  style: v3
+- id: ecma.technical_report.0082
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '113'
+  representations:
+    human: ECMA TR/113
+    urn: urn:ecma:tr:113
+  style: v3
+- id: ecma.technical_report.0083
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '113'
+    edition: '1'
+  representations:
+    human: ECMA TR/113 ed1
+    urn: urn:ecma:tr:113:ed-1
+  style: v3
+- id: ecma.technical_report.0084
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '114'
+    edition: '1'
+  representations:
+    human: ECMA TR/114 ed1
+    urn: urn:ecma:tr:114:ed-1
+  style: v3
+- id: ecma.technical_report.0085
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '18'
+  representations:
+    human: ECMA TR/18
+    urn: urn:ecma:tr:18
+  style: v3
+- id: ecma.technical_report.0086
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '18'
+    edition: '1'
+  representations:
+    human: ECMA TR/18 ed1
+    urn: urn:ecma:tr:18:ed-1
+  style: v3
+- id: ecma.technical_report.0087
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '27'
+  representations:
+    human: ECMA TR/27
+    urn: urn:ecma:tr:27
+  style: v3
+- id: ecma.technical_report.0088
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '27'
+    edition: '2'
+  representations:
+    human: ECMA TR/27 ed2
+    urn: urn:ecma:tr:27:ed-2
+  style: v3
+- id: ecma.technical_report.0089
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '36'
+    edition: '1'
+  representations:
+    human: ECMA TR/36 ed1
+    urn: urn:ecma:tr:36:ed-1
+  style: v3
+- id: ecma.technical_report.0090
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '46'
+    edition: '1'
+  representations:
+    human: ECMA TR/46 ed1
+    urn: urn:ecma:tr:46:ed-1
+  style: v3
+- id: ecma.technical_report.0091
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '53'
+  representations:
+    human: ECMA TR/53
+    urn: urn:ecma:tr:53
+  style: v3
+- id: ecma.technical_report.0092
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '53'
+    edition: '2'
+  representations:
+    human: ECMA TR/53 ed2
+    urn: urn:ecma:tr:53:ed-2
+  style: v3
+- id: ecma.technical_report.0093
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '55'
+    edition: '3'
+  representations:
+    human: ECMA TR/55 ed3
+    urn: urn:ecma:tr:55:ed-3
+  style: v3
+- id: ecma.technical_report.0094
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '57'
+    edition: '2'
+  representations:
+    human: ECMA TR/57 ed2
+    urn: urn:ecma:tr:57:ed-2
+  style: v3
+- id: ecma.technical_report.0095
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '58'
+    edition: '1'
+  representations:
+    human: ECMA TR/58 ed1
+    urn: urn:ecma:tr:58:ed-1
+  style: v3
+- id: ecma.technical_report.0096
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '59'
+    edition: '1'
+  representations:
+    human: ECMA TR/59 ed1
+    urn: urn:ecma:tr:59:ed-1
+  style: v3
+- id: ecma.technical_report.0097
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '61'
+    edition: '1'
+  representations:
+    human: ECMA TR/61 ed1
+    urn: urn:ecma:tr:61:ed-1
+  style: v3
+- id: ecma.technical_report.0098
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '62'
+    edition: '1'
+  representations:
+    human: ECMA TR/62 ed1
+    urn: urn:ecma:tr:62:ed-1
+  style: v3
+- id: ecma.technical_report.0099
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '64'
+    edition: '1'
+  representations:
+    human: ECMA TR/64 ed1
+    urn: urn:ecma:tr:64:ed-1
+  style: v3
+- id: ecma.technical_report.0100
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '66'
+    edition: '1'
+  representations:
+    human: ECMA TR/66 ed1
+    urn: urn:ecma:tr:66:ed-1
+  style: v3
+- id: ecma.technical_report.0101
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '67'
+    edition: '1'
+  representations:
+    human: ECMA TR/67 ed1
+    urn: urn:ecma:tr:67:ed-1
+  style: v3
+- id: ecma.technical_report.0102
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '68'
+    edition: '1'
+  representations:
+    human: ECMA TR/68 ed1
+    urn: urn:ecma:tr:68:ed-1
+  style: v3
+- id: ecma.technical_report.0103
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '69'
+    edition: '1'
+  representations:
+    human: ECMA TR/69 ed1
+    urn: urn:ecma:tr:69:ed-1
+  style: v3
+- id: ecma.technical_report.0104
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '70'
+  representations:
+    human: ECMA TR/70
+    urn: urn:ecma:tr:70
+  style: v3
+- id: ecma.technical_report.0105
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '70'
+    edition: '3'
+  representations:
+    human: ECMA TR/70 ed3
+    urn: urn:ecma:tr:70:ed-3
+  style: v3
+- id: ecma.technical_report.0106
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '71'
+    edition: '1'
+  representations:
+    human: ECMA TR/71 ed1
+    urn: urn:ecma:tr:71:ed-1
+  style: v3
+- id: ecma.technical_report.0107
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '72'
+    edition: '3'
+  representations:
+    human: ECMA TR/72 ed3
+    urn: urn:ecma:tr:72:ed-3
+  style: v3
+- id: ecma.technical_report.0108
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '73'
+    edition: '1'
+  representations:
+    human: ECMA TR/73 ed1
+    urn: urn:ecma:tr:73:ed-1
+  style: v3
+- id: ecma.technical_report.0109
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '74'
+    edition: '1'
+  representations:
+    human: ECMA TR/74 ed1
+    urn: urn:ecma:tr:74:ed-1
+  style: v3
+- id: ecma.technical_report.0110
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '75'
+    edition: '2'
+  representations:
+    human: ECMA TR/75 ed2
+    urn: urn:ecma:tr:75:ed-2
+  style: v3
+- id: ecma.technical_report.0111
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '76'
+    edition: '1'
+  representations:
+    human: ECMA TR/76 ed1
+    urn: urn:ecma:tr:76:ed-1
+  style: v3
+- id: ecma.technical_report.0112
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '77'
+    edition: '1'
+  representations:
+    human: ECMA TR/77 ed1
+    urn: urn:ecma:tr:77:ed-1
+  style: v3
+- id: ecma.technical_report.0113
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '78'
+    edition: '1'
+  representations:
+    human: ECMA TR/78 ed1
+    urn: urn:ecma:tr:78:ed-1
+  style: v3
+- id: ecma.technical_report.0114
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '79'
+    edition: '1'
+  representations:
+    human: ECMA TR/79 ed1
+    urn: urn:ecma:tr:79:ed-1
+  style: v3
+- id: ecma.technical_report.0115
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '80'
+    edition: '1'
+  representations:
+    human: ECMA TR/80 ed1
+    urn: urn:ecma:tr:80:ed-1
+  style: v3
+- id: ecma.technical_report.0116
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '81'
+    edition: '1'
+  representations:
+    human: ECMA TR/81 ed1
+    urn: urn:ecma:tr:81:ed-1
+  style: v3
+- id: ecma.technical_report.0117
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '82'
+    edition: '2'
+  representations:
+    human: ECMA TR/82 ed2
+    urn: urn:ecma:tr:82:ed-2
+  style: v3
+- id: ecma.technical_report.0118
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '83'
+    edition: '1'
+  representations:
+    human: ECMA TR/83 ed1
+    urn: urn:ecma:tr:83:ed-1
+  style: v3
+- id: ecma.technical_report.0119
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '84'
+  representations:
+    human: ECMA TR/84
+    urn: urn:ecma:tr:84
+  style: v3
+- id: ecma.technical_report.0120
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '84'
+    edition: '6'
+  representations:
+    human: ECMA TR/84 ed6
+    urn: urn:ecma:tr:84:ed-6
+  style: v3
+- id: ecma.technical_report.0121
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '85'
+    edition: '1'
+  representations:
+    human: ECMA TR/85 ed1
+    urn: urn:ecma:tr:85:ed-1
+  style: v3
+- id: ecma.technical_report.0122
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '86'
+    edition: '1'
+  representations:
+    human: ECMA TR/86 ed1
+    urn: urn:ecma:tr:86:ed-1
+  style: v3
+- id: ecma.technical_report.0123
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '87'
+    edition: '1'
+  representations:
+    human: ECMA TR/87 ed1
+    urn: urn:ecma:tr:87:ed-1
+  style: v3
+- id: ecma.technical_report.0124
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '88'
+    edition: '1'
+  representations:
+    human: ECMA TR/88 ed1
+    urn: urn:ecma:tr:88:ed-1
+  style: v3
+- id: ecma.technical_report.0125
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '90'
+    edition: '1'
+  representations:
+    human: ECMA TR/90 ed1
+    urn: urn:ecma:tr:90:ed-1
+  style: v3
+- id: ecma.technical_report.0126
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '91'
+    edition: '1'
+  representations:
+    human: ECMA TR/91 ed1
+    urn: urn:ecma:tr:91:ed-1
+  style: v3
+- id: ecma.technical_report.0127
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '92'
+    edition: '2'
+  representations:
+    human: ECMA TR/92 ed2
+    urn: urn:ecma:tr:92:ed-2
+  style: v3
+- id: ecma.technical_report.0128
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '93'
+    edition: '1'
+  representations:
+    human: ECMA TR/93 ed1
+    urn: urn:ecma:tr:93:ed-1
+  style: v3
+- id: ecma.technical_report.0129
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '94'
+    edition: '1'
+  representations:
+    human: ECMA TR/94 ed1
+    urn: urn:ecma:tr:94:ed-1
+  style: v3
+- id: ecma.technical_report.0130
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '95'
+    edition: '1'
+  representations:
+    human: ECMA TR/95 ed1
+    urn: urn:ecma:tr:95:ed-1
+  style: v3
+- id: ecma.technical_report.0131
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '96'
+    edition: '1'
+  representations:
+    human: ECMA TR/96 ed1
+    urn: urn:ecma:tr:96:ed-1
+  style: v3
+- id: ecma.technical_report.0132
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '97'
+    edition: '1'
+  representations:
+    human: ECMA TR/97 ed1
+    urn: urn:ecma:tr:97:ed-1
+  style: v3
+- id: ecma.technical_report.0133
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '98'
+    edition: '1'
+  representations:
+    human: ECMA TR/98 ed1
+    urn: urn:ecma:tr:98:ed-1
+  style: v3
+- id: ecma.technical_report.0134
+  identifier:
+    _type: pubid:ecma:technical-report
+    number: '99'
+    edition: '2'
+  representations:
+    human: ECMA TR/99 ed2
+    urn: urn:ecma:tr:99:ed-2
+  style: v3

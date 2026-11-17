@@ -1,0 +1,513 @@
+---
+- id: ecma.memento.0001
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1962'
+  representations:
+    human: ECMA MEM/1962
+    urn: urn:ecma:mem:1962
+  style: v3
+- id: ecma.memento.0002
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1964'
+  representations:
+    human: ECMA MEM/1964
+    urn: urn:ecma:mem:1964
+  style: v3
+- id: ecma.memento.0003
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1965'
+  representations:
+    human: ECMA MEM/1965
+    urn: urn:ecma:mem:1965
+  style: v3
+- id: ecma.memento.0004
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1966'
+  representations:
+    human: ECMA MEM/1966
+    urn: urn:ecma:mem:1966
+  style: v3
+- id: ecma.memento.0005
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1967'
+  representations:
+    human: ECMA MEM/1967
+    urn: urn:ecma:mem:1967
+  style: v3
+- id: ecma.memento.0006
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1968'
+  representations:
+    human: ECMA MEM/1968
+    urn: urn:ecma:mem:1968
+  style: v3
+- id: ecma.memento.0007
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1969'
+  representations:
+    human: ECMA MEM/1969
+    urn: urn:ecma:mem:1969
+  style: v3
+- id: ecma.memento.0008
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1970'
+  representations:
+    human: ECMA MEM/1970
+    urn: urn:ecma:mem:1970
+  style: v3
+- id: ecma.memento.0009
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1971'
+  representations:
+    human: ECMA MEM/1971
+    urn: urn:ecma:mem:1971
+  style: v3
+- id: ecma.memento.0010
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1972'
+  representations:
+    human: ECMA MEM/1972
+    urn: urn:ecma:mem:1972
+  style: v3
+- id: ecma.memento.0011
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1973'
+  representations:
+    human: ECMA MEM/1973
+    urn: urn:ecma:mem:1973
+  style: v3
+- id: ecma.memento.0012
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1974'
+  representations:
+    human: ECMA MEM/1974
+    urn: urn:ecma:mem:1974
+  style: v3
+- id: ecma.memento.0013
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1975'
+  representations:
+    human: ECMA MEM/1975
+    urn: urn:ecma:mem:1975
+  style: v3
+- id: ecma.memento.0014
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1976'
+  representations:
+    human: ECMA MEM/1976
+    urn: urn:ecma:mem:1976
+  style: v3
+- id: ecma.memento.0015
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1977'
+  representations:
+    human: ECMA MEM/1977
+    urn: urn:ecma:mem:1977
+  style: v3
+- id: ecma.memento.0016
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1978'
+  representations:
+    human: ECMA MEM/1978
+    urn: urn:ecma:mem:1978
+  style: v3
+- id: ecma.memento.0017
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1979'
+  representations:
+    human: ECMA MEM/1979
+    urn: urn:ecma:mem:1979
+  style: v3
+- id: ecma.memento.0018
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1980'
+  representations:
+    human: ECMA MEM/1980
+    urn: urn:ecma:mem:1980
+  style: v3
+- id: ecma.memento.0019
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1981'
+  representations:
+    human: ECMA MEM/1981
+    urn: urn:ecma:mem:1981
+  style: v3
+- id: ecma.memento.0020
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1982'
+  representations:
+    human: ECMA MEM/1982
+    urn: urn:ecma:mem:1982
+  style: v3
+- id: ecma.memento.0021
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1983'
+  representations:
+    human: ECMA MEM/1983
+    urn: urn:ecma:mem:1983
+  style: v3
+- id: ecma.memento.0022
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1984'
+  representations:
+    human: ECMA MEM/1984
+    urn: urn:ecma:mem:1984
+  style: v3
+- id: ecma.memento.0023
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1985'
+  representations:
+    human: ECMA MEM/1985
+    urn: urn:ecma:mem:1985
+  style: v3
+- id: ecma.memento.0024
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1986'
+  representations:
+    human: ECMA MEM/1986
+    urn: urn:ecma:mem:1986
+  style: v3
+- id: ecma.memento.0025
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1987'
+  representations:
+    human: ECMA MEM/1987
+    urn: urn:ecma:mem:1987
+  style: v3
+- id: ecma.memento.0026
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1988'
+  representations:
+    human: ECMA MEM/1988
+    urn: urn:ecma:mem:1988
+  style: v3
+- id: ecma.memento.0027
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1989'
+  representations:
+    human: ECMA MEM/1989
+    urn: urn:ecma:mem:1989
+  style: v3
+- id: ecma.memento.0028
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1990'
+  representations:
+    human: ECMA MEM/1990
+    urn: urn:ecma:mem:1990
+  style: v3
+- id: ecma.memento.0029
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1991'
+  representations:
+    human: ECMA MEM/1991
+    urn: urn:ecma:mem:1991
+  style: v3
+- id: ecma.memento.0030
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1992'
+  representations:
+    human: ECMA MEM/1992
+    urn: urn:ecma:mem:1992
+  style: v3
+- id: ecma.memento.0031
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1993'
+  representations:
+    human: ECMA MEM/1993
+    urn: urn:ecma:mem:1993
+  style: v3
+- id: ecma.memento.0032
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1994'
+  representations:
+    human: ECMA MEM/1994
+    urn: urn:ecma:mem:1994
+  style: v3
+- id: ecma.memento.0033
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1995'
+  representations:
+    human: ECMA MEM/1995
+    urn: urn:ecma:mem:1995
+  style: v3
+- id: ecma.memento.0034
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1996'
+  representations:
+    human: ECMA MEM/1996
+    urn: urn:ecma:mem:1996
+  style: v3
+- id: ecma.memento.0035
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1997'
+  representations:
+    human: ECMA MEM/1997
+    urn: urn:ecma:mem:1997
+  style: v3
+- id: ecma.memento.0036
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1998'
+  representations:
+    human: ECMA MEM/1998
+    urn: urn:ecma:mem:1998
+  style: v3
+- id: ecma.memento.0037
+  identifier:
+    _type: pubid:ecma:memento
+    number: '1999'
+  representations:
+    human: ECMA MEM/1999
+    urn: urn:ecma:mem:1999
+  style: v3
+- id: ecma.memento.0038
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2000'
+  representations:
+    human: ECMA MEM/2000
+    urn: urn:ecma:mem:2000
+  style: v3
+- id: ecma.memento.0039
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2001'
+  representations:
+    human: ECMA MEM/2001
+    urn: urn:ecma:mem:2001
+  style: v3
+- id: ecma.memento.0040
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2002'
+  representations:
+    human: ECMA MEM/2002
+    urn: urn:ecma:mem:2002
+  style: v3
+- id: ecma.memento.0041
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2003'
+  representations:
+    human: ECMA MEM/2003
+    urn: urn:ecma:mem:2003
+  style: v3
+- id: ecma.memento.0042
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2004'
+  representations:
+    human: ECMA MEM/2004
+    urn: urn:ecma:mem:2004
+  style: v3
+- id: ecma.memento.0043
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2005'
+  representations:
+    human: ECMA MEM/2005
+    urn: urn:ecma:mem:2005
+  style: v3
+- id: ecma.memento.0044
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2006'
+  representations:
+    human: ECMA MEM/2006
+    urn: urn:ecma:mem:2006
+  style: v3
+- id: ecma.memento.0045
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2007'
+  representations:
+    human: ECMA MEM/2007
+    urn: urn:ecma:mem:2007
+  style: v3
+- id: ecma.memento.0046
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2008'
+  representations:
+    human: ECMA MEM/2008
+    urn: urn:ecma:mem:2008
+  style: v3
+- id: ecma.memento.0047
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2009'
+  representations:
+    human: ECMA MEM/2009
+    urn: urn:ecma:mem:2009
+  style: v3
+- id: ecma.memento.0048
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2010'
+  representations:
+    human: ECMA MEM/2010
+    urn: urn:ecma:mem:2010
+  style: v3
+- id: ecma.memento.0049
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2011'
+  representations:
+    human: ECMA MEM/2011
+    urn: urn:ecma:mem:2011
+  style: v3
+- id: ecma.memento.0050
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2012'
+  representations:
+    human: ECMA MEM/2012
+    urn: urn:ecma:mem:2012
+  style: v3
+- id: ecma.memento.0051
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2013'
+  representations:
+    human: ECMA MEM/2013
+    urn: urn:ecma:mem:2013
+  style: v3
+- id: ecma.memento.0052
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2014'
+  representations:
+    human: ECMA MEM/2014
+    urn: urn:ecma:mem:2014
+  style: v3
+- id: ecma.memento.0053
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2015'
+  representations:
+    human: ECMA MEM/2015
+    urn: urn:ecma:mem:2015
+  style: v3
+- id: ecma.memento.0054
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2016'
+  representations:
+    human: ECMA MEM/2016
+    urn: urn:ecma:mem:2016
+  style: v3
+- id: ecma.memento.0055
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2017'
+  representations:
+    human: ECMA MEM/2017
+    urn: urn:ecma:mem:2017
+  style: v3
+- id: ecma.memento.0056
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2018'
+  representations:
+    human: ECMA MEM/2018
+    urn: urn:ecma:mem:2018
+  style: v3
+- id: ecma.memento.0057
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2019'
+  representations:
+    human: ECMA MEM/2019
+    urn: urn:ecma:mem:2019
+  style: v3
+- id: ecma.memento.0058
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2020'
+  representations:
+    human: ECMA MEM/2020
+    urn: urn:ecma:mem:2020
+  style: v3
+- id: ecma.memento.0059
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2021'
+  representations:
+    human: ECMA MEM/2021
+    urn: urn:ecma:mem:2021
+  style: v3
+- id: ecma.memento.0060
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2022'
+  representations:
+    human: ECMA MEM/2022
+    urn: urn:ecma:mem:2022
+  style: v3
+- id: ecma.memento.0061
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2023'
+  representations:
+    human: ECMA MEM/2023
+    urn: urn:ecma:mem:2023
+  style: v3
+- id: ecma.memento.0062
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2024'
+  representations:
+    human: ECMA MEM/2024
+    urn: urn:ecma:mem:2024
+  style: v3
+- id: ecma.memento.0063
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2025'
+  representations:
+    human: ECMA MEM/2025
+    urn: urn:ecma:mem:2025
+  style: v3
+- id: ecma.memento.0064
+  identifier:
+    _type: pubid:ecma:memento
+    number: '2026'
+  representations:
+    human: ECMA MEM/2026
+    urn: urn:ecma:mem:2026
+  style: v3
