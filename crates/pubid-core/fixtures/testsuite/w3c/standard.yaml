@@ -1,0 +1,41 @@
+---
+- id: w3c.standard.0001
+  identifier:
+    _type: pubid:w3c:standard
+    number: 07-WebData
+  representations:
+    human: W3C 07-WebData
+    urn: urn:w3c:07-WebData
+  style: v3
+- id: w3c.standard.0002
+  identifier:
+    _type: pubid:w3c:standard
+    number: 2dcontext
+  representations:
+    human: W3C 2dcontext
+    urn: urn:w3c:2dcontext
+  style: v3
+- id: w3c.standard.0027
+  identifier:
+    _type: pubid:w3c:standard
+    number: becss
+  representations:
+    human: W3C becss
+    urn: urn:w3c:becss
+  style: v3
+- id: w3c.standard.0028
+  identifier:
+    _type: pubid:w3c:standard
+    number: url-1
+  representations:
+    human: W3C url-1
+    urn: urn:w3c:url-1
+  style: v3
+- id: w3c.standard.0029
+  identifier:
+    _type: pubid:w3c:standard
+    number: xpath-datamodel-31
+  representations:
+    human: W3C xpath-datamodel-31
+    urn: urn:w3c:xpath-datamodel-31
+  style: v3

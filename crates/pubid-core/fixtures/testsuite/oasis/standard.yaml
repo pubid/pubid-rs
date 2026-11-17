@@ -1,0 +1,480 @@
+---
+- id: oasis.standard.0001
+  identifier:
+    _type: pubid:oasis:standard
+    original: AkomaNtosoCore-v1.0-Pt2-Specifications
+    number: AkomaNtosoCore
+    version: v1.0
+    part: Pt2
+    label: Specifications
+  representations:
+    human: OASIS AkomaNtosoCore-v1.0-Pt2-Specifications
+    urn: urn:oasis:AkomaNtosoCore-v1.0-Pt2-Specifications
+  style: v3
+- id: oasis.standard.0002
+  identifier:
+    _type: pubid:oasis:standard
+    original: BIASPROFILE
+    number: BIASPROFILE
+  representations:
+    human: OASIS BIASPROFILE
+    urn: urn:oasis:BIASPROFILE
+  style: v3
+- id: oasis.standard.0003
+  identifier:
+    _type: pubid:oasis:standard
+    original: BasicSecurityProfile-v1.1-CS01
+    number: BasicSecurityProfile
+    version: v1.1
+    stage: CS01
+  representations:
+    human: OASIS BasicSecurityProfile-v1.1-CS01
+    urn: urn:oasis:BasicSecurityProfile-v1.1-CS01
+  style: v3
+- id: oasis.standard.0004
+  identifier:
+    _type: pubid:oasis:standard
+    original: CMIS-v1.1-Errata01
+    number: CMIS
+    version: v1.1
+    stage: Errata01
+  representations:
+    human: OASIS CMIS-v1.1-Errata01
+    urn: urn:oasis:CMIS-v1.1-Errata01
+  style: v3
+- id: oasis.standard.0005
+  identifier:
+    _type: pubid:oasis:standard
+    original: CMIS-v1.1-Plus-Errata01
+    number: CMIS
+    version: v1.1
+    stage: Errata01
+    label: Plus
+  representations:
+    human: OASIS CMIS-v1.1-Plus-Errata01
+    urn: urn:oasis:CMIS-v1.1-Plus-Errata01
+  style: v3
+- id: oasis.standard.0006
+  identifier:
+    _type: pubid:oasis:standard
+    original: CTAS-v3.0]-PS01
+    number: CTAS-v3.0]
+    stage: PS01
+  representations:
+    human: OASIS CTAS-v3.0]-PS01
+    urn: urn:oasis:CTAS-v3.0%5D-PS01
+  style: v3
+- id: oasis.standard.0007
+  identifier:
+    _type: pubid:oasis:standard
+    original: DITA-v1.2
+    number: DITA
+    version: v1.2
+  representations:
+    human: OASIS DITA-v1.2
+    urn: urn:oasis:DITA-v1.2
+  style: v3
+- id: oasis.standard.0008
+  identifier:
+    _type: pubid:oasis:standard
+    original: DITA-v1.3-Errata02
+    number: DITA
+    version: v1.3
+    stage: Errata02
+  representations:
+    human: OASIS DITA-v1.3-Errata02
+    urn: urn:oasis:DITA-v1.3-Errata02
+  style: v3
+- id: oasis.standard.0009
+  identifier:
+    _type: pubid:oasis:standard
+    original: ECF v4.01
+    number: ECF v4.01
+  representations:
+    human: OASIS ECF v4.01
+    urn: urn:oasis:ECF%20v4.01
+  style: v3
+- id: oasis.standard.0010
+  identifier:
+    _type: pubid:oasis:standard
+    original: ECF-v5.0-CS01
+    number: ECF
+    version: v5.0
+    stage: CS01
+  representations:
+    human: OASIS ECF-v5.0-CS01
+    urn: urn:oasis:ECF-v5.0-CS01
+  style: v3
+- id: oasis.standard.0011
+  identifier:
+    _type: pubid:oasis:standard
+    original: EDXL
+    number: EDXL
+  representations:
+    human: OASIS EDXL
+    urn: urn:oasis:EDXL
+  style: v3
+- id: oasis.standard.0012
+  identifier:
+    _type: pubid:oasis:standard
+    original: OData
+    number: OData
+  representations:
+    human: OASIS OData
+    urn: urn:oasis:OData
+  style: v3
+- id: oasis.standard.0013
+  identifier:
+    _type: pubid:oasis:standard
+    original: OData-JSON-Format-v4.0
+    number: OData-JSON-Format
+    version: v4.0
+  representations:
+    human: OASIS OData-JSON-Format-v4.0
+    urn: urn:oasis:OData-JSON-Format-v4.0
+  style: v3
+- id: oasis.standard.0014
+  identifier:
+    _type: pubid:oasis:standard
+    original: OSLC
+    number: OSLC
+  representations:
+    human: OASIS OSLC
+    urn: urn:oasis:OSLC
+  style: v3
+- id: oasis.standard.0015
+  identifier:
+    _type: pubid:oasis:standard
+    original: OSLC-AM-2.1-CS01-Pt1
+    number: OSLC-AM
+    version: '2.1'
+    stage: CS01
+    part: Pt1
+  representations:
+    human: OASIS OSLC-AM-2.1-CS01-Pt1
+    urn: urn:oasis:OSLC-AM-2.1-CS01-Pt1
+  style: v3
+- id: oasis.standard.0016
+  identifier:
+    _type: pubid:oasis:standard
+    original: OSLC-AM-3.0-Part1-PS01
+    number: OSLC-AM
+    version: '3.0'
+    stage: PS01
+    part: Part1
+  representations:
+    human: OASIS OSLC-AM-3.0-Part1-PS01
+    urn: urn:oasis:OSLC-AM-3.0-Part1-PS01
+  style: v3
+- id: oasis.standard.0017
+  identifier:
+    _type: pubid:oasis:standard
+    original: OSLC-CM-3.0-Part1-CS02
+    number: OSLC-CM
+    version: '3.0'
+    stage: CS02
+    part: Part1
+  representations:
+    human: OASIS OSLC-CM-3.0-Part1-CS02
+    urn: urn:oasis:OSLC-CM-3.0-Part1-CS02
+  style: v3
+- id: oasis.standard.0018
+  identifier:
+    _type: pubid:oasis:standard
+    original: OSLC-CM-v1.0
+    number: OSLC-CM
+    version: v1.0
+  representations:
+    human: OASIS OSLC-CM-v1.0
+    urn: urn:oasis:OSLC-CM-v1.0
+  style: v3
+- id: oasis.standard.0019
+  identifier:
+    _type: pubid:oasis:standard
+    original: OSLC-CoreShapes-3.0-PS01-Pt8
+    number: OSLC-CoreShapes
+    version: '3.0'
+    stage: PS01
+    part: Pt8
+  representations:
+    human: OASIS OSLC-CoreShapes-3.0-PS01-Pt8
+    urn: urn:oasis:OSLC-CoreShapes-3.0-PS01-Pt8
+  style: v3
+- id: oasis.standard.0020
+  identifier:
+    _type: pubid:oasis:standard
+    original: OSLC-Discovery-3.0-PS01-Pt2
+    number: OSLC-Discovery
+    version: '3.0'
+    stage: PS01
+    part: Pt2
+  representations:
+    human: OASIS OSLC-Discovery-3.0-PS01-Pt2
+    urn: urn:oasis:OSLC-Discovery-3.0-PS01-Pt2
+  style: v3
+- id: oasis.standard.0021
+  identifier:
+    _type: pubid:oasis:standard
+    original: OSLC-PROMCODE-v1.0-Shapes-CS02-Pt3
+    number: OSLC-PROMCODE
+    version: v1.0
+    stage: CS02
+    part: Pt3
+    label: Shapes
+  representations:
+    human: OASIS OSLC-PROMCODE-v1.0-Shapes-CS02-Pt3
+    urn: urn:oasis:OSLC-PROMCODE-v1.0-Shapes-CS02-Pt3
+  style: v3
+- id: oasis.standard.0022
+  identifier:
+    _type: pubid:oasis:standard
+    original: OSLC-RM-2.1-Part2-PS01
+    number: OSLC-RM
+    version: '2.1'
+    stage: PS01
+    part: Part2
+  representations:
+    human: OASIS OSLC-RM-2.1-Part2-PS01
+    urn: urn:oasis:OSLC-RM-2.1-Part2-PS01
+  style: v3
+- id: oasis.standard.0023
+  identifier:
+    _type: pubid:oasis:standard
+    original: OSLC-TRS-v3.0-PS02
+    number: OSLC-TRS
+    version: v3.0
+    stage: PS02
+  representations:
+    human: OASIS OSLC-TRS-v3.0-PS02
+    urn: urn:oasis:OSLC-TRS-v3.0-PS02
+  style: v3
+- id: oasis.standard.0024
+  identifier:
+    _type: pubid:oasis:standard
+    original: OSLC-am-2.1-Part2-CS01
+    number: OSLC-am
+    version: '2.1'
+    stage: CS01
+    part: Part2
+  representations:
+    human: OASIS OSLC-am-2.1-Part2-CS01
+    urn: urn:oasis:OSLC-am-2.1-Part2-CS01
+  style: v3
+- id: oasis.standard.0025
+  identifier:
+    _type: pubid:oasis:standard
+    original: OpenC2-MQTT-v1.0] -CS01
+    number: 'OpenC2-MQTT-v1.0] '
+    stage: CS01
+  representations:
+    human: OASIS OpenC2-MQTT-v1.0] -CS01
+    urn: urn:oasis:OpenC2-MQTT-v1.0%5D%20-CS01
+  style: v3
+- id: oasis.standard.0026
+  identifier:
+    _type: pubid:oasis:standard
+    original: OpenDocument-v1.1
+    number: OpenDocument
+    version: v1.1
+  representations:
+    human: OASIS OpenDocument-v1.1
+    urn: urn:oasis:OpenDocument-v1.1
+  style: v3
+- id: oasis.standard.0027
+  identifier:
+    _type: pubid:oasis:standard
+    original: OpenDocument-v1.3-part1
+    number: OpenDocument
+    version: v1.3
+    part: part1
+  representations:
+    human: OASIS OpenDocument-v1.3-part1
+    urn: urn:oasis:OpenDocument-v1.3-part1
+  style: v3
+- id: oasis.standard.0028
+  identifier:
+    _type: pubid:oasis:standard
+    original: PKCS11-Profiles-v2.40
+    number: PKCS11-Profiles
+    version: v2.40
+  representations:
+    human: OASIS PKCS11-Profiles-v2.40
+    urn: urn:oasis:PKCS11-Profiles-v2.40
+  style: v3
+- id: oasis.standard.0029
+  identifier:
+    _type: pubid:oasis:standard
+    original: PLCS v1.0-CS01
+    number: PLCS v1.0
+    stage: CS01
+  representations:
+    human: OASIS PLCS v1.0-CS01
+    urn: urn:oasis:PLCS%20v1.0-CS01
+  style: v3
+- id: oasis.standard.0030
+  identifier:
+    _type: pubid:oasis:standard
+    original: SAML
+    number: SAML
+  representations:
+    human: OASIS SAML
+    urn: urn:oasis:SAML
+  style: v3
+- id: oasis.standard.0031
+  identifier:
+    _type: pubid:oasis:standard
+    original: SAML-QR
+    number: SAML-QR
+  representations:
+    human: OASIS SAML-QR
+    urn: urn:oasis:SAML-QR
+  style: v3
+- id: oasis.standard.0032
+  identifier:
+    _type: pubid:oasis:standard
+    original: SAML-v1.1
+    number: SAML
+    version: v1.1
+  representations:
+    human: OASIS SAML-v1.1
+    urn: urn:oasis:SAML-v1.1
+  style: v3
+- id: oasis.standard.0033
+  identifier:
+    _type: pubid:oasis:standard
+    original: SARIF-v2.1.0
+    number: SARIF
+    version: v2.1.0
+  representations:
+    human: OASIS SARIF-v2.1.0
+    urn: urn:oasis:SARIF-v2.1.0
+  style: v3
+- id: oasis.standard.0034
+  identifier:
+    _type: pubid:oasis:standard
+    original: STIX-v1.2.1-Common-CS01-Pt2
+    number: STIX
+    version: v1.2.1
+    stage: CS01
+    part: Pt2
+    label: Common
+  representations:
+    human: OASIS STIX-v1.2.1-Common-CS01-Pt2
+    urn: urn:oasis:STIX-v1.2.1-Common-CS01-Pt2
+  style: v3
+- id: oasis.standard.0035
+  identifier:
+    _type: pubid:oasis:standard
+    original: STIX-v1.2.1-Report-CS01-Pt11
+    number: STIX
+    version: v1.2.1
+    stage: CS01
+    part: Pt11
+    label: Report
+  representations:
+    human: OASIS STIX-v1.2.1-Report-CS01-Pt11
+    urn: urn:oasis:STIX-v1.2.1-Report-CS01-Pt11
+  style: v3
+- id: oasis.standard.0036
+  identifier:
+    _type: pubid:oasis:standard
+    original: STIX-v2.0-Pt1-Core-CS01
+    number: STIX
+    version: v2.0
+    stage: CS01
+    part: Pt1
+    label: Core
+  representations:
+    human: OASIS STIX-v2.0-Pt1-Core-CS01
+    urn: urn:oasis:STIX-v2.0-Pt1-Core-CS01
+  style: v3
+- id: oasis.standard.0037
+  identifier:
+    _type: pubid:oasis:standard
+    original: UBL-2.3
+    number: UBL
+    version: '2.3'
+  representations:
+    human: OASIS UBL-2.3
+    urn: urn:oasis:UBL-2.3
+  style: v3
+- id: oasis.standard.0038
+  identifier:
+    _type: pubid:oasis:standard
+    original: UBL-v2.4
+    number: UBL
+    version: v2.4
+  representations:
+    human: OASIS UBL-v2.4
+    urn: urn:oasis:UBL-v2.4
+  style: v3
+- id: oasis.standard.0039
+  identifier:
+    _type: pubid:oasis:standard
+    original: WSDM-v1.1
+    number: WSDM
+    version: v1.1
+  representations:
+    human: OASIS WSDM-v1.1
+    urn: urn:oasis:WSDM-v1.1
+  style: v3
+- id: oasis.standard.0040
+  identifier:
+    _type: pubid:oasis:standard
+    original: WSS
+    number: WSS
+  representations:
+    human: OASIS WSS
+    urn: urn:oasis:WSS
+  style: v3
+- id: oasis.standard.0041
+  identifier:
+    _type: pubid:oasis:standard
+    original: amqp-core
+    number: amqp-core
+  representations:
+    human: OASIS amqp-core
+    urn: urn:oasis:amqp-core
+  style: v3
+- id: oasis.standard.0042
+  identifier:
+    _type: pubid:oasis:standard
+    original: amqp-core-overview-v1.0-Pt0
+    number: amqp-core-overview
+    version: v1.0
+    part: Pt0
+  representations:
+    human: OASIS amqp-core-overview-v1.0-Pt0
+    urn: urn:oasis:amqp-core-overview-v1.0-Pt0
+  style: v3
+- id: oasis.standard.0043
+  identifier:
+    _type: pubid:oasis:standard
+    original: cals-table-model
+    number: cals-table-model
+  representations:
+    human: OASIS cals-table-model
+    urn: urn:oasis:cals-table-model
+  style: v3
+- id: oasis.standard.0044
+  identifier:
+    _type: pubid:oasis:standard
+    original: xacml-3.0-nested-ent-v1.0-CS01
+    number: xacml
+    version: '3.0'
+    stage: CS01
+    label: nested-ent
+  representations:
+    human: OASIS xacml-3.0-nested-ent-v1.0-CS01
+    urn: urn:oasis:xacml-3.0-nested-ent-v1.0-CS01
+  style: v3
+- id: oasis.standard.0045
+  identifier:
+    _type: pubid:oasis:standard
+    original: xacml-rest-v1.1
+    number: xacml-rest
+    version: v1.1
+  representations:
+    human: OASIS xacml-rest-v1.1
+    urn: urn:oasis:xacml-rest-v1.1
+  style: v3

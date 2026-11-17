@@ -1,0 +1,19 @@
+---
+- id: w3c.candidate_recommendation_draft.0004
+  identifier:
+    _type: pubid:w3c:candidate-recommendation-draft
+    number: accelerometer
+    date: '20250212'
+  representations:
+    human: W3C CRD-accelerometer-20250212
+    urn: urn:w3c:crd:accelerometer:20250212
+  style: v3
+- id: w3c.candidate_recommendation_draft.0005
+  identifier:
+    _type: pubid:w3c:candidate-recommendation-draft
+    number: css-backgrounds-3
+    date: '20210726'
+  representations:
+    human: W3C CRD-css-backgrounds-3-20210726
+    urn: urn:w3c:crd:css-backgrounds-3:20210726
+  style: v3

@@ -1,0 +1,31 @@
+---
+- id: ogc.neg.document.0001
+  input: '25'
+  expect:
+    error:
+      code: unclassified
+- id: ogc.neg.document.0002
+  input: 25-023-1
+  expect:
+    error:
+      code: unclassified
+- id: ogc.neg.document.0003
+  input: OGC25-023
+  expect:
+    error:
+      code: unclassified
+- id: ogc.neg.document.0004
+  input: 25-abc
+  expect:
+    error:
+      code: unclassified
+- id: ogc.neg.document.0005
+  input: abc-023
+  expect:
+    error:
+      code: unclassified
+- id: ogc.neg.document.0006
+  input: "-023"
+  expect:
+    error:
+      code: unclassified

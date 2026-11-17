@@ -35,15 +35,21 @@ jobs:
           ref: ${{ steps.pins.outputs.testsuite_ref }}
           path: pubid-testsuite
 
-      - name: Vendored copies match the pinned refs (drift gate)
+      - name: Vendored artifacts match the pinned grammar ref (drift gate)
         run: |
-          cmp pubid-grammar/artifacts/doi.json crates/pubid-core/artifacts/doi.json
-          cmp pubid-testsuite/tests/doi/resource.yaml \
-              crates/pubid-core/fixtures/testsuite/doi/resource.yaml
-          cmp pubid-testsuite/tests/doi/_negative.yaml \
-              crates/pubid-core/fixtures/testsuite/doi/_negative.yaml
-          cmp pubid-testsuite/tests/doi/_status.yaml \
-              crates/pubid-core/fixtures/testsuite/doi/_status.yaml
+          for flavor in doi isbn iana oasis xsf un ogc ietf w3c; do
+            cmp "pubid-grammar/artifacts/$flavor.json" \
+                "crates/pubid-core/artifacts/$flavor.json"
+          done
+
+      - name: Vendored slices match the pinned testsuite ref (drift gate)
+        run: |
+          for dir in crates/pubid-core/fixtures/testsuite/*/; do
+            flavor=$(basename "$dir")
+            for file in "$dir"*.yaml; do
+              cmp "$file" "pubid-testsuite/tests/$flavor/$(basename "$file")"
+            done
+          done
 
       - uses: dtolnay/rust-toolchain@stable
         with:
@@ -60,16 +66,19 @@ jobs:
       - name: Build
         run: cargo build --all-targets
 
-      - name: Tests (vendored artifact + smoke slice)
+      - name: Tests (vendored artifacts + slices)
         run: cargo test
 
-      - name: Conformance (vendored slice)
-        run: cargo run -q -p conformance -- --flavor doi
+      - name: Conformance (vendored slices, every ported flavor)
+        run: cargo run -q -p conformance -- --all
 
-      - name: Conformance (pinned testsuite checkout)
-        run: cargo run -q -p conformance -- --testsuite pubid-testsuite/tests --flavor doi
+      - name: Conformance (pinned testsuite checkout, every ported flavor)
+        run: cargo run -q -p conformance -- --testsuite pubid-testsuite/tests --all
 
       - name: CLI smoke
         run: |
           cargo run -q -p pubid-cli -- parse doi "doi:10.1000/182"
+          cargo run -q -p pubid-cli -- parse isbn "ISBN 978-0-306-40615-7"
+          cargo run -q -p pubid-cli -- parse ogc "OGC 06-121r9"
+          cargo run -q -p pubid-cli -- parse ietf "draft-ietf-httpbis-messaging-19"
           cargo run -q -p pubid-cli -- smoke

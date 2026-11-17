@@ -1,0 +1,19 @@
+---
+- id: w3c.draft_note.0006
+  identifier:
+    _type: pubid:w3c:draft-note
+    number: webcodecs-alaw-codec-registration
+    date: '20230821'
+  representations:
+    human: W3C DNOTE-webcodecs-alaw-codec-registration-20230821
+    urn: urn:w3c:dnote:webcodecs-alaw-codec-registration:20230821
+  style: v3
+- id: w3c.draft_note.0007
+  identifier:
+    _type: pubid:w3c:draft-note
+    number: webcodecs-flac-codec-registration
+    date: '20240419'
+  representations:
+    human: W3C DNOTE-webcodecs-flac-codec-registration-20240419
+    urn: urn:w3c:dnote:webcodecs-flac-codec-registration:20240419
+  style: v3

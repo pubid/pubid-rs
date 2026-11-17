@@ -1,0 +1,10 @@
+---
+- id: w3c.proposed_edited_recommendation.0015
+  identifier:
+    _type: pubid:w3c:proposed-edited-recommendation
+    number: rif-dtb
+    date: '20121211'
+  representations:
+    human: W3C PER-rif-dtb-20121211
+    urn: urn:w3c:per:rif-dtb:20121211
+  style: v3

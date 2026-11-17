@@ -1,0 +1,745 @@
+---
+- id: ietf.std.0290
+  identifier:
+    _type: pubid:ietf:std
+    number: '10'
+  representations:
+    human: STD 10
+    urn: urn:ietf:std:10
+  style: v3
+- id: ietf.std.0291
+  identifier:
+    _type: pubid:ietf:std
+    number: '100'
+  representations:
+    human: STD 100
+    urn: urn:ietf:std:100
+  style: v3
+- id: ietf.std.0292
+  identifier:
+    _type: pubid:ietf:std
+    number: '101'
+  representations:
+    human: STD 101
+    urn: urn:ietf:std:101
+  style: v3
+- id: ietf.std.0293
+  identifier:
+    _type: pubid:ietf:std
+    number: '102'
+  representations:
+    human: STD 102
+    urn: urn:ietf:std:102
+  style: v3
+- id: ietf.std.0294
+  identifier:
+    _type: pubid:ietf:std
+    number: '103'
+  representations:
+    human: STD 103
+    urn: urn:ietf:std:103
+  style: v3
+- id: ietf.std.0295
+  identifier:
+    _type: pubid:ietf:std
+    number: '11'
+  representations:
+    human: STD 11
+    urn: urn:ietf:std:11
+  style: v3
+- id: ietf.std.0296
+  identifier:
+    _type: pubid:ietf:std
+    number: '13'
+  representations:
+    human: STD 13
+    urn: urn:ietf:std:13
+  style: v3
+- id: ietf.std.0297
+  identifier:
+    _type: pubid:ietf:std
+    number: '16'
+  representations:
+    human: STD 16
+    urn: urn:ietf:std:16
+  style: v3
+- id: ietf.std.0298
+  identifier:
+    _type: pubid:ietf:std
+    number: '17'
+  representations:
+    human: STD 17
+    urn: urn:ietf:std:17
+  style: v3
+- id: ietf.std.0299
+  identifier:
+    _type: pubid:ietf:std
+    number: '19'
+  representations:
+    human: STD 19
+    urn: urn:ietf:std:19
+  style: v3
+- id: ietf.std.0300
+  identifier:
+    _type: pubid:ietf:std
+    number: '20'
+  representations:
+    human: STD 20
+    urn: urn:ietf:std:20
+  style: v3
+- id: ietf.std.0301
+  identifier:
+    _type: pubid:ietf:std
+    number: '21'
+  representations:
+    human: STD 21
+    urn: urn:ietf:std:21
+  style: v3
+- id: ietf.std.0302
+  identifier:
+    _type: pubid:ietf:std
+    number: '22'
+  representations:
+    human: STD 22
+    urn: urn:ietf:std:22
+  style: v3
+- id: ietf.std.0303
+  identifier:
+    _type: pubid:ietf:std
+    number: '23'
+  representations:
+    human: STD 23
+    urn: urn:ietf:std:23
+  style: v3
+- id: ietf.std.0304
+  identifier:
+    _type: pubid:ietf:std
+    number: '24'
+  representations:
+    human: STD 24
+    urn: urn:ietf:std:24
+  style: v3
+- id: ietf.std.0305
+  identifier:
+    _type: pubid:ietf:std
+    number: '25'
+  representations:
+    human: STD 25
+    urn: urn:ietf:std:25
+  style: v3
+- id: ietf.std.0306
+  identifier:
+    _type: pubid:ietf:std
+    number: '26'
+  representations:
+    human: STD 26
+    urn: urn:ietf:std:26
+  style: v3
+- id: ietf.std.0307
+  identifier:
+    _type: pubid:ietf:std
+    number: '27'
+  representations:
+    human: STD 27
+    urn: urn:ietf:std:27
+  style: v3
+- id: ietf.std.0308
+  identifier:
+    _type: pubid:ietf:std
+    number: '28'
+  representations:
+    human: STD 28
+    urn: urn:ietf:std:28
+  style: v3
+- id: ietf.std.0309
+  identifier:
+    _type: pubid:ietf:std
+    number: '29'
+  representations:
+    human: STD 29
+    urn: urn:ietf:std:29
+  style: v3
+- id: ietf.std.0310
+  identifier:
+    _type: pubid:ietf:std
+    number: '3'
+  representations:
+    human: STD 3
+    urn: urn:ietf:std:3
+  style: v3
+- id: ietf.std.0311
+  identifier:
+    _type: pubid:ietf:std
+    number: '30'
+  representations:
+    human: STD 30
+    urn: urn:ietf:std:30
+  style: v3
+- id: ietf.std.0312
+  identifier:
+    _type: pubid:ietf:std
+    number: '31'
+  representations:
+    human: STD 31
+    urn: urn:ietf:std:31
+  style: v3
+- id: ietf.std.0313
+  identifier:
+    _type: pubid:ietf:std
+    number: '32'
+  representations:
+    human: STD 32
+    urn: urn:ietf:std:32
+  style: v3
+- id: ietf.std.0314
+  identifier:
+    _type: pubid:ietf:std
+    number: '33'
+  representations:
+    human: STD 33
+    urn: urn:ietf:std:33
+  style: v3
+- id: ietf.std.0315
+  identifier:
+    _type: pubid:ietf:std
+    number: '35'
+  representations:
+    human: STD 35
+    urn: urn:ietf:std:35
+  style: v3
+- id: ietf.std.0316
+  identifier:
+    _type: pubid:ietf:std
+    number: '36'
+  representations:
+    human: STD 36
+    urn: urn:ietf:std:36
+  style: v3
+- id: ietf.std.0317
+  identifier:
+    _type: pubid:ietf:std
+    number: '37'
+  representations:
+    human: STD 37
+    urn: urn:ietf:std:37
+  style: v3
+- id: ietf.std.0318
+  identifier:
+    _type: pubid:ietf:std
+    number: '38'
+  representations:
+    human: STD 38
+    urn: urn:ietf:std:38
+  style: v3
+- id: ietf.std.0319
+  identifier:
+    _type: pubid:ietf:std
+    number: '40'
+  representations:
+    human: STD 40
+    urn: urn:ietf:std:40
+  style: v3
+- id: ietf.std.0320
+  identifier:
+    _type: pubid:ietf:std
+    number: '41'
+  representations:
+    human: STD 41
+    urn: urn:ietf:std:41
+  style: v3
+- id: ietf.std.0321
+  identifier:
+    _type: pubid:ietf:std
+    number: '42'
+  representations:
+    human: STD 42
+    urn: urn:ietf:std:42
+  style: v3
+- id: ietf.std.0322
+  identifier:
+    _type: pubid:ietf:std
+    number: '43'
+  representations:
+    human: STD 43
+    urn: urn:ietf:std:43
+  style: v3
+- id: ietf.std.0323
+  identifier:
+    _type: pubid:ietf:std
+    number: '44'
+  representations:
+    human: STD 44
+    urn: urn:ietf:std:44
+  style: v3
+- id: ietf.std.0324
+  identifier:
+    _type: pubid:ietf:std
+    number: '45'
+  representations:
+    human: STD 45
+    urn: urn:ietf:std:45
+  style: v3
+- id: ietf.std.0325
+  identifier:
+    _type: pubid:ietf:std
+    number: '46'
+  representations:
+    human: STD 46
+    urn: urn:ietf:std:46
+  style: v3
+- id: ietf.std.0326
+  identifier:
+    _type: pubid:ietf:std
+    number: '47'
+  representations:
+    human: STD 47
+    urn: urn:ietf:std:47
+  style: v3
+- id: ietf.std.0327
+  identifier:
+    _type: pubid:ietf:std
+    number: '48'
+  representations:
+    human: STD 48
+    urn: urn:ietf:std:48
+  style: v3
+- id: ietf.std.0328
+  identifier:
+    _type: pubid:ietf:std
+    number: '49'
+  representations:
+    human: STD 49
+    urn: urn:ietf:std:49
+  style: v3
+- id: ietf.std.0329
+  identifier:
+    _type: pubid:ietf:std
+    number: '5'
+  representations:
+    human: STD 5
+    urn: urn:ietf:std:5
+  style: v3
+- id: ietf.std.0330
+  identifier:
+    _type: pubid:ietf:std
+    number: '51'
+  representations:
+    human: STD 51
+    urn: urn:ietf:std:51
+  style: v3
+- id: ietf.std.0331
+  identifier:
+    _type: pubid:ietf:std
+    number: '52'
+  representations:
+    human: STD 52
+    urn: urn:ietf:std:52
+  style: v3
+- id: ietf.std.0332
+  identifier:
+    _type: pubid:ietf:std
+    number: '53'
+  representations:
+    human: STD 53
+    urn: urn:ietf:std:53
+  style: v3
+- id: ietf.std.0333
+  identifier:
+    _type: pubid:ietf:std
+    number: '54'
+  representations:
+    human: STD 54
+    urn: urn:ietf:std:54
+  style: v3
+- id: ietf.std.0334
+  identifier:
+    _type: pubid:ietf:std
+    number: '55'
+  representations:
+    human: STD 55
+    urn: urn:ietf:std:55
+  style: v3
+- id: ietf.std.0335
+  identifier:
+    _type: pubid:ietf:std
+    number: '56'
+  representations:
+    human: STD 56
+    urn: urn:ietf:std:56
+  style: v3
+- id: ietf.std.0336
+  identifier:
+    _type: pubid:ietf:std
+    number: '57'
+  representations:
+    human: STD 57
+    urn: urn:ietf:std:57
+  style: v3
+- id: ietf.std.0337
+  identifier:
+    _type: pubid:ietf:std
+    number: '58'
+  representations:
+    human: STD 58
+    urn: urn:ietf:std:58
+  style: v3
+- id: ietf.std.0338
+  identifier:
+    _type: pubid:ietf:std
+    number: '59'
+  representations:
+    human: STD 59
+    urn: urn:ietf:std:59
+  style: v3
+- id: ietf.std.0339
+  identifier:
+    _type: pubid:ietf:std
+    number: '6'
+  representations:
+    human: STD 6
+    urn: urn:ietf:std:6
+  style: v3
+- id: ietf.std.0340
+  identifier:
+    _type: pubid:ietf:std
+    number: '60'
+  representations:
+    human: STD 60
+    urn: urn:ietf:std:60
+  style: v3
+- id: ietf.std.0341
+  identifier:
+    _type: pubid:ietf:std
+    number: '61'
+  representations:
+    human: STD 61
+    urn: urn:ietf:std:61
+  style: v3
+- id: ietf.std.0342
+  identifier:
+    _type: pubid:ietf:std
+    number: '62'
+  representations:
+    human: STD 62
+    urn: urn:ietf:std:62
+  style: v3
+- id: ietf.std.0343
+  identifier:
+    _type: pubid:ietf:std
+    number: '63'
+  representations:
+    human: STD 63
+    urn: urn:ietf:std:63
+  style: v3
+- id: ietf.std.0344
+  identifier:
+    _type: pubid:ietf:std
+    number: '64'
+  representations:
+    human: STD 64
+    urn: urn:ietf:std:64
+  style: v3
+- id: ietf.std.0345
+  identifier:
+    _type: pubid:ietf:std
+    number: '65'
+  representations:
+    human: STD 65
+    urn: urn:ietf:std:65
+  style: v3
+- id: ietf.std.0346
+  identifier:
+    _type: pubid:ietf:std
+    number: '66'
+  representations:
+    human: STD 66
+    urn: urn:ietf:std:66
+  style: v3
+- id: ietf.std.0347
+  identifier:
+    _type: pubid:ietf:std
+    number: '67'
+  representations:
+    human: STD 67
+    urn: urn:ietf:std:67
+  style: v3
+- id: ietf.std.0348
+  identifier:
+    _type: pubid:ietf:std
+    number: '68'
+  representations:
+    human: STD 68
+    urn: urn:ietf:std:68
+  style: v3
+- id: ietf.std.0349
+  identifier:
+    _type: pubid:ietf:std
+    number: '69'
+  representations:
+    human: STD 69
+    urn: urn:ietf:std:69
+  style: v3
+- id: ietf.std.0350
+  identifier:
+    _type: pubid:ietf:std
+    number: '7'
+  representations:
+    human: STD 7
+    urn: urn:ietf:std:7
+  style: v3
+- id: ietf.std.0351
+  identifier:
+    _type: pubid:ietf:std
+    number: '70'
+  representations:
+    human: STD 70
+    urn: urn:ietf:std:70
+  style: v3
+- id: ietf.std.0352
+  identifier:
+    _type: pubid:ietf:std
+    number: '71'
+  representations:
+    human: STD 71
+    urn: urn:ietf:std:71
+  style: v3
+- id: ietf.std.0353
+  identifier:
+    _type: pubid:ietf:std
+    number: '72'
+  representations:
+    human: STD 72
+    urn: urn:ietf:std:72
+  style: v3
+- id: ietf.std.0354
+  identifier:
+    _type: pubid:ietf:std
+    number: '73'
+  representations:
+    human: STD 73
+    urn: urn:ietf:std:73
+  style: v3
+- id: ietf.std.0355
+  identifier:
+    _type: pubid:ietf:std
+    number: '74'
+  representations:
+    human: STD 74
+    urn: urn:ietf:std:74
+  style: v3
+- id: ietf.std.0356
+  identifier:
+    _type: pubid:ietf:std
+    number: '75'
+  representations:
+    human: STD 75
+    urn: urn:ietf:std:75
+  style: v3
+- id: ietf.std.0357
+  identifier:
+    _type: pubid:ietf:std
+    number: '76'
+  representations:
+    human: STD 76
+    urn: urn:ietf:std:76
+  style: v3
+- id: ietf.std.0358
+  identifier:
+    _type: pubid:ietf:std
+    number: '77'
+  representations:
+    human: STD 77
+    urn: urn:ietf:std:77
+  style: v3
+- id: ietf.std.0359
+  identifier:
+    _type: pubid:ietf:std
+    number: '78'
+  representations:
+    human: STD 78
+    urn: urn:ietf:std:78
+  style: v3
+- id: ietf.std.0360
+  identifier:
+    _type: pubid:ietf:std
+    number: '79'
+  representations:
+    human: STD 79
+    urn: urn:ietf:std:79
+  style: v3
+- id: ietf.std.0361
+  identifier:
+    _type: pubid:ietf:std
+    number: '8'
+  representations:
+    human: STD 8
+    urn: urn:ietf:std:8
+  style: v3
+- id: ietf.std.0362
+  identifier:
+    _type: pubid:ietf:std
+    number: '80'
+  representations:
+    human: STD 80
+    urn: urn:ietf:std:80
+  style: v3
+- id: ietf.std.0363
+  identifier:
+    _type: pubid:ietf:std
+    number: '81'
+  representations:
+    human: STD 81
+    urn: urn:ietf:std:81
+  style: v3
+- id: ietf.std.0364
+  identifier:
+    _type: pubid:ietf:std
+    number: '82'
+  representations:
+    human: STD 82
+    urn: urn:ietf:std:82
+  style: v3
+- id: ietf.std.0365
+  identifier:
+    _type: pubid:ietf:std
+    number: '83'
+  representations:
+    human: STD 83
+    urn: urn:ietf:std:83
+  style: v3
+- id: ietf.std.0366
+  identifier:
+    _type: pubid:ietf:std
+    number: '84'
+  representations:
+    human: STD 84
+    urn: urn:ietf:std:84
+  style: v3
+- id: ietf.std.0367
+  identifier:
+    _type: pubid:ietf:std
+    number: '85'
+  representations:
+    human: STD 85
+    urn: urn:ietf:std:85
+  style: v3
+- id: ietf.std.0368
+  identifier:
+    _type: pubid:ietf:std
+    number: '86'
+  representations:
+    human: STD 86
+    urn: urn:ietf:std:86
+  style: v3
+- id: ietf.std.0369
+  identifier:
+    _type: pubid:ietf:std
+    number: '87'
+  representations:
+    human: STD 87
+    urn: urn:ietf:std:87
+  style: v3
+- id: ietf.std.0370
+  identifier:
+    _type: pubid:ietf:std
+    number: '88'
+  representations:
+    human: STD 88
+    urn: urn:ietf:std:88
+  style: v3
+- id: ietf.std.0371
+  identifier:
+    _type: pubid:ietf:std
+    number: '89'
+  representations:
+    human: STD 89
+    urn: urn:ietf:std:89
+  style: v3
+- id: ietf.std.0372
+  identifier:
+    _type: pubid:ietf:std
+    number: '9'
+  representations:
+    human: STD 9
+    urn: urn:ietf:std:9
+  style: v3
+- id: ietf.std.0373
+  identifier:
+    _type: pubid:ietf:std
+    number: '90'
+  representations:
+    human: STD 90
+    urn: urn:ietf:std:90
+  style: v3
+- id: ietf.std.0374
+  identifier:
+    _type: pubid:ietf:std
+    number: '91'
+  representations:
+    human: STD 91
+    urn: urn:ietf:std:91
+  style: v3
+- id: ietf.std.0375
+  identifier:
+    _type: pubid:ietf:std
+    number: '92'
+  representations:
+    human: STD 92
+    urn: urn:ietf:std:92
+  style: v3
+- id: ietf.std.0376
+  identifier:
+    _type: pubid:ietf:std
+    number: '93'
+  representations:
+    human: STD 93
+    urn: urn:ietf:std:93
+  style: v3
+- id: ietf.std.0377
+  identifier:
+    _type: pubid:ietf:std
+    number: '94'
+  representations:
+    human: STD 94
+    urn: urn:ietf:std:94
+  style: v3
+- id: ietf.std.0378
+  identifier:
+    _type: pubid:ietf:std
+    number: '95'
+  representations:
+    human: STD 95
+    urn: urn:ietf:std:95
+  style: v3
+- id: ietf.std.0379
+  identifier:
+    _type: pubid:ietf:std
+    number: '96'
+  representations:
+    human: STD 96
+    urn: urn:ietf:std:96
+  style: v3
+- id: ietf.std.0380
+  identifier:
+    _type: pubid:ietf:std
+    number: '97'
+  representations:
+    human: STD 97
+    urn: urn:ietf:std:97
+  style: v3
+- id: ietf.std.0381
+  identifier:
+    _type: pubid:ietf:std
+    number: '98'
+  representations:
+    human: STD 98
+    urn: urn:ietf:std:98
+  style: v3
+- id: ietf.std.0382
+  identifier:
+    _type: pubid:ietf:std
+    number: '99'
+  representations:
+    human: STD 99
+    urn: urn:ietf:std:99
+  style: v3

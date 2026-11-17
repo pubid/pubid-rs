@@ -1,0 +1,137 @@
+---
+- id: ietf.rfc.0273
+  identifier:
+    _type: pubid:ietf:rfc
+    number: '1'
+  representations:
+    human: RFC 1
+    urn: urn:ietf:rfc:1
+  style: v3
+- id: ietf.rfc.0274
+  identifier:
+    _type: pubid:ietf:rfc
+    number: '104'
+  representations:
+    human: RFC 104
+    urn: urn:ietf:rfc:104
+  style: v3
+- id: ietf.rfc.0275
+  identifier:
+    _type: pubid:ietf:rfc
+    number: '1068'
+  representations:
+    human: RFC 1068
+    urn: urn:ietf:rfc:1068
+  style: v3
+- id: ietf.rfc.0276
+  identifier:
+    _type: pubid:ietf:rfc
+    number: '1872'
+  representations:
+    human: RFC 1872
+    urn: urn:ietf:rfc:1872
+  style: v3
+- id: ietf.rfc.0277
+  identifier:
+    _type: pubid:ietf:rfc
+    number: '2'
+  representations:
+    human: RFC 2
+    urn: urn:ietf:rfc:2
+  style: v3
+- id: ietf.rfc.0278
+  identifier:
+    _type: pubid:ietf:rfc
+    number: '2190'
+  representations:
+    human: RFC 2190
+    urn: urn:ietf:rfc:2190
+  style: v3
+- id: ietf.rfc.0279
+  identifier:
+    _type: pubid:ietf:rfc
+    number: '2772'
+  representations:
+    human: RFC 2772
+    urn: urn:ietf:rfc:2772
+  style: v3
+- id: ietf.rfc.0280
+  identifier:
+    _type: pubid:ietf:rfc
+    number: '3681'
+  representations:
+    human: RFC 3681
+    urn: urn:ietf:rfc:3681
+  style: v3
+- id: ietf.rfc.0281
+  identifier:
+    _type: pubid:ietf:rfc
+    number: '4604'
+  representations:
+    human: RFC 4604
+    urn: urn:ietf:rfc:4604
+  style: v3
+- id: ietf.rfc.0282
+  identifier:
+    _type: pubid:ietf:rfc
+    number: '538'
+  representations:
+    human: RFC 538
+    urn: urn:ietf:rfc:538
+  style: v3
+- id: ietf.rfc.0283
+  identifier:
+    _type: pubid:ietf:rfc
+    number: '5533'
+  representations:
+    human: RFC 5533
+    urn: urn:ietf:rfc:5533
+  style: v3
+- id: ietf.rfc.0284
+  identifier:
+    _type: pubid:ietf:rfc
+    number: '6457'
+  representations:
+    human: RFC 6457
+    urn: urn:ietf:rfc:6457
+  style: v3
+- id: ietf.rfc.0285
+  identifier:
+    _type: pubid:ietf:rfc
+    number: '7376'
+  representations:
+    human: RFC 7376
+    urn: urn:ietf:rfc:7376
+  style: v3
+- id: ietf.rfc.0286
+  identifier:
+    _type: pubid:ietf:rfc
+    number: '8277'
+  representations:
+    human: RFC 8277
+    urn: urn:ietf:rfc:8277
+  style: v3
+- id: ietf.rfc.0287
+  identifier:
+    _type: pubid:ietf:rfc
+    number: '9188'
+  representations:
+    human: RFC 9188
+    urn: urn:ietf:rfc:9188
+  style: v3
+- id: ietf.rfc.0288
+  identifier:
+    _type: pubid:ietf:rfc
+    number: '967'
+  representations:
+    human: RFC 967
+    urn: urn:ietf:rfc:967
+  style: v3
+- id: ietf.rfc.0289
+  identifier:
+    _type: pubid:ietf:rfc
+    number: '9968'
+  representations:
+    human: RFC 9968
+    urn: urn:ietf:rfc:9968
+  style: v3

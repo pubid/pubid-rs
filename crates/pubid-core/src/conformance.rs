@@ -16,6 +16,10 @@ use yaml_rust2::{Yaml, YamlLoader};
 
 use crate::doi::DoiIdentifier;
 use crate::error::{Error, Result};
+use crate::{
+    IanaIdentifier, IetfIdentifier, IsbnIdentifier, OasisIdentifier, OgcIdentifier, UnIdentifier,
+    W3cIdentifier, XsfIdentifier,
+};
 
 // ---------------------------------------------------------------------------
 // Identifiers and flavors
@@ -27,6 +31,22 @@ use crate::error::{Error, Result};
 pub enum Identifier {
     /// A DOI identifier.
     Doi(DoiIdentifier),
+    /// An ISBN (book) identifier.
+    Isbn(IsbnIdentifier),
+    /// An IANA registry identifier.
+    Iana(IanaIdentifier),
+    /// An OASIS standard identifier.
+    Oasis(OasisIdentifier),
+    /// An XSF XEP identifier.
+    Xsf(XsfIdentifier),
+    /// A UN document identifier.
+    Un(UnIdentifier),
+    /// An OGC document identifier.
+    Ogc(OgcIdentifier),
+    /// An IETF identifier (RFC / BCP / STD / FYI / Internet-Draft).
+    Ietf(IetfIdentifier),
+    /// A W3C identifier (one kind per maturity level).
+    W3c(W3cIdentifier),
 }
 
 impl Identifier {
@@ -34,6 +54,14 @@ impl Identifier {
     pub fn to_hash(&self) -> Value {
         match self {
             Identifier::Doi(id) => id.to_hash(),
+            Identifier::Isbn(id) => id.to_hash(),
+            Identifier::Iana(id) => id.to_hash(),
+            Identifier::Oasis(id) => id.to_hash(),
+            Identifier::Xsf(id) => id.to_hash(),
+            Identifier::Un(id) => id.to_hash(),
+            Identifier::Ogc(id) => id.to_hash(),
+            Identifier::Ietf(id) => id.to_hash(),
+            Identifier::W3c(id) => id.to_hash(),
         }
     }
 
@@ -41,6 +69,14 @@ impl Identifier {
     pub fn to_human(&self) -> String {
         match self {
             Identifier::Doi(id) => id.to_human(),
+            Identifier::Isbn(id) => id.to_human(),
+            Identifier::Iana(id) => id.to_human(),
+            Identifier::Oasis(id) => id.to_human(),
+            Identifier::Xsf(id) => id.to_human(),
+            Identifier::Un(id) => id.to_human(),
+            Identifier::Ogc(id) => id.to_human(),
+            Identifier::Ietf(id) => id.to_human(),
+            Identifier::W3c(id) => id.to_human(),
         }
     }
 
@@ -48,6 +84,14 @@ impl Identifier {
     pub fn to_urn(&self) -> Option<String> {
         match self {
             Identifier::Doi(id) => Some(id.to_urn()),
+            Identifier::Isbn(id) => Some(id.to_urn()),
+            Identifier::Iana(id) => Some(id.to_urn()),
+            Identifier::Oasis(id) => Some(id.to_urn()),
+            Identifier::Xsf(id) => Some(id.to_urn()),
+            Identifier::Un(id) => Some(id.to_urn()),
+            Identifier::Ogc(id) => Some(id.to_urn()),
+            Identifier::Ietf(id) => Some(id.to_urn()),
+            Identifier::W3c(id) => Some(id.to_urn()),
         }
     }
 
@@ -61,6 +105,18 @@ impl Identifier {
             })?;
         match kind {
             DoiIdentifier::TYPE => Ok(Identifier::Doi(DoiIdentifier::from_hash(hash)?)),
+            IsbnIdentifier::TYPE => Ok(Identifier::Isbn(IsbnIdentifier::from_hash(hash)?)),
+            IanaIdentifier::TYPE => Ok(Identifier::Iana(IanaIdentifier::from_hash(hash)?)),
+            OasisIdentifier::TYPE => Ok(Identifier::Oasis(OasisIdentifier::from_hash(hash)?)),
+            XsfIdentifier::TYPE => Ok(Identifier::Xsf(XsfIdentifier::from_hash(hash)?)),
+            UnIdentifier::TYPE => Ok(Identifier::Un(UnIdentifier::from_hash(hash)?)),
+            OgcIdentifier::TYPE => Ok(Identifier::Ogc(OgcIdentifier::from_hash(hash)?)),
+            _ if kind.starts_with("pubid:ietf:") => {
+                Ok(Identifier::Ietf(IetfIdentifier::from_hash(hash)?))
+            }
+            _ if kind.starts_with("pubid:w3c:") => {
+                Ok(Identifier::W3c(W3cIdentifier::from_hash(hash)?))
+            }
             other => Err(Error::InvalidHash {
                 detail: format!("unknown _type {other:?}"),
             }),
@@ -77,31 +133,52 @@ pub trait FlavorImpl: Sync {
     fn parse(&self, input: &str) -> Result<Identifier>;
 }
 
-/// The doi flavor implementation.
-pub struct DoiImpl;
+/// Macro: one `FlavorImpl` struct per flavor, the implemented-flavor
+/// table, and the name -> implementation lookup. Adding a flavor means
+/// adding its module and one row here.
+macro_rules! flavor_impls {
+    ($( $name:literal => $struct_name:ident, $variant:ident, $identifier:ty ),* $(,)?) => {
+        $(
+            #[doc = concat!("The ", $name, " flavor implementation.")]
+            pub struct $struct_name;
 
-impl FlavorImpl for DoiImpl {
-    fn name(&self) -> &'static str {
-        "doi"
-    }
+            impl FlavorImpl for $struct_name {
+                fn name(&self) -> &'static str {
+                    $name
+                }
 
-    fn parse(&self, input: &str) -> Result<Identifier> {
-        Ok(Identifier::Doi(DoiIdentifier::parse(input)?))
-    }
+                fn parse(&self, input: &str) -> Result<Identifier> {
+                    Ok(Identifier::$variant(<$identifier>::parse(input)?))
+                }
+            }
+        )*
+
+        /// The implemented flavors, by testsuite name.
+        pub fn implemented_flavors() -> BTreeSet<&'static str> {
+            BTreeSet::from([ $( $name, )* ])
+        }
+
+        /// The flavor implementation for a testsuite name.
+        pub fn flavor_impl(name: &str) -> Option<&'static dyn FlavorImpl> {
+            match name {
+                $( $name => Some(&$struct_name), )*
+                _ => None,
+            }
+        }
+    };
 }
 
-/// The implemented flavors, by testsuite name.
-pub fn implemented_flavors() -> BTreeSet<&'static str> {
-    BTreeSet::from(["doi"])
-}
-
-/// The flavor implementation for a testsuite name.
-pub fn flavor_impl(name: &str) -> Option<&'static dyn FlavorImpl> {
-    match name {
-        "doi" => Some(&DoiImpl),
-        _ => None,
-    }
-}
+flavor_impls!(
+    "doi" => DoiImpl, Doi, crate::doi::DoiIdentifier,
+    "isbn" => IsbnImpl, Isbn, IsbnIdentifier,
+    "iana" => IanaImpl, Iana, IanaIdentifier,
+    "oasis" => OasisImpl, Oasis, OasisIdentifier,
+    "xsf" => XsfImpl, Xsf, XsfIdentifier,
+    "un" => UnImpl, Un, UnIdentifier,
+    "ogc" => OgcImpl, Ogc, OgcIdentifier,
+    "ietf" => IetfImpl, Ietf, IetfIdentifier,
+    "w3c" => W3cImpl, W3c, W3cIdentifier,
+);
 
 // ---------------------------------------------------------------------------
 // Corpus wire contract
@@ -206,21 +283,71 @@ impl FlavorCorpus {
             status,
         })
     }
+}
 
-    /// The vendored doi fixture slice (self-contained smoke corpus).
-    pub fn doi_vendored() -> Result<Self> {
-        const RESOURCE: &str = include_str!("../fixtures/testsuite/doi/resource.yaml");
-        const NEGATIVE: &str = include_str!("../fixtures/testsuite/doi/_negative.yaml");
-        const STATUS: &str = include_str!("../fixtures/testsuite/doi/_status.yaml");
-        Self::from_entries(
-            "doi",
-            &[
-                ("resource.yaml".to_string(), RESOURCE.to_string()),
-                ("_negative.yaml".to_string(), NEGATIVE.to_string()),
-                ("_status.yaml".to_string(), STATUS.to_string()),
-            ],
-        )
-    }
+/// The vendored testsuite slices (`fixtures/testsuite/<flavor>/`), one
+/// embedded corpus loader per flavor: `vendored_corpus(name)` builds
+/// the flavor's corpus from `include_str!`ed files, so `cargo test`
+/// needs no network.
+macro_rules! vendored_corpora {
+    ($( $flavor:literal => [ $( ($file:literal, $const_name:ident) ),* $(,)? ] ),* $(,)?) => {
+        $(
+            $(
+                const $const_name: &str = include_str!(concat!(
+                    "../fixtures/testsuite/", $flavor, "/", $file
+                ));
+            )*
+        )*
+
+        /// The vendored corpus for a flavor; `None` when the crate
+        /// carries no slice for it.
+        pub fn vendored_corpus(flavor: &str) -> Option<Result<FlavorCorpus>> {
+            let entries: Vec<(String, String)> = match flavor {
+                $(
+                    $flavor => vec![ $( ($file.to_string(), $const_name.to_string()) ),* ],
+                )*
+                _ => return None,
+            };
+            Some(FlavorCorpus::from_entries(flavor, &entries))
+        }
+
+        /// The flavor names with a vendored corpus slice.
+        pub const VENDORED_CORPORA: &[&str] = &[ $( $flavor, )* ];
+    };
+}
+
+vendored_corpora!(
+    "doi" => [("resource.yaml", DOI_RESOURCE), ("_negative.yaml", DOI_NEGATIVE), ("_status.yaml", DOI_STATUS)],
+    "isbn" => [("book.yaml", ISBN_BOOK), ("_negative.yaml", ISBN_NEGATIVE), ("_status.yaml", ISBN_STATUS)],
+    "iana" => [("registry.yaml", IANA_REGISTRY), ("_negative.yaml", IANA_NEGATIVE), ("_status.yaml", IANA_STATUS)],
+    "oasis" => [("standard.yaml", OASIS_STANDARD), ("_status.yaml", OASIS_STATUS)],
+    "xsf" => [("xep.yaml", XSF_XEP), ("_status.yaml", XSF_STATUS)],
+    "un" => [("document.yaml", UN_DOCUMENT), ("_negative.yaml", UN_NEGATIVE), ("_status.yaml", UN_STATUS)],
+    "ogc" => [("document.yaml", OGC_DOCUMENT), ("_negative.yaml", OGC_NEGATIVE), ("_status.yaml", OGC_STATUS)],
+    "ietf" => [
+        ("bcp.yaml", IETF_BCP), ("fyi.yaml", IETF_FYI), ("internet_draft.yaml", IETF_INTERNET_DRAFT),
+        ("rfc.yaml", IETF_RFC), ("std.yaml", IETF_STD), ("_status.yaml", IETF_STATUS),
+    ],
+    "w3c" => [
+        ("candidate_recommendation.yaml", W3C_CANDIDATE_RECOMMENDATION),
+        ("candidate_recommendation_draft.yaml", W3C_CANDIDATE_RECOMMENDATION_DRAFT),
+        ("draft_note.yaml", W3C_DRAFT_NOTE),
+        ("note.yaml", W3C_NOTE),
+        ("obsolete_recommendation.yaml", W3C_OBSOLETE_RECOMMENDATION),
+        ("proposed_edited_recommendation.yaml", W3C_PROPOSED_EDITED_RECOMMENDATION),
+        ("proposed_recommendation.yaml", W3C_PROPOSED_RECOMMENDATION),
+        ("recommendation.yaml", W3C_RECOMMENDATION),
+        ("standard.yaml", W3C_STANDARD),
+        ("superseded_recommendation.yaml", W3C_SUPERSEDED_RECOMMENDATION),
+        ("working_draft.yaml", W3C_WORKING_DRAFT),
+        ("_status.yaml", W3C_STATUS),
+    ],
+);
+
+/// The doi vendored slice (the bootstrap flavor's accessor, kept for
+/// parity).
+pub fn doi_vendored() -> Result<FlavorCorpus> {
+    vendored_corpus("doi").expect("doi slice is vendored")
 }
 
 /// Read the `_status.yaml` gate.

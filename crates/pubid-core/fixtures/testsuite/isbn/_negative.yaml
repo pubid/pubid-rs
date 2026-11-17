@@ -1,0 +1,21 @@
+---
+- id: isbn.neg.invalid_check.0001
+  input: ISBN 978-3-16-148410-1
+  expect:
+    error:
+      code: unclassified
+- id: isbn.neg.invalid_check.0002
+  input: ISBN 0-306-40615-3
+  expect:
+    error:
+      code: unclassified
+- id: isbn.neg.wrong_length.0001
+  input: ISBN 12345
+  expect:
+    error:
+      code: unclassified
+- id: isbn.neg.wrong_length.0002
+  input: ISBN 12345678901234567890
+  expect:
+    error:
+      code: unclassified

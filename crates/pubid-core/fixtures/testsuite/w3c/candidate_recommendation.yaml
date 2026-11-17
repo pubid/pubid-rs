@@ -1,0 +1,10 @@
+---
+- id: w3c.candidate_recommendation.0003
+  identifier:
+    _type: pubid:w3c:candidate-recommendation
+    number: exi
+    date: '20091208'
+  representations:
+    human: W3C CR-exi-20091208
+    urn: urn:w3c:cr:exi:20091208
+  style: v3
