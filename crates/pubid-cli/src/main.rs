@@ -98,8 +98,8 @@ fn smoke() -> ExitCode {
         // carries a known_mismatches ceiling).
         let at_or_under_ledger = report.outcome == Outcome::Ledger
             && (report.failures.len() as u64) <= report.known_mismatches;
-        let flavor_green = (report.outcome == Outcome::Pass || at_or_under_ledger)
-            && embedded.is_empty();
+        let flavor_green =
+            (report.outcome == Outcome::Pass || at_or_under_ledger) && embedded.is_empty();
         green &= flavor_green;
         println!(
             "smoke: flavor {} outcome {} ({} cases, {} rejected negatives, {} embedded tests failing)",
