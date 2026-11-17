@@ -23,11 +23,13 @@ use crate::plateau::PlateauKind;
 use crate::evs::EvsKind;
 use crate::ecma::EcmaKind;
 use crate::gb::GbKind;
+use crate::jis::JisKind;
 use crate::gost::GostKind;
 use crate::nesc::NescKind;
 use crate::error::{Error, Result};
+use crate::etsi::EtsiKind;
 pub use crate::{
-    AmcaIdentifier, AnsiIdentifier, ApiIdentifier, CcsdsIdentifier, CenIdentifier, EcmaIdentifier, EvsIdentifier, PlateauIdentifier, GbIdentifier,
+    AmcaIdentifier, AnsiIdentifier, ApiIdentifier, CcsdsIdentifier, CenIdentifier, EcmaIdentifier, EtsiIdentifier, EvsIdentifier, JisIdentifier, PlateauIdentifier, GbIdentifier,
     GostIdentifier, IanaIdentifier, IetfIdentifier, IsbnIdentifier, NescIdentifier,
     OasisIdentifier, OgcIdentifier, IreIdentifier, UnIdentifier, W3cIdentifier, XsfIdentifier,
 };
@@ -83,6 +85,10 @@ pub enum Identifier {
     Ccsds(CcsdsIdentifier),
     /// A PLATEAU identifier (handbooks and technical reports).
     Plateau(PlateauIdentifier),
+    /// A JIS identifier (industrial standards, WES, supplements).
+    Jis(JisIdentifier),
+    /// An ETSI identifier (standards and the /A //C supplements).
+    Etsi(EtsiIdentifier),
 }
 
 impl Identifier {
@@ -110,6 +116,8 @@ impl Identifier {
             Identifier::Evs(id) => id.to_hash(),
             Identifier::Ccsds(id) => id.to_hash(),
             Identifier::Plateau(id) => id.to_hash(),
+            Identifier::Jis(id) => id.to_hash(),
+            Identifier::Etsi(id) => id.to_hash(),
         }
     }
 
@@ -137,6 +145,8 @@ impl Identifier {
             Identifier::Evs(id) => id.to_human(),
             Identifier::Ccsds(id) => id.to_human(),
             Identifier::Plateau(id) => id.to_human(),
+            Identifier::Jis(id) => id.to_human(),
+            Identifier::Etsi(id) => id.to_human(),
         }
     }
 
@@ -164,6 +174,8 @@ impl Identifier {
             Identifier::Evs(id) => Some(id.to_urn()),
             Identifier::Ccsds(id) => id.to_urn(),
             Identifier::Plateau(id) => Some(id.to_urn()),
+            Identifier::Jis(id) => Some(id.to_urn()),
+            Identifier::Etsi(id) => Some(id.to_urn()),
         }
     }
 
@@ -210,6 +222,12 @@ impl Identifier {
             }
             _ if kind.starts_with(PlateauKind::KIND_PREFIX) => {
                 Ok(Identifier::Plateau(PlateauIdentifier::from_hash(hash)?))
+            }
+            _ if kind.starts_with(JisKind::KIND_PREFIX) => {
+                Ok(Identifier::Jis(JisIdentifier::from_hash(hash)?))
+            }
+            _ if kind.starts_with(EtsiKind::KIND_PREFIX) => {
+                Ok(Identifier::Etsi(EtsiIdentifier::from_hash(hash)?))
             }
             IreIdentifier::TYPE => Ok(Identifier::Ire(IreIdentifier::from_hash(hash)?)),
             _ if kind.starts_with(ApiKind::KIND_PREFIX) => {
@@ -294,6 +312,8 @@ flavor_impls!(
     "evs" => EvsImpl, Evs, EvsIdentifier,
     "ccsds" => CcsdsImpl, Ccsds, CcsdsIdentifier,
     "plateau" => PlateauImpl, Plateau, PlateauIdentifier,
+    "jis" => JisImpl, Jis, JisIdentifier,
+    "etsi" => EtsiImpl, Etsi, EtsiIdentifier,
 );
 
 // ---------------------------------------------------------------------------
@@ -550,6 +570,20 @@ vendored_corpora!(
         ("handbook.yaml", PLATEAU_HANDBOOK),
         ("technical_report.yaml", PLATEAU_TECHNICAL_REPORT),
         ("_status.yaml", PLATEAU_STATUS),
+    ],
+    "jis" => [
+        ("amendment.yaml", JIS_AMENDMENT),
+        ("japanese_industrial_standard.yaml", JIS_JAPANESE_INDUSTRIAL_STANDARD),
+        ("welding_engineering_standard.yaml", JIS_WELDING_ENGINEERING_STANDARD),
+        ("welding_engineering_technical_report.yaml", JIS_WELDING_ENGINEERING_TECHNICAL_REPORT),
+        ("welding_engineering_technical_specification.yaml", JIS_WELDING_ENGINEERING_TECHNICAL_SPECIFICATION),
+        ("_status.yaml", JIS_STATUS),
+    ],
+    "etsi" => [
+        ("amendment.yaml", ETSI_AMENDMENT),
+        ("corrigendum.yaml", ETSI_CORRIGENDUM),
+        ("etsi_standard.yaml", ETSI_ETSI_STANDARD),
+        ("_status.yaml", ETSI_STATUS),
     ],
 );
 

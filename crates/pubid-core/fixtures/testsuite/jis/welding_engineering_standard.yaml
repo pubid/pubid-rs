@@ -1,0 +1,160 @@
+---
+- id: jis.welding_engineering_standard.10557
+  identifier:
+    _type: pubid:jis:welding-engineering-standard
+    number: '1112'
+    year: 2022
+    language: E
+    language_before_year: true
+  representations:
+    human: WES 1112(E):2022
+    urn: urn:jis:WES 1112:2022:e
+  style: v3
+- id: jis.welding_engineering_standard.10558
+  identifier:
+    _type: pubid:jis:welding-engineering-standard
+    number: '2801'
+    year: 1980
+    language: E
+    language_before_year: true
+  representations:
+    human: WES 2801(E):1980
+    urn: urn:jis:WES 2801:1980:e
+  style: v3
+- id: jis.welding_engineering_standard.10559
+  identifier:
+    _type: pubid:jis:welding-engineering-standard
+    number: '2805'
+    year: 2011
+    language: E
+    language_before_year: true
+  representations:
+    human: WES 2805(E):2011
+    urn: urn:jis:WES 2805:2011:e
+  style: v3
+- id: jis.welding_engineering_standard.10560
+  identifier:
+    _type: pubid:jis:welding-engineering-standard
+    number: '2808'
+    year: 2017
+    language: E
+    language_before_year: true
+  representations:
+    human: WES 2808(E):2017
+    urn: urn:jis:WES 2808:2017:e
+  style: v3
+- id: jis.welding_engineering_standard.10561
+  identifier:
+    _type: pubid:jis:welding-engineering-standard
+    number: '2815'
+    year: 2014
+    language: E
+    language_before_year: true
+  representations:
+    human: WES 2815(E):2014
+    urn: urn:jis:WES 2815:2014:e
+  style: v3
+- id: jis.welding_engineering_standard.10562
+  identifier:
+    _type: pubid:jis:welding-engineering-standard
+    number: '3001'
+    year: 2012
+    language: E
+    language_before_year: true
+  representations:
+    human: WES 3001(E):2012
+    urn: urn:jis:WES 3001:2012:e
+  style: v3
+- id: jis.welding_engineering_standard.10563
+  identifier:
+    _type: pubid:jis:welding-engineering-standard
+    number: '3003'
+    year: 1995
+    language: E
+    language_before_year: true
+  representations:
+    human: WES 3003(E):1995
+    urn: urn:jis:WES 3003:1995:e
+  style: v3
+- id: jis.welding_engineering_standard.10565
+  identifier:
+    _type: pubid:jis:welding-engineering-standard
+    number: '3004'
+    year: 2024
+  representations:
+    human: WES 3004:2024
+    urn: urn:jis:WES 3004:2024
+  style: v3
+- id: jis.welding_engineering_standard.10566
+  identifier:
+    _type: pubid:jis:welding-engineering-standard
+    number: '6206'
+    year: 1993
+    language: E
+    language_before_year: true
+  representations:
+    human: WES 6206(E):1993
+    urn: urn:jis:WES 6206:1993:e
+  style: v3
+- id: jis.welding_engineering_standard.10567
+  identifier:
+    _type: pubid:jis:welding-engineering-standard
+    number: '7301'
+  representations:
+    human: WES 7301
+    urn: urn:jis:WES 7301
+  style: v3
+- id: jis.welding_engineering_standard.10568
+  identifier:
+    _type: pubid:jis:welding-engineering-standard
+    number: '7301'
+    year: 2020
+    reaffirmed: true
+  representations:
+    human: WES 7301:2020R
+    urn: urn:jis:WES 7301:2020
+  style: v3
+- id: jis.welding_engineering_standard.10569
+  identifier:
+    _type: pubid:jis:welding-engineering-standard
+    number: '7700'
+    parts:
+    - '1'
+    year: 2019
+  representations:
+    human: WES 7700-1:2019
+    urn: urn:jis:WES 7700-1:2019
+  style: v3
+- id: jis.welding_engineering_standard.10570
+  identifier:
+    _type: pubid:jis:welding-engineering-standard
+    number: '7700'
+    parts:
+    - '2'
+    year: 2019
+  representations:
+    human: WES 7700-2:2019
+    urn: urn:jis:WES 7700-2:2019
+  style: v3
+- id: jis.welding_engineering_standard.10571
+  identifier:
+    _type: pubid:jis:welding-engineering-standard
+    number: '8103'
+    year: 2019
+    language: E
+    language_before_year: true
+  representations:
+    human: WES 8103(E):2019
+    urn: urn:jis:WES 8103:2019:e
+  style: v3
+- id: jis.welding_engineering_standard.10572
+  identifier:
+    _type: pubid:jis:welding-engineering-standard
+    number: '8107'
+    year: 2017
+    language: E
+    language_before_year: true
+  representations:
+    human: WES 8107(E):2017
+    urn: urn:jis:WES 8107:2017:e
+  style: v3

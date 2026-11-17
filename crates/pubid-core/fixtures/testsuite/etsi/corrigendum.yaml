@@ -1,0 +1,840 @@
+---
+- id: etsi.corrigendum.2659
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETR
+      number: '053'
+      version: '2'
+      is_edition: true
+      year: '1997'
+      month: '03'
+  representations:
+    human: ETSI ETR 053/C1 ed.2 (1997-03)
+    urn: urn:etsi:etr:053:ed.2:1997-03
+  style: v3
+- id: etsi.corrigendum.2714
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETR
+      number: '094'
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '03'
+  representations:
+    human: ETSI ETR 094/C1 ed.1 (1994-03)
+    urn: urn:etsi:etr:094:ed.1:1994-03
+  style: v3
+- id: etsi.corrigendum.2916
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETR
+      number: '283'
+      version: '1'
+      is_edition: true
+      year: '1997'
+      month: '03'
+  representations:
+    human: ETSI ETR 283/C1 ed.1 (1997-03)
+    urn: urn:etsi:etr:283:ed.1:1997-03
+  style: v3
+- id: etsi.corrigendum.2950
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETR
+      number: '310'
+      version: '1'
+      is_edition: true
+      year: '1996'
+      month: '10'
+  representations:
+    human: ETSI ETR 310/C1 ed.1 (1996-10)
+    urn: urn:etsi:etr:310:ed.1:1996-10
+  style: v3
+- id: etsi.corrigendum.3029
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 012
+      version: '1'
+      is_edition: true
+      year: '1993'
+      month: '08'
+  representations:
+    human: ETSI ETS 300 012/C1 ed.1 (1993-08)
+  style: v3
+- id: etsi.corrigendum.3070
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 052
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '04'
+  representations:
+    human: ETSI ETS 300 052-1/C1 ed.1 (1994-04)
+    urn: urn:etsi:ets:300 052-1:ed.1:1994-04
+  style: v3
+- id: etsi.corrigendum.3079
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 055
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '04'
+  representations:
+    human: ETSI ETS 300 055-1/C1 ed.1 (1994-04)
+    urn: urn:etsi:ets:300 055-1:ed.1:1994-04
+  style: v3
+- id: etsi.corrigendum.3080
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 2
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 055
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1996'
+      month: '01'
+  representations:
+    human: ETSI ETS 300 055-1/C2 ed.1 (1996-01)
+    urn: urn:etsi:ets:300 055-1:ed.1:1996-01
+  style: v3
+- id: etsi.corrigendum.3086
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 058
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '04'
+  representations:
+    human: ETSI ETS 300 058-1/C1 ed.1 (1994-04)
+    urn: urn:etsi:ets:300 058-1:ed.1:1994-04
+  style: v3
+- id: etsi.corrigendum.3095
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 061
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '04'
+  representations:
+    human: ETSI ETS 300 061-1/C1 ed.1 (1994-04)
+    urn: urn:etsi:ets:300 061-1:ed.1:1994-04
+  style: v3
+- id: etsi.corrigendum.3104
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 064
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '04'
+  representations:
+    human: ETSI ETS 300 064-1/C1 ed.1 (1994-04)
+    urn: urn:etsi:ets:300 064-1:ed.1:1994-04
+  style: v3
+- id: etsi.corrigendum.3138
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:amendment
+      number: 1
+      base:
+        _type: pubid:etsi:etsi-standard
+        type: ETS
+        number: 300 092
+        parts:
+        - '1'
+        version: '1'
+        is_edition: true
+        year: '1994'
+        month: '04'
+  representations:
+    human: ETSI ETS 300 092-1/A1/C1 ed.1 (1994-04)
+    urn: urn:etsi:ets:300 092-1:ed.1:1994-04
+  style: v3
+- id: etsi.corrigendum.3140
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 092
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '04'
+  representations:
+    human: ETSI ETS 300 092-1/C1 ed.1 (1994-04)
+    urn: urn:etsi:ets:300 092-1:ed.1:1994-04
+  style: v3
+- id: etsi.corrigendum.3147
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 093
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '04'
+  representations:
+    human: ETSI ETS 300 093-1/C1 ed.1 (1994-04)
+    urn: urn:etsi:ets:300 093-1:ed.1:1994-04
+  style: v3
+- id: etsi.corrigendum.3158
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 097
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '04'
+  representations:
+    human: ETSI ETS 300 097-1/C1 ed.1 (1994-04)
+    urn: urn:etsi:ets:300 097-1:ed.1:1994-04
+  style: v3
+- id: etsi.corrigendum.3165
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 098
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '04'
+  representations:
+    human: ETSI ETS 300 098-1/C1 ed.1 (1994-04)
+    urn: urn:etsi:ets:300 098-1:ed.1:1994-04
+  style: v3
+- id: etsi.corrigendum.3202
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 122
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '04'
+  representations:
+    human: ETSI ETS 300 122-1/C1 ed.1 (1994-04)
+    urn: urn:etsi:ets:300 122-1:ed.1:1994-04
+  style: v3
+- id: etsi.corrigendum.3212
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 130
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '04'
+  representations:
+    human: ETSI ETS 300 130-1/C1 ed.1 (1994-04)
+    urn: urn:etsi:ets:300 130-1:ed.1:1994-04
+  style: v3
+- id: etsi.corrigendum.3220
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 132
+      parts:
+      - '2'
+      version: '1'
+      is_edition: true
+      year: '1996'
+      month: '12'
+  representations:
+    human: ETSI ETS 300 132-2/C1 ed.1 (1996-12)
+    urn: urn:etsi:ets:300 132-2:ed.1:1996-12
+  style: v3
+- id: etsi.corrigendum.3240
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 138
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '04'
+  representations:
+    human: ETSI ETS 300 138-1/C1 ed.1 (1994-04)
+    urn: urn:etsi:ets:300 138-1:ed.1:1994-04
+  style: v3
+- id: etsi.corrigendum.3249
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 141
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1993'
+      month: '08'
+  representations:
+    human: ETSI ETS 300 141-1/C1 ed.1 (1993-08)
+  style: v3
+- id: etsi.corrigendum.3250
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 2
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 141
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '04'
+  representations:
+    human: ETSI ETS 300 141-1/C2 ed.1 (1994-04)
+    urn: urn:etsi:ets:300 141-1:ed.1:1994-04
+  style: v3
+- id: etsi.corrigendum.3305
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 182
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1993'
+      month: '09'
+  representations:
+    human: ETSI ETS 300 182-1/C1 ed.1 (1993-09)
+  style: v3
+- id: etsi.corrigendum.3306
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 2
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 182
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '04'
+  representations:
+    human: ETSI ETS 300 182-1/C2 ed.1 (1994-04)
+    urn: urn:etsi:ets:300 182-1:ed.1:1994-04
+  style: v3
+- id: etsi.corrigendum.3315
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 184
+      version: '1'
+      is_edition: true
+      year: '1993'
+      month: '09'
+  representations:
+    human: ETSI ETS 300 184/C1 ed.1 (1993-09)
+  style: v3
+- id: etsi.corrigendum.3318
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 185
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1993'
+      month: '09'
+  representations:
+    human: ETSI ETS 300 185-1/C1 ed.1 (1993-09)
+  style: v3
+- id: etsi.corrigendum.3319
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 2
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 185
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '04'
+  representations:
+    human: ETSI ETS 300 185-1/C2 ed.1 (1994-04)
+    urn: urn:etsi:ets:300 185-1:ed.1:1994-04
+  style: v3
+- id: etsi.corrigendum.3327
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 187
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '04'
+  representations:
+    human: ETSI ETS 300 187/C1 ed.1 (1994-04)
+    urn: urn:etsi:ets:300 187:ed.1:1994-04
+  style: v3
+- id: etsi.corrigendum.3329
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 188
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '04'
+  representations:
+    human: ETSI ETS 300 188-1/C1 ed.1 (1994-04)
+    urn: urn:etsi:ets:300 188-1:ed.1:1994-04
+  style: v3
+- id: etsi.corrigendum.3349
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 196
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '01'
+  representations:
+    human: ETSI ETS 300 196-1/C1 ed.1 (1994-01)
+    urn: urn:etsi:ets:300 196-1:ed.1:1994-01
+  style: v3
+- id: etsi.corrigendum.3350
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 2
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 196
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '04'
+  representations:
+    human: ETSI ETS 300 196-1/C2 ed.1 (1994-04)
+    urn: urn:etsi:ets:300 196-1:ed.1:1994-04
+  style: v3
+- id: etsi.corrigendum.3372
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 207
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1995'
+      month: '06'
+  representations:
+    human: ETSI ETS 300 207-1/C1 ed.1 (1995-06)
+    urn: urn:etsi:ets:300 207-1:ed.1:1995-06
+  style: v3
+- id: etsi.corrigendum.3492
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 303
+      version: '1'
+      is_edition: true
+      year: '1995'
+      month: '06'
+  representations:
+    human: ETSI ETS 300 303/C1 ed.1 (1995-06)
+    urn: urn:etsi:ets:300 303:ed.1:1995-06
+  style: v3
+- id: etsi.corrigendum.3493
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 2
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 303
+      version: '1'
+      is_edition: true
+      year: '1996'
+      month: '01'
+  representations:
+    human: ETSI ETS 300 303/C2 ed.1 (1996-01)
+    urn: urn:etsi:ets:300 303:ed.1:1996-01
+  style: v3
+- id: etsi.corrigendum.3570
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 356
+      parts:
+      - '19'
+      version: '1'
+      is_edition: true
+      year: '1996'
+      month: '03'
+  representations:
+    human: ETSI ETS 300 356-19/C1 ed.1 (1996-03)
+    urn: urn:etsi:ets:300 356-19:ed.1:1996-03
+  style: v3
+- id: etsi.corrigendum.3635
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 386
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1997'
+      month: '04'
+  representations:
+    human: ETSI ETS 300 386-1/C1 ed.1 (1997-04)
+    urn: urn:etsi:ets:300 386-1:ed.1:1997-04
+  style: v3
+- id: etsi.corrigendum.3639
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 389
+      version: '1'
+      is_edition: true
+      year: '1995'
+      month: '03'
+  representations:
+    human: ETSI ETS 300 389/C1 ed.1 (1995-03)
+    urn: urn:etsi:ets:300 389:ed.1:1995-03
+  style: v3
+- id: etsi.corrigendum.3642
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 390
+      version: '1'
+      is_edition: true
+      year: '1996'
+      month: '06'
+  representations:
+    human: ETSI ETS 300 390/C1 ed.1 (1996-06)
+    urn: urn:etsi:ets:300 390:ed.1:1996-06
+  style: v3
+- id: etsi.corrigendum.3752
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 403
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1996'
+      month: '06'
+  representations:
+    human: ETSI ETS 300 403-1/C1 ed.1 (1996-06)
+    urn: urn:etsi:ets:300 403-1:ed.1:1996-06
+  style: v3
+- id: etsi.corrigendum.3761
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 405
+      version: '1'
+      is_edition: true
+      year: '1995'
+      month: '10'
+  representations:
+    human: ETSI ETS 300 405/C1 ed.1 (1995-10)
+    urn: urn:etsi:ets:300 405:ed.1:1995-10
+  style: v3
+- id: etsi.corrigendum.3805
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 438
+      parts:
+      - '1'
+      version: '1'
+      is_edition: true
+      year: '1996'
+      month: '06'
+  representations:
+    human: ETSI ETS 300 438-1/C1 ed.1 (1996-06)
+    urn: urn:etsi:ets:300 438-1:ed.1:1996-06
+  style: v3
+- id: etsi.corrigendum.3845
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 471
+      version: '1'
+      is_edition: true
+      year: '1996'
+      month: '04'
+  representations:
+    human: ETSI ETS 300 471/C1 ed.1 (1996-04)
+    urn: urn:etsi:ets:300 471:ed.1:1996-04
+  style: v3
+- id: etsi.corrigendum.3986
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 577
+      version: '1'
+      is_edition: true
+      year: '1994'
+      month: '11'
+  representations:
+    human: ETSI ETS 300 577/C1 ed.1 (1994-11)
+    urn: urn:etsi:ets:300 577:ed.1:1994-11
+  style: v3
+- id: etsi.corrigendum.4134
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: ETS
+      number: 300 693
+      version: '1'
+      is_edition: true
+      year: '1998'
+      month: '06'
+  representations:
+    human: ETSI ETS 300 693/C1 ed.1 (1998-06)
+    urn: urn:etsi:ets:300 693:ed.1:1998-06
+  style: v3
+- id: etsi.corrigendum.5131
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: I-ETS
+      number: 300 022
+      version: '1'
+      is_edition: true
+      year: '1993'
+      month: '08'
+  representations:
+    human: ETSI I-ETS 300 022/C1 ed.1 (1993-08)
+  style: v3
+- id: etsi.corrigendum.5163
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: I-ETS
+      number: 300 044
+      version: '1'
+      is_edition: true
+      year: '1993'
+      month: '10'
+  representations:
+    human: ETSI I-ETS 300 044/C1 ed.1 (1993-10)
+    urn: urn:etsi:i-ets:300 044:ed.1:1993-10
+  style: v3
+- id: etsi.corrigendum.5235
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: I-ETS
+      number: 300 440
+      version: '1'
+      is_edition: true
+      year: '1996'
+      month: '04'
+  representations:
+    human: ETSI I-ETS 300 440/C1 ed.1 (1996-04)
+    urn: urn:etsi:i-ets:300 440:ed.1:1996-04
+  style: v3
+- id: etsi.corrigendum.5341
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 1
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: TBR
+      number: '008'
+      version: '1'
+      is_edition: true
+      year: '2000'
+      month: '07'
+  representations:
+    human: ETSI TBR 008/C1 ed.1 (2000-07)
+    urn: urn:etsi:tbr:008:ed.1:2000-07
+  style: v3
+- id: etsi.corrigendum.5342
+  identifier:
+    _type: pubid:etsi:corrigendum
+    number: 2
+    base:
+      _type: pubid:etsi:etsi-standard
+      type: TBR
+      number: '008'
+      version: '1'
+      is_edition: true
+      year: '2001'
+      month: '02'
+  representations:
+    human: ETSI TBR 008/C2 ed.1 (2001-02)
+    urn: urn:etsi:tbr:008:ed.1:2001-02
+  style: v3

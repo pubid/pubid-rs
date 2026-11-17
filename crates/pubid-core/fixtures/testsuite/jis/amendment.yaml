@@ -1,0 +1,19 @@
+---
+- id: jis.amendment.10564
+  identifier:
+    _type: pubid:jis:amendment
+    number: 1
+    year: 2025
+    base:
+      _type: pubid:jis:welding-engineering-standard
+      number: '3003'
+      year: 1995
+      language: E
+      language_before_year: true
+  representations:
+    human: WES 3003(E):1995/AMD 1:2025
+    urn: urn:jis:WES 3003:2025:amd 1:2025
+  style: v3
+  non_normalized_aliases:
+  - spelling: WES 3003(E):1995/AMENDMENT 1:2025
+    style: v3

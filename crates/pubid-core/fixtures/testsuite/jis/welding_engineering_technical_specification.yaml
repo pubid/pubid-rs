@@ -1,0 +1,21 @@
+---
+- id: jis.welding_engineering_technical_specification.10574
+  identifier:
+    _type: pubid:jis:welding-engineering-technical-specification
+    number: '2816'
+    year: 2015
+    language: E
+    language_before_year: true
+  representations:
+    human: WES TS 2816(E):2015
+    urn: urn:jis:WES TS 2816:2015:e
+  style: v3
+- id: jis.welding_engineering_technical_specification.10575
+  identifier:
+    _type: pubid:jis:welding-engineering-technical-specification
+    number: '2816'
+    year: 2015
+  representations:
+    human: WES TS 2816:2015
+    urn: urn:jis:WES TS 2816:2015
+  style: v3
