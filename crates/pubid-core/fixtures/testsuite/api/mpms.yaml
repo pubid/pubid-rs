@@ -1,0 +1,279 @@
+---
+- id: api.mpms.0016
+  identifier:
+    _type: pubid:api:mpms
+    number: '10'
+    section: '10'
+  representations:
+    human: API MPMS CH 10.10
+    urn: urn:api:std:10
+  style: v3
+  non_normalized_aliases:
+  - spelling: API MPMP CH 10.10
+    style: v3
+- id: api.mpms.0017
+  identifier:
+    _type: pubid:api:mpms
+    number: '10'
+    section: '9'
+  representations:
+    human: API MPMS CH 10.9
+    urn: urn:api:std:10
+  style: v3
+- id: api.mpms.0018
+  identifier:
+    _type: pubid:api:mpms
+    number: '11'
+    section: '2'
+    subsection: '5'
+  representations:
+    human: API MPMS CH 11.2.5
+    urn: urn:api:std:11
+  style: v3
+- id: api.mpms.0019
+  identifier:
+    _type: pubid:api:mpms
+    number: '12'
+    section: '2'
+  representations:
+    human: API MPMS CH 12.2
+    urn: urn:api:std:12
+  style: v3
+- id: api.mpms.0020
+  identifier:
+    _type: pubid:api:mpms
+    number: '12'
+    section: '4'
+    subsection: '1'
+  representations:
+    human: API MPMS CH 12.4.1
+    urn: urn:api:std:12
+  style: v3
+- id: api.mpms.0021
+  identifier:
+    _type: pubid:api:mpms
+    number: '14'
+    section: '14'
+  representations:
+    human: API MPMS CH 14.14
+    urn: urn:api:std:14
+  style: v3
+- id: api.mpms.0022
+  identifier:
+    _type: pubid:api:mpms
+    number: '14'
+    section: '3'
+    subsection: '2'
+  representations:
+    human: API MPMS CH 14.3.2
+    urn: urn:api:std:14
+  style: v3
+- id: api.mpms.0023
+  identifier:
+    _type: pubid:api:mpms
+    number: '14'
+    section: '4'
+  representations:
+    human: API MPMS CH 14.4
+    urn: urn:api:std:14
+  style: v3
+- id: api.mpms.0024
+  identifier:
+    _type: pubid:api:mpms
+    number: '17'
+    section: '10'
+    subsection: '2'
+  representations:
+    human: API MPMS CH 17.10.2
+    urn: urn:api:std:17
+  style: v3
+- id: api.mpms.0025
+  identifier:
+    _type: pubid:api:mpms
+    number: '17'
+    section: '11'
+  representations:
+    human: API MPMS CH 17.11
+    urn: urn:api:std:17
+  style: v3
+- id: api.mpms.0026
+  identifier:
+    _type: pubid:api:mpms
+    number: '17'
+    section: '12'
+  representations:
+    human: API MPMS CH 17.12
+    urn: urn:api:std:17
+  style: v3
+- id: api.mpms.0027
+  identifier:
+    _type: pubid:api:mpms
+    number: '17'
+    section: '5'
+  representations:
+    human: API MPMS CH 17.5
+    urn: urn:api:std:17
+  style: v3
+- id: api.mpms.0028
+  identifier:
+    _type: pubid:api:mpms
+    number: '17'
+    section: '8'
+  representations:
+    human: API MPMS CH 17.8
+    urn: urn:api:std:17
+  style: v3
+- id: api.mpms.0029
+  identifier:
+    _type: pubid:api:mpms
+    number: '19'
+    section: '4'
+  representations:
+    human: API MPMS CH 19.4
+    urn: urn:api:std:19
+  style: v3
+- id: api.mpms.0030
+  identifier:
+    _type: pubid:api:mpms
+    number: '19'
+    section: '5'
+  representations:
+    human: API MPMS CH 19.5
+    urn: urn:api:std:19
+  style: v3
+- id: api.mpms.0031
+  identifier:
+    _type: pubid:api:mpms
+    number: '2'
+    section: '4'
+  representations:
+    human: API MPMS CH 2.4
+    urn: urn:api:std:2
+  style: v3
+- id: api.mpms.0032
+  identifier:
+    _type: pubid:api:mpms
+    number: '20'
+    section: '3'
+  representations:
+    human: API MPMS CH 20.3
+    urn: urn:api:std:20
+  style: v3
+- id: api.mpms.0033
+  identifier:
+    _type: pubid:api:mpms
+    number: '22'
+    section: '3'
+  representations:
+    human: API MPMS CH 22.3
+    urn: urn:api:std:22
+  style: v3
+- id: api.mpms.0034
+  identifier:
+    _type: pubid:api:mpms
+    number: '22'
+    section: '4'
+  representations:
+    human: API MPMS CH 22.4
+    urn: urn:api:std:22
+  style: v3
+- id: api.mpms.0035
+  identifier:
+    _type: pubid:api:mpms
+    number: '22'
+    section: '5'
+  representations:
+    human: API MPMS CH 22.5
+    urn: urn:api:std:22
+  style: v3
+- id: api.mpms.0036
+  identifier:
+    _type: pubid:api:mpms
+    number: '3'
+    section: 1A
+  representations:
+    human: API MPMS CH 3.1A
+    urn: urn:api:std:3
+  style: v3
+- id: api.mpms.0037
+  identifier:
+    _type: pubid:api:mpms
+    number: '3'
+    section: '2'
+  representations:
+    human: API MPMS CH 3.2
+    urn: urn:api:std:3
+  style: v3
+- id: api.mpms.0038
+  identifier:
+    _type: pubid:api:mpms
+    number: '4'
+    section: '9'
+    subsection: '3'
+  representations:
+    human: API MPMS CH 4.9.3
+    urn: urn:api:std:4
+  style: v3
+- id: api.mpms.0039
+  identifier:
+    _type: pubid:api:mpms
+    number: '5'
+    section: '8'
+  representations:
+    human: API MPMS CH 5.8
+    urn: urn:api:std:5
+  style: v3
+- id: api.mpms.0040
+  identifier:
+    _type: pubid:api:mpms
+    number: '6'
+    section: 4A
+  representations:
+    human: API MPMS CH 6.4A
+    urn: urn:api:std:6
+  style: v3
+- id: api.mpms.0041
+  identifier:
+    _type: pubid:api:mpms
+    number: '7'
+    section: '1'
+  representations:
+    human: API MPMS CH 7.1
+    urn: urn:api:std:7
+  style: v3
+- id: api.mpms.0042
+  identifier:
+    _type: pubid:api:mpms
+    number: '7'
+    section: '2'
+  representations:
+    human: API MPMS CH 7.2
+    urn: urn:api:std:7
+  style: v3
+- id: api.mpms.0043
+  identifier:
+    _type: pubid:api:mpms
+    number: '8'
+    section: '3'
+  representations:
+    human: API MPMS CH 8.3
+    urn: urn:api:std:8
+  style: v3
+- id: api.mpms.0044
+  identifier:
+    _type: pubid:api:mpms
+    number: '8'
+    section: '4'
+  representations:
+    human: API MPMS CH 8.4
+    urn: urn:api:std:8
+  style: v3
+- id: api.mpms.0045
+  identifier:
+    _type: pubid:api:mpms
+    number: '9'
+    section: '1'
+  representations:
+    human: API MPMS CH 9.1
+    urn: urn:api:std:9
+  style: v3

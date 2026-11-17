@@ -1,0 +1,272 @@
+---
+- id: amca.standard.0015
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: AMCA
+    number: '803'
+    year: '02'
+    reaffirmed: '2008'
+  representations:
+    human: AMCA Standard 803-02 (R2008)
+    urn: urn:amca:803:02:reaff.2008:copub.amca:standard
+  style: v3
+- id: amca.standard.0017
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '204'
+    year: '20'
+  representations:
+    human: ANSI/AMCA Standard 204-20
+    urn: urn:amca:204:20:copub.ansi/amca:standard
+  style: v3
+- id: amca.standard.0018
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '205'
+    year: '19'
+  representations:
+    human: ANSI/AMCA Standard 205-19
+    urn: urn:amca:205:19:copub.ansi/amca:standard
+  style: v3
+- id: amca.standard.0019
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '207'
+    year: '17'
+  representations:
+    human: ANSI/AMCA Standard 207-17
+    urn: urn:amca:207:17:copub.ansi/amca:standard
+  style: v3
+- id: amca.standard.0020
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '208'
+    year: '18'
+  representations:
+    human: ANSI/AMCA Standard 208-18
+    urn: urn:amca:208:18:copub.ansi/amca:standard
+  style: v3
+- id: amca.standard.0021
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '210'
+    year: '16'
+  representations:
+    human: ANSI/AMCA Standard 210-16
+    urn: urn:amca:210:16:copub.ansi/amca:standard
+  style: v3
+  non_normalized_aliases:
+  - spelling: ANSI/AMCA 210-16 /ASHRAE 51-16
+    style: v3
+- id: amca.standard.0022
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '214'
+    year: '21'
+  representations:
+    human: ANSI/AMCA Standard 214-21
+    urn: urn:amca:214:21:copub.ansi/amca:standard
+  style: v3
+- id: amca.standard.0023
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '220'
+    year: '21'
+  representations:
+    human: ANSI/AMCA Standard 220-21
+    urn: urn:amca:220:21:copub.ansi/amca:standard
+  style: v3
+  non_normalized_aliases:
+  - spelling: ANSI/AMCA 220-21
+    style: v3
+- id: amca.standard.0024
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '230'
+    year: '23'
+  representations:
+    human: ANSI/AMCA Standard 230-23
+    urn: urn:amca:230:23:copub.ansi/amca:standard
+  style: v3
+  non_normalized_aliases:
+  - spelling: ANSI/AMCA 230-23
+    style: v3
+- id: amca.standard.0025
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '240'
+    year: '22'
+  representations:
+    human: ANSI/AMCA Standard 240-22
+    urn: urn:amca:240:22:copub.ansi/amca:standard
+  style: v3
+  non_normalized_aliases:
+  - spelling: ANSI/AMCA 240-22
+    style: v3
+- id: amca.standard.0026
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '250'
+    year: '22'
+  representations:
+    human: ANSI/AMCA Standard 250-22
+    urn: urn:amca:250:22:copub.ansi/amca:standard
+  style: v3
+  non_normalized_aliases:
+  - spelling: ANSI/AMCA 250-22
+    style: v3
+- id: amca.standard.0027
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '260'
+    year: '20'
+  representations:
+    human: ANSI/AMCA Standard 260-20
+    urn: urn:amca:260:20:copub.ansi/amca:standard
+  style: v3
+  non_normalized_aliases:
+  - spelling: ANSI/AMCA 260-20
+    style: v3
+- id: amca.standard.0028
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '270'
+    year: '23'
+  representations:
+    human: ANSI/AMCA Standard 270-23
+    urn: urn:amca:270:23:copub.ansi/amca:standard
+  style: v3
+- id: amca.standard.0029
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '300'
+    year: '14'
+  representations:
+    human: ANSI/AMCA Standard 300-14
+    urn: urn:amca:300:14:copub.ansi/amca:standard
+  style: v3
+  non_normalized_aliases:
+  - spelling: ANSI/AMCA 300-14
+    style: v3
+- id: amca.standard.0030
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '300'
+    year: '24'
+  representations:
+    human: ANSI/AMCA Standard 300-24
+    urn: urn:amca:300:24:copub.ansi/amca:standard
+  style: v3
+- id: amca.standard.0031
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '301'
+    year: '22'
+  representations:
+    human: ANSI/AMCA Standard 301-22
+    urn: urn:amca:301:22:copub.ansi/amca:standard
+  style: v3
+- id: amca.standard.0032
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '320'
+    year: '23'
+  representations:
+    human: ANSI/AMCA Standard 320-23
+    urn: urn:amca:320:23:copub.ansi/amca:standard
+  style: v3
+- id: amca.standard.0033
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: 500-D
+    year: '18'
+  representations:
+    human: ANSI/AMCA Standard 500-D-18
+    urn: urn:amca:500-D:18:copub.ansi/amca:standard
+  style: v3
+  non_normalized_aliases:
+  - spelling: ANSI/AMCA 500-D-18
+    style: v3
+- id: amca.standard.0034
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: 500-L
+    year: '23'
+  representations:
+    human: ANSI/AMCA Standard 500-L-23
+    urn: urn:amca:500-L:23:copub.ansi/amca:standard
+  style: v3
+  non_normalized_aliases:
+  - spelling: ANSI/AMCA 500-L-23
+    style: v3
+- id: amca.standard.0035
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '540'
+    year: '23'
+  representations:
+    human: ANSI/AMCA Standard 540-23
+    urn: urn:amca:540:23:copub.ansi/amca:standard
+  style: v3
+- id: amca.standard.0036
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '550'
+    year: '22'
+  representations:
+    human: ANSI/AMCA Standard 550-22
+    urn: urn:amca:550:22:copub.ansi/amca:standard
+  style: v3
+- id: amca.standard.0037
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '610'
+    year: '19'
+  representations:
+    human: ANSI/AMCA Standard 610-19
+    urn: urn:amca:610:19:copub.ansi/amca:standard
+  style: v3
+  non_normalized_aliases:
+  - spelling: ANSI/AMCA 610-19
+    style: v3
+- id: amca.standard.0038
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '610'
+    year: '25'
+  representations:
+    human: ANSI/AMCA Standard 610-25
+    urn: urn:amca:610:25:copub.ansi/amca:standard
+  style: v3
+- id: amca.standard.0039
+  identifier:
+    _type: pubid:amca:standard
+    copublisher: ANSI/AMCA
+    number: '99'
+    year: '25'
+  representations:
+    human: ANSI/AMCA Standard 99-25
+    urn: urn:amca:99:25:copub.ansi/amca:standard
+  style: v3

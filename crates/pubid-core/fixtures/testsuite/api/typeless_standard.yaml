@@ -1,0 +1,70 @@
+---
+- id: api.typeless_standard.0001
+  identifier:
+    _type: pubid:api:typeless-standard
+    number: '1509'
+  representations:
+    human: API 1509
+    urn: urn:api:std:1509
+  style: v3
+- id: api.typeless_standard.0002
+  identifier:
+    _type: pubid:api:typeless-standard
+    number: 17B
+  representations:
+    human: API 17B
+    urn: urn:api:std:17B
+  style: v3
+- id: api.typeless_standard.0003
+  identifier:
+    _type: pubid:api:typeless-standard
+    number: 17J
+  representations:
+    human: API 17J
+    urn: urn:api:std:17J
+  style: v3
+- id: api.typeless_standard.0004
+  identifier:
+    _type: pubid:api:typeless-standard
+    number: 17U
+  representations:
+    human: API 17U
+    urn: urn:api:std:17U
+  style: v3
+- id: api.typeless_standard.0005
+  identifier:
+    _type: pubid:api:typeless-standard
+    number: '570'
+  representations:
+    human: API 570
+    urn: urn:api:std:570
+  style: v3
+- id: api.typeless_standard.0006
+  identifier:
+    _type: pubid:api:typeless-standard
+    number: '579'
+    part: '2'
+  representations:
+    human: API 579-2
+    urn: urn:api:std:579:-2
+  style: v3
+- id: api.typeless_standard.0007
+  identifier:
+    _type: pubid:api:typeless-standard
+    number: '75'
+    part: '07'
+  representations:
+    human: API 75-07
+    urn: urn:api:std:75:-07
+  style: v3
+  non_normalized_aliases:
+  - spelling: API COS 1-07/RP 75, 4th edition
+    style: v3
+- id: api.typeless_standard.0046
+  identifier:
+    _type: pubid:api:typeless-standard
+    number: OSRC
+  representations:
+    human: API OSRC
+    urn: urn:api:std:OSRC
+  style: v3

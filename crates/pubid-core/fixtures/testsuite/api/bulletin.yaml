@@ -1,0 +1,41 @@
+---
+- id: api.bulletin.0008
+  identifier:
+    _type: pubid:api:bulletin
+    number: '1178'
+  representations:
+    human: API BULL 1178
+    urn: urn:api:std:1178
+  style: v3
+- id: api.bulletin.0009
+  identifier:
+    _type: pubid:api:bulletin
+    number: 11L2
+  representations:
+    human: API BULL 11L2
+    urn: urn:api:std:11L2
+  style: v3
+- id: api.bulletin.0010
+  identifier:
+    _type: pubid:api:bulletin
+    number: '4785'
+  representations:
+    human: API BULL 4785
+    urn: urn:api:std:4785
+  style: v3
+- id: api.bulletin.0011
+  identifier:
+    _type: pubid:api:bulletin
+    number: '5100'
+  representations:
+    human: API BULL 5100
+    urn: urn:api:std:5100
+  style: v3
+- id: api.bulletin.0012
+  identifier:
+    _type: pubid:api:bulletin
+    number: '592'
+  representations:
+    human: API BULL 592
+    urn: urn:api:std:592
+  style: v3

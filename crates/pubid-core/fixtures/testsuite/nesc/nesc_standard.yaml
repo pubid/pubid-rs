@@ -1,0 +1,27 @@
+---
+- id: ieee.nesc_standard.0820
+  identifier:
+    _type: pubid:ieee:nesc-standard
+    number: '2'
+    year: '1997'
+    prefix: C
+  representations:
+    human: C2-1997 National Electrical Safety Code
+    urn: urn:ieee:ieee:C2:1997
+  style: v3
+  non_normalized_aliases:
+  - spelling: C2-1997 National Electric Safety Code (NESC)
+    style: v3
+- id: ieee.nesc_standard.0821
+  identifier:
+    _type: pubid:ieee:nesc-standard
+    number: '2'
+    year: '2012'
+    prefix: C
+  representations:
+    human: C2-2012 National Electrical Safety Code
+    urn: urn:ieee:ieee:C2:2012
+  style: v3
+  non_normalized_aliases:
+  - spelling: National Electrical Safety Code, C2-2012
+    style: v3

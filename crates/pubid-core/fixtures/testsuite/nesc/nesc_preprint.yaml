@@ -1,0 +1,68 @@
+---
+- id: ieee.nesc_preprint.7546
+  identifier:
+    _type: pubid:ieee:nesc-preprint
+    number: '2'
+    year: '2002'
+    prefix: C
+  representations:
+    human: IEEE Std C2.2002.Preprint
+    urn: urn:ieee:ieee:C2:2002:preprint
+  style: v3
+  non_normalized_aliases:
+  - spelling: IEEE Std C2-2002/Preprint
+    style: v3
+- id: ieee.nesc_preprint.7547
+  identifier:
+    _type: pubid:ieee:nesc-preprint
+    number: '2'
+    year: '2007'
+    prefix: C
+  representations:
+    human: IEEE Std C2.2007.Preprint
+    urn: urn:ieee:ieee:C2:2007:preprint
+  style: v3
+  non_normalized_aliases:
+  - spelling: IEEE Std C2-2007/Preprint
+    style: v3
+- id: ieee.nesc_preprint.7548
+  identifier:
+    _type: pubid:ieee:nesc-preprint
+    number: '2'
+    year: '2012'
+    prefix: C
+  representations:
+    human: IEEE Std C2.2012.Preprint
+    urn: urn:ieee:ieee:C2:2012:preprint
+  style: v3
+  non_normalized_aliases:
+  - spelling: C2-2012-Preprint
+    style: v3
+- id: ieee.nesc_preprint.7549
+  identifier:
+    _type: pubid:ieee:nesc-preprint
+    number: '2'
+    year: '2017'
+    prefix: C
+  representations:
+    human: IEEE Std C2.2017.Preprint
+    urn: urn:ieee:ieee:C2:2017:preprint
+  style: v3
+  non_normalized_aliases:
+  - spelling: Preprint Proposal for the 2017 Edition of the National Electrical Safety
+      Code
+    style: v3
+- id: ieee.nesc_preprint.7550
+  identifier:
+    _type: pubid:ieee:nesc-preprint
+    number: '2'
+    year: '2022'
+    prefix: C
+  representations:
+    human: IEEE Std C2.2022.Preprint
+    urn: urn:ieee:ieee:C2:2022:preprint
+  style: v3
+  non_normalized_aliases:
+  - spelling: Preprint Proposals for the 2022 Edition of the National Electrical Safety
+      Code (NESC(R))
+    style: v3

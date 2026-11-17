@@ -1,0 +1,28 @@
+---
+- id: api.continuous_operations_standard.0013
+  identifier:
+    _type: pubid:api:continuous-operations-standard
+    number: '1'
+    part: '08'
+  representations:
+    human: API COS 1-08
+    urn: urn:api:std:1:-08
+  style: v3
+- id: api.continuous_operations_standard.0014
+  identifier:
+    _type: pubid:api:continuous-operations-standard
+    number: '1'
+    part: '09'
+  representations:
+    human: API COS 1-09
+    urn: urn:api:std:1:-09
+  style: v3
+- id: api.continuous_operations_standard.0015
+  identifier:
+    _type: pubid:api:continuous-operations-standard
+    number: '1'
+    part: '10'
+  representations:
+    human: API COS 1-10
+    urn: urn:api:std:1:-10
+  style: v3

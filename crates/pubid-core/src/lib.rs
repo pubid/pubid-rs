@@ -24,20 +24,25 @@ pub mod doi;
 pub mod error;
 pub mod iana;
 pub mod ietf;
+pub mod ieee_code;
 pub mod isbn;
 pub mod oasis;
 pub mod ogc;
 pub mod un;
 pub mod w3c;
 pub mod xsf;
+pub mod api;
+pub mod amca;
+pub mod nesc;
+pub mod ire;
 
 use serde_json::Value;
 
 pub use artifact::{doi_artifact, flavor_artifact, load_artifact, VENDORED_FLAVORS};
 pub use conformance::{
-    doi_vendored, flavor_impl, implemented_flavors, vendored_corpus, DoiImpl, FlavorCorpus,
-    FlavorImpl, FlavorReport, IanaImpl, IetfImpl, IsbnImpl, OasisImpl, OgcImpl, Outcome, Tally,
-    UnImpl, W3cImpl, XsfImpl, VENDORED_CORPORA,
+    doi_vendored, flavor_impl, implemented_flavors, vendored_corpus, AmcaImpl, ApiImpl, DoiImpl,
+    FlavorCorpus, FlavorImpl, FlavorReport, IanaImpl, IetfImpl, IreImpl, IsbnImpl, NescImpl,
+    OasisImpl, OgcImpl, Outcome, Tally, UnImpl, W3cImpl, XsfImpl, VENDORED_CORPORA,
 };
 pub use doi::DoiIdentifier;
 pub use error::{Error, Result};
@@ -49,6 +54,10 @@ pub use ogc::OgcIdentifier;
 pub use un::UnIdentifier;
 pub use w3c::{W3cIdentifier, W3cKind};
 pub use xsf::XsfIdentifier;
+pub use api::ApiIdentifier;
+pub use amca::{AmcaIdentifier, AmcaKind};
+pub use nesc::{NescIdentifier, NescKind};
+pub use ire::IreIdentifier;
 
 /// Schema-driven materialization (mirrors pubid-ts
 /// `materializeFromSchema`): the schema's fields define the attribute

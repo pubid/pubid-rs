@@ -1,0 +1,81 @@
+---
+- id: api.publication.0047
+  identifier:
+    _type: pubid:api:publication
+    number: 1628B
+  representations:
+    human: API PUBL 1628B
+    urn: urn:api:std:1628B
+  style: v3
+- id: api.publication.0048
+  identifier:
+    _type: pubid:api:publication
+    number: '4527'
+  representations:
+    human: API PUBL 4527
+    urn: urn:api:std:4527
+  style: v3
+- id: api.publication.0049
+  identifier:
+    _type: pubid:api:publication
+    number: '4615'
+  representations:
+    human: API PUBL 4615
+    urn: urn:api:std:4615
+  style: v3
+- id: api.publication.0050
+  identifier:
+    _type: pubid:api:publication
+    number: '4703'
+  representations:
+    human: API PUBL 4703
+    urn: urn:api:std:4703
+  style: v3
+- id: api.publication.0051
+  identifier:
+    _type: pubid:api:publication
+    number: '4704'
+  representations:
+    human: API PUBL 4704
+    urn: urn:api:std:4704
+  style: v3
+- id: api.publication.0052
+  identifier:
+    _type: pubid:api:publication
+    number: '4706'
+  representations:
+    human: API PUBL 4706
+    urn: urn:api:std:4706
+  style: v3
+- id: api.publication.0053
+  identifier:
+    _type: pubid:api:publication
+    number: '4712'
+  representations:
+    human: API PUBL 4712
+    urn: urn:api:std:4712
+  style: v3
+- id: api.publication.0054
+  identifier:
+    _type: pubid:api:publication
+    number: '4720'
+  representations:
+    human: API PUBL 4720
+    urn: urn:api:std:4720
+  style: v3
+- id: api.publication.0055
+  identifier:
+    _type: pubid:api:publication
+    number: '4772'
+  representations:
+    human: API PUBL 4772
+    urn: urn:api:std:4772
+  style: v3
+- id: api.publication.0056
+  identifier:
+    _type: pubid:api:publication
+    number: '800'
+  representations:
+    human: API PUBL 800
+    urn: urn:api:std:800
+  style: v3

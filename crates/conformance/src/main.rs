@@ -86,7 +86,18 @@ fn main() -> ExitCode {
                 println!("    {failure}");
             }
         }
-        if report.outcome != Outcome::Pass {
+        // A clean flavor's failures always gate. A ledgered flavor's
+        // shape is recorded, not gated — unless it drifts past the
+        // ledger's own documented mismatch count (worse than the
+        // reference's documented state).
+        let gates = match report.outcome {
+            Outcome::Pass => false,
+            Outcome::Fail => true,
+            // A ledgered flavor's shape is recorded, not gated — unless it
+            // drifts past the ledger's own documented mismatch count.
+            Outcome::Ledger => (report.failures.len() as u64) > report.known_mismatches,
+        };
+        if gates {
             failing.push(flavor.clone());
         }
     }
@@ -102,9 +113,11 @@ fn main() -> ExitCode {
 /// Load the corpus (vendored slice or testsuite checkout) and run one
 /// flavor through its implementation.
 fn run_one(opts: &Options, flavor: &str) -> Result<pubid_core::FlavorReport, Error> {
+    // A flavor without a testsuite corpus dir (e.g. ire) runs its
+    // vendored slice only — the checkout does not carry every flavor.
     let corpus = match &opts.testsuite {
-        Some(root) => FlavorCorpus::from_dir(root, flavor)?,
-        None => vendored_corpus_or_report(flavor)?,
+        Some(root) if root.join(flavor).exists() => FlavorCorpus::from_dir(root, flavor)?,
+        _ => vendored_corpus_or_report(flavor)?,
     };
     match flavor_impl(flavor) {
         Some(impl_) => Ok(run_flavor(&corpus, impl_)),
