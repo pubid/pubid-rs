@@ -1,0 +1,1889 @@
+---
+- id: ietf.bcp.0001
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '10'
+  representations:
+    human: BCP 10
+    urn: urn:ietf:bcp:10
+  style: v3
+- id: ietf.bcp.0002
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '100'
+  representations:
+    human: BCP 100
+    urn: urn:ietf:bcp:100
+  style: v3
+- id: ietf.bcp.0003
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '101'
+  representations:
+    human: BCP 101
+    urn: urn:ietf:bcp:101
+  style: v3
+- id: ietf.bcp.0004
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '102'
+  representations:
+    human: BCP 102
+    urn: urn:ietf:bcp:102
+  style: v3
+- id: ietf.bcp.0005
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '103'
+  representations:
+    human: BCP 103
+    urn: urn:ietf:bcp:103
+  style: v3
+- id: ietf.bcp.0006
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '104'
+  representations:
+    human: BCP 104
+    urn: urn:ietf:bcp:104
+  style: v3
+- id: ietf.bcp.0007
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '105'
+  representations:
+    human: BCP 105
+    urn: urn:ietf:bcp:105
+  style: v3
+- id: ietf.bcp.0008
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '106'
+  representations:
+    human: BCP 106
+    urn: urn:ietf:bcp:106
+  style: v3
+- id: ietf.bcp.0009
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '107'
+  representations:
+    human: BCP 107
+    urn: urn:ietf:bcp:107
+  style: v3
+- id: ietf.bcp.0010
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '108'
+  representations:
+    human: BCP 108
+    urn: urn:ietf:bcp:108
+  style: v3
+- id: ietf.bcp.0011
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '109'
+  representations:
+    human: BCP 109
+    urn: urn:ietf:bcp:109
+  style: v3
+- id: ietf.bcp.0012
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '11'
+  representations:
+    human: BCP 11
+    urn: urn:ietf:bcp:11
+  style: v3
+- id: ietf.bcp.0013
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '110'
+  representations:
+    human: BCP 110
+    urn: urn:ietf:bcp:110
+  style: v3
+- id: ietf.bcp.0014
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '111'
+  representations:
+    human: BCP 111
+    urn: urn:ietf:bcp:111
+  style: v3
+- id: ietf.bcp.0015
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '112'
+  representations:
+    human: BCP 112
+    urn: urn:ietf:bcp:112
+  style: v3
+- id: ietf.bcp.0016
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '114'
+  representations:
+    human: BCP 114
+    urn: urn:ietf:bcp:114
+  style: v3
+- id: ietf.bcp.0017
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '116'
+  representations:
+    human: BCP 116
+    urn: urn:ietf:bcp:116
+  style: v3
+- id: ietf.bcp.0018
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '117'
+  representations:
+    human: BCP 117
+    urn: urn:ietf:bcp:117
+  style: v3
+- id: ietf.bcp.0019
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '118'
+  representations:
+    human: BCP 118
+    urn: urn:ietf:bcp:118
+  style: v3
+- id: ietf.bcp.0020
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '119'
+  representations:
+    human: BCP 119
+    urn: urn:ietf:bcp:119
+  style: v3
+- id: ietf.bcp.0021
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '120'
+  representations:
+    human: BCP 120
+    urn: urn:ietf:bcp:120
+  style: v3
+- id: ietf.bcp.0022
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '121'
+  representations:
+    human: BCP 121
+    urn: urn:ietf:bcp:121
+  style: v3
+- id: ietf.bcp.0023
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '122'
+  representations:
+    human: BCP 122
+    urn: urn:ietf:bcp:122
+  style: v3
+- id: ietf.bcp.0024
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '123'
+  representations:
+    human: BCP 123
+    urn: urn:ietf:bcp:123
+  style: v3
+- id: ietf.bcp.0025
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '124'
+  representations:
+    human: BCP 124
+    urn: urn:ietf:bcp:124
+  style: v3
+- id: ietf.bcp.0026
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '125'
+  representations:
+    human: BCP 125
+    urn: urn:ietf:bcp:125
+  style: v3
+- id: ietf.bcp.0027
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '126'
+  representations:
+    human: BCP 126
+    urn: urn:ietf:bcp:126
+  style: v3
+- id: ietf.bcp.0028
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '127'
+  representations:
+    human: BCP 127
+    urn: urn:ietf:bcp:127
+  style: v3
+- id: ietf.bcp.0029
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '128'
+  representations:
+    human: BCP 128
+    urn: urn:ietf:bcp:128
+  style: v3
+- id: ietf.bcp.0030
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '129'
+  representations:
+    human: BCP 129
+    urn: urn:ietf:bcp:129
+  style: v3
+- id: ietf.bcp.0031
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '13'
+  representations:
+    human: BCP 13
+    urn: urn:ietf:bcp:13
+  style: v3
+- id: ietf.bcp.0032
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '130'
+  representations:
+    human: BCP 130
+    urn: urn:ietf:bcp:130
+  style: v3
+- id: ietf.bcp.0033
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '131'
+  representations:
+    human: BCP 131
+    urn: urn:ietf:bcp:131
+  style: v3
+- id: ietf.bcp.0034
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '132'
+  representations:
+    human: BCP 132
+    urn: urn:ietf:bcp:132
+  style: v3
+- id: ietf.bcp.0035
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '133'
+  representations:
+    human: BCP 133
+    urn: urn:ietf:bcp:133
+  style: v3
+- id: ietf.bcp.0036
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '134'
+  representations:
+    human: BCP 134
+    urn: urn:ietf:bcp:134
+  style: v3
+- id: ietf.bcp.0037
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '135'
+  representations:
+    human: BCP 135
+    urn: urn:ietf:bcp:135
+  style: v3
+- id: ietf.bcp.0038
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '136'
+  representations:
+    human: BCP 136
+    urn: urn:ietf:bcp:136
+  style: v3
+- id: ietf.bcp.0039
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '137'
+  representations:
+    human: BCP 137
+    urn: urn:ietf:bcp:137
+  style: v3
+- id: ietf.bcp.0040
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '138'
+  representations:
+    human: BCP 138
+    urn: urn:ietf:bcp:138
+  style: v3
+- id: ietf.bcp.0041
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '139'
+  representations:
+    human: BCP 139
+    urn: urn:ietf:bcp:139
+  style: v3
+- id: ietf.bcp.0042
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '14'
+  representations:
+    human: BCP 14
+    urn: urn:ietf:bcp:14
+  style: v3
+- id: ietf.bcp.0043
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '140'
+  representations:
+    human: BCP 140
+    urn: urn:ietf:bcp:140
+  style: v3
+- id: ietf.bcp.0044
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '141'
+  representations:
+    human: BCP 141
+    urn: urn:ietf:bcp:141
+  style: v3
+- id: ietf.bcp.0045
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '142'
+  representations:
+    human: BCP 142
+    urn: urn:ietf:bcp:142
+  style: v3
+- id: ietf.bcp.0046
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '143'
+  representations:
+    human: BCP 143
+    urn: urn:ietf:bcp:143
+  style: v3
+- id: ietf.bcp.0047
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '144'
+  representations:
+    human: BCP 144
+    urn: urn:ietf:bcp:144
+  style: v3
+- id: ietf.bcp.0048
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '145'
+  representations:
+    human: BCP 145
+    urn: urn:ietf:bcp:145
+  style: v3
+- id: ietf.bcp.0049
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '146'
+  representations:
+    human: BCP 146
+    urn: urn:ietf:bcp:146
+  style: v3
+- id: ietf.bcp.0050
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '147'
+  representations:
+    human: BCP 147
+    urn: urn:ietf:bcp:147
+  style: v3
+- id: ietf.bcp.0051
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '148'
+  representations:
+    human: BCP 148
+    urn: urn:ietf:bcp:148
+  style: v3
+- id: ietf.bcp.0052
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '149'
+  representations:
+    human: BCP 149
+    urn: urn:ietf:bcp:149
+  style: v3
+- id: ietf.bcp.0053
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '15'
+  representations:
+    human: BCP 15
+    urn: urn:ietf:bcp:15
+  style: v3
+- id: ietf.bcp.0054
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '150'
+  representations:
+    human: BCP 150
+    urn: urn:ietf:bcp:150
+  style: v3
+- id: ietf.bcp.0055
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '151'
+  representations:
+    human: BCP 151
+    urn: urn:ietf:bcp:151
+  style: v3
+- id: ietf.bcp.0056
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '152'
+  representations:
+    human: BCP 152
+    urn: urn:ietf:bcp:152
+  style: v3
+- id: ietf.bcp.0057
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '153'
+  representations:
+    human: BCP 153
+    urn: urn:ietf:bcp:153
+  style: v3
+- id: ietf.bcp.0058
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '154'
+  representations:
+    human: BCP 154
+    urn: urn:ietf:bcp:154
+  style: v3
+- id: ietf.bcp.0059
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '155'
+  representations:
+    human: BCP 155
+    urn: urn:ietf:bcp:155
+  style: v3
+- id: ietf.bcp.0060
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '156'
+  representations:
+    human: BCP 156
+    urn: urn:ietf:bcp:156
+  style: v3
+- id: ietf.bcp.0061
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '157'
+  representations:
+    human: BCP 157
+    urn: urn:ietf:bcp:157
+  style: v3
+- id: ietf.bcp.0062
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '158'
+  representations:
+    human: BCP 158
+    urn: urn:ietf:bcp:158
+  style: v3
+- id: ietf.bcp.0063
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '159'
+  representations:
+    human: BCP 159
+    urn: urn:ietf:bcp:159
+  style: v3
+- id: ietf.bcp.0064
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '16'
+  representations:
+    human: BCP 16
+    urn: urn:ietf:bcp:16
+  style: v3
+- id: ietf.bcp.0065
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '160'
+  representations:
+    human: BCP 160
+    urn: urn:ietf:bcp:160
+  style: v3
+- id: ietf.bcp.0066
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '161'
+  representations:
+    human: BCP 161
+    urn: urn:ietf:bcp:161
+  style: v3
+- id: ietf.bcp.0067
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '162'
+  representations:
+    human: BCP 162
+    urn: urn:ietf:bcp:162
+  style: v3
+- id: ietf.bcp.0068
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '163'
+  representations:
+    human: BCP 163
+    urn: urn:ietf:bcp:163
+  style: v3
+- id: ietf.bcp.0069
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '164'
+  representations:
+    human: BCP 164
+    urn: urn:ietf:bcp:164
+  style: v3
+- id: ietf.bcp.0070
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '165'
+  representations:
+    human: BCP 165
+    urn: urn:ietf:bcp:165
+  style: v3
+- id: ietf.bcp.0071
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '166'
+  representations:
+    human: BCP 166
+    urn: urn:ietf:bcp:166
+  style: v3
+- id: ietf.bcp.0072
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '167'
+  representations:
+    human: BCP 167
+    urn: urn:ietf:bcp:167
+  style: v3
+- id: ietf.bcp.0073
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '168'
+  representations:
+    human: BCP 168
+    urn: urn:ietf:bcp:168
+  style: v3
+- id: ietf.bcp.0074
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '169'
+  representations:
+    human: BCP 169
+    urn: urn:ietf:bcp:169
+  style: v3
+- id: ietf.bcp.0075
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '17'
+  representations:
+    human: BCP 17
+    urn: urn:ietf:bcp:17
+  style: v3
+- id: ietf.bcp.0076
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '170'
+  representations:
+    human: BCP 170
+    urn: urn:ietf:bcp:170
+  style: v3
+- id: ietf.bcp.0077
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '171'
+  representations:
+    human: BCP 171
+    urn: urn:ietf:bcp:171
+  style: v3
+- id: ietf.bcp.0078
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '172'
+  representations:
+    human: BCP 172
+    urn: urn:ietf:bcp:172
+  style: v3
+- id: ietf.bcp.0079
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '173'
+  representations:
+    human: BCP 173
+    urn: urn:ietf:bcp:173
+  style: v3
+- id: ietf.bcp.0080
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '174'
+  representations:
+    human: BCP 174
+    urn: urn:ietf:bcp:174
+  style: v3
+- id: ietf.bcp.0081
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '175'
+  representations:
+    human: BCP 175
+    urn: urn:ietf:bcp:175
+  style: v3
+- id: ietf.bcp.0082
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '176'
+  representations:
+    human: BCP 176
+    urn: urn:ietf:bcp:176
+  style: v3
+- id: ietf.bcp.0083
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '177'
+  representations:
+    human: BCP 177
+    urn: urn:ietf:bcp:177
+  style: v3
+- id: ietf.bcp.0084
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '178'
+  representations:
+    human: BCP 178
+    urn: urn:ietf:bcp:178
+  style: v3
+- id: ietf.bcp.0085
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '179'
+  representations:
+    human: BCP 179
+    urn: urn:ietf:bcp:179
+  style: v3
+- id: ietf.bcp.0086
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '18'
+  representations:
+    human: BCP 18
+    urn: urn:ietf:bcp:18
+  style: v3
+- id: ietf.bcp.0087
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '180'
+  representations:
+    human: BCP 180
+    urn: urn:ietf:bcp:180
+  style: v3
+- id: ietf.bcp.0088
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '181'
+  representations:
+    human: BCP 181
+    urn: urn:ietf:bcp:181
+  style: v3
+- id: ietf.bcp.0089
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '182'
+  representations:
+    human: BCP 182
+    urn: urn:ietf:bcp:182
+  style: v3
+- id: ietf.bcp.0090
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '183'
+  representations:
+    human: BCP 183
+    urn: urn:ietf:bcp:183
+  style: v3
+- id: ietf.bcp.0091
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '184'
+  representations:
+    human: BCP 184
+    urn: urn:ietf:bcp:184
+  style: v3
+- id: ietf.bcp.0092
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '185'
+  representations:
+    human: BCP 185
+    urn: urn:ietf:bcp:185
+  style: v3
+- id: ietf.bcp.0093
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '186'
+  representations:
+    human: BCP 186
+    urn: urn:ietf:bcp:186
+  style: v3
+- id: ietf.bcp.0094
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '187'
+  representations:
+    human: BCP 187
+    urn: urn:ietf:bcp:187
+  style: v3
+- id: ietf.bcp.0095
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '188'
+  representations:
+    human: BCP 188
+    urn: urn:ietf:bcp:188
+  style: v3
+- id: ietf.bcp.0096
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '189'
+  representations:
+    human: BCP 189
+    urn: urn:ietf:bcp:189
+  style: v3
+- id: ietf.bcp.0097
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '19'
+  representations:
+    human: BCP 19
+    urn: urn:ietf:bcp:19
+  style: v3
+- id: ietf.bcp.0098
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '190'
+  representations:
+    human: BCP 190
+    urn: urn:ietf:bcp:190
+  style: v3
+- id: ietf.bcp.0099
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '191'
+  representations:
+    human: BCP 191
+    urn: urn:ietf:bcp:191
+  style: v3
+- id: ietf.bcp.0100
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '193'
+  representations:
+    human: BCP 193
+    urn: urn:ietf:bcp:193
+  style: v3
+- id: ietf.bcp.0101
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '194'
+  representations:
+    human: BCP 194
+    urn: urn:ietf:bcp:194
+  style: v3
+- id: ietf.bcp.0102
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '195'
+  representations:
+    human: BCP 195
+    urn: urn:ietf:bcp:195
+  style: v3
+- id: ietf.bcp.0103
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '196'
+  representations:
+    human: BCP 196
+    urn: urn:ietf:bcp:196
+  style: v3
+- id: ietf.bcp.0104
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '197'
+  representations:
+    human: BCP 197
+    urn: urn:ietf:bcp:197
+  style: v3
+- id: ietf.bcp.0105
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '198'
+  representations:
+    human: BCP 198
+    urn: urn:ietf:bcp:198
+  style: v3
+- id: ietf.bcp.0106
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '199'
+  representations:
+    human: BCP 199
+    urn: urn:ietf:bcp:199
+  style: v3
+- id: ietf.bcp.0107
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '20'
+  representations:
+    human: BCP 20
+    urn: urn:ietf:bcp:20
+  style: v3
+- id: ietf.bcp.0108
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '200'
+  representations:
+    human: BCP 200
+    urn: urn:ietf:bcp:200
+  style: v3
+- id: ietf.bcp.0109
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '201'
+  representations:
+    human: BCP 201
+    urn: urn:ietf:bcp:201
+  style: v3
+- id: ietf.bcp.0110
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '202'
+  representations:
+    human: BCP 202
+    urn: urn:ietf:bcp:202
+  style: v3
+- id: ietf.bcp.0111
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '203'
+  representations:
+    human: BCP 203
+    urn: urn:ietf:bcp:203
+  style: v3
+- id: ietf.bcp.0112
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '204'
+  representations:
+    human: BCP 204
+    urn: urn:ietf:bcp:204
+  style: v3
+- id: ietf.bcp.0113
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '205'
+  representations:
+    human: BCP 205
+    urn: urn:ietf:bcp:205
+  style: v3
+- id: ietf.bcp.0114
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '206'
+  representations:
+    human: BCP 206
+    urn: urn:ietf:bcp:206
+  style: v3
+- id: ietf.bcp.0115
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '207'
+  representations:
+    human: BCP 207
+    urn: urn:ietf:bcp:207
+  style: v3
+- id: ietf.bcp.0116
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '208'
+  representations:
+    human: BCP 208
+    urn: urn:ietf:bcp:208
+  style: v3
+- id: ietf.bcp.0117
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '209'
+  representations:
+    human: BCP 209
+    urn: urn:ietf:bcp:209
+  style: v3
+- id: ietf.bcp.0118
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '21'
+  representations:
+    human: BCP 21
+    urn: urn:ietf:bcp:21
+  style: v3
+- id: ietf.bcp.0119
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '210'
+  representations:
+    human: BCP 210
+    urn: urn:ietf:bcp:210
+  style: v3
+- id: ietf.bcp.0120
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '211'
+  representations:
+    human: BCP 211
+    urn: urn:ietf:bcp:211
+  style: v3
+- id: ietf.bcp.0121
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '212'
+  representations:
+    human: BCP 212
+    urn: urn:ietf:bcp:212
+  style: v3
+- id: ietf.bcp.0122
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '213'
+  representations:
+    human: BCP 213
+    urn: urn:ietf:bcp:213
+  style: v3
+- id: ietf.bcp.0123
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '214'
+  representations:
+    human: BCP 214
+    urn: urn:ietf:bcp:214
+  style: v3
+- id: ietf.bcp.0124
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '215'
+  representations:
+    human: BCP 215
+    urn: urn:ietf:bcp:215
+  style: v3
+- id: ietf.bcp.0125
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '216'
+  representations:
+    human: BCP 216
+    urn: urn:ietf:bcp:216
+  style: v3
+- id: ietf.bcp.0126
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '217'
+  representations:
+    human: BCP 217
+    urn: urn:ietf:bcp:217
+  style: v3
+- id: ietf.bcp.0127
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '218'
+  representations:
+    human: BCP 218
+    urn: urn:ietf:bcp:218
+  style: v3
+- id: ietf.bcp.0128
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '219'
+  representations:
+    human: BCP 219
+    urn: urn:ietf:bcp:219
+  style: v3
+- id: ietf.bcp.0129
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '22'
+  representations:
+    human: BCP 22
+    urn: urn:ietf:bcp:22
+  style: v3
+- id: ietf.bcp.0130
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '220'
+  representations:
+    human: BCP 220
+    urn: urn:ietf:bcp:220
+  style: v3
+- id: ietf.bcp.0131
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '221'
+  representations:
+    human: BCP 221
+    urn: urn:ietf:bcp:221
+  style: v3
+- id: ietf.bcp.0132
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '222'
+  representations:
+    human: BCP 222
+    urn: urn:ietf:bcp:222
+  style: v3
+- id: ietf.bcp.0133
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '223'
+  representations:
+    human: BCP 223
+    urn: urn:ietf:bcp:223
+  style: v3
+- id: ietf.bcp.0134
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '224'
+  representations:
+    human: BCP 224
+    urn: urn:ietf:bcp:224
+  style: v3
+- id: ietf.bcp.0135
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '225'
+  representations:
+    human: BCP 225
+    urn: urn:ietf:bcp:225
+  style: v3
+- id: ietf.bcp.0136
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '226'
+  representations:
+    human: BCP 226
+    urn: urn:ietf:bcp:226
+  style: v3
+- id: ietf.bcp.0137
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '227'
+  representations:
+    human: BCP 227
+    urn: urn:ietf:bcp:227
+  style: v3
+- id: ietf.bcp.0138
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '228'
+  representations:
+    human: BCP 228
+    urn: urn:ietf:bcp:228
+  style: v3
+- id: ietf.bcp.0139
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '229'
+  representations:
+    human: BCP 229
+    urn: urn:ietf:bcp:229
+  style: v3
+- id: ietf.bcp.0140
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '23'
+  representations:
+    human: BCP 23
+    urn: urn:ietf:bcp:23
+  style: v3
+- id: ietf.bcp.0141
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '230'
+  representations:
+    human: BCP 230
+    urn: urn:ietf:bcp:230
+  style: v3
+- id: ietf.bcp.0142
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '231'
+  representations:
+    human: BCP 231
+    urn: urn:ietf:bcp:231
+  style: v3
+- id: ietf.bcp.0143
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '232'
+  representations:
+    human: BCP 232
+    urn: urn:ietf:bcp:232
+  style: v3
+- id: ietf.bcp.0144
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '233'
+  representations:
+    human: BCP 233
+    urn: urn:ietf:bcp:233
+  style: v3
+- id: ietf.bcp.0145
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '234'
+  representations:
+    human: BCP 234
+    urn: urn:ietf:bcp:234
+  style: v3
+- id: ietf.bcp.0146
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '235'
+  representations:
+    human: BCP 235
+    urn: urn:ietf:bcp:235
+  style: v3
+- id: ietf.bcp.0147
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '236'
+  representations:
+    human: BCP 236
+    urn: urn:ietf:bcp:236
+  style: v3
+- id: ietf.bcp.0148
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '237'
+  representations:
+    human: BCP 237
+    urn: urn:ietf:bcp:237
+  style: v3
+- id: ietf.bcp.0149
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '238'
+  representations:
+    human: BCP 238
+    urn: urn:ietf:bcp:238
+  style: v3
+- id: ietf.bcp.0150
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '239'
+  representations:
+    human: BCP 239
+    urn: urn:ietf:bcp:239
+  style: v3
+- id: ietf.bcp.0151
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '24'
+  representations:
+    human: BCP 24
+    urn: urn:ietf:bcp:24
+  style: v3
+- id: ietf.bcp.0152
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '240'
+  representations:
+    human: BCP 240
+    urn: urn:ietf:bcp:240
+  style: v3
+- id: ietf.bcp.0153
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '241'
+  representations:
+    human: BCP 241
+    urn: urn:ietf:bcp:241
+  style: v3
+- id: ietf.bcp.0154
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '242'
+  representations:
+    human: BCP 242
+    urn: urn:ietf:bcp:242
+  style: v3
+- id: ietf.bcp.0155
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '243'
+  representations:
+    human: BCP 243
+    urn: urn:ietf:bcp:243
+  style: v3
+- id: ietf.bcp.0156
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '244'
+  representations:
+    human: BCP 244
+    urn: urn:ietf:bcp:244
+  style: v3
+- id: ietf.bcp.0157
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '245'
+  representations:
+    human: BCP 245
+    urn: urn:ietf:bcp:245
+  style: v3
+- id: ietf.bcp.0158
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '25'
+  representations:
+    human: BCP 25
+    urn: urn:ietf:bcp:25
+  style: v3
+- id: ietf.bcp.0159
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '26'
+  representations:
+    human: BCP 26
+    urn: urn:ietf:bcp:26
+  style: v3
+- id: ietf.bcp.0160
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '27'
+  representations:
+    human: BCP 27
+    urn: urn:ietf:bcp:27
+  style: v3
+- id: ietf.bcp.0161
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '28'
+  representations:
+    human: BCP 28
+    urn: urn:ietf:bcp:28
+  style: v3
+- id: ietf.bcp.0162
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '29'
+  representations:
+    human: BCP 29
+    urn: urn:ietf:bcp:29
+  style: v3
+- id: ietf.bcp.0163
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '3'
+  representations:
+    human: BCP 3
+    urn: urn:ietf:bcp:3
+  style: v3
+- id: ietf.bcp.0164
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '30'
+  representations:
+    human: BCP 30
+    urn: urn:ietf:bcp:30
+  style: v3
+- id: ietf.bcp.0165
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '31'
+  representations:
+    human: BCP 31
+    urn: urn:ietf:bcp:31
+  style: v3
+- id: ietf.bcp.0166
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '32'
+  representations:
+    human: BCP 32
+    urn: urn:ietf:bcp:32
+  style: v3
+- id: ietf.bcp.0167
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '33'
+  representations:
+    human: BCP 33
+    urn: urn:ietf:bcp:33
+  style: v3
+- id: ietf.bcp.0168
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '34'
+  representations:
+    human: BCP 34
+    urn: urn:ietf:bcp:34
+  style: v3
+- id: ietf.bcp.0169
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '35'
+  representations:
+    human: BCP 35
+    urn: urn:ietf:bcp:35
+  style: v3
+- id: ietf.bcp.0170
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '36'
+  representations:
+    human: BCP 36
+    urn: urn:ietf:bcp:36
+  style: v3
+- id: ietf.bcp.0171
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '37'
+  representations:
+    human: BCP 37
+    urn: urn:ietf:bcp:37
+  style: v3
+- id: ietf.bcp.0172
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '38'
+  representations:
+    human: BCP 38
+    urn: urn:ietf:bcp:38
+  style: v3
+- id: ietf.bcp.0173
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '39'
+  representations:
+    human: BCP 39
+    urn: urn:ietf:bcp:39
+  style: v3
+- id: ietf.bcp.0174
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '4'
+  representations:
+    human: BCP 4
+    urn: urn:ietf:bcp:4
+  style: v3
+- id: ietf.bcp.0175
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '40'
+  representations:
+    human: BCP 40
+    urn: urn:ietf:bcp:40
+  style: v3
+- id: ietf.bcp.0176
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '41'
+  representations:
+    human: BCP 41
+    urn: urn:ietf:bcp:41
+  style: v3
+- id: ietf.bcp.0177
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '42'
+  representations:
+    human: BCP 42
+    urn: urn:ietf:bcp:42
+  style: v3
+- id: ietf.bcp.0178
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '43'
+  representations:
+    human: BCP 43
+    urn: urn:ietf:bcp:43
+  style: v3
+- id: ietf.bcp.0179
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '44'
+  representations:
+    human: BCP 44
+    urn: urn:ietf:bcp:44
+  style: v3
+- id: ietf.bcp.0180
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '45'
+  representations:
+    human: BCP 45
+    urn: urn:ietf:bcp:45
+  style: v3
+- id: ietf.bcp.0181
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '46'
+  representations:
+    human: BCP 46
+    urn: urn:ietf:bcp:46
+  style: v3
+- id: ietf.bcp.0182
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '47'
+  representations:
+    human: BCP 47
+    urn: urn:ietf:bcp:47
+  style: v3
+- id: ietf.bcp.0183
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '48'
+  representations:
+    human: BCP 48
+    urn: urn:ietf:bcp:48
+  style: v3
+- id: ietf.bcp.0184
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '49'
+  representations:
+    human: BCP 49
+    urn: urn:ietf:bcp:49
+  style: v3
+- id: ietf.bcp.0185
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '5'
+  representations:
+    human: BCP 5
+    urn: urn:ietf:bcp:5
+  style: v3
+- id: ietf.bcp.0186
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '50'
+  representations:
+    human: BCP 50
+    urn: urn:ietf:bcp:50
+  style: v3
+- id: ietf.bcp.0187
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '51'
+  representations:
+    human: BCP 51
+    urn: urn:ietf:bcp:51
+  style: v3
+- id: ietf.bcp.0188
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '52'
+  representations:
+    human: BCP 52
+    urn: urn:ietf:bcp:52
+  style: v3
+- id: ietf.bcp.0189
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '53'
+  representations:
+    human: BCP 53
+    urn: urn:ietf:bcp:53
+  style: v3
+- id: ietf.bcp.0190
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '54'
+  representations:
+    human: BCP 54
+    urn: urn:ietf:bcp:54
+  style: v3
+- id: ietf.bcp.0191
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '55'
+  representations:
+    human: BCP 55
+    urn: urn:ietf:bcp:55
+  style: v3
+- id: ietf.bcp.0192
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '56'
+  representations:
+    human: BCP 56
+    urn: urn:ietf:bcp:56
+  style: v3
+- id: ietf.bcp.0193
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '57'
+  representations:
+    human: BCP 57
+    urn: urn:ietf:bcp:57
+  style: v3
+- id: ietf.bcp.0194
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '58'
+  representations:
+    human: BCP 58
+    urn: urn:ietf:bcp:58
+  style: v3
+- id: ietf.bcp.0195
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '59'
+  representations:
+    human: BCP 59
+    urn: urn:ietf:bcp:59
+  style: v3
+- id: ietf.bcp.0196
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '6'
+  representations:
+    human: BCP 6
+    urn: urn:ietf:bcp:6
+  style: v3
+- id: ietf.bcp.0197
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '60'
+  representations:
+    human: BCP 60
+    urn: urn:ietf:bcp:60
+  style: v3
+- id: ietf.bcp.0198
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '61'
+  representations:
+    human: BCP 61
+    urn: urn:ietf:bcp:61
+  style: v3
+- id: ietf.bcp.0199
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '62'
+  representations:
+    human: BCP 62
+    urn: urn:ietf:bcp:62
+  style: v3
+- id: ietf.bcp.0200
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '63'
+  representations:
+    human: BCP 63
+    urn: urn:ietf:bcp:63
+  style: v3
+- id: ietf.bcp.0201
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '64'
+  representations:
+    human: BCP 64
+    urn: urn:ietf:bcp:64
+  style: v3
+- id: ietf.bcp.0202
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '65'
+  representations:
+    human: BCP 65
+    urn: urn:ietf:bcp:65
+  style: v3
+- id: ietf.bcp.0203
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '67'
+  representations:
+    human: BCP 67
+    urn: urn:ietf:bcp:67
+  style: v3
+- id: ietf.bcp.0204
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '68'
+  representations:
+    human: BCP 68
+    urn: urn:ietf:bcp:68
+  style: v3
+- id: ietf.bcp.0205
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '69'
+  representations:
+    human: BCP 69
+    urn: urn:ietf:bcp:69
+  style: v3
+- id: ietf.bcp.0206
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '7'
+  representations:
+    human: BCP 7
+    urn: urn:ietf:bcp:7
+  style: v3
+- id: ietf.bcp.0207
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '70'
+  representations:
+    human: BCP 70
+    urn: urn:ietf:bcp:70
+  style: v3
+- id: ietf.bcp.0208
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '71'
+  representations:
+    human: BCP 71
+    urn: urn:ietf:bcp:71
+  style: v3
+- id: ietf.bcp.0209
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '72'
+  representations:
+    human: BCP 72
+    urn: urn:ietf:bcp:72
+  style: v3
+- id: ietf.bcp.0210
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '73'
+  representations:
+    human: BCP 73
+    urn: urn:ietf:bcp:73
+  style: v3
+- id: ietf.bcp.0211
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '74'
+  representations:
+    human: BCP 74
+    urn: urn:ietf:bcp:74
+  style: v3
+- id: ietf.bcp.0212
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '75'
+  representations:
+    human: BCP 75
+    urn: urn:ietf:bcp:75
+  style: v3
+- id: ietf.bcp.0213
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '76'
+  representations:
+    human: BCP 76
+    urn: urn:ietf:bcp:76
+  style: v3
+- id: ietf.bcp.0214
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '77'
+  representations:
+    human: BCP 77
+    urn: urn:ietf:bcp:77
+  style: v3
+- id: ietf.bcp.0215
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '78'
+  representations:
+    human: BCP 78
+    urn: urn:ietf:bcp:78
+  style: v3
+- id: ietf.bcp.0216
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '79'
+  representations:
+    human: BCP 79
+    urn: urn:ietf:bcp:79
+  style: v3
+- id: ietf.bcp.0217
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '8'
+  representations:
+    human: BCP 8
+    urn: urn:ietf:bcp:8
+  style: v3
+- id: ietf.bcp.0218
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '80'
+  representations:
+    human: BCP 80
+    urn: urn:ietf:bcp:80
+  style: v3
+- id: ietf.bcp.0219
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '81'
+  representations:
+    human: BCP 81
+    urn: urn:ietf:bcp:81
+  style: v3
+- id: ietf.bcp.0220
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '82'
+  representations:
+    human: BCP 82
+    urn: urn:ietf:bcp:82
+  style: v3
+- id: ietf.bcp.0221
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '84'
+  representations:
+    human: BCP 84
+    urn: urn:ietf:bcp:84
+  style: v3
+- id: ietf.bcp.0222
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '85'
+  representations:
+    human: BCP 85
+    urn: urn:ietf:bcp:85
+  style: v3
+- id: ietf.bcp.0223
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '86'
+  representations:
+    human: BCP 86
+    urn: urn:ietf:bcp:86
+  style: v3
+- id: ietf.bcp.0224
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '87'
+  representations:
+    human: BCP 87
+    urn: urn:ietf:bcp:87
+  style: v3
+- id: ietf.bcp.0225
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '88'
+  representations:
+    human: BCP 88
+    urn: urn:ietf:bcp:88
+  style: v3
+- id: ietf.bcp.0226
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '89'
+  representations:
+    human: BCP 89
+    urn: urn:ietf:bcp:89
+  style: v3
+- id: ietf.bcp.0227
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '9'
+  representations:
+    human: BCP 9
+    urn: urn:ietf:bcp:9
+  style: v3
+- id: ietf.bcp.0228
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '90'
+  representations:
+    human: BCP 90
+    urn: urn:ietf:bcp:90
+  style: v3
+- id: ietf.bcp.0229
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '91'
+  representations:
+    human: BCP 91
+    urn: urn:ietf:bcp:91
+  style: v3
+- id: ietf.bcp.0230
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '92'
+  representations:
+    human: BCP 92
+    urn: urn:ietf:bcp:92
+  style: v3
+- id: ietf.bcp.0231
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '93'
+  representations:
+    human: BCP 93
+    urn: urn:ietf:bcp:93
+  style: v3
+- id: ietf.bcp.0232
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '95'
+  representations:
+    human: BCP 95
+    urn: urn:ietf:bcp:95
+  style: v3
+- id: ietf.bcp.0233
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '96'
+  representations:
+    human: BCP 96
+    urn: urn:ietf:bcp:96
+  style: v3
+- id: ietf.bcp.0234
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '97'
+  representations:
+    human: BCP 97
+    urn: urn:ietf:bcp:97
+  style: v3
+- id: ietf.bcp.0235
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '98'
+  representations:
+    human: BCP 98
+    urn: urn:ietf:bcp:98
+  style: v3
+- id: ietf.bcp.0236
+  identifier:
+    _type: pubid:ietf:bcp
+    number: '99'
+  representations:
+    human: BCP 99
+    urn: urn:ietf:bcp:99
+  style: v3

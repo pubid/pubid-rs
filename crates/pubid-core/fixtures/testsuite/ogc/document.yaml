@@ -1,0 +1,843 @@
+---
+- id: ogc.document.0001
+  identifier:
+    _type: pubid:ogc:document
+    year: '01'
+    number: '009'
+    revision: a
+  representations:
+    human: 01-009a
+    urn: urn:ogc:01:009:a
+  style: v3
+- id: ogc.document.0002
+  identifier:
+    _type: pubid:ogc:document
+    year: '01'
+    number: '036'
+  representations:
+    human: 01-036
+    urn: urn:ogc:01:036
+  style: v3
+- id: ogc.document.0003
+  identifier:
+    _type: pubid:ogc:document
+    year: '02'
+    number: '023'
+    revision: r4
+  representations:
+    human: 02-023r4
+    urn: urn:ogc:02:023:r4
+  style: v3
+- id: ogc.document.0004
+  identifier:
+    _type: pubid:ogc:document
+    year: '02'
+    number: '028'
+  representations:
+    human: 02-028
+    urn: urn:ogc:02:028
+  style: v3
+- id: ogc.document.0005
+  identifier:
+    _type: pubid:ogc:document
+    year: '02'
+    number: '039'
+    revision: r1
+  representations:
+    human: 02-039r1
+    urn: urn:ogc:02:039:r1
+  style: v3
+- id: ogc.document.0006
+  identifier:
+    _type: pubid:ogc:document
+    year: '03'
+    number: '088'
+    revision: r1
+  representations:
+    human: 03-088r1
+    urn: urn:ogc:03:088:r1
+  style: v3
+- id: ogc.document.0007
+  identifier:
+    _type: pubid:ogc:document
+    year: '04'
+    number: '052'
+  representations:
+    human: 04-052
+    urn: urn:ogc:04:052
+  style: v3
+- id: ogc.document.0008
+  identifier:
+    _type: pubid:ogc:document
+    year: '04'
+    number: '094'
+  representations:
+    human: 04-094
+    urn: urn:ogc:04:094
+  style: v3
+- id: ogc.document.0009
+  identifier:
+    _type: pubid:ogc:document
+    year: '04'
+    number: '095'
+    revision: c1
+  representations:
+    human: 04-095c1
+    urn: urn:ogc:04:095:c1
+  style: v3
+- id: ogc.document.0010
+  identifier:
+    _type: pubid:ogc:document
+    year: '05'
+    number: '008'
+    revision: c1
+  representations:
+    human: 05-008c1
+    urn: urn:ogc:05:008:c1
+  style: v3
+- id: ogc.document.0011
+  identifier:
+    _type: pubid:ogc:document
+    year: '05'
+    number: '015'
+  representations:
+    human: 05-015
+    urn: urn:ogc:05:015
+  style: v3
+- id: ogc.document.0012
+  identifier:
+    _type: pubid:ogc:document
+    year: '05'
+    number: '089'
+    revision: r1
+  representations:
+    human: 05-089r1
+    urn: urn:ogc:05:089:r1
+  style: v3
+- id: ogc.document.0013
+  identifier:
+    _type: pubid:ogc:document
+    year: '05'
+    number: '094'
+    revision: r1
+  representations:
+    human: 05-094r1
+    urn: urn:ogc:05:094:r1
+  style: v3
+- id: ogc.document.0014
+  identifier:
+    _type: pubid:ogc:document
+    year: '05'
+    number: '110'
+  representations:
+    human: 05-110
+    urn: urn:ogc:05:110
+  style: v3
+- id: ogc.document.0015
+  identifier:
+    _type: pubid:ogc:document
+    year: '06'
+    number: '080'
+    revision: r1
+  representations:
+    human: 06-080r1
+    urn: urn:ogc:06:080:r1
+  style: v3
+- id: ogc.document.0016
+  identifier:
+    _type: pubid:ogc:document
+    year: '06'
+    number: '098'
+  representations:
+    human: 06-098
+    urn: urn:ogc:06:098
+  style: v3
+- id: ogc.document.0017
+  identifier:
+    _type: pubid:ogc:document
+    year: '06'
+    number: '103'
+    revision: r4
+  representations:
+    human: 06-103r4
+    urn: urn:ogc:06:103:r4
+  style: v3
+- id: ogc.document.0018
+  identifier:
+    _type: pubid:ogc:document
+    year: '06'
+    number: '126'
+  representations:
+    human: 06-126
+    urn: urn:ogc:06:126
+  style: v3
+- id: ogc.document.0019
+  identifier:
+    _type: pubid:ogc:document
+    year: '07'
+    number: '027'
+    revision: r1
+  representations:
+    human: 07-027r1
+    urn: urn:ogc:07:027:r1
+  style: v3
+- id: ogc.document.0020
+  identifier:
+    _type: pubid:ogc:document
+    year: '07'
+    number: '074'
+  representations:
+    human: 07-074
+    urn: urn:ogc:07:074
+  style: v3
+- id: ogc.document.0021
+  identifier:
+    _type: pubid:ogc:document
+    year: '07'
+    number: '097'
+  representations:
+    human: 07-097
+    urn: urn:ogc:07:097
+  style: v3
+- id: ogc.document.0022
+  identifier:
+    _type: pubid:ogc:document
+    year: '07'
+    number: '163'
+  representations:
+    human: 07-163
+    urn: urn:ogc:07:163
+  style: v3
+- id: ogc.document.0023
+  identifier:
+    _type: pubid:ogc:document
+    year: '08'
+    number: '009'
+    revision: r1
+  representations:
+    human: '08-009r1'
+    urn: urn:ogc:08:009:r1
+  style: v3
+- id: ogc.document.0024
+  identifier:
+    _type: pubid:ogc:document
+    year: '08'
+    number: '125'
+    revision: r1
+  representations:
+    human: '08-125r1'
+    urn: urn:ogc:08:125:r1
+  style: v3
+- id: ogc.document.0025
+  identifier:
+    _type: pubid:ogc:document
+    year: '09'
+    number: '031'
+    revision: r1
+  representations:
+    human: '09-031r1'
+    urn: urn:ogc:09:031:r1
+  style: v3
+- id: ogc.document.0026
+  identifier:
+    _type: pubid:ogc:document
+    year: '09'
+    number: '048'
+    revision: r5
+  representations:
+    human: '09-048r5'
+    urn: urn:ogc:09:048:r5
+  style: v3
+- id: ogc.document.0027
+  identifier:
+    _type: pubid:ogc:document
+    year: '09'
+    number: '053'
+    revision: r5
+  representations:
+    human: '09-053r5'
+    urn: urn:ogc:09:053:r5
+  style: v3
+- id: ogc.document.0028
+  identifier:
+    _type: pubid:ogc:document
+    year: '09'
+    number: '073'
+  representations:
+    human: '09-073'
+    urn: urn:ogc:09:073
+  style: v3
+- id: ogc.document.0029
+  identifier:
+    _type: pubid:ogc:document
+    year: '09'
+    number: '083'
+    revision: r3
+  representations:
+    human: '09-083r3'
+    urn: urn:ogc:09:083:r3
+  style: v3
+- id: ogc.document.0030
+  identifier:
+    _type: pubid:ogc:document
+    year: '09'
+    number: '102'
+    revision: r3a
+  representations:
+    human: '09-102r3a'
+    urn: urn:ogc:09:102:r3a
+  style: v3
+- id: ogc.document.0031
+  identifier:
+    _type: pubid:ogc:document
+    year: '09'
+    number: '138'
+  representations:
+    human: '09-138'
+    urn: urn:ogc:09:138
+  style: v3
+- id: ogc.document.0032
+  identifier:
+    _type: pubid:ogc:document
+    year: '09'
+    number: '153'
+    revision: r1
+  representations:
+    human: '09-153r1'
+    urn: urn:ogc:09:153:r1
+  style: v3
+- id: ogc.document.0033
+  identifier:
+    _type: pubid:ogc:document
+    year: '10'
+    number: '020'
+  representations:
+    human: 10-020
+    urn: urn:ogc:10:020
+  style: v3
+- id: ogc.document.0034
+  identifier:
+    _type: pubid:ogc:document
+    year: '10'
+    number: '100'
+    revision: r2
+  representations:
+    human: 10-100r2
+    urn: urn:ogc:10:100:r2
+  style: v3
+- id: ogc.document.0035
+  identifier:
+    _type: pubid:ogc:document
+    year: '10'
+    number: '184'
+  representations:
+    human: 10-184
+    urn: urn:ogc:10:184
+  style: v3
+- id: ogc.document.0036
+  identifier:
+    _type: pubid:ogc:document
+    year: '11'
+    number: '038'
+    revision: r2
+  representations:
+    human: 11-038r2
+    urn: urn:ogc:11:038:r2
+  style: v3
+- id: ogc.document.0037
+  identifier:
+    _type: pubid:ogc:document
+    year: '11'
+    number: '089'
+    revision: r1
+  representations:
+    human: 11-089r1
+    urn: urn:ogc:11:089:r1
+  style: v3
+- id: ogc.document.0038
+  identifier:
+    _type: pubid:ogc:document
+    year: '12'
+    number: '006'
+  representations:
+    human: 12-006
+    urn: urn:ogc:12:006
+  style: v3
+- id: ogc.document.0039
+  identifier:
+    _type: pubid:ogc:document
+    year: '12'
+    number: '128'
+    revision: r12a
+  representations:
+    human: 12-128r12a
+    urn: urn:ogc:12:128:r12a
+  style: v3
+- id: ogc.document.0040
+  identifier:
+    _type: pubid:ogc:document
+    year: '12'
+    number: '154'
+  representations:
+    human: 12-154
+    urn: urn:ogc:12:154
+  style: v3
+- id: ogc.document.0041
+  identifier:
+    _type: pubid:ogc:document
+    year: '12'
+    number: '163'
+  representations:
+    human: 12-163
+    urn: urn:ogc:12:163
+  style: v3
+- id: ogc.document.0042
+  identifier:
+    _type: pubid:ogc:document
+    year: '13'
+    number: '032'
+  representations:
+    human: 13-032
+    urn: urn:ogc:13:032
+  style: v3
+- id: ogc.document.0043
+  identifier:
+    _type: pubid:ogc:document
+    year: '13'
+    number: '046'
+    revision: r2
+  representations:
+    human: 13-046r2
+    urn: urn:ogc:13:046:r2
+  style: v3
+- id: ogc.document.0044
+  identifier:
+    _type: pubid:ogc:document
+    year: '14'
+    number: '007'
+  representations:
+    human: 14-007
+    urn: urn:ogc:14:007
+  style: v3
+- id: ogc.document.0045
+  identifier:
+    _type: pubid:ogc:document
+    year: '14'
+    number: '057'
+  representations:
+    human: 14-057
+    urn: urn:ogc:14:057
+  style: v3
+- id: ogc.document.0046
+  identifier:
+    _type: pubid:ogc:document
+    year: '14'
+    number: '065'
+    revision: r2
+  representations:
+    human: 14-065r2
+    urn: urn:ogc:14:065:r2
+  style: v3
+- id: ogc.document.0047
+  identifier:
+    _type: pubid:ogc:document
+    year: '14'
+    number: '073'
+    revision: r1
+  representations:
+    human: 14-073r1
+    urn: urn:ogc:14:073:r1
+  style: v3
+- id: ogc.document.0048
+  identifier:
+    _type: pubid:ogc:document
+    year: '15'
+    number: '068'
+    revision: r2
+  representations:
+    human: 15-068r2
+    urn: urn:ogc:15:068:r2
+  style: v3
+- id: ogc.document.0049
+  identifier:
+    _type: pubid:ogc:document
+    year: '15'
+    number: '074'
+    revision: r2
+  representations:
+    human: 15-074r2
+    urn: urn:ogc:15:074:r2
+  style: v3
+- id: ogc.document.0050
+  identifier:
+    _type: pubid:ogc:document
+    year: '15'
+    number: '077'
+    revision: r1
+  representations:
+    human: 15-077r1
+    urn: urn:ogc:15:077:r1
+  style: v3
+- id: ogc.document.0051
+  identifier:
+    _type: pubid:ogc:document
+    year: '15'
+    number: '082'
+  representations:
+    human: 15-082
+    urn: urn:ogc:15:082
+  style: v3
+- id: ogc.document.0052
+  identifier:
+    _type: pubid:ogc:document
+    year: '15'
+    number: '100'
+    revision: r1
+  representations:
+    human: 15-100r1
+    urn: urn:ogc:15:100:r1
+  style: v3
+- id: ogc.document.0053
+  identifier:
+    _type: pubid:ogc:document
+    year: '15'
+    number: '112'
+    revision: r2
+  representations:
+    human: 15-112r2
+    urn: urn:ogc:15:112:r2
+  style: v3
+- id: ogc.document.0054
+  identifier:
+    _type: pubid:ogc:document
+    year: '15'
+    number: '118'
+    revision: r1
+  representations:
+    human: 15-118r1
+    urn: urn:ogc:15:118:r1
+  style: v3
+- id: ogc.document.0055
+  identifier:
+    _type: pubid:ogc:document
+    year: '16'
+    number: '003'
+    revision: r3
+  representations:
+    human: 16-003r3
+    urn: urn:ogc:16:003:r3
+  style: v3
+- id: ogc.document.0056
+  identifier:
+    _type: pubid:ogc:document
+    year: '16'
+    number: '004'
+    revision: r5
+  representations:
+    human: 16-004r5
+    urn: urn:ogc:16:004:r5
+  style: v3
+- id: ogc.document.0057
+  identifier:
+    _type: pubid:ogc:document
+    year: '16'
+    number: '017'
+  representations:
+    human: 16-017
+    urn: urn:ogc:16:017
+  style: v3
+- id: ogc.document.0058
+  identifier:
+    _type: pubid:ogc:document
+    year: '16'
+    number: '046'
+    revision: r1
+  representations:
+    human: 16-046r1
+    urn: urn:ogc:16:046:r1
+  style: v3
+- id: ogc.document.0059
+  identifier:
+    _type: pubid:ogc:document
+    year: '16'
+    number: '063'
+  representations:
+    human: 16-063
+    urn: urn:ogc:16:063
+  style: v3
+- id: ogc.document.0060
+  identifier:
+    _type: pubid:ogc:document
+    year: '16'
+    number: '071'
+    revision: r3
+  representations:
+    human: 16-071r3
+    urn: urn:ogc:16:071:r3
+  style: v3
+- id: ogc.document.0061
+  identifier:
+    _type: pubid:ogc:document
+    year: '16'
+    number: '097'
+  representations:
+    human: 16-097
+    urn: urn:ogc:16:097
+  style: v3
+- id: ogc.document.0062
+  identifier:
+    _type: pubid:ogc:document
+    year: '16'
+    number: '105'
+    revision: r2
+  representations:
+    human: 16-105r2
+    urn: urn:ogc:16:105:r2
+  style: v3
+- id: ogc.document.0063
+  identifier:
+    _type: pubid:ogc:document
+    year: '16'
+    number: '114'
+    revision: r3
+  representations:
+    human: 16-114r3
+    urn: urn:ogc:16:114:r3
+  style: v3
+- id: ogc.document.0064
+  identifier:
+    _type: pubid:ogc:document
+    year: '16'
+    number: '126'
+    revision: r8
+  representations:
+    human: 16-126r8
+    urn: urn:ogc:16:126:r8
+  style: v3
+- id: ogc.document.0065
+  identifier:
+    _type: pubid:ogc:document
+    year: '17'
+    number: '024'
+  representations:
+    human: 17-024
+    urn: urn:ogc:17:024
+  style: v3
+- id: ogc.document.0066
+  identifier:
+    _type: pubid:ogc:document
+    year: '17'
+    number: '084'
+    revision: r1
+  representations:
+    human: 17-084r1
+    urn: urn:ogc:17:084:r1
+  style: v3
+- id: ogc.document.0067
+  identifier:
+    _type: pubid:ogc:document
+    year: '18'
+    number: '028'
+    revision: r2
+  representations:
+    human: 18-028r2
+    urn: urn:ogc:18:028:r2
+  style: v3
+- id: ogc.document.0068
+  identifier:
+    _type: pubid:ogc:document
+    year: '18'
+    number: '035'
+  representations:
+    human: 18-035
+    urn: urn:ogc:18:035
+  style: v3
+- id: ogc.document.0069
+  identifier:
+    _type: pubid:ogc:document
+    year: '19'
+    number: '070'
+  representations:
+    human: 19-070
+    urn: urn:ogc:19:070
+  style: v3
+- id: ogc.document.0070
+  identifier:
+    _type: pubid:ogc:document
+    year: '19'
+    number: '091'
+    revision: r2
+  representations:
+    human: 19-091r2
+    urn: urn:ogc:19:091:r2
+  style: v3
+- id: ogc.document.0071
+  identifier:
+    _type: pubid:ogc:document
+    year: '20'
+    number: '000'
+    revision: r1
+  representations:
+    human: 20-000r1
+    urn: urn:ogc:20:000:r1
+  style: v3
+- id: ogc.document.0072
+  identifier:
+    _type: pubid:ogc:document
+    year: '20'
+    number: '013'
+    revision: r4
+  representations:
+    human: 20-013r4
+    urn: urn:ogc:20:013:r4
+  style: v3
+- id: ogc.document.0073
+  identifier:
+    _type: pubid:ogc:document
+    year: '20'
+    number: '025'
+    revision: r1
+  representations:
+    human: 20-025r1
+    urn: urn:ogc:20:025:r1
+  style: v3
+- id: ogc.document.0074
+  identifier:
+    _type: pubid:ogc:document
+    year: '20'
+    number: '037'
+  representations:
+    human: 20-037
+    urn: urn:ogc:20:037
+  style: v3
+- id: ogc.document.0075
+  identifier:
+    _type: pubid:ogc:document
+    year: '20'
+    number: '082'
+    revision: r4
+  representations:
+    human: 20-082r4
+    urn: urn:ogc:20:082:r4
+  style: v3
+- id: ogc.document.0076
+  identifier:
+    _type: pubid:ogc:document
+    year: '21'
+    number: '039'
+    revision: r1
+  representations:
+    human: 21-039r1
+    urn: urn:ogc:21:039:r1
+  style: v3
+- id: ogc.document.0077
+  identifier:
+    _type: pubid:ogc:document
+    year: '21'
+    number: '057'
+  representations:
+    human: 21-057
+    urn: urn:ogc:21:057
+  style: v3
+- id: ogc.document.0078
+  identifier:
+    _type: pubid:ogc:document
+    year: '21'
+    number: '067'
+  representations:
+    human: 21-067
+    urn: urn:ogc:21:067
+  style: v3
+- id: ogc.document.0079
+  identifier:
+    _type: pubid:ogc:document
+    year: '21'
+    number: '074'
+  representations:
+    human: 21-074
+    urn: urn:ogc:21:074
+  style: v3
+- id: ogc.document.0080
+  identifier:
+    _type: pubid:ogc:document
+    year: '23'
+    number: '018'
+    revision: r1
+  representations:
+    human: 23-018r1
+    urn: urn:ogc:23:018:r1
+  style: v3
+- id: ogc.document.0081
+  identifier:
+    _type: pubid:ogc:document
+    year: '23'
+    number: '022'
+    revision: r1
+  representations:
+    human: 23-022r1
+    urn: urn:ogc:23:022:r1
+  style: v3
+- id: ogc.document.0082
+  identifier:
+    _type: pubid:ogc:document
+    year: '23'
+    number: '042'
+  representations:
+    human: 23-042
+    urn: urn:ogc:23:042
+  style: v3
+- id: ogc.document.0083
+  identifier:
+    _type: pubid:ogc:document
+    year: '23'
+    number: '049'
+  representations:
+    human: 23-049
+    urn: urn:ogc:23:049
+  style: v3
+- id: ogc.document.0084
+  identifier:
+    _type: pubid:ogc:document
+    year: '24'
+    number: '010'
+  representations:
+    human: 24-010
+    urn: urn:ogc:24:010
+  style: v3
+- id: ogc.document.0085
+  identifier:
+    _type: pubid:ogc:document
+    year: '24'
+    number: '041'
+  representations:
+    human: 24-041
+    urn: urn:ogc:24:041
+  style: v3
+- id: ogc.document.0086
+  identifier:
+    _type: pubid:ogc:document
+    year: '24'
+    number: '061'
+  representations:
+    human: 24-061
+    urn: urn:ogc:24:061
+  style: v3
+- id: ogc.document.0087
+  identifier:
+    _type: pubid:ogc:document
+    year: '25'
+    number: '023'
+  representations:
+    human: 25-023
+    urn: urn:ogc:25:023
+  style: v3
+- id: ogc.document.0088
+  identifier:
+    _type: pubid:ogc:document
+    year: '99'
+    number: '108'
+    revision: r2
+  representations:
+    human: 99-108r2
+    urn: urn:ogc:99:108:r2
+  style: v3

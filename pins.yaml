@@ -5,12 +5,16 @@
 # on any drift. Update both pins together when refreshing the vendored
 # copies, and record what changed in the pin comment.
 #
-# pubid-testsuite main (adecf10cef5c, testsuite#112 + its regeneration
-# round): the IALA legacy A-session corpus round (pubid#734) - the
-# corpus tree the vendored doi fixture slice was byte-copied from.
-testsuite_ref: adecf10cef5c62b99222e459c4ccccdaedb13774
-# pubid-grammar main (94f1a12fee1c): the IEC dotted supplement
-# sub-number parse (#725); the doi artifact is byte-identical across the
-# round - the artifact pubid-core/artifacts/doi.json was byte-copied
-# from.
-grammar_ref: 94f1a12fee1c2eba202a896fddd25dc8921cda81
+# pubid-testsuite main (e6cf11b98219, the #749 iso consumption round):
+# the wave-2 corpus tree (isbn, iana, oasis, xsf, un, ogc, ietf, w3c)
+# plus the doi slice were byte-copied from here. The doi slice is
+# byte-identical across the round (adecf10 -> e6cf11b touched only
+# tests/iso); the wave-2 corpora are identical from adecf10 forward.
+testsuite_ref: e6cf11b9821929f2c4deed431113bdfca67e81d6
+# pubid-grammar main (dcd67cb97d6c, the rs#539 json layer): all nine
+# artifacts (doi, isbn, iana, oasis, xsf, un, ogc, ietf, w3c) were
+# byte-copied from here. The round re-baked every envelope at compiler
+# 1.5.1.0 (#129 stamp normalization) - the doi grammar is byte-identical
+# modulo the stamp (same semantics_hash), and the wave-2 envelopes all
+# load and self-test green under the locked parsanol 0.20 runtime.
+grammar_ref: dcd67cb97d6cdb512ed444584091e4786bb707a5

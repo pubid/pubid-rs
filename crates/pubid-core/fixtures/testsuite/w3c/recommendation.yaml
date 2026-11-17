@@ -1,0 +1,27 @@
+---
+- id: w3c.recommendation.0018
+  identifier:
+    _type: pubid:w3c:recommendation
+    number: ATAG10
+    date: '20000203'
+  representations:
+    human: W3C REC-ATAG10-20000203
+    urn: urn:w3c:rec:ATAG10:20000203
+  style: v3
+- id: w3c.recommendation.0019
+  identifier:
+    _type: pubid:w3c:recommendation
+    number: CSS1
+    date: '19990111'
+  representations:
+    human: W3C REC-CSS1-19990111
+    urn: urn:w3c:rec:CSS1:19990111
+  style: v3
+- id: w3c.recommendation.0020
+  identifier:
+    _type: pubid:w3c:recommendation
+    number: DOM-Level-1
+  representations:
+    human: W3C REC-DOM-Level-1
+    urn: urn:w3c:rec:DOM-Level-1
+  style: v3

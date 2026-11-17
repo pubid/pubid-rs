@@ -1,0 +1,26 @@
+---
+- id: un.neg.malformed.0001
+  input: TRADE
+  expect:
+    error:
+      code: unclassified
+- id: un.neg.malformed.0002
+  input: UN
+  expect:
+    error:
+      code: unclassified
+- id: un.neg.malformed.0003
+  input: foo/bar
+  expect:
+    error:
+      code: unclassified
+- id: un.neg.malformed.0004
+  input: "/"
+  expect:
+    error:
+      code: unclassified
+- id: un.neg.malformed.0005
+  input: TRADE//32
+  expect:
+    error:
+      code: unclassified

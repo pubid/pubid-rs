@@ -1,0 +1,50 @@
+---
+- id: un.document.0001
+  identifier:
+    _type: pubid:un:document
+    path:
+    - A
+    - RES
+    - '78'
+    number: '1'
+  representations:
+    human: A/RES/78/1
+    urn: urn:un:1
+  style: v3
+  non_normalized_aliases:
+  - spelling: UN A/RES/78/1
+    style: v3
+- id: un.document.0002
+  identifier:
+    _type: pubid:un:document
+    path:
+    - TRADE
+    - CEFACT
+    - '2004'
+    number: '32'
+  representations:
+    human: TRADE/CEFACT/2004/32
+    urn: urn:un:32:2004
+  style: v3
+- id: un.document.0003
+  identifier:
+    _type: pubid:un:document
+    path:
+    - TRADE
+    - WP.4
+    number: '1068'
+  representations:
+    human: TRADE/WP.4/1068
+    urn: urn:un:1068
+  style: v3
+- id: un.document.0004
+  identifier:
+    _type: pubid:un:document
+    path:
+    - TRADE
+    - WP.4
+    number: R.1068
+  representations:
+    human: TRADE/WP.4/R.1068
+    urn: urn:un:R.1068
+  style: v3

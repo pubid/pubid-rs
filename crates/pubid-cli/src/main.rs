@@ -1,13 +1,15 @@
 //! The pubid command line: parse an identifier and print its canonical
-//! forms, or run the self-contained smoke.
+//! forms, or run the self-contained smoke over the ported flavors.
 //!
 //! Usage:
-//!   pubid-cli parse doi <input>   Parse one DOI and print the forms.
-//!   pubid-cli smoke               Vendored doi artifact + corpus, green?
+//!   pubid-cli parse <flavor> <input>   Parse one identifier, print the forms.
+//!   pubid-cli smoke                    Vendored artifacts + slices, green?
+//!   pubid-cli flavors                  List the ported flavors.
 
 use std::process::ExitCode;
 
-use pubid_core::{conformance, DoiImpl, FlavorCorpus, FlavorImpl, Outcome};
+use pubid_core::conformance::{implemented_flavors, run_flavor};
+use pubid_core::{Outcome, VENDORED_FLAVORS};
 use serde_json::json;
 
 fn main() -> ExitCode {
@@ -15,8 +17,20 @@ fn main() -> ExitCode {
     match args.first().map(String::as_str) {
         Some("parse") => parse(&args[1..]),
         Some("smoke") => smoke(),
+        Some("flavors") => {
+            println!(
+                "{}",
+                implemented_flavors()
+                    .into_iter()
+                    .collect::<Vec<_>>()
+                    .join(" ")
+            );
+            ExitCode::SUCCESS
+        }
         _ => {
-            eprintln!("usage: pubid-cli parse doi <input> | pubid-cli smoke");
+            eprintln!(
+                "usage: pubid-cli parse <flavor> <input> | pubid-cli smoke | pubid-cli flavors"
+            );
             ExitCode::from(2)
         }
     }
@@ -24,14 +38,20 @@ fn main() -> ExitCode {
 
 fn parse(args: &[String]) -> ExitCode {
     let [flavor, input] = args else {
-        eprintln!("usage: pubid-cli parse doi <input>");
+        eprintln!("usage: pubid-cli parse <flavor> <input>");
         return ExitCode::from(2);
     };
-    if flavor != "doi" {
-        eprintln!("unimplemented flavor {flavor:?} (ported: doi)");
+    let Some(impl_) = pubid_core::flavor_impl(flavor) else {
+        eprintln!(
+            "unimplemented flavor {flavor:?} (ported: {})",
+            implemented_flavors()
+                .into_iter()
+                .collect::<Vec<_>>()
+                .join(", ")
+        );
         return ExitCode::from(2);
-    }
-    let identifier = match <DoiImpl as FlavorImpl>::parse(&DoiImpl, input) {
+    };
+    let identifier = match impl_.parse(input) {
         Ok(identifier) => identifier,
         Err(err) => {
             eprintln!("parse failed: {err}");
@@ -49,37 +69,47 @@ fn parse(args: &[String]) -> ExitCode {
 }
 
 fn smoke() -> ExitCode {
-    let corpus = match FlavorCorpus::doi_vendored() {
-        Ok(corpus) => corpus,
-        Err(err) => {
-            eprintln!("vendored corpus failed to load: {err}");
-            return ExitCode::from(1);
-        }
-    };
-    let report = conformance::run_flavor(&corpus, &DoiImpl);
-    let pubid = match pubid_core::Pubid::embedded_doi() {
-        Ok(pubid) => pubid,
-        Err(err) => {
-            eprintln!("vendored artifact failed to load: {err}");
-            return ExitCode::from(1);
-        }
-    };
-    let embedded = pubid.run_tests();
-    let green = report.outcome == Outcome::Pass && embedded.is_empty();
-    println!(
-        "smoke: flavor {} outcome {} ({} cases, {} rejected negatives, {} embedded tests failing)",
-        report.flavor,
-        report.outcome,
-        report.cases,
-        report.tally.rejected,
-        embedded.len()
-    );
-    if green {
-        ExitCode::SUCCESS
-    } else {
+    let mut green = true;
+    for flavor in VENDORED_FLAVORS {
+        let Some(impl_) = pubid_core::flavor_impl(flavor) else {
+            // Vendored slice without a ported flavor: report, never gate.
+            println!("smoke: flavor {flavor} not ported (slice vendored)");
+            continue;
+        };
+        let corpus = match pubid_core::vendored_corpus(flavor) {
+            Some(Ok(corpus)) => corpus,
+            Some(Err(err)) => {
+                eprintln!("vendored corpus failed to load: {err}");
+                return ExitCode::from(1);
+            }
+            None => continue,
+        };
+        let report = run_flavor(&corpus, impl_);
+        let embedded = match pubid_core::flavor_artifact(flavor) {
+            Some(Ok(artifact)) => artifact.run_tests(),
+            Some(Err(err)) => {
+                eprintln!("vendored artifact failed to load: {err}");
+                return ExitCode::from(1);
+            }
+            None => Vec::new(),
+        };
+        let flavor_green = report.outcome == Outcome::Pass && embedded.is_empty();
+        green &= flavor_green;
+        println!(
+            "smoke: flavor {} outcome {} ({} cases, {} rejected negatives, {} embedded tests failing)",
+            report.flavor,
+            report.outcome,
+            report.cases,
+            report.tally.rejected,
+            embedded.len()
+        );
         for failure in &report.failures {
             println!("  {failure}");
         }
+    }
+    if green {
+        ExitCode::SUCCESS
+    } else {
         ExitCode::from(1)
     }
 }

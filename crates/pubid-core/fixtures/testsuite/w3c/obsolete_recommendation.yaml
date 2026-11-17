@@ -1,0 +1,10 @@
+---
+- id: w3c.obsolete_recommendation.0014
+  identifier:
+    _type: pubid:w3c:obsolete-recommendation
+    number: widgets-apis
+    date: '20181011'
+  representations:
+    human: W3C OBSL-widgets-apis-20181011
+    urn: urn:w3c:obsl:widgets-apis:20181011
+  style: v3

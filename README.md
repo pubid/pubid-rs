@@ -13,25 +13,26 @@ lives here, and a corrupt or tampered artifact refuses to load.
 
 This repository is the **pubid-rs track**: engine-backed flavors
 growing toward fleet parity with the Ruby pubid gem and pubid-ts. The
-bootstrap wave (this one) stands up the pipeline end to end with the
-smallest flavor; later waves port flavors onto the established pattern
-until the corpus runs fleet-wide.
+bootstrap wave stood up the pipeline end to end with the smallest
+flavor; wave 2 ported the small render-layer flavors onto that
+pattern; later waves port the mid fleet and the hard core until the
+corpus runs fleet-wide.
 
 - `pubid-core` — artifact loading (embedded, checksum-verified),
   flavor semantics (canonical hash / human / URN), the conformance
   checker, and the schema-driven materialization boundary
   (`materialize_from_schema`).
-- `pubid-cli` — `pubid-cli parse doi <input>` prints the canonical
-  forms; `pubid-cli smoke` runs the self-contained smoke.
+- `pubid-cli` — `pubid-cli parse <flavor> <input>` prints the canonical
+  forms; `pubid-cli smoke` runs every vendored slice.
 - `conformance` — the pubid-testsuite runner: load a flavor's corpus,
   parse → render → compare, report the measured counts, gate on clean
-  flavors only.
+  flavors only. `--all` runs every ported flavor.
 
 ## Layout
 
 ```
 crates/pubid-core/
-  src/           lib, doi flavor, conformance checker, errors
+  src/           lib, one module per flavor, conformance checker, errors
   artifacts/     vendored PARG artifact(s)   (+ VENDORED_FROM.md)
   fixtures/      vendored testsuite slice(s) (+ VENDORED_FROM.md)
 crates/pubid-cli/    the `pubid-cli` binary
@@ -40,59 +41,75 @@ pins.yaml            pinned testsuite + grammar refs (single source)
 .github/workflows/   CI
 ```
 
-## Conformance status (bootstrap wave, measured)
+## Conformance status (waves 1–2, measured)
 
-Flavor `doi` is ported end to end. Measured on the vendored smoke
-slice (byte-copied from the pinned testsuite ref):
+Nine flavors are ported end to end: `doi` (bootstrap) plus the wave-2
+render-layer flavors `isbn`, `iana`, `oasis`, `xsf`, `un`, `ogc`,
+`ietf`, `w3c`. Measured against the full pubid-testsuite corpora at
+the pinned ref — every gated case passes, zero mismatches, nothing
+hidden:
 
-```
-flavor doi outcome pass
-  rows: 3 gated cases, 0 expected-error, 0 quarantined, 0 review, 0 reclassified
-  measured: 6 parsed, 4 rejected, 6 rendered, 3 hashes, 3 urns, 3 deserializes
-```
+| flavor | gated cases | parsed | rejected (negatives) | rendered | hashes | urns | deserializes |
+| ------ | ----------: | -----: | -------------------: | -------: | -----: | ---: | -----------: |
+| doi    | 3           | 6      | 4                    | 6        | 3      | 3    | 3            |
+| isbn   | 3           | 5      | 4                    | 5        | 3      | 3    | 3            |
+| iana   | 30          | 30     | 5                    | 30       | 30     | 30   | 30           |
+| oasis  | 45          | 45     | 0                    | 45       | 45     | 45   | 45           |
+| xsf    | 51          | 51     | 0                    | 51       | 51     | 51   | 51           |
+| un     | 4           | 5      | 5                    | 5        | 4      | 4    | 4            |
+| ogc    | 88          | 88     | 6                    | 88       | 88     | 88   | 88           |
+| ietf   | 2,526       | 2,526  | 0                    | 2,526    | 2,526  | 2,526| 2,526        |
+| w3c    | 29          | 29     | 0                    | 29       | 29     | 29   | 29           |
+| **all**| **2,779**   | 2,785  | 24                   | 2,785    | 2,779  | 2,779| 2,779        |
 
-Every gated doi corpus case passes: canonical hash, human, URN, all
-non-normalized alias spellings, and the deserialize round-trip. The
-embedded artifact suite (4 accept/reject/example tests baked into the
-envelope) is green. doi is 3 of the testsuite's 99,793 cases — parity
-at fleet scale is the later waves' work, and unimplemented flavors are
-reported honestly, never claimed.
+Counts: `parsed` covers the canonical humans plus every non-normalized
+alias spelling; `rejected` covers the `_negative.yaml` rows (plus the
+doi/isbn builder-layer rejections the flavors enforce); `rendered`
+covers every human compared byte-for-byte; `hashes`/`urns` the deep
+comparisons against the corpus; `deserializes` the
+`from_hash(to_hash())` round-trips. All eight wave-2 ledgers are
+`clean: true`, so every flavor gates. The embedded artifact suites (the
+envelopes' own accept/reject tests) are green for all nine.
+
+That is 2,779 of the testsuite's 99,793 cases. Wave 3 ports the mid
+fleet; unimplemented flavors are reported honestly, never claimed.
 
 CI additionally runs the conformance binary against a full clone of
-pubid-testsuite at the pinned ref, not just the vendored slice.
+pubid-testsuite at the pinned ref, not just the vendored slices.
 
 ## Pins
 
 `pins.yaml` is the single source (same pattern as pubid-ts):
 
-- `testsuite_ref` — pubid-testsuite commit the vendored fixture slice
-  was byte-copied from (`crates/pubid-core/fixtures/testsuite/doi/`,
-  provenance in its `VENDORED_FROM.md`).
-- `grammar_ref` — pubid-grammar commit the vendored artifact was
-  byte-copied from (`crates/pubid-core/artifacts/doi.json`, provenance
-  in its `VENDORED_FROM.md`).
+- `testsuite_ref` — pubid-testsuite commit the vendored fixture slices
+  were byte-copied from (`crates/pubid-core/fixtures/testsuite/`,
+  provenance + per-file sha256s in `VENDORED_FROM.md`).
+- `grammar_ref` — pubid-grammar commit the vendored artifacts were
+  byte-copied from (`crates/pubid-core/artifacts/`, provenance +
+  per-file sha256s in its `VENDORED_FROM.md`).
 
 CI checks out both refs and byte-compares (`cmp`) every vendored copy;
 any drift fails the build. Refreshing means re-copying the files from
 the new ref and updating `pins.yaml` + the `VENDORED_FROM.md` notes
 together.
 
-## Engine
-
-- `parsanol = "0.20"` (the artifact runtime: `PargArtifact::from_json`
-  verifies the envelope checksum, `parse_and_bind` produces the bound
-  hash, `run_tests` replays the embedded suite). The exact resolution
-  is locked in `Cargo.lock`.
+The pinned grammar ref is the parsanol 1.5.1.0 re-seal round (#129
+stamp normalization): the envelopes are byte-identical grammars
+modulo the producer stamp (`doi` carries the same `semantics_hash` as
+the bootstrap artifact), and all nine load and self-test green under
+the locked `parsanol = "0.20"` runtime.
 
 ## Track plan
 
 1. **Done — bootstrap**: workspace, vendored-artifact loading, doi
    end to end (parse → hash → human → URN → aliases → deserialize),
    conformance runner, CI with drift gates.
-2. **Wave 2 — small render-layer flavors**: isbn, iana, oasis, xsf,
-   un, ogc, ietf, w3c (1–3 bindings each) to harden the flavor
-   pattern: per-flavor render functions, builder casts like doi's
-   `10.` prefix, URN templates.
+2. **Done — wave 2, small render-layer flavors**: isbn, iana, oasis,
+   xsf, un, ogc, ietf, w3c — per-flavor render functions over the
+   bound hash, builder casts (isbn check digit, iana `registry` →
+   `number`, oasis slug decomposition, ogc revision case, ietf pad
+   strip + draft version split, w3c date split), URN templates,
+   multi-type dispatch (ietf 5, w3c 11). 100% on every corpus.
 3. **Wave 3 — the mid fleet**: etsi, gb, gost, ccsds, plateau, ecma,
    ansi, adobe, iala, ire, sae, api, amca, nesc, jcgm, idf,
    cen_cenelec, evs, jis (5–50 bindings), plus doi_pfs/calconnect_pfs.
@@ -110,15 +127,17 @@ flavors pass their corpus conformance cleanly.
 ```
 cargo build --all-targets
 cargo test
-cargo run -p conformance -- --flavor doi
-cargo run -p pubid-cli -- parse doi "10.1000/182"
+cargo run -p conformance -- --all
+cargo run -p conformance -- --flavor ietf --testsuite <checkout>/tests
+cargo run -p pubid-cli -- parse w3c "W3C REC-html40-19980424"
+cargo run -p pubid-cli -- smoke
 ```
 
-`cargo test` needs no network: the artifact and corpus slice are
+`cargo test` needs no network: the artifacts and corpus slices are
 vendored. To run a flavor against a full pubid-testsuite checkout:
 
 ```
-cargo run -p conformance -- --testsuite <checkout>/tests --flavor doi
+cargo run -p conformance -- --testsuite <checkout>/tests --all
 ```
 
 ## License

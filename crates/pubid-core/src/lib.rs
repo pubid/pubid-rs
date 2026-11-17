@@ -7,23 +7,48 @@
 //! pubid-testsuite corpus through the same parse → render → compare
 //! pipeline as the Ruby `Pubid::Conformance::Runner` and pubid-ts.
 //!
-//! - `artifact`: the embedded, checksum-verified envelopes
-//! - `doi`: the first ported flavor (the end-to-end smoke)
+//! - `artifact`: the embedded, checksum-verified envelopes (one per
+//!   flavor, `flavor_artifact` is the lookup)
+//! - the flavor modules: `doi` (the bootstrap smoke) plus the wave-2
+//!   render-layer flavors `isbn`, `iana`, `oasis`, `xsf`, `un`, `ogc`,
+//!   `ietf`, `w3c` — each parse → cast → render over its bound hash
+//! - `bound`: the shared bound-hash / canonical-hash readers
 //! - `conformance`: the corpus wire contract and the checker
 //! - `Pubid` / `materialize_from_schema`: the schema-driven
 //!   materialization boundary kept from the first bootstrap (RS1)
 
 pub mod artifact;
+pub mod bound;
 pub mod conformance;
 pub mod doi;
 pub mod error;
+pub mod iana;
+pub mod ietf;
+pub mod isbn;
+pub mod oasis;
+pub mod ogc;
+pub mod un;
+pub mod w3c;
+pub mod xsf;
 
 use serde_json::Value;
 
-pub use artifact::{doi_artifact, load_artifact, DOI_ARTIFACT};
-pub use conformance::{DoiImpl, FlavorCorpus, FlavorImpl, FlavorReport, Identifier, Outcome};
+pub use artifact::{doi_artifact, flavor_artifact, load_artifact, VENDORED_FLAVORS};
+pub use conformance::{
+    doi_vendored, flavor_impl, implemented_flavors, vendored_corpus, DoiImpl, FlavorCorpus,
+    FlavorImpl, FlavorReport, IanaImpl, IetfImpl, IsbnImpl, OasisImpl, OgcImpl, Outcome, Tally,
+    UnImpl, W3cImpl, XsfImpl, VENDORED_CORPORA,
+};
 pub use doi::DoiIdentifier;
 pub use error::{Error, Result};
+pub use iana::IanaIdentifier;
+pub use ietf::{IetfIdentifier, IetfKind};
+pub use isbn::IsbnIdentifier;
+pub use oasis::OasisIdentifier;
+pub use ogc::OgcIdentifier;
+pub use un::UnIdentifier;
+pub use w3c::{W3cIdentifier, W3cKind};
+pub use xsf::XsfIdentifier;
 
 /// Schema-driven materialization (mirrors pubid-ts
 /// `materializeFromSchema`): the schema's fields define the attribute

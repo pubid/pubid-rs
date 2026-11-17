@@ -1,0 +1,18 @@
+---
+- id: w3c.proposed_recommendation.0016
+  identifier:
+    _type: pubid:w3c:proposed-recommendation
+    number: CSS1
+  representations:
+    human: W3C PR-CSS1
+    urn: urn:w3c:pr:CSS1
+  style: v3
+- id: w3c.proposed_recommendation.0017
+  identifier:
+    _type: pubid:w3c:proposed-recommendation
+    number: InkML
+    date: '20110510'
+  representations:
+    human: W3C PR-InkML-20110510
+    urn: urn:w3c:pr:InkML:20110510
+  style: v3

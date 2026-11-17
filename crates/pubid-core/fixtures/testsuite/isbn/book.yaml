@@ -1,0 +1,33 @@
+---
+- id: isbn.book.0001
+  identifier:
+    _type: pubid:isbn:book
+    raw: '0306406152'
+    hyphenated: 0-306-40615-2
+  representations:
+    human: ISBN 0-306-40615-2
+    urn: urn:isbn
+  style: v3
+  non_normalized_aliases:
+  - spelling: 'ISBN: 0-306-40615-2'
+    style: v3
+- id: isbn.book.0002
+  identifier:
+    _type: pubid:isbn:book
+    raw: '9783161484100'
+    hyphenated: 978-3-16-148410-0
+  representations:
+    human: ISBN 978-3-16-148410-0
+    urn: urn:isbn
+  style: v3
+- id: isbn.book.0003
+  identifier:
+    _type: pubid:isbn:book
+    raw: '9783161484100'
+  representations:
+    human: ISBN 9783161484100
+    urn: urn:isbn
+  style: v3
+  non_normalized_aliases:
+  - spelling: '9783161484100'
+    style: v3

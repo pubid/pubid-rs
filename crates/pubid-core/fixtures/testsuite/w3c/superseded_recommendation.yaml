@@ -1,0 +1,10 @@
+---
+- id: w3c.superseded_recommendation.0021
+  identifier:
+    _type: pubid:w3c:superseded-recommendation
+    number: 2dcontext
+    date: '20210128'
+  representations:
+    human: W3C SPSD-2dcontext-20210128
+    urn: urn:w3c:spsd:2dcontext:20210128
+  style: v3

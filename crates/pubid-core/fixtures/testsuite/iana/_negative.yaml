@@ -1,0 +1,26 @@
+---
+- id: iana.neg.registry.0001
+  input: foo bar
+  expect:
+    error:
+      code: unclassified
+- id: iana.neg.registry.0002
+  input: IANA foo bar
+  expect:
+    error:
+      code: unclassified
+- id: iana.neg.registry.0003
+  input: "/lowpan_nhc"
+  expect:
+    error:
+      code: unclassified
+- id: iana.neg.registry.0004
+  input: _6lowpan-parameters/
+  expect:
+    error:
+      code: unclassified
+- id: iana.neg.registry.0005
+  input: a/b/c
+  expect:
+    error:
+      code: unclassified

@@ -1,0 +1,409 @@
+---
+- id: xsf.xep.0001
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0001'
+  representations:
+    human: XEP 0001
+    urn: urn:xsf:xep:0001
+  style: v3
+- id: xsf.xep.0002
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0004'
+  representations:
+    human: XEP 0004
+    urn: urn:xsf:xep:0004
+  style: v3
+- id: xsf.xep.0003
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0013'
+  representations:
+    human: XEP 0013
+    urn: urn:xsf:xep:0013
+  style: v3
+- id: xsf.xep.0004
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0025'
+  representations:
+    human: XEP 0025
+    urn: urn:xsf:xep:0025
+  style: v3
+- id: xsf.xep.0005
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0030'
+  representations:
+    human: XEP 0030
+    urn: urn:xsf:xep:0030
+  style: v3
+- id: xsf.xep.0006
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0037'
+  representations:
+    human: XEP 0037
+    urn: urn:xsf:xep:0037
+  style: v3
+- id: xsf.xep.0007
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0049'
+  representations:
+    human: XEP 0049
+    urn: urn:xsf:xep:0049
+  style: v3
+- id: xsf.xep.0008
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0060'
+  representations:
+    human: XEP 0060
+    urn: urn:xsf:xep:0060
+  style: v3
+- id: xsf.xep.0009
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0061'
+  representations:
+    human: XEP 0061
+    urn: urn:xsf:xep:0061
+  style: v3
+- id: xsf.xep.0010
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0073'
+  representations:
+    human: XEP 0073
+    urn: urn:xsf:xep:0073
+  style: v3
+- id: xsf.xep.0011
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0085'
+  representations:
+    human: XEP 0085
+    urn: urn:xsf:xep:0085
+  style: v3
+- id: xsf.xep.0012
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0097'
+  representations:
+    human: XEP 0097
+    urn: urn:xsf:xep:0097
+  style: v3
+- id: xsf.xep.0013
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0109'
+  representations:
+    human: XEP 0109
+    urn: urn:xsf:xep:0109
+  style: v3
+- id: xsf.xep.0014
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0121'
+  representations:
+    human: XEP 0121
+    urn: urn:xsf:xep:0121
+  style: v3
+- id: xsf.xep.0015
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0131'
+  representations:
+    human: XEP 0131
+    urn: urn:xsf:xep:0131
+  style: v3
+- id: xsf.xep.0016
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0133'
+  representations:
+    human: XEP 0133
+    urn: urn:xsf:xep:0133
+  style: v3
+- id: xsf.xep.0017
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0145'
+  representations:
+    human: XEP 0145
+    urn: urn:xsf:xep:0145
+  style: v3
+- id: xsf.xep.0018
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0157'
+  representations:
+    human: XEP 0157
+    urn: urn:xsf:xep:0157
+  style: v3
+- id: xsf.xep.0019
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0169'
+  representations:
+    human: XEP 0169
+    urn: urn:xsf:xep:0169
+  style: v3
+- id: xsf.xep.0020
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0181'
+  representations:
+    human: XEP 0181
+    urn: urn:xsf:xep:0181
+  style: v3
+- id: xsf.xep.0021
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0193'
+  representations:
+    human: XEP 0193
+    urn: urn:xsf:xep:0193
+  style: v3
+- id: xsf.xep.0022
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0205'
+  representations:
+    human: XEP 0205
+    urn: urn:xsf:xep:0205
+  style: v3
+- id: xsf.xep.0023
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0217'
+  representations:
+    human: XEP 0217
+    urn: urn:xsf:xep:0217
+  style: v3
+- id: xsf.xep.0024
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0218'
+  representations:
+    human: XEP 0218
+    urn: urn:xsf:xep:0218
+  style: v3
+- id: xsf.xep.0025
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0229'
+  representations:
+    human: XEP 0229
+    urn: urn:xsf:xep:0229
+  style: v3
+- id: xsf.xep.0026
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0241'
+  representations:
+    human: XEP 0241
+    urn: urn:xsf:xep:0241
+  style: v3
+- id: xsf.xep.0027
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0253'
+  representations:
+    human: XEP 0253
+    urn: urn:xsf:xep:0253
+  style: v3
+- id: xsf.xep.0028
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0265'
+  representations:
+    human: XEP 0265
+    urn: urn:xsf:xep:0265
+  style: v3
+- id: xsf.xep.0029
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0277'
+  representations:
+    human: XEP 0277
+    urn: urn:xsf:xep:0277
+  style: v3
+- id: xsf.xep.0030
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0289'
+  representations:
+    human: XEP 0289
+    urn: urn:xsf:xep:0289
+  style: v3
+- id: xsf.xep.0031
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0301'
+  representations:
+    human: XEP 0301
+    urn: urn:xsf:xep:0301
+  style: v3
+- id: xsf.xep.0032
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0313'
+  representations:
+    human: XEP 0313
+    urn: urn:xsf:xep:0313
+  style: v3
+- id: xsf.xep.0033
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0325'
+  representations:
+    human: XEP 0325
+    urn: urn:xsf:xep:0325
+  style: v3
+- id: xsf.xep.0034
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0337'
+  representations:
+    human: XEP 0337
+    urn: urn:xsf:xep:0337
+  style: v3
+- id: xsf.xep.0035
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0349'
+  representations:
+    human: XEP 0349
+    urn: urn:xsf:xep:0349
+  style: v3
+- id: xsf.xep.0036
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0361'
+  representations:
+    human: XEP 0361
+    urn: urn:xsf:xep:0361
+  style: v3
+- id: xsf.xep.0037
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0373'
+  representations:
+    human: XEP 0373
+    urn: urn:xsf:xep:0373
+  style: v3
+- id: xsf.xep.0038
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0385'
+  representations:
+    human: XEP 0385
+    urn: urn:xsf:xep:0385
+  style: v3
+- id: xsf.xep.0039
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0397'
+  representations:
+    human: XEP 0397
+    urn: urn:xsf:xep:0397
+  style: v3
+- id: xsf.xep.0040
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0409'
+  representations:
+    human: XEP 0409
+    urn: urn:xsf:xep:0409
+  style: v3
+- id: xsf.xep.0041
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0421'
+  representations:
+    human: XEP 0421
+    urn: urn:xsf:xep:0421
+  style: v3
+- id: xsf.xep.0042
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0424'
+  representations:
+    human: XEP 0424
+    urn: urn:xsf:xep:0424
+  style: v3
+- id: xsf.xep.0043
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0433'
+  representations:
+    human: XEP 0433
+    urn: urn:xsf:xep:0433
+  style: v3
+- id: xsf.xep.0044
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0445'
+  representations:
+    human: XEP 0445
+    urn: urn:xsf:xep:0445
+  style: v3
+- id: xsf.xep.0045
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0457'
+  representations:
+    human: XEP 0457
+    urn: urn:xsf:xep:0457
+  style: v3
+- id: xsf.xep.0046
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0469'
+  representations:
+    human: XEP 0469
+    urn: urn:xsf:xep:0469
+  style: v3
+- id: xsf.xep.0047
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0481'
+  representations:
+    human: XEP 0481
+    urn: urn:xsf:xep:0481
+  style: v3
+- id: xsf.xep.0048
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0493'
+  representations:
+    human: XEP 0493
+    urn: urn:xsf:xep:0493
+  style: v3
+- id: xsf.xep.0049
+  identifier:
+    _type: pubid:xsf:xep
+    number: '0505'
+  representations:
+    human: XEP 0505
+    urn: urn:xsf:xep:0505
+  style: v3
+- id: xsf.xep.0050
+  identifier:
+    _type: pubid:xsf:xep
+    number: README
+  representations:
+    human: XEP README
+    urn: urn:xsf:xep:README
+  style: v3
+- id: xsf.xep.0051
+  identifier:
+    _type: pubid:xsf:xep
+    number: xxxx
+  representations:
+    human: XEP xxxx
+    urn: urn:xsf:xep:xxxx
+  style: v3

@@ -1,0 +1,52 @@
+---
+- id: w3c.note.0008
+  identifier:
+    _type: pubid:w3c:note
+    number: CDFsubmit
+  representations:
+    human: W3C NOTE-CDFsubmit
+    urn: urn:w3c:note:CDFsubmit
+  style: v3
+- id: w3c.note.0009
+  identifier:
+    _type: pubid:w3c:note
+    number: OSD
+  representations:
+    human: W3C NOTE-OSD
+    urn: urn:w3c:note:OSD
+  style: v3
+- id: w3c.note.0010
+  identifier:
+    _type: pubid:w3c:note
+    number: TPRC
+    date: '970930'
+  representations:
+    human: W3C NOTE-TPRC-970930
+    urn: urn:w3c:note:TPRC:970930
+  style: v3
+- id: w3c.note.0011
+  identifier:
+    _type: pubid:w3c:note
+    number: did-spec-registries
+    date: '20230124'
+  representations:
+    human: W3C NOTE-did-spec-registries-20230124
+    urn: urn:w3c:note:did-spec-registries:20230124
+  style: v3
+- id: w3c.note.0012
+  identifier:
+    _type: pubid:w3c:note
+    number: voice
+    date: '0128'
+  representations:
+    human: W3C NOTE-voice-0128
+    urn: urn:w3c:note:voice:0128
+  style: v3
+- id: w3c.note.0013
+  identifier:
+    _type: pubid:w3c:note
+    number: xml-names
+  representations:
+    human: W3C NOTE-xml-names
+    urn: urn:w3c:note:xml-names
+  style: v3

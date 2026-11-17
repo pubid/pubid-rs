@@ -1,0 +1,44 @@
+---
+- id: w3c.working_draft.0022
+  identifier:
+    _type: pubid:w3c:working-draft
+    number: DSIG-label-971024.html
+  representations:
+    human: W3C WD-DSIG-label-971024.html
+    urn: urn:w3c:wd:DSIG-label-971024.html
+  style: v3
+- id: w3c.working_draft.0023
+  identifier:
+    _type: pubid:w3c:working-draft
+    number: charmod
+    date: '19991129'
+  representations:
+    human: W3C WD-charmod-19991129
+    urn: urn:w3c:wd:charmod:19991129
+  style: v3
+- id: w3c.working_draft.0024
+  identifier:
+    _type: pubid:w3c:working-draft
+    number: dial-primer
+    date: '20071101'
+  representations:
+    human: W3C WD-dial-primer-20071101
+    urn: urn:w3c:wd:dial-primer:20071101
+  style: v3
+- id: w3c.working_draft.0025
+  identifier:
+    _type: pubid:w3c:working-draft
+    number: proxy
+  representations:
+    human: W3C WD-proxy
+    urn: urn:w3c:wd:proxy
+  style: v3
+- id: w3c.working_draft.0026
+  identifier:
+    _type: pubid:w3c:working-draft
+    number: smil
+    date: '0202'
+  representations:
+    human: W3C WD-smil-0202
+    urn: urn:w3c:wd:smil:0202
+  style: v3
