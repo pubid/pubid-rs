@@ -17,67 +17,67 @@
 //! - `Pubid` / `materialize_from_schema`: the schema-driven
 //!   materialization boundary kept from the first bootstrap (RS1)
 
+pub mod amca;
+pub mod ansi;
+pub mod api;
 pub mod artifact;
 pub mod bound;
 pub mod ccsds;
 pub mod cen_cenelec;
-pub mod evs;
 pub mod conformance;
 pub mod doi;
-pub mod etsi;
+pub mod ecma;
 pub mod error;
-pub mod plateau;
+pub mod etsi;
+pub mod evs;
+pub mod gb;
+pub mod gost;
 pub mod iana;
-pub mod ietf;
 pub mod ieee_code;
+pub mod ietf;
+pub mod ire;
 pub mod isbn;
 pub mod jis;
+pub mod nesc;
 pub mod oasis;
 pub mod ogc;
+pub mod plateau;
 pub mod un;
 pub mod w3c;
 pub mod xsf;
-pub mod api;
-pub mod amca;
-pub mod ansi;
-pub mod ecma;
-pub mod gb;
-pub mod gost;
-pub mod nesc;
-pub mod ire;
 
 use serde_json::Value;
 
+pub use amca::{AmcaIdentifier, AmcaKind};
+pub use ansi::AnsiIdentifier;
+pub use api::ApiIdentifier;
 pub use artifact::{doi_artifact, flavor_artifact, load_artifact, VENDORED_FLAVORS};
+pub use ccsds::CcsdsIdentifier;
+pub use cen_cenelec::CenIdentifier;
 pub use conformance::{
     doi_vendored, flavor_impl, implemented_flavors, vendored_corpus, AmcaImpl, ApiImpl, DoiImpl,
     FlavorCorpus, FlavorImpl, FlavorReport, IanaImpl, IetfImpl, IreImpl, IsbnImpl, NescImpl,
     OasisImpl, OgcImpl, Outcome, Tally, UnImpl, W3cImpl, XsfImpl, VENDORED_CORPORA,
 };
 pub use doi::DoiIdentifier;
+pub use ecma::{EcmaIdentifier, EcmaKind};
 pub use error::{Error, Result};
+pub use etsi::EtsiIdentifier;
+pub use evs::EvsIdentifier;
+pub use gb::{GbIdentifier, GbKind};
+pub use gost::{GostIdentifier, GostKind};
 pub use iana::IanaIdentifier;
 pub use ietf::{IetfIdentifier, IetfKind};
+pub use ire::IreIdentifier;
 pub use isbn::IsbnIdentifier;
+pub use jis::JisIdentifier;
+pub use nesc::{NescIdentifier, NescKind};
 pub use oasis::OasisIdentifier;
 pub use ogc::OgcIdentifier;
+pub use plateau::PlateauIdentifier;
 pub use un::UnIdentifier;
 pub use w3c::{W3cIdentifier, W3cKind};
 pub use xsf::XsfIdentifier;
-pub use api::ApiIdentifier;
-pub use ccsds::CcsdsIdentifier;
-pub use cen_cenelec::CenIdentifier;
-pub use etsi::EtsiIdentifier;
-pub use evs::EvsIdentifier;
-pub use jis::JisIdentifier;
-pub use plateau::PlateauIdentifier;
-pub use amca::{AmcaIdentifier, AmcaKind};
-pub use ansi::AnsiIdentifier;
-pub use ecma::{EcmaIdentifier, EcmaKind};
-pub use gb::{GbIdentifier, GbKind};
-pub use gost::{GostIdentifier, GostKind};
-pub use nesc::{NescIdentifier, NescKind};
-pub use ire::IreIdentifier;
 
 /// Schema-driven materialization (mirrors pubid-ts
 /// `materializeFromSchema`): the schema's fields define the attribute

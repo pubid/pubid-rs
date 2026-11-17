@@ -116,12 +116,11 @@ impl NescIdentifier {
             NescKind::Edition
         };
 
-        let code = IeeeCode::parse(
-            optional_bound_str(&bound, "code").unwrap_or(Self::DEFAULT_CODE),
-        )
-        .ok_or(Error::InvalidHash {
-            detail: "nesc code does not split".to_string(),
-        })?;
+        let code =
+            IeeeCode::parse(optional_bound_str(&bound, "code").unwrap_or(Self::DEFAULT_CODE))
+                .ok_or(Error::InvalidHash {
+                    detail: "nesc code does not split".to_string(),
+                })?;
 
         Ok(Self {
             kind,
@@ -159,8 +158,7 @@ impl NescIdentifier {
             month: optional_hash_str(hash, "month").map(str::to_string),
             registered: hash.get("registered") == Some(&Value::Bool(true)),
             abbr_suffix: hash.get("abbr_suffix") == Some(&Value::Bool(true)),
-            abbr_suffix_registered: hash.get("abbr_suffix_registered")
-                == Some(&Value::Bool(true)),
+            abbr_suffix_registered: hash.get("abbr_suffix_registered") == Some(&Value::Bool(true)),
         })
     }
 
@@ -212,8 +210,7 @@ impl NescIdentifier {
                 if self.registered {
                     abbr.push_str("(R)");
                 }
-                let mut result =
-                    format!("IEEE Std {} {abbr} Handbook", self.year_or_empty());
+                let mut result = format!("IEEE Std {} {abbr} Handbook", self.year_or_empty());
                 if let Some(edition) = &self.edition {
                     result.push_str(&format!(", {edition}"));
                 }

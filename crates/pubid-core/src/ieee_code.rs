@@ -49,8 +49,10 @@ impl IeeeCode {
             None
         };
 
-        let mut components =
-            remainder.split(['.', '-']).map(str::to_string).collect::<Vec<_>>();
+        let mut components = remainder
+            .split(['.', '-'])
+            .map(str::to_string)
+            .collect::<Vec<_>>();
         let number = if components.is_empty() {
             String::new()
         } else {
@@ -99,10 +101,9 @@ impl IeeeCode {
         let uniform = self.separator.as_deref().unwrap_or(".");
         for (index, part) in self.parts.iter().enumerate() {
             let separator = match (per_part, &self.per_part) {
-                (true, Some(separators)) => separators
-                    .get(index)
-                    .map(String::as_str)
-                    .unwrap_or(uniform),
+                (true, Some(separators)) => {
+                    separators.get(index).map(String::as_str).unwrap_or(uniform)
+                }
                 _ => uniform,
             };
             result.push_str(separator);

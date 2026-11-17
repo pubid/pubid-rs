@@ -121,7 +121,12 @@ fn composed_number(tail: &str, flat: &str) -> Option<String> {
         }
         if end > start {
             let candidate = if has_prefix2 {
-                format!("{}-{} {}", span(0, index), span(index + 1, probe), span(start, end))
+                format!(
+                    "{}-{} {}",
+                    span(0, index),
+                    span(index + 1, probe),
+                    span(start, end)
+                )
             } else {
                 format!("{} {}", span(0, index), span(start, end))
             };
@@ -298,9 +303,7 @@ impl EtsiIdentifier {
             if !self.parts.is_empty() {
                 object.insert(
                     "parts".into(),
-                    Value::Array(
-                        self.parts.iter().map(|part| part.clone().into()).collect(),
-                    ),
+                    Value::Array(self.parts.iter().map(|part| part.clone().into()).collect()),
                 );
             }
             if let Some(minor) = &self.minor {
@@ -454,14 +457,17 @@ mod tests {
     #[test]
     fn the_spaced_number_keeps_its_face() {
         let id = EtsiIdentifier::parse("ETSI EG 200 053 V1.5.1 (2004-06)").expect("parse");
-        assert_eq!(id.to_hash(), json!({
-            "_type": "pubid:etsi:etsi-standard",
-            "type": "EG",
-            "number": "200 053",
-            "version": "1.5.1",
-            "year": "2004",
-            "month": "06",
-        }));
+        assert_eq!(
+            id.to_hash(),
+            json!({
+                "_type": "pubid:etsi:etsi-standard",
+                "type": "EG",
+                "number": "200 053",
+                "version": "1.5.1",
+                "year": "2004",
+                "month": "06",
+            })
+        );
         assert_eq!(id.to_human(), "ETSI EG 200 053 V1.5.1 (2004-06)");
         assert_eq!(id.to_urn(), "urn:etsi:eg:200 053:v1.5.1:2004-06");
     }
@@ -469,15 +475,18 @@ mod tests {
     #[test]
     fn the_edition_form_flags_is_edition() {
         let id = EtsiIdentifier::parse("ETSI ETR 108 ed.1 (1995-08)").expect("parse");
-        assert_eq!(id.to_hash(), json!({
-            "_type": "pubid:etsi:etsi-standard",
-            "type": "ETR",
-            "number": "108",
-            "version": "1",
-            "is_edition": true,
-            "year": "1995",
-            "month": "08",
-        }));
+        assert_eq!(
+            id.to_hash(),
+            json!({
+                "_type": "pubid:etsi:etsi-standard",
+                "type": "ETR",
+                "number": "108",
+                "version": "1",
+                "is_edition": true,
+                "year": "1995",
+                "month": "08",
+            })
+        );
         assert_eq!(id.to_human(), "ETSI ETR 108 ed.1 (1995-08)");
         assert_eq!(id.to_urn(), "urn:etsi:etr:108:ed.1:1995-08");
     }

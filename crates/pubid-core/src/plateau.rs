@@ -73,7 +73,8 @@ fn volume_tail(input: &str) -> Option<(&str, &str)> {
         });
         if body.is_none() {
             body = input.strip_suffix("本編+付録").and_then(|rest| {
-                rest.strip_suffix(separator).map(|body| (body, "本編＋付録"))
+                rest.strip_suffix(separator)
+                    .map(|body| (body, "本編＋付録"))
             });
         }
         if body.is_none() {
@@ -125,8 +126,7 @@ impl PlateauIdentifier {
             .map_err(|_| Error::InvalidHash {
                 detail: format!("plateau number is not an integer: {bound}"),
             })?;
-        let annex = optional_at(&bound, "annex")
-            .and_then(|annex| annex.parse::<u32>().ok());
+        let annex = optional_at(&bound, "annex").and_then(|annex| annex.parse::<u32>().ok());
         // The edition and the volume label are handbook faces; the
         // legacy Latin TR edition drops (builder parity).
         let edition = (kind == Handbook)
@@ -232,38 +232,43 @@ mod tests {
     #[test]
     fn the_handbook_editions_render_and_urn() {
         let id = PlateauIdentifier::parse("PLATEAU Handbook #00 第1.0版").expect("parse");
-        assert_eq!(id.to_hash(), json!({
-            "_type": "pubid:plateau:handbook",
-            "number": 0,
-            "edition": "1.0",
-        }));
+        assert_eq!(
+            id.to_hash(),
+            json!({
+                "_type": "pubid:plateau:handbook",
+                "number": 0,
+                "edition": "1.0",
+            })
+        );
         assert_eq!(id.to_human(), "PLATEAU Handbook #00 第1.0版");
         assert_eq!(id.to_urn(), "urn:plateau:handbook:00");
     }
 
     #[test]
     fn the_volume_label_extracts_and_normalizes() {
-        let id = PlateauIdentifier::parse("PLATEAU Handbook #00 第5.0版 本編＋付録")
-            .expect("parse");
+        let id =
+            PlateauIdentifier::parse("PLATEAU Handbook #00 第5.0版 本編＋付録").expect("parse");
         assert_eq!(id.volume.as_deref(), Some("本編＋付録"));
         assert_eq!(id.to_human(), "PLATEAU Handbook #00 第5.0版 本編＋付録");
 
         // The full-width space alias carries the same hash.
-        let alias =
-            PlateauIdentifier::parse("PLATEAU Handbook #00 第5.0版\u{3000}本編＋付録")
-                .expect("parse");
+        let alias = PlateauIdentifier::parse("PLATEAU Handbook #00 第5.0版\u{3000}本編＋付録")
+            .expect("parse");
         assert_eq!(alias.to_hash(), id.to_hash());
     }
 
     #[test]
     fn the_annex_pads_in_the_urn_only() {
         let id = PlateauIdentifier::parse("PLATEAU Handbook #03-1 第1.0版").expect("parse");
-        assert_eq!(id.to_hash(), json!({
-            "_type": "pubid:plateau:handbook",
-            "number": 3,
-            "edition": "1.0",
-            "annex": 1,
-        }));
+        assert_eq!(
+            id.to_hash(),
+            json!({
+                "_type": "pubid:plateau:handbook",
+                "number": 3,
+                "edition": "1.0",
+                "annex": 1,
+            })
+        );
         assert_eq!(id.to_human(), "PLATEAU Handbook #03-1 第1.0版");
         assert_eq!(id.to_urn(), "urn:plateau:handbook:03:01");
     }
@@ -271,11 +276,14 @@ mod tests {
     #[test]
     fn the_technical_report_drops_the_edition() {
         let id = PlateauIdentifier::parse("PLATEAU Technical Report #46-1").expect("parse");
-        assert_eq!(id.to_hash(), json!({
-            "_type": "pubid:plateau:technical-report",
-            "number": 46,
-            "annex": 1,
-        }));
+        assert_eq!(
+            id.to_hash(),
+            json!({
+                "_type": "pubid:plateau:technical-report",
+                "number": 46,
+                "annex": 1,
+            })
+        );
         assert_eq!(id.to_human(), "PLATEAU Technical Report #46-1");
         assert_eq!(id.to_urn(), "urn:plateau:tr:46:01");
     }

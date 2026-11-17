@@ -144,7 +144,11 @@ impl CcsdsIdentifier {
     /// The canonical human (the hand-composed reference faces).
     pub fn to_human(&self) -> String {
         if self.kind == Corrigendum {
-            let base = self.base.as_deref().map(CcsdsIdentifier::to_human).unwrap_or_default();
+            let base = self
+                .base
+                .as_deref()
+                .map(CcsdsIdentifier::to_human)
+                .unwrap_or_default();
             return format!("{base} Cor. {}", self.number);
         }
         let mut result = format!("CCSDS {}", self.number);
@@ -184,10 +188,7 @@ impl CcsdsIdentifier {
             let mut current = self;
             while current.kind == Corrigendum {
                 chain.push(current);
-                match &current.base {
-                    Some(base) => current = base,
-                    None => return None,
-                }
+                current = current.base.as_deref()?;
             }
             let body = current.base_body()?;
             let mut parts = vec![format!("urn:ccsds:{body}")];
@@ -272,13 +273,16 @@ mod tests {
     #[test]
     fn the_base_code_composes_one_segment() {
         let id = CcsdsIdentifier::parse("CCSDS 120.0-G-3").expect("parse");
-        assert_eq!(id.to_hash(), json!({
-            "_type": "pubid:ccsds:base",
-            "number": "120",
-            "part": "0",
-            "edition": "3",
-            "type": "G",
-        }));
+        assert_eq!(
+            id.to_hash(),
+            json!({
+                "_type": "pubid:ccsds:base",
+                "number": "120",
+                "part": "0",
+                "edition": "3",
+                "type": "G",
+            })
+        );
         assert_eq!(id.to_human(), "CCSDS 120.0-G-3");
         assert_eq!(id.to_urn().as_deref(), Some("urn:ccsds:120.0-G-3"));
     }
@@ -291,20 +295,26 @@ mod tests {
         let spelled = CcsdsIdentifier::parse("CCSDS 320.0-B-1-S Corrigendum 1").expect("parse");
         assert_eq!(spelled.kind, CcsdsKind::Corrigendum);
         assert_eq!(spelled.to_human(), "CCSDS 320.0-B-1-S Cor. 1");
-        assert_eq!(spelled.to_urn().as_deref(), Some("urn:ccsds:320.0-B-1-S:cor.1"));
+        assert_eq!(
+            spelled.to_urn().as_deref(),
+            Some("urn:ccsds:320.0-B-1-S:cor.1")
+        );
     }
 
     #[test]
     fn the_language_face_drops_the_urn() {
         let id = CcsdsIdentifier::parse("CCSDS 551.1-O-2 - Russian Translated").expect("parse");
-        assert_eq!(id.to_hash(), json!({
-            "_type": "pubid:ccsds:base",
-            "number": "551",
-            "part": "1",
-            "edition": "2",
-            "type": "O",
-            "language": "Russian",
-        }));
+        assert_eq!(
+            id.to_hash(),
+            json!({
+                "_type": "pubid:ccsds:base",
+                "number": "551",
+                "part": "1",
+                "edition": "2",
+                "type": "O",
+                "language": "Russian",
+            })
+        );
         assert_eq!(id.to_human(), "CCSDS 551.1-O-2 - Russian Translated");
         assert_eq!(id.to_urn(), None);
     }
@@ -312,18 +322,21 @@ mod tests {
     #[test]
     fn the_corrigendum_folds_onto_its_base() {
         let id = CcsdsIdentifier::parse("CCSDS 121.0-B-1-S Cor. 1").expect("parse");
-        assert_eq!(id.to_hash(), json!({
-            "_type": "pubid:ccsds:corrigendum",
-            "number": "1",
-            "base": {
-                "_type": "pubid:ccsds:base",
-                "number": "121",
-                "part": "0",
-                "edition": "1",
-                "type": "B",
-                "suffix": "S",
-            },
-        }));
+        assert_eq!(
+            id.to_hash(),
+            json!({
+                "_type": "pubid:ccsds:corrigendum",
+                "number": "1",
+                "base": {
+                    "_type": "pubid:ccsds:base",
+                    "number": "121",
+                    "part": "0",
+                    "edition": "1",
+                    "type": "B",
+                    "suffix": "S",
+                },
+            })
+        );
         assert_eq!(id.to_human(), "CCSDS 121.0-B-1-S Cor. 1");
         assert_eq!(id.to_urn().as_deref(), Some("urn:ccsds:121.0-B-1-S:cor.1"));
     }
@@ -336,8 +349,7 @@ mod tests {
             "CCSDS 122.0-B-1-S Cor. 2",
         ] {
             let id = CcsdsIdentifier::parse(spelling).expect(spelling);
-            let rebuilt =
-                CcsdsIdentifier::from_hash(&id.to_hash()).expect("from_hash");
+            let rebuilt = CcsdsIdentifier::from_hash(&id.to_hash()).expect("from_hash");
             assert_eq!(rebuilt.to_hash(), id.to_hash(), "{spelling}");
             assert_eq!(rebuilt.to_human(), id.to_human(), "{spelling}");
         }

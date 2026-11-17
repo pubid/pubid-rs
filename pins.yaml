@@ -7,14 +7,23 @@
 #
 # pubid-testsuite main (e6cf11b98219, the #749 iso consumption round):
 # the wave-2 corpus tree (isbn, iana, oasis, xsf, un, ogc, ietf, w3c)
-# plus the doi slice were byte-copied from here. The doi slice is
-# byte-identical across the round (adecf10 -> e6cf11b touched only
-# tests/iso); the wave-2 corpora are identical from adecf10 forward.
+# plus the doi slice were byte-copied from here, then the wave-3
+# mid-fleet (api, amca, nesc, ire, ansi, ecma, gb, gost) and the
+# wave-3 tier (plateau, evs, ccsds, cen_cenelec, jis, etsi). The doi
+# slice is byte-identical across the round (adecf10 -> e6cf11b touched
+# only tests/iso); the wave-2 corpora are identical from adecf10
+# forward. The testsuite carries no `tests/<flavor>/` corpus for the
+# `_pfs` flavors at this ref (their composition rounds live on open
+# grammar/pubid PRs).
 testsuite_ref: e6cf11b9821929f2c4deed431113bdfca67e81d6
-# pubid-grammar main (dcd67cb97d6c, the rs#539 json layer): all nine
-# artifacts (doi, isbn, iana, oasis, xsf, un, ogc, ietf, w3c) were
+# pubid-grammar main (dcd67cb97d6c, the rs#539 json layer): all
+# vendored artifacts (doi, isbn, iana, oasis, xsf, un, ogc, ietf, w3c,
+# api, amca, nesc, ire, ansi, ecma, gb, gost, adobe, plateau, evs,
+# ccsds, cen_cenelec, jis, etsi, and the five _pfs envelopes) were
 # byte-copied from here. The round re-baked every envelope at compiler
 # 1.5.1.0 (#129 stamp normalization) - the doi grammar is byte-identical
 # modulo the stamp (same semantics_hash), and the wave-2 envelopes all
 # load and self-test green under the locked parsanol 0.20 runtime.
+# bsi_pfs is the pinned-ref byte content (0cbe61d8...), not grammar
+# main's newer rebake - this ref stays the single source.
 grammar_ref: dcd67cb97d6cdb512ed444584091e4786bb707a5
