@@ -1,0 +1,21 @@
+---
+- id: cen_cenelec.european_specification.0170
+  identifier:
+    _type: pubid:cencenelec:european-specification
+    number: '59008'
+    part: '1'
+    year: '2000'
+  representations:
+    human: ES 59008-1:2000
+    urn: urn:cen:es:59008-1:2000
+  style: v3
+- id: cen_cenelec.european_specification.0171
+  identifier:
+    _type: pubid:cencenelec:european-specification
+    number: '59008'
+    part: 6-1
+    year: '1999'
+  representations:
+    human: ES 59008-6-1:1999
+    urn: urn:cen:es:59008-6-1:1999
+  style: v3

@@ -1,0 +1,207 @@
+---
+- id: cen_cenelec.adopted_european_norm.0006
+  identifier:
+    _type: pubid:cencenelec:adopted-european-norm
+    publisher: CEN
+    adopted:
+      _type: pubid:iso:technical-specification
+      number: '21003'
+      part: '7'
+  representations:
+    human: CEN ISO/TS 21003-7
+    urn: urn:cen:cen:iso:ts:21003-7
+  style: v3
+- id: cen_cenelec.adopted_european_norm.0007
+  identifier:
+    _type: pubid:cencenelec:adopted-european-norm
+    publisher: CEN
+    adopted:
+      _type: pubid:iso:technical-specification
+      number: '21003'
+      part: '7'
+      year: '2008'
+  representations:
+    human: CEN ISO/TS 21003-7:2008
+    urn: urn:cen:cen:iso:ts:21003-7:2008
+  style: v3
+- id: cen_cenelec.adopted_european_norm.0009
+  identifier:
+    _type: pubid:cencenelec:adopted-european-norm
+    publisher: CEN
+    adopted:
+      _type: pubid:iso:technical-specification
+      number: '21003'
+      part: '7'
+      year: '2019'
+  representations:
+    human: CEN ISO/TS 21003-7:2019
+    urn: urn:cen:cen:iso:ts:21003-7:2019
+  style: v3
+- id: cen_cenelec.adopted_european_norm.0049
+  identifier:
+    _type: pubid:cencenelec:adopted-european-norm
+    publisher: CR
+    adopted:
+      _type: pubid:iso:international-standard
+      number: '13434'
+      year: '1999'
+  representations:
+    human: CR ISO 13434:1999
+    urn: urn:cen:cr:iso:13434:1999
+  style: v3
+- id: cen_cenelec.adopted_european_norm.0146
+  identifier:
+    _type: pubid:cencenelec:adopted-european-norm
+    adopted:
+      _type: pubid:iec:international-standard
+      number: '55014'
+      part: '2'
+      year: '2021'
+  representations:
+    human: EN IEC 55014-2:2021
+    urn: urn:cen:en:iec:55014-2:2021
+  style: v3
+- id: cen_cenelec.adopted_european_norm.0147
+  identifier:
+    _type: pubid:cencenelec:adopted-european-norm
+    adopted:
+      _type: pubid:iec:international-standard
+      number: '62115'
+      year: '2020'
+  representations:
+    human: EN IEC 62115:2020
+    urn: urn:cen:en:iec:62115:2020
+  style: v3
+- id: cen_cenelec.adopted_european_norm.0148
+  identifier:
+    _type: pubid:cencenelec:adopted-european-norm
+    adopted:
+      _type: pubid:iec:international-standard
+      number: '62368'
+      part: '1'
+      year: '2020'
+  representations:
+    human: EN IEC 62368-1:2020
+    urn: urn:cen:en:iec:62368-1:2020
+  style: v3
+- id: cen_cenelec.adopted_european_norm.0151
+  identifier:
+    _type: pubid:cencenelec:adopted-european-norm
+    adopted:
+      _type: pubid:iso:international-standard
+      number: '11140'
+      part: '3'
+      year: '2009'
+  representations:
+    human: EN ISO 11140-3:2009
+    urn: urn:cen:en:iso:11140-3:2009
+  style: v3
+- id: cen_cenelec.adopted_european_norm.0152
+  identifier:
+    _type: pubid:cencenelec:adopted-european-norm
+    adopted:
+      _type: pubid:iso:international-standard
+      number: '12100'
+      year: '2010'
+  representations:
+    human: EN ISO 12100:2010
+    urn: urn:cen:en:iso:12100:2010
+  style: v3
+- id: cen_cenelec.adopted_european_norm.0153
+  identifier:
+    _type: pubid:cencenelec:adopted-european-norm
+    adopted:
+      _type: pubid:iso:international-standard
+      number: '13408'
+      part: '2'
+      year: '2018'
+  representations:
+    human: EN ISO 13408-2:2018
+    urn: urn:cen:en:iso:13408-2:2018
+  style: v3
+- id: cen_cenelec.adopted_european_norm.0157
+  identifier:
+    _type: pubid:cencenelec:adopted-european-norm
+    adopted:
+      _type: pubid:iso:amendment
+      number: '1'
+      year: '2016'
+      base:
+        _type: pubid:iso:international-standard
+        number: '13485'
+        year: '2016'
+  representations:
+    human: EN ISO 13485:2016/Amd 1:2016
+    urn: urn:cen:en:iso:13485:2016:amd:1:2016
+  style: v3
+- id: cen_cenelec.adopted_european_norm.0158
+  identifier:
+    _type: pubid:cencenelec:adopted-european-norm
+    adopted:
+      _type: pubid:iso:international-standard
+      number: '14090'
+      year: '2019'
+  representations:
+    human: EN ISO 14090:2019
+    urn: urn:cen:en:iso:14090:2019
+  style: v3
+- id: cen_cenelec.adopted_european_norm.0159
+  identifier:
+    _type: pubid:cencenelec:adopted-european-norm
+    adopted:
+      _type: pubid:iso:international-standard
+      number: '17292'
+  representations:
+    human: EN ISO 17292
+    urn: urn:cen:en:iso:17292
+  style: v3
+- id: cen_cenelec.adopted_european_norm.0160
+  identifier:
+    _type: pubid:cencenelec:adopted-european-norm
+    adopted:
+      _type: pubid:iso:international-standard
+      number: '17292'
+      year: '2004'
+  representations:
+    human: EN ISO 17292:2004
+    urn: urn:cen:en:iso:17292:2004
+  style: v3
+- id: cen_cenelec.adopted_european_norm.0161
+  identifier:
+    _type: pubid:cencenelec:adopted-european-norm
+    adopted:
+      _type: pubid:iso:international-standard
+      number: '228'
+      part: '1'
+      year: '2003'
+  representations:
+    human: EN ISO 228-1:2003
+    urn: urn:cen:en:iso:228-1:2003
+  style: v3
+- id: cen_cenelec.adopted_european_norm.0162
+  identifier:
+    _type: pubid:cencenelec:adopted-european-norm
+    adopted:
+      _type: pubid:iso:international-standard
+      number: '3746'
+      year: '2010'
+  representations:
+    human: EN ISO 3746:2010
+    urn: urn:cen:en:iso:3746:2010
+  style: v3
+- id: cen_cenelec.adopted_european_norm.0182
+  identifier:
+    _type: pubid:cencenelec:adopted-european-norm
+    publisher: HD
+    adopted:
+      _type: pubid:iec:international-standard
+      number: '60364'
+      part: '8'
+      subpart: '81'
+  representations:
+    human: HD IEC 60364-8-81
+    urn: urn:cen:hd:iec:60364-8-81
+  style: v3
+  non_normalized_aliases:
+  - spelling: HD IEC 60364-8-81 ED1
+    style: v3

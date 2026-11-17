@@ -1,0 +1,11 @@
+---
+- id: cen_cenelec.cen_workshop_agreement.0050
+  identifier:
+    _type: pubid:cencenelec:cen-workshop-agreement
+    number: '14050'
+    part: '21'
+    year: '2000'
+  representations:
+    human: CWA 14050-21:2000
+    urn: urn:cen:cwa:14050-21:2000
+  style: v3

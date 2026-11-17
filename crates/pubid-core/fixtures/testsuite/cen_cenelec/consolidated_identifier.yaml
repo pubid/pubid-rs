@@ -1,0 +1,269 @@
+---
+- id: cen_cenelec.consolidated_identifier.0061
+  identifier:
+    _type: pubid:cencenelec:consolidated-identifier
+    identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '13250'
+      year: '2014'
+    - _type: pubid:cencenelec:amendment
+      number: '1'
+      year: '2015'
+  representations:
+    human: EN 13250:2014+A1:2015
+    urn: urn:cen:en:13250:2014:plus:amd:1:2015
+  style: v3
+- id: cen_cenelec.consolidated_identifier.0066
+  identifier:
+    _type: pubid:cencenelec:consolidated-identifier
+    identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '13251'
+      year: '2014'
+    - _type: pubid:cencenelec:amendment
+      number: '1'
+      year: '2015'
+  representations:
+    human: EN 13251:2014+A1:2015
+    urn: urn:cen:en:13251:2014:plus:amd:1:2015
+  style: v3
+- id: cen_cenelec.consolidated_identifier.0071
+  identifier:
+    _type: pubid:cencenelec:consolidated-identifier
+    identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '13252'
+      year: '2014'
+    - _type: pubid:cencenelec:amendment
+      number: '1'
+      year: '2015'
+  representations:
+    human: EN 13252:2014+A1:2015
+    urn: urn:cen:en:13252:2014:plus:amd:1:2015
+  style: v3
+- id: cen_cenelec.consolidated_identifier.0076
+  identifier:
+    _type: pubid:cencenelec:consolidated-identifier
+    identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '13253'
+      year: '2014'
+    - _type: pubid:cencenelec:amendment
+      number: '1'
+      year: '2015'
+  representations:
+    human: EN 13253:2014+A1:2015
+    urn: urn:cen:en:13253:2014:plus:amd:1:2015
+  style: v3
+- id: cen_cenelec.consolidated_identifier.0082
+  identifier:
+    _type: pubid:cencenelec:consolidated-identifier
+    identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '13254'
+      year: '2014'
+    - _type: pubid:cencenelec:amendment
+      number: '1'
+      year: '2015'
+  representations:
+    human: EN 13254:2014+A1:2015
+    urn: urn:cen:en:13254:2014:plus:amd:1:2015
+  style: v3
+- id: cen_cenelec.consolidated_identifier.0088
+  identifier:
+    _type: pubid:cencenelec:consolidated-identifier
+    identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '13255'
+      year: '2014'
+    - _type: pubid:cencenelec:amendment
+      number: '1'
+      year: '2015'
+  representations:
+    human: EN 13255:2014+A1:2015
+    urn: urn:cen:en:13255:2014:plus:amd:1:2015
+  style: v3
+- id: cen_cenelec.consolidated_identifier.0094
+  identifier:
+    _type: pubid:cencenelec:consolidated-identifier
+    identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '13256'
+      year: '2014'
+    - _type: pubid:cencenelec:amendment
+      number: '1'
+      year: '2015'
+  representations:
+    human: EN 13256:2014+A1:2015
+    urn: urn:cen:en:13256:2014:plus:amd:1:2015
+  style: v3
+- id: cen_cenelec.consolidated_identifier.0100
+  identifier:
+    _type: pubid:cencenelec:consolidated-identifier
+    identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '13257'
+      year: '2014'
+    - _type: pubid:cencenelec:amendment
+      number: '1'
+      year: '2015'
+  representations:
+    human: EN 13257:2014+A1:2015
+    urn: urn:cen:en:13257:2014:plus:amd:1:2015
+  style: v3
+- id: cen_cenelec.consolidated_identifier.0118
+  identifier:
+    _type: pubid:cencenelec:consolidated-identifier
+    identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '196'
+      part: '3'
+      year: '2005'
+    - _type: pubid:cencenelec:amendment
+      number: '1'
+      year: '2008'
+  representations:
+    human: EN 196-3:2005+A1:2008
+    urn: urn:cen:en:196-3:2005:plus:amd:1:2008
+  style: v3
+- id: cen_cenelec.consolidated_identifier.0125
+  identifier:
+    _type: pubid:cencenelec:consolidated-identifier
+    identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '285'
+      year: '2015'
+    - _type: pubid:cencenelec:amendment
+      number: '1'
+  representations:
+    human: EN 285:2015+A1
+    urn: urn:cen:en:285:2015:plus:amd:1
+  style: v3
+- id: cen_cenelec.consolidated_identifier.0126
+  identifier:
+    _type: pubid:cencenelec:consolidated-identifier
+    identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '285'
+      year: '2015'
+    - _type: pubid:cencenelec:amendment
+      number: '1'
+      year: '2021'
+  representations:
+    human: EN 285:2015+A1:2021
+    urn: urn:cen:en:285:2015:plus:amd:1:2021
+  style: v3
+- id: cen_cenelec.consolidated_identifier.0130
+  identifier:
+    _type: pubid:cencenelec:consolidated-identifier
+    identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '527'
+      part: '2'
+      year: '2016'
+    - _type: pubid:cencenelec:amendment
+      number: '1'
+      year: '2019'
+  representations:
+    human: EN 527-2:2016+A1:2019
+    urn: urn:cen:en:527-2:2016:plus:amd:1:2019
+  style: v3
+  non_normalized_aliases:
+  - spelling: EN 527­2:2016+A1:2019
+    style: v3
+- id: cen_cenelec.consolidated_identifier.0144
+  identifier:
+    _type: pubid:cencenelec:consolidated-identifier
+    identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '934'
+      part: '3'
+      year: '2009'
+    - _type: pubid:cencenelec:amendment
+      number: '1'
+      year: '2012'
+  representations:
+    human: EN 934-3:2009+A1:2012
+    urn: urn:cen:en:934-3:2009:plus:amd:1:2012
+  style: v3
+- id: cen_cenelec.consolidated_identifier.0149
+  identifier:
+    _type: pubid:cencenelec:consolidated-identifier
+    identifiers:
+    - _type: pubid:cencenelec:adopted-european-norm
+      adopted:
+        _type: pubid:iec:international-standard
+        number: '62368'
+        part: '1'
+        year: '2020'
+    - _type: pubid:cencenelec:amendment
+      number: '11'
+      year: '2020'
+  representations:
+    human: EN IEC 62368-1:2020+A11:2020
+    urn: urn:cen:en:iec:62368-1:2020:plus:amd:11:2020
+  style: v3
+- id: cen_cenelec.consolidated_identifier.0150
+  identifier:
+    _type: pubid:cencenelec:consolidated-identifier
+    identifiers:
+    - _type: pubid:cencenelec:adopted-european-norm
+      adopted:
+        _type: pubid:iso:international-standard
+        number: '10077'
+        part: '1'
+        year: '2006'
+    - _type: pubid:cencenelec:corrigendum
+      year: '2009'
+    - _type: pubid:cencenelec:corrigendum
+      number: '2'
+      year: '2009'
+  representations:
+    human: EN ISO 10077-1:2006+AC:2009+AC2:2009
+    urn: urn:cen:en:iso:10077-1:2006:plus:cor:2009:plus:cor:2:2009
+  style: v3
+- id: cen_cenelec.consolidated_identifier.0177
+  identifier:
+    _type: pubid:cencenelec:consolidated-identifier
+    identifiers:
+    - _type: pubid:cencenelec:harmonization-document
+      number: '60269'
+      part: '2'
+      year: '2013'
+    - _type: pubid:cencenelec:amendment
+      number: '1'
+      year: '2022'
+  representations:
+    human: HD 60269-2:2013+A1:2022
+    urn: urn:cen:hd:60269-2:2013:plus:amd:1:2022
+  style: v3
+- id: cen_cenelec.consolidated_identifier.0178
+  identifier:
+    _type: pubid:cencenelec:consolidated-identifier
+    identifiers:
+    - _type: pubid:cencenelec:harmonization-document
+      number: '60269'
+      part: '2'
+      year: '2013'
+    - _type: pubid:cencenelec:amendment
+      number: '2'
+      year: '2024'
+  representations:
+    human: HD 60269-2:2013+A2:2024
+    urn: urn:cen:hd:60269-2:2013:plus:amd:2:2024
+  style: v3
+- id: cen_cenelec.consolidated_identifier.0180
+  identifier:
+    _type: pubid:cencenelec:consolidated-identifier
+    identifiers:
+    - _type: pubid:cencenelec:harmonization-document
+      number: '60269'
+      part: '3'
+      year: '2010'
+    - _type: pubid:cencenelec:amendment
+      number: '2'
+      year: '2022'
+  representations:
+    human: HD 60269-3:2010+A2:2022
+    urn: urn:cen:hd:60269-3:2010:plus:amd:2:2022
+  style: v3

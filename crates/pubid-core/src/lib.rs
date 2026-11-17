@@ -19,6 +19,7 @@
 
 pub mod artifact;
 pub mod bound;
+pub mod cen_cenelec;
 pub mod conformance;
 pub mod doi;
 pub mod error;
@@ -59,6 +60,7 @@ pub use un::UnIdentifier;
 pub use w3c::{W3cIdentifier, W3cKind};
 pub use xsf::XsfIdentifier;
 pub use api::ApiIdentifier;
+pub use cen_cenelec::CenIdentifier;
 pub use amca::{AmcaIdentifier, AmcaKind};
 pub use ansi::AnsiIdentifier;
 pub use ecma::{EcmaIdentifier, EcmaKind};

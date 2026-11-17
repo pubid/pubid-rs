@@ -23,6 +23,29 @@ pub fn optional_bound_str<'a>(bound: &'a Value, capture: &'static str) -> Option
     bound.get(capture).and_then(Value::as_str)
 }
 
+/// A string capture that may arrive span-wrapped (`{value, line,
+/// column, offset, length}` — the bindings runtime's position-tagged
+/// leaves) or as a plain string; both unwrap to the captured text.
+pub fn capture_str(value: &Value) -> Option<&str> {
+    match value {
+        Value::String(text) => Some(text),
+        Value::Object(map) => map.get("value").and_then(Value::as_str),
+        _ => None,
+    }
+}
+
+/// An optional string capture from a bound hash or a captured node,
+/// span-unwrapping like [`capture_str`].
+pub fn optional_at<'a>(node: &'a Value, key: &'static str) -> Option<&'a str> {
+    node.get(key).and_then(capture_str)
+}
+
+/// An optional string member of a captured entry (`parts[].part`,
+/// `copublishers[].copublisher`), span-unwrapping like [`capture_str`].
+pub fn capture_in<'a>(node: &'a Value, key: &'static str) -> Option<&'a str> {
+    node.get(key).and_then(capture_str)
+}
+
 /// A required string field from a canonical hash (`from_hash` side).
 pub fn hash_str<'a>(hash: &'a Value, field: &'static str) -> Result<&'a str> {
     hash.get(field)
