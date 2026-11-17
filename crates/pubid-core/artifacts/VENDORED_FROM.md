@@ -15,6 +15,10 @@ The `*.json` envelopes in this directory are byte-copied from
 | un     | `d201ee6387c0d45f84f18cb995a669d6d0f2d32a0b63f1627173623b0344c88a` |
 | w3c    | `38fe8a4edcfa43b2f4d64f04187abaf40666439d7e1ad437ca3d1e3cdd8b6264` |
 | xsf    | `b97d3fae6aebef1996c0e98c30d696ad7d6dabc5be9a8f6c9036bd8289e7aaf3` |
+| api    | `870fb6cfd0d3b567dda4f453864cb57f5fb9ab4a8db85992e80c8ac2720a3acb` |
+| amca   | `51ec2c39eae0e18e03bafbb4e34084053cfb64edab0a48fc959734b3e0200364` |
+| nesc   | `a5e97216ce732f27ed44a60e2430a47316c53ebecbcd0ff52615d400819d433a` |
+| ire    | `c5ce8862b73036a3bbee88c07dfbb7155e8e9a91e43a96907bd850456fa9f05f` |
 
 Every envelope is artifact edition 2, shape `parsanol-tree/v2`, baked at
 parsanol compiler 1.5.1.0 (the #129 re-seal round: the doi grammar is

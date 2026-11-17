@@ -59,6 +59,10 @@ vendored_artifacts!(
     "ogc" => OGC_ARTIFACT, ogc_artifact,
     "ietf" => IETF_ARTIFACT, ietf_artifact,
     "w3c" => W3C_ARTIFACT, w3c_artifact,
+    "api" => API_ARTIFACT, api_artifact,
+    "amca" => AMCA_ARTIFACT, amca_artifact,
+    "nesc" => NESC_ARTIFACT, nesc_artifact,
+    "ire" => IRE_ARTIFACT, ire_artifact,
 );
 
 /// A flavor's artifact by name; `None` when the crate carries no
@@ -74,6 +78,10 @@ pub fn flavor_artifact(flavor: &str) -> Option<Result<&'static PargArtifact>> {
         "ogc" => Some(ogc_artifact()),
         "ietf" => Some(ietf_artifact()),
         "w3c" => Some(w3c_artifact()),
+        "api" => Some(api_artifact()),
+        "amca" => Some(amca_artifact()),
+        "nesc" => Some(nesc_artifact()),
+        "ire" => Some(ire_artifact()),
         _ => None,
     }
 }
