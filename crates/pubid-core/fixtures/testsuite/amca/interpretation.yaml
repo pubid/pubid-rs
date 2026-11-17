@@ -1,0 +1,69 @@
+---
+- id: amca.interpretation.0001
+  identifier:
+    _type: pubid:amca:interpretation
+    copublisher: AMCA
+    number: '204'
+    interpretation_code: AW
+  representations:
+    human: AMCA 204 AW Interp
+    urn: urn:amca:204:interp.aw:copub.amca:interpretation
+  style: v3
+- id: amca.interpretation.0002
+  identifier:
+    _type: pubid:amca:interpretation
+    copublisher: AMCA
+    number: '208'
+    interpretation_code: AH
+  representations:
+    human: AMCA 208 AH Interp
+    urn: urn:amca:208:interp.ah:copub.amca:interpretation
+  style: v3
+- id: amca.interpretation.0003
+  identifier:
+    _type: pubid:amca:interpretation
+    copublisher: AMCA
+    number: '511'
+  representations:
+    human: AMCA 511 Interp
+    urn: urn:amca:511:copub.amca:interpretation
+  style: v3
+- id: amca.interpretation.0004
+  identifier:
+    _type: pubid:amca:interpretation
+    copublisher: AMCA
+    number: '99'
+    interpretation_code: JW
+  representations:
+    human: AMCA 99 JW Interp
+    urn: urn:amca:99:interp.jw:copub.amca:interpretation
+  style: v3
+- id: amca.interpretation.0005
+  identifier:
+    _type: pubid:amca:interpretation
+    copublisher: AMCA
+    number: '99'
+    interpretation_code: KB
+  representations:
+    human: AMCA 99 KB Interp
+    urn: urn:amca:99:interp.kb:copub.amca:interpretation
+  style: v3
+- id: amca.interpretation.0006
+  identifier:
+    _type: pubid:amca:interpretation
+    copublisher: AMCA
+    number: '99'
+    interpretation_code: RG
+  representations:
+    human: AMCA 99 RG Interp
+    urn: urn:amca:99:interp.rg:copub.amca:interpretation
+  style: v3
+- id: amca.interpretation.0016
+  identifier:
+    _type: pubid:amca:interpretation
+    copublisher: ANSI/AMCA
+    number: '204'
+  representations:
+    human: ANSI/AMCA 204 Interp
+    urn: urn:amca:204:copub.ansi/amca:interpretation
+  style: v3

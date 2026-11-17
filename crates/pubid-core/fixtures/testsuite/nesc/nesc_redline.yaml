@@ -1,0 +1,15 @@
+---
+- id: ieee.nesc_redline.0001
+  identifier:
+    _type: pubid:ieee:nesc-redline
+    number: '2'
+    year: '2012'
+    variant: Redline
+    prefix: C
+  representations:
+    human: 2012 NESC Redline
+    urn: urn:ieee:ieee:C2:2012
+  style: v3
+  non_normalized_aliases:
+  - spelling: National Electrical Safety Code, C2-2012 - Redline
+    style: v3

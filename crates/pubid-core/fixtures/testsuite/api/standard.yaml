@@ -1,0 +1,321 @@
+---
+- id: api.standard.0135
+  identifier:
+    _type: pubid:api:standard
+    number: '1104'
+  representations:
+    human: API STD 1104
+    urn: urn:api:std:1104
+  style: v3
+- id: api.standard.0136
+  identifier:
+    _type: pubid:api:standard
+    number: 12R1
+  representations:
+    human: API STD 12R1
+    urn: urn:api:std:12R1
+  style: v3
+- id: api.standard.0137
+  identifier:
+    _type: pubid:api:standard
+    number: 16AR
+  representations:
+    human: API STD 16AR
+    urn: urn:api:std:16AR
+  style: v3
+- id: api.standard.0138
+  identifier:
+    _type: pubid:api:standard
+    number: 17F
+  representations:
+    human: API STD 17F
+    urn: urn:api:std:17F
+  style: v3
+- id: api.standard.0139
+  identifier:
+    _type: pubid:api:standard
+    number: 1PTC
+  representations:
+    human: API STD 1PTC
+    urn: urn:api:std:1PTC
+  style: v3
+- id: api.standard.0140
+  identifier:
+    _type: pubid:api:standard
+    number: '2015'
+  representations:
+    human: API STD 2015
+    urn: urn:api:std:2015
+  style: v3
+- id: api.standard.0141
+  identifier:
+    _type: pubid:api:standard
+    number: 20D
+  representations:
+    human: API STD 20D
+    urn: urn:api:std:20D
+  style: v3
+- id: api.standard.0142
+  identifier:
+    _type: pubid:api:standard
+    number: 20H
+  representations:
+    human: API STD 20H
+    urn: urn:api:std:20H
+  style: v3
+- id: api.standard.0143
+  identifier:
+    _type: pubid:api:standard
+    number: 20L
+  representations:
+    human: API STD 20L
+    urn: urn:api:std:20L
+  style: v3
+- id: api.standard.0144
+  identifier:
+    _type: pubid:api:standard
+    number: 20P
+  representations:
+    human: API STD 20P
+    urn: urn:api:std:20P
+  style: v3
+- id: api.standard.0145
+  identifier:
+    _type: pubid:api:standard
+    number: 20S
+  representations:
+    human: API STD 20S
+    urn: urn:api:std:20S
+  style: v3
+- id: api.standard.0146
+  identifier:
+    _type: pubid:api:standard
+    number: '2350'
+  representations:
+    human: API STD 2350
+    urn: urn:api:std:2350
+  style: v3
+- id: api.standard.0147
+  identifier:
+    _type: pubid:api:standard
+    number: '2552'
+  representations:
+    human: API STD 2552
+    urn: urn:api:std:2552
+  style: v3
+- id: api.standard.0148
+  identifier:
+    _type: pubid:api:standard
+    number: '2554'
+  representations:
+    human: API STD 2554
+    urn: urn:api:std:2554
+  style: v3
+- id: api.standard.0149
+  identifier:
+    _type: pubid:api:standard
+    number: '2555'
+  representations:
+    human: API STD 2555
+    urn: urn:api:std:2555
+  style: v3
+- id: api.standard.0150
+  identifier:
+    _type: pubid:api:standard
+    number: 2CCU
+  representations:
+    human: API STD 2CCU
+    urn: urn:api:std:2CCU
+  style: v3
+- id: api.standard.0151
+  identifier:
+    _type: pubid:api:standard
+    number: 2RD
+  representations:
+    human: API STD 2RD
+    urn: urn:api:std:2RD
+  style: v3
+- id: api.standard.0152
+  identifier:
+    _type: pubid:api:standard
+    number: '526'
+  representations:
+    human: API STD 526
+    urn: urn:api:std:526
+  style: v3
+- id: api.standard.0153
+  identifier:
+    _type: pubid:api:standard
+    number: '534'
+  representations:
+    human: API STD 534
+    urn: urn:api:std:534
+  style: v3
+- id: api.standard.0154
+  identifier:
+    _type: pubid:api:standard
+    number: '535'
+  representations:
+    human: API STD 535
+    urn: urn:api:std:535
+  style: v3
+- id: api.standard.0155
+  identifier:
+    _type: pubid:api:standard
+    number: '537'
+  representations:
+    human: API STD 537
+    urn: urn:api:std:537
+  style: v3
+- id: api.standard.0156
+  identifier:
+    _type: pubid:api:standard
+    number: '589'
+  representations:
+    human: API STD 589
+    urn: urn:api:std:589
+  style: v3
+- id: api.standard.0157
+  identifier:
+    _type: pubid:api:standard
+    number: '599'
+  representations:
+    human: API STD 599
+    urn: urn:api:std:599
+  style: v3
+- id: api.standard.0158
+  identifier:
+    _type: pubid:api:standard
+    number: 5L8
+  representations:
+    human: API STD 5L8
+    urn: urn:api:std:5L8
+  style: v3
+- id: api.standard.0159
+  identifier:
+    _type: pubid:api:standard
+    number: 5MIF
+  representations:
+    human: API STD 5MIF
+    urn: urn:api:std:5MIF
+  style: v3
+- id: api.standard.0160
+  identifier:
+    _type: pubid:api:standard
+    number: '603'
+  representations:
+    human: API STD 603
+    urn: urn:api:std:603
+  style: v3
+- id: api.standard.0161
+  identifier:
+    _type: pubid:api:standard
+    number: '608'
+  representations:
+    human: API STD 608
+    urn: urn:api:std:608
+  style: v3
+- id: api.standard.0162
+  identifier:
+    _type: pubid:api:standard
+    number: '618'
+  representations:
+    human: API STD 618
+    urn: urn:api:std:618
+  style: v3
+- id: api.standard.0163
+  identifier:
+    _type: pubid:api:standard
+    number: '630'
+  representations:
+    human: API STD 630
+    urn: urn:api:std:630
+  style: v3
+- id: api.standard.0164
+  identifier:
+    _type: pubid:api:standard
+    number: '641'
+  representations:
+    human: API STD 641
+    urn: urn:api:std:641
+  style: v3
+- id: api.standard.0165
+  identifier:
+    _type: pubid:api:standard
+    number: '650'
+  representations:
+    human: API STD 650
+    urn: urn:api:std:650
+  style: v3
+- id: api.standard.0166
+  identifier:
+    _type: pubid:api:standard
+    number: '668'
+  representations:
+    human: API STD 668
+    urn: urn:api:std:668
+  style: v3
+- id: api.standard.0167
+  identifier:
+    _type: pubid:api:standard
+    number: '670'
+  representations:
+    human: API STD 670
+    urn: urn:api:std:670
+  style: v3
+- id: api.standard.0168
+  identifier:
+    _type: pubid:api:standard
+    number: 6ACRA
+  representations:
+    human: API STD 6ACRA
+    urn: urn:api:std:6ACRA
+  style: v3
+- id: api.standard.0169
+  identifier:
+    _type: pubid:api:standard
+    number: 6AV1
+  representations:
+    human: API STD 6AV1
+    urn: urn:api:std:6AV1
+  style: v3
+- id: api.standard.0170
+  identifier:
+    _type: pubid:api:standard
+    number: 6DX
+  representations:
+    human: API STD 6DX
+    urn: urn:api:std:6DX
+  style: v3
+- id: api.standard.0171
+  identifier:
+    _type: pubid:api:standard
+    number: '810'
+  representations:
+    human: API STD 810
+    urn: urn:api:std:810
+  style: v3
+- id: api.standard.0172
+  identifier:
+    _type: pubid:api:standard
+    number: '936'
+  representations:
+    human: API STD 936
+    urn: urn:api:std:936
+  style: v3
+- id: api.standard.0173
+  identifier:
+    _type: pubid:api:standard
+    number: '975'
+  representations:
+    human: API STD 975
+    urn: urn:api:std:975
+  style: v3
+- id: api.standard.0174
+  identifier:
+    _type: pubid:api:standard
+    number: '976'
+  representations:
+    human: API STD 976
+    urn: urn:api:std:976
+  style: v3

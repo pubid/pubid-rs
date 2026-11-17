@@ -1,0 +1,13 @@
+---
+- id: ieee.ire.0002
+  identifier:
+    _type: pubid:ieee:ire
+    number: '7'
+    year: '1952'
+    parts:
+    - S2
+    separator: "."
+  representations:
+    human: 52 IRE 7.S2
+    urn: urn:ieee:ire:7.S2:1952
+  style: v3

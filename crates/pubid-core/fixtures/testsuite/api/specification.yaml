@@ -1,0 +1,177 @@
+---
+- id: api.specification.0113
+  identifier:
+    _type: pubid:api:specification
+    number: 11AX
+  representations:
+    human: API SPEC 11AX
+    urn: urn:api:std:11AX
+  style: v3
+- id: api.specification.0114
+  identifier:
+    _type: pubid:api:specification
+    number: 11B
+  representations:
+    human: API SPEC 11B
+    urn: urn:api:std:11B
+  style: v3
+- id: api.specification.0115
+  identifier:
+    _type: pubid:api:specification
+    number: 11P
+  representations:
+    human: API SPEC 11P
+    urn: urn:api:std:11P
+  style: v3
+- id: api.specification.0116
+  identifier:
+    _type: pubid:api:specification
+    number: 12C
+  representations:
+    human: API SPEC 12C
+    urn: urn:api:std:12C
+  style: v3
+- id: api.specification.0117
+  identifier:
+    _type: pubid:api:specification
+    number: 12D
+  representations:
+    human: API SPEC 12D
+    urn: urn:api:std:12D
+  style: v3
+- id: api.specification.0118
+  identifier:
+    _type: pubid:api:specification
+    number: 12F
+  representations:
+    human: API SPEC 12F
+    urn: urn:api:std:12F
+  style: v3
+- id: api.specification.0119
+  identifier:
+    _type: pubid:api:specification
+    number: 14A
+  representations:
+    human: API SPEC 14A
+    urn: urn:api:std:14A
+  style: v3
+- id: api.specification.0120
+  identifier:
+    _type: pubid:api:specification
+    number: 16B
+  representations:
+    human: API SPEC 16B
+    urn: urn:api:std:16B
+  style: v3
+- id: api.specification.0121
+  identifier:
+    _type: pubid:api:specification
+    number: 16C
+  representations:
+    human: API SPEC 16C
+    urn: urn:api:std:16C
+  style: v3
+- id: api.specification.0122
+  identifier:
+    _type: pubid:api:specification
+    number: 16RCD
+  representations:
+    human: API SPEC 16RCD
+    urn: urn:api:std:16RCD
+  style: v3
+- id: api.specification.0123
+  identifier:
+    _type: pubid:api:specification
+    number: 17J
+  representations:
+    human: API SPEC 17J
+    urn: urn:api:std:17J
+  style: v3
+- id: api.specification.0124
+  identifier:
+    _type: pubid:api:specification
+    number: 19E
+  representations:
+    human: API SPEC 19E
+    urn: urn:api:std:19E
+  style: v3
+- id: api.specification.0125
+  identifier:
+    _type: pubid:api:specification
+    number: 19ICV
+  representations:
+    human: API SPEC 19ICV
+    urn: urn:api:std:19ICV
+  style: v3
+- id: api.specification.0126
+  identifier:
+    _type: pubid:api:specification
+    number: 20A
+  representations:
+    human: API SPEC 20A
+    urn: urn:api:std:20A
+  style: v3
+- id: api.specification.0127
+  identifier:
+    _type: pubid:api:specification
+    number: 20E
+  representations:
+    human: API SPEC 20E
+    urn: urn:api:std:20E
+  style: v3
+- id: api.specification.0128
+  identifier:
+    _type: pubid:api:specification
+    number: 5CRA
+  representations:
+    human: API SPEC 5CRA
+    urn: urn:api:std:5CRA
+  style: v3
+- id: api.specification.0129
+  identifier:
+    _type: pubid:api:specification
+    number: 5CT
+  representations:
+    human: API SPEC 5CT
+    urn: urn:api:std:5CT
+  style: v3
+- id: api.specification.0130
+  identifier:
+    _type: pubid:api:specification
+    number: 5L
+  representations:
+    human: API SPEC 5L
+    urn: urn:api:std:5L
+  style: v3
+- id: api.specification.0131
+  identifier:
+    _type: pubid:api:specification
+    number: 6A
+  representations:
+    human: API SPEC 6A
+    urn: urn:api:std:6A
+  style: v3
+- id: api.specification.0132
+  identifier:
+    _type: pubid:api:specification
+    number: 7V
+  representations:
+    human: API SPEC 7V
+    urn: urn:api:std:7V
+  style: v3
+- id: api.specification.0133
+  identifier:
+    _type: pubid:api:specification
+    number: 8C
+  representations:
+    human: API SPEC 8C
+    urn: urn:api:std:8C
+  style: v3
+- id: api.specification.0134
+  identifier:
+    _type: pubid:api:specification
+    number: Q1
+  representations:
+    human: API SPEC Q1
+    urn: urn:api:std:Q1
+  style: v3

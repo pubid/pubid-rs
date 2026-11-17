@@ -14,11 +14,15 @@ use std::path::Path;
 use serde_json::Value;
 use yaml_rust2::{Yaml, YamlLoader};
 
+use crate::api::ApiKind;
+use crate::amca::AmcaKind;
 use crate::doi::DoiIdentifier;
+use crate::nesc::NescKind;
 use crate::error::{Error, Result};
 use crate::{
-    IanaIdentifier, IetfIdentifier, IsbnIdentifier, OasisIdentifier, OgcIdentifier, UnIdentifier,
-    W3cIdentifier, XsfIdentifier,
+    AmcaIdentifier, ApiIdentifier, IanaIdentifier, IetfIdentifier, IsbnIdentifier,
+    NescIdentifier, OasisIdentifier, OgcIdentifier, IreIdentifier, UnIdentifier, W3cIdentifier,
+    XsfIdentifier,
 };
 
 // ---------------------------------------------------------------------------
@@ -47,6 +51,14 @@ pub enum Identifier {
     Ietf(IetfIdentifier),
     /// A W3C identifier (one kind per maturity level).
     W3c(W3cIdentifier),
+    /// An API identifier (MPMS / typed / typeless / combined).
+    Api(ApiIdentifier),
+    /// An AMCA identifier (standard / publication / interpretation).
+    Amca(AmcaIdentifier),
+    /// A NESC identifier (the IEEE C2 family).
+    Nesc(NescIdentifier),
+    /// An IRE identifier (the pre-IEEE radio-engineers series).
+    Ire(IreIdentifier),
 }
 
 impl Identifier {
@@ -62,6 +74,10 @@ impl Identifier {
             Identifier::Ogc(id) => id.to_hash(),
             Identifier::Ietf(id) => id.to_hash(),
             Identifier::W3c(id) => id.to_hash(),
+            Identifier::Api(id) => id.to_hash(),
+            Identifier::Amca(id) => id.to_hash(),
+            Identifier::Nesc(id) => id.to_hash(),
+            Identifier::Ire(id) => id.to_hash(),
         }
     }
 
@@ -77,6 +93,10 @@ impl Identifier {
             Identifier::Ogc(id) => id.to_human(),
             Identifier::Ietf(id) => id.to_human(),
             Identifier::W3c(id) => id.to_human(),
+            Identifier::Api(id) => id.to_human(),
+            Identifier::Amca(id) => id.to_human(),
+            Identifier::Nesc(id) => id.to_human(),
+            Identifier::Ire(id) => id.to_human(),
         }
     }
 
@@ -92,6 +112,10 @@ impl Identifier {
             Identifier::Ogc(id) => Some(id.to_urn()),
             Identifier::Ietf(id) => Some(id.to_urn()),
             Identifier::W3c(id) => Some(id.to_urn()),
+            Identifier::Api(id) => Some(id.to_urn()),
+            Identifier::Amca(id) => Some(id.to_urn()),
+            Identifier::Nesc(id) => Some(id.to_urn()),
+            Identifier::Ire(id) => Some(id.to_urn()),
         }
     }
 
@@ -116,6 +140,16 @@ impl Identifier {
             }
             _ if kind.starts_with("pubid:w3c:") => {
                 Ok(Identifier::W3c(W3cIdentifier::from_hash(hash)?))
+            }
+            IreIdentifier::TYPE => Ok(Identifier::Ire(IreIdentifier::from_hash(hash)?)),
+            _ if kind.starts_with(ApiKind::KIND_PREFIX) => {
+                Ok(Identifier::Api(ApiIdentifier::from_hash(hash)?))
+            }
+            _ if kind.starts_with(AmcaKind::KIND_PREFIX) => {
+                Ok(Identifier::Amca(AmcaIdentifier::from_hash(hash)?))
+            }
+            _ if kind.starts_with(NescKind::KIND_PREFIX) => {
+                Ok(Identifier::Nesc(NescIdentifier::from_hash(hash)?))
             }
             other => Err(Error::InvalidHash {
                 detail: format!("unknown _type {other:?}"),
@@ -178,6 +212,10 @@ flavor_impls!(
     "ogc" => OgcImpl, Ogc, OgcIdentifier,
     "ietf" => IetfImpl, Ietf, IetfIdentifier,
     "w3c" => W3cImpl, W3c, W3cIdentifier,
+    "api" => ApiImpl, Api, ApiIdentifier,
+    "amca" => AmcaImpl, Amca, AmcaIdentifier,
+    "nesc" => NescImpl, Nesc, NescIdentifier,
+    "ire" => IreImpl, Ire, IreIdentifier,
 );
 
 // ---------------------------------------------------------------------------
@@ -245,6 +283,11 @@ pub struct FlavorCorpus {
 impl FlavorCorpus {
     /// Load a flavor's corpus from a testsuite checkout
     /// (`tests_root` is the checkout's `tests/` directory).
+    ///
+    /// Underscore-prefixed files other than `_negative.yaml` /
+    /// `_status.yaml` are exporter metadata (normalization chains,
+    /// unparsed-debt notes), not corpus rows; they are skipped here so
+    /// a checkout run reads the same rows the vendored slice carries.
     pub fn from_dir(tests_root: &Path, flavor: &str) -> Result<Self> {
         let dir = tests_root.join(flavor);
         let mut entries: Vec<(String, String)> = Vec::new();
@@ -252,10 +295,17 @@ impl FlavorCorpus {
         for entry in list {
             let entry = entry.map_err(Error::Io)?;
             let name = entry.file_name().to_string_lossy().to_string();
-            if name.ends_with(".yaml") {
-                let text = std::fs::read_to_string(entry.path()).map_err(Error::Io)?;
-                entries.push((name, text));
+            if !name.ends_with(".yaml") {
+                continue;
             }
+            if name.starts_with('_')
+                && name != "_negative.yaml"
+                && name != "_status.yaml"
+            {
+                continue;
+            }
+            let text = std::fs::read_to_string(entry.path()).map_err(Error::Io)?;
+            entries.push((name, text));
         }
         entries.sort();
         Self::from_entries(flavor, &entries)
@@ -342,6 +392,33 @@ vendored_corpora!(
         ("working_draft.yaml", W3C_WORKING_DRAFT),
         ("_status.yaml", W3C_STATUS),
     ],
+    "api" => [
+        ("bulletin.yaml", API_BULLETIN),
+        ("continuous_operations_standard.yaml", API_CONTINUOUS_OPERATIONS_STANDARD),
+        ("mpms.yaml", API_MPMS),
+        ("publication.yaml", API_PUBLICATION),
+        ("recommended_practice.yaml", API_RECOMMENDED_PRACTICE),
+        ("specification.yaml", API_SPECIFICATION),
+        ("standard.yaml", API_STANDARD),
+        ("technical_report.yaml", API_TECHNICAL_REPORT),
+        ("typeless_standard.yaml", API_TYPELESS_STANDARD),
+        ("_status.yaml", API_STATUS),
+    ],
+    "amca" => [
+        ("interpretation.yaml", AMCA_INTERPRETATION),
+        ("publication.yaml", AMCA_PUBLICATION),
+        ("standard.yaml", AMCA_STANDARD),
+        ("_negative.yaml", AMCA_NEGATIVE),
+        ("_status.yaml", AMCA_STATUS),
+    ],
+    "nesc" => [
+        ("nesc_edition.yaml", NESC_EDITION),
+        ("nesc_handbook.yaml", NESC_HANDBOOK),
+        ("nesc_preprint.yaml", NESC_PREPRINT),
+        ("nesc_redline.yaml", NESC_REDLINE),
+        ("nesc_standard.yaml", NESC_STANDARD),
+    ],
+    "ire" => [("ire.yaml", IRE_IRE)],
 );
 
 /// The doi vendored slice (the bootstrap flavor's accessor, kept for
@@ -644,6 +721,10 @@ pub struct FlavorReport {
     pub unimplemented: u64,
     /// The measurement counters.
     pub tally: Tally,
+    /// The ledger's documented known-mismatch count (0 when clean or
+    /// absent) — the ceiling a ledgered flavor's failures must stay
+    /// under to be at parity with the reference's documented state.
+    pub known_mismatches: u64,
     /// The mismatch list.
     pub failures: Vec<String>,
 }
@@ -696,6 +777,10 @@ pub fn run_flavor(corpus: &FlavorCorpus, flavor: &dyn FlavorImpl) -> FlavorRepor
     }
 
     let clean = corpus.status.map(|status| status.clean).unwrap_or(true);
+    let known_mismatches = corpus
+        .status
+        .map(|status| status.known_mismatches)
+        .unwrap_or(0);
     let outcome = if clean {
         if failures.is_empty() {
             Outcome::Pass
@@ -716,6 +801,7 @@ pub fn run_flavor(corpus: &FlavorCorpus, flavor: &dyn FlavorImpl) -> FlavorRepor
         reclassified,
         unimplemented: 0,
         tally,
+        known_mismatches,
         failures,
     }
 }
@@ -745,6 +831,7 @@ pub fn unimplemented_report(corpus: &FlavorCorpus) -> FlavorReport {
             .count() as u64,
         unimplemented: 1,
         tally: Tally::default(),
+        known_mismatches: 0,
         failures: Vec::new(),
     }
 }

@@ -1,0 +1,26 @@
+---
+- id: ieee.nesc_handbook.6230
+  identifier:
+    _type: pubid:ieee:nesc-handbook
+    number: '2'
+    edition: Seventh Edition
+    year: '2012'
+    variant: Handbook
+    prefix: C
+  representations:
+    human: IEEE Std 2012 NESC Handbook, Seventh Edition
+    urn: urn:ieee:ieee:C2:2012:ed.Seventh Edition
+  style: v3
+- id: ieee.nesc_handbook.6231
+  identifier:
+    _type: pubid:ieee:nesc-handbook
+    number: '2'
+    edition: Premier Edition
+    year: '2017'
+    variant: Handbook
+    registered: true
+    prefix: C
+  representations:
+    human: IEEE Std 2017 NESC(R) Handbook, Premier Edition
+    urn: urn:ieee:ieee:C2:2017:ed.Premier Edition
+  style: v3

@@ -1,0 +1,85 @@
+---
+- id: amca.publication.0007
+  identifier:
+    _type: pubid:amca:publication
+    copublisher: AMCA
+    number: '1011'
+    year: '03'
+    reaffirmed: '2010'
+  representations:
+    human: AMCA Publication 1011-03 (R2010)
+    urn: urn:amca:1011:03:reaff.2010:copub.amca:publication
+  style: v3
+- id: amca.publication.0008
+  identifier:
+    _type: pubid:amca:publication
+    copublisher: AMCA
+    number: '203'
+    year: '90'
+    reaffirmed: '2011'
+  representations:
+    human: AMCA Publication 203-90 (R2011)
+    urn: urn:amca:203:90:reaff.2011:copub.amca:publication
+  style: v3
+- id: amca.publication.0009
+  identifier:
+    _type: pubid:amca:publication
+    copublisher: AMCA
+    number: '211'
+    year: '22'
+    revision: 01-23
+  representations:
+    human: AMCA Publication 211-22 (Rev. 01-23)
+    urn: urn:amca:211:22:rev.01-23:copub.amca:publication
+  style: v3
+- id: amca.publication.0010
+  identifier:
+    _type: pubid:amca:publication
+    copublisher: AMCA
+    number: '222'
+    year: '16'
+  representations:
+    human: AMCA Publication 222-16
+    urn: urn:amca:222:16:copub.amca:publication
+  style: v3
+- id: amca.publication.0011
+  identifier:
+    _type: pubid:amca:publication
+    copublisher: AMCA
+    number: '311'
+    year: '16'
+  representations:
+    human: AMCA Publication 311-16
+    urn: urn:amca:311:16:copub.amca:publication
+  style: v3
+- id: amca.publication.0012
+  identifier:
+    _type: pubid:amca:publication
+    copublisher: AMCA
+    number: '501'
+    year: '17'
+  representations:
+    human: AMCA Publication 501-17
+    urn: urn:amca:501:17:copub.amca:publication
+  style: v3
+- id: amca.publication.0013
+  identifier:
+    _type: pubid:amca:publication
+    copublisher: AMCA
+    number: '511'
+    year: '21'
+    revision: 12-22
+  representations:
+    human: AMCA Publication 511-21 (Rev. 12-22)
+    urn: urn:amca:511:21:rev.12-22:copub.amca:publication
+  style: v3
+- id: amca.publication.0014
+  identifier:
+    _type: pubid:amca:publication
+    copublisher: AMCA
+    number: '611'
+    year: '15'
+  representations:
+    human: AMCA Publication 611-15
+    urn: urn:amca:611:15:copub.amca:publication
+  style: v3
