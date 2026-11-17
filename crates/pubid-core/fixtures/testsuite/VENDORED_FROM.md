@@ -1,7 +1,8 @@
 # Vendored fixture provenance
 
 The flavor directories beside this note (doi, isbn, iana, oasis, xsf,
-un, ogc, ietf, w3c, ansi, ecma, gb, gost) hold the byte-copied pubid-testsuite corpora (see
+un, ogc, ietf, w3c, ansi, ecma, gb, gost, plateau, evs, ccsds,
+cen_cenelec, jis, etsi) hold the byte-copied pubid-testsuite corpora (see
 `/pins.yaml`, `testsuite_ref`). Every slice was copied from
 `pubid/pubid-testsuite@e6cf11b9821929f2c4deed431113bdfca67e81d6`
 (`tests/<flavor>/`). The doi slice is byte-identical across the round
@@ -81,6 +82,49 @@ File sha256s at the pinned ref:
   - `standard.yaml` sha256 b54aa01bd8c2e1291bcae919aa2f1b6fe22d4088bbd135d71cae0badb153938d
   - `superseded_recommendation.yaml` sha256 44408531c260655b5464e30eaeea70de4e12ec5fc6f943511b1bd0def2643378
   - `working_draft.yaml` sha256 3ca41c77bf58b69916c62c3e54bc6bc2175e5081faf5fe376f96ec508f531dca
+
+- plateau:
+  - `_status.yaml` sha256 da8b5c732041f6936d83e8f046b33824cea9c87e149da4d107ae8efd143a050f
+  - `handbook.yaml` sha256 f66c0dc26a14b56ef0bdff6313bf9d8121ad69527b8986935aef5d5d4ddc4d75
+  - `technical_report.yaml` sha256 cb4bab1b5862b65a2754742a24b7e7f9abef233953d3779db30cef98b2249f6e
+- evs:
+  - `_status.yaml` sha256 5ebef97c51fd67ec6371962b5790985ecb651511ee327b410cd1b66d1b4a3a37
+  - `estonian_standard.yaml` sha256 a203f4300ff9d22f4678b8ed1c9b8018f0d74ac268d67d086c4dfee02fa2be70
+  - `international_adoption.yaml` sha256 9c8aae8e0b1065faf7e6f02b33a8881998f143536db642a1d7251221319d724b
+  - `national_adoption.yaml` sha256 bc05b88adcdf040800c6818ab9af7e916b90e8db0faaab62c2581b7d23404a8d
+- ccsds:
+  - `_status.yaml` sha256 da8b5c732041f6936d83e8f046b33824cea9c87e149da4d107ae8efd143a050f
+  - `base.yaml` sha256 e2aa9a974c844b4f5e6fe6af3c44a80471b2098d684251f7f4b1a65a800bb722
+  - `corrigendum.yaml` sha256 ee67d26b75500074cc371ac1388590e72482df8bdf889870824d4901eb5f8b92
+- cen_cenelec:
+  - `_negative.yaml` sha256 0ab1ea4f5dae51f9c903894493c887c43ee5903e47ea4d0bce0cd05bbb6b1657
+  - `_status.yaml` sha256 da8b5c732041f6936d83e8f046b33824cea9c87e149da4d107ae8efd143a050f
+  - `adopted_european_norm.yaml` sha256 54b2b21ac2984b2f9bf2927ef8abbc2157c5f47d5e75b93ebdc3f6f5c6e3c70d
+  - `amendment.yaml` sha256 bae0306da1d6d9293ecaf9a1535ceb1c497d64177a94ff699a23cec76c2ee546
+  - `cen_report.yaml` sha256 4293cd8cf3349fcead5b33298ae0968a83e330cb9f02915b91d854d69f41d2ab
+  - `cen_workshop_agreement.yaml` sha256 d768e1a466960d920e70d33b5cb58851e5377af61c1931f89a7ba38e037ccb2c
+  - `consolidated_identifier.yaml` sha256 d8139971114fc429837e9fffb5a9b00c6bdd9db6a6ac74c0f61fd1f2d05ddff1
+  - `corrigendum.yaml` sha256 beb79e791d07e06957305c6293c4dbc0e39a3fef5c9c9250d65b436883802c62
+  - `european_norm.yaml` sha256 55e45e0453c6b8e3761984afefe92c94ebe5026f6c7e2b5e1f21a813c3f79221
+  - `european_prestandard.yaml` sha256 fd466ebd7585590ba72be40c4f399c515572c605e6929e8d3e3bae475e878d9d
+  - `european_specification.yaml` sha256 a16bf003ea29580c7fdcfaa05e98fe63dc4dcaa56df93041095145f4a8e37be1
+  - `fragment.yaml` sha256 d4df6b2867072f07f5eafdc1373890be507dab1d411dd74f22c474ee265bfecc
+  - `guide.yaml` sha256 c33884dc028dc4f63098b948a7e6a3e32704d1ea00c1276383e20de2956ae01f
+  - `harmonization_document.yaml` sha256 68bf654b764f3fccee3d2c4ce1a5b114f62008d7f82109fcaa73c2e3854941a5
+  - `technical_report.yaml` sha256 d7f73dea933acf66c1c7b9db46f04c8b6b7746de14e918e004716da2f9ac2b5e
+  - `technical_specification.yaml` sha256 7e14414db57836767e9a8ee657d3d89cbd885e41a3c4178a8d5b9b9b9445a094
+- jis:
+  - `_status.yaml` sha256 da8b5c732041f6936d83e8f046b33824cea9c87e149da4d107ae8efd143a050f
+  - `amendment.yaml` sha256 298dd02bf2fced7a25b498198e22833d10348bfde126ba20c6f385d9a23eb7d9
+  - `japanese_industrial_standard.yaml` sha256 fe34dc03ed5d63e820710a8b54d86c99d80add1bc06466a95fe035000cc22354
+  - `welding_engineering_standard.yaml` sha256 fb30d3e9201e04e12eec60727188b003cdfd6a8d00d8cfbb33527afc8473f439
+  - `welding_engineering_technical_report.yaml` sha256 0ec0ae5400a66658821905e5402d15eb8ed1b41519dcdbea1d939b4889ee6699
+  - `welding_engineering_technical_specification.yaml` sha256 b052559bca87779213b98e1ec46396cff8774f7d92b7e2386862226a083a927c
+- etsi:
+  - `_status.yaml` sha256 da8b5c732041f6936d83e8f046b33824cea9c87e149da4d107ae8efd143a050f
+  - `amendment.yaml` sha256 f6345d930f69f46e79c884e2e4db5a2ac82d4727192e7e398f089bb62d4b3c3c
+  - `corrigendum.yaml` sha256 e4cb1d205183237c23e1dd557ed2429cbbb5d6071304dc9b49065d4e82f2c486
+  - `etsi_standard.yaml` sha256 9a9a738934a96b66bdc699a659b20a09585ba246abc7d70127da3296225213f9
 
 Refresh by re-copying the files from the new testsuite ref and updating
 `testsuite_ref` in `/pins.yaml` together with this note.

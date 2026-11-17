@@ -46,7 +46,9 @@ impl AnsiIdentifier {
         let number_with_part = bound_str(&bound, "number_with_part")?;
         // The trailing all-digit dash segment is the part face.
         let (number, part) = match number_with_part.rsplit_once('-') {
-            Some((left, right)) if !right.is_empty() && right.chars().all(|c| c.is_ascii_digit()) => {
+            Some((left, right))
+                if !right.is_empty() && right.chars().all(|c| c.is_ascii_digit()) =>
+            {
                 (left, Some(right.to_string()))
             }
             _ => (number_with_part, None),

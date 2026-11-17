@@ -123,7 +123,11 @@ impl JisIdentifier {
         let mut identifier = Self::build(&bound)?;
         // The SYMBOL clause attaches to the outermost identifier.
         if optional_at(&bound, "symbol_present").is_some() {
-            identifier.symbol = Some(optional_at(&bound, "symbol_value").unwrap_or("").to_string());
+            identifier.symbol = Some(
+                optional_at(&bound, "symbol_value")
+                    .unwrap_or("")
+                    .to_string(),
+            );
         }
         Ok(identifier)
     }
@@ -177,9 +181,7 @@ impl JisIdentifier {
                         .collect()
                 })
                 .unwrap_or_default(),
-            year: hash
-                .get("year")
-                .and_then(Value::as_i64),
+            year: hash.get("year").and_then(Value::as_i64),
             language: optional_hash_str(hash, "language").map(str::to_string),
             language_before_year: hash.get("language_before_year") == Some(&Value::Bool(true)),
             all_parts: hash.get("all_parts") == Some(&Value::Bool(true)),
@@ -195,7 +197,10 @@ impl JisIdentifier {
         let mut object = serde_json::Map::new();
         object.insert("_type".into(), self.kind.type_tag().into());
         if self.kind.is_supplement() {
-            object.insert("number".into(), Value::Number(self.number.parse::<i64>().unwrap_or(0).into()));
+            object.insert(
+                "number".into(),
+                Value::Number(self.number.parse::<i64>().unwrap_or(0).into()),
+            );
             if let Some(year) = self.year {
                 object.insert("year".into(), Value::Number(year.into()));
             }
@@ -210,12 +215,7 @@ impl JisIdentifier {
             if !self.parts.is_empty() {
                 object.insert(
                     "parts".into(),
-                    Value::Array(
-                        self.parts
-                            .iter()
-                            .map(|part| part.clone().into())
-                            .collect(),
-                    ),
+                    Value::Array(self.parts.iter().map(|part| part.clone().into()).collect()),
                 );
             }
             if let Some(year) = self.year {
@@ -246,12 +246,17 @@ impl JisIdentifier {
     /// The canonical human.
     pub fn to_human(&self) -> String {
         if self.kind.is_supplement() {
-            let base = self.base.as_deref().map(JisIdentifier::to_human).unwrap_or_default();
+            let base = self
+                .base
+                .as_deref()
+                .map(JisIdentifier::to_human)
+                .unwrap_or_default();
             let result = format!("{base}/{}", self.supplement_notation());
             return result + &self.symbol_suffix();
         }
         let mut result = match self.kind {
-            WeldingEngineeringStandard | WeldingEngineeringTechnicalReport
+            WeldingEngineeringStandard
+            | WeldingEngineeringTechnicalReport
             | WeldingEngineeringTechnicalSpecification => self.code().unwrap_or_default(),
             _ => {
                 let prefix = match self.kind {
@@ -299,7 +304,8 @@ impl JisIdentifier {
             return base.code();
         }
         match self.kind {
-            WeldingEngineeringStandard | WeldingEngineeringTechnicalReport
+            WeldingEngineeringStandard
+            | WeldingEngineeringTechnicalReport
             | WeldingEngineeringTechnicalSpecification => {
                 let root = match self.kind {
                     WeldingEngineeringTechnicalReport => "WES TR",
@@ -357,7 +363,12 @@ impl JisIdentifier {
     fn supplement_notation(&self) -> String {
         let reaffirmed = if self.reaffirmed { "R" } else { "" };
         match self.kind {
-            Amendment => Some(format!("AMD {}:{}{}", self.number, year_or_empty(self.year), reaffirmed)),
+            Amendment => Some(format!(
+                "AMD {}:{}{}",
+                self.number,
+                year_or_empty(self.year),
+                reaffirmed
+            )),
             Corrigendum => Some(format!(
                 "CORRIGENDUM {}:{}{}",
                 self.number,
@@ -400,11 +411,8 @@ fn build_single(bound: &Value) -> Result<JisIdentifier> {
         };
         // A WES id carries one language, not two: `wes_language` is
         // the before-year form.
-        let (language, language_before_year) = match (
-            read("wes_language"),
-            read("language"),
-        ) {
-            (Some(wes_language), Some(_)) => {
+        let (language, language_before_year) = match (read("wes_language"), read("language")) {
+            (Some(_wes_language), Some(_)) => {
                 return Err(Error::InvalidHash {
                     detail: "JIS: a WES id carries one language, not two".to_string(),
                 });
@@ -452,9 +460,16 @@ fn build_supplement(bound: &Value, kind: JisKind, prefix: &'static str) -> Resul
     let mut base_data = bound.clone();
     if let Some(object) = base_data.as_object_mut() {
         for key in [
-            "amd_type", "amd_number", "amd_year", "amd_reaffirmed",
-            "corr_type", "corr_number", "corr_year", "corr_reaffirmed",
-            "expl_type", "expl_number",
+            "amd_type",
+            "amd_number",
+            "amd_year",
+            "amd_reaffirmed",
+            "corr_type",
+            "corr_number",
+            "corr_year",
+            "corr_reaffirmed",
+            "expl_type",
+            "expl_number",
         ] {
             object.remove(key);
         }
@@ -475,7 +490,9 @@ fn build_supplement(bound: &Value, kind: JisKind, prefix: &'static str) -> Resul
     Ok(JisIdentifier {
         kind,
         number: optional_at(bound, number_key)
-            .ok_or(Error::MissingAttribute { capture: number_key })?
+            .ok_or(Error::MissingAttribute {
+                capture: number_key,
+            })?
             .to_string(),
         year: optional_at(bound, year_key).and_then(|year| year.parse::<i64>().ok()),
         reaffirmed: optional_at(bound, reaffirmed_key).is_some(),
@@ -495,9 +512,16 @@ fn build_explanation(bound: &Value) -> Result<JisIdentifier> {
     let mut base_data = bound.clone();
     if let Some(object) = base_data.as_object_mut() {
         for key in [
-            "amd_type", "amd_number", "amd_year", "amd_reaffirmed",
-            "corr_type", "corr_number", "corr_year", "corr_reaffirmed",
-            "expl_type", "expl_number",
+            "amd_type",
+            "amd_number",
+            "amd_year",
+            "amd_reaffirmed",
+            "corr_type",
+            "corr_number",
+            "corr_year",
+            "corr_reaffirmed",
+            "expl_type",
+            "expl_number",
         ] {
             object.remove(key);
         }
@@ -526,12 +550,15 @@ mod tests {
     #[test]
     fn the_industrial_standard_keeps_leading_zeros() {
         let id = JisIdentifier::parse("JIS A 0001:1999").expect("parse");
-        assert_eq!(id.to_hash(), json!({
-            "_type": "pubid:jis:japanese-industrial-standard",
-            "series": "A",
-            "number": "0001",
-            "year": 1999,
-        }));
+        assert_eq!(
+            id.to_hash(),
+            json!({
+                "_type": "pubid:jis:japanese-industrial-standard",
+                "series": "A",
+                "number": "0001",
+                "year": 1999,
+            })
+        );
         assert_eq!(id.to_human(), "JIS A 0001:1999");
         assert_eq!(id.to_urn(), "urn:jis:A 0001:1999");
     }
@@ -555,12 +582,15 @@ mod tests {
     #[test]
     fn the_wes_standard_rides_the_flavor() {
         let id = JisIdentifier::parse("WES 7700-1:2019").expect("parse");
-        assert_eq!(id.to_hash(), json!({
-            "_type": "pubid:jis:welding-engineering-standard",
-            "number": "7700",
-            "parts": ["1"],
-            "year": 2019,
-        }));
+        assert_eq!(
+            id.to_hash(),
+            json!({
+                "_type": "pubid:jis:welding-engineering-standard",
+                "number": "7700",
+                "parts": ["1"],
+                "year": 2019,
+            })
+        );
         assert_eq!(id.to_human(), "WES 7700-1:2019");
         assert_eq!(id.to_urn(), "urn:jis:WES 7700-1:2019");
 
@@ -571,13 +601,16 @@ mod tests {
     #[test]
     fn the_wes_language_is_the_before_year_form() {
         let id = JisIdentifier::parse("WES 1112(E):2022").expect("parse");
-        assert_eq!(id.to_hash(), json!({
-            "_type": "pubid:jis:welding-engineering-standard",
-            "number": "1112",
-            "year": 2022,
-            "language": "E",
-            "language_before_year": true,
-        }));
+        assert_eq!(
+            id.to_hash(),
+            json!({
+                "_type": "pubid:jis:welding-engineering-standard",
+                "number": "1112",
+                "year": 2022,
+                "language": "E",
+                "language_before_year": true,
+            })
+        );
         assert_eq!(id.to_human(), "WES 1112(E):2022");
         assert_eq!(id.to_urn(), "urn:jis:WES 1112:2022:e");
     }
@@ -585,22 +618,28 @@ mod tests {
     #[test]
     fn the_wes_types_and_the_amendment_nest() {
         let tr = JisIdentifier::parse("WES TR 2032:2024").expect("parse");
-        assert_eq!(tr.to_hash()["_type"], json!("pubid:jis:welding-engineering-technical-report"));
+        assert_eq!(
+            tr.to_hash()["_type"],
+            json!("pubid:jis:welding-engineering-technical-report")
+        );
         assert_eq!(tr.to_human(), "WES TR 2032:2024");
 
         let amended = JisIdentifier::parse("WES 3003(E):1995/AMD 1:2025").expect("parse");
-        assert_eq!(amended.to_hash(), json!({
-            "_type": "pubid:jis:amendment",
-            "number": 1,
-            "year": 2025,
-            "base": {
-                "_type": "pubid:jis:welding-engineering-standard",
-                "number": "3003",
-                "year": 1995,
-                "language": "E",
-                "language_before_year": true,
-            },
-        }));
+        assert_eq!(
+            amended.to_hash(),
+            json!({
+                "_type": "pubid:jis:amendment",
+                "number": 1,
+                "year": 2025,
+                "base": {
+                    "_type": "pubid:jis:welding-engineering-standard",
+                    "number": "3003",
+                    "year": 1995,
+                    "language": "E",
+                    "language_before_year": true,
+                },
+            })
+        );
         assert_eq!(amended.to_human(), "WES 3003(E):1995/AMD 1:2025");
         assert_eq!(amended.to_urn(), "urn:jis:WES 3003:2025:amd 1:2025");
     }

@@ -14,24 +14,25 @@ use std::path::Path;
 use serde_json::Value;
 use yaml_rust2::{Yaml, YamlLoader};
 
-use crate::api::ApiKind;
 use crate::amca::AmcaKind;
-use crate::cen_cenelec::CenKind;
+use crate::api::ApiKind;
 use crate::ccsds::CcsdsKind;
+use crate::cen_cenelec::CenKind;
 use crate::doi::DoiIdentifier;
-use crate::plateau::PlateauKind;
-use crate::evs::EvsKind;
 use crate::ecma::EcmaKind;
-use crate::gb::GbKind;
-use crate::jis::JisKind;
-use crate::gost::GostKind;
-use crate::nesc::NescKind;
 use crate::error::{Error, Result};
 use crate::etsi::EtsiKind;
+use crate::evs::EvsKind;
+use crate::gb::GbKind;
+use crate::gost::GostKind;
+use crate::jis::JisKind;
+use crate::nesc::NescKind;
+use crate::plateau::PlateauKind;
 pub use crate::{
-    AmcaIdentifier, AnsiIdentifier, ApiIdentifier, CcsdsIdentifier, CenIdentifier, EcmaIdentifier, EtsiIdentifier, EvsIdentifier, JisIdentifier, PlateauIdentifier, GbIdentifier,
-    GostIdentifier, IanaIdentifier, IetfIdentifier, IsbnIdentifier, NescIdentifier,
-    OasisIdentifier, OgcIdentifier, IreIdentifier, UnIdentifier, W3cIdentifier, XsfIdentifier,
+    AmcaIdentifier, AnsiIdentifier, ApiIdentifier, CcsdsIdentifier, CenIdentifier, EcmaIdentifier,
+    EtsiIdentifier, EvsIdentifier, GbIdentifier, GostIdentifier, IanaIdentifier, IetfIdentifier,
+    IreIdentifier, IsbnIdentifier, JisIdentifier, NescIdentifier, OasisIdentifier, OgcIdentifier,
+    PlateauIdentifier, UnIdentifier, W3cIdentifier, XsfIdentifier,
 };
 
 // ---------------------------------------------------------------------------
@@ -41,6 +42,10 @@ pub use crate::{
 /// A parsed identifier of any ported flavor.
 #[derive(Debug, Clone, PartialEq)]
 #[non_exhaustive]
+// The cen_cenelec struct is an order of magnitude larger than the
+// small render-layer identifiers; it stays inline because the uniform
+// flavor parse wraps every variant the same way.
+#[allow(clippy::large_enum_variant)]
 pub enum Identifier {
     /// A DOI identifier.
     Doi(DoiIdentifier),
@@ -77,7 +82,8 @@ pub enum Identifier {
     /// A GOST identifier (interstate/national/harmonized/identical).
     Gost(GostIdentifier),
     /// A CEN/CENELEC identifier (documents, supplements, consolidated,
-    /// adopted).
+    /// adopted). Kept inline — the uniform flavor parse wraps it.
+    #[allow(clippy::large_enum_variant)]
     CenCenelec(CenIdentifier),
     /// An EVS identifier (plain Estonian standards and adoptions).
     Evs(EvsIdentifier),
@@ -396,10 +402,7 @@ impl FlavorCorpus {
             if !name.ends_with(".yaml") {
                 continue;
             }
-            if name.starts_with('_')
-                && name != "_negative.yaml"
-                && name != "_status.yaml"
-            {
+            if name.starts_with('_') && name != "_negative.yaml" && name != "_status.yaml" {
                 continue;
             }
             let text = std::fs::read_to_string(entry.path()).map_err(Error::Io)?;

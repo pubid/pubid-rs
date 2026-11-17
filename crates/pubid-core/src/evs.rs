@@ -177,18 +177,14 @@ impl EvsIdentifier {
             identifier.na_year = optional_at(na, "na_year").map(str::to_string);
         }
         if let Some(amd) = bound.get("evs_amd") {
-            identifier.amd_separator =
-                Some(supplement_separator(amd).unwrap_or("+").to_string());
+            identifier.amd_separator = Some(supplement_separator(amd).unwrap_or("+").to_string());
             identifier.amd_kind = Some("AMD".to_string());
             identifier.amd_number = optional_at(amd, "amd_number").map(str::to_string);
             identifier.amd_year = optional_at(amd, "amd_year").map(str::to_string);
         }
         if let Some(cor) = bound.get("evs_cor") {
-            identifier.cor_separator =
-                Some(supplement_separator(cor).unwrap_or("+").to_string());
-            identifier.cor_kind = Some(
-                optional_at(cor, "cor_kind").unwrap_or("COR").to_string(),
-            );
+            identifier.cor_separator = Some(supplement_separator(cor).unwrap_or("+").to_string());
+            identifier.cor_kind = Some(optional_at(cor, "cor_kind").unwrap_or("COR").to_string());
             identifier.cor_number = optional_at(cor, "cor_number").map(str::to_string);
             identifier.cor_year = optional_at(cor, "cor_year").map(str::to_string);
         }
@@ -444,11 +440,7 @@ impl EvsIdentifier {
 /// The EVS-list supplement separator capture (`supp_plus` / `supp_slash`
 /// / `supp_space`) mapped to its printed face.
 fn supplement_separator(node: &Value) -> Option<&str> {
-    for (key, face) in [
-        ("supp_plus", "+"),
-        ("supp_slash", "/"),
-        ("supp_space", " "),
-    ] {
+    for (key, face) in [("supp_plus", "+"), ("supp_slash", "/"), ("supp_space", " ")] {
         if node.get(key).is_some() {
             return Some(face);
         }
@@ -489,22 +481,30 @@ mod tests {
     #[test]
     fn the_plain_standard_parses_and_keeps_the_separator_off_the_wire() {
         let id = EvsIdentifier::parse("EVS 906:2026").expect("parse");
-        assert_eq!(id.to_hash(), json!({
-            "_type": "pubid:evs:estonian-standard",
-            "number": "906",
-            "year": "2026",
-        }));
+        // The space between EVS and the number IS the separator face.
+        assert_eq!(
+            id.to_hash(),
+            json!({
+                "_type": "pubid:evs:estonian-standard",
+                "number": "906",
+                "separator": " ",
+                "year": "2026",
+            })
+        );
         assert_eq!(id.to_human(), "EVS 906:2026");
         assert_eq!(id.to_urn(), "urn:evs:906:2026");
 
         let spaced = EvsIdentifier::parse("EVS 811:2018 et-en").expect("parse");
-        assert_eq!(spaced.to_hash(), json!({
-            "_type": "pubid:evs:estonian-standard",
-            "number": "811",
-            "separator": " ",
-            "language": "et-en",
-            "year": "2018",
-        }));
+        assert_eq!(
+            spaced.to_hash(),
+            json!({
+                "_type": "pubid:evs:estonian-standard",
+                "number": "811",
+                "separator": " ",
+                "language": "et-en",
+                "year": "2018",
+            })
+        );
         assert_eq!(spaced.to_human(), "EVS 811:2018 et-en");
         assert_eq!(spaced.to_urn(), "urn:evs:811:2018:et-en");
     }
@@ -512,12 +512,15 @@ mod tests {
     #[test]
     fn the_tr_and_ts_types_use_their_faces() {
         let tr = EvsIdentifier::parse("EVS-TR 1:2019").expect("parse");
-        assert_eq!(tr.to_hash(), json!({
-            "_type": "pubid:evs:estonian-standard",
-            "number": "1",
-            "year": "2019",
-            "evs_type": "TR",
-        }));
+        assert_eq!(
+            tr.to_hash(),
+            json!({
+                "_type": "pubid:evs:estonian-standard",
+                "number": "1",
+                "year": "2019",
+                "evs_type": "TR",
+            })
+        );
         assert_eq!(tr.to_human(), "EVS-TR 1:2019");
         assert_eq!(tr.to_urn(), "urn:evs:tr:1:2019");
     }
@@ -525,13 +528,16 @@ mod tests {
     #[test]
     fn the_international_adoption_carries_the_org() {
         let id = EvsIdentifier::parse("EVS-IEC 62368-1:2020").expect("parse");
-        assert_eq!(id.to_hash(), json!({
-            "_type": "pubid:evs:international-adoption",
-            "number": "62368",
-            "part": "1",
-            "intl_org": "IEC",
-            "year": "2020",
-        }));
+        assert_eq!(
+            id.to_hash(),
+            json!({
+                "_type": "pubid:evs:international-adoption",
+                "number": "62368",
+                "part": "1",
+                "intl_org": "IEC",
+                "year": "2020",
+            })
+        );
         assert_eq!(id.to_human(), "EVS-IEC 62368-1:2020");
         assert_eq!(id.to_urn(), "urn:evs:iec:62368-1:2020");
     }
@@ -539,15 +545,18 @@ mod tests {
     #[test]
     fn the_national_adoption_builds_the_cen_base() {
         let id = EvsIdentifier::parse("EVS-EN 16798-1:2019").expect("parse");
-        assert_eq!(id.to_hash(), json!({
-            "_type": "pubid:evs:national-adoption",
-            "base": {
-                "_type": "pubid:cencenelec:european-norm",
-                "number": "16798",
-                "part": "1",
-                "year": "2019",
-            },
-        }));
+        assert_eq!(
+            id.to_hash(),
+            json!({
+                "_type": "pubid:evs:national-adoption",
+                "base": {
+                    "_type": "pubid:cencenelec:european-norm",
+                    "number": "16798",
+                    "part": "1",
+                    "year": "2019",
+                },
+            })
+        );
         assert_eq!(id.to_human(), "EVS-EN 16798-1:2019");
         assert_eq!(id.to_urn(), "urn:evs:en:16798-1:2019");
 

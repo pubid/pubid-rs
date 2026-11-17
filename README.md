@@ -43,12 +43,14 @@ pins.yaml            pinned testsuite + grammar refs (single source)
 
 ## Conformance status (waves 1–3, measured)
 
-Seventeen flavors are ported end to end: `doi` (bootstrap), the
+Twenty-three flavors are ported end to end: `doi` (bootstrap), the
 wave-2 render-layer flavors `isbn`, `iana`, `oasis`, `xsf`, `un`,
-`ogc`, `ietf`, `w3c`, and the wave-3 mid-fleet flavors `api`, `amca`,
-`nesc`, `ire`, `ansi`, `ecma`, `gb`, `gost`. Measured against the full
-pubid-testsuite corpora at the pinned ref — every gated case passes
-except the one api ledger row (below), nothing hidden:
+`ogc`, `ietf`, `w3c`, the wave-3 mid-fleet flavors `api`, `amca`,
+`nesc`, `ire`, `ansi`, `ecma`, `gb`, `gost`, and the wave-3 tier
+`plateau`, `evs`, `ccsds`, `cen_cenelec`, `jis`, `etsi` (the
+big-corpus flavors — `etsi` alone is 24,718 rows). Measured against
+the full pubid-testsuite corpora at the pinned ref — every gated case
+passes except the one api ledger row (below), nothing hidden:
 
 | flavor | gated cases | parsed | rejected (negatives) | rendered | hashes | urns | deserializes |
 | ------ | ----------: | -----: | -------------------: | -------: | -----: | ---: | -----------: |
@@ -69,25 +71,35 @@ except the one api ledger row (below), nothing hidden:
 | ecma   | 833         | 839    | 0                    | 839      | 833    | 833  | 833          |
 | gb     | 10          | 10     | 5                    | 10       | 10     | 10   | 10           |
 | gost   | 199         | 399    | 0                    | 399      | 199    | 199  | 199          |
-| **all**| **4,240**   | 4,473  | 33                   | 4,473    | 4,240  | 4,240| 4,240        |
+| plateau| 118         | 119    | 0                    | 119      | 118    | 118  | 118          |
+| evs    | 35          | 36     | 0                    | 36       | 35     | 35   | 35           |
+| ccsds  | 490         | 490    | 0                    | 490      | 490    | 487  | 490          |
+| cen_cenelec | 189    | 199    | 14                   | 199      | 189    | 189  | 189          |
+| jis    | 10,575      | 10,576 | 0                    | 10,576   | 10,575 | 10,575 | 10,575     |
+| etsi   | 24,718      | 24,718 | 0                    | 24,718   | 24,718 | 21,432 | 24,718     |
+| **all**| **40,365**  | 40,611 | 47                   | 40,611   | 40,365 | 37,076 | 40,365     |
 
 Counts: `parsed` covers the canonical humans plus every non-normalized
 alias spelling; `rejected` covers the `_negative.yaml` rows (plus the
 doi/isbn builder-layer rejections the flavors enforce); `rendered`
 covers every human compared byte-for-byte; `hashes`/`urns` the deep
-comparisons against the corpus; `deserializes` the
-`from_hash(to_hash())` round-trips. All ledgers except `api` are
-`clean: true`, so every flavor gates; the api ledger documents one
-known alias mismatch (the slash-combined `API COS 1-07/RP 75` chain),
-under its ceiling, so the run exits green. The embedded artifact
-suites (the envelopes' own accept/reject tests) are green for every
-vendored envelope.
+comparisons against the corpus (a flavor emits no URN where the
+reference emits none — the ccsds language rows the reference's own
+`to_urn` raises on, and the etsi rows whose exporter omitted the
+representation); `deserializes` the `from_hash(to_hash())`
+round-trips. All ledgers except `api` are `clean: true`, so every
+flavor gates; the api ledger documents one known alias mismatch (the
+slash-combined `API COS 1-07/RP 75` chain), under its ceiling, so the
+run exits green. The embedded artifact suites (the envelopes' own
+accept/reject tests) are green for every vendored envelope.
 
-That is 4,240 of the testsuite's 99,793 cases. The remaining mid
-fleet is reported honestly, never claimed. `adobe` carries no
-testsuite corpus, so its vendored artifact is carried without a ported
-flavor (the runner reports it as vendored-not-ported rather than
-gating on invented ground truth).
+That is 40,365 of the testsuite's cases — the six flavors this tier
+adds carry 36,125 of them. The remaining mid fleet is reported
+honestly, never claimed. `adobe` and the five `_pfs` envelopes
+(`doi_pfs`, `calconnect_pfs`, `cen_pfs`, `etsi_pfs`, `bsi_pfs`) carry
+no testsuite corpus at the pinned ref, so their artifacts are vendored
+without ported flavors (the runner reports them as vendored-not-ported
+rather than gating on invented ground truth).
 
 CI additionally runs the conformance binary against a full clone of
 pubid-testsuite at the pinned ref, not just the vendored slices.

@@ -199,7 +199,9 @@ impl GostIdentifier {
         let scope_r = kind == NationalStandard
             || base
                 .as_ref()
-                .map(|base| base.get("_type").and_then(Value::as_str) == Some(NationalStandard.type_tag()))
+                .map(|base| {
+                    base.get("_type").and_then(Value::as_str) == Some(NationalStandard.type_tag())
+                })
                 .unwrap_or(false);
         let adopted = match kind {
             Harmonized => hash
@@ -333,9 +335,7 @@ fn split_raw(raw: &str) -> (String, Option<String>) {
     let normalized = normalized.replace("- ", "-");
     match normalized.rsplit_once('-') {
         Some((number, year))
-            if !year.is_empty()
-                && year.len() >= 2
-                && year.chars().all(|c| c.is_ascii_digit()) =>
+            if !year.is_empty() && year.len() >= 2 && year.chars().all(|c| c.is_ascii_digit()) =>
         {
             (number.to_string(), Some(year.to_string()))
         }
@@ -402,9 +402,8 @@ fn parse_adopted(raw: &str) -> Adopted {
     };
     match origin {
         "ASTM" => parse_astm(rest).map_or_else(|| Adopted::Foreign(raw.clone()), Adopted::Hash),
-        "ISO" | "ISO/TR" | "ISO/IEC" | "IEC" | "EN" => {
-            parse_iso_like(origin, rest).map_or_else(|| Adopted::Foreign(raw.clone()), Adopted::Hash)
-        }
+        "ISO" | "ISO/TR" | "ISO/IEC" | "IEC" | "EN" => parse_iso_like(origin, rest)
+            .map_or_else(|| Adopted::Foreign(raw.clone()), Adopted::Hash),
         _ => Adopted::Foreign(raw),
     }
 }
@@ -485,7 +484,10 @@ fn parse_amendment(rest: &str) -> Option<Value> {
 }
 
 /// Split `<number>[-part[-subpart]][:year]` into the hash fields.
-fn number_part_year(rest: &str, type_tag: &str) -> Option<(serde_json::Map<String, Value>, Option<String>)> {
+fn number_part_year(
+    rest: &str,
+    type_tag: &str,
+) -> Option<(serde_json::Map<String, Value>, Option<String>)> {
     let (base, year) = match rest.split_once(':') {
         Some((base, year)) => (base, Some(year.to_string())),
         None => (rest, None),
@@ -540,9 +542,7 @@ fn render_adopted_hash(hash: &Value) -> String {
             optional_hash_str(hash, "number").unwrap_or(""),
             optional_hash_str(hash, "year").unwrap_or(""),
         ),
-        "pubid:iso:technical-report" => {
-            render_origin_hash(hash, "ISO/TR")
-        }
+        "pubid:iso:technical-report" => render_origin_hash(hash, "ISO/TR"),
         "pubid:iso:international-standard" => {
             let mut head = "ISO".to_string();
             if let Some(copublishers) = hash.get("copublishers").and_then(Value::as_array) {
@@ -563,7 +563,11 @@ fn render_adopted_hash(hash: &Value) -> String {
 
 /// The origin body render: `head number[-part][-subpart][:year]`.
 fn render_origin_hash(hash: &Value, head: &str) -> String {
-    let mut out = format!("{} {}", head, optional_hash_str(hash, "number").unwrap_or(""));
+    let mut out = format!(
+        "{} {}",
+        head,
+        optional_hash_str(hash, "number").unwrap_or("")
+    );
     if let Some(part) = optional_hash_str(hash, "part") {
         out.push('-');
         out.push_str(part);

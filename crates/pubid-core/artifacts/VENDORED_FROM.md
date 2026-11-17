@@ -24,6 +24,17 @@ The `*.json` envelopes in this directory are byte-copied from
 | gb     | `7724e6e1454eb7a680780e286a085049e85c1ef021ff5a35af16266c613d9b5f` |
 | gost   | `830f339aa340cb2bf02687bc3d50a07a9f2946012f4f26aa7231080993b4ae50` |
 | adobe  | `5ab76c704865b21e88abaadf90139a71c5a6c342e2532262a309c349f6dbd275` |
+| bsi_pfs    | `0cbe61d83f4be395794e63b69a9baedcac28820ea1aa95125e5d022b6fc913d7` |
+| calconnect_pfs    | `87e7d595d07b8ad2e1e9cee0f7f896b9f6f26d3624d0cf86e72e5fb8887d1965` |
+| ccsds    | `b378059148e23ec1404e7143245f2cc775b8c6e5173c02b5fa367596a039b55a` |
+| cen_cenelec    | `a7c5ab96091d4b091a7981d0d2209c933a72aacdefb3b515ba9b7a2e5056ceb6` |
+| cen_pfs    | `96af4e80467a0410479219f2b91bbfc941579aabdfb410e5a809c2b0e227b8d4` |
+| doi_pfs    | `78d43db258fecf613fedc4694f41348a9044d36e0a986c046116bdbda3ee13b6` |
+| etsi    | `b0b4d7409cfbfd2112504ddd694272627cb554b32341c5c3bbfa151485e6d8fe` |
+| etsi_pfs    | `1c378f123a2078524a08acf001b3c6e80df5522993f1aa3e2ae2d542c2048d23` |
+| evs    | `d3d278c9ec3ece8e864633a2fa39664ba270deea181c83e6a12deb47f79ae887` |
+| jis    | `e06886e29d8b73b9492bc6d6146d8160485604568059c288c6fdfe9339c2a591` |
+| plateau    | `9a98935831f11105e22a7d770b098b08c3d26b76f314452c6ca37d896cec93a7` |
 
 Every envelope is artifact edition 2, shape `parsanol-tree/v2`, baked at
 parsanol compiler 1.5.1.0 (the #129 re-seal round: the doi grammar is
@@ -39,6 +50,17 @@ flavor has no testsuite corpus (no `tests/adobe/` in the testsuite),
 so the crate carries the envelope for the drift gate while the runner
 reports it as vendored-not-ported — no ground truth, no invented
 fixture.
+
+The wave-3 tier adds `plateau`, `evs`, `ccsds`, `cen_cenelec`, `jis`,
+and `etsi` (all ported with testsuite corpora), plus the five `_pfs`
+envelopes `doi_pfs`, `calconnect_pfs`, `cen_pfs`, `etsi_pfs`,
+`bsi_pfs` — vendored-only like `adobe`: the testsuite at the pinned
+ref carries no `tests/<flavor>/` corpus for them (their composition
+rounds live on open grammar/pubid PRs), so the crate carries the
+envelopes for the drift gate with no ported flavor and no invented
+ground truth. The `bsi_pfs` envelope is the pinned-ref byte content
+(`0cbe61d8...`), not grammar main's newer rebake — the pinned refs in
+`/pins.yaml` stay the single source for both sides.
 
 CI fails the build when any file drifts from the pinned grammar ref.
 

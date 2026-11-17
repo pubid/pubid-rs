@@ -101,11 +101,13 @@ impl AmcaIdentifier {
         let bound = artifact.parse_and_bind(Self::ENTRY, input)?;
 
         let capture = |name: &str| -> Option<String> {
-            optional_capture(&bound, name).map(str::to_string).or_else(|| {
-                bound
-                    .get("interpretation")
-                    .and_then(|wrapper| optional_capture(wrapper, name).map(str::to_string))
-            })
+            optional_capture(&bound, name)
+                .map(str::to_string)
+                .or_else(|| {
+                    bound
+                        .get("interpretation")
+                        .and_then(|wrapper| optional_capture(wrapper, name).map(str::to_string))
+                })
         };
 
         let kind = if bound.get("publication_keyword").is_some() || capture("revision").is_some() {
@@ -151,8 +153,7 @@ impl AmcaIdentifier {
             suffix: optional_hash_str(hash, "suffix").map(str::to_string),
             reaffirmed: optional_hash_str(hash, "reaffirmed").map(str::to_string),
             revision: optional_hash_str(hash, "revision").map(str::to_string),
-            interpretation_code: optional_hash_str(hash, "interpretation_code")
-                .map(str::to_string),
+            interpretation_code: optional_hash_str(hash, "interpretation_code").map(str::to_string),
         })
     }
 
@@ -198,13 +199,16 @@ impl AmcaIdentifier {
                 result
             }
             kind => {
-                let mut result =
-                    [self.copublisher.as_str(), kind.title().unwrap_or(""), &self.number]
-                        .iter()
-                        .filter(|part| !part.is_empty())
-                        .map(|part| part.to_string())
-                        .collect::<Vec<_>>()
-                        .join(" ");
+                let mut result = [
+                    self.copublisher.as_str(),
+                    kind.title().unwrap_or(""),
+                    &self.number,
+                ]
+                .iter()
+                .filter(|part| !part.is_empty())
+                .map(|part| part.to_string())
+                .collect::<Vec<_>>()
+                .join(" ");
                 if let Some(year) = &self.year {
                     result.push_str(&format!("-{year}"));
                 }
@@ -264,7 +268,10 @@ mod tests {
         assert_eq!(id.year.as_deref(), Some("02"));
         assert_eq!(id.reaffirmed.as_deref(), Some("2008"));
         assert_eq!(id.to_human(), "AMCA Standard 803-02 (R2008)");
-        assert_eq!(id.to_urn(), "urn:amca:803:02:reaff.2008:copub.amca:standard");
+        assert_eq!(
+            id.to_urn(),
+            "urn:amca:803:02:reaff.2008:copub.amca:standard"
+        );
     }
 
     #[test]
@@ -273,7 +280,10 @@ mod tests {
         assert_eq!(id.kind, super::AmcaKind::Publication);
         assert_eq!(id.revision.as_deref(), Some("01-23"));
         assert_eq!(id.to_human(), "AMCA Publication 211-22 (Rev. 01-23)");
-        assert_eq!(id.to_urn(), "urn:amca:211:22:rev.01-23:copub.amca:publication");
+        assert_eq!(
+            id.to_urn(),
+            "urn:amca:211:22:rev.01-23:copub.amca:publication"
+        );
     }
 
     #[test]

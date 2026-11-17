@@ -151,24 +151,114 @@ pub struct CenStage {
 
 /// The stage table (the reference's TYPED_STAGES).
 pub const TYPED_STAGES: &[CenStage] = &[
-    CenStage { code: "pwien", abbr: "pWI EN", stage_code: "preliminary", type_code: "en" },
-    CenStage { code: "pren", abbr: "prEN", stage_code: "proposal", type_code: "en" },
-    CenStage { code: "fpren", abbr: "FprEN", stage_code: "final_proposal", type_code: "en" },
-    CenStage { code: "fven", abbr: "FV prEN", stage_code: "formal_vote", type_code: "en" },
-    CenStage { code: "ven", abbr: "vEN", stage_code: "vote", type_code: "en" },
-    CenStage { code: "puben", abbr: "EN", stage_code: "published", type_code: "en" },
-    CenStage { code: "rven", abbr: "rvEN", stage_code: "review", type_code: "en" },
-    CenStage { code: "racen", abbr: "racEN", stage_code: "reactivation", type_code: "en" },
-    CenStage { code: "wden", abbr: "wdEN", stage_code: "withdrawn", type_code: "en" },
-    CenStage { code: "pubts", abbr: "TS", stage_code: "published", type_code: "ts" },
-    CenStage { code: "prts", abbr: "prTS", stage_code: "proposal", type_code: "ts" },
-    CenStage { code: "pubtr", abbr: "TR", stage_code: "published", type_code: "tr" },
-    CenStage { code: "pubcwa", abbr: "CWA", stage_code: "published", type_code: "cwa" },
-    CenStage { code: "pubguide", abbr: "Guide", stage_code: "published", type_code: "guide" },
-    CenStage { code: "pubhd", abbr: "HD", stage_code: "published", type_code: "hd" },
-    CenStage { code: "pubes", abbr: "ES", stage_code: "published", type_code: "es" },
-    CenStage { code: "pubcr", abbr: "CR", stage_code: "published", type_code: "cr" },
-    CenStage { code: "pubenv", abbr: "ENV", stage_code: "published", type_code: "env" },
+    CenStage {
+        code: "pwien",
+        abbr: "pWI EN",
+        stage_code: "preliminary",
+        type_code: "en",
+    },
+    CenStage {
+        code: "pren",
+        abbr: "prEN",
+        stage_code: "proposal",
+        type_code: "en",
+    },
+    CenStage {
+        code: "fpren",
+        abbr: "FprEN",
+        stage_code: "final_proposal",
+        type_code: "en",
+    },
+    CenStage {
+        code: "fven",
+        abbr: "FV prEN",
+        stage_code: "formal_vote",
+        type_code: "en",
+    },
+    CenStage {
+        code: "ven",
+        abbr: "vEN",
+        stage_code: "vote",
+        type_code: "en",
+    },
+    CenStage {
+        code: "puben",
+        abbr: "EN",
+        stage_code: "published",
+        type_code: "en",
+    },
+    CenStage {
+        code: "rven",
+        abbr: "rvEN",
+        stage_code: "review",
+        type_code: "en",
+    },
+    CenStage {
+        code: "racen",
+        abbr: "racEN",
+        stage_code: "reactivation",
+        type_code: "en",
+    },
+    CenStage {
+        code: "wden",
+        abbr: "wdEN",
+        stage_code: "withdrawn",
+        type_code: "en",
+    },
+    CenStage {
+        code: "pubts",
+        abbr: "TS",
+        stage_code: "published",
+        type_code: "ts",
+    },
+    CenStage {
+        code: "prts",
+        abbr: "prTS",
+        stage_code: "proposal",
+        type_code: "ts",
+    },
+    CenStage {
+        code: "pubtr",
+        abbr: "TR",
+        stage_code: "published",
+        type_code: "tr",
+    },
+    CenStage {
+        code: "pubcwa",
+        abbr: "CWA",
+        stage_code: "published",
+        type_code: "cwa",
+    },
+    CenStage {
+        code: "pubguide",
+        abbr: "Guide",
+        stage_code: "published",
+        type_code: "guide",
+    },
+    CenStage {
+        code: "pubhd",
+        abbr: "HD",
+        stage_code: "published",
+        type_code: "hd",
+    },
+    CenStage {
+        code: "pubes",
+        abbr: "ES",
+        stage_code: "published",
+        type_code: "es",
+    },
+    CenStage {
+        code: "pubcr",
+        abbr: "CR",
+        stage_code: "published",
+        type_code: "cr",
+    },
+    CenStage {
+        code: "pubenv",
+        abbr: "ENV",
+        stage_code: "published",
+        type_code: "env",
+    },
 ];
 
 /// Locate a stage by its printed abbreviation (case-insensitive).
@@ -298,8 +388,7 @@ impl CenIdentifier {
         if optional_at(bound, "fragment_number").is_some() {
             return build_fragment(bound);
         }
-        if optional_at(bound, "type") == Some("TR")
-            && optional_at(bound, "publisher") == Some("EN")
+        if optional_at(bound, "type") == Some("TR") && optional_at(bound, "publisher") == Some("EN")
         {
             return Err(Error::InvalidHash {
                 detail: "\"EN\" cannot be \"TR\": a technical report is \"CEN/TR\" or \"CLC/TR\""
@@ -324,10 +413,11 @@ impl CenIdentifier {
             Some(base) => Some(Box::new(CenIdentifier::from_hash(&base)?)),
             None => None,
         };
-        let adopted = match hash.get("adopted").cloned().filter(|a| !a.is_null()) {
-            Some(adopted) => Some(CenAdopted::from_hash(&adopted)),
-            None => None,
-        };
+        let adopted = hash
+            .get("adopted")
+            .cloned()
+            .filter(|a| !a.is_null())
+            .map(|adopted| CenAdopted::from_hash(&adopted));
         let mut identifiers = Vec::new();
         if let Some(items) = hash.get("identifiers").and_then(Value::as_array) {
             for item in items {
@@ -341,8 +431,7 @@ impl CenIdentifier {
             year: read("year"),
             month: read("month"),
             version: read("version"),
-            stage: read("stage")
-                .and_then(|code| locate_stage_by_code(&code)),
+            stage: read("stage").and_then(|code| locate_stage_by_code(&code)),
             publisher: read("publisher"),
             copublishers: hash
                 .get("copublishers")
@@ -410,7 +499,12 @@ impl CenIdentifier {
         if !self.identifiers.is_empty() {
             object.insert(
                 "identifiers".into(),
-                Value::Array(self.identifiers.iter().map(CenIdentifier::to_hash).collect()),
+                Value::Array(
+                    self.identifiers
+                        .iter()
+                        .map(CenIdentifier::to_hash)
+                        .collect(),
+                ),
             );
         }
         Value::Object(object)
@@ -420,22 +514,24 @@ impl CenIdentifier {
     pub fn to_human(&self) -> String {
         match self.kind {
             Fragment => {
-                let base = self.base.as_deref().map(CenIdentifier::to_human).unwrap_or_default();
-                format!(
-                    "{base} FRAG{}",
-                    optional_str(&self.number)
-                )
+                let base = self
+                    .base
+                    .as_deref()
+                    .map(CenIdentifier::to_human)
+                    .unwrap_or_default();
+                format!("{base} FRAG{}", optional_str(&self.number))
             }
             Amendment | Corrigendum => {
-                let base = self.base.as_deref().map(CenIdentifier::to_human).unwrap_or_default();
+                let base = self
+                    .base
+                    .as_deref()
+                    .map(CenIdentifier::to_human)
+                    .unwrap_or_default();
                 format!("{base}/{}", supplement_token(self))
             }
             ConsolidatedIdentifier => {
                 let mut iter = self.identifiers.iter();
-                let mut result = iter
-                    .next()
-                    .map(CenIdentifier::to_human)
-                    .unwrap_or_default();
+                let mut result = iter.next().map(CenIdentifier::to_human).unwrap_or_default();
                 for supplement in iter {
                     result.push('+');
                     result.push_str(&supplement_token(supplement));
@@ -653,10 +749,19 @@ fn apply_supplements(base: CenIdentifier, bound: &Value) -> Result<CenIdentifier
     if let Some(first) = data.first() {
         if entries
             .first()
-            .and_then(|entry| entry.get("supplement").unwrap_or(entry).get("amd_sep_slash"))
+            .and_then(|entry| {
+                entry
+                    .get("supplement")
+                    .unwrap_or(entry)
+                    .get("amd_sep_slash")
+            })
             .is_some()
         {
-            let kind = if first.amendment { Amendment } else { Corrigendum };
+            let kind = if first.amendment {
+                Amendment
+            } else {
+                Corrigendum
+            };
             return Ok(CenIdentifier {
                 kind,
                 number: first.number.clone(),
@@ -669,7 +774,11 @@ fn apply_supplements(base: CenIdentifier, bound: &Value) -> Result<CenIdentifier
     }
     let mut identifiers = vec![base];
     for supplement in data {
-        let kind = if supplement.amendment { Amendment } else { Corrigendum };
+        let kind = if supplement.amendment {
+            Amendment
+        } else {
+            Corrigendum
+        };
         identifiers.push(CenIdentifier {
             kind,
             number: supplement.number,
@@ -1088,8 +1197,7 @@ fn adopted_urn(identifier: &CenIdentifier) -> String {
     } else {
         format!("{publisher}.{mr}")
     }
-    .replace('.', ":")
-    .replace('_', ":");
+    .replace(['.', '_'], ":");
     let mut segments = vec![format!("urn:cen:{body}")];
     if let Some(stage) = identifier.stage {
         if stage.stage_code != "published" {
@@ -1201,7 +1309,9 @@ fn adopted_mr(hash: &Value) -> String {
             "iso{}",
             copublishers
                 .iter()
-                .fold(String::new(), |head, copublisher| format!("{head}-{copublisher}"))
+                .fold(String::new(), |head, copublisher| format!(
+                    "{head}-{copublisher}"
+                ))
         ));
     } else if type_tag.starts_with("pubid:iec") {
         segments.push("iec".to_string());
@@ -1227,7 +1337,10 @@ fn adopted_mr(hash: &Value) -> String {
         segments.push(year.to_string());
     }
 
-    if let Some(base) = hash.get("base").filter(|base| base.is_object() && !base.is_null()) {
+    if let Some(base) = hash
+        .get("base")
+        .filter(|base| base.is_object() && !base.is_null())
+    {
         let base_mr = adopted_mr(base);
         let suffix_tag = if type_suffix.ends_with("amendment") {
             "amd"
@@ -1260,11 +1373,14 @@ mod tests {
     #[test]
     fn the_european_norm_parses_number_part_year() {
         let id = CenIdentifier::parse("EN 13250:2014").expect("parse");
-        assert_eq!(id.to_hash(), json!({
-            "_type": "pubid:cencenelec:european-norm",
-            "number": "13250",
-            "year": "2014",
-        }));
+        assert_eq!(
+            id.to_hash(),
+            json!({
+                "_type": "pubid:cencenelec:european-norm",
+                "number": "13250",
+                "year": "2014",
+            })
+        );
         assert_eq!(id.to_human(), "EN 13250:2014");
         assert_eq!(id.to_urn(), "urn:cen:en:13250:2014");
     }
@@ -1295,9 +1411,17 @@ mod tests {
     fn the_publisher_classes_render_their_words() {
         for (input, human, urn) in [
             ("CR 10313:2000", "CR 10313:2000", "urn:cen:cr:10313:2000"),
-            ("CWA 14050-21:2000", "CWA 14050-21:2000", "urn:cen:cwa:14050-21:2000"),
+            (
+                "CWA 14050-21:2000",
+                "CWA 14050-21:2000",
+                "urn:cen:cwa:14050-21:2000",
+            ),
             ("ENV 1613:1995", "ENV 1613:1995", "urn:cen:env:1613:1995"),
-            ("ES 59008-1:2000", "ES 59008-1:2000", "urn:cen:es:59008-1:2000"),
+            (
+                "ES 59008-1:2000",
+                "ES 59008-1:2000",
+                "urn:cen:es:59008-1:2000",
+            ),
             ("HD 1215-2:1988", "HD 1215-2:1988", "urn:cen:hd:1215-2:1988"),
         ] {
             let id = CenIdentifier::parse(input).expect(input);
@@ -1373,7 +1497,10 @@ mod tests {
 
         let consolidated = CenIdentifier::parse("EN 13250:2014+A1:2015").expect("parse");
         assert_eq!(consolidated.to_human(), "EN 13250:2014+A1:2015");
-        assert_eq!(consolidated.to_urn(), "urn:cen:en:13250:2014:plus:amd:1:2015");
+        assert_eq!(
+            consolidated.to_urn(),
+            "urn:cen:en:13250:2014:plus:amd:1:2015"
+        );
         assert_eq!(
             consolidated.to_hash()["identifiers"][1],
             json!({"_type": "pubid:cencenelec:amendment", "number": "1", "year": "2015"})
@@ -1389,8 +1516,8 @@ mod tests {
 
     #[test]
     fn the_comment_and_parenthetical_tails_normalize() {
-        let id = CenIdentifier::parse("EN ISO 13485:2016/AC:2016# (first corrigendum)")
-            .expect("parse");
+        let id =
+            CenIdentifier::parse("EN ISO 13485:2016/AC:2016# (first corrigendum)").expect("parse");
         assert_eq!(id.to_human(), "EN ISO 13485:2016/AC:2016");
 
         let guide = CenIdentifier::parse("CEN-CLC Guide 32:2016").expect("parse");

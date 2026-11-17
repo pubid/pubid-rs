@@ -87,10 +87,7 @@ impl EcmaIdentifier {
         } else if optional_bound_str(&bound, "tr_number").is_some() {
             (TechnicalReport, bound_str(&bound, "tr_number")?.to_string())
         } else {
-            (
-                Standard,
-                bound_str(&bound, "number")?.to_string(),
-            )
+            (Standard, bound_str(&bound, "number")?.to_string())
         };
 
         Ok(Self {
@@ -191,9 +188,7 @@ impl EcmaIdentifier {
 fn normalize_edition(input: &str) -> Option<String> {
     let trimmed = input.trim_end();
     // The edition tail: the trailing run of digits and dots.
-    let tail_start = trimmed
-        .rfind(|c: char| !(c.is_ascii_digit() || c == '.'))?
-        + 1;
+    let tail_start = trimmed.rfind(|c: char| !(c.is_ascii_digit() || c == '.'))? + 1;
     let (head, tail) = trimmed.split_at(tail_start);
     if tail.is_empty() || !tail.contains(|c: char| c.is_ascii_digit()) {
         return None;
