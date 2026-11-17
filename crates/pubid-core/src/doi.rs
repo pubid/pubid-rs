@@ -9,7 +9,8 @@
 use serde_json::Value;
 
 use crate::artifact::doi_artifact;
-use crate::error::{Error, Result};
+use crate::bound::{bound_str, check_type, hash_str};
+use crate::error::Result;
 
 /// The doi identifier.
 #[derive(Debug, Clone, PartialEq, Eq)]
@@ -36,41 +37,18 @@ impl DoiIdentifier {
     pub fn parse(input: &str) -> Result<Self> {
         let artifact = doi_artifact()?;
         let bound = artifact.parse_and_bind(Self::ENTRY, input)?;
-        let digits = bound
-            .get("prefix")
-            .and_then(Value::as_str)
-            .ok_or(Error::MissingAttribute { capture: "prefix" })?;
-        let suffix = bound
-            .get("suffix")
-            .and_then(Value::as_str)
-            .ok_or(Error::MissingAttribute { capture: "suffix" })?;
         Ok(Self {
-            prefix: format!("10.{digits}"),
-            suffix: suffix.to_string(),
+            prefix: format!("10.{}", bound_str(&bound, "prefix")?),
+            suffix: bound_str(&bound, "suffix")?.to_string(),
         })
     }
 
     /// Build from a canonical hash (`_type`-tagged attribute record).
     pub fn from_hash(hash: &Value) -> Result<Self> {
-        let kind = hash
-            .get("_type")
-            .and_then(Value::as_str)
-            .ok_or_else(|| Error::InvalidHash {
-                detail: "missing _type".to_string(),
-            })?;
-        if kind != Self::TYPE {
-            return Err(Error::InvalidHash {
-                detail: "_type is not pubid:doi:resource".to_string(),
-            });
-        }
-        let capture = |name: &'static str| -> Result<&str> {
-            hash.get(name)
-                .and_then(Value::as_str)
-                .ok_or(Error::MissingAttribute { capture: name })
-        };
+        check_type(hash, Self::TYPE)?;
         Ok(Self {
-            prefix: capture("prefix")?.to_string(),
-            suffix: capture("suffix")?.to_string(),
+            prefix: hash_str(hash, "prefix")?.to_string(),
+            suffix: hash_str(hash, "suffix")?.to_string(),
         })
     }
 
