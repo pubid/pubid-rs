@@ -68,6 +68,17 @@ vendored_artifacts!(
     "gb" => GB_ARTIFACT, gb_artifact,
     "gost" => GOST_ARTIFACT, gost_artifact,
     "adobe" => ADOBE_ARTIFACT, adobe_artifact,
+    "plateau" => PLATEAU_ARTIFACT, plateau_artifact,
+    "evs" => EVS_ARTIFACT, evs_artifact,
+    "ccsds" => CCSDS_ARTIFACT, ccsds_artifact,
+    "cen_cenelec" => CEN_CENELEC_ARTIFACT, cen_cenelec_artifact,
+    "jis" => JIS_ARTIFACT, jis_artifact,
+    "etsi" => ETSI_ARTIFACT, etsi_artifact,
+    "doi_pfs" => DOI_PFS_ARTIFACT, doi_pfs_artifact,
+    "calconnect_pfs" => CALCONNECT_PFS_ARTIFACT, calconnect_pfs_artifact,
+    "cen_pfs" => CEN_PFS_ARTIFACT, cen_pfs_artifact,
+    "etsi_pfs" => ETSI_PFS_ARTIFACT, etsi_pfs_artifact,
+    "bsi_pfs" => BSI_PFS_ARTIFACT, bsi_pfs_artifact,
 );
 
 /// A flavor's artifact by name; `None` when the crate carries no
@@ -92,6 +103,17 @@ pub fn flavor_artifact(flavor: &str) -> Option<Result<&'static PargArtifact>> {
         "gb" => Some(gb_artifact()),
         "gost" => Some(gost_artifact()),
         "adobe" => Some(adobe_artifact()),
+        "plateau" => Some(plateau_artifact()),
+        "evs" => Some(evs_artifact()),
+        "ccsds" => Some(ccsds_artifact()),
+        "cen_cenelec" => Some(cen_cenelec_artifact()),
+        "jis" => Some(jis_artifact()),
+        "etsi" => Some(etsi_artifact()),
+        "doi_pfs" => Some(doi_pfs_artifact()),
+        "calconnect_pfs" => Some(calconnect_pfs_artifact()),
+        "cen_pfs" => Some(cen_pfs_artifact()),
+        "etsi_pfs" => Some(etsi_pfs_artifact()),
+        "bsi_pfs" => Some(bsi_pfs_artifact()),
         _ => None,
     }
 }

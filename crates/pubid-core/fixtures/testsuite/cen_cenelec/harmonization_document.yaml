@@ -1,0 +1,29 @@
+---
+- id: cen_cenelec.harmonization_document.0175
+  identifier:
+    _type: pubid:cencenelec:harmonization-document
+    number: '1215'
+    part: '2'
+    year: '1988'
+  representations:
+    human: HD 1215-2:1988
+    urn: urn:cen:hd:1215-2:1988
+  style: v3
+- id: cen_cenelec.harmonization_document.0179
+  identifier:
+    _type: pubid:cencenelec:harmonization-document
+    number: '60269'
+    part: '3'
+  representations:
+    human: HD 60269-3
+    urn: urn:cen:hd:60269-3
+  style: v3
+- id: cen_cenelec.harmonization_document.0181
+  identifier:
+    _type: pubid:cencenelec:harmonization-document
+    number: '60364'
+    part: 7-725
+  representations:
+    human: HD 60364-7-725
+    urn: urn:cen:hd:60364-7-725
+  style: v3

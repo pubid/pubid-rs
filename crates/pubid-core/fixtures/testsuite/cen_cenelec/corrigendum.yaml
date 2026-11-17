@@ -1,0 +1,194 @@
+---
+- id: cen_cenelec.corrigendum.0080
+  identifier:
+    _type: pubid:cencenelec:corrigendum
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '13254'
+      year: '2000'
+    year: '2003'
+  representations:
+    human: EN 13254:2000/AC:2003
+    urn: urn:cen:en:13254:2000:cor:2003
+  style: v3
+- id: cen_cenelec.corrigendum.0086
+  identifier:
+    _type: pubid:cencenelec:corrigendum
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '13255'
+      year: '2000'
+    year: '2003'
+  representations:
+    human: EN 13255:2000/AC:2003
+    urn: urn:cen:en:13255:2000:cor:2003
+  style: v3
+- id: cen_cenelec.corrigendum.0092
+  identifier:
+    _type: pubid:cencenelec:corrigendum
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '13256'
+      year: '2000'
+    year: '2003'
+  representations:
+    human: EN 13256:2000/AC:2003
+    urn: urn:cen:en:13256:2000:cor:2003
+  style: v3
+- id: cen_cenelec.corrigendum.0098
+  identifier:
+    _type: pubid:cencenelec:corrigendum
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '13257'
+      year: '2000'
+    year: '2003'
+  representations:
+    human: EN 13257:2000/AC:2003
+    urn: urn:cen:en:13257:2000:cor:2003
+  style: v3
+- id: cen_cenelec.corrigendum.0112
+  identifier:
+    _type: pubid:cencenelec:corrigendum
+    number: '2'
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '14891'
+      year: '2007'
+    year: '2009'
+  representations:
+    human: EN 14891:2007/AC2:2009
+    urn: urn:cen:en:14891:2007:cor:2:2009
+  style: v3
+- id: cen_cenelec.corrigendum.0113
+  identifier:
+    _type: pubid:cencenelec:corrigendum
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '14891'
+      year: '2012'
+    year: '2012'
+  representations:
+    human: EN 14891:2012/AC:2012
+    urn: urn:cen:en:14891:2012:cor:2012
+  style: v3
+- id: cen_cenelec.corrigendum.0117
+  identifier:
+    _type: pubid:cencenelec:corrigendum
+    number: '2'
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '196'
+      part: '1'
+      year: '1987'
+    year: '1989'
+  representations:
+    human: EN 196-1:1987/AC2:1989
+    urn: urn:cen:en:196-1:1987:cor:2:1989
+  style: v3
+- id: cen_cenelec.corrigendum.0137
+  identifier:
+    _type: pubid:cencenelec:corrigendum
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '60335'
+      part: '1'
+      year: '2012'
+    year: '2014'
+  representations:
+    human: EN 60335-1:2012/AC:2014
+    urn: urn:cen:en:60335-1:2012:cor:2014
+  style: v3
+- id: cen_cenelec.corrigendum.0141
+  identifier:
+    _type: pubid:cencenelec:corrigendum
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '61375'
+      part: 2-3
+      year: '2015'
+    year: '2016'
+    month: '11'
+  representations:
+    human: EN 61375-2-3:2015/AC:2016-11
+    urn: urn:cen:en:61375-2-3:2015:cor:2016-11
+  style: v3
+- id: cen_cenelec.corrigendum.0142
+  identifier:
+    _type: pubid:cencenelec:corrigendum
+    number: '2'
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '61375'
+      part: 2-3
+      year: '2016'
+    year: '2017'
+  representations:
+    human: EN 61375-2-3:2016/AC2:2017
+    urn: urn:cen:en:61375-2-3:2016:cor:2:2017
+  style: v3
+- id: cen_cenelec.corrigendum.0154
+  identifier:
+    _type: pubid:cencenelec:corrigendum
+    base:
+      _type: pubid:cencenelec:adopted-european-norm
+      adopted:
+        _type: pubid:iso:international-standard
+        number: '13485'
+        year: '2016'
+    year: '2016'
+  representations:
+    human: EN ISO 13485:2016/AC:2016
+    urn: urn:cen:en:iso:13485:2016:cor:2016
+  style: v3
+  non_normalized_aliases:
+  - spelling: EN ISO 13485:2016/AC:2016# (first corrigendum)
+    style: v3
+- id: cen_cenelec.corrigendum.0155
+  identifier:
+    _type: pubid:cencenelec:corrigendum
+    base:
+      _type: pubid:cencenelec:adopted-european-norm
+      adopted:
+        _type: pubid:iso:international-standard
+        number: '13485'
+        year: '2016'
+    year: '2017'
+  representations:
+    human: EN ISO 13485:2016/AC:2017
+    urn: urn:cen:en:iso:13485:2016:cor:2017
+  style: v3
+  non_normalized_aliases:
+  - spelling: EN ISO 13485:2016/AC:2017# (second corrigendum)
+    style: v3
+- id: cen_cenelec.corrigendum.0156
+  identifier:
+    _type: pubid:cencenelec:corrigendum
+    base:
+      _type: pubid:cencenelec:adopted-european-norm
+      adopted:
+        _type: pubid:iso:international-standard
+        number: '13485'
+        year: '2016'
+    year: '2018'
+  representations:
+    human: EN ISO 13485:2016/AC:2018
+    urn: urn:cen:en:iso:13485:2016:cor:2018
+  style: v3
+  non_normalized_aliases:
+  - spelling: EN ISO 13485:2016/AC:2018# (third corrigendum)
+    style: v3
+- id: cen_cenelec.corrigendum.0176
+  identifier:
+    _type: pubid:cencenelec:corrigendum
+    number: '1'
+    base:
+      _type: pubid:cencenelec:harmonization-document
+      number: '1215'
+      part: '2'
+      year: '1988'
+    year: '1989'
+  representations:
+    human: HD 1215-2:1988/AC1:1989
+    urn: urn:cen:hd:1215-2:1988:cor:1:1989
+  style: v3

@@ -1,0 +1,204 @@
+---
+- id: cen_cenelec.cen_report.0027
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '10313'
+    year: '2000'
+  representations:
+    human: CR 10313:2000
+    urn: urn:cen:cr:10313:2000
+  style: v3
+- id: cen_cenelec.cen_report.0028
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '12101'
+    part: '5'
+    year: '2000'
+  representations:
+    human: CR 12101-5:2000
+    urn: urn:cen:cr:12101-5:2000
+  style: v3
+- id: cen_cenelec.cen_report.0029
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '12660'
+    year: '1999'
+  representations:
+    human: CR 12660:1999
+    urn: urn:cen:cr:12660:1999
+  style: v3
+- id: cen_cenelec.cen_report.0030
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '12953'
+    part: '14'
+    year: '2002'
+  representations:
+    human: CR 12953-14:2002
+    urn: urn:cen:cr:12953-14:2002
+  style: v3
+- id: cen_cenelec.cen_report.0031
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '13425'
+    year: '1999'
+  representations:
+    human: CR 13425:1999
+    urn: urn:cen:cr:13425:1999
+  style: v3
+- id: cen_cenelec.cen_report.0032
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '13426'
+    year: '1999'
+  representations:
+    human: CR 13426:1999
+    urn: urn:cen:cr:13426:1999
+  style: v3
+- id: cen_cenelec.cen_report.0033
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '13436'
+    year: '1999'
+  representations:
+    human: CR 13436:1999
+    urn: urn:cen:cr:13436:1999
+  style: v3
+- id: cen_cenelec.cen_report.0034
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '13445'
+    part: '7'
+    year: '2002'
+  representations:
+    human: CR 13445-7:2002
+    urn: urn:cen:cr:13445-7:2002
+  style: v3
+- id: cen_cenelec.cen_report.0035
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '13455'
+    year: '1999'
+  representations:
+    human: CR 13455:1999
+    urn: urn:cen:cr:13455:1999
+  style: v3
+- id: cen_cenelec.cen_report.0036
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '13456'
+    year: '1999'
+  representations:
+    human: CR 13456:1999
+    urn: urn:cen:cr:13456:1999
+  style: v3
+- id: cen_cenelec.cen_report.0037
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '13576'
+    year: '1999'
+  representations:
+    human: CR 13576:1999
+    urn: urn:cen:cr:13576:1999
+  style: v3
+- id: cen_cenelec.cen_report.0038
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '13686'
+    year: '2001'
+  representations:
+    human: CR 13686:2001
+    urn: urn:cen:cr:13686:2001
+  style: v3
+- id: cen_cenelec.cen_report.0039
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '13694'
+    year: '1999'
+  representations:
+    human: CR 13694:1999
+    urn: urn:cen:cr:13694:1999
+  style: v3
+- id: cen_cenelec.cen_report.0040
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '13695'
+    part: '1'
+    year: '2000'
+  representations:
+    human: CR 13695-1:2000
+    urn: urn:cen:cr:13695-1:2000
+  style: v3
+- id: cen_cenelec.cen_report.0041
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '13933'
+    year: '2000'
+  representations:
+    human: CR 13933:2000
+    urn: urn:cen:cr:13933:2000
+  style: v3
+- id: cen_cenelec.cen_report.0042
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '14269'
+    year: '2001'
+  representations:
+    human: CR 14269:2001
+    urn: urn:cen:cr:14269:2001
+  style: v3
+- id: cen_cenelec.cen_report.0043
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '14311'
+    year: '2002'
+  representations:
+    human: CR 14311:2002
+    urn: urn:cen:cr:14311:2002
+  style: v3
+- id: cen_cenelec.cen_report.0044
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '14376'
+    year: '2002'
+  representations:
+    human: CR 14376:2002
+    urn: urn:cen:cr:14376:2002
+  style: v3
+- id: cen_cenelec.cen_report.0045
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '14378'
+    year: '2002'
+  representations:
+    human: CR 14378:2002
+    urn: urn:cen:cr:14378:2002
+  style: v3
+- id: cen_cenelec.cen_report.0046
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '1750'
+    year: '1999'
+  representations:
+    human: CR 1750:1999
+    urn: urn:cen:cr:1750:1999
+  style: v3
+- id: cen_cenelec.cen_report.0047
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '1752'
+    year: '1999'
+  representations:
+    human: CR 1752:1999
+    urn: urn:cen:cr:1752:1999
+  style: v3
+- id: cen_cenelec.cen_report.0048
+  identifier:
+    _type: pubid:cencenelec:cen-report
+    number: '954'
+    part: '100'
+    year: '1999'
+  representations:
+    human: CR 954-100:1999
+    urn: urn:cen:cr:954-100:1999
+  style: v3

@@ -1,0 +1,18 @@
+---
+- id: cen_cenelec.fragment.0131
+  identifier:
+    _type: pubid:cencenelec:fragment
+    number: '2'
+    base:
+      _type: pubid:cencenelec:amendment
+      number: '1'
+      base:
+        _type: pubid:cencenelec:european-norm
+        number: '60038'
+  representations:
+    human: EN 60038/A1 FRAG2
+    urn: urn:cen:en:60038:amd:1:frag:2
+  style: v3
+  non_normalized_aliases:
+  - spelling: EN 60038 AMD1 FRAG2
+    style: v3

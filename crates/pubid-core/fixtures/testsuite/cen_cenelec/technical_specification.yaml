@@ -1,0 +1,42 @@
+---
+- id: cen_cenelec.technical_specification.0016
+  identifier:
+    _type: pubid:cencenelec:technical-specification
+    number: '17880'
+    year: '2022'
+    publisher: CEN
+    copublishers:
+    - CLC
+  representations:
+    human: CEN/CLC/TS 17880:2022
+    urn: urn:cen:cen-clc:17880:2022
+  style: v3
+- id: cen_cenelec.technical_specification.0021
+  identifier:
+    _type: pubid:cencenelec:technical-specification
+    number: '14972'
+    publisher: CEN
+  representations:
+    human: CEN/TS 14972
+    urn: urn:cen:cen:14972
+  style: v3
+- id: cen_cenelec.technical_specification.0022
+  identifier:
+    _type: pubid:cencenelec:technical-specification
+    number: '17638'
+    year: '2021'
+    publisher: CEN
+  representations:
+    human: CEN/TS 17638:2021
+    urn: urn:cen:cen:17638:2021
+  style: v3
+- id: cen_cenelec.technical_specification.0026
+  identifier:
+    _type: pubid:cencenelec:technical-specification
+    number: '50701'
+    year: '2021'
+    publisher: CLC
+  representations:
+    human: CLC/TS 50701:2021
+    urn: urn:cen:clc:50701:2021
+  style: v3

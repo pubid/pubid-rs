@@ -1,0 +1,71 @@
+---
+- id: cen_cenelec.neg.unknown.0001
+  input: CECC 16000:1979
+  expect:
+    error:
+      code: unclassified
+- id: cen_cenelec.neg.unknown.0002
+  input: CECC 16100:1980
+  expect:
+    error:
+      code: unclassified
+- id: cen_cenelec.neg.unknown.0003
+  input: HD 384.7.711 S1:2003
+  expect:
+    error:
+      code: unclassified
+- id: cen_cenelec.neg.unknown.0004
+  input: HD 629.3 S1:2024
+  expect:
+    error:
+      code: unclassified
+- id: cen_cenelec.neg.unknown.0005
+  input: HD 629.2 S3:2024
+  expect:
+    error:
+      code: unclassified
+- id: cen_cenelec.neg.unknown.0006
+  input: HD 60364-8-82 (AS BS 7671)
+  expect:
+    error:
+      code: unclassified
+- id: cen_cenelec.neg.unknown.0007
+  input: HD 629.1 S3:2019
+  expect:
+    error:
+      code: unclassified
+- id: cen_cenelec.neg.unknown.0008
+  input: HD 60364-8-1:2019 - TC
+  expect:
+    error:
+      code: unclassified
+- id: cen_cenelec.neg.unknown.0009
+  input: HD 60364-8-2:2011+A11:2019 - TC
+  expect:
+    error:
+      code: unclassified
+- id: cen_cenelec.neg.unknown.0010
+  input: HD 60269-2 AMD2
+  expect:
+    error:
+      code: unclassified
+- id: cen_cenelec.neg.unknown.0011
+  input: HD 60269-3 AMD2
+  expect:
+    error:
+      code: unclassified
+- id: cen_cenelec.neg.unknown.0012
+  input: prEN 13306 rev
+  expect:
+    error:
+      code: unclassified
+- id: cen_cenelec.neg.unknown.0013
+  input: EN 285:2015/FprA1
+  expect:
+    error:
+      code: unclassified
+- id: cen_cenelec.neg.unknown.0014
+  input: prEN 285 rev
+  expect:
+    error:
+      code: unclassified

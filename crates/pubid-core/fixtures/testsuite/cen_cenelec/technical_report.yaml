@@ -1,0 +1,78 @@
+---
+- id: cen_cenelec.technical_report.0014
+  identifier:
+    _type: pubid:cencenelec:technical-report
+    number: '101551'
+    year: '2026'
+    publisher: CEN
+    copublishers:
+    - CLC
+    - ETSI
+  representations:
+    human: CEN/CLC/ETSI/TR 101551:2026
+    urn: urn:cen:cen-clc-etsi:101551:2026
+  style: v3
+- id: cen_cenelec.technical_report.0015
+  identifier:
+    _type: pubid:cencenelec:technical-report
+    number: '17602'
+    part: 80-12
+    year: '2021'
+    publisher: CEN
+    copublishers:
+    - CLC
+  representations:
+    human: CEN/CLC/TR 17602-80-12:2021
+    urn: urn:cen:cen-clc:17602-80-12:2021
+  style: v3
+- id: cen_cenelec.technical_report.0017
+  identifier:
+    _type: pubid:cencenelec:technical-report
+    number: '12101'
+    part: '5'
+    year: '2005'
+    publisher: CEN
+  representations:
+    human: CEN/TR 12101-5:2005
+    urn: urn:cen:cen:12101-5:2005
+  style: v3
+- id: cen_cenelec.technical_report.0018
+  identifier:
+    _type: pubid:cencenelec:technical-report
+    number: '16411'
+    year: '2022'
+    publisher: CEN
+  representations:
+    human: CEN/TR 16411:2022
+    urn: urn:cen:cen:16411:2022
+  style: v3
+- id: cen_cenelec.technical_report.0019
+  identifier:
+    _type: pubid:cencenelec:technical-report
+    number: '17654'
+    year: '2021'
+    publisher: CEN
+  representations:
+    human: CEN/TR 17654:2021
+    urn: urn:cen:cen:17654:2021
+  style: v3
+- id: cen_cenelec.technical_report.0020
+  identifier:
+    _type: pubid:cencenelec:technical-report
+    number: '17833'
+    year: '2022'
+    publisher: CEN
+  representations:
+    human: CEN/TR 17833:2022
+    urn: urn:cen:cen:17833:2022
+  style: v3
+- id: cen_cenelec.technical_report.0025
+  identifier:
+    _type: pubid:cencenelec:technical-report
+    number: '62125'
+    year: '2008'
+    publisher: CLC
+  representations:
+    human: CLC/TR 62125:2008
+    urn: urn:cen:clc:62125:2008
+  style: v3

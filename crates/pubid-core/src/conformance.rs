@@ -16,16 +16,17 @@ use yaml_rust2::{Yaml, YamlLoader};
 
 use crate::api::ApiKind;
 use crate::amca::AmcaKind;
+use crate::cen_cenelec::CenKind;
 use crate::doi::DoiIdentifier;
 use crate::ecma::EcmaKind;
 use crate::gb::GbKind;
 use crate::gost::GostKind;
 use crate::nesc::NescKind;
 use crate::error::{Error, Result};
-use crate::{
-    AmcaIdentifier, AnsiIdentifier, ApiIdentifier, EcmaIdentifier, GbIdentifier, GostIdentifier,
-    IanaIdentifier, IetfIdentifier, IsbnIdentifier, NescIdentifier, OasisIdentifier, OgcIdentifier,
-    IreIdentifier, UnIdentifier, W3cIdentifier, XsfIdentifier,
+pub use crate::{
+    AmcaIdentifier, AnsiIdentifier, ApiIdentifier, CenIdentifier, EcmaIdentifier, GbIdentifier,
+    GostIdentifier, IanaIdentifier, IetfIdentifier, IsbnIdentifier, NescIdentifier,
+    OasisIdentifier, OgcIdentifier, IreIdentifier, UnIdentifier, W3cIdentifier, XsfIdentifier,
 };
 
 // ---------------------------------------------------------------------------
@@ -70,6 +71,9 @@ pub enum Identifier {
     Gb(GbIdentifier),
     /// A GOST identifier (interstate/national/harmonized/identical).
     Gost(GostIdentifier),
+    /// A CEN/CENELEC identifier (documents, supplements, consolidated,
+    /// adopted).
+    CenCenelec(CenIdentifier),
 }
 
 impl Identifier {
@@ -93,6 +97,7 @@ impl Identifier {
             Identifier::Ecma(id) => id.to_hash(),
             Identifier::Gb(id) => id.to_hash(),
             Identifier::Gost(id) => id.to_hash(),
+            Identifier::CenCenelec(id) => id.to_hash(),
         }
     }
 
@@ -116,6 +121,7 @@ impl Identifier {
             Identifier::Ecma(id) => id.to_human(),
             Identifier::Gb(id) => id.to_human(),
             Identifier::Gost(id) => id.to_human(),
+            Identifier::CenCenelec(id) => id.to_human(),
         }
     }
 
@@ -139,6 +145,7 @@ impl Identifier {
             Identifier::Ecma(id) => Some(id.to_urn()),
             Identifier::Gb(id) => Some(id.to_urn()),
             Identifier::Gost(id) => Some(id.to_urn()),
+            Identifier::CenCenelec(id) => Some(id.to_urn()),
         }
     }
 
@@ -173,6 +180,9 @@ impl Identifier {
             }
             _ if kind.starts_with(GostKind::KIND_PREFIX) => {
                 Ok(Identifier::Gost(GostIdentifier::from_hash(hash)?))
+            }
+            _ if kind.starts_with(CenKind::KIND_PREFIX) => {
+                Ok(Identifier::CenCenelec(CenIdentifier::from_hash(hash)?))
             }
             IreIdentifier::TYPE => Ok(Identifier::Ire(IreIdentifier::from_hash(hash)?)),
             _ if kind.starts_with(ApiKind::KIND_PREFIX) => {
@@ -253,6 +263,7 @@ flavor_impls!(
     "ecma" => EcmaImpl, Ecma, EcmaIdentifier,
     "gb" => GbImpl, Gb, GbIdentifier,
     "gost" => GostImpl, Gost, GostIdentifier,
+    "cen_cenelec" => CenCenelecImpl, CenCenelec, CenIdentifier,
 );
 
 // ---------------------------------------------------------------------------
@@ -475,6 +486,24 @@ vendored_corpora!(
         ("interstate_standard.yaml", GOST_INTERSTATE_STANDARD),
         ("national_standard.yaml", GOST_NATIONAL_STANDARD),
         ("_status.yaml", GOST_STATUS),
+    ],
+    "cen_cenelec" => [
+        ("amendment.yaml", CEN_AMENDMENT),
+        ("adopted_european_norm.yaml", CEN_ADOPTED_EUROPEAN_NORM),
+        ("cen_report.yaml", CEN_CEN_REPORT),
+        ("cen_workshop_agreement.yaml", CEN_CEN_WORKSHOP_AGREEMENT),
+        ("consolidated_identifier.yaml", CEN_CONSOLIDATED_IDENTIFIER),
+        ("corrigendum.yaml", CEN_CORRIGENDUM),
+        ("european_norm.yaml", CEN_EUROPEAN_NORM),
+        ("european_prestandard.yaml", CEN_EUROPEAN_PRESTANDARD),
+        ("european_specification.yaml", CEN_EUROPEAN_SPECIFICATION),
+        ("fragment.yaml", CEN_FRAGMENT),
+        ("guide.yaml", CEN_GUIDE),
+        ("harmonization_document.yaml", CEN_HARMONIZATION_DOCUMENT),
+        ("technical_report.yaml", CEN_TECHNICAL_REPORT),
+        ("technical_specification.yaml", CEN_TECHNICAL_SPECIFICATION),
+        ("_negative.yaml", CEN_NEGATIVE),
+        ("_status.yaml", CEN_STATUS),
     ],
 );
 

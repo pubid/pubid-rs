@@ -1,0 +1,203 @@
+---
+- id: cen_cenelec.amendment.0008
+  identifier:
+    _type: pubid:cencenelec:amendment
+    number: '1'
+    base:
+      _type: pubid:cencenelec:adopted-european-norm
+      publisher: CEN
+      adopted:
+        _type: pubid:iso:technical-specification
+        number: '21003'
+        part: '7'
+        year: '2008'
+    year: '2010'
+  representations:
+    human: CEN ISO/TS 21003-7:2008/A1:2010
+    urn: urn:cen:cen:iso:ts:21003-7:2008:amd:1:2010
+  style: v3
+- id: cen_cenelec.amendment.0059
+  identifier:
+    _type: pubid:cencenelec:amendment
+    number: '1'
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '13250'
+      year: '2000'
+    year: '2005'
+  representations:
+    human: EN 13250:2000/A1:2005
+    urn: urn:cen:en:13250:2000:amd:1:2005
+  style: v3
+- id: cen_cenelec.amendment.0064
+  identifier:
+    _type: pubid:cencenelec:amendment
+    number: '1'
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '13251'
+      year: '2000'
+    year: '2005'
+  representations:
+    human: EN 13251:2000/A1:2005
+    urn: urn:cen:en:13251:2000:amd:1:2005
+  style: v3
+- id: cen_cenelec.amendment.0069
+  identifier:
+    _type: pubid:cencenelec:amendment
+    number: '1'
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '13252'
+      year: '2000'
+    year: '2005'
+  representations:
+    human: EN 13252:2000/A1:2005
+    urn: urn:cen:en:13252:2000:amd:1:2005
+  style: v3
+- id: cen_cenelec.amendment.0074
+  identifier:
+    _type: pubid:cencenelec:amendment
+    number: '1'
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '13253'
+      year: '2000'
+    year: '2005'
+  representations:
+    human: EN 13253:2000/A1:2005
+    urn: urn:cen:en:13253:2000:amd:1:2005
+  style: v3
+- id: cen_cenelec.amendment.0079
+  identifier:
+    _type: pubid:cencenelec:amendment
+    number: '1'
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '13254'
+      year: '2000'
+    year: '2005'
+  representations:
+    human: EN 13254:2000/A1:2005
+    urn: urn:cen:en:13254:2000:amd:1:2005
+  style: v3
+- id: cen_cenelec.amendment.0085
+  identifier:
+    _type: pubid:cencenelec:amendment
+    number: '1'
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '13255'
+      year: '2000'
+    year: '2005'
+  representations:
+    human: EN 13255:2000/A1:2005
+    urn: urn:cen:en:13255:2000:amd:1:2005
+  style: v3
+- id: cen_cenelec.amendment.0091
+  identifier:
+    _type: pubid:cencenelec:amendment
+    number: '1'
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '13256'
+      year: '2000'
+    year: '2005'
+  representations:
+    human: EN 13256:2000/A1:2005
+    urn: urn:cen:en:13256:2000:amd:1:2005
+  style: v3
+- id: cen_cenelec.amendment.0097
+  identifier:
+    _type: pubid:cencenelec:amendment
+    number: '1'
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '13257'
+      year: '2000'
+    year: '2005'
+  representations:
+    human: EN 13257:2000/A1:2005
+    urn: urn:cen:en:13257:2000:amd:1:2005
+  style: v3
+- id: cen_cenelec.amendment.0133
+  identifier:
+    _type: pubid:cencenelec:amendment
+    number: '1'
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '60335'
+      part: '1'
+      year: '2012'
+  representations:
+    human: EN 60335-1:2012/A1
+    urn: urn:cen:en:60335-1:2012:amd:1
+  style: v3
+- id: cen_cenelec.amendment.0134
+  identifier:
+    _type: pubid:cencenelec:amendment
+    number: '14'
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '60335'
+      part: '1'
+      year: '2012'
+  representations:
+    human: EN 60335-1:2012/A14
+    urn: urn:cen:en:60335-1:2012:amd:14
+  style: v3
+- id: cen_cenelec.amendment.0135
+  identifier:
+    _type: pubid:cencenelec:amendment
+    number: '15'
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '60335'
+      part: '1'
+      year: '2012'
+  representations:
+    human: EN 60335-1:2012/A15
+    urn: urn:cen:en:60335-1:2012:amd:15
+  style: v3
+- id: cen_cenelec.amendment.0136
+  identifier:
+    _type: pubid:cencenelec:amendment
+    number: '2'
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '60335'
+      part: '1'
+      year: '2012'
+    year: '2019'
+  representations:
+    human: EN 60335-1:2012/A2:2019
+    urn: urn:cen:en:60335-1:2012:amd:2:2019
+  style: v3
+- id: cen_cenelec.amendment.0140
+  identifier:
+    _type: pubid:cencenelec:amendment
+    number: '1'
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '61010'
+      part: '1'
+      year: '2010'
+    year: '2019'
+  representations:
+    human: EN 61010-1:2010/A1:2019
+    urn: urn:cen:en:61010-1:2010:amd:1:2019
+  style: v3
+- id: cen_cenelec.amendment.0145
+  identifier:
+    _type: pubid:cencenelec:amendment
+    number: '1'
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '934'
+      part: '6'
+      year: '2002'
+    year: '2006'
+  representations:
+    human: EN 934-6:2002/A1:2006
+    urn: urn:cen:en:934-6:2002:amd:1:2006
+  style: v3
