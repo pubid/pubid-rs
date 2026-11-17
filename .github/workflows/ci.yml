@@ -49,6 +49,9 @@ jobs:
           for dir in crates/pubid-core/fixtures/testsuite/*/; do
             flavor=$(basename "$dir")
             for file in "$dir"*.yaml; do
+              # Vendored-only flavors (e.g. ire) carry no tests/<flavor>/
+              # corpus in the testsuite checkout — nothing to drift against.
+              [ -f "pubid-testsuite/tests/$flavor/$(basename "$file")" ] || continue
               cmp "$file" "pubid-testsuite/tests/$flavor/$(basename "$file")"
             done
           done
