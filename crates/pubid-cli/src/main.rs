@@ -93,7 +93,13 @@ fn smoke() -> ExitCode {
             }
             None => Vec::new(),
         };
-        let flavor_green = report.outcome == Outcome::Pass && embedded.is_empty();
+        // A ledgered flavor's shape is recorded, not gated — the same
+        // semantics as the conformance runner's exit gate (api's corpus
+        // carries a known_mismatches ceiling).
+        let at_or_under_ledger = report.outcome == Outcome::Ledger
+            && (report.failures.len() as u64) <= report.known_mismatches;
+        let flavor_green = (report.outcome == Outcome::Pass || at_or_under_ledger)
+            && embedded.is_empty();
         green &= flavor_green;
         println!(
             "smoke: flavor {} outcome {} ({} cases, {} rejected negatives, {} embedded tests failing)",
