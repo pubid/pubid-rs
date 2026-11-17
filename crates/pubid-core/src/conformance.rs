@@ -17,14 +17,17 @@ use yaml_rust2::{Yaml, YamlLoader};
 use crate::api::ApiKind;
 use crate::amca::AmcaKind;
 use crate::cen_cenelec::CenKind;
+use crate::ccsds::CcsdsKind;
 use crate::doi::DoiIdentifier;
+use crate::plateau::PlateauKind;
+use crate::evs::EvsKind;
 use crate::ecma::EcmaKind;
 use crate::gb::GbKind;
 use crate::gost::GostKind;
 use crate::nesc::NescKind;
 use crate::error::{Error, Result};
 pub use crate::{
-    AmcaIdentifier, AnsiIdentifier, ApiIdentifier, CenIdentifier, EcmaIdentifier, GbIdentifier,
+    AmcaIdentifier, AnsiIdentifier, ApiIdentifier, CcsdsIdentifier, CenIdentifier, EcmaIdentifier, EvsIdentifier, PlateauIdentifier, GbIdentifier,
     GostIdentifier, IanaIdentifier, IetfIdentifier, IsbnIdentifier, NescIdentifier,
     OasisIdentifier, OgcIdentifier, IreIdentifier, UnIdentifier, W3cIdentifier, XsfIdentifier,
 };
@@ -74,6 +77,12 @@ pub enum Identifier {
     /// A CEN/CENELEC identifier (documents, supplements, consolidated,
     /// adopted).
     CenCenelec(CenIdentifier),
+    /// An EVS identifier (plain Estonian standards and adoptions).
+    Evs(EvsIdentifier),
+    /// A CCSDS identifier (base documents and corrigenda).
+    Ccsds(CcsdsIdentifier),
+    /// A PLATEAU identifier (handbooks and technical reports).
+    Plateau(PlateauIdentifier),
 }
 
 impl Identifier {
@@ -98,6 +107,9 @@ impl Identifier {
             Identifier::Gb(id) => id.to_hash(),
             Identifier::Gost(id) => id.to_hash(),
             Identifier::CenCenelec(id) => id.to_hash(),
+            Identifier::Evs(id) => id.to_hash(),
+            Identifier::Ccsds(id) => id.to_hash(),
+            Identifier::Plateau(id) => id.to_hash(),
         }
     }
 
@@ -122,6 +134,9 @@ impl Identifier {
             Identifier::Gb(id) => id.to_human(),
             Identifier::Gost(id) => id.to_human(),
             Identifier::CenCenelec(id) => id.to_human(),
+            Identifier::Evs(id) => id.to_human(),
+            Identifier::Ccsds(id) => id.to_human(),
+            Identifier::Plateau(id) => id.to_human(),
         }
     }
 
@@ -146,6 +161,9 @@ impl Identifier {
             Identifier::Gb(id) => Some(id.to_urn()),
             Identifier::Gost(id) => Some(id.to_urn()),
             Identifier::CenCenelec(id) => Some(id.to_urn()),
+            Identifier::Evs(id) => Some(id.to_urn()),
+            Identifier::Ccsds(id) => id.to_urn(),
+            Identifier::Plateau(id) => Some(id.to_urn()),
         }
     }
 
@@ -183,6 +201,15 @@ impl Identifier {
             }
             _ if kind.starts_with(CenKind::KIND_PREFIX) => {
                 Ok(Identifier::CenCenelec(CenIdentifier::from_hash(hash)?))
+            }
+            _ if kind.starts_with(EvsKind::KIND_PREFIX) => {
+                Ok(Identifier::Evs(EvsIdentifier::from_hash(hash)?))
+            }
+            _ if kind.starts_with(CcsdsKind::KIND_PREFIX) => {
+                Ok(Identifier::Ccsds(CcsdsIdentifier::from_hash(hash)?))
+            }
+            _ if kind.starts_with(PlateauKind::KIND_PREFIX) => {
+                Ok(Identifier::Plateau(PlateauIdentifier::from_hash(hash)?))
             }
             IreIdentifier::TYPE => Ok(Identifier::Ire(IreIdentifier::from_hash(hash)?)),
             _ if kind.starts_with(ApiKind::KIND_PREFIX) => {
@@ -264,6 +291,9 @@ flavor_impls!(
     "gb" => GbImpl, Gb, GbIdentifier,
     "gost" => GostImpl, Gost, GostIdentifier,
     "cen_cenelec" => CenCenelecImpl, CenCenelec, CenIdentifier,
+    "evs" => EvsImpl, Evs, EvsIdentifier,
+    "ccsds" => CcsdsImpl, Ccsds, CcsdsIdentifier,
+    "plateau" => PlateauImpl, Plateau, PlateauIdentifier,
 );
 
 // ---------------------------------------------------------------------------
@@ -504,6 +534,22 @@ vendored_corpora!(
         ("technical_specification.yaml", CEN_TECHNICAL_SPECIFICATION),
         ("_negative.yaml", CEN_NEGATIVE),
         ("_status.yaml", CEN_STATUS),
+    ],
+    "evs" => [
+        ("estonian_standard.yaml", EVS_ESTONIAN_STANDARD),
+        ("international_adoption.yaml", EVS_INTERNATIONAL_ADOPTION),
+        ("national_adoption.yaml", EVS_NATIONAL_ADOPTION),
+        ("_status.yaml", EVS_STATUS),
+    ],
+    "ccsds" => [
+        ("base.yaml", CCSDS_BASE),
+        ("corrigendum.yaml", CCSDS_CORRIGENDUM),
+        ("_status.yaml", CCSDS_STATUS),
+    ],
+    "plateau" => [
+        ("handbook.yaml", PLATEAU_HANDBOOK),
+        ("technical_report.yaml", PLATEAU_TECHNICAL_REPORT),
+        ("_status.yaml", PLATEAU_STATUS),
     ],
 );
 

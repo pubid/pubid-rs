@@ -1,0 +1,595 @@
+---
+- id: ccsds.corrigendum.0023
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '121'
+      part: '0'
+      edition: '1'
+      type: B
+      suffix: S
+  representations:
+    human: CCSDS 121.0-B-1-S Cor. 1
+    urn: urn:ccsds:121.0-B-1-S:cor.1
+  style: v3
+- id: ccsds.corrigendum.0024
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '2'
+    base:
+      _type: pubid:ccsds:base
+      number: '121'
+      part: '0'
+      edition: '1'
+      type: B
+      suffix: S
+  representations:
+    human: CCSDS 121.0-B-1-S Cor. 2
+    urn: urn:ccsds:121.0-B-1-S:cor.2
+  style: v3
+- id: ccsds.corrigendum.0028
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '122'
+      part: '0'
+      edition: '1'
+      type: B
+      suffix: S
+  representations:
+    human: CCSDS 122.0-B-1-S Cor. 1
+    urn: urn:ccsds:122.0-B-1-S:cor.1
+  style: v3
+- id: ccsds.corrigendum.0029
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '2'
+    base:
+      _type: pubid:ccsds:base
+      number: '122'
+      part: '0'
+      edition: '1'
+      type: B
+      suffix: S
+  representations:
+    human: CCSDS 122.0-B-1-S Cor. 2
+    urn: urn:ccsds:122.0-B-1-S:cor.2
+  style: v3
+- id: ccsds.corrigendum.0030
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '3'
+    base:
+      _type: pubid:ccsds:base
+      number: '122'
+      part: '0'
+      edition: '1'
+      type: B
+      suffix: S
+  representations:
+    human: CCSDS 122.0-B-1-S Cor. 3
+    urn: urn:ccsds:122.0-B-1-S:cor.3
+  style: v3
+- id: ccsds.corrigendum.0035
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '123'
+      part: '0'
+      edition: '2'
+      type: B
+  representations:
+    human: CCSDS 123.0-B-2 Cor. 1
+    urn: urn:ccsds:123.0-B-2:cor.1
+  style: v3
+- id: ccsds.corrigendum.0036
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '2'
+    base:
+      _type: pubid:ccsds:base
+      number: '123'
+      part: '0'
+      edition: '2'
+      type: B
+  representations:
+    human: CCSDS 123.0-B-2 Cor. 2
+    urn: urn:ccsds:123.0-B-2:cor.2
+  style: v3
+- id: ccsds.corrigendum.0037
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '3'
+    base:
+      _type: pubid:ccsds:base
+      number: '123'
+      part: '0'
+      edition: '2'
+      type: B
+  representations:
+    human: CCSDS 123.0-B-2 Cor. 3
+    urn: urn:ccsds:123.0-B-2:cor.3
+  style: v3
+- id: ccsds.corrigendum.0063
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '131'
+      part: '2'
+      edition: '1'
+      type: O
+      suffix: S
+  representations:
+    human: CCSDS 131.2-O-1-S Cor. 1
+    urn: urn:ccsds:131.2-O-1-S:cor.1
+  style: v3
+- id: ccsds.corrigendum.0065
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '131'
+      part: '21'
+      edition: '1'
+      type: O
+  representations:
+    human: CCSDS 131.21-O-1 Cor. 1
+    urn: urn:ccsds:131.21-O-1:cor.1
+  style: v3
+- id: ccsds.corrigendum.0069
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '131'
+      part: '31'
+      edition: '1'
+      type: O
+  representations:
+    human: CCSDS 131.31-O-1 Cor. 1
+    urn: urn:ccsds:131.31-O-1:cor.1
+  style: v3
+- id: ccsds.corrigendum.0073
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '132'
+      part: '0'
+      edition: '1'
+      type: B
+      suffix: S
+  representations:
+    human: CCSDS 132.0-B-1-S Cor. 1
+    urn: urn:ccsds:132.0-B-1-S:cor.1
+  style: v3
+- id: ccsds.corrigendum.0077
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '133'
+      part: '0'
+      edition: '1'
+      type: B
+      suffix: S
+  representations:
+    human: CCSDS 133.0-B-1-S Cor. 1
+    urn: urn:ccsds:133.0-B-1-S:cor.1
+  style: v3
+- id: ccsds.corrigendum.0078
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '2'
+    base:
+      _type: pubid:ccsds:base
+      number: '133'
+      part: '0'
+      edition: '1'
+      type: B
+      suffix: S
+  representations:
+    human: CCSDS 133.0-B-1-S Cor. 2
+    urn: urn:ccsds:133.0-B-1-S:cor.2
+  style: v3
+- id: ccsds.corrigendum.0081
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '133'
+      part: '1'
+      edition: '1'
+      type: B
+      suffix: S
+  representations:
+    human: CCSDS 133.1-B-1-S Cor. 1
+    urn: urn:ccsds:133.1-B-1-S:cor.1
+  style: v3
+- id: ccsds.corrigendum.0087
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '135'
+      part: '0'
+      edition: '3'
+      type: B
+      suffix: S
+  representations:
+    human: CCSDS 135.0-B-3-S Cor. 1
+    urn: urn:ccsds:135.0-B-3-S:cor.1
+  style: v3
+- id: ccsds.corrigendum.0124
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '231'
+      part: '0'
+      edition: '1'
+      type: B
+      suffix: S
+  representations:
+    human: CCSDS 231.0-B-1-S Cor. 1
+    urn: urn:ccsds:231.0-B-1-S:cor.1
+  style: v3
+- id: ccsds.corrigendum.0126
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '231'
+      part: '0'
+      edition: '2'
+      type: B
+      suffix: S
+  representations:
+    human: CCSDS 231.0-B-2-S Cor. 1
+    urn: urn:ccsds:231.0-B-2-S:cor.1
+  style: v3
+- id: ccsds.corrigendum.0132
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '232'
+      part: '0'
+      edition: '2'
+      type: B
+      suffix: S
+  representations:
+    human: CCSDS 232.0-B-2-S Cor. 1
+    urn: urn:ccsds:232.0-B-2-S:cor.1
+  style: v3
+- id: ccsds.corrigendum.0137
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '232'
+      part: '1'
+      edition: '2'
+      type: B
+  representations:
+    human: CCSDS 232.1-B-2 Cor. 1
+    urn: urn:ccsds:232.1-B-2:cor.1
+  style: v3
+- id: ccsds.corrigendum.0157
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '320'
+      part: '0'
+      edition: '6'
+      type: B
+      suffix: S
+  representations:
+    human: CCSDS 320.0-B-6-S Cor. 1
+    urn: urn:ccsds:320.0-B-6-S:cor.1
+  style: v3
+- id: ccsds.corrigendum.0159
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '320'
+      part: '0'
+      edition: '7'
+      type: M
+  representations:
+    human: CCSDS 320.0-M-7 Cor. 1
+    urn: urn:ccsds:320.0-M-7:cor.1
+  style: v3
+- id: ccsds.corrigendum.0222
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '431'
+      part: '1'
+      edition: '1'
+      type: B
+  representations:
+    human: CCSDS 431.1-B-1 Cor. 1
+    urn: urn:ccsds:431.1-B-1:cor.1
+  style: v3
+- id: ccsds.corrigendum.0235
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '502'
+      part: '0'
+      edition: '2'
+      type: B
+      suffix: S
+  representations:
+    human: CCSDS 502.0-B-2-S Cor. 1
+    urn: urn:ccsds:502.0-B-2-S:cor.1
+  style: v3
+- id: ccsds.corrigendum.0239
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '503'
+      part: '0'
+      edition: '1'
+      type: B
+      suffix: S
+  representations:
+    human: CCSDS 503.0-B-1-S Cor. 1
+    urn: urn:ccsds:503.0-B-1-S:cor.1
+  style: v3
+- id: ccsds.corrigendum.0241
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '503'
+      part: '0'
+      edition: '2'
+      type: B
+  representations:
+    human: CCSDS 503.0-B-2 Cor. 1
+    urn: urn:ccsds:503.0-B-2:cor.1
+  style: v3
+- id: ccsds.corrigendum.0243
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '504'
+      part: '0'
+      edition: '1'
+      type: B
+  representations:
+    human: CCSDS 504.0-B-1 Cor. 1
+    urn: urn:ccsds:504.0-B-1:cor.1
+  style: v3
+- id: ccsds.corrigendum.0252
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '508'
+      part: '0'
+      edition: '1'
+      type: B
+  representations:
+    human: CCSDS 508.0-B-1 Cor. 1
+    urn: urn:ccsds:508.0-B-1:cor.1
+  style: v3
+- id: ccsds.corrigendum.0253
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '2'
+    base:
+      _type: pubid:ccsds:base
+      number: '508'
+      part: '0'
+      edition: '1'
+      type: B
+  representations:
+    human: CCSDS 508.0-B-1 Cor. 2
+    urn: urn:ccsds:508.0-B-1:cor.2
+  style: v3
+- id: ccsds.corrigendum.0256
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '508'
+      part: '1'
+      edition: '1'
+      type: B
+  representations:
+    human: CCSDS 508.1-B-1 Cor. 1
+    urn: urn:ccsds:508.1-B-1:cor.1
+  style: v3
+- id: ccsds.corrigendum.0258
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '509'
+      part: '0'
+      edition: '1'
+      type: B
+  representations:
+    human: CCSDS 509.0-B-1 Cor. 1
+    urn: urn:ccsds:509.0-B-1:cor.1
+  style: v3
+- id: ccsds.corrigendum.0323
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '702'
+      part: '1'
+      edition: '1'
+      type: B
+  representations:
+    human: CCSDS 702.1-B-1 Cor. 1
+    urn: urn:ccsds:702.1-B-1:cor.1
+  style: v3
+- id: ccsds.corrigendum.0335
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '713'
+      part: '5'
+      edition: '1'
+      type: B
+      suffix: S
+  representations:
+    human: CCSDS 713.5-B-1-S Cor. 1
+    urn: urn:ccsds:713.5-B-1-S:cor.1
+  style: v3
+- id: ccsds.corrigendum.0337
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '714'
+      part: '0'
+      edition: '1'
+      type: B
+      suffix: S
+  representations:
+    human: CCSDS 714.0-B-1-S Cor. 1
+    urn: urn:ccsds:714.0-B-1-S:cor.1
+  style: v3
+- id: ccsds.corrigendum.0361
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '732'
+      part: '0'
+      edition: '2'
+      type: B
+      suffix: S
+  representations:
+    human: CCSDS 732.0-B-2-S Cor. 1
+    urn: urn:ccsds:732.0-B-2-S:cor.1
+  style: v3
+- id: ccsds.corrigendum.0408
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '902'
+      part: '1'
+      edition: '1'
+      type: B
+  representations:
+    human: CCSDS 902.1-B-1 Cor. 1
+    urn: urn:ccsds:902.1-B-1:cor.1
+  style: v3
+- id: ccsds.corrigendum.0447
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '914'
+      part: '0'
+      edition: '2'
+      type: M
+  representations:
+    human: CCSDS 914.0-M-2 Cor. 1
+    urn: urn:ccsds:914.0-M-2:cor.1
+  style: v3
+- id: ccsds.corrigendum.0465
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: '921'
+      part: '2'
+      edition: '1'
+      type: M
+  representations:
+    human: CCSDS 921.2-M-1 Cor. 1
+    urn: urn:ccsds:921.2-M-1:cor.1
+  style: v3
+- id: ccsds.corrigendum.0478
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: A02
+      part: '1'
+      edition: '4'
+      type: "Y"
+  representations:
+    human: CCSDS A02.1-Y-4 Cor. 1
+    urn: urn:ccsds:A02.1-Y-4:cor.1
+  style: v3
+- id: ccsds.corrigendum.0479
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '2'
+    base:
+      _type: pubid:ccsds:base
+      number: A02
+      part: '1'
+      edition: '4'
+      type: "Y"
+  representations:
+    human: CCSDS A02.1-Y-4 Cor. 2
+    urn: urn:ccsds:A02.1-Y-4:cor.2
+  style: v3
+- id: ccsds.corrigendum.0485
+  identifier:
+    _type: pubid:ccsds:corrigendum
+    number: '1'
+    base:
+      _type: pubid:ccsds:base
+      number: A20
+      part: '0'
+      edition: '4'
+      type: "Y"
+  representations:
+    human: CCSDS A20.0-Y-4 Cor. 1
+    urn: urn:ccsds:A20.0-Y-4:cor.1
+  style: v3

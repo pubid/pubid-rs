@@ -1,0 +1,324 @@
+---
+- id: plateau.handbook.0001
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 0
+    edition: '1.0'
+  representations:
+    human: 'PLATEAU Handbook #00 第1.0版'
+    urn: urn:plateau:handbook:00
+  style: v3
+- id: plateau.handbook.0002
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 0
+    edition: '2.0'
+  representations:
+    human: 'PLATEAU Handbook #00 第2.0版'
+    urn: urn:plateau:handbook:00
+  style: v3
+- id: plateau.handbook.0003
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 0
+    edition: '3.0'
+  representations:
+    human: 'PLATEAU Handbook #00 第3.0版'
+    urn: urn:plateau:handbook:00
+  style: v3
+- id: plateau.handbook.0004
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 0
+    edition: '4.0'
+  representations:
+    human: 'PLATEAU Handbook #00 第4.0版'
+    urn: urn:plateau:handbook:00
+  style: v3
+- id: plateau.handbook.0005
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 0
+    edition: '5.0'
+    volume: 本編
+  representations:
+    human: 'PLATEAU Handbook #00 第5.0版 本編'
+    urn: urn:plateau:handbook:00
+  style: v3
+- id: plateau.handbook.0006
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 0
+    edition: '5.0'
+    volume: 本編＋付録
+  representations:
+    human: 'PLATEAU Handbook #00 第5.0版 本編＋付録'
+    urn: urn:plateau:handbook:00
+  style: v3
+  non_normalized_aliases:
+  - spelling: 'PLATEAU Handbook #00 第5.0版　本編＋付録'
+    style: v3
+- id: plateau.handbook.0007
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 0
+    edition: '6.0'
+    volume: 本編＋付録
+  representations:
+    human: 'PLATEAU Handbook #00 第6.0版 本編＋付録'
+    urn: urn:plateau:handbook:00
+  style: v3
+- id: plateau.handbook.0008
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 1
+    edition: '1.0'
+  representations:
+    human: 'PLATEAU Handbook #01 第1.0版'
+    urn: urn:plateau:handbook:01
+  style: v3
+- id: plateau.handbook.0009
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 1
+    edition: '2.3'
+  representations:
+    human: 'PLATEAU Handbook #01 第2.3版'
+    urn: urn:plateau:handbook:01
+  style: v3
+- id: plateau.handbook.0010
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 1
+    edition: '3.5'
+  representations:
+    human: 'PLATEAU Handbook #01 第3.5版'
+    urn: urn:plateau:handbook:01
+  style: v3
+- id: plateau.handbook.0011
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 1
+    edition: '4.0'
+  representations:
+    human: 'PLATEAU Handbook #01 第4.0版'
+    urn: urn:plateau:handbook:01
+  style: v3
+- id: plateau.handbook.0012
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 2
+    edition: '1.0'
+  representations:
+    human: 'PLATEAU Handbook #02 第1.0版'
+    urn: urn:plateau:handbook:02
+  style: v3
+- id: plateau.handbook.0013
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 2
+    edition: '2.2'
+  representations:
+    human: 'PLATEAU Handbook #02 第2.2版'
+    urn: urn:plateau:handbook:02
+  style: v3
+- id: plateau.handbook.0014
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 2
+    edition: '3.5'
+  representations:
+    human: 'PLATEAU Handbook #02 第3.5版'
+    urn: urn:plateau:handbook:02
+  style: v3
+- id: plateau.handbook.0015
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 2
+    edition: '4.0'
+  representations:
+    human: 'PLATEAU Handbook #02 第4.0版'
+    urn: urn:plateau:handbook:02
+  style: v3
+- id: plateau.handbook.0016
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 3
+    edition: '1.0'
+  representations:
+    human: 'PLATEAU Handbook #03 第1.0版'
+    urn: urn:plateau:handbook:03
+  style: v3
+- id: plateau.handbook.0017
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 3
+    edition: '2.0'
+  representations:
+    human: 'PLATEAU Handbook #03 第2.0版'
+    urn: urn:plateau:handbook:03
+  style: v3
+- id: plateau.handbook.0018
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 3
+    edition: '3.0'
+  representations:
+    human: 'PLATEAU Handbook #03 第3.0版'
+    urn: urn:plateau:handbook:03
+  style: v3
+- id: plateau.handbook.0019
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 3
+    edition: '1.0'
+    annex: 1
+  representations:
+    human: 'PLATEAU Handbook #03-1 第1.0版'
+    urn: urn:plateau:handbook:03:01
+  style: v3
+- id: plateau.handbook.0020
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 3
+    edition: '2.0'
+    annex: 1
+  representations:
+    human: 'PLATEAU Handbook #03-1 第2.0版'
+    urn: urn:plateau:handbook:03:01
+  style: v3
+- id: plateau.handbook.0021
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 5
+    edition: '1.0'
+  representations:
+    human: 'PLATEAU Handbook #05 第1.0版'
+    urn: urn:plateau:handbook:05
+  style: v3
+- id: plateau.handbook.0022
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 5
+    edition: '2.1'
+  representations:
+    human: 'PLATEAU Handbook #05 第2.1版'
+    urn: urn:plateau:handbook:05
+  style: v3
+- id: plateau.handbook.0023
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 7
+    edition: '1.0'
+  representations:
+    human: 'PLATEAU Handbook #07 第1.0版'
+    urn: urn:plateau:handbook:07
+  style: v3
+- id: plateau.handbook.0024
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 7
+    edition: '2.0'
+  representations:
+    human: 'PLATEAU Handbook #07 第2.0版'
+    urn: urn:plateau:handbook:07
+  style: v3
+- id: plateau.handbook.0025
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 8
+    edition: '1.0'
+  representations:
+    human: 'PLATEAU Handbook #08 第1.0版'
+    urn: urn:plateau:handbook:08
+  style: v3
+- id: plateau.handbook.0026
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 8
+    edition: '2.0'
+  representations:
+    human: 'PLATEAU Handbook #08 第2.0版'
+    urn: urn:plateau:handbook:08
+  style: v3
+- id: plateau.handbook.0027
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 9
+    edition: '1.0'
+  representations:
+    human: 'PLATEAU Handbook #09 第1.0版'
+    urn: urn:plateau:handbook:09
+  style: v3
+- id: plateau.handbook.0028
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 9
+    edition: '2.0'
+  representations:
+    human: 'PLATEAU Handbook #09 第2.0版'
+    urn: urn:plateau:handbook:09
+  style: v3
+- id: plateau.handbook.0029
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 9
+    edition: '3.0'
+  representations:
+    human: 'PLATEAU Handbook #09 第3.0版'
+    urn: urn:plateau:handbook:09
+  style: v3
+- id: plateau.handbook.0030
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 9
+    edition: '4.0'
+  representations:
+    human: 'PLATEAU Handbook #09 第4.0版'
+    urn: urn:plateau:handbook:09
+  style: v3
+- id: plateau.handbook.0031
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 10
+    edition: '1.0'
+  representations:
+    human: 'PLATEAU Handbook #10 第1.0版'
+    urn: urn:plateau:handbook:10
+  style: v3
+- id: plateau.handbook.0032
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 10
+    edition: '2.0'
+  representations:
+    human: 'PLATEAU Handbook #10 第2.0版'
+    urn: urn:plateau:handbook:10
+  style: v3
+- id: plateau.handbook.0033
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 10
+    edition: '3.0'
+  representations:
+    human: 'PLATEAU Handbook #10 第3.0版'
+    urn: urn:plateau:handbook:10
+  style: v3
+- id: plateau.handbook.0034
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 11
+    edition: '4.0'
+  representations:
+    human: 'PLATEAU Handbook #11 第4.0版'
+    urn: urn:plateau:handbook:11
+  style: v3
+- id: plateau.handbook.0035
+  identifier:
+    _type: pubid:plateau:handbook
+    number: 12
+    edition: '1.0'
+  representations:
+    human: 'PLATEAU Handbook #12 第1.0版'
+    urn: urn:plateau:handbook:12
+  style: v3

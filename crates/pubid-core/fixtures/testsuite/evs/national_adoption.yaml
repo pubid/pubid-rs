@@ -1,0 +1,368 @@
+---
+- id: evs.national_adoption.0005
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '16798'
+      part: '1'
+      year: '2019'
+  representations:
+    human: EVS-EN 16798-1:2019
+    urn: urn:evs:en:16798-1:2019
+  style: v3
+  non_normalized_aliases:
+  - spelling: EVS-EN TS 16798-1:2019
+    style: v3
+- id: evs.national_adoption.0006
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '18216'
+      year: '2026'
+  representations:
+    human: EVS-EN 18216:2026
+    urn: urn:evs:en:18216:2026
+  style: v3
+- id: evs.national_adoption.0007
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '18216'
+      year: '2026'
+    language: et
+  representations:
+    human: EVS-EN 18216:2026 et
+    urn: urn:evs:en:18216:2026:et
+  style: v3
+- id: evs.national_adoption.0008
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '18219'
+      year: '2026'
+  representations:
+    human: EVS-EN 18219:2026
+    urn: urn:evs:en:18219:2026
+  style: v3
+- id: evs.national_adoption.0009
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '18220'
+      year: '2026'
+  representations:
+    human: EVS-EN 18220:2026
+    urn: urn:evs:en:18220:2026
+  style: v3
+- id: evs.national_adoption.0010
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '18221'
+      year: '2026'
+  representations:
+    human: EVS-EN 18221:2026
+    urn: urn:evs:en:18221:2026
+  style: v3
+- id: evs.national_adoption.0011
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '18222'
+      year: '2026'
+  representations:
+    human: EVS-EN 18222:2026
+    urn: urn:evs:en:18222:2026
+  style: v3
+- id: evs.national_adoption.0012
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '18223'
+      year: '2026'
+  representations:
+    human: EVS-EN 18223:2026
+    urn: urn:evs:en:18223:2026
+  style: v3
+- id: evs.national_adoption.0013
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '1993'
+      part: 1-1
+      year: '2005'
+    na_separator: "+"
+  representations:
+    human: EVS-EN 1993-1-1:2005+NA
+    urn: urn:evs:en:1993-1-1:2005:na
+  style: v3
+- id: evs.national_adoption.0014
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '1993'
+      part: 1-1
+      year: '2005'
+    na_separator: "+"
+    na_year: '2010'
+  representations:
+    human: EVS-EN 1993-1-1:2005+NA:2010
+    urn: urn:evs:en:1993-1-1:2005:na:2010
+  style: v3
+- id: evs.national_adoption.0015
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '1993'
+      part: 1-1
+      year: '2005'
+    language: et
+    na_separator: "+"
+    na_year: '2010'
+  representations:
+    human: EVS-EN 1993-1-1:2005+NA:2010 et
+    urn: urn:evs:en:1993-1-1:2005:na:2010:et
+  style: v3
+- id: evs.national_adoption.0016
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '1993'
+      part: 1-1
+      year: '2005'
+    na_separator: "/"
+  representations:
+    human: EVS-EN 1993-1-1:2005/NA
+    urn: urn:evs:en:1993-1-1:2005:na
+  style: v3
+- id: evs.national_adoption.0017
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: 301 406
+      part: '1'
+      year: '2026'
+      version: " V3.2.1"
+  representations:
+    human: EVS-EN 301 406-1 V3.2.1:2026
+    urn: urn:evs:en:301 406-1:2026
+  style: v3
+- id: evs.national_adoption.0018
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: 302 326
+      part: '2'
+      year: '2026'
+      version: " V2.2.1"
+  representations:
+    human: EVS-EN 302 326-2 V2.2.1:2026
+    urn: urn:evs:en:302 326-2:2026
+  style: v3
+- id: evs.national_adoption.0019
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '50581'
+      year: '2012'
+    cor_separator: " "
+    cor_kind: AC
+    cor_year: '2015'
+  representations:
+    human: EVS-EN 50581:2012 AC:2015
+    urn: urn:evs:en:50581:2012:cor:2015
+  style: v3
+- id: evs.national_adoption.0020
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:consolidated-identifier
+      identifiers:
+      - _type: pubid:cencenelec:european-norm
+        number: '50581'
+        year: '2012'
+      - _type: pubid:cencenelec:corrigendum
+        year: '2015'
+  representations:
+    human: EVS-EN 50581:2012+AC:2015
+    urn: urn:evs:en:50581:2012:plus:cor:2015
+  style: v3
+- id: evs.national_adoption.0021
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '50581'
+      year: '2012'
+    cor_separator: "+"
+    cor_kind: COR
+    cor_year: '2015'
+  representations:
+    human: EVS-EN 50581:2012+COR:2015
+    urn: urn:evs:en:50581:2012:plus:cor:2015
+  style: v3
+- id: evs.national_adoption.0022
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '50581'
+      year: '2012'
+    cor_separator: "/"
+    cor_kind: COR
+    cor_year: '2015'
+  representations:
+    human: EVS-EN 50581:2012/COR:2015
+    urn: urn:evs:en:50581:2012:cor:2015
+  style: v3
+- id: evs.national_adoption.0023
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '71'
+      part: '1'
+      year: '2011'
+    amd_separator: " "
+    amd_kind: AMD
+    amd_number: '1'
+    amd_year: '2014'
+  representations:
+    human: EVS-EN 71-1:2011 AMD1:2014
+    urn: urn:evs:en:71-1:2011:amd:1:2014
+  style: v3
+- id: evs.national_adoption.0024
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:consolidated-identifier
+      identifiers:
+      - _type: pubid:cencenelec:european-norm
+        number: '71'
+        part: '1'
+        year: '2011'
+      - _type: pubid:cencenelec:amendment
+        number: '1'
+        year: '2014'
+  representations:
+    human: EVS-EN 71-1:2011+A1:2014
+    urn: urn:evs:en:71-1:2011:plus:amd:1:2014
+  style: v3
+- id: evs.national_adoption.0025
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:amendment
+      number: '1'
+      base:
+        _type: pubid:cencenelec:european-norm
+        number: '71'
+        part: '1'
+        year: '2011'
+      year: '2014'
+  representations:
+    human: EVS-EN 71-1:2011/A1:2014
+    urn: urn:evs:en:71-1:2011:amd:1:2014
+  style: v3
+- id: evs.national_adoption.0026
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:adopted-european-norm
+      adopted:
+        _type: pubid:iec:international-standard
+        number: '61000'
+        part: '4'
+        subpart: '30'
+        year: '2026'
+  representations:
+    human: EVS-EN IEC 61000-4-30:2026
+    urn: urn:evs:en:iec:61000-4-30:2026
+  style: v3
+- id: evs.national_adoption.0027
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:adopted-european-norm
+      adopted:
+        _type: pubid:iso:international-standard
+        number: '14001'
+        year: '2026'
+  representations:
+    human: EVS-EN ISO 14001:2026
+    urn: urn:evs:en:iso:14001:2026
+  style: v3
+- id: evs.national_adoption.0028
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:amendment
+      number: '1'
+      base:
+        _type: pubid:cencenelec:adopted-european-norm
+        adopted:
+          _type: pubid:iso:international-standard
+          number: '9001'
+          year: '2015'
+      year: '2024'
+  representations:
+    human: EVS-EN ISO 9001:2015/A1:2024
+    urn: urn:evs:en:iso:9001:2015:amd:1:2024
+  style: v3
+- id: evs.national_adoption.0029
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:adopted-european-norm
+      adopted:
+        _type: pubid:iso:international-standard
+        number: '27017'
+        year: '2026'
+        copublishers:
+        - IEC
+  representations:
+    human: EVS-EN ISO/IEC 27017:2026
+    urn: urn:evs:en:iso-iec:27017:2026
+  style: v3
+- id: evs.national_adoption.0030
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:adopted-european-norm
+      adopted:
+        _type: pubid:iso:international-standard
+        number: '27701'
+        year: '2025'
+        copublishers:
+        - IEC
+  representations:
+    human: EVS-EN ISO/IEC 27701:2025
+    urn: urn:evs:en:iso-iec:27701:2025
+  style: v3
+- id: evs.national_adoption.0035
+  identifier:
+    _type: pubid:evs:national-adoption
+    base:
+      _type: pubid:cencenelec:european-norm
+      number: '100'
+      year: '2026'
+    draft_prefix: true
+  representations:
+    human: prEVS-EN 100:2026
+    urn: urn:evs:pr:en:100:2026
+  style: v3
