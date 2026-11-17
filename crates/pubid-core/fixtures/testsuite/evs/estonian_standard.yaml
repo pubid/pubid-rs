@@ -1,0 +1,62 @@
+---
+- id: evs.estonian_standard.0001
+  identifier:
+    _type: pubid:evs:estonian-standard
+    number: '811'
+    separator: " "
+    language: et-en
+    year: '2018'
+  representations:
+    human: EVS 811:2018 et-en
+    urn: urn:evs:811:2018:et-en
+  style: v3
+- id: evs.estonian_standard.0002
+  identifier:
+    _type: pubid:evs:estonian-standard
+    number: '906'
+    separator: " "
+    year: '2026'
+  representations:
+    human: EVS 906:2026
+    urn: urn:evs:906:2026
+  style: v3
+- id: evs.estonian_standard.0003
+  identifier:
+    _type: pubid:evs:estonian-standard
+    number: '921'
+    separator: " "
+    year: '2019'
+  representations:
+    human: EVS 921:2019
+    urn: urn:evs:921:2019
+  style: v3
+- id: evs.estonian_standard.0004
+  identifier:
+    _type: pubid:evs:estonian-standard
+    number: '945'
+    separator: " "
+    year: '2023'
+  representations:
+    human: EVS 945:2023
+    urn: urn:evs:945:2023
+  style: v3
+- id: evs.estonian_standard.0033
+  identifier:
+    _type: pubid:evs:estonian-standard
+    number: '1'
+    year: '2019'
+    evs_type: TR
+  representations:
+    human: EVS-TR 1:2019
+    urn: urn:evs:tr:1:2019
+  style: v3
+- id: evs.estonian_standard.0034
+  identifier:
+    _type: pubid:evs:estonian-standard
+    number: '1'
+    year: '2019'
+    evs_type: TS
+  representations:
+    human: EVS-TS 1:2019
+    urn: urn:evs:ts:1:2019
+  style: v3

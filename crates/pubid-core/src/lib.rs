@@ -19,10 +19,13 @@
 
 pub mod artifact;
 pub mod bound;
+pub mod ccsds;
 pub mod cen_cenelec;
+pub mod evs;
 pub mod conformance;
 pub mod doi;
 pub mod error;
+pub mod plateau;
 pub mod iana;
 pub mod ietf;
 pub mod ieee_code;
@@ -60,7 +63,10 @@ pub use un::UnIdentifier;
 pub use w3c::{W3cIdentifier, W3cKind};
 pub use xsf::XsfIdentifier;
 pub use api::ApiIdentifier;
+pub use ccsds::CcsdsIdentifier;
 pub use cen_cenelec::CenIdentifier;
+pub use evs::EvsIdentifier;
+pub use plateau::PlateauIdentifier;
 pub use amca::{AmcaIdentifier, AmcaKind};
 pub use ansi::AnsiIdentifier;
 pub use ecma::{EcmaIdentifier, EcmaKind};

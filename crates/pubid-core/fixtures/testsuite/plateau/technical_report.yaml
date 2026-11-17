@@ -1,0 +1,667 @@
+---
+- id: plateau.technical_report.0036
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 0
+  representations:
+    human: 'PLATEAU Technical Report #00'
+    urn: urn:plateau:tr:00
+  style: v3
+- id: plateau.technical_report.0037
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 1
+  representations:
+    human: 'PLATEAU Technical Report #01'
+    urn: urn:plateau:tr:01
+  style: v3
+- id: plateau.technical_report.0038
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 2
+  representations:
+    human: 'PLATEAU Technical Report #02'
+    urn: urn:plateau:tr:02
+  style: v3
+- id: plateau.technical_report.0039
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 3
+  representations:
+    human: 'PLATEAU Technical Report #03'
+    urn: urn:plateau:tr:03
+  style: v3
+- id: plateau.technical_report.0040
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 11
+  representations:
+    human: 'PLATEAU Technical Report #11'
+    urn: urn:plateau:tr:11
+  style: v3
+- id: plateau.technical_report.0041
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 14
+  representations:
+    human: 'PLATEAU Technical Report #14'
+    urn: urn:plateau:tr:14
+  style: v3
+- id: plateau.technical_report.0042
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 15
+  representations:
+    human: 'PLATEAU Technical Report #15'
+    urn: urn:plateau:tr:15
+  style: v3
+- id: plateau.technical_report.0043
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 16
+  representations:
+    human: 'PLATEAU Technical Report #16'
+    urn: urn:plateau:tr:16
+  style: v3
+- id: plateau.technical_report.0044
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 17
+  representations:
+    human: 'PLATEAU Technical Report #17'
+    urn: urn:plateau:tr:17
+  style: v3
+- id: plateau.technical_report.0045
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 18
+  representations:
+    human: 'PLATEAU Technical Report #18'
+    urn: urn:plateau:tr:18
+  style: v3
+- id: plateau.technical_report.0046
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 19
+  representations:
+    human: 'PLATEAU Technical Report #19'
+    urn: urn:plateau:tr:19
+  style: v3
+- id: plateau.technical_report.0047
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 20
+  representations:
+    human: 'PLATEAU Technical Report #20'
+    urn: urn:plateau:tr:20
+  style: v3
+- id: plateau.technical_report.0048
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 21
+  representations:
+    human: 'PLATEAU Technical Report #21'
+    urn: urn:plateau:tr:21
+  style: v3
+- id: plateau.technical_report.0049
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 22
+  representations:
+    human: 'PLATEAU Technical Report #22'
+    urn: urn:plateau:tr:22
+  style: v3
+- id: plateau.technical_report.0050
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 23
+  representations:
+    human: 'PLATEAU Technical Report #23'
+    urn: urn:plateau:tr:23
+  style: v3
+- id: plateau.technical_report.0051
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 24
+  representations:
+    human: 'PLATEAU Technical Report #24'
+    urn: urn:plateau:tr:24
+  style: v3
+- id: plateau.technical_report.0052
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 25
+  representations:
+    human: 'PLATEAU Technical Report #25'
+    urn: urn:plateau:tr:25
+  style: v3
+- id: plateau.technical_report.0053
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 26
+  representations:
+    human: 'PLATEAU Technical Report #26'
+    urn: urn:plateau:tr:26
+  style: v3
+- id: plateau.technical_report.0054
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 27
+  representations:
+    human: 'PLATEAU Technical Report #27'
+    urn: urn:plateau:tr:27
+  style: v3
+- id: plateau.technical_report.0055
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 28
+  representations:
+    human: 'PLATEAU Technical Report #28'
+    urn: urn:plateau:tr:28
+  style: v3
+- id: plateau.technical_report.0056
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 29
+  representations:
+    human: 'PLATEAU Technical Report #29'
+    urn: urn:plateau:tr:29
+  style: v3
+- id: plateau.technical_report.0057
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 30
+  representations:
+    human: 'PLATEAU Technical Report #30'
+    urn: urn:plateau:tr:30
+  style: v3
+- id: plateau.technical_report.0058
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 31
+  representations:
+    human: 'PLATEAU Technical Report #31'
+    urn: urn:plateau:tr:31
+  style: v3
+- id: plateau.technical_report.0059
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 32
+  representations:
+    human: 'PLATEAU Technical Report #32'
+    urn: urn:plateau:tr:32
+  style: v3
+- id: plateau.technical_report.0060
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 33
+  representations:
+    human: 'PLATEAU Technical Report #33'
+    urn: urn:plateau:tr:33
+  style: v3
+- id: plateau.technical_report.0061
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 34
+  representations:
+    human: 'PLATEAU Technical Report #34'
+    urn: urn:plateau:tr:34
+  style: v3
+- id: plateau.technical_report.0062
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 35
+  representations:
+    human: 'PLATEAU Technical Report #35'
+    urn: urn:plateau:tr:35
+  style: v3
+- id: plateau.technical_report.0063
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 36
+  representations:
+    human: 'PLATEAU Technical Report #36'
+    urn: urn:plateau:tr:36
+  style: v3
+- id: plateau.technical_report.0064
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 37
+  representations:
+    human: 'PLATEAU Technical Report #37'
+    urn: urn:plateau:tr:37
+  style: v3
+- id: plateau.technical_report.0065
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 38
+  representations:
+    human: 'PLATEAU Technical Report #38'
+    urn: urn:plateau:tr:38
+  style: v3
+- id: plateau.technical_report.0066
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 39
+  representations:
+    human: 'PLATEAU Technical Report #39'
+    urn: urn:plateau:tr:39
+  style: v3
+- id: plateau.technical_report.0067
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 40
+  representations:
+    human: 'PLATEAU Technical Report #40'
+    urn: urn:plateau:tr:40
+  style: v3
+- id: plateau.technical_report.0068
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 41
+  representations:
+    human: 'PLATEAU Technical Report #41'
+    urn: urn:plateau:tr:41
+  style: v3
+- id: plateau.technical_report.0069
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 42
+  representations:
+    human: 'PLATEAU Technical Report #42'
+    urn: urn:plateau:tr:42
+  style: v3
+- id: plateau.technical_report.0070
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 43
+  representations:
+    human: 'PLATEAU Technical Report #43'
+    urn: urn:plateau:tr:43
+  style: v3
+- id: plateau.technical_report.0071
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 44
+  representations:
+    human: 'PLATEAU Technical Report #44'
+    urn: urn:plateau:tr:44
+  style: v3
+- id: plateau.technical_report.0072
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 45
+  representations:
+    human: 'PLATEAU Technical Report #45'
+    urn: urn:plateau:tr:45
+  style: v3
+- id: plateau.technical_report.0073
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 46
+    annex: 1
+  representations:
+    human: 'PLATEAU Technical Report #46-1'
+    urn: urn:plateau:tr:46:01
+  style: v3
+- id: plateau.technical_report.0074
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 46
+    annex: 2
+  representations:
+    human: 'PLATEAU Technical Report #46-2'
+    urn: urn:plateau:tr:46:02
+  style: v3
+- id: plateau.technical_report.0075
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 47
+  representations:
+    human: 'PLATEAU Technical Report #47'
+    urn: urn:plateau:tr:47
+  style: v3
+- id: plateau.technical_report.0076
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 48
+  representations:
+    human: 'PLATEAU Technical Report #48'
+    urn: urn:plateau:tr:48
+  style: v3
+- id: plateau.technical_report.0077
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 49
+  representations:
+    human: 'PLATEAU Technical Report #49'
+    urn: urn:plateau:tr:49
+  style: v3
+- id: plateau.technical_report.0078
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 50
+  representations:
+    human: 'PLATEAU Technical Report #50'
+    urn: urn:plateau:tr:50
+  style: v3
+- id: plateau.technical_report.0079
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 51
+  representations:
+    human: 'PLATEAU Technical Report #51'
+    urn: urn:plateau:tr:51
+  style: v3
+- id: plateau.technical_report.0080
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 52
+  representations:
+    human: 'PLATEAU Technical Report #52'
+    urn: urn:plateau:tr:52
+  style: v3
+- id: plateau.technical_report.0081
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 53
+  representations:
+    human: 'PLATEAU Technical Report #53'
+    urn: urn:plateau:tr:53
+  style: v3
+- id: plateau.technical_report.0082
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 54
+  representations:
+    human: 'PLATEAU Technical Report #54'
+    urn: urn:plateau:tr:54
+  style: v3
+- id: plateau.technical_report.0083
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 55
+  representations:
+    human: 'PLATEAU Technical Report #55'
+    urn: urn:plateau:tr:55
+  style: v3
+- id: plateau.technical_report.0084
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 56
+  representations:
+    human: 'PLATEAU Technical Report #56'
+    urn: urn:plateau:tr:56
+  style: v3
+- id: plateau.technical_report.0085
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 57
+  representations:
+    human: 'PLATEAU Technical Report #57'
+    urn: urn:plateau:tr:57
+  style: v3
+- id: plateau.technical_report.0086
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 58
+  representations:
+    human: 'PLATEAU Technical Report #58'
+    urn: urn:plateau:tr:58
+  style: v3
+- id: plateau.technical_report.0087
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 59
+  representations:
+    human: 'PLATEAU Technical Report #59'
+    urn: urn:plateau:tr:59
+  style: v3
+- id: plateau.technical_report.0088
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 60
+  representations:
+    human: 'PLATEAU Technical Report #60'
+    urn: urn:plateau:tr:60
+  style: v3
+- id: plateau.technical_report.0089
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 61
+  representations:
+    human: 'PLATEAU Technical Report #61'
+    urn: urn:plateau:tr:61
+  style: v3
+- id: plateau.technical_report.0090
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 62
+  representations:
+    human: 'PLATEAU Technical Report #62'
+    urn: urn:plateau:tr:62
+  style: v3
+- id: plateau.technical_report.0091
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 63
+  representations:
+    human: 'PLATEAU Technical Report #63'
+    urn: urn:plateau:tr:63
+  style: v3
+- id: plateau.technical_report.0092
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 66
+  representations:
+    human: 'PLATEAU Technical Report #66'
+    urn: urn:plateau:tr:66
+  style: v3
+- id: plateau.technical_report.0093
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 67
+  representations:
+    human: 'PLATEAU Technical Report #67'
+    urn: urn:plateau:tr:67
+  style: v3
+- id: plateau.technical_report.0094
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 68
+  representations:
+    human: 'PLATEAU Technical Report #68'
+    urn: urn:plateau:tr:68
+  style: v3
+- id: plateau.technical_report.0095
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 69
+  representations:
+    human: 'PLATEAU Technical Report #69'
+    urn: urn:plateau:tr:69
+  style: v3
+- id: plateau.technical_report.0096
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 70
+  representations:
+    human: 'PLATEAU Technical Report #70'
+    urn: urn:plateau:tr:70
+  style: v3
+- id: plateau.technical_report.0097
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 71
+  representations:
+    human: 'PLATEAU Technical Report #71'
+    urn: urn:plateau:tr:71
+  style: v3
+- id: plateau.technical_report.0098
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 72
+  representations:
+    human: 'PLATEAU Technical Report #72'
+    urn: urn:plateau:tr:72
+  style: v3
+- id: plateau.technical_report.0099
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 73
+  representations:
+    human: 'PLATEAU Technical Report #73'
+    urn: urn:plateau:tr:73
+  style: v3
+- id: plateau.technical_report.0100
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 74
+  representations:
+    human: 'PLATEAU Technical Report #74'
+    urn: urn:plateau:tr:74
+  style: v3
+- id: plateau.technical_report.0101
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 75
+  representations:
+    human: 'PLATEAU Technical Report #75'
+    urn: urn:plateau:tr:75
+  style: v3
+- id: plateau.technical_report.0102
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 76
+  representations:
+    human: 'PLATEAU Technical Report #76'
+    urn: urn:plateau:tr:76
+  style: v3
+- id: plateau.technical_report.0103
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 77
+  representations:
+    human: 'PLATEAU Technical Report #77'
+    urn: urn:plateau:tr:77
+  style: v3
+- id: plateau.technical_report.0104
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 78
+  representations:
+    human: 'PLATEAU Technical Report #78'
+    urn: urn:plateau:tr:78
+  style: v3
+- id: plateau.technical_report.0105
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 79
+  representations:
+    human: 'PLATEAU Technical Report #79'
+    urn: urn:plateau:tr:79
+  style: v3
+- id: plateau.technical_report.0106
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 80
+  representations:
+    human: 'PLATEAU Technical Report #80'
+    urn: urn:plateau:tr:80
+  style: v3
+- id: plateau.technical_report.0107
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 81
+  representations:
+    human: 'PLATEAU Technical Report #81'
+    urn: urn:plateau:tr:81
+  style: v3
+- id: plateau.technical_report.0108
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 82
+  representations:
+    human: 'PLATEAU Technical Report #82'
+    urn: urn:plateau:tr:82
+  style: v3
+- id: plateau.technical_report.0109
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 83
+  representations:
+    human: 'PLATEAU Technical Report #83'
+    urn: urn:plateau:tr:83
+  style: v3
+- id: plateau.technical_report.0110
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 84
+  representations:
+    human: 'PLATEAU Technical Report #84'
+    urn: urn:plateau:tr:84
+  style: v3
+- id: plateau.technical_report.0111
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 85
+  representations:
+    human: 'PLATEAU Technical Report #85'
+    urn: urn:plateau:tr:85
+  style: v3
+- id: plateau.technical_report.0112
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 86
+  representations:
+    human: 'PLATEAU Technical Report #86'
+    urn: urn:plateau:tr:86
+  style: v3
+- id: plateau.technical_report.0113
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 87
+  representations:
+    human: 'PLATEAU Technical Report #87'
+    urn: urn:plateau:tr:87
+  style: v3
+- id: plateau.technical_report.0114
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 88
+  representations:
+    human: 'PLATEAU Technical Report #88'
+    urn: urn:plateau:tr:88
+  style: v3
+- id: plateau.technical_report.0115
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 90
+  representations:
+    human: 'PLATEAU Technical Report #90'
+    urn: urn:plateau:tr:90
+  style: v3
+- id: plateau.technical_report.0116
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 91
+  representations:
+    human: 'PLATEAU Technical Report #91'
+    urn: urn:plateau:tr:91
+  style: v3
+- id: plateau.technical_report.0117
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 92
+  representations:
+    human: 'PLATEAU Technical Report #92'
+    urn: urn:plateau:tr:92
+  style: v3
+- id: plateau.technical_report.0118
+  identifier:
+    _type: pubid:plateau:technical-report
+    number: 93
+  representations:
+    human: 'PLATEAU Technical Report #93'
+    urn: urn:plateau:tr:93
+  style: v3

@@ -1,0 +1,9 @@
+---
+clean: true
+known_mismatches: 0
+known_schema_errors: 0
+notes: >-
+  Fixed (pubid PR: Type-instance defaults replace raw Symbol defaults;
+  lutaml materializes attribute defaults during from_hash and casting a
+  Symbol into Components::Type raised InvalidFormatError - same shape
+  latent in all six IDF classes). pubid/pubid#383.
