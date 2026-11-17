@@ -1,0 +1,10 @@
+---
+- id: jis.welding_engineering_technical_report.10573
+  identifier:
+    _type: pubid:jis:welding-engineering-technical-report
+    number: '2032'
+    year: 2024
+  representations:
+    human: WES TR 2032:2024
+    urn: urn:jis:WES TR 2032:2024
+  style: v3

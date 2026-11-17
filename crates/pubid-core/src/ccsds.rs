@@ -266,7 +266,7 @@ fn build(bound: &Value) -> CcsdsIdentifier {
 
 #[cfg(test)]
 mod tests {
-    use super::CcsdsIdentifier;
+    use super::{CcsdsIdentifier, CcsdsKind};
     use serde_json::json;
 
     #[test]
