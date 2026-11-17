@@ -255,7 +255,6 @@ fn optional_capture<'a>(bound: &'a Value, name: &str) -> Option<&'a str> {
 #[cfg(test)]
 mod tests {
     use super::AmcaIdentifier;
-    use serde_json::json;
 
     #[test]
     fn standard_renders_title_year_and_reaffirmation() {

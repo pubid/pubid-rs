@@ -1,0 +1,6297 @@
+---
+- id: ecma.standard.0135
+  identifier:
+    _type: pubid:ecma:standard
+    number: '100'
+  representations:
+    human: ECMA-100
+    urn: urn:ecma:100
+  style: v3
+- id: ecma.standard.0136
+  identifier:
+    _type: pubid:ecma:standard
+    number: '100'
+    edition: '1'
+  representations:
+    human: ECMA-100 ed1
+    urn: urn:ecma:100:ed-1
+  style: v3
+- id: ecma.standard.0137
+  identifier:
+    _type: pubid:ecma:standard
+    number: '100'
+    edition: '2'
+  representations:
+    human: ECMA-100 ed2
+    urn: urn:ecma:100:ed-2
+  style: v3
+- id: ecma.standard.0138
+  identifier:
+    _type: pubid:ecma:standard
+    number: '106'
+    edition: '1'
+  representations:
+    human: ECMA-106 ed1
+    urn: urn:ecma:106:ed-1
+  style: v3
+- id: ecma.standard.0139
+  identifier:
+    _type: pubid:ecma:standard
+    number: '106'
+    edition: '2'
+  representations:
+    human: ECMA-106 ed2
+    urn: urn:ecma:106:ed-2
+  style: v3
+- id: ecma.standard.0140
+  identifier:
+    _type: pubid:ecma:standard
+    number: '106'
+    edition: '3'
+  representations:
+    human: ECMA-106 ed3
+    urn: urn:ecma:106:ed-3
+  style: v3
+- id: ecma.standard.0141
+  identifier:
+    _type: pubid:ecma:standard
+    number: '107'
+    edition: '1'
+  representations:
+    human: ECMA-107 ed1
+    urn: urn:ecma:107:ed-1
+  style: v3
+- id: ecma.standard.0142
+  identifier:
+    _type: pubid:ecma:standard
+    number: '107'
+    edition: '2'
+  representations:
+    human: ECMA-107 ed2
+    urn: urn:ecma:107:ed-2
+  style: v3
+- id: ecma.standard.0143
+  identifier:
+    _type: pubid:ecma:standard
+    number: '108'
+    edition: '1'
+  representations:
+    human: ECMA-108 ed1
+    urn: urn:ecma:108:ed-1
+  style: v3
+- id: ecma.standard.0144
+  identifier:
+    _type: pubid:ecma:standard
+    number: '108'
+    edition: '2'
+  representations:
+    human: ECMA-108 ed2
+    urn: urn:ecma:108:ed-2
+  style: v3
+- id: ecma.standard.0145
+  identifier:
+    _type: pubid:ecma:standard
+    number: '108'
+    edition: '3'
+  representations:
+    human: ECMA-108 ed3
+    urn: urn:ecma:108:ed-3
+  style: v3
+- id: ecma.standard.0146
+  identifier:
+    _type: pubid:ecma:standard
+    number: '108'
+    edition: '4'
+  representations:
+    human: ECMA-108 ed4
+    urn: urn:ecma:108:ed-4
+  style: v3
+- id: ecma.standard.0147
+  identifier:
+    _type: pubid:ecma:standard
+    number: '108'
+    edition: '5'
+  representations:
+    human: ECMA-108 ed5
+    urn: urn:ecma:108:ed-5
+  style: v3
+- id: ecma.standard.0148
+  identifier:
+    _type: pubid:ecma:standard
+    number: '108'
+    edition: '6'
+  representations:
+    human: ECMA-108 ed6
+    urn: urn:ecma:108:ed-6
+  style: v3
+- id: ecma.standard.0149
+  identifier:
+    _type: pubid:ecma:standard
+    number: '109'
+    edition: '1'
+  representations:
+    human: ECMA-109 ed1
+    urn: urn:ecma:109:ed-1
+  style: v3
+- id: ecma.standard.0150
+  identifier:
+    _type: pubid:ecma:standard
+    number: '109'
+    edition: '10'
+  representations:
+    human: ECMA-109 ed10
+    urn: urn:ecma:109:ed-10
+  style: v3
+- id: ecma.standard.0151
+  identifier:
+    _type: pubid:ecma:standard
+    number: '109'
+    edition: '11'
+  representations:
+    human: ECMA-109 ed11
+    urn: urn:ecma:109:ed-11
+  style: v3
+- id: ecma.standard.0152
+  identifier:
+    _type: pubid:ecma:standard
+    number: '109'
+    edition: '2'
+  representations:
+    human: ECMA-109 ed2
+    urn: urn:ecma:109:ed-2
+  style: v3
+- id: ecma.standard.0153
+  identifier:
+    _type: pubid:ecma:standard
+    number: '109'
+    edition: '3'
+  representations:
+    human: ECMA-109 ed3
+    urn: urn:ecma:109:ed-3
+  style: v3
+- id: ecma.standard.0154
+  identifier:
+    _type: pubid:ecma:standard
+    number: '109'
+    edition: '4'
+  representations:
+    human: ECMA-109 ed4
+    urn: urn:ecma:109:ed-4
+  style: v3
+- id: ecma.standard.0155
+  identifier:
+    _type: pubid:ecma:standard
+    number: '109'
+    edition: '5'
+  representations:
+    human: ECMA-109 ed5
+    urn: urn:ecma:109:ed-5
+  style: v3
+- id: ecma.standard.0156
+  identifier:
+    _type: pubid:ecma:standard
+    number: '109'
+    edition: '6'
+  representations:
+    human: ECMA-109 ed6
+    urn: urn:ecma:109:ed-6
+  style: v3
+- id: ecma.standard.0157
+  identifier:
+    _type: pubid:ecma:standard
+    number: '109'
+    edition: '7'
+  representations:
+    human: ECMA-109 ed7
+    urn: urn:ecma:109:ed-7
+  style: v3
+- id: ecma.standard.0158
+  identifier:
+    _type: pubid:ecma:standard
+    number: '109'
+    edition: '8'
+  representations:
+    human: ECMA-109 ed8
+    urn: urn:ecma:109:ed-8
+  style: v3
+- id: ecma.standard.0159
+  identifier:
+    _type: pubid:ecma:standard
+    number: '109'
+    edition: '9'
+  representations:
+    human: ECMA-109 ed9
+    urn: urn:ecma:109:ed-9
+  style: v3
+- id: ecma.standard.0160
+  identifier:
+    _type: pubid:ecma:standard
+    number: '113'
+    edition: '1'
+  representations:
+    human: ECMA-113 ed1
+    urn: urn:ecma:113:ed-1
+  style: v3
+- id: ecma.standard.0161
+  identifier:
+    _type: pubid:ecma:standard
+    number: '113'
+    edition: '2'
+  representations:
+    human: ECMA-113 ed2
+    urn: urn:ecma:113:ed-2
+  style: v3
+- id: ecma.standard.0162
+  identifier:
+    _type: pubid:ecma:standard
+    number: '113'
+    edition: '3'
+  representations:
+    human: ECMA-113 ed3
+    urn: urn:ecma:113:ed-3
+  style: v3
+- id: ecma.standard.0163
+  identifier:
+    _type: pubid:ecma:standard
+    number: '114'
+    edition: '1'
+  representations:
+    human: ECMA-114 ed1
+    urn: urn:ecma:114:ed-1
+  style: v3
+- id: ecma.standard.0164
+  identifier:
+    _type: pubid:ecma:standard
+    number: '114'
+    edition: '2'
+  representations:
+    human: ECMA-114 ed2
+    urn: urn:ecma:114:ed-2
+  style: v3
+- id: ecma.standard.0165
+  identifier:
+    _type: pubid:ecma:standard
+    number: '118'
+    edition: '1'
+  representations:
+    human: ECMA-118 ed1
+    urn: urn:ecma:118:ed-1
+  style: v3
+- id: ecma.standard.0166
+  identifier:
+    _type: pubid:ecma:standard
+    number: '119'
+  representations:
+    human: ECMA-119
+    urn: urn:ecma:119
+  style: v3
+- id: ecma.standard.0167
+  identifier:
+    _type: pubid:ecma:standard
+    number: '119'
+    edition: '1'
+  representations:
+    human: ECMA-119 ed1
+    urn: urn:ecma:119:ed-1
+  style: v3
+- id: ecma.standard.0168
+  identifier:
+    _type: pubid:ecma:standard
+    number: '119'
+    edition: '2'
+  representations:
+    human: ECMA-119 ed2
+    urn: urn:ecma:119:ed-2
+  style: v3
+- id: ecma.standard.0169
+  identifier:
+    _type: pubid:ecma:standard
+    number: '119'
+    edition: '3'
+  representations:
+    human: ECMA-119 ed3
+    urn: urn:ecma:119:ed-3
+  style: v3
+- id: ecma.standard.0170
+  identifier:
+    _type: pubid:ecma:standard
+    number: '119'
+    edition: '4'
+  representations:
+    human: ECMA-119 ed4
+    urn: urn:ecma:119:ed-4
+  style: v3
+- id: ecma.standard.0171
+  identifier:
+    _type: pubid:ecma:standard
+    number: '119'
+    edition: '5'
+  representations:
+    human: ECMA-119 ed5
+    urn: urn:ecma:119:ed-5
+  style: v3
+- id: ecma.standard.0172
+  identifier:
+    _type: pubid:ecma:standard
+    number: '119'
+    edition: '6'
+  representations:
+    human: ECMA-119 ed6
+    urn: urn:ecma:119:ed-6
+  style: v3
+- id: ecma.standard.0173
+  identifier:
+    _type: pubid:ecma:standard
+    number: '120'
+    edition: '1'
+  representations:
+    human: ECMA-120 ed1
+    urn: urn:ecma:120:ed-1
+  style: v3
+- id: ecma.standard.0174
+  identifier:
+    _type: pubid:ecma:standard
+    number: '120'
+    edition: '2'
+  representations:
+    human: ECMA-120 ed2
+    urn: urn:ecma:120:ed-2
+  style: v3
+- id: ecma.standard.0175
+  identifier:
+    _type: pubid:ecma:standard
+    number: '120'
+    edition: '3'
+  representations:
+    human: ECMA-120 ed3
+    urn: urn:ecma:120:ed-3
+  style: v3
+- id: ecma.standard.0176
+  identifier:
+    _type: pubid:ecma:standard
+    number: '121'
+    edition: '1'
+  representations:
+    human: ECMA-121 ed1
+    urn: urn:ecma:121:ed-1
+  style: v3
+- id: ecma.standard.0177
+  identifier:
+    _type: pubid:ecma:standard
+    number: '121'
+    edition: '2'
+  representations:
+    human: ECMA-121 ed2
+    urn: urn:ecma:121:ed-2
+  style: v3
+- id: ecma.standard.0178
+  identifier:
+    _type: pubid:ecma:standard
+    number: '125'
+    edition: '1'
+  representations:
+    human: ECMA-125 ed1
+    urn: urn:ecma:125:ed-1
+  style: v3
+- id: ecma.standard.0179
+  identifier:
+    _type: pubid:ecma:standard
+    number: '128'
+    edition: '1'
+  representations:
+    human: ECMA-128 ed1
+    urn: urn:ecma:128:ed-1
+  style: v3
+- id: ecma.standard.0180
+  identifier:
+    _type: pubid:ecma:standard
+    number: '128'
+    edition: '2'
+  representations:
+    human: ECMA-128 ed2
+    urn: urn:ecma:128:ed-2
+  style: v3
+- id: ecma.standard.0181
+  identifier:
+    _type: pubid:ecma:standard
+    number: '13'
+  representations:
+    human: ECMA-13
+    urn: urn:ecma:13
+  style: v3
+- id: ecma.standard.0182
+  identifier:
+    _type: pubid:ecma:standard
+    number: '13'
+    edition: '1'
+  representations:
+    human: ECMA-13 ed1
+    urn: urn:ecma:13:ed-1
+  style: v3
+- id: ecma.standard.0183
+  identifier:
+    _type: pubid:ecma:standard
+    number: '13'
+    edition: '2'
+  representations:
+    human: ECMA-13 ed2
+    urn: urn:ecma:13:ed-2
+  style: v3
+- id: ecma.standard.0184
+  identifier:
+    _type: pubid:ecma:standard
+    number: '13'
+    edition: '3'
+  representations:
+    human: ECMA-13 ed3
+    urn: urn:ecma:13:ed-3
+  style: v3
+- id: ecma.standard.0185
+  identifier:
+    _type: pubid:ecma:standard
+    number: '13'
+    edition: '4'
+  representations:
+    human: ECMA-13 ed4
+    urn: urn:ecma:13:ed-4
+  style: v3
+- id: ecma.standard.0186
+  identifier:
+    _type: pubid:ecma:standard
+    number: '130'
+  representations:
+    human: ECMA-130
+    urn: urn:ecma:130
+  style: v3
+- id: ecma.standard.0187
+  identifier:
+    _type: pubid:ecma:standard
+    number: '130'
+    edition: '1'
+  representations:
+    human: ECMA-130 ed1
+    urn: urn:ecma:130:ed-1
+  style: v3
+- id: ecma.standard.0188
+  identifier:
+    _type: pubid:ecma:standard
+    number: '130'
+    edition: '2'
+  representations:
+    human: ECMA-130 ed2
+    urn: urn:ecma:130:ed-2
+  style: v3
+- id: ecma.standard.0189
+  identifier:
+    _type: pubid:ecma:standard
+    number: '133'
+    edition: '1'
+  representations:
+    human: ECMA-133 ed1
+    urn: urn:ecma:133:ed-1
+  style: v3
+- id: ecma.standard.0190
+  identifier:
+    _type: pubid:ecma:standard
+    number: '133'
+    edition: '2'
+  representations:
+    human: ECMA-133 ed2
+    urn: urn:ecma:133:ed-2
+  style: v3
+- id: ecma.standard.0191
+  identifier:
+    _type: pubid:ecma:standard
+    number: '139'
+    edition: '1'
+  representations:
+    human: ECMA-139 ed1
+    urn: urn:ecma:139:ed-1
+  style: v3
+- id: ecma.standard.0192
+  identifier:
+    _type: pubid:ecma:standard
+    number: '142'
+    edition: '1'
+  representations:
+    human: ECMA-142 ed1
+    urn: urn:ecma:142:ed-1
+  style: v3
+- id: ecma.standard.0193
+  identifier:
+    _type: pubid:ecma:standard
+    number: '142'
+    edition: '2'
+  representations:
+    human: ECMA-142 ed2
+    urn: urn:ecma:142:ed-2
+  style: v3
+- id: ecma.standard.0194
+  identifier:
+    _type: pubid:ecma:standard
+    number: '142'
+    edition: '3'
+  representations:
+    human: ECMA-142 ed3
+    urn: urn:ecma:142:ed-3
+  style: v3
+- id: ecma.standard.0195
+  identifier:
+    _type: pubid:ecma:standard
+    number: '143'
+    edition: '2'
+  representations:
+    human: ECMA-143 ed2
+    urn: urn:ecma:143:ed-2
+  style: v3
+- id: ecma.standard.0196
+  identifier:
+    _type: pubid:ecma:standard
+    number: '143'
+    edition: '3'
+  representations:
+    human: ECMA-143 ed3
+    urn: urn:ecma:143:ed-3
+  style: v3
+- id: ecma.standard.0197
+  identifier:
+    _type: pubid:ecma:standard
+    number: '143'
+    edition: '4'
+  representations:
+    human: ECMA-143 ed4
+    urn: urn:ecma:143:ed-4
+  style: v3
+- id: ecma.standard.0198
+  identifier:
+    _type: pubid:ecma:standard
+    number: '144'
+    edition: '1'
+  representations:
+    human: ECMA-144 ed1
+    urn: urn:ecma:144:ed-1
+  style: v3
+- id: ecma.standard.0199
+  identifier:
+    _type: pubid:ecma:standard
+    number: '144'
+    edition: '2'
+  representations:
+    human: ECMA-144 ed2
+    urn: urn:ecma:144:ed-2
+  style: v3
+- id: ecma.standard.0200
+  identifier:
+    _type: pubid:ecma:standard
+    number: '144'
+    edition: '3'
+  representations:
+    human: ECMA-144 ed3
+    urn: urn:ecma:144:ed-3
+  style: v3
+- id: ecma.standard.0201
+  identifier:
+    _type: pubid:ecma:standard
+    number: '145'
+    edition: '1'
+  representations:
+    human: ECMA-145 ed1
+    urn: urn:ecma:145:ed-1
+  style: v3
+- id: ecma.standard.0202
+  identifier:
+    _type: pubid:ecma:standard
+    number: '146'
+    edition: '1'
+  representations:
+    human: ECMA-146 ed1
+    urn: urn:ecma:146:ed-1
+  style: v3
+- id: ecma.standard.0203
+  identifier:
+    _type: pubid:ecma:standard
+    number: '147'
+    edition: '1'
+  representations:
+    human: ECMA-147 ed1
+    urn: urn:ecma:147:ed-1
+  style: v3
+- id: ecma.standard.0204
+  identifier:
+    _type: pubid:ecma:standard
+    number: '148'
+    edition: '1'
+  representations:
+    human: ECMA-148 ed1
+    urn: urn:ecma:148:ed-1
+  style: v3
+- id: ecma.standard.0205
+  identifier:
+    _type: pubid:ecma:standard
+    number: '148'
+    edition: '2'
+  representations:
+    human: ECMA-148 ed2
+    urn: urn:ecma:148:ed-2
+  style: v3
+- id: ecma.standard.0206
+  identifier:
+    _type: pubid:ecma:standard
+    number: '148'
+    edition: '3'
+  representations:
+    human: ECMA-148 ed3
+    urn: urn:ecma:148:ed-3
+  style: v3
+- id: ecma.standard.0207
+  identifier:
+    _type: pubid:ecma:standard
+    number: '149'
+    edition: '4'
+  representations:
+    human: ECMA-149 ed4
+    urn: urn:ecma:149:ed-4
+  style: v3
+- id: ecma.standard.0208
+  identifier:
+    _type: pubid:ecma:standard
+    number: '150'
+    edition: '1'
+  representations:
+    human: ECMA-150 ed1
+    urn: urn:ecma:150:ed-1
+  style: v3
+- id: ecma.standard.0209
+  identifier:
+    _type: pubid:ecma:standard
+    number: '150'
+    edition: '2'
+  representations:
+    human: ECMA-150 ed2
+    urn: urn:ecma:150:ed-2
+  style: v3
+- id: ecma.standard.0210
+  identifier:
+    _type: pubid:ecma:standard
+    number: '151'
+    edition: '1'
+  representations:
+    human: ECMA-151 ed1
+    urn: urn:ecma:151:ed-1
+  style: v3
+- id: ecma.standard.0211
+  identifier:
+    _type: pubid:ecma:standard
+    number: '152'
+    edition: '1'
+  representations:
+    human: ECMA-152 ed1
+    urn: urn:ecma:152:ed-1
+  style: v3
+- id: ecma.standard.0212
+  identifier:
+    _type: pubid:ecma:standard
+    number: '152'
+    edition: '2'
+  representations:
+    human: ECMA-152 ed2
+    urn: urn:ecma:152:ed-2
+  style: v3
+- id: ecma.standard.0213
+  identifier:
+    _type: pubid:ecma:standard
+    number: '153'
+    edition: '1'
+  representations:
+    human: ECMA-153 ed1
+    urn: urn:ecma:153:ed-1
+  style: v3
+- id: ecma.standard.0214
+  identifier:
+    _type: pubid:ecma:standard
+    number: '153'
+    edition: '2'
+  representations:
+    human: ECMA-153 ed2
+    urn: urn:ecma:153:ed-2
+  style: v3
+- id: ecma.standard.0215
+  identifier:
+    _type: pubid:ecma:standard
+    number: '154'
+    edition: '1'
+  representations:
+    human: ECMA-154 ed1
+    urn: urn:ecma:154:ed-1
+  style: v3
+- id: ecma.standard.0216
+  identifier:
+    _type: pubid:ecma:standard
+    number: '154'
+    edition: '2'
+  representations:
+    human: ECMA-154 ed2
+    urn: urn:ecma:154:ed-2
+  style: v3
+- id: ecma.standard.0217
+  identifier:
+    _type: pubid:ecma:standard
+    number: '155'
+    edition: '1'
+  representations:
+    human: ECMA-155 ed1
+    urn: urn:ecma:155:ed-1
+  style: v3
+- id: ecma.standard.0218
+  identifier:
+    _type: pubid:ecma:standard
+    number: '155'
+    edition: '2'
+  representations:
+    human: ECMA-155 ed2
+    urn: urn:ecma:155:ed-2
+  style: v3
+- id: ecma.standard.0219
+  identifier:
+    _type: pubid:ecma:standard
+    number: '156'
+    edition: '1'
+  representations:
+    human: ECMA-156 ed1
+    urn: urn:ecma:156:ed-1
+  style: v3
+- id: ecma.standard.0220
+  identifier:
+    _type: pubid:ecma:standard
+    number: '156'
+    edition: '2'
+  representations:
+    human: ECMA-156 ed2
+    urn: urn:ecma:156:ed-2
+  style: v3
+- id: ecma.standard.0221
+  identifier:
+    _type: pubid:ecma:standard
+    number: '157'
+    edition: '1'
+  representations:
+    human: ECMA-157 ed1
+    urn: urn:ecma:157:ed-1
+  style: v3
+- id: ecma.standard.0222
+  identifier:
+    _type: pubid:ecma:standard
+    number: '157'
+    edition: '2'
+  representations:
+    human: ECMA-157 ed2
+    urn: urn:ecma:157:ed-2
+  style: v3
+- id: ecma.standard.0223
+  identifier:
+    _type: pubid:ecma:standard
+    number: '158'
+    edition: '1'
+  representations:
+    human: ECMA-158 ed1
+    urn: urn:ecma:158:ed-1
+  style: v3
+- id: ecma.standard.0224
+  identifier:
+    _type: pubid:ecma:standard
+    number: '158'
+    edition: '2'
+  representations:
+    human: ECMA-158 ed2
+    urn: urn:ecma:158:ed-2
+  style: v3
+- id: ecma.standard.0225
+  identifier:
+    _type: pubid:ecma:standard
+    number: '158'
+    edition: '3'
+  representations:
+    human: ECMA-158 ed3
+    urn: urn:ecma:158:ed-3
+  style: v3
+- id: ecma.standard.0226
+  identifier:
+    _type: pubid:ecma:standard
+    number: '158'
+    edition: '4'
+  representations:
+    human: ECMA-158 ed4
+    urn: urn:ecma:158:ed-4
+  style: v3
+- id: ecma.standard.0227
+  identifier:
+    _type: pubid:ecma:standard
+    number: '159'
+    edition: '1'
+  representations:
+    human: ECMA-159 ed1
+    urn: urn:ecma:159:ed-1
+  style: v3
+- id: ecma.standard.0228
+  identifier:
+    _type: pubid:ecma:standard
+    number: '160'
+    edition: '1'
+  representations:
+    human: ECMA-160 ed1
+    urn: urn:ecma:160:ed-1
+  style: v3
+- id: ecma.standard.0229
+  identifier:
+    _type: pubid:ecma:standard
+    number: '160'
+    edition: '2'
+  representations:
+    human: ECMA-160 ed2
+    urn: urn:ecma:160:ed-2
+  style: v3
+- id: ecma.standard.0230
+  identifier:
+    _type: pubid:ecma:standard
+    number: '161'
+    edition: '1'
+  representations:
+    human: ECMA-161 ed1
+    urn: urn:ecma:161:ed-1
+  style: v3
+- id: ecma.standard.0231
+  identifier:
+    _type: pubid:ecma:standard
+    number: '161'
+    edition: '2'
+  representations:
+    human: ECMA-161 ed2
+    urn: urn:ecma:161:ed-2
+  style: v3
+- id: ecma.standard.0232
+  identifier:
+    _type: pubid:ecma:standard
+    number: '162'
+    edition: '1'
+  representations:
+    human: ECMA-162 ed1
+    urn: urn:ecma:162:ed-1
+  style: v3
+- id: ecma.standard.0233
+  identifier:
+    _type: pubid:ecma:standard
+    number: '162'
+    edition: '2'
+  representations:
+    human: ECMA-162 ed2
+    urn: urn:ecma:162:ed-2
+  style: v3
+- id: ecma.standard.0234
+  identifier:
+    _type: pubid:ecma:standard
+    number: '162'
+    edition: '3'
+  representations:
+    human: ECMA-162 ed3
+    urn: urn:ecma:162:ed-3
+  style: v3
+- id: ecma.standard.0235
+  identifier:
+    _type: pubid:ecma:standard
+    number: '162'
+    edition: '4'
+  representations:
+    human: ECMA-162 ed4
+    urn: urn:ecma:162:ed-4
+  style: v3
+- id: ecma.standard.0236
+  identifier:
+    _type: pubid:ecma:standard
+    number: '163'
+    edition: '1'
+  representations:
+    human: ECMA-163 ed1
+    urn: urn:ecma:163:ed-1
+  style: v3
+- id: ecma.standard.0237
+  identifier:
+    _type: pubid:ecma:standard
+    number: '163'
+    edition: '2'
+  representations:
+    human: ECMA-163 ed2
+    urn: urn:ecma:163:ed-2
+  style: v3
+- id: ecma.standard.0238
+  identifier:
+    _type: pubid:ecma:standard
+    number: '163'
+    edition: '3'
+  representations:
+    human: ECMA-163 ed3
+    urn: urn:ecma:163:ed-3
+  style: v3
+- id: ecma.standard.0239
+  identifier:
+    _type: pubid:ecma:standard
+    number: '164'
+    edition: '1'
+  representations:
+    human: ECMA-164 ed1
+    urn: urn:ecma:164:ed-1
+  style: v3
+- id: ecma.standard.0240
+  identifier:
+    _type: pubid:ecma:standard
+    number: '164'
+    edition: '2'
+  representations:
+    human: ECMA-164 ed2
+    urn: urn:ecma:164:ed-2
+  style: v3
+- id: ecma.standard.0241
+  identifier:
+    _type: pubid:ecma:standard
+    number: '164'
+    edition: '3'
+  representations:
+    human: ECMA-164 ed3
+    urn: urn:ecma:164:ed-3
+  style: v3
+- id: ecma.standard.0242
+  identifier:
+    _type: pubid:ecma:standard
+    number: '164'
+    edition: '4'
+  representations:
+    human: ECMA-164 ed4
+    urn: urn:ecma:164:ed-4
+  style: v3
+- id: ecma.standard.0243
+  identifier:
+    _type: pubid:ecma:standard
+    number: '165'
+    edition: '1'
+  representations:
+    human: ECMA-165 ed1
+    urn: urn:ecma:165:ed-1
+  style: v3
+- id: ecma.standard.0244
+  identifier:
+    _type: pubid:ecma:standard
+    number: '165'
+    edition: '2'
+  representations:
+    human: ECMA-165 ed2
+    urn: urn:ecma:165:ed-2
+  style: v3
+- id: ecma.standard.0245
+  identifier:
+    _type: pubid:ecma:standard
+    number: '165'
+    edition: '3'
+  representations:
+    human: ECMA-165 ed3
+    urn: urn:ecma:165:ed-3
+  style: v3
+- id: ecma.standard.0246
+  identifier:
+    _type: pubid:ecma:standard
+    number: '165'
+    edition: '4'
+  representations:
+    human: ECMA-165 ed4
+    urn: urn:ecma:165:ed-4
+  style: v3
+- id: ecma.standard.0247
+  identifier:
+    _type: pubid:ecma:standard
+    number: '167'
+  representations:
+    human: ECMA-167
+    urn: urn:ecma:167
+  style: v3
+- id: ecma.standard.0248
+  identifier:
+    _type: pubid:ecma:standard
+    number: '167'
+    edition: '1'
+  representations:
+    human: ECMA-167 ed1
+    urn: urn:ecma:167:ed-1
+  style: v3
+- id: ecma.standard.0249
+  identifier:
+    _type: pubid:ecma:standard
+    number: '167'
+    edition: '2'
+  representations:
+    human: ECMA-167 ed2
+    urn: urn:ecma:167:ed-2
+  style: v3
+- id: ecma.standard.0250
+  identifier:
+    _type: pubid:ecma:standard
+    number: '167'
+    edition: '3'
+  representations:
+    human: ECMA-167 ed3
+    urn: urn:ecma:167:ed-3
+  style: v3
+- id: ecma.standard.0251
+  identifier:
+    _type: pubid:ecma:standard
+    number: '168'
+    edition: '1'
+  representations:
+    human: ECMA-168 ed1
+    urn: urn:ecma:168:ed-1
+  style: v3
+- id: ecma.standard.0252
+  identifier:
+    _type: pubid:ecma:standard
+    number: '168'
+    edition: '2'
+  representations:
+    human: ECMA-168 ed2
+    urn: urn:ecma:168:ed-2
+  style: v3
+- id: ecma.standard.0253
+  identifier:
+    _type: pubid:ecma:standard
+    number: '169'
+    edition: '1'
+  representations:
+    human: ECMA-169 ed1
+    urn: urn:ecma:169:ed-1
+  style: v3
+- id: ecma.standard.0254
+  identifier:
+    _type: pubid:ecma:standard
+    number: '170'
+    edition: '1'
+  representations:
+    human: ECMA-170 ed1
+    urn: urn:ecma:170:ed-1
+  style: v3
+- id: ecma.standard.0255
+  identifier:
+    _type: pubid:ecma:standard
+    number: '171'
+    edition: '1'
+  representations:
+    human: ECMA-171 ed1
+    urn: urn:ecma:171:ed-1
+  style: v3
+- id: ecma.standard.0256
+  identifier:
+    _type: pubid:ecma:standard
+    number: '173'
+    edition: '1'
+  representations:
+    human: ECMA-173 ed1
+    urn: urn:ecma:173:ed-1
+  style: v3
+- id: ecma.standard.0257
+  identifier:
+    _type: pubid:ecma:standard
+    number: '173'
+    edition: '2'
+  representations:
+    human: ECMA-173 ed2
+    urn: urn:ecma:173:ed-2
+  style: v3
+- id: ecma.standard.0258
+  identifier:
+    _type: pubid:ecma:standard
+    number: '173'
+    edition: '3'
+  representations:
+    human: ECMA-173 ed3
+    urn: urn:ecma:173:ed-3
+  style: v3
+- id: ecma.standard.0259
+  identifier:
+    _type: pubid:ecma:standard
+    number: '174'
+    edition: '1'
+  representations:
+    human: ECMA-174 ed1
+    urn: urn:ecma:174:ed-1
+  style: v3
+- id: ecma.standard.0260
+  identifier:
+    _type: pubid:ecma:standard
+    number: '174'
+    edition: '2'
+  representations:
+    human: ECMA-174 ed2
+    urn: urn:ecma:174:ed-2
+  style: v3
+- id: ecma.standard.0261
+  identifier:
+    _type: pubid:ecma:standard
+    number: '174'
+    edition: '3'
+  representations:
+    human: ECMA-174 ed3
+    urn: urn:ecma:174:ed-3
+  style: v3
+- id: ecma.standard.0262
+  identifier:
+    _type: pubid:ecma:standard
+    number: '175'
+    edition: '1'
+  representations:
+    human: ECMA-175 ed1
+    urn: urn:ecma:175:ed-1
+  style: v3
+- id: ecma.standard.0263
+  identifier:
+    _type: pubid:ecma:standard
+    number: '175'
+    edition: '2'
+  representations:
+    human: ECMA-175 ed2
+    urn: urn:ecma:175:ed-2
+  style: v3
+- id: ecma.standard.0264
+  identifier:
+    _type: pubid:ecma:standard
+    number: '175'
+    edition: '3'
+  representations:
+    human: ECMA-175 ed3
+    urn: urn:ecma:175:ed-3
+  style: v3
+- id: ecma.standard.0265
+  identifier:
+    _type: pubid:ecma:standard
+    number: '176'
+    edition: '1'
+  representations:
+    human: ECMA-176 ed1
+    urn: urn:ecma:176:ed-1
+  style: v3
+- id: ecma.standard.0266
+  identifier:
+    _type: pubid:ecma:standard
+    number: '176'
+    edition: '2'
+  representations:
+    human: ECMA-176 ed2
+    urn: urn:ecma:176:ed-2
+  style: v3
+- id: ecma.standard.0267
+  identifier:
+    _type: pubid:ecma:standard
+    number: '176'
+    edition: '3'
+  representations:
+    human: ECMA-176 ed3
+    urn: urn:ecma:176:ed-3
+  style: v3
+- id: ecma.standard.0268
+  identifier:
+    _type: pubid:ecma:standard
+    number: '176'
+    edition: '4'
+  representations:
+    human: ECMA-176 ed4
+    urn: urn:ecma:176:ed-4
+  style: v3
+- id: ecma.standard.0269
+  identifier:
+    _type: pubid:ecma:standard
+    number: '177'
+    edition: '1'
+  representations:
+    human: ECMA-177 ed1
+    urn: urn:ecma:177:ed-1
+  style: v3
+- id: ecma.standard.0270
+  identifier:
+    _type: pubid:ecma:standard
+    number: '177'
+    edition: '2'
+  representations:
+    human: ECMA-177 ed2
+    urn: urn:ecma:177:ed-2
+  style: v3
+- id: ecma.standard.0271
+  identifier:
+    _type: pubid:ecma:standard
+    number: '177'
+    edition: '3'
+  representations:
+    human: ECMA-177 ed3
+    urn: urn:ecma:177:ed-3
+  style: v3
+- id: ecma.standard.0272
+  identifier:
+    _type: pubid:ecma:standard
+    number: '178'
+    edition: '1'
+  representations:
+    human: ECMA-178 ed1
+    urn: urn:ecma:178:ed-1
+  style: v3
+- id: ecma.standard.0273
+  identifier:
+    _type: pubid:ecma:standard
+    number: '178'
+    edition: '2'
+  representations:
+    human: ECMA-178 ed2
+    urn: urn:ecma:178:ed-2
+  style: v3
+- id: ecma.standard.0274
+  identifier:
+    _type: pubid:ecma:standard
+    number: '178'
+    edition: '3'
+  representations:
+    human: ECMA-178 ed3
+    urn: urn:ecma:178:ed-3
+  style: v3
+- id: ecma.standard.0275
+  identifier:
+    _type: pubid:ecma:standard
+    number: '179'
+    edition: '1'
+  representations:
+    human: ECMA-179 ed1
+    urn: urn:ecma:179:ed-1
+  style: v3
+- id: ecma.standard.0276
+  identifier:
+    _type: pubid:ecma:standard
+    number: '180'
+    edition: '1'
+  representations:
+    human: ECMA-180 ed1
+    urn: urn:ecma:180:ed-1
+  style: v3
+- id: ecma.standard.0277
+  identifier:
+    _type: pubid:ecma:standard
+    number: '182'
+    edition: '1'
+  representations:
+    human: ECMA-182 ed1
+    urn: urn:ecma:182:ed-1
+  style: v3
+- id: ecma.standard.0278
+  identifier:
+    _type: pubid:ecma:standard
+    number: '183'
+    edition: '1'
+  representations:
+    human: ECMA-183 ed1
+    urn: urn:ecma:183:ed-1
+  style: v3
+- id: ecma.standard.0279
+  identifier:
+    _type: pubid:ecma:standard
+    number: '184'
+    edition: '1'
+  representations:
+    human: ECMA-184 ed1
+    urn: urn:ecma:184:ed-1
+  style: v3
+- id: ecma.standard.0280
+  identifier:
+    _type: pubid:ecma:standard
+    number: '185'
+    edition: '1'
+  representations:
+    human: ECMA-185 ed1
+    urn: urn:ecma:185:ed-1
+  style: v3
+- id: ecma.standard.0281
+  identifier:
+    _type: pubid:ecma:standard
+    number: '185'
+    edition: '2'
+  representations:
+    human: ECMA-185 ed2
+    urn: urn:ecma:185:ed-2
+  style: v3
+- id: ecma.standard.0282
+  identifier:
+    _type: pubid:ecma:standard
+    number: '186'
+    edition: '1'
+  representations:
+    human: ECMA-186 ed1
+    urn: urn:ecma:186:ed-1
+  style: v3
+- id: ecma.standard.0283
+  identifier:
+    _type: pubid:ecma:standard
+    number: '186'
+    edition: '2'
+  representations:
+    human: ECMA-186 ed2
+    urn: urn:ecma:186:ed-2
+  style: v3
+- id: ecma.standard.0284
+  identifier:
+    _type: pubid:ecma:standard
+    number: '186'
+    edition: '3'
+  representations:
+    human: ECMA-186 ed3
+    urn: urn:ecma:186:ed-3
+  style: v3
+- id: ecma.standard.0285
+  identifier:
+    _type: pubid:ecma:standard
+    number: '186'
+    edition: '4'
+  representations:
+    human: ECMA-186 ed4
+    urn: urn:ecma:186:ed-4
+  style: v3
+- id: ecma.standard.0286
+  identifier:
+    _type: pubid:ecma:standard
+    number: '189'
+    edition: '1'
+  representations:
+    human: ECMA-189 ed1
+    urn: urn:ecma:189:ed-1
+  style: v3
+- id: ecma.standard.0287
+  identifier:
+    _type: pubid:ecma:standard
+    number: '190'
+    edition: '1'
+  representations:
+    human: ECMA-190 ed1
+    urn: urn:ecma:190:ed-1
+  style: v3
+- id: ecma.standard.0288
+  identifier:
+    _type: pubid:ecma:standard
+    number: '191'
+    edition: '1'
+  representations:
+    human: ECMA-191 ed1
+    urn: urn:ecma:191:ed-1
+  style: v3
+- id: ecma.standard.0289
+  identifier:
+    _type: pubid:ecma:standard
+    number: '191'
+    edition: '2'
+  representations:
+    human: ECMA-191 ed2
+    urn: urn:ecma:191:ed-2
+  style: v3
+- id: ecma.standard.0290
+  identifier:
+    _type: pubid:ecma:standard
+    number: '192'
+    edition: '1'
+  representations:
+    human: ECMA-192 ed1
+    urn: urn:ecma:192:ed-1
+  style: v3
+- id: ecma.standard.0291
+  identifier:
+    _type: pubid:ecma:standard
+    number: '192'
+    edition: '2'
+  representations:
+    human: ECMA-192 ed2
+    urn: urn:ecma:192:ed-2
+  style: v3
+- id: ecma.standard.0292
+  identifier:
+    _type: pubid:ecma:standard
+    number: '192'
+    edition: '3'
+  representations:
+    human: ECMA-192 ed3
+    urn: urn:ecma:192:ed-3
+  style: v3
+- id: ecma.standard.0293
+  identifier:
+    _type: pubid:ecma:standard
+    number: '192'
+    edition: '4'
+  representations:
+    human: ECMA-192 ed4
+    urn: urn:ecma:192:ed-4
+  style: v3
+- id: ecma.standard.0294
+  identifier:
+    _type: pubid:ecma:standard
+    number: '193'
+    edition: '1'
+  representations:
+    human: ECMA-193 ed1
+    urn: urn:ecma:193:ed-1
+  style: v3
+- id: ecma.standard.0295
+  identifier:
+    _type: pubid:ecma:standard
+    number: '193'
+    edition: '2'
+  representations:
+    human: ECMA-193 ed2
+    urn: urn:ecma:193:ed-2
+  style: v3
+- id: ecma.standard.0296
+  identifier:
+    _type: pubid:ecma:standard
+    number: '194'
+    edition: '1'
+  representations:
+    human: ECMA-194 ed1
+    urn: urn:ecma:194:ed-1
+  style: v3
+- id: ecma.standard.0297
+  identifier:
+    _type: pubid:ecma:standard
+    number: '194'
+    edition: '2'
+  representations:
+    human: ECMA-194 ed2
+    urn: urn:ecma:194:ed-2
+  style: v3
+- id: ecma.standard.0298
+  identifier:
+    _type: pubid:ecma:standard
+    number: '194'
+    edition: '3'
+  representations:
+    human: ECMA-194 ed3
+    urn: urn:ecma:194:ed-3
+  style: v3
+- id: ecma.standard.0299
+  identifier:
+    _type: pubid:ecma:standard
+    number: '194'
+    edition: '4'
+  representations:
+    human: ECMA-194 ed4
+    urn: urn:ecma:194:ed-4
+  style: v3
+- id: ecma.standard.0300
+  identifier:
+    _type: pubid:ecma:standard
+    number: '195'
+    edition: '1'
+  representations:
+    human: ECMA-195 ed1
+    urn: urn:ecma:195:ed-1
+  style: v3
+- id: ecma.standard.0301
+  identifier:
+    _type: pubid:ecma:standard
+    number: '195'
+    edition: '2'
+  representations:
+    human: ECMA-195 ed2
+    urn: urn:ecma:195:ed-2
+  style: v3
+- id: ecma.standard.0302
+  identifier:
+    _type: pubid:ecma:standard
+    number: '196'
+    edition: '1'
+  representations:
+    human: ECMA-196 ed1
+    urn: urn:ecma:196:ed-1
+  style: v3
+- id: ecma.standard.0303
+  identifier:
+    _type: pubid:ecma:standard
+    number: '197'
+    edition: '1'
+  representations:
+    human: ECMA-197 ed1
+    urn: urn:ecma:197:ed-1
+  style: v3
+- id: ecma.standard.0304
+  identifier:
+    _type: pubid:ecma:standard
+    number: '198'
+    edition: '1'
+  representations:
+    human: ECMA-198 ed1
+    urn: urn:ecma:198:ed-1
+  style: v3
+- id: ecma.standard.0305
+  identifier:
+    _type: pubid:ecma:standard
+    number: '198'
+    edition: '2'
+  representations:
+    human: ECMA-198 ed2
+    urn: urn:ecma:198:ed-2
+  style: v3
+- id: ecma.standard.0306
+  identifier:
+    _type: pubid:ecma:standard
+    number: '201'
+    edition: '1'
+  representations:
+    human: ECMA-201 ed1
+    urn: urn:ecma:201:ed-1
+  style: v3
+- id: ecma.standard.0307
+  identifier:
+    _type: pubid:ecma:standard
+    number: '201'
+    edition: '2'
+  representations:
+    human: ECMA-201 ed2
+    urn: urn:ecma:201:ed-2
+  style: v3
+- id: ecma.standard.0308
+  identifier:
+    _type: pubid:ecma:standard
+    number: '202'
+    edition: '1'
+  representations:
+    human: ECMA-202 ed1
+    urn: urn:ecma:202:ed-1
+  style: v3
+- id: ecma.standard.0309
+  identifier:
+    _type: pubid:ecma:standard
+    number: '202'
+    edition: '2'
+  representations:
+    human: ECMA-202 ed2
+    urn: urn:ecma:202:ed-2
+  style: v3
+- id: ecma.standard.0310
+  identifier:
+    _type: pubid:ecma:standard
+    number: '203'
+    edition: '1'
+  representations:
+    human: ECMA-203 ed1
+    urn: urn:ecma:203:ed-1
+  style: v3
+- id: ecma.standard.0311
+  identifier:
+    _type: pubid:ecma:standard
+    number: '203'
+    edition: '2'
+  representations:
+    human: ECMA-203 ed2
+    urn: urn:ecma:203:ed-2
+  style: v3
+- id: ecma.standard.0312
+  identifier:
+    _type: pubid:ecma:standard
+    number: '203'
+    edition: '3'
+  representations:
+    human: ECMA-203 ed3
+    urn: urn:ecma:203:ed-3
+  style: v3
+- id: ecma.standard.0313
+  identifier:
+    _type: pubid:ecma:standard
+    number: '203'
+    edition: '4'
+  representations:
+    human: ECMA-203 ed4
+    urn: urn:ecma:203:ed-4
+  style: v3
+- id: ecma.standard.0314
+  identifier:
+    _type: pubid:ecma:standard
+    number: '205'
+    edition: '1'
+  representations:
+    human: ECMA-205 ed1
+    urn: urn:ecma:205:ed-1
+  style: v3
+- id: ecma.standard.0315
+  identifier:
+    _type: pubid:ecma:standard
+    number: '206'
+    edition: '1'
+  representations:
+    human: ECMA-206 ed1
+    urn: urn:ecma:206:ed-1
+  style: v3
+- id: ecma.standard.0316
+  identifier:
+    _type: pubid:ecma:standard
+    number: '207'
+    edition: '1'
+  representations:
+    human: ECMA-207 ed1
+    urn: urn:ecma:207:ed-1
+  style: v3
+- id: ecma.standard.0317
+  identifier:
+    _type: pubid:ecma:standard
+    number: '208'
+    edition: '1'
+  representations:
+    human: ECMA-208 ed1
+    urn: urn:ecma:208:ed-1
+  style: v3
+- id: ecma.standard.0318
+  identifier:
+    _type: pubid:ecma:standard
+    number: '209'
+    edition: '1'
+  representations:
+    human: ECMA-209 ed1
+    urn: urn:ecma:209:ed-1
+  style: v3
+- id: ecma.standard.0319
+  identifier:
+    _type: pubid:ecma:standard
+    number: '210'
+    edition: '1'
+  representations:
+    human: ECMA-210 ed1
+    urn: urn:ecma:210:ed-1
+  style: v3
+- id: ecma.standard.0320
+  identifier:
+    _type: pubid:ecma:standard
+    number: '210'
+    edition: '2'
+  representations:
+    human: ECMA-210 ed2
+    urn: urn:ecma:210:ed-2
+  style: v3
+- id: ecma.standard.0321
+  identifier:
+    _type: pubid:ecma:standard
+    number: '211'
+    edition: '1'
+  representations:
+    human: ECMA-211 ed1
+    urn: urn:ecma:211:ed-1
+  style: v3
+- id: ecma.standard.0322
+  identifier:
+    _type: pubid:ecma:standard
+    number: '211'
+    edition: '2'
+  representations:
+    human: ECMA-211 ed2
+    urn: urn:ecma:211:ed-2
+  style: v3
+- id: ecma.standard.0323
+  identifier:
+    _type: pubid:ecma:standard
+    number: '211'
+    edition: '3'
+  representations:
+    human: ECMA-211 ed3
+    urn: urn:ecma:211:ed-3
+  style: v3
+- id: ecma.standard.0324
+  identifier:
+    _type: pubid:ecma:standard
+    number: '212'
+    edition: '1'
+  representations:
+    human: ECMA-212 ed1
+    urn: urn:ecma:212:ed-1
+  style: v3
+- id: ecma.standard.0325
+  identifier:
+    _type: pubid:ecma:standard
+    number: '212'
+    edition: '2'
+  representations:
+    human: ECMA-212 ed2
+    urn: urn:ecma:212:ed-2
+  style: v3
+- id: ecma.standard.0326
+  identifier:
+    _type: pubid:ecma:standard
+    number: '212'
+    edition: '3'
+  representations:
+    human: ECMA-212 ed3
+    urn: urn:ecma:212:ed-3
+  style: v3
+- id: ecma.standard.0327
+  identifier:
+    _type: pubid:ecma:standard
+    number: '213'
+    edition: '1'
+  representations:
+    human: ECMA-213 ed1
+    urn: urn:ecma:213:ed-1
+  style: v3
+- id: ecma.standard.0328
+  identifier:
+    _type: pubid:ecma:standard
+    number: '213'
+    edition: '2'
+  representations:
+    human: ECMA-213 ed2
+    urn: urn:ecma:213:ed-2
+  style: v3
+- id: ecma.standard.0329
+  identifier:
+    _type: pubid:ecma:standard
+    number: '213'
+    edition: '3'
+  representations:
+    human: ECMA-213 ed3
+    urn: urn:ecma:213:ed-3
+  style: v3
+- id: ecma.standard.0330
+  identifier:
+    _type: pubid:ecma:standard
+    number: '214'
+    edition: '1'
+  representations:
+    human: ECMA-214 ed1
+    urn: urn:ecma:214:ed-1
+  style: v3
+- id: ecma.standard.0331
+  identifier:
+    _type: pubid:ecma:standard
+    number: '214'
+    edition: '2'
+  representations:
+    human: ECMA-214 ed2
+    urn: urn:ecma:214:ed-2
+  style: v3
+- id: ecma.standard.0332
+  identifier:
+    _type: pubid:ecma:standard
+    number: '214'
+    edition: '3'
+  representations:
+    human: ECMA-214 ed3
+    urn: urn:ecma:214:ed-3
+  style: v3
+- id: ecma.standard.0333
+  identifier:
+    _type: pubid:ecma:standard
+    number: '217'
+    edition: '1'
+  representations:
+    human: ECMA-217 ed1
+    urn: urn:ecma:217:ed-1
+  style: v3
+- id: ecma.standard.0334
+  identifier:
+    _type: pubid:ecma:standard
+    number: '218'
+    edition: '1'
+  representations:
+    human: ECMA-218 ed1
+    urn: urn:ecma:218:ed-1
+  style: v3
+- id: ecma.standard.0335
+  identifier:
+    _type: pubid:ecma:standard
+    number: '219'
+    edition: '1'
+  representations:
+    human: ECMA-219 ed1
+    urn: urn:ecma:219:ed-1
+  style: v3
+- id: ecma.standard.0336
+  identifier:
+    _type: pubid:ecma:standard
+    number: '219'
+    edition: '2'
+  representations:
+    human: ECMA-219 ed2
+    urn: urn:ecma:219:ed-2
+  style: v3
+- id: ecma.standard.0337
+  identifier:
+    _type: pubid:ecma:standard
+    number: '220'
+    edition: '1'
+  representations:
+    human: ECMA-220 ed1
+    urn: urn:ecma:220:ed-1
+  style: v3
+- id: ecma.standard.0338
+  identifier:
+    _type: pubid:ecma:standard
+    number: '220'
+    edition: '2'
+  representations:
+    human: ECMA-220 ed2
+    urn: urn:ecma:220:ed-2
+  style: v3
+- id: ecma.standard.0339
+  identifier:
+    _type: pubid:ecma:standard
+    number: '220'
+    edition: '3'
+  representations:
+    human: ECMA-220 ed3
+    urn: urn:ecma:220:ed-3
+  style: v3
+- id: ecma.standard.0340
+  identifier:
+    _type: pubid:ecma:standard
+    number: '221'
+    edition: '1'
+  representations:
+    human: ECMA-221 ed1
+    urn: urn:ecma:221:ed-1
+  style: v3
+- id: ecma.standard.0341
+  identifier:
+    _type: pubid:ecma:standard
+    number: '221'
+    edition: '2'
+  representations:
+    human: ECMA-221 ed2
+    urn: urn:ecma:221:ed-2
+  style: v3
+- id: ecma.standard.0342
+  identifier:
+    _type: pubid:ecma:standard
+    number: '221'
+    edition: '3'
+  representations:
+    human: ECMA-221 ed3
+    urn: urn:ecma:221:ed-3
+  style: v3
+- id: ecma.standard.0343
+  identifier:
+    _type: pubid:ecma:standard
+    number: '222'
+    edition: '1'
+  representations:
+    human: ECMA-222 ed1
+    urn: urn:ecma:222:ed-1
+  style: v3
+- id: ecma.standard.0344
+  identifier:
+    _type: pubid:ecma:standard
+    number: '223'
+    edition: '1'
+  representations:
+    human: ECMA-223 ed1
+    urn: urn:ecma:223:ed-1
+  style: v3
+- id: ecma.standard.0345
+  identifier:
+    _type: pubid:ecma:standard
+    number: '224'
+    edition: '1'
+  representations:
+    human: ECMA-224 ed1
+    urn: urn:ecma:224:ed-1
+  style: v3
+- id: ecma.standard.0346
+  identifier:
+    _type: pubid:ecma:standard
+    number: '224'
+    edition: '2'
+  representations:
+    human: ECMA-224 ed2
+    urn: urn:ecma:224:ed-2
+  style: v3
+- id: ecma.standard.0347
+  identifier:
+    _type: pubid:ecma:standard
+    number: '225'
+    edition: '1'
+  representations:
+    human: ECMA-225 ed1
+    urn: urn:ecma:225:ed-1
+  style: v3
+- id: ecma.standard.0348
+  identifier:
+    _type: pubid:ecma:standard
+    number: '225'
+    edition: '2'
+  representations:
+    human: ECMA-225 ed2
+    urn: urn:ecma:225:ed-2
+  style: v3
+- id: ecma.standard.0349
+  identifier:
+    _type: pubid:ecma:standard
+    number: '226'
+    edition: '1'
+  representations:
+    human: ECMA-226 ed1
+    urn: urn:ecma:226:ed-1
+  style: v3
+- id: ecma.standard.0350
+  identifier:
+    _type: pubid:ecma:standard
+    number: '230'
+    edition: '1'
+  representations:
+    human: ECMA-230 ed1
+    urn: urn:ecma:230:ed-1
+  style: v3
+- id: ecma.standard.0351
+  identifier:
+    _type: pubid:ecma:standard
+    number: '230'
+    edition: '2'
+  representations:
+    human: ECMA-230 ed2
+    urn: urn:ecma:230:ed-2
+  style: v3
+- id: ecma.standard.0352
+  identifier:
+    _type: pubid:ecma:standard
+    number: '231'
+    edition: '1'
+  representations:
+    human: ECMA-231 ed1
+    urn: urn:ecma:231:ed-1
+  style: v3
+- id: ecma.standard.0353
+  identifier:
+    _type: pubid:ecma:standard
+    number: '232'
+    edition: '1'
+  representations:
+    human: ECMA-232 ed1
+    urn: urn:ecma:232:ed-1
+  style: v3
+- id: ecma.standard.0354
+  identifier:
+    _type: pubid:ecma:standard
+    number: '234'
+    edition: '1'
+  representations:
+    human: ECMA-234 ed1
+    urn: urn:ecma:234:ed-1
+  style: v3
+- id: ecma.standard.0355
+  identifier:
+    _type: pubid:ecma:standard
+    number: '235'
+    edition: '1'
+  representations:
+    human: ECMA-235 ed1
+    urn: urn:ecma:235:ed-1
+  style: v3
+- id: ecma.standard.0356
+  identifier:
+    _type: pubid:ecma:standard
+    number: '236'
+    edition: '1'
+  representations:
+    human: ECMA-236 ed1
+    urn: urn:ecma:236:ed-1
+  style: v3
+- id: ecma.standard.0357
+  identifier:
+    _type: pubid:ecma:standard
+    number: '238'
+    edition: '1'
+  representations:
+    human: ECMA-238 ed1
+    urn: urn:ecma:238:ed-1
+  style: v3
+- id: ecma.standard.0358
+  identifier:
+    _type: pubid:ecma:standard
+    number: '239'
+    edition: '1'
+  representations:
+    human: ECMA-239 ed1
+    urn: urn:ecma:239:ed-1
+  style: v3
+- id: ecma.standard.0359
+  identifier:
+    _type: pubid:ecma:standard
+    number: '240'
+    edition: '1'
+  representations:
+    human: ECMA-240 ed1
+    urn: urn:ecma:240:ed-1
+  style: v3
+- id: ecma.standard.0360
+  identifier:
+    _type: pubid:ecma:standard
+    number: '241'
+    edition: '1'
+  representations:
+    human: ECMA-241 ed1
+    urn: urn:ecma:241:ed-1
+  style: v3
+- id: ecma.standard.0361
+  identifier:
+    _type: pubid:ecma:standard
+    number: '241'
+    edition: '2'
+  representations:
+    human: ECMA-241 ed2
+    urn: urn:ecma:241:ed-2
+  style: v3
+- id: ecma.standard.0362
+  identifier:
+    _type: pubid:ecma:standard
+    number: '241'
+    edition: '3'
+  representations:
+    human: ECMA-241 ed3
+    urn: urn:ecma:241:ed-3
+  style: v3
+- id: ecma.standard.0363
+  identifier:
+    _type: pubid:ecma:standard
+    number: '241'
+    edition: '4'
+  representations:
+    human: ECMA-241 ed4
+    urn: urn:ecma:241:ed-4
+  style: v3
+- id: ecma.standard.0364
+  identifier:
+    _type: pubid:ecma:standard
+    number: '242'
+    edition: '1'
+  representations:
+    human: ECMA-242 ed1
+    urn: urn:ecma:242:ed-1
+  style: v3
+- id: ecma.standard.0365
+  identifier:
+    _type: pubid:ecma:standard
+    number: '242'
+    edition: '2'
+  representations:
+    human: ECMA-242 ed2
+    urn: urn:ecma:242:ed-2
+  style: v3
+- id: ecma.standard.0366
+  identifier:
+    _type: pubid:ecma:standard
+    number: '242'
+    edition: '3'
+  representations:
+    human: ECMA-242 ed3
+    urn: urn:ecma:242:ed-3
+  style: v3
+- id: ecma.standard.0367
+  identifier:
+    _type: pubid:ecma:standard
+    number: '242'
+    edition: '4'
+  representations:
+    human: ECMA-242 ed4
+    urn: urn:ecma:242:ed-4
+  style: v3
+- id: ecma.standard.0368
+  identifier:
+    _type: pubid:ecma:standard
+    number: '244'
+    edition: '1'
+  representations:
+    human: ECMA-244 ed1
+    urn: urn:ecma:244:ed-1
+  style: v3
+- id: ecma.standard.0369
+  identifier:
+    _type: pubid:ecma:standard
+    number: '244'
+    edition: '2'
+  representations:
+    human: ECMA-244 ed2
+    urn: urn:ecma:244:ed-2
+  style: v3
+- id: ecma.standard.0370
+  identifier:
+    _type: pubid:ecma:standard
+    number: '245'
+    edition: '1'
+  representations:
+    human: ECMA-245 ed1
+    urn: urn:ecma:245:ed-1
+  style: v3
+- id: ecma.standard.0371
+  identifier:
+    _type: pubid:ecma:standard
+    number: '245'
+    edition: '2'
+  representations:
+    human: ECMA-245 ed2
+    urn: urn:ecma:245:ed-2
+  style: v3
+- id: ecma.standard.0372
+  identifier:
+    _type: pubid:ecma:standard
+    number: '246'
+    edition: '1'
+  representations:
+    human: ECMA-246 ed1
+    urn: urn:ecma:246:ed-1
+  style: v3
+- id: ecma.standard.0373
+  identifier:
+    _type: pubid:ecma:standard
+    number: '246'
+    edition: '2'
+  representations:
+    human: ECMA-246 ed2
+    urn: urn:ecma:246:ed-2
+  style: v3
+- id: ecma.standard.0374
+  identifier:
+    _type: pubid:ecma:standard
+    number: '247'
+    edition: '1'
+  representations:
+    human: ECMA-247 ed1
+    urn: urn:ecma:247:ed-1
+  style: v3
+- id: ecma.standard.0375
+  identifier:
+    _type: pubid:ecma:standard
+    number: '247'
+    edition: '2'
+  representations:
+    human: ECMA-247 ed2
+    urn: urn:ecma:247:ed-2
+  style: v3
+- id: ecma.standard.0376
+  identifier:
+    _type: pubid:ecma:standard
+    number: '248'
+    edition: '1'
+  representations:
+    human: ECMA-248 ed1
+    urn: urn:ecma:248:ed-1
+  style: v3
+- id: ecma.standard.0377
+  identifier:
+    _type: pubid:ecma:standard
+    number: '248'
+    edition: '2'
+  representations:
+    human: ECMA-248 ed2
+    urn: urn:ecma:248:ed-2
+  style: v3
+- id: ecma.standard.0378
+  identifier:
+    _type: pubid:ecma:standard
+    number: '249'
+    edition: '1'
+  representations:
+    human: ECMA-249 ed1
+    urn: urn:ecma:249:ed-1
+  style: v3
+- id: ecma.standard.0379
+  identifier:
+    _type: pubid:ecma:standard
+    number: '249'
+    edition: '2'
+  representations:
+    human: ECMA-249 ed2
+    urn: urn:ecma:249:ed-2
+  style: v3
+- id: ecma.standard.0380
+  identifier:
+    _type: pubid:ecma:standard
+    number: '250'
+    edition: '1'
+  representations:
+    human: ECMA-250 ed1
+    urn: urn:ecma:250:ed-1
+  style: v3
+- id: ecma.standard.0381
+  identifier:
+    _type: pubid:ecma:standard
+    number: '250'
+    edition: '2'
+  representations:
+    human: ECMA-250 ed2
+    urn: urn:ecma:250:ed-2
+  style: v3
+- id: ecma.standard.0382
+  identifier:
+    _type: pubid:ecma:standard
+    number: '251'
+    edition: '1'
+  representations:
+    human: ECMA-251 ed1
+    urn: urn:ecma:251:ed-1
+  style: v3
+- id: ecma.standard.0383
+  identifier:
+    _type: pubid:ecma:standard
+    number: '251'
+    edition: '2'
+  representations:
+    human: ECMA-251 ed2
+    urn: urn:ecma:251:ed-2
+  style: v3
+- id: ecma.standard.0384
+  identifier:
+    _type: pubid:ecma:standard
+    number: '251'
+    edition: '3'
+  representations:
+    human: ECMA-251 ed3
+    urn: urn:ecma:251:ed-3
+  style: v3
+- id: ecma.standard.0385
+  identifier:
+    _type: pubid:ecma:standard
+    number: '252'
+    edition: '1'
+  representations:
+    human: ECMA-252 ed1
+    urn: urn:ecma:252:ed-1
+  style: v3
+- id: ecma.standard.0386
+  identifier:
+    _type: pubid:ecma:standard
+    number: '253'
+    edition: '1'
+  representations:
+    human: ECMA-253 ed1
+    urn: urn:ecma:253:ed-1
+  style: v3
+- id: ecma.standard.0387
+  identifier:
+    _type: pubid:ecma:standard
+    number: '253'
+    edition: '2'
+  representations:
+    human: ECMA-253 ed2
+    urn: urn:ecma:253:ed-2
+  style: v3
+- id: ecma.standard.0388
+  identifier:
+    _type: pubid:ecma:standard
+    number: '254'
+    edition: '1'
+  representations:
+    human: ECMA-254 ed1
+    urn: urn:ecma:254:ed-1
+  style: v3
+- id: ecma.standard.0389
+  identifier:
+    _type: pubid:ecma:standard
+    number: '254'
+    edition: '2'
+  representations:
+    human: ECMA-254 ed2
+    urn: urn:ecma:254:ed-2
+  style: v3
+- id: ecma.standard.0390
+  identifier:
+    _type: pubid:ecma:standard
+    number: '258'
+    edition: '1'
+  representations:
+    human: ECMA-258 ed1
+    urn: urn:ecma:258:ed-1
+  style: v3
+- id: ecma.standard.0391
+  identifier:
+    _type: pubid:ecma:standard
+    number: '259'
+    edition: '1'
+  representations:
+    human: ECMA-259 ed1
+    urn: urn:ecma:259:ed-1
+  style: v3
+- id: ecma.standard.0392
+  identifier:
+    _type: pubid:ecma:standard
+    number: '260'
+    edition: '1'
+  representations:
+    human: ECMA-260 ed1
+    urn: urn:ecma:260:ed-1
+  style: v3
+- id: ecma.standard.0393
+  identifier:
+    _type: pubid:ecma:standard
+    number: '261'
+    edition: '1'
+  representations:
+    human: ECMA-261 ed1
+    urn: urn:ecma:261:ed-1
+  style: v3
+- id: ecma.standard.0394
+  identifier:
+    _type: pubid:ecma:standard
+    number: '262'
+  representations:
+    human: ECMA-262
+    urn: urn:ecma:262
+  style: v3
+- id: ecma.standard.0395
+  identifier:
+    _type: pubid:ecma:standard
+    number: '262'
+    edition: '1'
+  representations:
+    human: ECMA-262 ed1
+    urn: urn:ecma:262:ed-1
+  style: v3
+- id: ecma.standard.0396
+  identifier:
+    _type: pubid:ecma:standard
+    number: '262'
+    edition: '10'
+  representations:
+    human: ECMA-262 ed10
+    urn: urn:ecma:262:ed-10
+  style: v3
+- id: ecma.standard.0397
+  identifier:
+    _type: pubid:ecma:standard
+    number: '262'
+    edition: '11'
+  representations:
+    human: ECMA-262 ed11
+    urn: urn:ecma:262:ed-11
+  style: v3
+- id: ecma.standard.0398
+  identifier:
+    _type: pubid:ecma:standard
+    number: '262'
+    edition: '12'
+  representations:
+    human: ECMA-262 ed12
+    urn: urn:ecma:262:ed-12
+  style: v3
+- id: ecma.standard.0399
+  identifier:
+    _type: pubid:ecma:standard
+    number: '262'
+    edition: '13'
+  representations:
+    human: ECMA-262 ed13
+    urn: urn:ecma:262:ed-13
+  style: v3
+- id: ecma.standard.0400
+  identifier:
+    _type: pubid:ecma:standard
+    number: '262'
+    edition: '14'
+  representations:
+    human: ECMA-262 ed14
+    urn: urn:ecma:262:ed-14
+  style: v3
+- id: ecma.standard.0401
+  identifier:
+    _type: pubid:ecma:standard
+    number: '262'
+    edition: '15'
+  representations:
+    human: ECMA-262 ed15
+    urn: urn:ecma:262:ed-15
+  style: v3
+- id: ecma.standard.0402
+  identifier:
+    _type: pubid:ecma:standard
+    number: '262'
+    edition: '16'
+  representations:
+    human: ECMA-262 ed16
+    urn: urn:ecma:262:ed-16
+  style: v3
+- id: ecma.standard.0403
+  identifier:
+    _type: pubid:ecma:standard
+    number: '262'
+    edition: '17'
+  representations:
+    human: ECMA-262 ed17
+    urn: urn:ecma:262:ed-17
+  style: v3
+- id: ecma.standard.0404
+  identifier:
+    _type: pubid:ecma:standard
+    number: '262'
+    edition: '2'
+  representations:
+    human: ECMA-262 ed2
+    urn: urn:ecma:262:ed-2
+  style: v3
+- id: ecma.standard.0405
+  identifier:
+    _type: pubid:ecma:standard
+    number: '262'
+    edition: '3'
+  representations:
+    human: ECMA-262 ed3
+    urn: urn:ecma:262:ed-3
+  style: v3
+- id: ecma.standard.0406
+  identifier:
+    _type: pubid:ecma:standard
+    number: '262'
+    edition: '4'
+  representations:
+    human: ECMA-262 ed4
+    urn: urn:ecma:262:ed-4
+  style: v3
+- id: ecma.standard.0407
+  identifier:
+    _type: pubid:ecma:standard
+    number: '262'
+    edition: '5'
+  representations:
+    human: ECMA-262 ed5
+    urn: urn:ecma:262:ed-5
+  style: v3
+- id: ecma.standard.0408
+  identifier:
+    _type: pubid:ecma:standard
+    number: '262'
+    edition: '5.1'
+  representations:
+    human: ECMA-262 ed5.1
+    urn: urn:ecma:262:ed-5.1
+  style: v3
+  non_normalized_aliases:
+  - spelling: ECMA 262 5.1
+    style: v3
+  - spelling: ECMA-262 5.1
+    style: v3
+  - spelling: ECMA-262 Edition 5.1
+    style: v3
+  - spelling: ECMA-262 ed 5.1
+    style: v3
+  - spelling: ECMA-262 ed. 5.1
+    style: v3
+  - spelling: ECMA-262 ed.5.1
+    style: v3
+- id: ecma.standard.0409
+  identifier:
+    _type: pubid:ecma:standard
+    number: '262'
+    edition: '6'
+  representations:
+    human: ECMA-262 ed6
+    urn: urn:ecma:262:ed-6
+  style: v3
+- id: ecma.standard.0410
+  identifier:
+    _type: pubid:ecma:standard
+    number: '262'
+    edition: '7'
+  representations:
+    human: ECMA-262 ed7
+    urn: urn:ecma:262:ed-7
+  style: v3
+- id: ecma.standard.0411
+  identifier:
+    _type: pubid:ecma:standard
+    number: '262'
+    edition: '8'
+  representations:
+    human: ECMA-262 ed8
+    urn: urn:ecma:262:ed-8
+  style: v3
+- id: ecma.standard.0412
+  identifier:
+    _type: pubid:ecma:standard
+    number: '262'
+    edition: '9'
+  representations:
+    human: ECMA-262 ed9
+    urn: urn:ecma:262:ed-9
+  style: v3
+- id: ecma.standard.0413
+  identifier:
+    _type: pubid:ecma:standard
+    number: '263'
+    edition: '1'
+  representations:
+    human: ECMA-263 ed1
+    urn: urn:ecma:263:ed-1
+  style: v3
+- id: ecma.standard.0414
+  identifier:
+    _type: pubid:ecma:standard
+    number: '263'
+    edition: '2'
+  representations:
+    human: ECMA-263 ed2
+    urn: urn:ecma:263:ed-2
+  style: v3
+- id: ecma.standard.0415
+  identifier:
+    _type: pubid:ecma:standard
+    number: '263'
+    edition: '3'
+  representations:
+    human: ECMA-263 ed3
+    urn: urn:ecma:263:ed-3
+  style: v3
+- id: ecma.standard.0416
+  identifier:
+    _type: pubid:ecma:standard
+    number: '264'
+    edition: '1'
+  representations:
+    human: ECMA-264 ed1
+    urn: urn:ecma:264:ed-1
+  style: v3
+- id: ecma.standard.0417
+  identifier:
+    _type: pubid:ecma:standard
+    number: '264'
+    edition: '2'
+  representations:
+    human: ECMA-264 ed2
+    urn: urn:ecma:264:ed-2
+  style: v3
+- id: ecma.standard.0418
+  identifier:
+    _type: pubid:ecma:standard
+    number: '264'
+    edition: '3'
+  representations:
+    human: ECMA-264 ed3
+    urn: urn:ecma:264:ed-3
+  style: v3
+- id: ecma.standard.0419
+  identifier:
+    _type: pubid:ecma:standard
+    number: '265'
+    edition: '1'
+  representations:
+    human: ECMA-265 ed1
+    urn: urn:ecma:265:ed-1
+  style: v3
+- id: ecma.standard.0420
+  identifier:
+    _type: pubid:ecma:standard
+    number: '266'
+    edition: '1'
+  representations:
+    human: ECMA-266 ed1
+    urn: urn:ecma:266:ed-1
+  style: v3
+- id: ecma.standard.0421
+  identifier:
+    _type: pubid:ecma:standard
+    number: '267'
+    edition: '1'
+  representations:
+    human: ECMA-267 ed1
+    urn: urn:ecma:267:ed-1
+  style: v3
+- id: ecma.standard.0422
+  identifier:
+    _type: pubid:ecma:standard
+    number: '267'
+    edition: '2'
+  representations:
+    human: ECMA-267 ed2
+    urn: urn:ecma:267:ed-2
+  style: v3
+- id: ecma.standard.0423
+  identifier:
+    _type: pubid:ecma:standard
+    number: '267'
+    edition: '3'
+  representations:
+    human: ECMA-267 ed3
+    urn: urn:ecma:267:ed-3
+  style: v3
+- id: ecma.standard.0424
+  identifier:
+    _type: pubid:ecma:standard
+    number: '268'
+    edition: '1'
+  representations:
+    human: ECMA-268 ed1
+    urn: urn:ecma:268:ed-1
+  style: v3
+- id: ecma.standard.0425
+  identifier:
+    _type: pubid:ecma:standard
+    number: '268'
+    edition: '2'
+  representations:
+    human: ECMA-268 ed2
+    urn: urn:ecma:268:ed-2
+  style: v3
+- id: ecma.standard.0426
+  identifier:
+    _type: pubid:ecma:standard
+    number: '268'
+    edition: '3'
+  representations:
+    human: ECMA-268 ed3
+    urn: urn:ecma:268:ed-3
+  style: v3
+- id: ecma.standard.0427
+  identifier:
+    _type: pubid:ecma:standard
+    number: '269'
+    edition: '1'
+  representations:
+    human: ECMA-269 ed1
+    urn: urn:ecma:269:ed-1
+  style: v3
+- id: ecma.standard.0428
+  identifier:
+    _type: pubid:ecma:standard
+    number: '269'
+    edition: '2'
+  representations:
+    human: ECMA-269 ed2
+    urn: urn:ecma:269:ed-2
+  style: v3
+- id: ecma.standard.0429
+  identifier:
+    _type: pubid:ecma:standard
+    number: '269'
+    edition: '3'
+    volume: '1'
+  representations:
+    human: ECMA-269 ed3 vol1
+    urn: urn:ecma:269:ed-3:vol-1
+  style: v3
+- id: ecma.standard.0430
+  identifier:
+    _type: pubid:ecma:standard
+    number: '269'
+    edition: '3'
+    volume: '2'
+  representations:
+    human: ECMA-269 ed3 vol2
+    urn: urn:ecma:269:ed-3:vol-2
+  style: v3
+- id: ecma.standard.0431
+  identifier:
+    _type: pubid:ecma:standard
+    number: '269'
+    edition: '3'
+    volume: '3'
+  representations:
+    human: ECMA-269 ed3 vol3
+    urn: urn:ecma:269:ed-3:vol-3
+  style: v3
+- id: ecma.standard.0432
+  identifier:
+    _type: pubid:ecma:standard
+    number: '269'
+    edition: '3'
+    volume: '4'
+  representations:
+    human: ECMA-269 ed3 vol4
+    urn: urn:ecma:269:ed-3:vol-4
+  style: v3
+- id: ecma.standard.0433
+  identifier:
+    _type: pubid:ecma:standard
+    number: '269'
+    edition: '4'
+  representations:
+    human: ECMA-269 ed4
+    urn: urn:ecma:269:ed-4
+  style: v3
+- id: ecma.standard.0434
+  identifier:
+    _type: pubid:ecma:standard
+    number: '269'
+    edition: '5'
+  representations:
+    human: ECMA-269 ed5
+    urn: urn:ecma:269:ed-5
+  style: v3
+- id: ecma.standard.0435
+  identifier:
+    _type: pubid:ecma:standard
+    number: '269'
+    edition: '6'
+  representations:
+    human: ECMA-269 ed6
+    urn: urn:ecma:269:ed-6
+  style: v3
+- id: ecma.standard.0436
+  identifier:
+    _type: pubid:ecma:standard
+    number: '269'
+    edition: '7'
+  representations:
+    human: ECMA-269 ed7
+    urn: urn:ecma:269:ed-7
+  style: v3
+- id: ecma.standard.0437
+  identifier:
+    _type: pubid:ecma:standard
+    number: '269'
+    edition: '8'
+  representations:
+    human: ECMA-269 ed8
+    urn: urn:ecma:269:ed-8
+  style: v3
+- id: ecma.standard.0438
+  identifier:
+    _type: pubid:ecma:standard
+    number: '269'
+    edition: '9'
+  representations:
+    human: ECMA-269 ed9
+    urn: urn:ecma:269:ed-9
+  style: v3
+- id: ecma.standard.0439
+  identifier:
+    _type: pubid:ecma:standard
+    number: '270'
+    edition: '1'
+  representations:
+    human: ECMA-270 ed1
+    urn: urn:ecma:270:ed-1
+  style: v3
+- id: ecma.standard.0440
+  identifier:
+    _type: pubid:ecma:standard
+    number: '271'
+    edition: '1'
+  representations:
+    human: ECMA-271 ed1
+    urn: urn:ecma:271:ed-1
+  style: v3
+- id: ecma.standard.0441
+  identifier:
+    _type: pubid:ecma:standard
+    number: '271'
+    edition: '2'
+  representations:
+    human: ECMA-271 ed2
+    urn: urn:ecma:271:ed-2
+  style: v3
+- id: ecma.standard.0442
+  identifier:
+    _type: pubid:ecma:standard
+    number: '272'
+    edition: '1'
+  representations:
+    human: ECMA-272 ed1
+    urn: urn:ecma:272:ed-1
+  style: v3
+- id: ecma.standard.0443
+  identifier:
+    _type: pubid:ecma:standard
+    number: '272'
+    edition: '2'
+  representations:
+    human: ECMA-272 ed2
+    urn: urn:ecma:272:ed-2
+  style: v3
+- id: ecma.standard.0444
+  identifier:
+    _type: pubid:ecma:standard
+    number: '273'
+    edition: '1'
+  representations:
+    human: ECMA-273 ed1
+    urn: urn:ecma:273:ed-1
+  style: v3
+- id: ecma.standard.0445
+  identifier:
+    _type: pubid:ecma:standard
+    number: '274'
+    edition: '1'
+  representations:
+    human: ECMA-274 ed1
+    urn: urn:ecma:274:ed-1
+  style: v3
+- id: ecma.standard.0446
+  identifier:
+    _type: pubid:ecma:standard
+    number: '274'
+    edition: '2'
+  representations:
+    human: ECMA-274 ed2
+    urn: urn:ecma:274:ed-2
+  style: v3
+- id: ecma.standard.0447
+  identifier:
+    _type: pubid:ecma:standard
+    number: '275'
+    edition: '1'
+  representations:
+    human: ECMA-275 ed1
+    urn: urn:ecma:275:ed-1
+  style: v3
+- id: ecma.standard.0448
+  identifier:
+    _type: pubid:ecma:standard
+    number: '275'
+    edition: '2'
+  representations:
+    human: ECMA-275 ed2
+    urn: urn:ecma:275:ed-2
+  style: v3
+- id: ecma.standard.0449
+  identifier:
+    _type: pubid:ecma:standard
+    number: '275'
+    edition: '3'
+  representations:
+    human: ECMA-275 ed3
+    urn: urn:ecma:275:ed-3
+  style: v3
+- id: ecma.standard.0450
+  identifier:
+    _type: pubid:ecma:standard
+    number: '275'
+    edition: '5'
+  representations:
+    human: ECMA-275 ed5
+    urn: urn:ecma:275:ed-5
+  style: v3
+- id: ecma.standard.0451
+  identifier:
+    _type: pubid:ecma:standard
+    number: '276'
+    edition: '1'
+  representations:
+    human: ECMA-276 ed1
+    urn: urn:ecma:276:ed-1
+  style: v3
+- id: ecma.standard.0452
+  identifier:
+    _type: pubid:ecma:standard
+    number: '277'
+    edition: '1'
+  representations:
+    human: ECMA-277 ed1
+    urn: urn:ecma:277:ed-1
+  style: v3
+- id: ecma.standard.0453
+  identifier:
+    _type: pubid:ecma:standard
+    number: '278'
+    edition: '1'
+  representations:
+    human: ECMA-278 ed1
+    urn: urn:ecma:278:ed-1
+  style: v3
+- id: ecma.standard.0454
+  identifier:
+    _type: pubid:ecma:standard
+    number: '278'
+    edition: '2'
+  representations:
+    human: ECMA-278 ed2
+    urn: urn:ecma:278:ed-2
+  style: v3
+- id: ecma.standard.0455
+  identifier:
+    _type: pubid:ecma:standard
+    number: '279'
+    edition: '1'
+  representations:
+    human: ECMA-279 ed1
+    urn: urn:ecma:279:ed-1
+  style: v3
+- id: ecma.standard.0456
+  identifier:
+    _type: pubid:ecma:standard
+    number: '280'
+    edition: '1'
+  representations:
+    human: ECMA-280 ed1
+    urn: urn:ecma:280:ed-1
+  style: v3
+- id: ecma.standard.0457
+  identifier:
+    _type: pubid:ecma:standard
+    number: '281'
+    edition: '1'
+  representations:
+    human: ECMA-281 ed1
+    urn: urn:ecma:281:ed-1
+  style: v3
+- id: ecma.standard.0458
+  identifier:
+    _type: pubid:ecma:standard
+    number: '281'
+    edition: '2'
+  representations:
+    human: ECMA-281 ed2
+    urn: urn:ecma:281:ed-2
+  style: v3
+- id: ecma.standard.0459
+  identifier:
+    _type: pubid:ecma:standard
+    number: '281'
+    edition: '3'
+  representations:
+    human: ECMA-281 ed3
+    urn: urn:ecma:281:ed-3
+  style: v3
+- id: ecma.standard.0460
+  identifier:
+    _type: pubid:ecma:standard
+    number: '282'
+    edition: '1'
+  representations:
+    human: ECMA-282 ed1
+    urn: urn:ecma:282:ed-1
+  style: v3
+- id: ecma.standard.0461
+  identifier:
+    _type: pubid:ecma:standard
+    number: '282'
+    edition: '2'
+  representations:
+    human: ECMA-282 ed2
+    urn: urn:ecma:282:ed-2
+  style: v3
+- id: ecma.standard.0462
+  identifier:
+    _type: pubid:ecma:standard
+    number: '282'
+    edition: '3'
+  representations:
+    human: ECMA-282 ed3
+    urn: urn:ecma:282:ed-3
+  style: v3
+- id: ecma.standard.0463
+  identifier:
+    _type: pubid:ecma:standard
+    number: '283'
+    edition: '1'
+  representations:
+    human: ECMA-283 ed1
+    urn: urn:ecma:283:ed-1
+  style: v3
+- id: ecma.standard.0464
+  identifier:
+    _type: pubid:ecma:standard
+    number: '283'
+    edition: '2'
+  representations:
+    human: ECMA-283 ed2
+    urn: urn:ecma:283:ed-2
+  style: v3
+- id: ecma.standard.0465
+  identifier:
+    _type: pubid:ecma:standard
+    number: '284'
+    edition: '1'
+  representations:
+    human: ECMA-284 ed1
+    urn: urn:ecma:284:ed-1
+  style: v3
+- id: ecma.standard.0466
+  identifier:
+    _type: pubid:ecma:standard
+    number: '284'
+    edition: '2'
+  representations:
+    human: ECMA-284 ed2
+    urn: urn:ecma:284:ed-2
+  style: v3
+- id: ecma.standard.0467
+  identifier:
+    _type: pubid:ecma:standard
+    number: '284'
+    edition: '3'
+  representations:
+    human: ECMA-284 ed3
+    urn: urn:ecma:284:ed-3
+  style: v3
+- id: ecma.standard.0468
+  identifier:
+    _type: pubid:ecma:standard
+    number: '285'
+    edition: '1'
+  representations:
+    human: ECMA-285 ed1
+    urn: urn:ecma:285:ed-1
+  style: v3
+- id: ecma.standard.0469
+  identifier:
+    _type: pubid:ecma:standard
+    number: '285'
+    edition: '2'
+  representations:
+    human: ECMA-285 ed2
+    urn: urn:ecma:285:ed-2
+  style: v3
+- id: ecma.standard.0470
+  identifier:
+    _type: pubid:ecma:standard
+    number: '285'
+    edition: '3'
+  representations:
+    human: ECMA-285 ed3
+    urn: urn:ecma:285:ed-3
+  style: v3
+- id: ecma.standard.0471
+  identifier:
+    _type: pubid:ecma:standard
+    number: '285'
+    edition: '4'
+  representations:
+    human: ECMA-285 ed4
+    urn: urn:ecma:285:ed-4
+  style: v3
+- id: ecma.standard.0472
+  identifier:
+    _type: pubid:ecma:standard
+    number: '286'
+    edition: '1'
+  representations:
+    human: ECMA-286 ed1
+    urn: urn:ecma:286:ed-1
+  style: v3
+- id: ecma.standard.0473
+  identifier:
+    _type: pubid:ecma:standard
+    number: '286'
+    edition: '2'
+  representations:
+    human: ECMA-286 ed2
+    urn: urn:ecma:286:ed-2
+  style: v3
+- id: ecma.standard.0474
+  identifier:
+    _type: pubid:ecma:standard
+    number: '287'
+    edition: '1'
+  representations:
+    human: ECMA-287 ed1
+    urn: urn:ecma:287:ed-1
+  style: v3
+- id: ecma.standard.0475
+  identifier:
+    _type: pubid:ecma:standard
+    number: '287'
+    edition: '2'
+  representations:
+    human: ECMA-287 ed2
+    urn: urn:ecma:287:ed-2
+  style: v3
+- id: ecma.standard.0476
+  identifier:
+    _type: pubid:ecma:standard
+    number: '288'
+    edition: '1'
+  representations:
+    human: ECMA-288 ed1
+    urn: urn:ecma:288:ed-1
+  style: v3
+- id: ecma.standard.0477
+  identifier:
+    _type: pubid:ecma:standard
+    number: '289'
+    edition: '1'
+  representations:
+    human: ECMA-289 ed1
+    urn: urn:ecma:289:ed-1
+  style: v3
+- id: ecma.standard.0478
+  identifier:
+    _type: pubid:ecma:standard
+    number: '289'
+    edition: '2'
+  representations:
+    human: ECMA-289 ed2
+    urn: urn:ecma:289:ed-2
+  style: v3
+- id: ecma.standard.0479
+  identifier:
+    _type: pubid:ecma:standard
+    number: '291'
+    edition: '1'
+  representations:
+    human: ECMA-291 ed1
+    urn: urn:ecma:291:ed-1
+  style: v3
+- id: ecma.standard.0480
+  identifier:
+    _type: pubid:ecma:standard
+    number: '292'
+    edition: '1'
+  representations:
+    human: ECMA-292 ed1
+    urn: urn:ecma:292:ed-1
+  style: v3
+- id: ecma.standard.0481
+  identifier:
+    _type: pubid:ecma:standard
+    number: '293'
+    edition: '1'
+  representations:
+    human: ECMA-293 ed1
+    urn: urn:ecma:293:ed-1
+  style: v3
+- id: ecma.standard.0482
+  identifier:
+    _type: pubid:ecma:standard
+    number: '294'
+    edition: '1'
+  representations:
+    human: ECMA-294 ed1
+    urn: urn:ecma:294:ed-1
+  style: v3
+- id: ecma.standard.0483
+  identifier:
+    _type: pubid:ecma:standard
+    number: '295'
+    edition: '1'
+  representations:
+    human: ECMA-295 ed1
+    urn: urn:ecma:295:ed-1
+  style: v3
+- id: ecma.standard.0484
+  identifier:
+    _type: pubid:ecma:standard
+    number: '296'
+    edition: '1'
+  representations:
+    human: ECMA-296 ed1
+    urn: urn:ecma:296:ed-1
+  style: v3
+- id: ecma.standard.0485
+  identifier:
+    _type: pubid:ecma:standard
+    number: '297'
+    edition: '1'
+  representations:
+    human: ECMA-297 ed1
+    urn: urn:ecma:297:ed-1
+  style: v3
+- id: ecma.standard.0486
+  identifier:
+    _type: pubid:ecma:standard
+    number: '298'
+    edition: '1'
+  representations:
+    human: ECMA-298 ed1
+    urn: urn:ecma:298:ed-1
+  style: v3
+- id: ecma.standard.0487
+  identifier:
+    _type: pubid:ecma:standard
+    number: '299'
+    edition: '1'
+  representations:
+    human: ECMA-299 ed1
+    urn: urn:ecma:299:ed-1
+  style: v3
+- id: ecma.standard.0488
+  identifier:
+    _type: pubid:ecma:standard
+    number: '299'
+    edition: '2'
+  representations:
+    human: ECMA-299 ed2
+    urn: urn:ecma:299:ed-2
+  style: v3
+- id: ecma.standard.0489
+  identifier:
+    _type: pubid:ecma:standard
+    number: '300'
+    edition: '1'
+  representations:
+    human: ECMA-300 ed1
+    urn: urn:ecma:300:ed-1
+  style: v3
+- id: ecma.standard.0490
+  identifier:
+    _type: pubid:ecma:standard
+    number: '300'
+    edition: '2'
+  representations:
+    human: ECMA-300 ed2
+    urn: urn:ecma:300:ed-2
+  style: v3
+- id: ecma.standard.0491
+  identifier:
+    _type: pubid:ecma:standard
+    number: '301'
+    edition: '1'
+  representations:
+    human: ECMA-301 ed1
+    urn: urn:ecma:301:ed-1
+  style: v3
+- id: ecma.standard.0492
+  identifier:
+    _type: pubid:ecma:standard
+    number: '302'
+    edition: '1'
+  representations:
+    human: ECMA-302 ed1
+    urn: urn:ecma:302:ed-1
+  style: v3
+- id: ecma.standard.0493
+  identifier:
+    _type: pubid:ecma:standard
+    number: '302'
+    edition: '2'
+  representations:
+    human: ECMA-302 ed2
+    urn: urn:ecma:302:ed-2
+  style: v3
+- id: ecma.standard.0494
+  identifier:
+    _type: pubid:ecma:standard
+    number: '303'
+    edition: '1'
+  representations:
+    human: ECMA-303 ed1
+    urn: urn:ecma:303:ed-1
+  style: v3
+- id: ecma.standard.0495
+  identifier:
+    _type: pubid:ecma:standard
+    number: '304'
+    edition: '1'
+  representations:
+    human: ECMA-304 ed1
+    urn: urn:ecma:304:ed-1
+  style: v3
+- id: ecma.standard.0496
+  identifier:
+    _type: pubid:ecma:standard
+    number: '304'
+    edition: '2'
+  representations:
+    human: ECMA-304 ed2
+    urn: urn:ecma:304:ed-2
+  style: v3
+- id: ecma.standard.0497
+  identifier:
+    _type: pubid:ecma:standard
+    number: '305'
+    edition: '1'
+  representations:
+    human: ECMA-305 ed1
+    urn: urn:ecma:305:ed-1
+  style: v3
+- id: ecma.standard.0498
+  identifier:
+    _type: pubid:ecma:standard
+    number: '306'
+    edition: '1'
+  representations:
+    human: ECMA-306 ed1
+    urn: urn:ecma:306:ed-1
+  style: v3
+- id: ecma.standard.0499
+  identifier:
+    _type: pubid:ecma:standard
+    number: '306'
+    edition: '2'
+  representations:
+    human: ECMA-306 ed2
+    urn: urn:ecma:306:ed-2
+  style: v3
+- id: ecma.standard.0500
+  identifier:
+    _type: pubid:ecma:standard
+    number: '307'
+    edition: '1'
+  representations:
+    human: ECMA-307 ed1
+    urn: urn:ecma:307:ed-1
+  style: v3
+- id: ecma.standard.0501
+  identifier:
+    _type: pubid:ecma:standard
+    number: '308'
+    edition: '1'
+  representations:
+    human: ECMA-308 ed1
+    urn: urn:ecma:308:ed-1
+  style: v3
+- id: ecma.standard.0502
+  identifier:
+    _type: pubid:ecma:standard
+    number: '308'
+    edition: '2'
+  representations:
+    human: ECMA-308 ed2
+    urn: urn:ecma:308:ed-2
+  style: v3
+- id: ecma.standard.0503
+  identifier:
+    _type: pubid:ecma:standard
+    number: '309'
+    edition: '1'
+  representations:
+    human: ECMA-309 ed1
+    urn: urn:ecma:309:ed-1
+  style: v3
+- id: ecma.standard.0504
+  identifier:
+    _type: pubid:ecma:standard
+    number: '309'
+    edition: '2'
+  representations:
+    human: ECMA-309 ed2
+    urn: urn:ecma:309:ed-2
+  style: v3
+- id: ecma.standard.0505
+  identifier:
+    _type: pubid:ecma:standard
+    number: '310'
+    edition: '1'
+  representations:
+    human: ECMA-310 ed1
+    urn: urn:ecma:310:ed-1
+  style: v3
+- id: ecma.standard.0506
+  identifier:
+    _type: pubid:ecma:standard
+    number: '311'
+    edition: '1'
+  representations:
+    human: ECMA-311 ed1
+    urn: urn:ecma:311:ed-1
+  style: v3
+- id: ecma.standard.0507
+  identifier:
+    _type: pubid:ecma:standard
+    number: '311'
+    edition: '2'
+  representations:
+    human: ECMA-311 ed2
+    urn: urn:ecma:311:ed-2
+  style: v3
+- id: ecma.standard.0508
+  identifier:
+    _type: pubid:ecma:standard
+    number: '312'
+    edition: '1'
+  representations:
+    human: ECMA-312 ed1
+    urn: urn:ecma:312:ed-1
+  style: v3
+- id: ecma.standard.0509
+  identifier:
+    _type: pubid:ecma:standard
+    number: '312'
+    edition: '2'
+  representations:
+    human: ECMA-312 ed2
+    urn: urn:ecma:312:ed-2
+  style: v3
+- id: ecma.standard.0510
+  identifier:
+    _type: pubid:ecma:standard
+    number: '312'
+    edition: '3'
+  representations:
+    human: ECMA-312 ed3
+    urn: urn:ecma:312:ed-3
+  style: v3
+- id: ecma.standard.0511
+  identifier:
+    _type: pubid:ecma:standard
+    number: '313'
+    edition: '1'
+  representations:
+    human: ECMA-313 ed1
+    urn: urn:ecma:313:ed-1
+  style: v3
+- id: ecma.standard.0512
+  identifier:
+    _type: pubid:ecma:standard
+    number: '314'
+    edition: '1'
+  representations:
+    human: ECMA-314 ed1
+    urn: urn:ecma:314:ed-1
+  style: v3
+- id: ecma.standard.0513
+  identifier:
+    _type: pubid:ecma:standard
+    number: '314'
+    edition: '2'
+  representations:
+    human: ECMA-314 ed2
+    urn: urn:ecma:314:ed-2
+  style: v3
+- id: ecma.standard.0514
+  identifier:
+    _type: pubid:ecma:standard
+    number: '315'
+    edition: '1'
+  representations:
+    human: ECMA-315 ed1
+    urn: urn:ecma:315:ed-1
+  style: v3
+- id: ecma.standard.0515
+  identifier:
+    _type: pubid:ecma:standard
+    number: '316'
+    edition: '1'
+  representations:
+    human: ECMA-316 ed1
+    urn: urn:ecma:316:ed-1
+  style: v3
+- id: ecma.standard.0516
+  identifier:
+    _type: pubid:ecma:standard
+    number: '316'
+    edition: '2'
+  representations:
+    human: ECMA-316 ed2
+    urn: urn:ecma:316:ed-2
+  style: v3
+- id: ecma.standard.0517
+  identifier:
+    _type: pubid:ecma:standard
+    number: '317'
+    edition: '1'
+  representations:
+    human: ECMA-317 ed1
+    urn: urn:ecma:317:ed-1
+  style: v3
+- id: ecma.standard.0518
+  identifier:
+    _type: pubid:ecma:standard
+    number: '318'
+    edition: '1'
+  representations:
+    human: ECMA-318 ed1
+    urn: urn:ecma:318:ed-1
+  style: v3
+- id: ecma.standard.0519
+  identifier:
+    _type: pubid:ecma:standard
+    number: '319'
+    edition: '1'
+  representations:
+    human: ECMA-319 ed1
+    urn: urn:ecma:319:ed-1
+  style: v3
+- id: ecma.standard.0520
+  identifier:
+    _type: pubid:ecma:standard
+    number: '320'
+    edition: '1'
+  representations:
+    human: ECMA-320 ed1
+    urn: urn:ecma:320:ed-1
+  style: v3
+- id: ecma.standard.0521
+  identifier:
+    _type: pubid:ecma:standard
+    number: '321'
+    edition: '1'
+  representations:
+    human: ECMA-321 ed1
+    urn: urn:ecma:321:ed-1
+  style: v3
+- id: ecma.standard.0522
+  identifier:
+    _type: pubid:ecma:standard
+    number: '322'
+    edition: '1'
+  representations:
+    human: ECMA-322 ed1
+    urn: urn:ecma:322:ed-1
+  style: v3
+- id: ecma.standard.0523
+  identifier:
+    _type: pubid:ecma:standard
+    number: '323'
+    edition: '1'
+  representations:
+    human: ECMA-323 ed1
+    urn: urn:ecma:323:ed-1
+  style: v3
+- id: ecma.standard.0524
+  identifier:
+    _type: pubid:ecma:standard
+    number: '323'
+    edition: '2'
+  representations:
+    human: ECMA-323 ed2
+    urn: urn:ecma:323:ed-2
+  style: v3
+- id: ecma.standard.0525
+  identifier:
+    _type: pubid:ecma:standard
+    number: '323'
+    edition: '3'
+  representations:
+    human: ECMA-323 ed3
+    urn: urn:ecma:323:ed-3
+  style: v3
+- id: ecma.standard.0526
+  identifier:
+    _type: pubid:ecma:standard
+    number: '323'
+    edition: '4'
+  representations:
+    human: ECMA-323 ed4
+    urn: urn:ecma:323:ed-4
+  style: v3
+- id: ecma.standard.0527
+  identifier:
+    _type: pubid:ecma:standard
+    number: '323'
+    edition: '5'
+  representations:
+    human: ECMA-323 ed5
+    urn: urn:ecma:323:ed-5
+  style: v3
+- id: ecma.standard.0528
+  identifier:
+    _type: pubid:ecma:standard
+    number: '323'
+    edition: '6'
+  representations:
+    human: ECMA-323 ed6
+    urn: urn:ecma:323:ed-6
+  style: v3
+- id: ecma.standard.0529
+  identifier:
+    _type: pubid:ecma:standard
+    number: '324'
+    edition: '1'
+  representations:
+    human: ECMA-324 ed1
+    urn: urn:ecma:324:ed-1
+  style: v3
+- id: ecma.standard.0530
+  identifier:
+    _type: pubid:ecma:standard
+    number: '325'
+    edition: '1'
+  representations:
+    human: ECMA-325 ed1
+    urn: urn:ecma:325:ed-1
+  style: v3
+- id: ecma.standard.0531
+  identifier:
+    _type: pubid:ecma:standard
+    number: '326'
+    edition: '1'
+  representations:
+    human: ECMA-326 ed1
+    urn: urn:ecma:326:ed-1
+  style: v3
+- id: ecma.standard.0532
+  identifier:
+    _type: pubid:ecma:standard
+    number: '328'
+    edition: '1'
+  representations:
+    human: ECMA-328 ed1
+    urn: urn:ecma:328:ed-1
+  style: v3
+- id: ecma.standard.0533
+  identifier:
+    _type: pubid:ecma:standard
+    number: '328'
+    edition: '10'
+  representations:
+    human: ECMA-328 ed10
+    urn: urn:ecma:328:ed-10
+  style: v3
+- id: ecma.standard.0534
+  identifier:
+    _type: pubid:ecma:standard
+    number: '328'
+    edition: '2'
+  representations:
+    human: ECMA-328 ed2
+    urn: urn:ecma:328:ed-2
+  style: v3
+- id: ecma.standard.0535
+  identifier:
+    _type: pubid:ecma:standard
+    number: '328'
+    edition: '3'
+  representations:
+    human: ECMA-328 ed3
+    urn: urn:ecma:328:ed-3
+  style: v3
+- id: ecma.standard.0536
+  identifier:
+    _type: pubid:ecma:standard
+    number: '328'
+    edition: '4'
+  representations:
+    human: ECMA-328 ed4
+    urn: urn:ecma:328:ed-4
+  style: v3
+- id: ecma.standard.0537
+  identifier:
+    _type: pubid:ecma:standard
+    number: '328'
+    edition: '5'
+  representations:
+    human: ECMA-328 ed5
+    urn: urn:ecma:328:ed-5
+  style: v3
+- id: ecma.standard.0538
+  identifier:
+    _type: pubid:ecma:standard
+    number: '328'
+    edition: '6'
+  representations:
+    human: ECMA-328 ed6
+    urn: urn:ecma:328:ed-6
+  style: v3
+- id: ecma.standard.0539
+  identifier:
+    _type: pubid:ecma:standard
+    number: '328'
+    edition: '7'
+  representations:
+    human: ECMA-328 ed7
+    urn: urn:ecma:328:ed-7
+  style: v3
+- id: ecma.standard.0540
+  identifier:
+    _type: pubid:ecma:standard
+    number: '329'
+    edition: '1'
+  representations:
+    human: ECMA-329 ed1
+    urn: urn:ecma:329:ed-1
+  style: v3
+- id: ecma.standard.0541
+  identifier:
+    _type: pubid:ecma:standard
+    number: '330'
+    edition: '1'
+  representations:
+    human: ECMA-330 ed1
+    urn: urn:ecma:330:ed-1
+  style: v3
+- id: ecma.standard.0542
+  identifier:
+    _type: pubid:ecma:standard
+    number: '330'
+    edition: '2'
+  representations:
+    human: ECMA-330 ed2
+    urn: urn:ecma:330:ed-2
+  style: v3
+- id: ecma.standard.0543
+  identifier:
+    _type: pubid:ecma:standard
+    number: '330'
+    edition: '3'
+  representations:
+    human: ECMA-330 ed3
+    urn: urn:ecma:330:ed-3
+  style: v3
+- id: ecma.standard.0544
+  identifier:
+    _type: pubid:ecma:standard
+    number: '331'
+    edition: '1'
+  representations:
+    human: ECMA-331 ed1
+    urn: urn:ecma:331:ed-1
+  style: v3
+- id: ecma.standard.0545
+  identifier:
+    _type: pubid:ecma:standard
+    number: '331'
+    edition: '2'
+  representations:
+    human: ECMA-331 ed2
+    urn: urn:ecma:331:ed-2
+  style: v3
+- id: ecma.standard.0546
+  identifier:
+    _type: pubid:ecma:standard
+    number: '332'
+    edition: '1'
+  representations:
+    human: ECMA-332 ed1
+    urn: urn:ecma:332:ed-1
+  style: v3
+- id: ecma.standard.0547
+  identifier:
+    _type: pubid:ecma:standard
+    number: '333'
+    edition: '1'
+  representations:
+    human: ECMA-333 ed1
+    urn: urn:ecma:333:ed-1
+  style: v3
+- id: ecma.standard.0548
+  identifier:
+    _type: pubid:ecma:standard
+    number: '333'
+    edition: '2'
+  representations:
+    human: ECMA-333 ed2
+    urn: urn:ecma:333:ed-2
+  style: v3
+- id: ecma.standard.0549
+  identifier:
+    _type: pubid:ecma:standard
+    number: '334'
+  representations:
+    human: ECMA-334
+    urn: urn:ecma:334
+  style: v3
+- id: ecma.standard.0550
+  identifier:
+    _type: pubid:ecma:standard
+    number: '334'
+    edition: '1'
+  representations:
+    human: ECMA-334 ed1
+    urn: urn:ecma:334:ed-1
+  style: v3
+- id: ecma.standard.0551
+  identifier:
+    _type: pubid:ecma:standard
+    number: '334'
+    edition: '2'
+  representations:
+    human: ECMA-334 ed2
+    urn: urn:ecma:334:ed-2
+  style: v3
+- id: ecma.standard.0552
+  identifier:
+    _type: pubid:ecma:standard
+    number: '334'
+    edition: '3'
+  representations:
+    human: ECMA-334 ed3
+    urn: urn:ecma:334:ed-3
+  style: v3
+- id: ecma.standard.0553
+  identifier:
+    _type: pubid:ecma:standard
+    number: '334'
+    edition: '4'
+  representations:
+    human: ECMA-334 ed4
+    urn: urn:ecma:334:ed-4
+  style: v3
+- id: ecma.standard.0554
+  identifier:
+    _type: pubid:ecma:standard
+    number: '334'
+    edition: '5'
+  representations:
+    human: ECMA-334 ed5
+    urn: urn:ecma:334:ed-5
+  style: v3
+- id: ecma.standard.0555
+  identifier:
+    _type: pubid:ecma:standard
+    number: '334'
+    edition: '6'
+  representations:
+    human: ECMA-334 ed6
+    urn: urn:ecma:334:ed-6
+  style: v3
+- id: ecma.standard.0556
+  identifier:
+    _type: pubid:ecma:standard
+    number: '334'
+    edition: '7'
+  representations:
+    human: ECMA-334 ed7
+    urn: urn:ecma:334:ed-7
+  style: v3
+- id: ecma.standard.0557
+  identifier:
+    _type: pubid:ecma:standard
+    number: '335'
+    edition: '1'
+  representations:
+    human: ECMA-335 ed1
+    urn: urn:ecma:335:ed-1
+  style: v3
+- id: ecma.standard.0558
+  identifier:
+    _type: pubid:ecma:standard
+    number: '335'
+    edition: '2'
+  representations:
+    human: ECMA-335 ed2
+    urn: urn:ecma:335:ed-2
+  style: v3
+- id: ecma.standard.0559
+  identifier:
+    _type: pubid:ecma:standard
+    number: '335'
+    edition: '3'
+  representations:
+    human: ECMA-335 ed3
+    urn: urn:ecma:335:ed-3
+  style: v3
+- id: ecma.standard.0560
+  identifier:
+    _type: pubid:ecma:standard
+    number: '335'
+    edition: '4'
+  representations:
+    human: ECMA-335 ed4
+    urn: urn:ecma:335:ed-4
+  style: v3
+- id: ecma.standard.0561
+  identifier:
+    _type: pubid:ecma:standard
+    number: '335'
+    edition: '5'
+  representations:
+    human: ECMA-335 ed5
+    urn: urn:ecma:335:ed-5
+  style: v3
+- id: ecma.standard.0562
+  identifier:
+    _type: pubid:ecma:standard
+    number: '335'
+    edition: '6'
+  representations:
+    human: ECMA-335 ed6
+    urn: urn:ecma:335:ed-6
+  style: v3
+- id: ecma.standard.0563
+  identifier:
+    _type: pubid:ecma:standard
+    number: '336'
+    edition: '1'
+  representations:
+    human: ECMA-336 ed1
+    urn: urn:ecma:336:ed-1
+  style: v3
+- id: ecma.standard.0564
+  identifier:
+    _type: pubid:ecma:standard
+    number: '337'
+    edition: '1'
+  representations:
+    human: ECMA-337 ed1
+    urn: urn:ecma:337:ed-1
+  style: v3
+- id: ecma.standard.0565
+  identifier:
+    _type: pubid:ecma:standard
+    number: '337'
+    edition: '2'
+  representations:
+    human: ECMA-337 ed2
+    urn: urn:ecma:337:ed-2
+  style: v3
+- id: ecma.standard.0566
+  identifier:
+    _type: pubid:ecma:standard
+    number: '337'
+    edition: '3'
+  representations:
+    human: ECMA-337 ed3
+    urn: urn:ecma:337:ed-3
+  style: v3
+- id: ecma.standard.0567
+  identifier:
+    _type: pubid:ecma:standard
+    number: '337'
+    edition: '4'
+  representations:
+    human: ECMA-337 ed4
+    urn: urn:ecma:337:ed-4
+  style: v3
+- id: ecma.standard.0568
+  identifier:
+    _type: pubid:ecma:standard
+    number: '338'
+    edition: '1'
+  representations:
+    human: ECMA-338 ed1
+    urn: urn:ecma:338:ed-1
+  style: v3
+- id: ecma.standard.0569
+  identifier:
+    _type: pubid:ecma:standard
+    number: '339'
+    edition: '1'
+  representations:
+    human: ECMA-339 ed1
+    urn: urn:ecma:339:ed-1
+  style: v3
+- id: ecma.standard.0570
+  identifier:
+    _type: pubid:ecma:standard
+    number: '339'
+    edition: '2'
+  representations:
+    human: ECMA-339 ed2
+    urn: urn:ecma:339:ed-2
+  style: v3
+- id: ecma.standard.0571
+  identifier:
+    _type: pubid:ecma:standard
+    number: '340'
+    edition: '1'
+  representations:
+    human: ECMA-340 ed1
+    urn: urn:ecma:340:ed-1
+  style: v3
+- id: ecma.standard.0572
+  identifier:
+    _type: pubid:ecma:standard
+    number: '340'
+    edition: '2'
+  representations:
+    human: ECMA-340 ed2
+    urn: urn:ecma:340:ed-2
+  style: v3
+- id: ecma.standard.0573
+  identifier:
+    _type: pubid:ecma:standard
+    number: '340'
+    edition: '3'
+  representations:
+    human: ECMA-340 ed3
+    urn: urn:ecma:340:ed-3
+  style: v3
+- id: ecma.standard.0574
+  identifier:
+    _type: pubid:ecma:standard
+    number: '340'
+    edition: '4'
+  representations:
+    human: ECMA-340 ed4
+    urn: urn:ecma:340:ed-4
+  style: v3
+- id: ecma.standard.0575
+  identifier:
+    _type: pubid:ecma:standard
+    number: '341'
+    edition: '1'
+  representations:
+    human: ECMA-341 ed1
+    urn: urn:ecma:341:ed-1
+  style: v3
+- id: ecma.standard.0576
+  identifier:
+    _type: pubid:ecma:standard
+    number: '341'
+    edition: '2'
+  representations:
+    human: ECMA-341 ed2
+    urn: urn:ecma:341:ed-2
+  style: v3
+- id: ecma.standard.0577
+  identifier:
+    _type: pubid:ecma:standard
+    number: '341'
+    edition: '3'
+  representations:
+    human: ECMA-341 ed3
+    urn: urn:ecma:341:ed-3
+  style: v3
+- id: ecma.standard.0578
+  identifier:
+    _type: pubid:ecma:standard
+    number: '341'
+    edition: '4'
+  representations:
+    human: ECMA-341 ed4
+    urn: urn:ecma:341:ed-4
+  style: v3
+- id: ecma.standard.0579
+  identifier:
+    _type: pubid:ecma:standard
+    number: '342'
+    edition: '1'
+  representations:
+    human: ECMA-342 ed1
+    urn: urn:ecma:342:ed-1
+  style: v3
+- id: ecma.standard.0580
+  identifier:
+    _type: pubid:ecma:standard
+    number: '343'
+    edition: '1'
+  representations:
+    human: ECMA-343 ed1
+    urn: urn:ecma:343:ed-1
+  style: v3
+- id: ecma.standard.0581
+  identifier:
+    _type: pubid:ecma:standard
+    number: '344'
+    edition: '1'
+  representations:
+    human: ECMA-344 ed1
+    urn: urn:ecma:344:ed-1
+  style: v3
+- id: ecma.standard.0582
+  identifier:
+    _type: pubid:ecma:standard
+    number: '345'
+    edition: '1'
+  representations:
+    human: ECMA-345 ed1
+    urn: urn:ecma:345:ed-1
+  style: v3
+- id: ecma.standard.0583
+  identifier:
+    _type: pubid:ecma:standard
+    number: '346'
+    edition: '1'
+  representations:
+    human: ECMA-346 ed1
+    urn: urn:ecma:346:ed-1
+  style: v3
+- id: ecma.standard.0584
+  identifier:
+    _type: pubid:ecma:standard
+    number: '347'
+    edition: '1'
+  representations:
+    human: ECMA-347 ed1
+    urn: urn:ecma:347:ed-1
+  style: v3
+- id: ecma.standard.0585
+  identifier:
+    _type: pubid:ecma:standard
+    number: '348'
+    edition: '1'
+  representations:
+    human: ECMA-348 ed1
+    urn: urn:ecma:348:ed-1
+  style: v3
+- id: ecma.standard.0586
+  identifier:
+    _type: pubid:ecma:standard
+    number: '348'
+    edition: '2'
+  representations:
+    human: ECMA-348 ed2
+    urn: urn:ecma:348:ed-2
+  style: v3
+- id: ecma.standard.0587
+  identifier:
+    _type: pubid:ecma:standard
+    number: '348'
+    edition: '3'
+  representations:
+    human: ECMA-348 ed3
+    urn: urn:ecma:348:ed-3
+  style: v3
+- id: ecma.standard.0588
+  identifier:
+    _type: pubid:ecma:standard
+    number: '348'
+    edition: '4'
+  representations:
+    human: ECMA-348 ed4
+    urn: urn:ecma:348:ed-4
+  style: v3
+- id: ecma.standard.0589
+  identifier:
+    _type: pubid:ecma:standard
+    number: '348'
+    edition: '5'
+  representations:
+    human: ECMA-348 ed5
+    urn: urn:ecma:348:ed-5
+  style: v3
+- id: ecma.standard.0590
+  identifier:
+    _type: pubid:ecma:standard
+    number: '349'
+    edition: '1'
+  representations:
+    human: ECMA-349 ed1
+    urn: urn:ecma:349:ed-1
+  style: v3
+- id: ecma.standard.0591
+  identifier:
+    _type: pubid:ecma:standard
+    number: '349'
+    edition: '2'
+  representations:
+    human: ECMA-349 ed2
+    urn: urn:ecma:349:ed-2
+  style: v3
+- id: ecma.standard.0592
+  identifier:
+    _type: pubid:ecma:standard
+    number: '349'
+    edition: '3'
+  representations:
+    human: ECMA-349 ed3
+    urn: urn:ecma:349:ed-3
+  style: v3
+- id: ecma.standard.0593
+  identifier:
+    _type: pubid:ecma:standard
+    number: '349'
+    edition: '4'
+  representations:
+    human: ECMA-349 ed4
+    urn: urn:ecma:349:ed-4
+  style: v3
+- id: ecma.standard.0594
+  identifier:
+    _type: pubid:ecma:standard
+    number: '35'
+  representations:
+    human: ECMA-35
+    urn: urn:ecma:35
+  style: v3
+- id: ecma.standard.0595
+  identifier:
+    _type: pubid:ecma:standard
+    number: '35'
+    edition: '1'
+  representations:
+    human: ECMA-35 ed1
+    urn: urn:ecma:35:ed-1
+  style: v3
+- id: ecma.standard.0596
+  identifier:
+    _type: pubid:ecma:standard
+    number: '35'
+    edition: '2'
+  representations:
+    human: ECMA-35 ed2
+    urn: urn:ecma:35:ed-2
+  style: v3
+- id: ecma.standard.0597
+  identifier:
+    _type: pubid:ecma:standard
+    number: '35'
+    edition: '3'
+  representations:
+    human: ECMA-35 ed3
+    urn: urn:ecma:35:ed-3
+  style: v3
+- id: ecma.standard.0598
+  identifier:
+    _type: pubid:ecma:standard
+    number: '35'
+    edition: '4'
+  representations:
+    human: ECMA-35 ed4
+    urn: urn:ecma:35:ed-4
+  style: v3
+- id: ecma.standard.0599
+  identifier:
+    _type: pubid:ecma:standard
+    number: '35'
+    edition: '5'
+  representations:
+    human: ECMA-35 ed5
+    urn: urn:ecma:35:ed-5
+  style: v3
+- id: ecma.standard.0600
+  identifier:
+    _type: pubid:ecma:standard
+    number: '35'
+    edition: '6'
+  representations:
+    human: ECMA-35 ed6
+    urn: urn:ecma:35:ed-6
+  style: v3
+- id: ecma.standard.0601
+  identifier:
+    _type: pubid:ecma:standard
+    number: '350'
+    edition: '1'
+  representations:
+    human: ECMA-350 ed1
+    urn: urn:ecma:350:ed-1
+  style: v3
+- id: ecma.standard.0602
+  identifier:
+    _type: pubid:ecma:standard
+    number: '350'
+    edition: '2'
+  representations:
+    human: ECMA-350 ed2
+    urn: urn:ecma:350:ed-2
+  style: v3
+- id: ecma.standard.0603
+  identifier:
+    _type: pubid:ecma:standard
+    number: '350'
+    edition: '3'
+  representations:
+    human: ECMA-350 ed3
+    urn: urn:ecma:350:ed-3
+  style: v3
+- id: ecma.standard.0604
+  identifier:
+    _type: pubid:ecma:standard
+    number: '351'
+    edition: '1'
+  representations:
+    human: ECMA-351 ed1
+    urn: urn:ecma:351:ed-1
+  style: v3
+- id: ecma.standard.0605
+  identifier:
+    _type: pubid:ecma:standard
+    number: '352'
+    edition: '1'
+  representations:
+    human: ECMA-352 ed1
+    urn: urn:ecma:352:ed-1
+  style: v3
+- id: ecma.standard.0606
+  identifier:
+    _type: pubid:ecma:standard
+    number: '352'
+    edition: '2'
+  representations:
+    human: ECMA-352 ed2
+    urn: urn:ecma:352:ed-2
+  style: v3
+- id: ecma.standard.0607
+  identifier:
+    _type: pubid:ecma:standard
+    number: '352'
+    edition: '3'
+  representations:
+    human: ECMA-352 ed3
+    urn: urn:ecma:352:ed-3
+  style: v3
+- id: ecma.standard.0608
+  identifier:
+    _type: pubid:ecma:standard
+    number: '352'
+    edition: '4'
+  representations:
+    human: ECMA-352 ed4
+    urn: urn:ecma:352:ed-4
+  style: v3
+- id: ecma.standard.0609
+  identifier:
+    _type: pubid:ecma:standard
+    number: '353'
+    edition: '1'
+  representations:
+    human: ECMA-353 ed1
+    urn: urn:ecma:353:ed-1
+  style: v3
+- id: ecma.standard.0610
+  identifier:
+    _type: pubid:ecma:standard
+    number: '354'
+    edition: '1'
+  representations:
+    human: ECMA-354 ed1
+    urn: urn:ecma:354:ed-1
+  style: v3
+- id: ecma.standard.0611
+  identifier:
+    _type: pubid:ecma:standard
+    number: '355'
+    edition: '1'
+  representations:
+    human: ECMA-355 ed1
+    urn: urn:ecma:355:ed-1
+  style: v3
+- id: ecma.standard.0612
+  identifier:
+    _type: pubid:ecma:standard
+    number: '355'
+    edition: '2'
+  representations:
+    human: ECMA-355 ed2
+    urn: urn:ecma:355:ed-2
+  style: v3
+- id: ecma.standard.0613
+  identifier:
+    _type: pubid:ecma:standard
+    number: '355'
+    edition: '3'
+  representations:
+    human: ECMA-355 ed3
+    urn: urn:ecma:355:ed-3
+  style: v3
+- id: ecma.standard.0614
+  identifier:
+    _type: pubid:ecma:standard
+    number: '356'
+    edition: '1'
+  representations:
+    human: ECMA-356 ed1
+    urn: urn:ecma:356:ed-1
+  style: v3
+- id: ecma.standard.0615
+  identifier:
+    _type: pubid:ecma:standard
+    number: '356'
+    edition: '2'
+  representations:
+    human: ECMA-356 ed2
+    urn: urn:ecma:356:ed-2
+  style: v3
+- id: ecma.standard.0616
+  identifier:
+    _type: pubid:ecma:standard
+    number: '358'
+    edition: '1'
+  representations:
+    human: ECMA-358 ed1
+    urn: urn:ecma:358:ed-1
+  style: v3
+- id: ecma.standard.0617
+  identifier:
+    _type: pubid:ecma:standard
+    number: '359'
+    edition: '1'
+  representations:
+    human: ECMA-359 ed1
+    urn: urn:ecma:359:ed-1
+  style: v3
+- id: ecma.standard.0618
+  identifier:
+    _type: pubid:ecma:standard
+    number: '360'
+    edition: '1'
+  representations:
+    human: ECMA-360 ed1
+    urn: urn:ecma:360:ed-1
+  style: v3
+- id: ecma.standard.0619
+  identifier:
+    _type: pubid:ecma:standard
+    number: '361'
+    edition: '1'
+  representations:
+    human: ECMA-361 ed1
+    urn: urn:ecma:361:ed-1
+  style: v3
+- id: ecma.standard.0620
+  identifier:
+    _type: pubid:ecma:standard
+    number: '362'
+    edition: '1'
+  representations:
+    human: ECMA-362 ed1
+    urn: urn:ecma:362:ed-1
+  style: v3
+- id: ecma.standard.0621
+  identifier:
+    _type: pubid:ecma:standard
+    number: '362'
+    edition: '2'
+  representations:
+    human: ECMA-362 ed2
+    urn: urn:ecma:362:ed-2
+  style: v3
+- id: ecma.standard.0622
+  identifier:
+    _type: pubid:ecma:standard
+    number: '362'
+    edition: '3'
+  representations:
+    human: ECMA-362 ed3
+    urn: urn:ecma:362:ed-3
+  style: v3
+- id: ecma.standard.0623
+  identifier:
+    _type: pubid:ecma:standard
+    number: '363'
+    edition: '1'
+  representations:
+    human: ECMA-363 ed1
+    urn: urn:ecma:363:ed-1
+  style: v3
+- id: ecma.standard.0624
+  identifier:
+    _type: pubid:ecma:standard
+    number: '363'
+    edition: '2'
+  representations:
+    human: ECMA-363 ed2
+    urn: urn:ecma:363:ed-2
+  style: v3
+- id: ecma.standard.0625
+  identifier:
+    _type: pubid:ecma:standard
+    number: '363'
+    edition: '3'
+  representations:
+    human: ECMA-363 ed3
+    urn: urn:ecma:363:ed-3
+  style: v3
+- id: ecma.standard.0626
+  identifier:
+    _type: pubid:ecma:standard
+    number: '363'
+    edition: '4'
+  representations:
+    human: ECMA-363 ed4
+    urn: urn:ecma:363:ed-4
+  style: v3
+- id: ecma.standard.0627
+  identifier:
+    _type: pubid:ecma:standard
+    number: '364'
+    edition: '1'
+  representations:
+    human: ECMA-364 ed1
+    urn: urn:ecma:364:ed-1
+  style: v3
+- id: ecma.standard.0628
+  identifier:
+    _type: pubid:ecma:standard
+    number: '364'
+    edition: '2'
+  representations:
+    human: ECMA-364 ed2
+    urn: urn:ecma:364:ed-2
+  style: v3
+- id: ecma.standard.0629
+  identifier:
+    _type: pubid:ecma:standard
+    number: '364'
+    edition: '3'
+  representations:
+    human: ECMA-364 ed3
+    urn: urn:ecma:364:ed-3
+  style: v3
+- id: ecma.standard.0630
+  identifier:
+    _type: pubid:ecma:standard
+    number: '365'
+    edition: '1'
+  representations:
+    human: ECMA-365 ed1
+    urn: urn:ecma:365:ed-1
+  style: v3
+- id: ecma.standard.0631
+  identifier:
+    _type: pubid:ecma:standard
+    number: '366'
+    edition: '1'
+  representations:
+    human: ECMA-366 ed1
+    urn: urn:ecma:366:ed-1
+  style: v3
+- id: ecma.standard.0632
+  identifier:
+    _type: pubid:ecma:standard
+    number: '366'
+    edition: '2'
+  representations:
+    human: ECMA-366 ed2
+    urn: urn:ecma:366:ed-2
+  style: v3
+- id: ecma.standard.0633
+  identifier:
+    _type: pubid:ecma:standard
+    number: '366'
+    edition: '3'
+  representations:
+    human: ECMA-366 ed3
+    urn: urn:ecma:366:ed-3
+  style: v3
+- id: ecma.standard.0634
+  identifier:
+    _type: pubid:ecma:standard
+    number: '367'
+    edition: '1'
+  representations:
+    human: ECMA-367 ed1
+    urn: urn:ecma:367:ed-1
+  style: v3
+- id: ecma.standard.0635
+  identifier:
+    _type: pubid:ecma:standard
+    number: '367'
+    edition: '2'
+  representations:
+    human: ECMA-367 ed2
+    urn: urn:ecma:367:ed-2
+  style: v3
+- id: ecma.standard.0636
+  identifier:
+    _type: pubid:ecma:standard
+    number: '368'
+    edition: '1'
+  representations:
+    human: ECMA-368 ed1
+    urn: urn:ecma:368:ed-1
+  style: v3
+- id: ecma.standard.0637
+  identifier:
+    _type: pubid:ecma:standard
+    number: '368'
+    edition: '2'
+  representations:
+    human: ECMA-368 ed2
+    urn: urn:ecma:368:ed-2
+  style: v3
+- id: ecma.standard.0638
+  identifier:
+    _type: pubid:ecma:standard
+    number: '368'
+    edition: '3'
+  representations:
+    human: ECMA-368 ed3
+    urn: urn:ecma:368:ed-3
+  style: v3
+- id: ecma.standard.0639
+  identifier:
+    _type: pubid:ecma:standard
+    number: '369'
+    edition: '1'
+  representations:
+    human: ECMA-369 ed1
+    urn: urn:ecma:369:ed-1
+  style: v3
+- id: ecma.standard.0640
+  identifier:
+    _type: pubid:ecma:standard
+    number: '369'
+    edition: '2'
+  representations:
+    human: ECMA-369 ed2
+    urn: urn:ecma:369:ed-2
+  style: v3
+- id: ecma.standard.0641
+  identifier:
+    _type: pubid:ecma:standard
+    number: '369'
+    edition: '3'
+  representations:
+    human: ECMA-369 ed3
+    urn: urn:ecma:369:ed-3
+  style: v3
+- id: ecma.standard.0642
+  identifier:
+    _type: pubid:ecma:standard
+    number: '370'
+    edition: '1'
+  representations:
+    human: ECMA-370 ed1
+    urn: urn:ecma:370:ed-1
+  style: v3
+- id: ecma.standard.0643
+  identifier:
+    _type: pubid:ecma:standard
+    number: '370'
+    edition: '2'
+  representations:
+    human: ECMA-370 ed2
+    urn: urn:ecma:370:ed-2
+  style: v3
+- id: ecma.standard.0644
+  identifier:
+    _type: pubid:ecma:standard
+    number: '370'
+    edition: '3'
+  representations:
+    human: ECMA-370 ed3
+    urn: urn:ecma:370:ed-3
+  style: v3
+- id: ecma.standard.0645
+  identifier:
+    _type: pubid:ecma:standard
+    number: '370'
+    edition: '4'
+  representations:
+    human: ECMA-370 ed4
+    urn: urn:ecma:370:ed-4
+  style: v3
+- id: ecma.standard.0646
+  identifier:
+    _type: pubid:ecma:standard
+    number: '370'
+    edition: '5'
+  representations:
+    human: ECMA-370 ed5
+    urn: urn:ecma:370:ed-5
+  style: v3
+- id: ecma.standard.0647
+  identifier:
+    _type: pubid:ecma:standard
+    number: '370'
+    edition: '6'
+  representations:
+    human: ECMA-370 ed6
+    urn: urn:ecma:370:ed-6
+  style: v3
+- id: ecma.standard.0648
+  identifier:
+    _type: pubid:ecma:standard
+    number: '370'
+    edition: '7'
+  representations:
+    human: ECMA-370 ed7
+    urn: urn:ecma:370:ed-7
+  style: v3
+- id: ecma.standard.0649
+  identifier:
+    _type: pubid:ecma:standard
+    number: '371'
+    edition: '1'
+  representations:
+    human: ECMA-371 ed1
+    urn: urn:ecma:371:ed-1
+  style: v3
+- id: ecma.standard.0650
+  identifier:
+    _type: pubid:ecma:standard
+    number: '371'
+    edition: '2'
+  representations:
+    human: ECMA-371 ed2
+    urn: urn:ecma:371:ed-2
+  style: v3
+- id: ecma.standard.0651
+  identifier:
+    _type: pubid:ecma:standard
+    number: '372'
+    edition: '1'
+  representations:
+    human: ECMA-372 ed1
+    urn: urn:ecma:372:ed-1
+  style: v3
+- id: ecma.standard.0652
+  identifier:
+    _type: pubid:ecma:standard
+    number: '373'
+    edition: '1'
+  representations:
+    human: ECMA-373 ed1
+    urn: urn:ecma:373:ed-1
+  style: v3
+- id: ecma.standard.0653
+  identifier:
+    _type: pubid:ecma:standard
+    number: '373'
+    edition: '2'
+  representations:
+    human: ECMA-373 ed2
+    urn: urn:ecma:373:ed-2
+  style: v3
+- id: ecma.standard.0654
+  identifier:
+    _type: pubid:ecma:standard
+    number: '374'
+    edition: '1'
+  representations:
+    human: ECMA-374 ed1
+    urn: urn:ecma:374:ed-1
+  style: v3
+- id: ecma.standard.0655
+  identifier:
+    _type: pubid:ecma:standard
+    number: '374'
+    edition: '2'
+  representations:
+    human: ECMA-374 ed2
+    urn: urn:ecma:374:ed-2
+  style: v3
+- id: ecma.standard.0656
+  identifier:
+    _type: pubid:ecma:standard
+    number: '375'
+    edition: '1'
+  representations:
+    human: ECMA-375 ed1
+    urn: urn:ecma:375:ed-1
+  style: v3
+- id: ecma.standard.0657
+  identifier:
+    _type: pubid:ecma:standard
+    number: '376'
+    edition: '1'
+  representations:
+    human: ECMA-376 ed1
+    urn: urn:ecma:376:ed-1
+  style: v3
+- id: ecma.standard.0658
+  identifier:
+    _type: pubid:ecma:standard
+    number: '376'
+    edition: '2'
+  representations:
+    human: ECMA-376 ed2
+    urn: urn:ecma:376:ed-2
+  style: v3
+- id: ecma.standard.0659
+  identifier:
+    _type: pubid:ecma:standard
+    number: '376'
+    edition: '3'
+  representations:
+    human: ECMA-376 ed3
+    urn: urn:ecma:376:ed-3
+  style: v3
+- id: ecma.standard.0660
+  identifier:
+    _type: pubid:ecma:standard
+    number: '376'
+    edition: '4'
+  representations:
+    human: ECMA-376 ed4
+    urn: urn:ecma:376:ed-4
+  style: v3
+- id: ecma.standard.0661
+  identifier:
+    _type: pubid:ecma:standard
+    number: '376'
+    edition: '5'
+  representations:
+    human: ECMA-376 ed5
+    urn: urn:ecma:376:ed-5
+  style: v3
+- id: ecma.standard.0662
+  identifier:
+    _type: pubid:ecma:standard
+    number: '377'
+    edition: '1'
+  representations:
+    human: ECMA-377 ed1
+    urn: urn:ecma:377:ed-1
+  style: v3
+- id: ecma.standard.0663
+  identifier:
+    _type: pubid:ecma:standard
+    number: '378'
+    edition: '1'
+  representations:
+    human: ECMA-378 ed1
+    urn: urn:ecma:378:ed-1
+  style: v3
+- id: ecma.standard.0664
+  identifier:
+    _type: pubid:ecma:standard
+    number: '379'
+    edition: '1'
+  representations:
+    human: ECMA-379 ed1
+    urn: urn:ecma:379:ed-1
+  style: v3
+- id: ecma.standard.0665
+  identifier:
+    _type: pubid:ecma:standard
+    number: '379'
+    edition: '2'
+  representations:
+    human: ECMA-379 ed2
+    urn: urn:ecma:379:ed-2
+  style: v3
+- id: ecma.standard.0666
+  identifier:
+    _type: pubid:ecma:standard
+    number: '379'
+    edition: '3'
+  representations:
+    human: ECMA-379 ed3
+    urn: urn:ecma:379:ed-3
+  style: v3
+- id: ecma.standard.0667
+  identifier:
+    _type: pubid:ecma:standard
+    number: '380'
+    edition: '1'
+  representations:
+    human: ECMA-380 ed1
+    urn: urn:ecma:380:ed-1
+  style: v3
+- id: ecma.standard.0668
+  identifier:
+    _type: pubid:ecma:standard
+    number: '381'
+    edition: '1'
+  representations:
+    human: ECMA-381 ed1
+    urn: urn:ecma:381:ed-1
+  style: v3
+- id: ecma.standard.0669
+  identifier:
+    _type: pubid:ecma:standard
+    number: '382'
+    edition: '1'
+  representations:
+    human: ECMA-382 ed1
+    urn: urn:ecma:382:ed-1
+  style: v3
+- id: ecma.standard.0670
+  identifier:
+    _type: pubid:ecma:standard
+    number: '382'
+    edition: '2'
+  representations:
+    human: ECMA-382 ed2
+    urn: urn:ecma:382:ed-2
+  style: v3
+- id: ecma.standard.0671
+  identifier:
+    _type: pubid:ecma:standard
+    number: '383'
+    edition: '1'
+  representations:
+    human: ECMA-383 ed1
+    urn: urn:ecma:383:ed-1
+  style: v3
+- id: ecma.standard.0672
+  identifier:
+    _type: pubid:ecma:standard
+    number: '383'
+    edition: '2'
+  representations:
+    human: ECMA-383 ed2
+    urn: urn:ecma:383:ed-2
+  style: v3
+- id: ecma.standard.0673
+  identifier:
+    _type: pubid:ecma:standard
+    number: '383'
+    edition: '3'
+  representations:
+    human: ECMA-383 ed3
+    urn: urn:ecma:383:ed-3
+  style: v3
+- id: ecma.standard.0674
+  identifier:
+    _type: pubid:ecma:standard
+    number: '384'
+    edition: '1'
+  representations:
+    human: ECMA-384 ed1
+    urn: urn:ecma:384:ed-1
+  style: v3
+- id: ecma.standard.0675
+  identifier:
+    _type: pubid:ecma:standard
+    number: '385'
+    edition: '1'
+  representations:
+    human: ECMA-385 ed1
+    urn: urn:ecma:385:ed-1
+  style: v3
+- id: ecma.standard.0676
+  identifier:
+    _type: pubid:ecma:standard
+    number: '385'
+    edition: '2'
+  representations:
+    human: ECMA-385 ed2
+    urn: urn:ecma:385:ed-2
+  style: v3
+- id: ecma.standard.0677
+  identifier:
+    _type: pubid:ecma:standard
+    number: '385'
+    edition: '3'
+  representations:
+    human: ECMA-385 ed3
+    urn: urn:ecma:385:ed-3
+  style: v3
+- id: ecma.standard.0678
+  identifier:
+    _type: pubid:ecma:standard
+    number: '385'
+    edition: '4'
+  representations:
+    human: ECMA-385 ed4
+    urn: urn:ecma:385:ed-4
+  style: v3
+- id: ecma.standard.0679
+  identifier:
+    _type: pubid:ecma:standard
+    number: '386'
+    edition: '1'
+  representations:
+    human: ECMA-386 ed1
+    urn: urn:ecma:386:ed-1
+  style: v3
+- id: ecma.standard.0680
+  identifier:
+    _type: pubid:ecma:standard
+    number: '386'
+    edition: '2'
+  representations:
+    human: ECMA-386 ed2
+    urn: urn:ecma:386:ed-2
+  style: v3
+- id: ecma.standard.0681
+  identifier:
+    _type: pubid:ecma:standard
+    number: '386'
+    edition: '3'
+  representations:
+    human: ECMA-386 ed3
+    urn: urn:ecma:386:ed-3
+  style: v3
+- id: ecma.standard.0682
+  identifier:
+    _type: pubid:ecma:standard
+    number: '387'
+    edition: '1'
+  representations:
+    human: ECMA-387 ed1
+    urn: urn:ecma:387:ed-1
+  style: v3
+- id: ecma.standard.0683
+  identifier:
+    _type: pubid:ecma:standard
+    number: '387'
+    edition: '2'
+  representations:
+    human: ECMA-387 ed2
+    urn: urn:ecma:387:ed-2
+  style: v3
+- id: ecma.standard.0684
+  identifier:
+    _type: pubid:ecma:standard
+    number: '388'
+    edition: '1'
+  representations:
+    human: ECMA-388 ed1
+    urn: urn:ecma:388:ed-1
+  style: v3
+- id: ecma.standard.0685
+  identifier:
+    _type: pubid:ecma:standard
+    number: '389'
+    edition: '1'
+  representations:
+    human: ECMA-389 ed1
+    urn: urn:ecma:389:ed-1
+  style: v3
+- id: ecma.standard.0686
+  identifier:
+    _type: pubid:ecma:standard
+    number: '390'
+    edition: '1'
+  representations:
+    human: ECMA-390 ed1
+    urn: urn:ecma:390:ed-1
+  style: v3
+- id: ecma.standard.0687
+  identifier:
+    _type: pubid:ecma:standard
+    number: '390'
+    edition: '2'
+  representations:
+    human: ECMA-390 ed2
+    urn: urn:ecma:390:ed-2
+  style: v3
+- id: ecma.standard.0688
+  identifier:
+    _type: pubid:ecma:standard
+    number: '391'
+    edition: '1'
+  representations:
+    human: ECMA-391 ed1
+    urn: urn:ecma:391:ed-1
+  style: v3
+- id: ecma.standard.0689
+  identifier:
+    _type: pubid:ecma:standard
+    number: '392'
+    edition: '1'
+  representations:
+    human: ECMA-392 ed1
+    urn: urn:ecma:392:ed-1
+  style: v3
+- id: ecma.standard.0690
+  identifier:
+    _type: pubid:ecma:standard
+    number: '392'
+    edition: '2'
+  representations:
+    human: ECMA-392 ed2
+    urn: urn:ecma:392:ed-2
+  style: v3
+- id: ecma.standard.0691
+  identifier:
+    _type: pubid:ecma:standard
+    number: '393'
+    edition: '1'
+  representations:
+    human: ECMA-393 ed1
+    urn: urn:ecma:393:ed-1
+  style: v3
+- id: ecma.standard.0692
+  identifier:
+    _type: pubid:ecma:standard
+    number: '393'
+    edition: '2'
+  representations:
+    human: ECMA-393 ed2
+    urn: urn:ecma:393:ed-2
+  style: v3
+- id: ecma.standard.0693
+  identifier:
+    _type: pubid:ecma:standard
+    number: '394'
+    edition: '1'
+  representations:
+    human: ECMA-394 ed1
+    urn: urn:ecma:394:ed-1
+  style: v3
+- id: ecma.standard.0694
+  identifier:
+    _type: pubid:ecma:standard
+    number: '395'
+    edition: '1'
+  representations:
+    human: ECMA-395 ed1
+    urn: urn:ecma:395:ed-1
+  style: v3
+- id: ecma.standard.0695
+  identifier:
+    _type: pubid:ecma:standard
+    number: '396'
+    edition: '1'
+  representations:
+    human: ECMA-396 ed1
+    urn: urn:ecma:396:ed-1
+  style: v3
+- id: ecma.standard.0696
+  identifier:
+    _type: pubid:ecma:standard
+    number: '396'
+    edition: '2'
+  representations:
+    human: ECMA-396 ed2
+    urn: urn:ecma:396:ed-2
+  style: v3
+- id: ecma.standard.0697
+  identifier:
+    _type: pubid:ecma:standard
+    number: '396'
+    edition: '3'
+  representations:
+    human: ECMA-396 ed3
+    urn: urn:ecma:396:ed-3
+  style: v3
+- id: ecma.standard.0698
+  identifier:
+    _type: pubid:ecma:standard
+    number: '396'
+    edition: '4'
+  representations:
+    human: ECMA-396 ed4
+    urn: urn:ecma:396:ed-4
+  style: v3
+- id: ecma.standard.0699
+  identifier:
+    _type: pubid:ecma:standard
+    number: '397'
+    edition: '1'
+  representations:
+    human: ECMA-397 ed1
+    urn: urn:ecma:397:ed-1
+  style: v3
+- id: ecma.standard.0700
+  identifier:
+    _type: pubid:ecma:standard
+    number: '398'
+    edition: '1'
+  representations:
+    human: ECMA-398 ed1
+    urn: urn:ecma:398:ed-1
+  style: v3
+- id: ecma.standard.0701
+  identifier:
+    _type: pubid:ecma:standard
+    number: '399'
+    edition: '1'
+  representations:
+    human: ECMA-399 ed1
+    urn: urn:ecma:399:ed-1
+  style: v3
+- id: ecma.standard.0702
+  identifier:
+    _type: pubid:ecma:standard
+    number: '400'
+    edition: '1'
+  representations:
+    human: ECMA-400 ed1
+    urn: urn:ecma:400:ed-1
+  style: v3
+- id: ecma.standard.0703
+  identifier:
+    _type: pubid:ecma:standard
+    number: '400'
+    edition: '2'
+  representations:
+    human: ECMA-400 ed2
+    urn: urn:ecma:400:ed-2
+  style: v3
+- id: ecma.standard.0704
+  identifier:
+    _type: pubid:ecma:standard
+    number: '400'
+    edition: '3'
+  representations:
+    human: ECMA-400 ed3
+    urn: urn:ecma:400:ed-3
+  style: v3
+- id: ecma.standard.0705
+  identifier:
+    _type: pubid:ecma:standard
+    number: '401'
+    edition: '1'
+  representations:
+    human: ECMA-401 ed1
+    urn: urn:ecma:401:ed-1
+  style: v3
+- id: ecma.standard.0706
+  identifier:
+    _type: pubid:ecma:standard
+    number: '401'
+    edition: '2'
+  representations:
+    human: ECMA-401 ed2
+    urn: urn:ecma:401:ed-2
+  style: v3
+- id: ecma.standard.0707
+  identifier:
+    _type: pubid:ecma:standard
+    number: '402'
+  representations:
+    human: ECMA-402
+    urn: urn:ecma:402
+  style: v3
+- id: ecma.standard.0708
+  identifier:
+    _type: pubid:ecma:standard
+    number: '402'
+    edition: '1'
+  representations:
+    human: ECMA-402 ed1
+    urn: urn:ecma:402:ed-1
+  style: v3
+- id: ecma.standard.0709
+  identifier:
+    _type: pubid:ecma:standard
+    number: '402'
+    edition: '10'
+  representations:
+    human: ECMA-402 ed10
+    urn: urn:ecma:402:ed-10
+  style: v3
+- id: ecma.standard.0710
+  identifier:
+    _type: pubid:ecma:standard
+    number: '402'
+    edition: '11'
+  representations:
+    human: ECMA-402 ed11
+    urn: urn:ecma:402:ed-11
+  style: v3
+- id: ecma.standard.0711
+  identifier:
+    _type: pubid:ecma:standard
+    number: '402'
+    edition: '12'
+  representations:
+    human: ECMA-402 ed12
+    urn: urn:ecma:402:ed-12
+  style: v3
+- id: ecma.standard.0712
+  identifier:
+    _type: pubid:ecma:standard
+    number: '402'
+    edition: '13'
+  representations:
+    human: ECMA-402 ed13
+    urn: urn:ecma:402:ed-13
+  style: v3
+- id: ecma.standard.0713
+  identifier:
+    _type: pubid:ecma:standard
+    number: '402'
+    edition: '2'
+  representations:
+    human: ECMA-402 ed2
+    urn: urn:ecma:402:ed-2
+  style: v3
+- id: ecma.standard.0714
+  identifier:
+    _type: pubid:ecma:standard
+    number: '402'
+    edition: '3'
+  representations:
+    human: ECMA-402 ed3
+    urn: urn:ecma:402:ed-3
+  style: v3
+- id: ecma.standard.0715
+  identifier:
+    _type: pubid:ecma:standard
+    number: '402'
+    edition: '4'
+  representations:
+    human: ECMA-402 ed4
+    urn: urn:ecma:402:ed-4
+  style: v3
+- id: ecma.standard.0716
+  identifier:
+    _type: pubid:ecma:standard
+    number: '402'
+    edition: '5'
+  representations:
+    human: ECMA-402 ed5
+    urn: urn:ecma:402:ed-5
+  style: v3
+- id: ecma.standard.0717
+  identifier:
+    _type: pubid:ecma:standard
+    number: '402'
+    edition: '6'
+  representations:
+    human: ECMA-402 ed6
+    urn: urn:ecma:402:ed-6
+  style: v3
+- id: ecma.standard.0718
+  identifier:
+    _type: pubid:ecma:standard
+    number: '402'
+    edition: '7'
+  representations:
+    human: ECMA-402 ed7
+    urn: urn:ecma:402:ed-7
+  style: v3
+- id: ecma.standard.0719
+  identifier:
+    _type: pubid:ecma:standard
+    number: '402'
+    edition: '8'
+  representations:
+    human: ECMA-402 ed8
+    urn: urn:ecma:402:ed-8
+  style: v3
+- id: ecma.standard.0720
+  identifier:
+    _type: pubid:ecma:standard
+    number: '402'
+    edition: '9'
+  representations:
+    human: ECMA-402 ed9
+    urn: urn:ecma:402:ed-9
+  style: v3
+- id: ecma.standard.0721
+  identifier:
+    _type: pubid:ecma:standard
+    number: '403'
+    edition: '1'
+  representations:
+    human: ECMA-403 ed1
+    urn: urn:ecma:403:ed-1
+  style: v3
+- id: ecma.standard.0722
+  identifier:
+    _type: pubid:ecma:standard
+    number: '403'
+    edition: '2'
+  representations:
+    human: ECMA-403 ed2
+    urn: urn:ecma:403:ed-2
+  style: v3
+- id: ecma.standard.0723
+  identifier:
+    _type: pubid:ecma:standard
+    number: '404'
+    edition: '1'
+  representations:
+    human: ECMA-404 ed1
+    urn: urn:ecma:404:ed-1
+  style: v3
+- id: ecma.standard.0724
+  identifier:
+    _type: pubid:ecma:standard
+    number: '404'
+    edition: '2'
+  representations:
+    human: ECMA-404 ed2
+    urn: urn:ecma:404:ed-2
+  style: v3
+- id: ecma.standard.0725
+  identifier:
+    _type: pubid:ecma:standard
+    number: '405'
+    edition: '1'
+  representations:
+    human: ECMA-405 ed1
+    urn: urn:ecma:405:ed-1
+  style: v3
+- id: ecma.standard.0726
+  identifier:
+    _type: pubid:ecma:standard
+    number: '406'
+    edition: '1'
+  representations:
+    human: ECMA-406 ed1
+    urn: urn:ecma:406:ed-1
+  style: v3
+- id: ecma.standard.0727
+  identifier:
+    _type: pubid:ecma:standard
+    number: '407'
+    edition: '1'
+  representations:
+    human: ECMA-407 ed1
+    urn: urn:ecma:407:ed-1
+  style: v3
+- id: ecma.standard.0728
+  identifier:
+    _type: pubid:ecma:standard
+    number: '408'
+    edition: '1'
+  representations:
+    human: ECMA-408 ed1
+    urn: urn:ecma:408:ed-1
+  style: v3
+- id: ecma.standard.0729
+  identifier:
+    _type: pubid:ecma:standard
+    number: '408'
+    edition: '2'
+  representations:
+    human: ECMA-408 ed2
+    urn: urn:ecma:408:ed-2
+  style: v3
+- id: ecma.standard.0730
+  identifier:
+    _type: pubid:ecma:standard
+    number: '408'
+    edition: '3'
+  representations:
+    human: ECMA-408 ed3
+    urn: urn:ecma:408:ed-3
+  style: v3
+- id: ecma.standard.0731
+  identifier:
+    _type: pubid:ecma:standard
+    number: '408'
+    edition: '4'
+  representations:
+    human: ECMA-408 ed4
+    urn: urn:ecma:408:ed-4
+  style: v3
+- id: ecma.standard.0732
+  identifier:
+    _type: pubid:ecma:standard
+    number: '409'
+    edition: '1'
+  representations:
+    human: ECMA-409 ed1
+    urn: urn:ecma:409:ed-1
+  style: v3
+- id: ecma.standard.0733
+  identifier:
+    _type: pubid:ecma:standard
+    number: '409'
+    edition: '2'
+  representations:
+    human: ECMA-409 ed2
+    urn: urn:ecma:409:ed-2
+  style: v3
+- id: ecma.standard.0734
+  identifier:
+    _type: pubid:ecma:standard
+    number: '410'
+    edition: '1'
+  representations:
+    human: ECMA-410 ed1
+    urn: urn:ecma:410:ed-1
+  style: v3
+- id: ecma.standard.0735
+  identifier:
+    _type: pubid:ecma:standard
+    number: '410'
+    edition: '2'
+  representations:
+    human: ECMA-410 ed2
+    urn: urn:ecma:410:ed-2
+  style: v3
+- id: ecma.standard.0736
+  identifier:
+    _type: pubid:ecma:standard
+    number: '410'
+    edition: '3'
+  representations:
+    human: ECMA-410 ed3
+    urn: urn:ecma:410:ed-3
+  style: v3
+- id: ecma.standard.0737
+  identifier:
+    _type: pubid:ecma:standard
+    number: '411'
+  representations:
+    human: ECMA-411
+    urn: urn:ecma:411
+  style: v3
+- id: ecma.standard.0738
+  identifier:
+    _type: pubid:ecma:standard
+    number: '411'
+    edition: '1'
+  representations:
+    human: ECMA-411 ed1
+    urn: urn:ecma:411:ed-1
+  style: v3
+- id: ecma.standard.0739
+  identifier:
+    _type: pubid:ecma:standard
+    number: '411'
+    edition: '2'
+  representations:
+    human: ECMA-411 ed2
+    urn: urn:ecma:411:ed-2
+  style: v3
+- id: ecma.standard.0740
+  identifier:
+    _type: pubid:ecma:standard
+    number: '411'
+    edition: '3'
+  representations:
+    human: ECMA-411 ed3
+    urn: urn:ecma:411:ed-3
+  style: v3
+- id: ecma.standard.0741
+  identifier:
+    _type: pubid:ecma:standard
+    number: '412'
+    edition: '1'
+  representations:
+    human: ECMA-412 ed1
+    urn: urn:ecma:412:ed-1
+  style: v3
+- id: ecma.standard.0742
+  identifier:
+    _type: pubid:ecma:standard
+    number: '412'
+    edition: '2'
+  representations:
+    human: ECMA-412 ed2
+    urn: urn:ecma:412:ed-2
+  style: v3
+- id: ecma.standard.0743
+  identifier:
+    _type: pubid:ecma:standard
+    number: '412'
+    edition: '3'
+  representations:
+    human: ECMA-412 ed3
+    urn: urn:ecma:412:ed-3
+  style: v3
+- id: ecma.standard.0744
+  identifier:
+    _type: pubid:ecma:standard
+    number: '413'
+    edition: '1'
+  representations:
+    human: ECMA-413 ed1
+    urn: urn:ecma:413:ed-1
+  style: v3
+- id: ecma.standard.0745
+  identifier:
+    _type: pubid:ecma:standard
+    number: '413'
+    edition: '2'
+  representations:
+    human: ECMA-413 ed2
+    urn: urn:ecma:413:ed-2
+  style: v3
+- id: ecma.standard.0746
+  identifier:
+    _type: pubid:ecma:standard
+    number: '413'
+    edition: '3'
+  representations:
+    human: ECMA-413 ed3
+    urn: urn:ecma:413:ed-3
+  style: v3
+- id: ecma.standard.0747
+  identifier:
+    _type: pubid:ecma:standard
+    number: '413'
+    edition: '4'
+  representations:
+    human: ECMA-413 ed4
+    urn: urn:ecma:413:ed-4
+  style: v3
+- id: ecma.standard.0748
+  identifier:
+    _type: pubid:ecma:standard
+    number: '414'
+    edition: '1'
+  representations:
+    human: ECMA-414 ed1
+    urn: urn:ecma:414:ed-1
+  style: v3
+- id: ecma.standard.0749
+  identifier:
+    _type: pubid:ecma:standard
+    number: '414'
+    edition: '2'
+  representations:
+    human: ECMA-414 ed2
+    urn: urn:ecma:414:ed-2
+  style: v3
+- id: ecma.standard.0750
+  identifier:
+    _type: pubid:ecma:standard
+    number: '414'
+    edition: '3'
+  representations:
+    human: ECMA-414 ed3
+    urn: urn:ecma:414:ed-3
+  style: v3
+- id: ecma.standard.0751
+  identifier:
+    _type: pubid:ecma:standard
+    number: '415'
+    edition: '1'
+  representations:
+    human: ECMA-415 ed1
+    urn: urn:ecma:415:ed-1
+  style: v3
+- id: ecma.standard.0752
+  identifier:
+    _type: pubid:ecma:standard
+    number: '416'
+    edition: '1'
+  representations:
+    human: ECMA-416 ed1
+    urn: urn:ecma:416:ed-1
+  style: v3
+- id: ecma.standard.0753
+  identifier:
+    _type: pubid:ecma:standard
+    number: '417'
+    edition: '1'
+  representations:
+    human: ECMA-417 ed1
+    urn: urn:ecma:417:ed-1
+  style: v3
+- id: ecma.standard.0754
+  identifier:
+    _type: pubid:ecma:standard
+    number: '417'
+    edition: '2'
+  representations:
+    human: ECMA-417 ed2
+    urn: urn:ecma:417:ed-2
+  style: v3
+- id: ecma.standard.0755
+  identifier:
+    _type: pubid:ecma:standard
+    number: '417'
+    edition: '3'
+  representations:
+    human: ECMA-417 ed3
+    urn: urn:ecma:417:ed-3
+  style: v3
+- id: ecma.standard.0756
+  identifier:
+    _type: pubid:ecma:standard
+    number: '418'
+    edition: '4'
+  representations:
+    human: ECMA-418 ed4
+    urn: urn:ecma:418:ed-4
+  style: v3
+- id: ecma.standard.0757
+  identifier:
+    _type: pubid:ecma:standard
+    number: '418'
+    part: '1'
+  representations:
+    human: ECMA-418-1
+    urn: urn:ecma:418:part-1
+  style: v3
+- id: ecma.standard.0758
+  identifier:
+    _type: pubid:ecma:standard
+    number: '418'
+    part: '1'
+    edition: '1'
+  representations:
+    human: ECMA-418-1 ed1
+    urn: urn:ecma:418:part-1:ed-1
+  style: v3
+- id: ecma.standard.0759
+  identifier:
+    _type: pubid:ecma:standard
+    number: '418'
+    part: '1'
+    edition: '2'
+  representations:
+    human: ECMA-418-1 ed2
+    urn: urn:ecma:418:part-1:ed-2
+  style: v3
+- id: ecma.standard.0760
+  identifier:
+    _type: pubid:ecma:standard
+    number: '418'
+    part: '2'
+  representations:
+    human: ECMA-418-2
+    urn: urn:ecma:418:part-2
+  style: v3
+- id: ecma.standard.0761
+  identifier:
+    _type: pubid:ecma:standard
+    number: '418'
+    part: '2'
+    edition: '1'
+  representations:
+    human: ECMA-418-2 ed1
+    urn: urn:ecma:418:part-2:ed-1
+  style: v3
+- id: ecma.standard.0762
+  identifier:
+    _type: pubid:ecma:standard
+    number: '418'
+    part: '2'
+    edition: '2'
+  representations:
+    human: ECMA-418-2 ed2
+    urn: urn:ecma:418:part-2:ed-2
+  style: v3
+- id: ecma.standard.0763
+  identifier:
+    _type: pubid:ecma:standard
+    number: '418'
+    part: '2'
+    edition: '3'
+  representations:
+    human: ECMA-418-2 ed3
+    urn: urn:ecma:418:part-2:ed-3
+  style: v3
+- id: ecma.standard.0764
+  identifier:
+    _type: pubid:ecma:standard
+    number: '419'
+    edition: '1'
+  representations:
+    human: ECMA-419 ed1
+    urn: urn:ecma:419:ed-1
+  style: v3
+- id: ecma.standard.0765
+  identifier:
+    _type: pubid:ecma:standard
+    number: '419'
+    edition: '2'
+  representations:
+    human: ECMA-419 ed2
+    urn: urn:ecma:419:ed-2
+  style: v3
+- id: ecma.standard.0766
+  identifier:
+    _type: pubid:ecma:standard
+    number: '419'
+    edition: '3'
+  representations:
+    human: ECMA-419 ed3
+    urn: urn:ecma:419:ed-3
+  style: v3
+- id: ecma.standard.0767
+  identifier:
+    _type: pubid:ecma:standard
+    number: '419'
+    edition: '4'
+  representations:
+    human: ECMA-419 ed4
+    urn: urn:ecma:419:ed-4
+  style: v3
+- id: ecma.standard.0768
+  identifier:
+    _type: pubid:ecma:standard
+    number: '420'
+    edition: '1'
+  representations:
+    human: ECMA-420 ed1
+    urn: urn:ecma:420:ed-1
+  style: v3
+- id: ecma.standard.0769
+  identifier:
+    _type: pubid:ecma:standard
+    number: '420'
+    edition: '2'
+  representations:
+    human: ECMA-420 ed2
+    urn: urn:ecma:420:ed-2
+  style: v3
+- id: ecma.standard.0770
+  identifier:
+    _type: pubid:ecma:standard
+    number: '420'
+    edition: '3'
+  representations:
+    human: ECMA-420 ed3
+    urn: urn:ecma:420:ed-3
+  style: v3
+- id: ecma.standard.0771
+  identifier:
+    _type: pubid:ecma:standard
+    number: '421'
+    edition: '1'
+  representations:
+    human: ECMA-421 ed1
+    urn: urn:ecma:421:ed-1
+  style: v3
+- id: ecma.standard.0772
+  identifier:
+    _type: pubid:ecma:standard
+    number: '421'
+    edition: '2'
+  representations:
+    human: ECMA-421 ed2
+    urn: urn:ecma:421:ed-2
+  style: v3
+- id: ecma.standard.0773
+  identifier:
+    _type: pubid:ecma:standard
+    number: '422'
+    edition: '1'
+  representations:
+    human: ECMA-422 ed1
+    urn: urn:ecma:422:ed-1
+  style: v3
+- id: ecma.standard.0774
+  identifier:
+    _type: pubid:ecma:standard
+    number: '423'
+    edition: '1'
+  representations:
+    human: ECMA-423 ed1
+    urn: urn:ecma:423:ed-1
+  style: v3
+- id: ecma.standard.0775
+  identifier:
+    _type: pubid:ecma:standard
+    number: '424'
+    edition: '1'
+  representations:
+    human: ECMA-424 ed1
+    urn: urn:ecma:424:ed-1
+  style: v3
+- id: ecma.standard.0776
+  identifier:
+    _type: pubid:ecma:standard
+    number: '424'
+    edition: '2'
+  representations:
+    human: ECMA-424 ed2
+    urn: urn:ecma:424:ed-2
+  style: v3
+- id: ecma.standard.0777
+  identifier:
+    _type: pubid:ecma:standard
+    number: '425'
+    edition: '1'
+  representations:
+    human: ECMA-425 ed1
+    urn: urn:ecma:425:ed-1
+  style: v3
+- id: ecma.standard.0778
+  identifier:
+    _type: pubid:ecma:standard
+    number: '425'
+    edition: '2'
+  representations:
+    human: ECMA-425 ed2
+    urn: urn:ecma:425:ed-2
+  style: v3
+- id: ecma.standard.0779
+  identifier:
+    _type: pubid:ecma:standard
+    number: '426'
+    edition: '1'
+  representations:
+    human: ECMA-426 ed1
+    urn: urn:ecma:426:ed-1
+  style: v3
+- id: ecma.standard.0780
+  identifier:
+    _type: pubid:ecma:standard
+    number: '427'
+    edition: '1'
+  representations:
+    human: ECMA-427 ed1
+    urn: urn:ecma:427:ed-1
+  style: v3
+- id: ecma.standard.0781
+  identifier:
+    _type: pubid:ecma:standard
+    number: '428'
+    edition: '1'
+  representations:
+    human: ECMA-428 ed1
+    urn: urn:ecma:428:ed-1
+  style: v3
+- id: ecma.standard.0782
+  identifier:
+    _type: pubid:ecma:standard
+    number: '429'
+    edition: '1'
+  representations:
+    human: ECMA-429 ed1
+    urn: urn:ecma:429:ed-1
+  style: v3
+- id: ecma.standard.0783
+  identifier:
+    _type: pubid:ecma:standard
+    number: '43'
+  representations:
+    human: ECMA-43
+    urn: urn:ecma:43
+  style: v3
+- id: ecma.standard.0784
+  identifier:
+    _type: pubid:ecma:standard
+    number: '43'
+    edition: '1'
+  representations:
+    human: ECMA-43 ed1
+    urn: urn:ecma:43:ed-1
+  style: v3
+- id: ecma.standard.0785
+  identifier:
+    _type: pubid:ecma:standard
+    number: '43'
+    edition: '2'
+  representations:
+    human: ECMA-43 ed2
+    urn: urn:ecma:43:ed-2
+  style: v3
+- id: ecma.standard.0786
+  identifier:
+    _type: pubid:ecma:standard
+    number: '43'
+    edition: '3'
+  representations:
+    human: ECMA-43 ed3
+    urn: urn:ecma:43:ed-3
+  style: v3
+- id: ecma.standard.0787
+  identifier:
+    _type: pubid:ecma:standard
+    number: '430'
+    edition: '1'
+  representations:
+    human: ECMA-430 ed1
+    urn: urn:ecma:430:ed-1
+  style: v3
+- id: ecma.standard.0788
+  identifier:
+    _type: pubid:ecma:standard
+    number: '431'
+    edition: '1'
+  representations:
+    human: ECMA-431 ed1
+    urn: urn:ecma:431:ed-1
+  style: v3
+- id: ecma.standard.0789
+  identifier:
+    _type: pubid:ecma:standard
+    number: '432'
+    edition: '1'
+  representations:
+    human: ECMA-432 ed1
+    urn: urn:ecma:432:ed-1
+  style: v3
+- id: ecma.standard.0790
+  identifier:
+    _type: pubid:ecma:standard
+    number: '433'
+    edition: '1'
+  representations:
+    human: ECMA-433 ed1
+    urn: urn:ecma:433:ed-1
+  style: v3
+- id: ecma.standard.0791
+  identifier:
+    _type: pubid:ecma:standard
+    number: '434'
+  representations:
+    human: ECMA-434
+    urn: urn:ecma:434
+  style: v3
+- id: ecma.standard.0792
+  identifier:
+    _type: pubid:ecma:standard
+    number: '434'
+    edition: '1'
+  representations:
+    human: ECMA-434 ed1
+    urn: urn:ecma:434:ed-1
+  style: v3
+- id: ecma.standard.0793
+  identifier:
+    _type: pubid:ecma:standard
+    number: '48'
+  representations:
+    human: ECMA-48
+    urn: urn:ecma:48
+  style: v3
+- id: ecma.standard.0794
+  identifier:
+    _type: pubid:ecma:standard
+    number: '48'
+    edition: '1'
+  representations:
+    human: ECMA-48 ed1
+    urn: urn:ecma:48:ed-1
+  style: v3
+- id: ecma.standard.0795
+  identifier:
+    _type: pubid:ecma:standard
+    number: '48'
+    edition: '2'
+  representations:
+    human: ECMA-48 ed2
+    urn: urn:ecma:48:ed-2
+  style: v3
+- id: ecma.standard.0796
+  identifier:
+    _type: pubid:ecma:standard
+    number: '48'
+    edition: '3'
+  representations:
+    human: ECMA-48 ed3
+    urn: urn:ecma:48:ed-3
+  style: v3
+- id: ecma.standard.0797
+  identifier:
+    _type: pubid:ecma:standard
+    number: '48'
+    edition: '4'
+  representations:
+    human: ECMA-48 ed4
+    urn: urn:ecma:48:ed-4
+  style: v3
+- id: ecma.standard.0798
+  identifier:
+    _type: pubid:ecma:standard
+    number: '48'
+    edition: '5'
+  representations:
+    human: ECMA-48 ed5
+    urn: urn:ecma:48:ed-5
+  style: v3
+- id: ecma.standard.0799
+  identifier:
+    _type: pubid:ecma:standard
+    number: '6'
+  representations:
+    human: ECMA-6
+    urn: urn:ecma:6
+  style: v3
+- id: ecma.standard.0800
+  identifier:
+    _type: pubid:ecma:standard
+    number: '6'
+    edition: '1'
+  representations:
+    human: ECMA-6 ed1
+    urn: urn:ecma:6:ed-1
+  style: v3
+- id: ecma.standard.0801
+  identifier:
+    _type: pubid:ecma:standard
+    number: '6'
+    edition: '2'
+  representations:
+    human: ECMA-6 ed2
+    urn: urn:ecma:6:ed-2
+  style: v3
+- id: ecma.standard.0802
+  identifier:
+    _type: pubid:ecma:standard
+    number: '6'
+    edition: '3'
+  representations:
+    human: ECMA-6 ed3
+    urn: urn:ecma:6:ed-3
+  style: v3
+- id: ecma.standard.0803
+  identifier:
+    _type: pubid:ecma:standard
+    number: '6'
+    edition: '4'
+  representations:
+    human: ECMA-6 ed4
+    urn: urn:ecma:6:ed-4
+  style: v3
+- id: ecma.standard.0804
+  identifier:
+    _type: pubid:ecma:standard
+    number: '6'
+    edition: '5'
+  representations:
+    human: ECMA-6 ed5
+    urn: urn:ecma:6:ed-5
+  style: v3
+- id: ecma.standard.0805
+  identifier:
+    _type: pubid:ecma:standard
+    number: '6'
+    edition: '6'
+  representations:
+    human: ECMA-6 ed6
+    urn: urn:ecma:6:ed-6
+  style: v3
+- id: ecma.standard.0806
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+  representations:
+    human: ECMA-74
+    urn: urn:ecma:74
+  style: v3
+- id: ecma.standard.0807
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '1'
+  representations:
+    human: ECMA-74 ed1
+    urn: urn:ecma:74:ed-1
+  style: v3
+- id: ecma.standard.0808
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '10'
+  representations:
+    human: ECMA-74 ed10
+    urn: urn:ecma:74:ed-10
+  style: v3
+- id: ecma.standard.0809
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '11'
+  representations:
+    human: ECMA-74 ed11
+    urn: urn:ecma:74:ed-11
+  style: v3
+- id: ecma.standard.0810
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '12'
+  representations:
+    human: ECMA-74 ed12
+    urn: urn:ecma:74:ed-12
+  style: v3
+- id: ecma.standard.0811
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '13'
+  representations:
+    human: ECMA-74 ed13
+    urn: urn:ecma:74:ed-13
+  style: v3
+- id: ecma.standard.0812
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '14'
+  representations:
+    human: ECMA-74 ed14
+    urn: urn:ecma:74:ed-14
+  style: v3
+- id: ecma.standard.0813
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '15'
+  representations:
+    human: ECMA-74 ed15
+    urn: urn:ecma:74:ed-15
+  style: v3
+- id: ecma.standard.0814
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '16'
+  representations:
+    human: ECMA-74 ed16
+    urn: urn:ecma:74:ed-16
+  style: v3
+- id: ecma.standard.0815
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '17'
+  representations:
+    human: ECMA-74 ed17
+    urn: urn:ecma:74:ed-17
+  style: v3
+- id: ecma.standard.0816
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '18'
+  representations:
+    human: ECMA-74 ed18
+    urn: urn:ecma:74:ed-18
+  style: v3
+- id: ecma.standard.0817
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '19'
+  representations:
+    human: ECMA-74 ed19
+    urn: urn:ecma:74:ed-19
+  style: v3
+- id: ecma.standard.0818
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '2'
+  representations:
+    human: ECMA-74 ed2
+    urn: urn:ecma:74:ed-2
+  style: v3
+- id: ecma.standard.0819
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '20'
+  representations:
+    human: ECMA-74 ed20
+    urn: urn:ecma:74:ed-20
+  style: v3
+- id: ecma.standard.0820
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '21'
+  representations:
+    human: ECMA-74 ed21
+    urn: urn:ecma:74:ed-21
+  style: v3
+- id: ecma.standard.0821
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '22'
+  representations:
+    human: ECMA-74 ed22
+    urn: urn:ecma:74:ed-22
+  style: v3
+- id: ecma.standard.0822
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '3'
+  representations:
+    human: ECMA-74 ed3
+    urn: urn:ecma:74:ed-3
+  style: v3
+- id: ecma.standard.0823
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '4'
+  representations:
+    human: ECMA-74 ed4
+    urn: urn:ecma:74:ed-4
+  style: v3
+- id: ecma.standard.0824
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '5'
+  representations:
+    human: ECMA-74 ed5
+    urn: urn:ecma:74:ed-5
+  style: v3
+- id: ecma.standard.0825
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '6'
+  representations:
+    human: ECMA-74 ed6
+    urn: urn:ecma:74:ed-6
+  style: v3
+- id: ecma.standard.0826
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '7'
+  representations:
+    human: ECMA-74 ed7
+    urn: urn:ecma:74:ed-7
+  style: v3
+- id: ecma.standard.0827
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '8'
+  representations:
+    human: ECMA-74 ed8
+    urn: urn:ecma:74:ed-8
+  style: v3
+- id: ecma.standard.0828
+  identifier:
+    _type: pubid:ecma:standard
+    number: '74'
+    edition: '9'
+  representations:
+    human: ECMA-74 ed9
+    urn: urn:ecma:74:ed-9
+  style: v3
+- id: ecma.standard.0829
+  identifier:
+    _type: pubid:ecma:standard
+    number: '94'
+  representations:
+    human: ECMA-94
+    urn: urn:ecma:94
+  style: v3
+- id: ecma.standard.0830
+  identifier:
+    _type: pubid:ecma:standard
+    number: '94'
+    edition: '1'
+  representations:
+    human: ECMA-94 ed1
+    urn: urn:ecma:94:ed-1
+  style: v3
+- id: ecma.standard.0831
+  identifier:
+    _type: pubid:ecma:standard
+    number: '94'
+    edition: '2'
+  representations:
+    human: ECMA-94 ed2
+    urn: urn:ecma:94:ed-2
+  style: v3
+- id: ecma.standard.0832
+  identifier:
+    _type: pubid:ecma:standard
+    number: '99'
+  representations:
+    human: ECMA-99
+    urn: urn:ecma:99
+  style: v3
+- id: ecma.standard.0833
+  identifier:
+    _type: pubid:ecma:standard
+    number: '99'
+    edition: '1'
+  representations:
+    human: ECMA-99 ed1
+    urn: urn:ecma:99:ed-1
+  style: v3

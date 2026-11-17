@@ -1,0 +1,26 @@
+---
+- id: gb.neg.malformed.0001
+  input: GB
+  expect:
+    error:
+      code: unclassified
+- id: gb.neg.malformed.0002
+  input: GB/T
+  expect:
+    error:
+      code: unclassified
+- id: gb.neg.malformed.0003
+  input: GB/-2010
+  expect:
+    error:
+      code: unclassified
+- id: gb.neg.malformed.0004
+  input: GB/T -2006
+  expect:
+    error:
+      code: unclassified
+- id: gb.neg.malformed.0005
+  input: "/foo 1-2020"
+  expect:
+    error:
+      code: unclassified

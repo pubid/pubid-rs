@@ -19,14 +19,26 @@ The `*.json` envelopes in this directory are byte-copied from
 | amca   | `51ec2c39eae0e18e03bafbb4e34084053cfb64edab0a48fc959734b3e0200364` |
 | nesc   | `a5e97216ce732f27ed44a60e2430a47316c53ebecbcd0ff52615d400819d433a` |
 | ire    | `c5ce8862b73036a3bbee88c07dfbb7155e8e9a91e43a96907bd850456fa9f05f` |
+| ansi   | `e1a6bdd21e45b92976e6737ce3d5bdc6f3115b093e3afa2a13972fae473690b9` |
+| ecma   | `c00b04261a47f398fcd8596a1610587b39d57b00bc06b49e718e8131c75472ad` |
+| gb     | `7724e6e1454eb7a680780e286a085049e85c1ef021ff5a35af16266c613d9b5f` |
+| gost   | `830f339aa340cb2bf02687bc3d50a07a9f2946012f4f26aa7231080993b4ae50` |
+| adobe  | `5ab76c704865b21e88abaadf90139a71c5a6c342e2532262a309c349f6dbd275` |
 
 Every envelope is artifact edition 2, shape `parsanol-tree/v2`, baked at
 parsanol compiler 1.5.1.0 (the #129 re-seal round: the doi grammar is
 byte-identical modulo the stamp — same `semantics_hash`, new
 `compiler_version`/`checksum`/`validated` block). Each envelope
 self-declares its canonical checksum, which parsanol verifies on load;
-the wave-2 envelopes all load and self-test green under the locked
+every envelope here loads and self-tests green under the locked
 `parsanol = "0.20"` runtime.
+
+The wave-3 round adds `ansi`, `ecma`, `gb`, `gost`, and `adobe` from
+the same pinned ref. `adobe` is vendored without a ported flavor: the
+flavor has no testsuite corpus (no `tests/adobe/` in the testsuite),
+so the crate carries the envelope for the drift gate while the runner
+reports it as vendored-not-ported — no ground truth, no invented
+fixture.
 
 CI fails the build when any file drifts from the pinned grammar ref.
 

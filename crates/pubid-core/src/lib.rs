@@ -33,6 +33,10 @@ pub mod w3c;
 pub mod xsf;
 pub mod api;
 pub mod amca;
+pub mod ansi;
+pub mod ecma;
+pub mod gb;
+pub mod gost;
 pub mod nesc;
 pub mod ire;
 
@@ -56,6 +60,10 @@ pub use w3c::{W3cIdentifier, W3cKind};
 pub use xsf::XsfIdentifier;
 pub use api::ApiIdentifier;
 pub use amca::{AmcaIdentifier, AmcaKind};
+pub use ansi::AnsiIdentifier;
+pub use ecma::{EcmaIdentifier, EcmaKind};
+pub use gb::{GbIdentifier, GbKind};
+pub use gost::{GostIdentifier, GostKind};
 pub use nesc::{NescIdentifier, NescKind};
 pub use ire::IreIdentifier;
 

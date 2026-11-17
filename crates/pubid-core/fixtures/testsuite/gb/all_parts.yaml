@@ -1,0 +1,13 @@
+---
+- id: gb.all_parts.0003
+  identifier:
+    _type: pubid:gb:all-parts
+    identifiers:
+    - _type: pubid:gb:standard
+      publisher: GB
+      mandate: T
+      number: '5606'
+  representations:
+    human: GB/T 5606 (all parts)
+    urn: urn:gb:gb:5606
+  style: v3

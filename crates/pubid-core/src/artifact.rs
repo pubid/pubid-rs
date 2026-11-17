@@ -63,6 +63,11 @@ vendored_artifacts!(
     "amca" => AMCA_ARTIFACT, amca_artifact,
     "nesc" => NESC_ARTIFACT, nesc_artifact,
     "ire" => IRE_ARTIFACT, ire_artifact,
+    "ansi" => ANSI_ARTIFACT, ansi_artifact,
+    "ecma" => ECMA_ARTIFACT, ecma_artifact,
+    "gb" => GB_ARTIFACT, gb_artifact,
+    "gost" => GOST_ARTIFACT, gost_artifact,
+    "adobe" => ADOBE_ARTIFACT, adobe_artifact,
 );
 
 /// A flavor's artifact by name; `None` when the crate carries no
@@ -82,6 +87,11 @@ pub fn flavor_artifact(flavor: &str) -> Option<Result<&'static PargArtifact>> {
         "amca" => Some(amca_artifact()),
         "nesc" => Some(nesc_artifact()),
         "ire" => Some(ire_artifact()),
+        "ansi" => Some(ansi_artifact()),
+        "ecma" => Some(ecma_artifact()),
+        "gb" => Some(gb_artifact()),
+        "gost" => Some(gost_artifact()),
+        "adobe" => Some(adobe_artifact()),
         _ => None,
     }
 }

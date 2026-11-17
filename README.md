@@ -41,13 +41,14 @@ pins.yaml            pinned testsuite + grammar refs (single source)
 .github/workflows/   CI
 ```
 
-## Conformance status (waves 1–2, measured)
+## Conformance status (waves 1–3, measured)
 
-Nine flavors are ported end to end: `doi` (bootstrap) plus the wave-2
-render-layer flavors `isbn`, `iana`, `oasis`, `xsf`, `un`, `ogc`,
-`ietf`, `w3c`. Measured against the full pubid-testsuite corpora at
-the pinned ref — every gated case passes, zero mismatches, nothing
-hidden:
+Seventeen flavors are ported end to end: `doi` (bootstrap), the
+wave-2 render-layer flavors `isbn`, `iana`, `oasis`, `xsf`, `un`,
+`ogc`, `ietf`, `w3c`, and the wave-3 mid-fleet flavors `api`, `amca`,
+`nesc`, `ire`, `ansi`, `ecma`, `gb`, `gost`. Measured against the full
+pubid-testsuite corpora at the pinned ref — every gated case passes
+except the one api ledger row (below), nothing hidden:
 
 | flavor | gated cases | parsed | rejected (negatives) | rendered | hashes | urns | deserializes |
 | ------ | ----------: | -----: | -------------------: | -------: | -----: | ---: | -----------: |
@@ -60,19 +61,33 @@ hidden:
 | ogc    | 88          | 88     | 6                    | 88       | 88     | 88   | 88           |
 | ietf   | 2,526       | 2,526  | 0                    | 2,526    | 2,526  | 2,526| 2,526        |
 | w3c    | 29          | 29     | 0                    | 29       | 29     | 29   | 29           |
-| **all**| **2,779**   | 2,785  | 24                   | 2,785    | 2,779  | 2,779| 2,779        |
+| api    | 193         | 196    | 0                    | 196      | 193    | 193  | 193          |
+| amca   | 39          | 49     | 4                    | 49       | 39     | 39   | 39           |
+| nesc   | 11          | 19     | 0                    | 19       | 11     | 11   | 11           |
+| ire    | 1           | 1      | 0                    | 1        | 1      | 1    | 1            |
+| ansi   | 175         | 175    | 0                    | 175      | 175    | 175  | 175          |
+| ecma   | 833         | 839    | 0                    | 839      | 833    | 833  | 833          |
+| gb     | 10          | 10     | 5                    | 10       | 10     | 10   | 10           |
+| gost   | 199         | 399    | 0                    | 399      | 199    | 199  | 199          |
+| **all**| **4,240**   | 4,473  | 33                   | 4,473    | 4,240  | 4,240| 4,240        |
 
 Counts: `parsed` covers the canonical humans plus every non-normalized
 alias spelling; `rejected` covers the `_negative.yaml` rows (plus the
 doi/isbn builder-layer rejections the flavors enforce); `rendered`
 covers every human compared byte-for-byte; `hashes`/`urns` the deep
 comparisons against the corpus; `deserializes` the
-`from_hash(to_hash())` round-trips. All eight wave-2 ledgers are
-`clean: true`, so every flavor gates. The embedded artifact suites (the
-envelopes' own accept/reject tests) are green for all nine.
+`from_hash(to_hash())` round-trips. All ledgers except `api` are
+`clean: true`, so every flavor gates; the api ledger documents one
+known alias mismatch (the slash-combined `API COS 1-07/RP 75` chain),
+under its ceiling, so the run exits green. The embedded artifact
+suites (the envelopes' own accept/reject tests) are green for every
+vendored envelope.
 
-That is 2,779 of the testsuite's 99,793 cases. Wave 3 ports the mid
-fleet; unimplemented flavors are reported honestly, never claimed.
+That is 4,240 of the testsuite's 99,793 cases. The remaining mid
+fleet is reported honestly, never claimed. `adobe` carries no
+testsuite corpus, so its vendored artifact is carried without a ported
+flavor (the runner reports it as vendored-not-ported rather than
+gating on invented ground truth).
 
 CI additionally runs the conformance binary against a full clone of
 pubid-testsuite at the pinned ref, not just the vendored slices.

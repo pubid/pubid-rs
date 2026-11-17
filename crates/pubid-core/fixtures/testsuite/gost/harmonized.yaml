@@ -1,0 +1,897 @@
+---
+- id: gost.harmonized.0018
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '1437'
+    year: '2024'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '1437'
+      year: '2024'
+    adopted_identifiers:
+    - _type: pubid:astm:standard
+      number: '129'
+      year: '2018'
+      letter: D
+  representations:
+    human: GOST 1437-2024 (ASTM D129-18)
+    urn: urn:gost:std:1437:2024
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 1437-2024 (ASTM D129-18)
+    style: v3
+- id: gost.harmonized.0026
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '166'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '166'
+    adopted_identifiers:
+    - _type: pubid:iso:international-standard
+      number: '3599'
+      part: '76'
+  representations:
+    human: GOST 166 (ISO 3599-76)
+    urn: urn:gost:std:166
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 166 (ИСО 3599-76)
+    style: v3
+- id: gost.harmonized.0037
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '28100'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '28100'
+    adopted_identifiers:
+    - _type: pubid:iso:international-standard
+      number: '7235'
+      year: '2003'
+  representations:
+    human: GOST 28100 (ISO 7235:2003)
+    urn: urn:gost:std:28100
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 28100 (ИСО 7235:2003)
+    style: v3
+- id: gost.harmonized.0039
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '28246.2'
+    year: '2025'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '28246.2'
+      year: '2025'
+    adopted_identifiers:
+    - _type: pubid:iec:international-standard
+      number: '63242'
+      part: '2'
+      year: '2024'
+  representations:
+    human: GOST 28246.2-2025 (IEC 63242-2:2024)
+    urn: urn:gost:std:28246.2:2025
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 28246.2-2025 (IEC 63242-2:2024)
+    style: v3
+- id: gost.harmonized.0042
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '30893.1'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '30893.1'
+    adopted_identifiers:
+    - _type: pubid:iso:international-standard
+      number: '2768'
+      part: '1'
+      subpart: '89'
+  representations:
+    human: GOST 30893.1 (ISO 2768-1-89)
+    urn: urn:gost:std:30893.1
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 30893.1 (ИСО 2768-1-89)
+    style: v3
+- id: gost.harmonized.0043
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '31338'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '31338'
+    adopted_identifiers:
+    - _type: pubid:iso:international-standard
+      number: '5135'
+      year: '2020'
+  representations:
+    human: GOST 31338 (ISO 5135:2020)
+    urn: urn:gost:std:31338
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 31338 (ИСО 5135:2020)
+    style: v3
+- id: gost.harmonized.0052
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '31610.11'
+    year: '2025'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '31610.11'
+      year: '2025'
+    adopted_identifiers:
+    - _type: pubid:iec:international-standard
+      number: '60079'
+      part: '11'
+      year: '2023'
+  representations:
+    human: GOST 31610.11-2025 (IEC 60079-11:2023)
+    urn: urn:gost:std:31610.11:2025
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 31610.11-2025 (IEC 60079-11:2023)
+    style: v3
+- id: gost.harmonized.0054
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '32299'
+    year: '2025'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '32299'
+      year: '2025'
+    adopted_identifiers:
+    - _type: pubid:iso:international-standard
+      number: '4624'
+      year: '2023'
+  representations:
+    human: GOST 32299-2025 (ISO 4624:2023)
+    urn: urn:gost:std:32299:2025
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 32299-2025 (ISO 4624:2023)
+    style: v3
+- id: gost.harmonized.0056
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '32549'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '32549'
+    adopted_identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '12239'
+      year: '2001'
+  representations:
+    human: GOST 32549 (EN 12239:2001)
+    urn: urn:gost:std:32549
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 32549 (EN 12239:2001)
+    style: v3
+- id: gost.harmonized.0057
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '32786'
+    year: '2014'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '32786'
+      year: '2014'
+    adopted_identifiers:
+    - _type: pubid:gost:foreign-reference
+  representations:
+    human: GOST 32786-2014 (UNECE STANDARD FFV-19:2010)
+    urn: urn:gost:std:32786:2014
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 32786-2014 (UNECE STANDARD FFV-19:2010)
+    style: v3
+- id: gost.harmonized.0058
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '32787'
+    year: '2014'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '32787'
+      year: '2014'
+    adopted_identifiers:
+    - _type: pubid:gost:foreign-reference
+  representations:
+    human: GOST 32787-2014 (UNECE STANDARD FFV-02:2013)
+    urn: urn:gost:std:32787:2014
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 32787-2014 (UNECE STANDARD FFV-02:2013)
+    style: v3
+- id: gost.harmonized.0059
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '32810'
+    year: '2014'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '32810'
+      year: '2014'
+    adopted_identifiers:
+    - _type: pubid:gost:foreign-reference
+  representations:
+    human: GOST 32810-2014 (UNECE STANDARD FFV-59:2010)
+    urn: urn:gost:std:32810:2014
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 32810-2014 (UNECE STANDARD FFV-59:2010)
+    style: v3
+- id: gost.harmonized.0060
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '32874'
+    year: '2014'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '32874'
+      year: '2014'
+    adopted_identifiers:
+    - _type: pubid:gost:foreign-reference
+  representations:
+    human: GOST 32874-2014 (UNECE STANDARD DDP-01:2013)
+    urn: urn:gost:std:32874:2014
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 32874-2014 (UNECE STANDARD DDP-01:2013)
+    style: v3
+- id: gost.harmonized.0061
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '32879'
+    year: '2014'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '32879'
+      year: '2014'
+    adopted_identifiers:
+    - _type: pubid:gost:foreign-reference
+  representations:
+    human: GOST 32879-2014 (UNECE STANDARD FFV-59:2010)
+    urn: urn:gost:std:32879:2014
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 32879-2014 (UNECE STANDARD FFV-59:2010)
+    style: v3
+- id: gost.harmonized.0062
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '33309'
+    year: '2015'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '33309'
+      year: '2015'
+    adopted_identifiers:
+    - _type: pubid:gost:foreign-reference
+  representations:
+    human: GOST 33309-2015 (UNECE STANDARD FFV-57:2010)
+    urn: urn:gost:std:33309:2015
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 33309-2015 (UNECE STANDARD FFV-57:2010)
+    style: v3
+- id: gost.harmonized.0063
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '33485'
+    year: '2015'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '33485'
+      year: '2015'
+    adopted_identifiers:
+    - _type: pubid:gost:foreign-reference
+  representations:
+    human: GOST 33485-2015 (UNECE STANDARD FFV-57:2010)
+    urn: urn:gost:std:33485:2015
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 33485-2015 (UNECE STANDARD FFV-57:2010)
+    style: v3
+- id: gost.harmonized.0064
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '33492'
+    year: '2015'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '33492'
+      year: '2015'
+    adopted_identifiers:
+    - _type: pubid:gost:foreign-reference
+  representations:
+    human: GOST 33492-2015 (UNECE STANDARD FFV-54:2010)
+    urn: urn:gost:std:33492:2015
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 33492-2015 (UNECE STANDARD FFV-54:2010)
+    style: v3
+- id: gost.harmonized.0065
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '33499'
+    year: '2015'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '33499'
+      year: '2015'
+    adopted_identifiers:
+    - _type: pubid:gost:foreign-reference
+  representations:
+    human: GOST 33499-2015 (UNECE STANDARD FFV-51:2013)
+    urn: urn:gost:std:33499:2015
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 33499-2015 (UNECE STANDARD FFV-51:2013)
+    style: v3
+- id: gost.harmonized.0066
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '33541'
+    year: '2015'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '33541'
+      year: '2015'
+    adopted_identifiers:
+    - _type: pubid:gost:foreign-reference
+  representations:
+    human: GOST 33541-2015 (IECEE OD-4002:2012)
+    urn: urn:gost:std:33541:2015
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 33541-2015 (IECEE OD-4002:2012)
+    style: v3
+- id: gost.harmonized.0067
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '33551'
+    year: '2015'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '33551'
+      year: '2015'
+    adopted_identifiers:
+    - _type: pubid:gost:foreign-reference
+  representations:
+    human: GOST 33551-2015 (UNECE STANDARD FFV-09:2012)
+    urn: urn:gost:std:33551:2015
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 33551-2015 (UNECE STANDARD FFV-09:2012)
+    style: v3
+- id: gost.harmonized.0068
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '33562'
+    year: '2015'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '33562'
+      year: '2015'
+    adopted_identifiers:
+    - _type: pubid:gost:foreign-reference
+  representations:
+    human: GOST 33562-2015 (UNECE STANDARD FFV-18:2011)
+    urn: urn:gost:std:33562:2015
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 33562-2015 (UNECE STANDARD FFV-18:2011)
+    style: v3
+- id: gost.harmonized.0070
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '34002'
+    year: '2016'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '34002'
+      year: '2016'
+    adopted_identifiers:
+    - _type: pubid:iso:international-standard
+      number: '13349'
+      year: '2010'
+  representations:
+    human: GOST 34002-2016 (ISO 13349:2010)
+    urn: urn:gost:std:34002:2016
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 34002-2016 (ISO 13349:2010)
+    style: v3
+- id: gost.harmonized.0071
+  identifier:
+    _type: pubid:gost:harmonized
+    number: 34695.21-1
+    year: '2020'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: 34695.21-1
+      year: '2020'
+    adopted_identifiers:
+    - _type: pubid:iec:international-standard
+      number: '61851'
+      part: '21'
+      subpart: '1'
+      year: '2017'
+  representations:
+    human: GOST 34695.21-1-2020 (IEC 61851-21-1:2017)
+    urn: urn:gost:std:34695.21-1:2020
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 34695.21-1-2020 (IEC 61851-21-1:2017)
+    style: v3
+- id: gost.harmonized.0073
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '34853'
+    year: '2022'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '34853'
+      year: '2022'
+    adopted_identifiers:
+    - _type: pubid:gost:foreign-reference
+  representations:
+    human: GOST 34853-2022 (OECD 460:2017)
+    urn: urn:gost:std:34853:2022
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 34853-2022 (OECD 460:2017)
+    style: v3
+- id: gost.harmonized.0074
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '35260'
+    year: '2025'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '35260'
+      year: '2025'
+    adopted_identifiers:
+    - _type: pubid:iso:international-standard
+      number: '17360'
+      year: '2023'
+      copublishers:
+      - IEC
+  representations:
+    human: GOST 35260-2025 (ISO/IEC 17360:2023)
+    urn: urn:gost:std:35260:2025
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 35260-2025 (ISO/IEC 17360:2023)
+    style: v3
+- id: gost.harmonized.0076
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '35285.1'
+    year: '2025'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '35285.1'
+      year: '2025'
+    adopted_identifiers:
+    - _type: pubid:iso:international-standard
+      number: '25649'
+      part: '1'
+      year: '2017'
+  representations:
+    human: GOST 35285.1-2025 (ISO 25649-1:2017)
+    urn: urn:gost:std:35285.1:2025
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 35285.1-2025 (ISO 25649-1:2017)
+    style: v3
+- id: gost.harmonized.0077
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '35285.2'
+    year: '2025'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '35285.2'
+      year: '2025'
+    adopted_identifiers:
+    - _type: pubid:iso:international-standard
+      number: '25649'
+      part: '2'
+      year: '2017'
+  representations:
+    human: GOST 35285.2-2025 (ISO 25649-2:2017)
+    urn: urn:gost:std:35285.2:2025
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 35285.2-2025 (ISO 25649-2:2017)
+    style: v3
+- id: gost.harmonized.0078
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '35285.3'
+    year: '2025'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '35285.3'
+      year: '2025'
+    adopted_identifiers:
+    - _type: pubid:iso:international-standard
+      number: '25649'
+      part: '3'
+      year: '2017'
+  representations:
+    human: GOST 35285.3-2025 (ISO 25649-3:2017)
+    urn: urn:gost:std:35285.3:2025
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 35285.3-2025 (ISO 25649-3:2017)
+    style: v3
+- id: gost.harmonized.0079
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '35287.1'
+    year: '2025'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '35287.1'
+      year: '2025'
+    adopted_identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '927'
+      part: '1'
+      year: '2013'
+  representations:
+    human: GOST 35287.1-2025 (EN 927-1:2013)
+    urn: urn:gost:std:35287.1:2025
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 35287.1-2025 (EN 927-1:2013)
+    style: v3
+- id: gost.harmonized.0080
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '35292'
+    year: '2025'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '35292'
+      year: '2025'
+    adopted_identifiers:
+    - _type: pubid:cencenelec:consolidated-identifier
+      identifiers:
+      - _type: pubid:cencenelec:european-norm
+        number: '14988'
+        year: '2017'
+      - _type: pubid:cencenelec:amendment
+        number: '1'
+        year: '2020'
+  representations:
+    human: GOST 35292-2025 (EN 14988:2017+A1:2020)
+    urn: urn:gost:std:35292:2025
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 35292-2025 (EN 14988:2017+A1:2020)
+    style: v3
+- id: gost.harmonized.0081
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '35293'
+    year: '2025'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '35293'
+      year: '2025'
+    adopted_identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '12227'
+      year: '2010'
+  representations:
+    human: GOST 35293-2025 (EN 12227:2010)
+    urn: urn:gost:std:35293:2025
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 35293-2025 (EN 12227:2010)
+    style: v3
+- id: gost.harmonized.0082
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '35294.2'
+    year: '2025'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '35294.2'
+      year: '2025'
+    adopted_identifiers:
+    - _type: pubid:iso:international-standard
+      number: '8124'
+      part: '2'
+  representations:
+    human: GOST 35294.2-2025 (ISO 8124-2)
+    urn: urn:gost:std:35294.2:2025
+  style: v3
+  non_normalized_aliases:
+  - spelling: 'ГОСТ 35294.2-2025 (ISO 8124-2: 2023)'
+    style: v3
+- id: gost.harmonized.0083
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '35298'
+    year: '2025'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '35298'
+      year: '2025'
+    adopted_identifiers:
+    - _type: pubid:iso:international-standard
+      number: '23767'
+      year: '2021'
+  representations:
+    human: GOST 35298-2025 (ISO 23767:2021)
+    urn: urn:gost:std:35298:2025
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 35298-2025 (ISO 23767:2021)
+    style: v3
+- id: gost.harmonized.0084
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '35302'
+    year: '2025'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '35302'
+      year: '2025'
+    adopted_identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '14315'
+      part: '1'
+      year: '2013'
+  representations:
+    human: GOST 35302-2025 (EN 14315-1:2013)
+    urn: urn:gost:std:35302:2025
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 35302-2025 (EN 14315-1:2013)
+    style: v3
+- id: gost.harmonized.0086
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '35306.10'
+    year: '2025'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '35306.10'
+      year: '2025'
+    adopted_identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '71'
+      part: '10'
+      year: '2005'
+  representations:
+    human: GOST 35306.10-2025 (EN 71-10:2005)
+    urn: urn:gost:std:35306.10:2025
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 35306.10-2025 (EN 71-10:2005)
+    style: v3
+- id: gost.harmonized.0087
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '35306.11'
+    year: '2025'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '35306.11'
+      year: '2025'
+    adopted_identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '71'
+      part: '11'
+      year: '2005'
+  representations:
+    human: GOST 35306.11-2025 (EN 71-11:2005)
+    urn: urn:gost:std:35306.11:2025
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 35306.11-2025 (EN 71-11:2005)
+    style: v3
+- id: gost.harmonized.0088
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '35307.1'
+    year: '2025'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '35307.1'
+      year: '2025'
+    adopted_identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '50332'
+      part: '1'
+      year: '2013'
+  representations:
+    human: GOST 35307.1-2025 (EN 50332-1:2013)
+    urn: urn:gost:std:35307.1:2025
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 35307.1-2025 (EN 50332-1:2013)
+    style: v3
+- id: gost.harmonized.0089
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '35311.1'
+    year: '2025'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '35311.1'
+      year: '2025'
+    adopted_identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '1129'
+      part: '1'
+      year: '1995'
+  representations:
+    human: GOST 35311.1-2025 (EN 1129-1:1995)
+    urn: urn:gost:std:35311.1:2025
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 35311.1-2025 (EN 1129-1:1995)
+    style: v3
+- id: gost.harmonized.0090
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '35311.2'
+    year: '2025'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '35311.2'
+      year: '2025'
+    adopted_identifiers:
+    - _type: pubid:cencenelec:european-norm
+      number: '1129'
+      part: '2'
+      year: '1995'
+  representations:
+    human: GOST 35311.2-2025 (EN 1129-2:1995)
+    urn: urn:gost:std:35311.2:2025
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 35311.2-2025 (EN 1129-2:1995)
+    style: v3
+- id: gost.harmonized.0095
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '6032'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '6032'
+    adopted_identifiers:
+    - _type: pubid:iso:international-standard
+      number: '3651'
+      part: '1'
+      year: '1998'
+  representations:
+    human: GOST 6032 (ISO 3651-1:1998)
+    urn: urn:gost:std:6032
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 6032 (ISO 3651-1:1998)
+    style: v3
+- id: gost.harmonized.0096
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '6829'
+    year: '2015'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '6829'
+      year: '2015'
+    adopted_identifiers:
+    - _type: pubid:gost:foreign-reference
+  representations:
+    human: GOST 6829-2015 (UNECE STANDARD FFV-57:2010)
+    urn: urn:gost:std:6829:2015
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 6829-2015 (UNECE STANDARD FFV-57:2010)
+    style: v3
+- id: gost.harmonized.0098
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '6996'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '6996'
+    adopted_identifiers:
+    - _type: pubid:iso:international-standard
+      number: '4136'
+      part: '89'
+  representations:
+    human: GOST 6996 (ISO 4136-89)
+    urn: urn:gost:std:6996
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 6996 (ИСО 4136-89)
+    style: v3
+- id: gost.harmonized.0100
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '7177'
+    year: '2015'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '7177'
+      year: '2015'
+    adopted_identifiers:
+    - _type: pubid:gost:foreign-reference
+  representations:
+    human: GOST 7177-2015 (UNECE STANDARD FFV-37:2012)
+    urn: urn:gost:std:7177:2015
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 7177-2015 (UNECE STANDARD FFV-37:2012)
+    style: v3
+- id: gost.harmonized.0101
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '7178'
+    year: '2015'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '7178'
+      year: '2015'
+    adopted_identifiers:
+    - _type: pubid:gost:foreign-reference
+  representations:
+    human: GOST 7178-2015 (UNECE STANDARD FFV-23:2012)
+    urn: urn:gost:std:7178:2015
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 7178-2015 (UNECE STANDARD FFV-23:2012)
+    style: v3
+- id: gost.harmonized.0104
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '7967'
+    year: '2015'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '7967'
+      year: '2015'
+    adopted_identifiers:
+    - _type: pubid:gost:foreign-reference
+  representations:
+    human: GOST 7967-2015 (UNECE STANDARD FFV-09:2012)
+    urn: urn:gost:std:7967:2015
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 7967-2015 (UNECE STANDARD FFV-09:2012)
+    style: v3
+- id: gost.harmonized.0108
+  identifier:
+    _type: pubid:gost:harmonized
+    number: '8929'
+    year: '2025'
+    base:
+      _type: pubid:gost:interstate-standard
+      number: '8929'
+      year: '2025'
+    adopted_identifiers:
+    - _type: pubid:iso:international-standard
+      number: '556'
+      year: '2020'
+  representations:
+    human: GOST 8929-2025 (ISO 556:2020)
+    urn: urn:gost:std:8929:2025
+  style: v3
+  non_normalized_aliases:
+  - spelling: ГОСТ 8929-2025 (ISO 556:2020)
+    style: v3
