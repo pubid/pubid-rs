@@ -22,6 +22,7 @@ use crate::doi::DoiIdentifier;
 use crate::ecma::EcmaKind;
 use crate::error::{Error, Result};
 use crate::etsi::EtsiKind;
+use crate::eu::EuKind;
 use crate::evs::EvsKind;
 use crate::gb::GbKind;
 use crate::gost::GostKind;
@@ -29,10 +30,10 @@ use crate::jis::JisKind;
 use crate::nesc::NescKind;
 use crate::plateau::PlateauKind;
 pub use crate::{
-    AmcaIdentifier, AnsiIdentifier, ApiIdentifier, CcsdsIdentifier, CenIdentifier, EcmaIdentifier,
-    EtsiIdentifier, EvsIdentifier, GbIdentifier, GostIdentifier, IanaIdentifier, IetfIdentifier,
-    IreIdentifier, IsbnIdentifier, JisIdentifier, NescIdentifier, OasisIdentifier, OgcIdentifier,
-    PlateauIdentifier, UnIdentifier, W3cIdentifier, XsfIdentifier,
+    AmcaIdentifier, AnsiIdentifier, ApiIdentifier, ArxivIdentifier, CcsdsIdentifier, CenIdentifier,
+    EcmaIdentifier, EtsiIdentifier, EuIdentifier, EvsIdentifier, GbIdentifier, GostIdentifier,
+    IanaIdentifier, IetfIdentifier, IreIdentifier, IsbnIdentifier, JisIdentifier, NescIdentifier,
+    OasisIdentifier, OgcIdentifier, PlateauIdentifier, UnIdentifier, W3cIdentifier, XsfIdentifier,
 };
 
 // ---------------------------------------------------------------------------
@@ -95,6 +96,10 @@ pub enum Identifier {
     Jis(JisIdentifier),
     /// An ETSI identifier (standards and the /A //C supplements).
     Etsi(EtsiIdentifier),
+    /// An EU identifier (regulation / directive / decision).
+    Eu(EuIdentifier),
+    /// An arXiv identifier (e-prints, new form and old form).
+    Arxiv(ArxivIdentifier),
 }
 
 impl Identifier {
@@ -124,6 +129,8 @@ impl Identifier {
             Identifier::Plateau(id) => id.to_hash(),
             Identifier::Jis(id) => id.to_hash(),
             Identifier::Etsi(id) => id.to_hash(),
+            Identifier::Eu(id) => id.to_hash(),
+            Identifier::Arxiv(id) => id.to_hash(),
         }
     }
 
@@ -153,6 +160,8 @@ impl Identifier {
             Identifier::Plateau(id) => id.to_human(),
             Identifier::Jis(id) => id.to_human(),
             Identifier::Etsi(id) => id.to_human(),
+            Identifier::Eu(id) => id.to_human(),
+            Identifier::Arxiv(id) => id.to_human(),
         }
     }
 
@@ -182,6 +191,8 @@ impl Identifier {
             Identifier::Plateau(id) => Some(id.to_urn()),
             Identifier::Jis(id) => Some(id.to_urn()),
             Identifier::Etsi(id) => Some(id.to_urn()),
+            Identifier::Eu(id) => Some(id.to_urn()),
+            Identifier::Arxiv(id) => Some(id.to_urn()),
         }
     }
 
@@ -235,6 +246,10 @@ impl Identifier {
             _ if kind.starts_with(EtsiKind::KIND_PREFIX) => {
                 Ok(Identifier::Etsi(EtsiIdentifier::from_hash(hash)?))
             }
+            _ if kind.starts_with(EuKind::KIND_PREFIX) => {
+                Ok(Identifier::Eu(EuIdentifier::from_hash(hash)?))
+            }
+            ArxivIdentifier::TYPE => Ok(Identifier::Arxiv(ArxivIdentifier::from_hash(hash)?)),
             IreIdentifier::TYPE => Ok(Identifier::Ire(IreIdentifier::from_hash(hash)?)),
             _ if kind.starts_with(ApiKind::KIND_PREFIX) => {
                 Ok(Identifier::Api(ApiIdentifier::from_hash(hash)?))
@@ -320,6 +335,8 @@ flavor_impls!(
     "plateau" => PlateauImpl, Plateau, PlateauIdentifier,
     "jis" => JisImpl, Jis, JisIdentifier,
     "etsi" => EtsiImpl, Etsi, EtsiIdentifier,
+    "eu" => EuImpl, Eu, EuIdentifier,
+    "arxiv" => ArxivImpl, Arxiv, ArxivIdentifier,
 );
 
 // ---------------------------------------------------------------------------
@@ -587,6 +604,18 @@ vendored_corpora!(
         ("corrigendum.yaml", ETSI_CORRIGENDUM),
         ("etsi_standard.yaml", ETSI_ETSI_STANDARD),
         ("_status.yaml", ETSI_STATUS),
+    ],
+    "eu" => [
+        ("regulation.yaml", EU_REGULATION),
+        ("directive.yaml", EU_DIRECTIVE),
+        ("decision.yaml", EU_DECISION),
+        ("_negative.yaml", EU_NEGATIVE),
+        ("_status.yaml", EU_STATUS),
+    ],
+    "arxiv" => [
+        ("eprint.yaml", ARXIV_EPRINT),
+        ("_negative.yaml", ARXIV_NEGATIVE),
+        ("_status.yaml", ARXIV_STATUS),
     ],
 );
 

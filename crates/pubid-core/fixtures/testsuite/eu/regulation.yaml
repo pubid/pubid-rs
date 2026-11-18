@@ -1,0 +1,80 @@
+---
+- id: eu.regulation.0001
+  identifier:
+    _type: pubid:eu:regulation
+    number: '1227'
+    year: '2011'
+  representations:
+    human: EU Regulation 1227/2011
+    urn: urn:eu:reg:2011:1227
+  style: v3
+  non_normalized_aliases:
+  - spelling: Regulation (EU) No 1227/2011
+    style: v3
+  - spelling: CELEX 32011R1227
+    style: v3
+  - spelling: http://data.europa.eu/eli/reg/2011/1227/oj
+    style: v3
+  - spelling: Regulation 1227/2011
+    style: v3
+  - spelling: 'CELEX: 32011R1227'
+    style: v3
+- id: eu.regulation.0002
+  identifier:
+    _type: pubid:eu:regulation
+    number: '679'
+    year: '2016'
+  representations:
+    human: EU Regulation 2016/679
+    urn: urn:eu:reg:2016:679
+  style: v3
+  non_normalized_aliases:
+  - spelling: Regulation (EU) 2016/679
+    style: v3
+  - spelling: CELEX:32016R0679
+    style: v3
+- id: eu.regulation.0003
+  identifier:
+    _type: pubid:eu:regulation
+    number: '2003'
+    year: '2003'
+  representations:
+    human: EU Regulation 2003/2003
+    urn: urn:eu:reg:2003:2003
+  style: v3
+- id: eu.regulation.0004
+  identifier:
+    _type: pubid:eu:regulation
+    number: '1907'
+    year: '2006'
+  representations:
+    human: EU Regulation 1907/2006
+    urn: urn:eu:reg:2006:1907
+  style: v3
+  non_normalized_aliases:
+  - spelling: Regulation (EC) No 1907/2006
+    style: v3
+- id: eu.regulation.0005
+  identifier:
+    _type: pubid:eu:regulation
+    number: '2015'
+    year: '2014'
+  representations:
+    human: EU Regulation No 2015/2014
+    urn: urn:eu:reg:2014:2015
+  style: v3
+  non_normalized_aliases:
+  - spelling: 32014R2015
+    style: v3
+- id: eu.regulation.0006
+  identifier:
+    _type: pubid:eu:regulation
+    number: '2014'
+    year: '2015'
+  representations:
+    human: EU Regulation 2015/2014
+    urn: urn:eu:reg:2015:2014
+  style: v3
+  non_normalized_aliases:
+  - spelling: 32015R2014
+    style: v3

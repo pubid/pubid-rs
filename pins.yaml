@@ -27,3 +27,19 @@ testsuite_ref: e6cf11b9821929f2c4deed431113bdfca67e81d6
 # bsi_pfs is the pinned-ref byte content (0cbe61d8...), not grammar
 # main's newer rebake - this ref stays the single source.
 grammar_ref: dcd67cb97d6cdb512ed444584091e4786bb707a5
+# pubid-grammar main (a7e2363f29df, the eu + arxiv flavor commits): the
+# eu.json and arxiv.json envelopes were byte-copied from here (both
+# baked at parsanol 1.5.1.0, artifact edition 2; the gem at pubid
+# fe08a252 carries the same grammars re-sealed under a different ruby,
+# so the checksums differ while the bound semantics are identical).
+# A flavor-only pin, because the same commits carry the open bsi_pfs
+# rebake round (grammar #125), which this repository deliberately does
+# not vendor yet - every other artifact at a7e2363 is byte-identical to
+# the dcd67cb pin above, except bsi_pfs.
+grammar_ref_eu_arxiv: a7e2363f29dfcb6867b92c3736138ed95e6c9aa8
+# The eu + arxiv vendored fixture slices are NOT testsuite copies: the
+# testsuite at e6cf11b carries no tests/eu or tests/arxiv yet (the
+# corpora live in the gem's spec/fixtures at pubid fe08a252, generated
+# in-process from the reference - see the fixtures VENDORED_FROM.md).
+# When the testsuite exports the two flavors, replace the slices with
+# the byte copy and fold them back into testsuite_ref.

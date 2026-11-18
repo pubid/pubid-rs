@@ -1,0 +1,76 @@
+---
+- id: arxiv.neg.unclassified.0001
+  input: '1412.00001'
+  expect:
+    error:
+      code: unclassified
+- id: arxiv.neg.unclassified.0002
+  input: '1501.0001'
+  expect:
+    error:
+      code: unclassified
+- id: arxiv.neg.unclassified.0003
+  input: '0703.0001'
+  expect:
+    error:
+      code: unclassified
+- id: arxiv.neg.unclassified.0004
+  input: '2313.00001'
+  expect:
+    error:
+      code: unclassified
+- id: arxiv.neg.unclassified.0005
+  input: '2300.00001'
+  expect:
+    error:
+      code: unclassified
+- id: arxiv.neg.unclassified.0006
+  input: 2301.00001v0
+  expect:
+    error:
+      code: unclassified
+- id: arxiv.neg.unclassified.0007
+  input: 2301.00001v01
+  expect:
+    error:
+      code: unclassified
+- id: arxiv.neg.unclassified.0008
+  input: hep-th/0801001
+  expect:
+    error:
+      code: unclassified
+- id: arxiv.neg.unclassified.0009
+  input: hep-th/9013001
+  expect:
+    error:
+      code: unclassified
+- id: arxiv.neg.unclassified.0010
+  input: hep-th/9107001
+  expect:
+    error:
+      code: unclassified
+- id: arxiv.neg.unclassified.0011
+  input: 'arXiv:'
+  expect:
+    error:
+      code: unclassified
+- id: arxiv.neg.unclassified.0012
+  input: arXiv:2301
+  expect:
+    error:
+      code: unclassified
+- id: arxiv.neg.unclassified.0013
+  input: '2301.001'
+  expect:
+    error:
+      code: unclassified
+- id: arxiv.neg.unclassified.0014
+  input: arXiv:2301.00001.v1
+  expect:
+    error:
+      code: unclassified
+- id: arxiv.neg.unclassified.0015
+  input: arXiv:Hep-th/9901001
+  expect:
+    error:
+      code: unclassified

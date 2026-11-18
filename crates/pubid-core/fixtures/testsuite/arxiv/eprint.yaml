@@ -1,0 +1,176 @@
+---
+- id: arxiv.eprint.0001
+  identifier:
+    _type: pubid:arxiv:eprint
+    year: 2007
+    month: 4
+    number: '0001'
+  representations:
+    human: arXiv:0704.0001
+    urn: urn:pubid:arxiv:eprint:2007:4:0001
+  style: v3
+  non_normalized_aliases:
+  - spelling: '0704.0001'
+    style: v3
+- id: arxiv.eprint.0002
+  identifier:
+    _type: pubid:arxiv:eprint
+    year: 2007
+    month: 4
+    number: '0001'
+    version: 1
+  representations:
+    human: arXiv:0704.0001v1
+    urn: urn:pubid:arxiv:eprint:2007:4:0001:v-1
+  style: v3
+- id: arxiv.eprint.0003
+  identifier:
+    _type: pubid:arxiv:eprint
+    year: 2014
+    month: 12
+    number: '9999'
+    version: 3
+  representations:
+    human: arXiv:1412.9999v3
+    urn: urn:pubid:arxiv:eprint:2014:12:9999:v-3
+  style: v3
+- id: arxiv.eprint.0004
+  identifier:
+    _type: pubid:arxiv:eprint
+    year: 2015
+    month: 1
+    number: '00001'
+  representations:
+    human: arXiv:1501.00001
+    urn: urn:pubid:arxiv:eprint:2015:1:00001
+  style: v3
+- id: arxiv.eprint.0005
+  identifier:
+    _type: pubid:arxiv:eprint
+    year: 2023
+    month: 1
+    number: '00001'
+  representations:
+    human: arXiv:2301.00001
+    urn: urn:pubid:arxiv:eprint:2023:1:00001
+  style: v3
+- id: arxiv.eprint.0006
+  identifier:
+    _type: pubid:arxiv:eprint
+    year: 2023
+    month: 1
+    number: '00001'
+    version: 1
+  representations:
+    human: arXiv:2301.00001v1
+    urn: urn:pubid:arxiv:eprint:2023:1:00001:v-1
+  style: v3
+  non_normalized_aliases:
+  - spelling: arXiv 2301.00001v1
+    style: v3
+  - spelling: arxiv:2301.00001v1
+    style: v3
+  - spelling: 2301.00001v1
+    style: v3
+- id: arxiv.eprint.0007
+  identifier:
+    _type: pubid:arxiv:eprint
+    year: 2023
+    month: 1
+    number: '00001'
+    version: 12
+  representations:
+    human: arXiv:2301.00001v12
+    urn: urn:pubid:arxiv:eprint:2023:1:00001:v-12
+  style: v3
+- id: arxiv.eprint.0008
+  identifier:
+    _type: pubid:arxiv:eprint
+    archive: hep-th
+    year: 1999
+    month: 1
+    number: '001'
+  representations:
+    human: arXiv:hep-th/9901001
+    urn: urn:pubid:arxiv:eprint:1999:1:001:archive-hep-th
+  style: v3
+  non_normalized_aliases:
+  - spelling: ARXIV:hep-th/9901001
+    style: v3
+- id: arxiv.eprint.0009
+  identifier:
+    _type: pubid:arxiv:eprint
+    archive: hep-th
+    year: 1999
+    month: 1
+    number: '001'
+    version: 2
+  representations:
+    human: arXiv:hep-th/9901001v2
+    urn: urn:pubid:arxiv:eprint:1999:1:001:archive-hep-th:v-2
+  style: v3
+  non_normalized_aliases:
+  - spelling: hep-th/9901001v2
+    style: v3
+- id: arxiv.eprint.0010
+  identifier:
+    _type: pubid:arxiv:eprint
+    archive: math
+    subject_class: GT
+    year: 2003
+    month: 9
+    number: '136'
+  representations:
+    human: arXiv:math.GT/0309136
+    urn: urn:pubid:arxiv:eprint:2003:9:136:archive-math:sc-GT
+  style: v3
+  non_normalized_aliases:
+  - spelling: math.GT/0309136
+    style: v3
+- id: arxiv.eprint.0011
+  identifier:
+    _type: pubid:arxiv:eprint
+    archive: math
+    year: 2007
+    month: 3
+    number: '001'
+  representations:
+    human: arXiv:math/0703001
+    urn: urn:pubid:arxiv:eprint:2007:3:001:archive-math
+  style: v3
+- id: arxiv.eprint.0012
+  identifier:
+    _type: pubid:arxiv:eprint
+    archive: astro-ph
+    year: 1991
+    month: 8
+    number: '001'
+  representations:
+    human: arXiv:astro-ph/9108001
+    urn: urn:pubid:arxiv:eprint:1991:8:001:archive-astro-ph
+  style: v3
+- id: arxiv.eprint.0013
+  identifier:
+    _type: pubid:arxiv:eprint
+    archive: cs
+    subject_class: AI
+    year: 2001
+    month: 1
+    number: '001'
+    version: 1
+  representations:
+    human: arXiv:cs.AI/0101001v1
+    urn: urn:pubid:arxiv:eprint:2001:1:001:archive-cs:sc-AI:v-1
+  style: v3
+- id: arxiv.eprint.0014
+  identifier:
+    _type: pubid:arxiv:eprint
+    archive: nlin
+    subject_class: CD
+    year: 2002
+    month: 1
+    number: '001'
+  representations:
+    human: arXiv:nlin.CD/0201001
+    urn: urn:pubid:arxiv:eprint:2002:1:001:archive-nlin:sc-CD
+  style: v3

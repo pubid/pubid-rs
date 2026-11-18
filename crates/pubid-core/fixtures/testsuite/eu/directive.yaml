@@ -1,0 +1,38 @@
+---
+- id: eu.directive.0001
+  identifier:
+    _type: pubid:eu:directive
+    number: '680'
+    year: '2016'
+  representations:
+    human: EU Directive 2016/680
+    urn: urn:eu:dir:2016:680
+  style: v3
+  non_normalized_aliases:
+  - spelling: Directive (EU) 2016/680
+    style: v3
+  - spelling: 32016L0680
+    style: v3
+  - spelling: https://data.europa.eu/eli/dir/2016/680/oj
+    style: v3
+- id: eu.directive.0002
+  identifier:
+    _type: pubid:eu:directive
+    number: '24'
+    year: '2014'
+  representations:
+    human: EU Directive 2014/24
+    urn: urn:eu:dir:2014:24
+  style: v3
+- id: eu.directive.0003
+  identifier:
+    _type: pubid:eu:directive
+    number: '75'
+    year: '2010'
+  representations:
+    human: EU Directive 2010/75
+    urn: urn:eu:dir:2010:75
+  style: v3
+  non_normalized_aliases:
+  - spelling: Directive 2010/75/EU
+    style: v3

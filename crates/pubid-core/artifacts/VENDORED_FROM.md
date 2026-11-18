@@ -24,6 +24,8 @@ The `*.json` envelopes in this directory are byte-copied from
 | gb     | `7724e6e1454eb7a680780e286a085049e85c1ef021ff5a35af16266c613d9b5f` |
 | gost   | `830f339aa340cb2bf02687bc3d50a07a9f2946012f4f26aa7231080993b4ae50` |
 | adobe  | `5ab76c704865b21e88abaadf90139a71c5a6c342e2532262a309c349f6dbd275` |
+| eu     | `451aebe27c5f41859237adc45681cc98ab9e570cb63b989dadfb8053b7ec870d` |
+| arxiv  | `4141a4489eff22ed82e64c46ab3d7b444fa694c75e53b622c6ee7b428ca20c31` |
 | bsi_pfs    | `0cbe61d83f4be395794e63b69a9baedcac28820ea1aa95125e5d022b6fc913d7` |
 | calconnect_pfs    | `87e7d595d07b8ad2e1e9cee0f7f896b9f6f26d3624d0cf86e72e5fb8887d1965` |
 | ccsds    | `b378059148e23ec1404e7143245f2cc775b8c6e5173c02b5fa367596a039b55a` |
@@ -62,7 +64,17 @@ ground truth. The `bsi_pfs` envelope is the pinned-ref byte content
 (`0cbe61d8...`), not grammar main's newer rebake — the pinned refs in
 `/pins.yaml` stay the single source for both sides.
 
-CI fails the build when any file drifts from the pinned grammar ref.
+The eu + arxiv envelopes come from a second, flavor-only grammar ref
+(`a7e2363f29df`, the flavor commits themselves): the flavors postdate
+the `grammar_ref` pin above, and the same commits carry the open
+`bsi_pfs` rebake round (grammar #125), so the two flavors carry their
+own pin (`grammar_ref_eu_arxiv` in `/pins.yaml`) and their own drift
+gate. Every other artifact at that ref is byte-identical to the
+`dcd67cb` pin, except `bsi_pfs`, which this repository deliberately
+does not vendor yet.
+
+CI fails the build when any file drifts from its pinned grammar ref.
 
 Refresh by re-copying the files from the new grammar ref and updating
-`grammar_ref` in `/pins.yaml` together with this note.
+the matching `grammar_ref*` entry in `/pins.yaml` together with this
+note.

@@ -19,6 +19,7 @@ jobs:
         id: pins
         run: |
           echo "grammar_ref=$(sed -n 's/^grammar_ref: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
+          echo "grammar_ref_eu_arxiv=$(sed -n 's/^grammar_ref_eu_arxiv: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
           echo "testsuite_ref=$(sed -n 's/^testsuite_ref: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
 
       - name: Checkout pinned pubid-grammar
@@ -27,6 +28,13 @@ jobs:
           repository: pubid/pubid-grammar
           ref: ${{ steps.pins.outputs.grammar_ref }}
           path: pubid-grammar
+
+      - name: Checkout pinned pubid-grammar (the eu/arxiv flavor ref)
+        uses: actions/checkout@v4
+        with:
+          repository: pubid/pubid-grammar
+          ref: ${{ steps.pins.outputs.grammar_ref_eu_arxiv }}
+          path: pubid-grammar-eu-arxiv
 
       - name: Checkout pinned pubid-testsuite
         uses: actions/checkout@v4
@@ -41,6 +49,16 @@ jobs:
             nesc ire ansi ecma gb gost adobe plateau evs ccsds cen_cenelec \
             jis etsi doi_pfs calconnect_pfs cen_pfs etsi_pfs bsi_pfs; do
             cmp "pubid-grammar/artifacts/$flavor.json" \
+                "crates/pubid-core/artifacts/$flavor.json"
+          done
+
+      - name: Vendored eu/arxiv artifacts match their pinned grammar ref (drift gate)
+        run: |
+          # The eu/arxiv flavors postdate the grammar_ref pin, and the
+          # same commits carry the open bsi_pfs rebake round - they
+          # carry their own flavor-only pin (see /pins.yaml).
+          for flavor in eu arxiv; do
+            cmp "pubid-grammar-eu-arxiv/artifacts/$flavor.json" \
                 "crates/pubid-core/artifacts/$flavor.json"
           done
 
@@ -86,4 +104,7 @@ jobs:
           cargo run -q -p pubid-cli -- parse isbn "ISBN 978-0-306-40615-7"
           cargo run -q -p pubid-cli -- parse ogc "OGC 06-121r9"
           cargo run -q -p pubid-cli -- parse ietf "draft-ietf-httpbis-messaging-19"
+          cargo run -q -p pubid-cli -- parse eu "EU Regulation 1227/2011"
+          cargo run -q -p pubid-cli -- parse eu "32014R2015"
+          cargo run -q -p pubid-cli -- parse arxiv "arXiv:math.GT/0309136"
           cargo run -q -p pubid-cli -- smoke

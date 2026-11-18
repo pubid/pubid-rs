@@ -1,0 +1,31 @@
+---
+- id: eu.neg.unclassified.0001
+  input: Regulation (Euratom) No 1493/93
+  expect:
+    error:
+      code: unclassified
+- id: eu.neg.unclassified.0002
+  input: EU Regulation 1227
+  expect:
+    error:
+      code: unclassified
+- id: eu.neg.unclassified.0003
+  input: EU Regulation 12/34
+  expect:
+    error:
+      code: unclassified
+- id: eu.neg.unclassified.0004
+  input: Directive 95/46/EC
+  expect:
+    error:
+      code: unclassified
+- id: eu.neg.unclassified.0005
+  input: Regulation (EU) No 1227/2011/EC
+  expect:
+    error:
+      code: unclassified
+- id: eu.neg.unclassified.0006
+  input: 30000R0000
+  expect:
+    error:
+      code: unclassified

@@ -8,7 +8,11 @@ cen_cenelec, jis, etsi) hold the byte-copied pubid-testsuite corpora (see
 (`tests/<flavor>/`). The doi slice is byte-identical across the round
 (`adecf10cef5c` -> `e6cf11b98219` touched only `tests/iso`), and the
 wave-2 corpora are identical from `adecf10cef5c` forward, so the
-bootstrap measurements carry over unchanged.
+bootstrap measurements carry over unchanged. (The api, amca, and other
+later slices came from the same testsuite tree in the rounds that
+ported them; nesc and ire are vendored-only, with no `tests/<flavor>/`
+corpus at the pinned ref; the eu + arxiv slices at the end of this
+note are the generated exception.)
 
 The slices make the conformance runs self-contained (`cargo test` needs
 no network). CI additionally runs the conformance binary against a full
@@ -125,6 +129,38 @@ File sha256s at the pinned ref:
   - `amendment.yaml` sha256 f6345d930f69f46e79c884e2e4db5a2ac82d4727192e7e398f089bb62d4b3c3c
   - `corrigendum.yaml` sha256 e4cb1d205183237c23e1dd557ed2429cbbb5d6071304dc9b49065d4e82f2c486
   - `etsi_standard.yaml` sha256 9a9a738934a96b66bdc699a659b20a09585ba246abc7d70127da3296225213f9
+
+The eu + arxiv slices are the one exception: the testsuite at the
+pinned ref carries no `tests/eu/` or `tests/arxiv/` yet (the flavor
+corpora live in the gem's `spec/fixtures/{eu,arxiv}/identifiers/`),
+so these slices were generated in-process from the reference itself —
+the pubid gem at `fe08a252` (2.0.44, the `Pubid::Eu` +
+`Pubid::Arxiv` flavors), running its own `spec/fixtures` rows:
+
+- every row's canonical hash, human, and URN came from the reference
+  (parsed, then serialized by the flavor class);
+- every alias spelling (`!src!dst` fixture rows) was verified to
+  render to its row's human in the reference before it was written;
+- every `_negative.yaml` input was verified to raise
+  `Pubid::Errors::ParseError` in the reference;
+- the row ids are slice-local (`eu.regulation.0001`...), assigned in
+  the fixtures' own order — when the testsuite exports the two
+  flavors, replace these files with the byte copy and fold them back
+  into `testsuite_ref` (the slice-cmp drift gate skips them today:
+  nothing exists at the pinned ref to drift against).
+
+Generated-slice file sha256s at pubid fe08a252:
+
+- eu:
+  - `_negative.yaml` sha256 43d655dff2b8ebc52887745ba6ded8f141998e9e31da20fd45fde9edd71b12da
+  - `_status.yaml` sha256 d0de93e4b73ccba08ed2eec9a3b0f8b2b4a9afa11749d2e7c7869298795fff70
+  - `decision.yaml` sha256 7ddcd25d0850ab021298a00a77f0790284f1937d3d752cb9f189747330568730
+  - `directive.yaml` sha256 4f550cc6560cce93683422cd68414fe5a47c3faad05b36bfb680fadc42fa2e61
+  - `regulation.yaml` sha256 5af266cb4b4b1574e6833a8327e9fbed6b59a37e161cb6b7636ac14eb181e9bb
+- arxiv:
+  - `_negative.yaml` sha256 0e8e83a6d1f4d45a053797ba3d3b36b7623b151f57d5c594cbae8e7a7fa8dcf6
+  - `_status.yaml` sha256 d0de93e4b73ccba08ed2eec9a3b0f8b2b4a9afa11749d2e7c7869298795fff70
+  - `eprint.yaml` sha256 56b57ea7ce489b5367d60c80a68f9606cf12493e400930087a6384aa0c4bc896
 
 Refresh by re-copying the files from the new testsuite ref and updating
 `testsuite_ref` in `/pins.yaml` together with this note.
