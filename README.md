@@ -43,14 +43,19 @@ pins.yaml            pinned testsuite + grammar refs (single source)
 
 ## Conformance status (waves 1–3, measured)
 
-Twenty-three flavors are ported end to end: `doi` (bootstrap), the
+Twenty-five flavors are ported end to end: `doi` (bootstrap), the
 wave-2 render-layer flavors `isbn`, `iana`, `oasis`, `xsf`, `un`,
 `ogc`, `ietf`, `w3c`, the wave-3 mid-fleet flavors `api`, `amca`,
-`nesc`, `ire`, `ansi`, `ecma`, `gb`, `gost`, and the wave-3 tier
+`nesc`, `ire`, `ansi`, `ecma`, `gb`, `gost`, the wave-3 tier
 `plateau`, `evs`, `ccsds`, `cen_cenelec`, `jis`, `etsi` (the
-big-corpus flavors — `etsi` alone is 24,718 rows). Measured against
-the full pubid-testsuite corpora at the pinned ref — every gated case
-passes except the one api ledger row (below), nothing hidden:
+big-corpus flavors — `etsi` alone is 24,718 rows), and the new-flavor
+round `eu`, `arxiv` (pubid#752/#753, the EU legal acts and the arXiv
+e-prints). Measured against the full pubid-testsuite corpora at the
+pinned ref — every gated case passes except the one api ledger row
+(below), nothing hidden. The `eu`/`arxiv` rows measure their
+gem-fixture-derived vendored slices, the only corpora the two flavors
+have until the testsuite exports them (see the fixtures provenance
+note):
 
 | flavor | gated cases | parsed | rejected (negatives) | rendered | hashes | urns | deserializes |
 | ------ | ----------: | -----: | -------------------: | -------: | -----: | ---: | -----------: |
@@ -77,7 +82,9 @@ passes except the one api ledger row (below), nothing hidden:
 | cen_cenelec | 189    | 199    | 14                   | 199      | 189    | 189  | 189          |
 | jis    | 10,575      | 10,576 | 0                    | 10,576   | 10,575 | 10,575 | 10,575     |
 | etsi   | 24,718      | 24,718 | 0                    | 24,718   | 24,718 | 21,432 | 24,718     |
-| **all**| **40,365**  | 40,611 | 47                   | 40,611   | 40,365 | 37,076 | 40,365     |
+| eu     | 11          | 27     | 6                    | 27       | 11     | 11   | 11           |
+| arxiv  | 14          | 21     | 15                   | 21       | 14     | 14   | 14           |
+| **all**| **40,390**  | 40,659 | 68                   | 40,659   | 40,390 | 37,101 | 40,390   |
 
 Counts: `parsed` covers the canonical humans plus every non-normalized
 alias spelling; `rejected` covers the `_negative.yaml` rows (plus the
