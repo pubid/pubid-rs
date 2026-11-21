@@ -1190,3 +1190,46 @@ fn glob_match(pattern: &str, text: &str) -> bool {
     }
     inner(pattern.as_bytes(), text.as_bytes())
 }
+
+#[cfg(test)]
+mod pending_tests {
+    use super::PendingRegistry;
+
+    const REGISTRY: &str = "---\n\
+        ansi.standard.0001: {reason: \"moved expectation\", since: \"2026-11-20\", ref: \"hand-off x\"}\n\
+        \"ansi.*.0042\": {reason: \"glob row\", ref: \"hand-off y\"}\n";
+
+    #[test]
+    fn loads_exact_and_wildcard_entries() {
+        let registry = PendingRegistry::from_yaml(REGISTRY).expect("loads");
+        assert!(!registry.is_empty());
+        assert_eq!(
+            registry
+                .for_case("ansi.standard.0001")
+                .expect("exact")
+                .reason,
+            "moved expectation"
+        );
+        assert_eq!(
+            registry
+                .for_case("ansi.standard.0042")
+                .expect("glob")
+                .reference,
+            "hand-off y"
+        );
+        assert!(registry.for_case("doi.resource.0001").is_none());
+    }
+
+    #[test]
+    fn rejects_entries_without_reason_or_ref() {
+        assert!(PendingRegistry::from_yaml("---\nansi.standard.0001: {ref: x}\n").is_err());
+        assert!(PendingRegistry::from_yaml("---\nansi.standard.0001: {reason: y}\n").is_err());
+    }
+
+    #[test]
+    fn an_empty_document_is_an_empty_registry() {
+        let registry = PendingRegistry::from_yaml("---\n").expect("loads");
+        assert!(registry.is_empty());
+        assert!(registry.for_case("ansi.standard.0001").is_none());
+    }
+}
