@@ -84,7 +84,7 @@ fn smoke() -> ExitCode {
             }
             None => continue,
         };
-        let report = run_flavor(&corpus, impl_);
+        let report = run_flavor(&corpus, impl_, None);
         let embedded = match pubid_core::flavor_artifact(flavor) {
             Some(Ok(artifact)) => artifact.run_tests(),
             Some(Err(err)) => {
