@@ -83,6 +83,11 @@ jobs:
         run: |
           for dir in crates/pubid-core/fixtures/testsuite/*/; do
             flavor=$(basename "$dir")
+            # The ansi slice is regenerated ahead of the testsuite (the
+            # reference's #760 expectations; see the fixtures
+            # VENDORED_FROM.md) - fold back when the testsuite exports
+            # the ANSI year round.
+            [ "$flavor" = "ansi" ] && continue
             for file in "$dir"*.yaml; do
               # Vendored-only flavors (e.g. ire) carry no tests/<flavor>/
               # corpus in the testsuite checkout — nothing to drift against.
