@@ -2,7 +2,9 @@
 
 The `*.json` envelopes in this directory are byte-copied from
 `pubid/pubid-grammar@dcd67cb97d6cdb512ed444584091e4786bb707a5`,
-`artifacts/<flavor>.json` (see `/pins.yaml`, `grammar_ref`):
+`artifacts/<flavor>.json` (see `/pins.yaml`, `grammar_ref`) — with two
+flavor-only exceptions noted below (`ansi`, and the `eu` + `arxiv`
+pair):
 
 | flavor | sha256 (file) |
 | ------ | ------------- |
@@ -19,7 +21,7 @@ The `*.json` envelopes in this directory are byte-copied from
 | amca   | `51ec2c39eae0e18e03bafbb4e34084053cfb64edab0a48fc959734b3e0200364` |
 | nesc   | `a5e97216ce732f27ed44a60e2430a47316c53ebecbcd0ff52615d400819d433a` |
 | ire    | `c5ce8862b73036a3bbee88c07dfbb7155e8e9a91e43a96907bd850456fa9f05f` |
-| ansi   | `e1a6bdd21e45b92976e6737ce3d5bdc6f3115b093e3afa2a13972fae473690b9` |
+| ansi   | `2f8eedf0a41668b59e68759a7d616160ed561e06a29eb0c570ec274f5d5e5148` |
 | ecma   | `c00b04261a47f398fcd8596a1610587b39d57b00bc06b49e718e8131c75472ad` |
 | gb     | `7724e6e1454eb7a680780e286a085049e85c1ef021ff5a35af16266c613d9b5f` |
 | gost   | `830f339aa340cb2bf02687bc3d50a07a9f2946012f4f26aa7231080993b4ae50` |
@@ -74,6 +76,18 @@ gate. Every other artifact at that ref is byte-identical to the
 does not vendor yet.
 
 CI fails the build when any file drifts from its pinned grammar ref.
+
+The ansi envelope comes from a third, flavor-only grammar ref
+(`a03d816b9241`, grammar #139, the open co-publisher list for the
+gem's ANSI trailing-year round, pubid#760): the rebake postdates the
+`grammar_ref` pin and rides with the itu flavor round (grammar
+97c8f09, no itu flavor vendored here) and the open `bsi_pfs` rebake
+(grammar #125), so it carries its own pin (`grammar_ref_ansi` in
+`/pins.yaml`) and its own drift gate. Every other artifact that exists
+at that ref is byte-identical to the `dcd67cb` pin above, except
+`bsi_pfs`, which this repository deliberately does not vendor yet; the
+`eu` + `arxiv` envelopes at that ref are byte-identical to the
+`a7e2363` pin.
 
 Refresh by re-copying the files from the new grammar ref and updating
 the matching `grammar_ref*` entry in `/pins.yaml` together with this

@@ -20,6 +20,7 @@ jobs:
         run: |
           echo "grammar_ref=$(sed -n 's/^grammar_ref: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
           echo "grammar_ref_eu_arxiv=$(sed -n 's/^grammar_ref_eu_arxiv: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
+          echo "grammar_ref_ansi=$(sed -n 's/^grammar_ref_ansi: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
           echo "testsuite_ref=$(sed -n 's/^testsuite_ref: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
 
       - name: Checkout pinned pubid-grammar
@@ -36,6 +37,13 @@ jobs:
           ref: ${{ steps.pins.outputs.grammar_ref_eu_arxiv }}
           path: pubid-grammar-eu-arxiv
 
+      - name: Checkout pinned pubid-grammar (the ansi flavor ref)
+        uses: actions/checkout@v4
+        with:
+          repository: pubid/pubid-grammar
+          ref: ${{ steps.pins.outputs.grammar_ref_ansi }}
+          path: pubid-grammar-ansi
+
       - name: Checkout pinned pubid-testsuite
         uses: actions/checkout@v4
         with:
@@ -46,7 +54,7 @@ jobs:
       - name: Vendored artifacts match the pinned grammar ref (drift gate)
         run: |
           for flavor in doi isbn iana oasis xsf un ogc ietf w3c api amca \
-            nesc ire ansi ecma gb gost adobe plateau evs ccsds cen_cenelec \
+            nesc ire ecma gb gost adobe plateau evs ccsds cen_cenelec \
             jis etsi doi_pfs calconnect_pfs cen_pfs etsi_pfs bsi_pfs; do
             cmp "pubid-grammar/artifacts/$flavor.json" \
                 "crates/pubid-core/artifacts/$flavor.json"
@@ -61,6 +69,15 @@ jobs:
             cmp "pubid-grammar-eu-arxiv/artifacts/$flavor.json" \
                 "crates/pubid-core/artifacts/$flavor.json"
           done
+
+      - name: Vendored ansi artifact matches its pinned grammar ref (drift gate)
+        run: |
+          # The ansi co-publisher rebake (grammar #139) postdates the
+          # grammar_ref pin and rides with the itu flavor round and the
+          # open bsi_pfs rebake - it carries its own flavor-only pin
+          # (see /pins.yaml).
+          cmp "pubid-grammar-ansi/artifacts/ansi.json" \
+              "crates/pubid-core/artifacts/ansi.json"
 
       - name: Vendored slices match the pinned testsuite ref (drift gate)
         run: |
