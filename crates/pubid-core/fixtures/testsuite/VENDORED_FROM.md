@@ -1,7 +1,7 @@
 # Vendored fixture provenance
 
 The flavor directories beside this note (doi, isbn, iana, oasis, xsf,
-un, ogc, ietf, w3c, ansi, ecma, gb, gost, plateau, evs, ccsds,
+un, ogc, ietf, w3c, ecma, gb, gost, plateau, evs, ccsds,
 cen_cenelec, jis, etsi) hold the byte-copied pubid-testsuite corpora (see
 `/pins.yaml`, `testsuite_ref`). Every slice was copied from
 `pubid/pubid-testsuite@e6cf11b9821929f2c4deed431113bdfca67e81d6`
@@ -12,7 +12,8 @@ bootstrap measurements carry over unchanged. (The api, amca, and other
 later slices came from the same testsuite tree in the rounds that
 ported them; nesc and ire are vendored-only, with no `tests/<flavor>/`
 corpus at the pinned ref; the eu + arxiv slices at the end of this
-note are the generated exception.)
+note are the generated exception, and the ansi slice is the
+regenerated exception, also at the end of this note.)
 
 The slices make the conformance runs self-contained (`cargo test` needs
 no network). CI additionally runs the conformance binary against a full
@@ -21,9 +22,6 @@ file drifts from that ref.
 
 File sha256s at the pinned ref:
 
-- ansi:
-  - `_status.yaml` sha256 da8b5c732041f6936d83e8f046b33824cea9c87e149da4d107ae8efd143a050f
-  - `standard.yaml` sha256 0f0ac3afbc09e16dafa39aae833fad25e9ecff76c1671474eba277f25aee4c38
 - ecma:
   - `_status.yaml` sha256 da8b5c732041f6936d83e8f046b33824cea9c87e149da4d107ae8efd143a050f
   - `memento.yaml` sha256 a4fbb12f195a199daa7fa6a2860fd0c7b88e80500ee85e75636e5aa5eb1c3a48
@@ -164,3 +162,36 @@ Generated-slice file sha256s at pubid fe08a252:
 
 Refresh by re-copying the files from the new testsuite ref and updating
 `testsuite_ref` in `/pins.yaml` together with this note.
+
+The ansi slice is the regenerated exception. The reference moved under
+it (pubid a6c7f8b5, 2.0.47's ANSI trailing-year + open co-publisher
+round, pubid#760 / grammar#139) while the testsuite still carries the
+pre-#760 `tests/ansi/` at the pinned ref: 170 of the 175 rows record
+the trailing `-YYYY` as `part` and no `year`, which the reference now
+parses as the year + `date_separator`. The slice was therefore
+regenerated in-process from the reference itself — the pubid gem at
+`a6c7f8b5` (checked out at 2.0.46 + the ANSI commit), running the
+gem's own `spec/fixtures/ansi/identifiers/pass/standard.txt` rows:
+
+- all 192 ids (the 175 testsuite rows re-recorded at the moved
+  expectations, in their row order, plus the 17 ids the gem's fixture
+  round added): every row's canonical hash, human, and URN came from
+  the reference (parsed, re-parsed from the render, then serialized by
+  the flavor class — the exporter's one-parse rule);
+- ids stay position-stable (`ansi.standard.0001`-`0175` keep their
+  inputs), so the 170 moved rows keep the ids the gem's
+  `conformance/pending.yaml` marks;
+- the row shape is the exporter's (`identifier` / `representations` /
+  `style: v3`, Ruby psych `YAML.dump` byte style).
+
+The slice-cmp drift gate skips ansi until the testsuite exports the
+ANSI year round; then replace these files with the byte copy, fold
+them back into `testsuite_ref`, clear the pending marks, and drop this
+section.
+
+Generated-slice file sha256s at pubid a6c7f8b5 (parsanol 1.5.12
+runtime over the grammar#139 artifact):
+
+- ansi:
+  - `_status.yaml` sha256 da8b5c732041f6936d83e8f046b33824cea9c87e149da4d107ae8efd143a050f
+  - `standard.yaml` sha256 6c97c938b3584238609067ee12ec57f6b49bcb45b1ba4fc170f06fce0b1da1ac
