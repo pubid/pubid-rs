@@ -82,7 +82,7 @@ fn schema_materialization_carries_the_bound_attributes() {
 #[test]
 fn vendored_corpus_slice_passes_conformance() {
     let corpus = doi_vendored().expect("vendored slice");
-    let report = run_flavor(&corpus, &DoiImpl);
+    let report = run_flavor(&corpus, &DoiImpl, None);
     assert_eq!(
         report.outcome,
         Outcome::Pass,
@@ -193,7 +193,7 @@ fn wave2_negative_rows_are_rejected() {
             .expect("vendored slice")
             .expect("corpus loads");
         let impl_ = pubid_core::flavor_impl(flavor).expect("ported flavor");
-        let report = run_flavor(&corpus, impl_);
+        let report = run_flavor(&corpus, impl_, None);
         assert_eq!(
             report.outcome,
             Outcome::Pass,

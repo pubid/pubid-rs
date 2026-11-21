@@ -923,12 +923,28 @@ pub struct FlavorReport {
     /// absent) — the ceiling a ledgered flavor's failures must stay
     /// under to be at parity with the reference's documented state.
     pub known_mismatches: u64,
+    /// Pending-marked gated cases that still mismatch (recorded debt,
+    /// not gated).
+    pub pending: u64,
+    /// Pending-marked gated cases that now PASS — the cleanup alarm:
+    /// the marker must be removed.
+    pub pending_satisfied: u64,
+    /// The ids behind [`FlavorReport::pending_satisfied`], in row
+    /// order, for the alarm lines.
+    pub pending_satisfied_ids: Vec<String>,
     /// The mismatch list.
     pub failures: Vec<String>,
 }
 
-/// Run one flavor's corpus through its implementation.
-pub fn run_flavor(corpus: &FlavorCorpus, flavor: &dyn FlavorImpl) -> FlavorReport {
+/// Run one flavor's corpus through its implementation. Pending marks
+/// (`pending`) apply where the corpus may still record expectations
+/// the implementation has outgrown — the testsuite-checkout runs; a
+/// `None` runs every gated case unconditionally.
+pub fn run_flavor(
+    corpus: &FlavorCorpus,
+    flavor: &dyn FlavorImpl,
+    pending: Option<&PendingRegistry>,
+) -> FlavorReport {
     let mut tally = Tally::default();
     let mut failures = Vec::new();
     let mut cases = 0u64;
@@ -936,6 +952,9 @@ pub fn run_flavor(corpus: &FlavorCorpus, flavor: &dyn FlavorImpl) -> FlavorRepor
     let mut quarantined = 0u64;
     let mut review = 0u64;
     let mut reclassified = 0u64;
+    let mut pending_marked = 0u64;
+    let mut pending_satisfied = 0u64;
+    let mut pending_satisfied_ids = Vec::new();
 
     for case in &corpus.positives {
         if case.review.is_some() {
@@ -957,7 +976,24 @@ pub fn run_flavor(corpus: &FlavorCorpus, flavor: &dyn FlavorImpl) -> FlavorRepor
             continue;
         }
         cases += 1;
+        let marked = pending
+            .and_then(|registry| registry.for_case(&case.id))
+            .is_some();
+        let before = failures.len();
         failures.extend(check_case(case, flavor, &mut tally));
+        if marked {
+            if failures.len() > before {
+                // Pending debt: the case still mismatches - recorded,
+                // dropped from the failures that gate.
+                failures.truncate(before);
+                pending_marked += 1;
+            } else {
+                // Pending satisfied: the cleanup alarm names the id -
+                // the marker must be removed.
+                pending_satisfied += 1;
+                pending_satisfied_ids.push(case.id.clone());
+            }
+        }
     }
 
     for row in &corpus.negatives {
@@ -1000,6 +1036,9 @@ pub fn run_flavor(corpus: &FlavorCorpus, flavor: &dyn FlavorImpl) -> FlavorRepor
         unimplemented: 0,
         tally,
         known_mismatches,
+        pending: pending_marked,
+        pending_satisfied,
+        pending_satisfied_ids,
         failures,
     }
 }
@@ -1030,6 +1069,124 @@ pub fn unimplemented_report(corpus: &FlavorCorpus) -> FlavorReport {
         unimplemented: 1,
         tally: Tally::default(),
         known_mismatches: 0,
+        pending: 0,
+        pending_satisfied: 0,
+        pending_satisfied_ids: Vec::new(),
         failures: Vec::new(),
     }
+}
+
+// ---------------------------------------------------------------------------
+// Implementation-side pending markers
+// ---------------------------------------------------------------------------
+
+/// One pending entry: a corpus case this implementation explicitly
+/// cannot handle yet. Visible debt — never a silent failure, never a
+/// hidden pass.
+#[derive(Debug, Clone)]
+pub struct PendingEntry {
+    /// One line, the root cause.
+    pub reason: String,
+    /// The contract id / hand-off the unmark waits on.
+    pub reference: String,
+}
+
+/// The pending registry (`conformance/pending.yaml` at the
+/// implementation repo root). Mirrors the gem's
+/// `Pubid::Conformance::Pending`: entries need a reason and a ref, a
+/// pending case that passes raises the pending-satisfied alarm, and a
+/// mismatch inside a pending case is recorded as pending, not as a
+/// failure.
+#[derive(Debug, Clone, Default)]
+pub struct PendingRegistry {
+    entries: Vec<(String, PendingEntry)>,
+}
+
+impl PendingRegistry {
+    /// Parse and validate a pending.yaml document. Entries without a
+    /// reason or a ref are rejected at load.
+    pub fn from_yaml(text: &str) -> Result<Self> {
+        let mut entries = Vec::new();
+        for doc in YamlLoader::load_from_str(text)
+            .map_err(|err| Error::Corpus {
+                path: "pending.yaml".to_string(),
+                detail: format!("invalid YAML: {err}"),
+            })?
+            .into_iter()
+        {
+            let Yaml::Hash(map) = doc else {
+                continue;
+            };
+            for (pattern, meta) in map {
+                let Yaml::String(pattern) = pattern else {
+                    return Err(pending_error("entry pattern is not a string"));
+                };
+                let Yaml::Hash(meta) = meta else {
+                    return Err(pending_error(format!("{pattern}: entry is not a mapping")));
+                };
+                let field = |key: &str| {
+                    meta.get(&Yaml::String(key.to_string()))
+                        .and_then(Yaml::as_str)
+                };
+                let Some(reason) = field("reason") else {
+                    return Err(pending_error(format!("{pattern}: entry needs a reason")));
+                };
+                let Some(reference) = field("ref") else {
+                    return Err(pending_error(format!("{pattern}: entry needs a ref")));
+                };
+                entries.push((
+                    pattern.to_string(),
+                    PendingEntry {
+                        reason: reason.to_string(),
+                        reference: reference.to_string(),
+                    },
+                ));
+            }
+        }
+        Ok(Self { entries })
+    }
+
+    /// The entry for a case id: the exact match, else the first
+    /// pattern that matches (`*` and `?` wildcards, like
+    /// `File.fnmatch` for the subset the file uses).
+    pub fn for_case(&self, case_id: &str) -> Option<&PendingEntry> {
+        self.entries
+            .iter()
+            .find(|(pattern, _)| pattern == case_id || glob_match(pattern, case_id))
+            .map(|(_, entry)| entry)
+    }
+
+    /// Whether the registry is empty.
+    pub fn is_empty(&self) -> bool {
+        self.entries.is_empty()
+    }
+}
+
+fn pending_error(detail: impl Into<String>) -> Error {
+    Error::Corpus {
+        path: "pending.yaml".to_string(),
+        detail: detail.into(),
+    }
+}
+
+/// `File.fnmatch` subset: literal characters plus `*` (any run) and
+/// `?` (one character). The registry holds literal ids in practice.
+fn glob_match(pattern: &str, text: &str) -> bool {
+    fn inner(mut p: &[u8], t: &[u8]) -> bool {
+        match p.first() {
+            None => t.is_empty(),
+            Some(b'*') => {
+                p = &p[1..];
+                for skip in 0..=t.len() {
+                    if inner(p, &t[skip..]) {
+                        return true;
+                    }
+                }
+                false
+            }
+            Some(b'?') => !t.is_empty() && inner(&p[1..], &t[1..]),
+            Some(&c) => !t.is_empty() && t[0] == c && inner(&p[1..], &t[1..]),
+        }
+    }
+    inner(pattern.as_bytes(), text.as_bytes())
 }
