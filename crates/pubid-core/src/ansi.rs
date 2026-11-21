@@ -315,7 +315,14 @@ mod tests {
             ("ANSI/AAMI ST79:2017", vec!["AAMI"]),
         ] {
             let id = AnsiIdentifier::parse(input).expect(input);
-            assert_eq!(id.copublishers, copublishers.into_iter().map(String::from).collect::<Vec<_>>(), "{input}");
+            assert_eq!(
+                id.copublishers,
+                copublishers
+                    .into_iter()
+                    .map(String::from)
+                    .collect::<Vec<_>>(),
+                "{input}"
+            );
             assert_eq!(id.to_human(), input);
         }
     }
