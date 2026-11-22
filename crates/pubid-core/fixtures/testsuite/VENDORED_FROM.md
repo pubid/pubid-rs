@@ -197,19 +197,21 @@ runtime over the grammar#139 artifact):
   - `standard.yaml` sha256 6c97c938b3584238609067ee12ec57f6b49bcb45b1ba4fc170f06fce0b1da1ac
 
 The wmo slice is a byte copy, but from its own flavor-only testsuite
-ref: `pubid/pubid-testsuite@0c9ddd7fab0dc1386f77ca121150998a3ca28320`
-(`tests/wmo/`, the #763 round freeze at pubid 0f7ba38b1658 — see
-`/pins.yaml`, `testsuite_ref_wmo`). The span from `testsuite_ref`
-(e6cf11b) to that ref re-exports ansi and adds the eu/arxiv corpora,
-which this repository's regenerated slices do not fold back yet, so
-the wmo slice is checked against its own ref (the dedicated CI drift
-gate) and the wmo conformance run gates against the
+ref: `pubid/pubid-testsuite@af9068bccb5a740240c6e56289949a0604576833`
+(`tests/wmo/`, the widening round freeze at pubid 7ac315d2c8cb — see
+`/pins.yaml`, `testsuite_ref_wmo`; the round moved the corpus from the
+#763 freeze at 0c9ddd7f, 11 cases / 7 negatives, to 40 cases / 18
+aliases / 12 negatives plus 12 debt rows). The span from
+`testsuite_ref` (e6cf11b) to that ref re-exports ansi and moves the eu
+expectations, which this repository's regenerated slices do not fold
+back yet, so the wmo slice is checked against its own ref (the
+dedicated CI drift gate) and the wmo conformance run gates against the
 `pubid-testsuite-wmo` checkout. Everything here is the testsuite's
 export, unmodified (clean status, no debt).
 
 - wmo:
-  - `_negative.yaml` sha256 1a53d8985b965b3eb01c83ac693a0d8a70d1ad8d87a82e3d1d8cfef83b793de1
+  - `_negative.yaml` sha256 36f7e8c75c60fee09c32c1abd2295aaed3af5014d6d1366cb480d89a772ed673
   - `_status.yaml` sha256 da8b5c732041f6936d83e8f046b33824cea9c87e149da4d107ae8efd143a050f
-  - `annex.yaml` sha256 b6a7fa4e7953e636dd9ff788831ca460bf911e8ab8ab465b42b36ec65d3dde18
-  - `publication.yaml` sha256 9582c2c8a2311398114dcb8ee1e123f8a83e5edfb5801f3144cdd4ae96d82e1e
-  - `standard.yaml` sha256 e7b7d313dd7d4d22991a40481901e4bd892d4b74f7f0f763d276ab5fa763faac
+  - `annex.yaml` sha256 e591599cfc83d8ae5cc52f51bd3818dc45bb7e7261645012b511cb88f70c0839
+  - `publication.yaml` sha256 dbdc03c1007ce93e0ed95089b640e07f818928459c9d0b6456c8d2e6f1925124
+  - `standard.yaml` sha256 95d2a85f1b27a06926d8fcd95b49407bac4bb0be4af0c8f964a3d711e10b3362
