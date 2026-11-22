@@ -49,6 +49,22 @@ grammar_ref_eu_arxiv: a7e2363f29dfcb6867b92c3736138ed95e6c9aa8
 # (stays at the dcd67cb bytes); the eu + arxiv envelopes at that ref are
 # byte-identical to the a7e2363 pin.
 grammar_ref_ansi: a03d816b9241d7209da7e496ce1dddbc10798a41
+# pubid-grammar main (26ecbaae7c4d, the wmo flavor commit, grammar at
+# pubid#763): the wmo.json envelope was byte-copied from here (the
+# WMO-No. publication series and the WMO-published S-100 specs, baked
+# at parsanol 1.5.1.0, artifact edition 2, for the gem's wmo round at
+# pubid 0f7ba38b). A flavor-only pin, like the eu/arxiv and ansi ones:
+# every other artifact that exists at 26ecbaa is byte-identical to the
+# earlier pins above.
+grammar_ref_wmo: 26ecbaae7c4d5d9670f9fa94b609746e73fa90b0
+# pubid-testsuite main (0c9ddd7fab0d, the wmo round freeze at pubid
+# 0f7ba38b1658): the tests/wmo corpus (11 cases, 7 negatives, status
+# clean) was byte-copied from here. A flavor-only testsuite pin: the
+# same span carries the ansi re-export and the new eu/arxiv corpora,
+# which this repository's regenerated slices deliberately do not fold
+# back yet - every vendored slice for the OTHER flavors is checked
+# against the testsuite_ref pin above, the wmo slice against this one.
+testsuite_ref_wmo: 0c9ddd7fab0dc1386f77ca121150998a3ca28320
 # The eu/arxiv fixture slices are NOT testsuite copies, and the ansi
 # slice is REGENERATED ahead of the testsuite: the corpora live in (or
 # were generated in-process from) the gem's spec/fixtures - see the
