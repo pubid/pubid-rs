@@ -21,7 +21,9 @@ jobs:
           echo "grammar_ref=$(sed -n 's/^grammar_ref: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
           echo "grammar_ref_eu_arxiv=$(sed -n 's/^grammar_ref_eu_arxiv: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
           echo "grammar_ref_ansi=$(sed -n 's/^grammar_ref_ansi: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
+          echo "grammar_ref_wmo=$(sed -n 's/^grammar_ref_wmo: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
           echo "testsuite_ref=$(sed -n 's/^testsuite_ref: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
+          echo "testsuite_ref_wmo=$(sed -n 's/^testsuite_ref_wmo: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
 
       - name: Checkout pinned pubid-grammar
         uses: actions/checkout@v4
@@ -44,12 +46,26 @@ jobs:
           ref: ${{ steps.pins.outputs.grammar_ref_ansi }}
           path: pubid-grammar-ansi
 
+      - name: Checkout pinned pubid-grammar (the wmo flavor ref)
+        uses: actions/checkout@v4
+        with:
+          repository: pubid/pubid-grammar
+          ref: ${{ steps.pins.outputs.grammar_ref_wmo }}
+          path: pubid-grammar-wmo
+
       - name: Checkout pinned pubid-testsuite
         uses: actions/checkout@v4
         with:
           repository: pubid/pubid-testsuite
           ref: ${{ steps.pins.outputs.testsuite_ref }}
           path: pubid-testsuite
+
+      - name: Checkout pinned pubid-testsuite (the wmo flavor ref)
+        uses: actions/checkout@v4
+        with:
+          repository: pubid/pubid-testsuite
+          ref: ${{ steps.pins.outputs.testsuite_ref_wmo }}
+          path: pubid-testsuite-wmo
 
       - name: Vendored artifacts match the pinned grammar ref (drift gate)
         run: |
@@ -79,6 +95,14 @@ jobs:
           cmp "pubid-grammar-ansi/artifacts/ansi.json" \
               "crates/pubid-core/artifacts/ansi.json"
 
+      - name: Vendored wmo artifact matches its pinned grammar ref (drift gate)
+        run: |
+          # The wmo flavor (grammar at pubid#763) postdates the
+          # grammar_ref pin - it carries its own flavor-only pin (see
+          # /pins.yaml).
+          cmp "pubid-grammar-wmo/artifacts/wmo.json" \
+              "crates/pubid-core/artifacts/wmo.json"
+
       - name: Vendored slices match the pinned testsuite ref (drift gate)
         run: |
           for dir in crates/pubid-core/fixtures/testsuite/*/; do
@@ -94,6 +118,17 @@ jobs:
               [ -f "pubid-testsuite/tests/$flavor/$(basename "$file")" ] || continue
               cmp "$file" "pubid-testsuite/tests/$flavor/$(basename "$file")"
             done
+          done
+
+      - name: Vendored wmo slice matches its pinned testsuite ref (drift gate)
+        run: |
+          # The wmo corpus (the #763 round freeze) postdates the
+          # testsuite_ref pin and rides with the ansi re-export and the
+          # new eu/arxiv corpora, which the regenerated slices do not
+          # fold back yet - it carries its own flavor-only pin (see
+          # /pins.yaml).
+          for file in crates/pubid-core/fixtures/testsuite/wmo/*.yaml; do
+            cmp "$file" "pubid-testsuite-wmo/tests/wmo/$(basename "$file")"
           done
 
       - uses: dtolnay/rust-toolchain@stable
@@ -120,6 +155,13 @@ jobs:
       - name: Conformance (pinned testsuite checkout, every ported flavor)
         run: cargo run -q -p conformance -- --testsuite pubid-testsuite/tests --all
 
+      - name: Conformance (wmo, the pinned testsuite flavor ref)
+        run: |
+          # The testsuite_ref checkout predates the wmo round, so the
+          # --all run above falls back to the vendored slice for wmo;
+          # this run gates the flavor against its own pinned corpus.
+          cargo run -q -p conformance -- --testsuite pubid-testsuite-wmo/tests --flavor wmo
+
       - name: CLI smoke
         run: |
           cargo run -q -p pubid-cli -- parse doi "doi:10.1000/182"
@@ -129,4 +171,6 @@ jobs:
           cargo run -q -p pubid-cli -- parse eu "EU Regulation 1227/2011"
           cargo run -q -p pubid-cli -- parse eu "32014R2015"
           cargo run -q -p pubid-cli -- parse arxiv "arXiv:math.GT/0309136"
+          cargo run -q -p pubid-cli -- parse wmo "WMO-No. 8"
+          cargo run -q -p pubid-cli -- parse wmo "S-411 1.2.1"
           cargo run -q -p pubid-cli -- smoke

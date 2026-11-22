@@ -29,11 +29,13 @@ use crate::gost::GostKind;
 use crate::jis::JisKind;
 use crate::nesc::NescKind;
 use crate::plateau::PlateauKind;
+pub use crate::wmo::WmoKind;
 pub use crate::{
     AmcaIdentifier, AnsiIdentifier, ApiIdentifier, ArxivIdentifier, CcsdsIdentifier, CenIdentifier,
     EcmaIdentifier, EtsiIdentifier, EuIdentifier, EvsIdentifier, GbIdentifier, GostIdentifier,
     IanaIdentifier, IetfIdentifier, IreIdentifier, IsbnIdentifier, JisIdentifier, NescIdentifier,
-    OasisIdentifier, OgcIdentifier, PlateauIdentifier, UnIdentifier, W3cIdentifier, XsfIdentifier,
+    OasisIdentifier, OgcIdentifier, PlateauIdentifier, UnIdentifier, W3cIdentifier, WmoIdentifier,
+    XsfIdentifier,
 };
 
 // ---------------------------------------------------------------------------
@@ -100,6 +102,8 @@ pub enum Identifier {
     Eu(EuIdentifier),
     /// An arXiv identifier (e-prints, new form and old form).
     Arxiv(ArxivIdentifier),
+    /// A WMO identifier (WMO-No. publications, S-100 specs, annexes).
+    Wmo(WmoIdentifier),
 }
 
 impl Identifier {
@@ -131,6 +135,7 @@ impl Identifier {
             Identifier::Etsi(id) => id.to_hash(),
             Identifier::Eu(id) => id.to_hash(),
             Identifier::Arxiv(id) => id.to_hash(),
+            Identifier::Wmo(id) => id.to_hash(),
         }
     }
 
@@ -162,6 +167,7 @@ impl Identifier {
             Identifier::Etsi(id) => id.to_human(),
             Identifier::Eu(id) => id.to_human(),
             Identifier::Arxiv(id) => id.to_human(),
+            Identifier::Wmo(id) => id.to_human(),
         }
     }
 
@@ -193,6 +199,7 @@ impl Identifier {
             Identifier::Etsi(id) => Some(id.to_urn()),
             Identifier::Eu(id) => Some(id.to_urn()),
             Identifier::Arxiv(id) => Some(id.to_urn()),
+            Identifier::Wmo(id) => Some(id.to_urn()),
         }
     }
 
@@ -250,6 +257,9 @@ impl Identifier {
                 Ok(Identifier::Eu(EuIdentifier::from_hash(hash)?))
             }
             ArxivIdentifier::TYPE => Ok(Identifier::Arxiv(ArxivIdentifier::from_hash(hash)?)),
+            _ if kind.starts_with(WmoKind::KIND_PREFIX) => {
+                Ok(Identifier::Wmo(WmoIdentifier::from_hash(hash)?))
+            }
             IreIdentifier::TYPE => Ok(Identifier::Ire(IreIdentifier::from_hash(hash)?)),
             _ if kind.starts_with(ApiKind::KIND_PREFIX) => {
                 Ok(Identifier::Api(ApiIdentifier::from_hash(hash)?))
@@ -337,6 +347,7 @@ flavor_impls!(
     "etsi" => EtsiImpl, Etsi, EtsiIdentifier,
     "eu" => EuImpl, Eu, EuIdentifier,
     "arxiv" => ArxivImpl, Arxiv, ArxivIdentifier,
+    "wmo" => WmoImpl, Wmo, WmoIdentifier,
 );
 
 // ---------------------------------------------------------------------------
@@ -616,6 +627,13 @@ vendored_corpora!(
         ("eprint.yaml", ARXIV_EPRINT),
         ("_negative.yaml", ARXIV_NEGATIVE),
         ("_status.yaml", ARXIV_STATUS),
+    ],
+    "wmo" => [
+        ("annex.yaml", WMO_ANNEX),
+        ("publication.yaml", WMO_PUBLICATION),
+        ("standard.yaml", WMO_STANDARD),
+        ("_negative.yaml", WMO_NEGATIVE),
+        ("_status.yaml", WMO_STATUS),
     ],
 );
 

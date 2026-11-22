@@ -16,6 +16,8 @@ pub enum Error {
     Artifact(String),
     /// Parsing failed: the input is not an identifier of the flavor.
     Parse(parsanol::PargError),
+    /// A URN input the flavor's URN grammar rejects.
+    Urn(String),
     /// A bound capture the flavor requires is absent or not a string.
     MissingAttribute {
         /// The capture name the flavor needed.
@@ -42,6 +44,7 @@ impl fmt::Display for Error {
         match self {
             Error::Artifact(detail) => write!(f, "artifact load failed: {detail}"),
             Error::Parse(err) => write!(f, "parse failed: {err}"),
+            Error::Urn(detail) => write!(f, "urn rejected: {detail}"),
             Error::MissingAttribute { capture } => {
                 write!(f, "bound capture {capture:?} missing or not a string")
             }

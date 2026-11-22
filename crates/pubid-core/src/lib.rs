@@ -46,6 +46,7 @@ pub mod ogc;
 pub mod plateau;
 pub mod un;
 pub mod w3c;
+pub mod wmo;
 pub mod xsf;
 
 use serde_json::Value;
@@ -81,6 +82,7 @@ pub use ogc::OgcIdentifier;
 pub use plateau::PlateauIdentifier;
 pub use un::UnIdentifier;
 pub use w3c::{W3cIdentifier, W3cKind};
+pub use wmo::{WmoIdentifier, WmoKind};
 pub use xsf::XsfIdentifier;
 
 /// Schema-driven materialization (mirrors pubid-ts

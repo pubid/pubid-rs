@@ -39,6 +39,7 @@ pair):
 | evs    | `d3d278c9ec3ece8e864633a2fa39664ba270deea181c83e6a12deb47f79ae887` |
 | jis    | `e06886e29d8b73b9492bc6d6146d8160485604568059c288c6fdfe9339c2a591` |
 | plateau    | `9a98935831f11105e22a7d770b098b08c3d26b76f314452c6ca37d896cec93a7` |
+| wmo    | `1109f80eeddc7748cc16aa2d17e4011bef9e182613cfd21b6ca94f4d1d65d8af` |
 
 Every envelope is artifact edition 2, shape `parsanol-tree/v2`, baked at
 parsanol compiler 1.5.1.0 (the #129 re-seal round: the doi grammar is
@@ -92,3 +93,10 @@ at that ref is byte-identical to the `dcd67cb` pin above, except
 Refresh by re-copying the files from the new grammar ref and updating
 the matching `grammar_ref*` entry in `/pins.yaml` together with this
 note.
+
+The wmo envelope comes from a fourth, flavor-only grammar ref
+(`26ecbaae7c4d`, the wmo flavor commit itself, grammar at pubid#763
+for the gem's WMO round): it postdates the earlier pins, so it carries
+its own pin (`grammar_ref_wmo` in `/pins.yaml`) and its own drift
+gate. Baked at parsanol 1.5.1.0, artifact edition 2; loads and
+self-tests green (18/18) under the locked `parsanol = "0.20"` runtime.
