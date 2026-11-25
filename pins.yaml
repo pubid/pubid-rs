@@ -81,4 +81,4 @@ testsuite_ref_wmo: af9068bccb5a740240c6e56289949a0604576833
 # ahead of the grammar's own re-bake: when the iho re-bake lands in
 # pubid-grammar (a checks_for binding artifact), re-vendor the
 # envelope and move this pin in the same change.
-grammar_ref_iho: 5b3b035e62861b0ab355cb9939e18cde008c
+grammar_ref_iho: 5b3b035e62861b0ab355cb991de1f39e8a2b21be
