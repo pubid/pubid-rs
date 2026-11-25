@@ -457,11 +457,10 @@ impl IhoIdentifier {
                     detail: format!("checks_for is an S-158 family facet: {number}:{checks}"),
                 });
             }
-            if attrs.part.is_some() {
-                return Err(Error::InvalidHash {
-                    detail: "checks_for and part are mutually exclusive".to_string(),
-                });
-            }
+            // A series-reference part beside a checks member is
+            // rejected in the re-key above; a lettered/numbered part
+            // face beside the member is an untouched, legal shape
+            // ("IHO S-158:102 1.0.0 Part 2").
         }
 
         Ok(Self {
@@ -2237,10 +2236,29 @@ mod tests {
             "_type": "pubid:iho:standard",
             "number": "158",
             "checks_for": "102",
-            "part": "2",
+            "part": "S-103",
         }))
-        .expect_err("checks_for and part must reject");
+        .expect_err("two checks members must reject");
         assert!(err.to_string().contains("mutually exclusive"));
+    }
+
+    #[test]
+    fn a_numbered_part_rides_the_colon_member() {
+        // An untouched part face beside the checks member is a legal
+        // shape: only the series references re-key.
+        let id = parse("IHO S-158:102 1.0.0 Part 2");
+        assert_eq!(id.number, "158");
+        assert_eq!(id.checks_for.as_deref(), Some("102"));
+        assert_eq!(id.part.as_deref(), Some("2"));
+        assert_eq!(id.to_human(), "IHO S-158:102 1.0.0 Part 2");
+        assert_eq!(
+            id.to_urn().as_deref(),
+            Some("urn:mrn:iho:pub:spec:s158-102:1.0.0:part2")
+        );
+        let round = IhoIdentifier::parse(id.to_urn().as_deref().unwrap()).expect("round");
+        assert_eq!(round, id);
+        let rebuilt = IhoIdentifier::from_hash(&id.to_hash()).expect("from_hash");
+        assert_eq!(rebuilt.to_hash(), id.to_hash());
     }
 
     #[test]
