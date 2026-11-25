@@ -13,7 +13,7 @@
 //!   render-layer flavors `isbn`, `iana`, `oasis`, `xsf`, `un`, `ogc`,
 //!   `ietf`, `w3c` — each parse → cast → render over its bound hash;
 //!   the later rounds add the mid fleet, `iho` (the S-158
-//!   `checks_for` series model, pubid#774/#775) and `iala` (the
+//!   `product` series model, pubid#774/#775, renamed from `checks_for` by gem #783) and `iala` (the
 //!   S-2xx product specifications and the codeless slug publications,
 //!   gem #772/#777)
 //! - `bound`: the shared bound-hash / canonical-hash readers

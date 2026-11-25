@@ -104,9 +104,9 @@ pub enum Identifier {
     Arxiv(ArxivIdentifier),
     /// A WMO identifier (WMO-No. publications, S-100 specs, annexes).
     Wmo(WmoIdentifier),
-    /// An IHO identifier (the S/P/M/B/C series, the S-158 checks_for
-    /// model). The flavor is ported; its testsuite corpus slice waits
-    /// on the S-158 re-key round, so the vendored gate skips it.
+    /// An IHO identifier (the S/P/M/B/C series, the S-158 product
+    /// model, renamed from `checks_for` by gem #783). The flavor is
+    /// ported; its corpus is gated at the flavor-only testsuite pin.
     Iho(crate::iho::IhoIdentifier),
     /// An IALA identifier (the typed series, the S-2xx product
     /// specifications and the codeless slug publications).

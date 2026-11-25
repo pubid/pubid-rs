@@ -522,7 +522,7 @@
   identifier:
     _type: pubid:iho:standard
     number: '158'
-    checks_for: '102'
+    product: '102'
     edition: 0.2.0
   representations:
     human: IHO S-158 0.2.0 Part S-102
@@ -546,7 +546,7 @@
   identifier:
     _type: pubid:iho:standard
     number: '158'
-    checks_for: '102'
+    product: '102'
   representations:
     human: IHO S-158 Part 102
     urn: urn:mrn:iho:pub:spec:s158-102
@@ -555,7 +555,7 @@
   identifier:
     _type: pubid:iho:standard
     number: '158'
-    checks_for: '102'
+    product: '102'
   representations:
     human: IHO S-158 Part S-102
     urn: urn:mrn:iho:pub:spec:s158-102
@@ -564,7 +564,7 @@
   identifier:
     _type: pubid:iho:standard
     number: '158'
-    checks_for: '100'
+    product: '100'
   representations:
     human: IHO S-158:100
     urn: urn:mrn:iho:pub:spec:s158-100
@@ -573,7 +573,7 @@
   identifier:
     _type: pubid:iho:standard
     number: '158'
-    checks_for: '101'
+    product: '101'
   representations:
     human: IHO S-158:101
     urn: urn:mrn:iho:pub:spec:s158-101
@@ -582,7 +582,7 @@
   identifier:
     _type: pubid:iho:standard
     number: '158'
-    checks_for: '102'
+    product: '102'
   representations:
     human: IHO S-158:102
     urn: urn:mrn:iho:pub:spec:s158-102
@@ -591,7 +591,7 @@
   identifier:
     _type: pubid:iho:standard
     number: '158'
-    checks_for: '102'
+    product: '102'
     edition: 1.0.0
   representations:
     human: IHO S-158:102 1.0.0
@@ -601,7 +601,7 @@
   identifier:
     _type: pubid:iho:standard
     number: '158'
-    checks_for: '128'
+    product: '128'
   representations:
     human: IHO S-158:128
     urn: urn:mrn:iho:pub:spec:s158-128
@@ -610,7 +610,7 @@
   identifier:
     _type: pubid:iho:standard
     number: '158'
-    checks_for: '130'
+    product: '130'
   representations:
     human: IHO S-158:130
     urn: urn:mrn:iho:pub:spec:s158-130
@@ -619,7 +619,7 @@
   identifier:
     _type: pubid:iho:standard
     number: '158'
-    checks_for: '98'
+    product: '98'
   representations:
     human: IHO S-158:98
     urn: urn:mrn:iho:pub:spec:s158-98
