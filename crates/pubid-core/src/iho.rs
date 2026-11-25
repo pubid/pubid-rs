@@ -317,10 +317,11 @@ impl IhoIdentifier {
         }
     }
 
-    /// Parse a human spelling through the vendored artifact.
+    /// Parse a human spelling through the vendored artifact (the
+    /// input strips like the reference's parse entry).
     fn parse_human(input: &str) -> Result<Self> {
         let artifact = iho_artifact()?;
-        let bound = artifact.parse_and_bind(Self::ENTRY, input)?;
+        let bound = artifact.parse_and_bind(Self::ENTRY, input.trim())?;
         let (attrs, checks_face) = attrs_from_bound(&bound)?;
         Self::assemble(attrs, checks_face)
     }
@@ -1628,7 +1629,11 @@ fn pubid_value_valid(field: &str, value: &str) -> bool {
         | "volume_year" => (value.starts_with("19") || value.starts_with("20")) && is_year(value),
         "supplement" => is_digits(value),
         "part" => is_part_value(value),
-        "spec" => value.len() == 3 && is_digits(value),
+        "spec" => {
+            value.len() == 3
+                && value.starts_with(['1', '2', '3', '4', '5', '6'])
+                && is_digits(value)
+        }
         "spec_sub" => is_digits(value),
         "spec_variant" => !value.is_empty() && value.bytes().all(|b| b.is_ascii_uppercase()),
         "annex" => is_upper_letter(value),
