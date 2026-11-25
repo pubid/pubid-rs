@@ -1,0 +1,1929 @@
+---
+- id: iala.recommendation.0495
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0101'
+    edition: '2'
+    language: S
+  representations:
+    human: IALA R0101 Ed 2 (S)
+    urn: urn:mrn:iala:pub:r0101:ed2:s
+  style: v3
+- id: iala.recommendation.0496
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0101'
+    edition: '3.0'
+  representations:
+    human: IALA R0101 Ed 3.0
+    urn: urn:mrn:iala:pub:r0101:ed3.0
+  style: v3
+- id: iala.recommendation.0497
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0101'
+    edition: '3.0'
+    language: E
+  representations:
+    human: IALA R0101 Ed 3.0 (E)
+    urn: urn:mrn:iala:pub:r0101:ed3.0:e
+  style: v3
+- id: iala.recommendation.0498
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0103'
+    edition: '3.1'
+  representations:
+    human: IALA R0103 Ed 3.1
+    urn: urn:mrn:iala:pub:r0103:ed3.1
+  style: v3
+- id: iala.recommendation.0499
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0103'
+    edition: '3.1'
+    language: E
+  representations:
+    human: IALA R0103 Ed 3.1 (E)
+    urn: urn:mrn:iala:pub:r0103:ed3.1:e
+  style: v3
+- id: iala.recommendation.0500
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0104'
+    edition: '2.1'
+  representations:
+    human: IALA R0104 Ed 2.1
+    urn: urn:mrn:iala:pub:r0104:ed2.1
+  style: v3
+- id: iala.recommendation.0501
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0104'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA R0104 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:r0104:ed2.1:e
+  style: v3
+- id: iala.recommendation.0502
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0106'
+    edition: '2.0'
+    language: S
+  representations:
+    human: IALA R0106 Ed 2.0 (S)
+    urn: urn:mrn:iala:pub:r0106:ed2.0:s
+  style: v3
+- id: iala.recommendation.0503
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0106'
+    edition: '2.1'
+  representations:
+    human: IALA R0106 Ed 2.1
+    urn: urn:mrn:iala:pub:r0106:ed2.1
+  style: v3
+- id: iala.recommendation.0504
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0106'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA R0106 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:r0106:ed2.1:e
+  style: v3
+- id: iala.recommendation.0505
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0106'
+    edition: '2.1'
+    language: F
+  representations:
+    human: IALA R0106 Ed 2.1 (F)
+    urn: urn:mrn:iala:pub:r0106:ed2.1:f
+  style: v3
+- id: iala.recommendation.0506
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0107'
+    edition: '2'
+    language: S
+  representations:
+    human: IALA R0107 Ed 2 (S)
+    urn: urn:mrn:iala:pub:r0107:ed2:s
+  style: v3
+- id: iala.recommendation.0507
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0107'
+    edition: '2.1'
+  representations:
+    human: IALA R0107 Ed 2.1
+    urn: urn:mrn:iala:pub:r0107:ed2.1
+  style: v3
+- id: iala.recommendation.0508
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0107'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA R0107 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:r0107:ed2.1:e
+  style: v3
+- id: iala.recommendation.0509
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0108'
+    edition: '4.0'
+    language: S
+  representations:
+    human: IALA R0108 Ed 4.0 (S)
+    urn: urn:mrn:iala:pub:r0108:ed4.0:s
+  style: v3
+- id: iala.recommendation.0510
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0108'
+    edition: '4.1'
+  representations:
+    human: IALA R0108 Ed 4.1
+    urn: urn:mrn:iala:pub:r0108:ed4.1
+  style: v3
+- id: iala.recommendation.0511
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0108'
+    edition: '4.1'
+    language: E
+  representations:
+    human: IALA R0108 Ed 4.1 (E)
+    urn: urn:mrn:iala:pub:r0108:ed4.1:e
+  style: v3
+- id: iala.recommendation.0512
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0108'
+    edition: '4.1'
+    language: F
+  representations:
+    human: IALA R0108 Ed 4.1 (F)
+    urn: urn:mrn:iala:pub:r0108:ed4.1:f
+  style: v3
+- id: iala.recommendation.0513
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0109'
+    edition: '1.0'
+    language: S
+  representations:
+    human: IALA R0109 Ed 1.0 (S)
+    urn: urn:mrn:iala:pub:r0109:ed1.0:s
+  style: v3
+- id: iala.recommendation.0514
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0109'
+    edition: '1.1'
+  representations:
+    human: IALA R0109 Ed 1.1
+    urn: urn:mrn:iala:pub:r0109:ed1.1
+  style: v3
+- id: iala.recommendation.0515
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0109'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA R0109 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:r0109:ed1.1:e
+  style: v3
+- id: iala.recommendation.0516
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0110'
+    edition: '4.0'
+    language: S
+  representations:
+    human: IALA R0110 Ed 4.0 (S)
+    urn: urn:mrn:iala:pub:r0110:ed4.0:s
+  style: v3
+- id: iala.recommendation.0517
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0110'
+    edition: '5.0'
+  representations:
+    human: IALA R0110 Ed 5.0
+    urn: urn:mrn:iala:pub:r0110:ed5.0
+  style: v3
+- id: iala.recommendation.0518
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0110'
+    edition: '5.0'
+    language: E
+  representations:
+    human: IALA R0110 Ed 5.0 (E)
+    urn: urn:mrn:iala:pub:r0110:ed5.0:e
+  style: v3
+- id: iala.recommendation.0519
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0111'
+    edition: '1.3'
+  representations:
+    human: IALA R0111 Ed 1.3
+    urn: urn:mrn:iala:pub:r0111:ed1.3
+  style: v3
+- id: iala.recommendation.0520
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0111'
+    edition: '1.3'
+    language: E
+  representations:
+    human: IALA R0111 Ed 1.3 (E)
+    urn: urn:mrn:iala:pub:r0111:ed1.3:e
+  style: v3
+- id: iala.recommendation.0521
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0111'
+    edition: '1.3'
+    language: F
+  representations:
+    human: IALA R0111 Ed 1.3 (F)
+    urn: urn:mrn:iala:pub:r0111:ed1.3:f
+  style: v3
+- id: iala.recommendation.0522
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0111'
+    edition: '1.3'
+    language: S
+  representations:
+    human: IALA R0111 Ed 1.3 (S)
+    urn: urn:mrn:iala:pub:r0111:ed1.3:s
+  style: v3
+- id: iala.recommendation.0523
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0112'
+    edition: '1.2'
+  representations:
+    human: IALA R0112 Ed 1.2
+    urn: urn:mrn:iala:pub:r0112:ed1.2
+  style: v3
+- id: iala.recommendation.0524
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0112'
+    edition: '1.2'
+    language: E
+  representations:
+    human: IALA R0112 Ed 1.2 (E)
+    urn: urn:mrn:iala:pub:r0112:ed1.2:e
+  style: v3
+- id: iala.recommendation.0525
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0112-2
+    edition: '2.02'
+  representations:
+    human: IALA R0112-2 Ed 2.02
+    urn: urn:mrn:iala:pub:r0112-2:ed2.02
+  style: v3
+- id: iala.recommendation.0526
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0112-2
+    edition: '2.02'
+    language: E
+  representations:
+    human: IALA R0112-2 Ed 2.02 (E)
+    urn: urn:mrn:iala:pub:r0112-2:ed2.02:e
+  style: v3
+- id: iala.recommendation.0527
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0115'
+    edition: '1.2'
+  representations:
+    human: IALA R0115 Ed 1.2
+    urn: urn:mrn:iala:pub:r0115:ed1.2
+  style: v3
+- id: iala.recommendation.0528
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0115'
+    edition: '1.2'
+    language: E
+  representations:
+    human: IALA R0115 Ed 1.2 (E)
+    urn: urn:mrn:iala:pub:r0115:ed1.2:e
+  style: v3
+- id: iala.recommendation.0529
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0118'
+    edition: '1.2'
+  representations:
+    human: IALA R0118 Ed 1.2
+    urn: urn:mrn:iala:pub:r0118:ed1.2
+  style: v3
+- id: iala.recommendation.0530
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0118'
+    edition: '1.2'
+    language: E
+  representations:
+    human: IALA R0118 Ed 1.2 (E)
+    urn: urn:mrn:iala:pub:r0118:ed1.2:e
+  style: v3
+- id: iala.recommendation.0531
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0118'
+    edition: '1.2'
+    language: F
+  representations:
+    human: IALA R0118 Ed 1.2 (F)
+    urn: urn:mrn:iala:pub:r0118:ed1.2:f
+  style: v3
+- id: iala.recommendation.0532
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0118'
+    edition: '1.2'
+    language: S
+  representations:
+    human: IALA R0118 Ed 1.2 (S)
+    urn: urn:mrn:iala:pub:r0118:ed1.2:s
+  style: v3
+- id: iala.recommendation.0533
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0119'
+    edition: '4.2'
+  representations:
+    human: IALA R0119 Ed 4.2
+    urn: urn:mrn:iala:pub:r0119:ed4.2
+  style: v3
+- id: iala.recommendation.0534
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0119'
+    edition: '4.2'
+    language: E
+  representations:
+    human: IALA R0119 Ed 4.2 (E)
+    urn: urn:mrn:iala:pub:r0119:ed4.2:e
+  style: v3
+- id: iala.recommendation.0535
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0121'
+    edition: '2.1'
+  representations:
+    human: IALA R0121 Ed 2.1
+    urn: urn:mrn:iala:pub:r0121:ed2.1
+  style: v3
+- id: iala.recommendation.0536
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0121'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA R0121 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:r0121:ed2.1:e
+  style: v3
+- id: iala.recommendation.0537
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0123'
+    edition: '2.0'
+    language: S
+  representations:
+    human: IALA R0123 Ed 2.0 (S)
+    urn: urn:mrn:iala:pub:r0123:ed2.0:s
+  style: v3
+- id: iala.recommendation.0538
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0123'
+    edition: '2.1'
+  representations:
+    human: IALA R0123 Ed 2.1
+    urn: urn:mrn:iala:pub:r0123:ed2.1
+  style: v3
+- id: iala.recommendation.0539
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0123'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA R0123 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:r0123:ed2.1:e
+  style: v3
+- id: iala.recommendation.0540
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0124'
+    edition: '2.2'
+  representations:
+    human: IALA R0124 Ed 2.2
+    urn: urn:mrn:iala:pub:r0124:ed2.2
+  style: v3
+- id: iala.recommendation.0541
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0124'
+    edition: '2.2'
+    language: E
+  representations:
+    human: IALA R0124 Ed 2.2 (E)
+    urn: urn:mrn:iala:pub:r0124:ed2.2:e
+  style: v3
+- id: iala.recommendation.0542
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0124'
+    edition: '2.2'
+    language: S
+  representations:
+    human: IALA R0124 Ed 2.2 (S)
+    urn: urn:mrn:iala:pub:r0124:ed2.2:s
+  style: v3
+- id: iala.recommendation.0543
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-0
+    edition: '1'
+  representations:
+    human: IALA R0124-0 Ed 1
+    urn: urn:mrn:iala:pub:r0124-0:ed1
+  style: v3
+- id: iala.recommendation.0544
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-0
+    edition: '1'
+    language: E
+  representations:
+    human: IALA R0124-0 Ed 1 (E)
+    urn: urn:mrn:iala:pub:r0124-0:ed1:e
+  style: v3
+- id: iala.recommendation.0545
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-1
+    edition: '1'
+  representations:
+    human: IALA R0124-1 Ed 1
+    urn: urn:mrn:iala:pub:r0124-1:ed1
+  style: v3
+- id: iala.recommendation.0546
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-1
+    edition: '1'
+    language: E
+  representations:
+    human: IALA R0124-1 Ed 1 (E)
+    urn: urn:mrn:iala:pub:r0124-1:ed1:e
+  style: v3
+- id: iala.recommendation.0547
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-12
+    edition: '1'
+  representations:
+    human: IALA R0124-12 Ed 1
+    urn: urn:mrn:iala:pub:r0124-12:ed1
+  style: v3
+- id: iala.recommendation.0548
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-12
+    edition: '1'
+    language: E
+  representations:
+    human: IALA R0124-12 Ed 1 (E)
+    urn: urn:mrn:iala:pub:r0124-12:ed1:e
+  style: v3
+- id: iala.recommendation.0549
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-14
+    edition: '2'
+  representations:
+    human: IALA R0124-14 Ed 2
+    urn: urn:mrn:iala:pub:r0124-14:ed2
+  style: v3
+- id: iala.recommendation.0550
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-14
+    edition: '2'
+    language: E
+  representations:
+    human: IALA R0124-14 Ed 2 (E)
+    urn: urn:mrn:iala:pub:r0124-14:ed2:e
+  style: v3
+- id: iala.recommendation.0551
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-16
+    edition: '1'
+  representations:
+    human: IALA R0124-16 Ed 1
+    urn: urn:mrn:iala:pub:r0124-16:ed1
+  style: v3
+- id: iala.recommendation.0552
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-16
+    edition: '1'
+    language: E
+  representations:
+    human: IALA R0124-16 Ed 1 (E)
+    urn: urn:mrn:iala:pub:r0124-16:ed1:e
+  style: v3
+- id: iala.recommendation.0553
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-17
+    edition: '1'
+  representations:
+    human: IALA R0124-17 Ed 1
+    urn: urn:mrn:iala:pub:r0124-17:ed1
+  style: v3
+- id: iala.recommendation.0554
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-17
+    edition: '1'
+    language: E
+  representations:
+    human: IALA R0124-17 Ed 1 (E)
+    urn: urn:mrn:iala:pub:r0124-17:ed1:e
+  style: v3
+- id: iala.recommendation.0555
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-18
+    edition: '1'
+  representations:
+    human: IALA R0124-18 Ed 1
+    urn: urn:mrn:iala:pub:r0124-18:ed1
+  style: v3
+- id: iala.recommendation.0556
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-18
+    edition: '1'
+    language: E
+  representations:
+    human: IALA R0124-18 Ed 1 (E)
+    urn: urn:mrn:iala:pub:r0124-18:ed1:e
+  style: v3
+- id: iala.recommendation.0557
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-19
+    edition: '1'
+  representations:
+    human: IALA R0124-19 Ed 1
+    urn: urn:mrn:iala:pub:r0124-19:ed1
+  style: v3
+- id: iala.recommendation.0558
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-19
+    edition: '1'
+    language: E
+  representations:
+    human: IALA R0124-19 Ed 1 (E)
+    urn: urn:mrn:iala:pub:r0124-19:ed1:e
+  style: v3
+- id: iala.recommendation.0559
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-3
+    edition: '1'
+  representations:
+    human: IALA R0124-3 Ed 1
+    urn: urn:mrn:iala:pub:r0124-3:ed1
+  style: v3
+- id: iala.recommendation.0560
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-3
+    edition: '1'
+    language: E
+  representations:
+    human: IALA R0124-3 Ed 1 (E)
+    urn: urn:mrn:iala:pub:r0124-3:ed1:e
+  style: v3
+- id: iala.recommendation.0561
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-4
+    edition: '1'
+  representations:
+    human: IALA R0124-4 Ed 1
+    urn: urn:mrn:iala:pub:r0124-4:ed1
+  style: v3
+- id: iala.recommendation.0562
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-4
+    edition: '1'
+    language: E
+  representations:
+    human: IALA R0124-4 Ed 1 (E)
+    urn: urn:mrn:iala:pub:r0124-4:ed1:e
+  style: v3
+- id: iala.recommendation.0563
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-5
+    edition: '1'
+  representations:
+    human: IALA R0124-5 Ed 1
+    urn: urn:mrn:iala:pub:r0124-5:ed1
+  style: v3
+- id: iala.recommendation.0564
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0124-5
+    edition: '1'
+    language: E
+  representations:
+    human: IALA R0124-5 Ed 1 (E)
+    urn: urn:mrn:iala:pub:r0124-5:ed1:e
+  style: v3
+- id: iala.recommendation.0565
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0124-9-11'
+    edition: '1'
+  representations:
+    human: IALA R0124-9-11 Ed 1
+    urn: urn:mrn:iala:pub:r0124-9-11:ed1
+  style: v3
+- id: iala.recommendation.0566
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0124-9-11'
+    edition: '1'
+    language: E
+  representations:
+    human: IALA R0124-9-11 Ed 1 (E)
+    urn: urn:mrn:iala:pub:r0124-9-11:ed1:e
+  style: v3
+- id: iala.recommendation.0567
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0125'
+    edition: '4.0'
+  representations:
+    human: IALA R0125 Ed 4.0
+    urn: urn:mrn:iala:pub:r0125:ed4.0
+  style: v3
+- id: iala.recommendation.0568
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0125'
+    edition: '4.0'
+    language: E
+  representations:
+    human: IALA R0125 Ed 4.0 (E)
+    urn: urn:mrn:iala:pub:r0125:ed4.0:e
+  style: v3
+- id: iala.recommendation.0569
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0126'
+    edition: '2.0'
+  representations:
+    human: IALA R0126 Ed 2.0
+    urn: urn:mrn:iala:pub:r0126:ed2.0
+  style: v3
+- id: iala.recommendation.0570
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0126'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA R0126 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:r0126:ed2.0:e
+  style: v3
+- id: iala.recommendation.0571
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0127'
+    edition: '3.2'
+  representations:
+    human: IALA R0127 Ed 3.2
+    urn: urn:mrn:iala:pub:r0127:ed3.2
+  style: v3
+- id: iala.recommendation.0572
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0127'
+    edition: '3.2'
+    language: E
+  representations:
+    human: IALA R0127 Ed 3.2 (E)
+    urn: urn:mrn:iala:pub:r0127:ed3.2:e
+  style: v3
+- id: iala.recommendation.0573
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0128'
+    edition: '5.0'
+  representations:
+    human: IALA R0128 Ed 5.0
+    urn: urn:mrn:iala:pub:r0128:ed5.0
+  style: v3
+- id: iala.recommendation.0574
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0128'
+    edition: '5.0'
+    language: E
+  representations:
+    human: IALA R0128 Ed 5.0 (E)
+    urn: urn:mrn:iala:pub:r0128:ed5.0:e
+  style: v3
+- id: iala.recommendation.0575
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0129'
+    edition: '3.1'
+  representations:
+    human: IALA R0129 Ed 3.1
+    urn: urn:mrn:iala:pub:r0129:ed3.1
+  style: v3
+- id: iala.recommendation.0576
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0129'
+    edition: '3.1'
+    language: E
+  representations:
+    human: IALA R0129 Ed 3.1 (E)
+    urn: urn:mrn:iala:pub:r0129:ed3.1:e
+  style: v3
+- id: iala.recommendation.0577
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0129'
+    edition: '3.1'
+    language: S
+  representations:
+    human: IALA R0129 Ed 3.1 (S)
+    urn: urn:mrn:iala:pub:r0129:ed3.1:s
+  style: v3
+- id: iala.recommendation.0578
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0130'
+    edition: '3.1'
+  representations:
+    human: IALA R0130 Ed 3.1
+    urn: urn:mrn:iala:pub:r0130:ed3.1
+  style: v3
+- id: iala.recommendation.0579
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0130'
+    edition: '3.1'
+    language: E
+  representations:
+    human: IALA R0130 Ed 3.1 (E)
+    urn: urn:mrn:iala:pub:r0130:ed3.1:e
+  style: v3
+- id: iala.recommendation.0580
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0130'
+    edition: '3.1'
+    language: F
+  representations:
+    human: IALA R0130 Ed 3.1 (F)
+    urn: urn:mrn:iala:pub:r0130:ed3.1:f
+  style: v3
+- id: iala.recommendation.0581
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0130'
+    edition: '3.1'
+    language: S
+  representations:
+    human: IALA R0130 Ed 3.1 (S)
+    urn: urn:mrn:iala:pub:r0130:ed3.1:s
+  style: v3
+- id: iala.recommendation.0582
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0132'
+    edition: '3.0'
+  representations:
+    human: IALA R0132 Ed 3.0
+    urn: urn:mrn:iala:pub:r0132:ed3.0
+  style: v3
+- id: iala.recommendation.0583
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0132'
+    edition: '3.0'
+    language: E
+  representations:
+    human: IALA R0132 Ed 3.0 (E)
+    urn: urn:mrn:iala:pub:r0132:ed3.0:e
+  style: v3
+- id: iala.recommendation.0584
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0135'
+    edition: '2.1'
+  representations:
+    human: IALA R0135 Ed 2.1
+    urn: urn:mrn:iala:pub:r0135:ed2.1
+  style: v3
+- id: iala.recommendation.0585
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0135'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA R0135 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:r0135:ed2.1:e
+  style: v3
+- id: iala.recommendation.0586
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0138'
+    edition: '1.1'
+  representations:
+    human: IALA R0138 Ed 1.1
+    urn: urn:mrn:iala:pub:r0138:ed1.1
+  style: v3
+- id: iala.recommendation.0587
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0138'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA R0138 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:r0138:ed1.1:e
+  style: v3
+- id: iala.recommendation.0588
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0139'
+    edition: '3.0'
+  representations:
+    human: IALA R0139 Ed 3.0
+    urn: urn:mrn:iala:pub:r0139:ed3.0
+  style: v3
+- id: iala.recommendation.0589
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0139'
+    edition: '3.0'
+    language: E
+  representations:
+    human: IALA R0139 Ed 3.0 (E)
+    urn: urn:mrn:iala:pub:r0139:ed3.0:e
+  style: v3
+- id: iala.recommendation.0590
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0139'
+    edition: '3.0'
+    language: S
+  representations:
+    human: IALA R0139 Ed 3.0 (S)
+    urn: urn:mrn:iala:pub:r0139:ed3.0:s
+  style: v3
+- id: iala.recommendation.0591
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0140'
+    edition: '2.1'
+  representations:
+    human: IALA R0140 Ed 2.1
+    urn: urn:mrn:iala:pub:r0140:ed2.1
+  style: v3
+- id: iala.recommendation.0592
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0140'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA R0140 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:r0140:ed2.1:e
+  style: v3
+- id: iala.recommendation.0593
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0141'
+    edition: '5.0'
+  representations:
+    human: IALA R0141 Ed 5.0
+    urn: urn:mrn:iala:pub:r0141:ed5.0
+  style: v3
+- id: iala.recommendation.0594
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0141'
+    edition: '5.0'
+    language: E
+  representations:
+    human: IALA R0141 Ed 5.0 (E)
+    urn: urn:mrn:iala:pub:r0141:ed5.0:e
+  style: v3
+- id: iala.recommendation.0595
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0142'
+    edition: '1.1'
+  representations:
+    human: IALA R0142 Ed 1.1
+    urn: urn:mrn:iala:pub:r0142:ed1.1
+  style: v3
+- id: iala.recommendation.0596
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0142'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA R0142 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:r0142:ed1.1:e
+  style: v3
+- id: iala.recommendation.0597
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0143'
+    edition: '2.0'
+  representations:
+    human: IALA R0143 Ed 2.0
+    urn: urn:mrn:iala:pub:r0143:ed2.0
+  style: v3
+- id: iala.recommendation.0598
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0143'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA R0143 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:r0143:ed2.0:e
+  style: v3
+- id: iala.recommendation.0599
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0144'
+    edition: '2.0'
+  representations:
+    human: IALA R0144 Ed 2.0
+    urn: urn:mrn:iala:pub:r0144:ed2.0
+  style: v3
+- id: iala.recommendation.0600
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0144'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA R0144 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:r0144:ed2.0:e
+  style: v3
+- id: iala.recommendation.0601
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0145'
+    edition: '1.1'
+  representations:
+    human: IALA R0145 Ed 1.1
+    urn: urn:mrn:iala:pub:r0145:ed1.1
+  style: v3
+- id: iala.recommendation.0602
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0145'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA R0145 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:r0145:ed1.1:e
+  style: v3
+- id: iala.recommendation.0603
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0146'
+    edition: '2.0'
+  representations:
+    human: IALA R0146 Ed 2.0
+    urn: urn:mrn:iala:pub:r0146:ed2.0
+  style: v3
+- id: iala.recommendation.0604
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0146'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA R0146 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:r0146:ed2.0:e
+  style: v3
+- id: iala.recommendation.0605
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0147'
+    edition: '2.1'
+  representations:
+    human: IALA R0147 Ed 2.1
+    urn: urn:mrn:iala:pub:r0147:ed2.1
+  style: v3
+- id: iala.recommendation.0606
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0147'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA R0147 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:r0147:ed2.1:e
+  style: v3
+- id: iala.recommendation.0607
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0148'
+    edition: '1.1'
+  representations:
+    human: IALA R0148 Ed 1.1
+    urn: urn:mrn:iala:pub:r0148:ed1.1
+  style: v3
+- id: iala.recommendation.0608
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0148'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA R0148 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:r0148:ed1.1:e
+  style: v3
+- id: iala.recommendation.0609
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0149'
+    edition: '1.1'
+  representations:
+    human: IALA R0149 Ed 1.1
+    urn: urn:mrn:iala:pub:r0149:ed1.1
+  style: v3
+- id: iala.recommendation.0610
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0149'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA R0149 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:r0149:ed1.1:e
+  style: v3
+- id: iala.recommendation.0611
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0150'
+    edition: '1.1'
+  representations:
+    human: IALA R0150 Ed 1.1
+    urn: urn:mrn:iala:pub:r0150:ed1.1
+  style: v3
+- id: iala.recommendation.0612
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0150'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA R0150 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:r0150:ed1.1:e
+  style: v3
+- id: iala.recommendation.0613
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0200-0
+  representations:
+    human: IALA R0200-0
+    urn: urn:mrn:iala:pub:r0200-0
+  style: v3
+- id: iala.recommendation.0614
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0200-0
+    edition: '1'
+    language: S
+  representations:
+    human: IALA R0200-0 Ed 1 (S)
+    urn: urn:mrn:iala:pub:r0200-0:ed1:s
+  style: v3
+- id: iala.recommendation.0615
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0200-1
+  representations:
+    human: IALA R0200-1
+    urn: urn:mrn:iala:pub:r0200-1
+  style: v3
+- id: iala.recommendation.0616
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0200-1
+    edition: '1'
+    language: S
+  representations:
+    human: IALA R0200-1 Ed 1 (S)
+    urn: urn:mrn:iala:pub:r0200-1:ed1:s
+  style: v3
+- id: iala.recommendation.0617
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0200-2
+  representations:
+    human: IALA R0200-2
+    urn: urn:mrn:iala:pub:r0200-2
+  style: v3
+- id: iala.recommendation.0618
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0200-2
+    edition: '1'
+    language: S
+  representations:
+    human: IALA R0200-2 Ed 1 (S)
+    urn: urn:mrn:iala:pub:r0200-2:ed1:s
+  style: v3
+- id: iala.recommendation.0619
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0200-3
+  representations:
+    human: IALA R0200-3
+    urn: urn:mrn:iala:pub:r0200-3
+  style: v3
+- id: iala.recommendation.0620
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0200-3
+    edition: '1'
+    language: S
+  representations:
+    human: IALA R0200-3 Ed 1 (S)
+    urn: urn:mrn:iala:pub:r0200-3:ed1:s
+  style: v3
+- id: iala.recommendation.0621
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0200-4
+  representations:
+    human: IALA R0200-4
+    urn: urn:mrn:iala:pub:r0200-4
+  style: v3
+- id: iala.recommendation.0622
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0200-4
+    edition: '1'
+    language: S
+  representations:
+    human: IALA R0200-4 Ed 1 (S)
+    urn: urn:mrn:iala:pub:r0200-4:ed1:s
+  style: v3
+- id: iala.recommendation.0623
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0200-5
+  representations:
+    human: IALA R0200-5
+    urn: urn:mrn:iala:pub:r0200-5
+  style: v3
+- id: iala.recommendation.0624
+  identifier:
+    _type: pubid:iala:recommendation
+    number: 0200-5
+    edition: '1'
+    language: S
+  representations:
+    human: IALA R0200-5 Ed 1 (S)
+    urn: urn:mrn:iala:pub:r0200-5:ed1:s
+  style: v3
+- id: iala.recommendation.0625
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0201'
+    edition: '3.0'
+    language: S
+  representations:
+    human: IALA R0201 Ed 3.0 (S)
+    urn: urn:mrn:iala:pub:r0201:ed3.0:s
+  style: v3
+- id: iala.recommendation.0626
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0201'
+    edition: '3.1'
+  representations:
+    human: IALA R0201 Ed 3.1
+    urn: urn:mrn:iala:pub:r0201:ed3.1
+  style: v3
+- id: iala.recommendation.0627
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0201'
+    edition: '3.1'
+    language: E
+  representations:
+    human: IALA R0201 Ed 3.1 (E)
+    urn: urn:mrn:iala:pub:r0201:ed3.1:e
+  style: v3
+- id: iala.recommendation.0628
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0201'
+    edition: '3.1'
+    language: F
+  representations:
+    human: IALA R0201 Ed 3.1 (F)
+    urn: urn:mrn:iala:pub:r0201:ed3.1:f
+  style: v3
+- id: iala.recommendation.0629
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0202'
+    edition: '2.0'
+    language: S
+  representations:
+    human: IALA R0202 Ed 2.0 (S)
+    urn: urn:mrn:iala:pub:r0202:ed2.0:s
+  style: v3
+- id: iala.recommendation.0630
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0202'
+    edition: '2.1'
+  representations:
+    human: IALA R0202 Ed 2.1
+    urn: urn:mrn:iala:pub:r0202:ed2.1
+  style: v3
+- id: iala.recommendation.0631
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0202'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA R0202 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:r0202:ed2.1:e
+  style: v3
+- id: iala.recommendation.0632
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0202'
+    edition: '2.1'
+    language: F
+  representations:
+    human: IALA R0202 Ed 2.1 (F)
+    urn: urn:mrn:iala:pub:r0202:ed2.1:f
+  style: v3
+- id: iala.recommendation.0633
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0203'
+    edition: '1.1'
+    language: S
+  representations:
+    human: IALA R0203 Ed 1.1 (S)
+    urn: urn:mrn:iala:pub:r0203:ed1.1:s
+  style: v3
+- id: iala.recommendation.0634
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0203'
+    edition: '2.0'
+  representations:
+    human: IALA R0203 Ed 2.0
+    urn: urn:mrn:iala:pub:r0203:ed2.0
+  style: v3
+- id: iala.recommendation.0635
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0203'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA R0203 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:r0203:ed2.0:e
+  style: v3
+- id: iala.recommendation.0636
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0204'
+    edition: '2.0'
+    language: S
+  representations:
+    human: IALA R0204 Ed 2.0 (S)
+    urn: urn:mrn:iala:pub:r0204:ed2.0:s
+  style: v3
+- id: iala.recommendation.0637
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0204'
+    edition: '3.0'
+  representations:
+    human: IALA R0204 Ed 3.0
+    urn: urn:mrn:iala:pub:r0204:ed3.0
+  style: v3
+- id: iala.recommendation.0638
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0204'
+    edition: '3.0'
+    language: E
+  representations:
+    human: IALA R0204 Ed 3.0 (E)
+    urn: urn:mrn:iala:pub:r0204:ed3.0:e
+  style: v3
+- id: iala.recommendation.0639
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0204'
+    edition: '3.0'
+    language: F
+  representations:
+    human: IALA R0204 Ed 3.0 (F)
+    urn: urn:mrn:iala:pub:r0204:ed3.0:f
+  style: v3
+- id: iala.recommendation.0640
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0205'
+    edition: '1.1'
+  representations:
+    human: IALA R0205 Ed 1.1
+    urn: urn:mrn:iala:pub:r0205:ed1.1
+  style: v3
+- id: iala.recommendation.0641
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '0205'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA R0205 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:r0205:ed1.1:e
+  style: v3
+- id: iala.recommendation.0642
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1001'
+    edition: '2.0'
+  representations:
+    human: IALA R1001 Ed 2.0
+    urn: urn:mrn:iala:pub:r1001:ed2.0
+  style: v3
+- id: iala.recommendation.0643
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1001'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA R1001 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:r1001:ed2.0:e
+  style: v3
+- id: iala.recommendation.0644
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1001'
+    edition: '2.0'
+    language: S
+  representations:
+    human: IALA R1001 Ed 2.0 (S)
+    urn: urn:mrn:iala:pub:r1001:ed2.0:s
+  style: v3
+- id: iala.recommendation.0645
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1002'
+    edition: '1.1'
+  representations:
+    human: IALA R1002 Ed 1.1
+    urn: urn:mrn:iala:pub:r1002:ed1.1
+  style: v3
+- id: iala.recommendation.0646
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1002'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA R1002 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:r1002:ed1.1:e
+  style: v3
+- id: iala.recommendation.0647
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1002'
+    edition: '1.1'
+    language: F
+  representations:
+    human: IALA R1002 Ed 1.1 (F)
+    urn: urn:mrn:iala:pub:r1002:ed1.1:f
+  style: v3
+- id: iala.recommendation.0648
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1004'
+    edition: '2.1'
+  representations:
+    human: IALA R1004 Ed 2.1
+    urn: urn:mrn:iala:pub:r1004:ed2.1
+  style: v3
+- id: iala.recommendation.0649
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1004'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA R1004 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:r1004:ed2.1:e
+  style: v3
+- id: iala.recommendation.0650
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1005'
+    edition: '3.0'
+  representations:
+    human: IALA R1005 Ed 3.0
+    urn: urn:mrn:iala:pub:r1005:ed3.0
+  style: v3
+- id: iala.recommendation.0651
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1005'
+    edition: '3.0'
+    language: E
+  representations:
+    human: IALA R1005 Ed 3.0 (E)
+    urn: urn:mrn:iala:pub:r1005:ed3.0:e
+  style: v3
+- id: iala.recommendation.0652
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1007'
+    edition: '2.0'
+  representations:
+    human: IALA R1007 Ed 2.0
+    urn: urn:mrn:iala:pub:r1007:ed2.0
+  style: v3
+- id: iala.recommendation.0653
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1007'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA R1007 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:r1007:ed2.0:e
+  style: v3
+- id: iala.recommendation.0654
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1009'
+    edition: '1.1'
+  representations:
+    human: IALA R1009 Ed 1.1
+    urn: urn:mrn:iala:pub:r1009:ed1.1
+  style: v3
+- id: iala.recommendation.0655
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1009'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA R1009 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:r1009:ed1.1:e
+  style: v3
+- id: iala.recommendation.0656
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1010'
+    edition: '1.1'
+  representations:
+    human: IALA R1010 Ed 1.1
+    urn: urn:mrn:iala:pub:r1010:ed1.1
+  style: v3
+- id: iala.recommendation.0657
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1010'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA R1010 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:r1010:ed1.1:e
+  style: v3
+- id: iala.recommendation.0658
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1011'
+    edition: '1.1'
+  representations:
+    human: IALA R1011 Ed 1.1
+    urn: urn:mrn:iala:pub:r1011:ed1.1
+  style: v3
+- id: iala.recommendation.0659
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1011'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA R1011 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:r1011:ed1.1:e
+  style: v3
+- id: iala.recommendation.0660
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1012'
+    edition: '1.3'
+  representations:
+    human: IALA R1012 Ed 1.3
+    urn: urn:mrn:iala:pub:r1012:ed1.3
+  style: v3
+- id: iala.recommendation.0661
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1012'
+    edition: '1.3'
+    language: E
+  representations:
+    human: IALA R1012 Ed 1.3 (E)
+    urn: urn:mrn:iala:pub:r1012:ed1.3:e
+  style: v3
+- id: iala.recommendation.0662
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1013'
+    edition: '1.1'
+  representations:
+    human: IALA R1013 Ed 1.1
+    urn: urn:mrn:iala:pub:r1013:ed1.1
+  style: v3
+- id: iala.recommendation.0663
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1013'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA R1013 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:r1013:ed1.1:e
+  style: v3
+- id: iala.recommendation.0664
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1015'
+    edition: '1.0'
+    language: S
+  representations:
+    human: IALA R1015 Ed 1.0 (S)
+    urn: urn:mrn:iala:pub:r1015:ed1.0:s
+  style: v3
+- id: iala.recommendation.0665
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1015'
+    edition: '1.1'
+  representations:
+    human: IALA R1015 Ed 1.1
+    urn: urn:mrn:iala:pub:r1015:ed1.1
+  style: v3
+- id: iala.recommendation.0666
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1015'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA R1015 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:r1015:ed1.1:e
+  style: v3
+- id: iala.recommendation.0667
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1015'
+    edition: '1.1'
+    language: F
+  representations:
+    human: IALA R1015 Ed 1.1 (F)
+    urn: urn:mrn:iala:pub:r1015:ed1.1:f
+  style: v3
+- id: iala.recommendation.0668
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1016'
+    edition: '1.0'
+    language: S
+  representations:
+    human: IALA R1016 Ed 1.0 (S)
+    urn: urn:mrn:iala:pub:r1016:ed1.0:s
+  style: v3
+- id: iala.recommendation.0669
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1016'
+    edition: '2.0'
+  representations:
+    human: IALA R1016 Ed 2.0
+    urn: urn:mrn:iala:pub:r1016:ed2.0
+  style: v3
+- id: iala.recommendation.0670
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1016'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA R1016 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:r1016:ed2.0:e
+  style: v3
+- id: iala.recommendation.0671
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1016'
+    edition: '2.0'
+    language: F
+  representations:
+    human: IALA R1016 Ed 2.0 (F)
+    urn: urn:mrn:iala:pub:r1016:ed2.0:f
+  style: v3
+- id: iala.recommendation.0672
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1017'
+    edition: '1.1'
+  representations:
+    human: IALA R1017 Ed 1.1
+    urn: urn:mrn:iala:pub:r1017:ed1.1
+  style: v3
+- id: iala.recommendation.0673
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1017'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA R1017 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:r1017:ed1.1:e
+  style: v3
+- id: iala.recommendation.0674
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1018'
+    edition: '1.1'
+  representations:
+    human: IALA R1018 Ed 1.1
+    urn: urn:mrn:iala:pub:r1018:ed1.1
+  style: v3
+- id: iala.recommendation.0675
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1018'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA R1018 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:r1018:ed1.1:e
+  style: v3
+- id: iala.recommendation.0676
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1019'
+    edition: '2.0'
+  representations:
+    human: IALA R1019 Ed 2.0
+    urn: urn:mrn:iala:pub:r1019:ed2.0
+  style: v3
+- id: iala.recommendation.0677
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1019'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA R1019 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:r1019:ed2.0:e
+  style: v3
+- id: iala.recommendation.0678
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1020'
+    edition: '1.0'
+  representations:
+    human: IALA R1020 Ed 1.0
+    urn: urn:mrn:iala:pub:r1020:ed1.0
+  style: v3
+- id: iala.recommendation.0679
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1020'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA R1020 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:r1020:ed1.0:e
+  style: v3
+- id: iala.recommendation.0680
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1021'
+    edition: '1.1'
+  representations:
+    human: IALA R1021 Ed 1.1
+    urn: urn:mrn:iala:pub:r1021:ed1.1
+  style: v3
+- id: iala.recommendation.0681
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1021'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA R1021 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:r1021:ed1.1:e
+  style: v3
+- id: iala.recommendation.0682
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1022'
+    edition: '1.0'
+  representations:
+    human: IALA R1022 Ed 1.0
+    urn: urn:mrn:iala:pub:r1022:ed1.0
+  style: v3
+- id: iala.recommendation.0683
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1022'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA R1022 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:r1022:ed1.0:e
+  style: v3
+- id: iala.recommendation.0684
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1023'
+    edition: '1.0'
+  representations:
+    human: IALA R1023 Ed 1.0
+    urn: urn:mrn:iala:pub:r1023:ed1.0
+  style: v3
+  non_normalized_aliases:
+  - spelling: urn:mrn:iala:pub:r1023:ed1.0
+    style: v3
+- id: iala.recommendation.0685
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1023'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA R1023 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:r1023:ed1.0:e
+  style: v3
+- id: iala.recommendation.0686
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1024'
+    edition: '1.0'
+  representations:
+    human: IALA R1024 Ed 1.0
+    urn: urn:mrn:iala:pub:r1024:ed1.0
+  style: v3
+  non_normalized_aliases:
+  - spelling: urn:mrn:iala:pub:r1024:ed1.0
+    style: v3
+- id: iala.recommendation.0687
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1024'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA R1024 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:r1024:ed1.0:e
+  style: v3
+- id: iala.recommendation.0688
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1025'
+    edition: '1.0'
+  representations:
+    human: IALA R1025 Ed 1.0
+    urn: urn:mrn:iala:pub:r1025:ed1.0
+  style: v3
+  non_normalized_aliases:
+  - spelling: urn:mrn:iala:pub:r1025:ed1.0
+    style: v3
+- id: iala.recommendation.0689
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1025'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA R1025 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:r1025:ed1.0:e
+  style: v3
+- id: iala.recommendation.0690
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1026'
+    edition: '1.0'
+  representations:
+    human: IALA R1026 Ed 1.0
+    urn: urn:mrn:iala:pub:r1026:ed1.0
+  style: v3
+  non_normalized_aliases:
+  - spelling: urn:mrn:iala:pub:r1026:Ed1.0
+    style: v3
+  - spelling: urn:mrn:iala:pub:r1026:ed.1.0
+    style: v3
+  - spelling: urn:mrn:iala:pub:r1026:ed1.0
+    style: v3
+- id: iala.recommendation.0691
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1026'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA R1026 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:r1026:ed1.0:e
+  style: v3
+- id: iala.recommendation.0692
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1027'
+    edition: '1.0'
+  representations:
+    human: IALA R1027 Ed 1.0
+    urn: urn:mrn:iala:pub:r1027:ed1.0
+  style: v3
+- id: iala.recommendation.0693
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1027'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA R1027 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:r1027:ed1.0:e
+  style: v3
+- id: iala.recommendation.0694
+  identifier:
+    _type: pubid:iala:recommendation
+    number: '1027'
+    edition: '1.1'
+  representations:
+    human: IALA R1027 Ed 1.1
+    urn: urn:mrn:iala:pub:r1027:ed1.1
+  style: v3
+  non_normalized_aliases:
+  - spelling: urn:mrn:iala:pub:r1027:ed1.1
+    style: v3

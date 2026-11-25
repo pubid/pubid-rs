@@ -23,9 +23,11 @@ jobs:
           echo "grammar_ref_ansi=$(sed -n 's/^grammar_ref_ansi: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
           echo "grammar_ref_wmo=$(sed -n 's/^grammar_ref_wmo: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
           echo "grammar_ref_iho=$(sed -n 's/^grammar_ref_iho: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
+          echo "grammar_ref_iala=$(sed -n 's/^grammar_ref_iala: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
           echo "testsuite_ref=$(sed -n 's/^testsuite_ref: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
           echo "testsuite_ref_wmo=$(sed -n 's/^testsuite_ref_wmo: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
           echo "testsuite_ref_iho=$(sed -n 's/^testsuite_ref_iho: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
+          echo "testsuite_ref_iala=$(sed -n 's/^testsuite_ref_iala: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
 
       - name: Checkout pinned pubid-grammar
         uses: actions/checkout@v4
@@ -62,6 +64,13 @@ jobs:
           ref: ${{ steps.pins.outputs.grammar_ref_iho }}
           path: pubid-grammar-iho
 
+      - name: Checkout pinned pubid-grammar (the iala flavor ref)
+        uses: actions/checkout@v4
+        with:
+          repository: pubid/pubid-grammar
+          ref: ${{ steps.pins.outputs.grammar_ref_iala }}
+          path: pubid-grammar-iala
+
       - name: Checkout pinned pubid-testsuite
         uses: actions/checkout@v4
         with:
@@ -82,6 +91,13 @@ jobs:
           repository: pubid/pubid-testsuite
           ref: ${{ steps.pins.outputs.testsuite_ref_iho }}
           path: pubid-testsuite-iho
+
+      - name: Checkout pinned pubid-testsuite (the iala flavor ref)
+        uses: actions/checkout@v4
+        with:
+          repository: pubid/pubid-testsuite
+          ref: ${{ steps.pins.outputs.testsuite_ref_iala }}
+          path: pubid-testsuite-iala
 
       - name: Vendored artifacts match the pinned grammar ref (drift gate)
         run: |
@@ -128,6 +144,15 @@ jobs:
           cmp "pubid-grammar-iho/artifacts/iho.json" \
               "crates/pubid-core/artifacts/iho.json"
 
+      - name: Vendored iala artifact matches its pinned grammar ref (drift gate)
+        run: |
+          # The iala flavor (grammar_ref_iala) carries its own
+          # flavor-only pin, like the eu/arxiv/ansi/wmo/iho ones (see
+          # /pins.yaml): the slug + S-2xx grammar round moves the pin
+          # in the same change that re-vendors the envelope.
+          cmp "pubid-grammar-iala/artifacts/iala.json" \
+              "crates/pubid-core/artifacts/iala.json"
+
       - name: Vendored slices match the pinned testsuite ref (drift gate)
         run: |
           for dir in crates/pubid-core/fixtures/testsuite/*/; do
@@ -142,6 +167,11 @@ jobs:
             # testsuite_ref pin - it carries its own flavor-only gate
             # below (see the fixtures VENDORED_FROM.md).
             [ "$flavor" = "iho" ] && continue
+            # The iala slice is a byte copy of the iala round freeze
+            # (the #772/#777 rows), which postdates the testsuite_ref
+            # pin - it carries its own flavor-only gate below (see the
+            # fixtures VENDORED_FROM.md).
+            [ "$flavor" = "iala" ] && continue
             for file in "$dir"*.yaml; do
               # Vendored-only flavors (e.g. ire) carry no tests/<flavor>/
               # corpus in the testsuite checkout — nothing to drift against.
@@ -171,6 +201,16 @@ jobs:
             cmp "$file" "pubid-testsuite-iho/tests/iho/$(basename "$file")"
           done
 
+      - name: Vendored iala slice matches its pinned testsuite ref (drift gate)
+        run: |
+          # The iala corpus (the #772/#777 round freeze at pubid
+          # acae7a620e95) postdates the testsuite_ref pin and the
+          # generic tests/iala rows there record the pre-round corpus -
+          # it carries its own flavor-only pin (see /pins.yaml).
+          for file in crates/pubid-core/fixtures/testsuite/iala/*.yaml; do
+            cmp "$file" "pubid-testsuite-iala/tests/iala/$(basename "$file")"
+          done
+
       - uses: dtolnay/rust-toolchain@stable
         with:
           components: clippy, rustfmt
@@ -197,9 +237,12 @@ jobs:
           # The iho flavor is gated at its own flavor-only testsuite
           # ref (the step below): tests/iho at THIS ref carries the
           # pre-S-158-re-key rows, so the generic run skips it
-          # (visible skip line, never a silent pass) — the same shape
+          # (visible skip line, never a silent pass). The iala flavor
+          # is the same shape: tests/iala at THIS ref records the
+          # pre-round corpus (no publication or product_specification
+          # files), so the generic run skips it too - the same shape
           # the wmo flavor gets from its dir being absent here.
-          cargo run -q -p conformance -- --testsuite pubid-testsuite/tests --all --skip-flavor iho
+          cargo run -q -p conformance -- --testsuite pubid-testsuite/tests --all --skip-flavor iho --skip-flavor iala
 
       - name: Conformance (wmo, the pinned testsuite flavor ref)
         run: |
@@ -216,6 +259,14 @@ jobs:
           # pinned corpus (the re-keyed rows, unmarked pendings).
           cargo run -q -p conformance -- --testsuite pubid-testsuite-iho/tests --flavor iho
 
+      - name: Conformance (iala, the pinned testsuite flavor ref)
+        run: |
+          # The testsuite_ref checkout predates the iala round freeze,
+          # so the --all run above falls back to the vendored slice for
+          # iala; this run gates the flavor against its own pinned
+          # corpus (the #772/#777 rows, unmarked pendings).
+          cargo run -q -p conformance -- --testsuite pubid-testsuite-iala/tests --flavor iala
+
       - name: CLI smoke
         run: |
           cargo run -q -p pubid-cli -- parse doi "doi:10.1000/182"
@@ -229,4 +280,8 @@ jobs:
           cargo run -q -p pubid-cli -- parse wmo "S-411 1.2.1"
           cargo run -q -p pubid-cli -- parse iho "IHO S-158:102 1.0.0"
           cargo run -q -p pubid-cli -- parse iho "IHO S-158 0.2.0 Part S-102"
+          cargo run -q -p pubid-cli -- parse iala "IALA G1164 Ed 1.1"
+          cargo run -q -p pubid-cli -- parse iala "S-201 2.0.0"
+          cargo run -q -p pubid-cli -- parse iala "S-201 ANNEX B2"
+          cargo run -q -p pubid-cli -- parse iala "IALA arctic-seminar-report (E)"
           cargo run -q -p pubid-cli -- smoke

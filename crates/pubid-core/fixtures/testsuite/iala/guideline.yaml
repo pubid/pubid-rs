@@ -1,0 +1,3259 @@
+---
+- id: iala.guideline.0102
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1004'
+    edition: '3'
+  representations:
+    human: IALA G1004 Ed 3
+    urn: urn:mrn:iala:pub:g1004:ed3
+  style: v3
+- id: iala.guideline.0103
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1004'
+    edition: '3'
+    language: E
+  representations:
+    human: IALA G1004 Ed 3 (E)
+    urn: urn:mrn:iala:pub:g1004:ed3:e
+  style: v3
+- id: iala.guideline.0104
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1005'
+    edition: '2.1'
+  representations:
+    human: IALA G1005 Ed 2.1
+    urn: urn:mrn:iala:pub:g1005:ed2.1
+  style: v3
+- id: iala.guideline.0105
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1005'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1005 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1005:ed2.1:e
+  style: v3
+- id: iala.guideline.0106
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1006'
+    edition: '4.1'
+  representations:
+    human: IALA G1006 Ed 4.1
+    urn: urn:mrn:iala:pub:g1006:ed4.1
+  style: v3
+- id: iala.guideline.0107
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1006'
+    edition: '4.1'
+    language: E
+  representations:
+    human: IALA G1006 Ed 4.1 (E)
+    urn: urn:mrn:iala:pub:g1006:ed4.1:e
+  style: v3
+- id: iala.guideline.0108
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1008'
+    edition: '2.1'
+  representations:
+    human: IALA G1008 Ed 2.1
+    urn: urn:mrn:iala:pub:g1008:ed2.1
+  style: v3
+- id: iala.guideline.0109
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1008'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1008 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1008:ed2.1:e
+  style: v3
+- id: iala.guideline.0110
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1010'
+    edition: '2.1'
+  representations:
+    human: IALA G1010 Ed 2.1
+    urn: urn:mrn:iala:pub:g1010:ed2.1
+  style: v3
+- id: iala.guideline.0111
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1010'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1010 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1010:ed2.1:e
+  style: v3
+- id: iala.guideline.0112
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1012'
+    edition: '3.1'
+  representations:
+    human: IALA G1012 Ed 3.1
+    urn: urn:mrn:iala:pub:g1012:ed3.1
+  style: v3
+- id: iala.guideline.0113
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1012'
+    edition: '3.1'
+    language: E
+  representations:
+    human: IALA G1012 Ed 3.1 (E)
+    urn: urn:mrn:iala:pub:g1012:ed3.1:e
+  style: v3
+- id: iala.guideline.0114
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1014'
+    edition: '4.0'
+  representations:
+    human: IALA G1014 Ed 4.0
+    urn: urn:mrn:iala:pub:g1014:ed4.0
+  style: v3
+- id: iala.guideline.0115
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1014'
+    edition: '4.0'
+    language: E
+  representations:
+    human: IALA G1014 Ed 4.0 (E)
+    urn: urn:mrn:iala:pub:g1014:ed4.0:e
+  style: v3
+- id: iala.guideline.0116
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1015'
+    edition: '1.1'
+    language: S
+  representations:
+    human: IALA G1015 Ed 1.1 (S)
+    urn: urn:mrn:iala:pub:g1015:ed1.1:s
+  style: v3
+- id: iala.guideline.0117
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1015'
+    edition: '2.1'
+  representations:
+    human: IALA G1015 Ed 2.1
+    urn: urn:mrn:iala:pub:g1015:ed2.1
+  style: v3
+- id: iala.guideline.0118
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1015'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1015 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1015:ed2.1:e
+  style: v3
+- id: iala.guideline.0119
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1016'
+    edition: '1.1'
+  representations:
+    human: IALA G1016 Ed 1.1
+    urn: urn:mrn:iala:pub:g1016:ed1.1
+  style: v3
+- id: iala.guideline.0120
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1016'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1016 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1016:ed1.1:e
+  style: v3
+- id: iala.guideline.0121
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1017'
+    edition: '2.1'
+  representations:
+    human: IALA G1017 Ed 2.1
+    urn: urn:mrn:iala:pub:g1017:ed2.1
+  style: v3
+- id: iala.guideline.0122
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1017'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1017 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1017:ed2.1:e
+  style: v3
+- id: iala.guideline.0123
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1018'
+    edition: '4.0'
+  representations:
+    human: IALA G1018 Ed 4.0
+    urn: urn:mrn:iala:pub:g1018:ed4.0
+  style: v3
+- id: iala.guideline.0124
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1018'
+    edition: '4.0'
+    language: E
+  representations:
+    human: IALA G1018 Ed 4.0 (E)
+    urn: urn:mrn:iala:pub:g1018:ed4.0:e
+  style: v3
+- id: iala.guideline.0125
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1020'
+    edition: '1.2'
+  representations:
+    human: IALA G1020 Ed 1.2
+    urn: urn:mrn:iala:pub:g1020:ed1.2
+  style: v3
+- id: iala.guideline.0126
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1020'
+    edition: '1.2'
+    language: E
+  representations:
+    human: IALA G1020 Ed 1.2 (E)
+    urn: urn:mrn:iala:pub:g1020:ed1.2:e
+  style: v3
+- id: iala.guideline.0127
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1027'
+    edition: '2.0'
+  representations:
+    human: IALA G1027 Ed 2.0
+    urn: urn:mrn:iala:pub:g1027:ed2.0
+  style: v3
+- id: iala.guideline.0128
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1027'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA G1027 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:g1027:ed2.0:e
+  style: v3
+- id: iala.guideline.0129
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1033'
+    edition: '1.1'
+  representations:
+    human: IALA G1033 Ed 1.1
+    urn: urn:mrn:iala:pub:g1033:ed1.1
+  style: v3
+- id: iala.guideline.0130
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1033'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1033 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1033:ed1.1:e
+  style: v3
+- id: iala.guideline.0131
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1035'
+    edition: '2.1'
+  representations:
+    human: IALA G1035 Ed 2.1
+    urn: urn:mrn:iala:pub:g1035:ed2.1
+  style: v3
+- id: iala.guideline.0132
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1035'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1035 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1035:ed2.1:e
+  style: v3
+- id: iala.guideline.0133
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1036'
+    edition: '3.1'
+  representations:
+    human: IALA G1036 Ed 3.1
+    urn: urn:mrn:iala:pub:g1036:ed3.1
+  style: v3
+- id: iala.guideline.0134
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1036'
+    edition: '3.1'
+    language: E
+  representations:
+    human: IALA G1036 Ed 3.1 (E)
+    urn: urn:mrn:iala:pub:g1036:ed3.1:e
+  style: v3
+- id: iala.guideline.0135
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1037'
+    edition: '2.1'
+  representations:
+    human: IALA G1037 Ed 2.1
+    urn: urn:mrn:iala:pub:g1037:ed2.1
+  style: v3
+- id: iala.guideline.0136
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1037'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1037 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1037:ed2.1:e
+  style: v3
+- id: iala.guideline.0137
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1038'
+    edition: '3.1'
+  representations:
+    human: IALA G1038 Ed 3.1
+    urn: urn:mrn:iala:pub:g1038:ed3.1
+  style: v3
+- id: iala.guideline.0138
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1038'
+    edition: '3.1'
+    language: E
+  representations:
+    human: IALA G1038 Ed 3.1 (E)
+    urn: urn:mrn:iala:pub:g1038:ed3.1:e
+  style: v3
+- id: iala.guideline.0139
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1039'
+    edition: '2.1'
+  representations:
+    human: IALA G1039 Ed 2.1
+    urn: urn:mrn:iala:pub:g1039:ed2.1
+  style: v3
+- id: iala.guideline.0140
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1039'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1039 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1039:ed2.1:e
+  style: v3
+- id: iala.guideline.0141
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1039-1
+    edition: '2.1'
+  representations:
+    human: IALA G1039-1 Ed 2.1
+    urn: urn:mrn:iala:pub:g1039-1:ed2.1
+  style: v3
+- id: iala.guideline.0142
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1039-1
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1039-1 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1039-1:ed2.1:e
+  style: v3
+- id: iala.guideline.0143
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1039-2
+    edition: '2.1'
+  representations:
+    human: IALA G1039-2 Ed 2.1
+    urn: urn:mrn:iala:pub:g1039-2:ed2.1
+  style: v3
+- id: iala.guideline.0144
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1039-2
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1039-2 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1039-2:ed2.1:e
+  style: v3
+- id: iala.guideline.0145
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1041'
+    edition: '3.1'
+  representations:
+    human: IALA G1041 Ed 3.1
+    urn: urn:mrn:iala:pub:g1041:ed3.1
+  style: v3
+- id: iala.guideline.0146
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1041'
+    edition: '3.1'
+    language: E
+  representations:
+    human: IALA G1041 Ed 3.1 (E)
+    urn: urn:mrn:iala:pub:g1041:ed3.1:e
+  style: v3
+- id: iala.guideline.0147
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1043'
+    edition: '1.3'
+  representations:
+    human: IALA G1043 Ed 1.3
+    urn: urn:mrn:iala:pub:g1043:ed1.3
+  style: v3
+- id: iala.guideline.0148
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1043'
+    edition: '1.3'
+    language: E
+  representations:
+    human: IALA G1043 Ed 1.3 (E)
+    urn: urn:mrn:iala:pub:g1043:ed1.3:e
+  style: v3
+- id: iala.guideline.0151
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1045'
+    edition: '1.2'
+  representations:
+    human: IALA G1045 Ed 1.2
+    urn: urn:mrn:iala:pub:g1045:ed1.2
+  style: v3
+- id: iala.guideline.0152
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1045'
+    edition: '1.2'
+    language: E
+  representations:
+    human: IALA G1045 Ed 1.2 (E)
+    urn: urn:mrn:iala:pub:g1045:ed1.2:e
+  style: v3
+- id: iala.guideline.0153
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1046'
+    edition: '2.1'
+  representations:
+    human: IALA G1046 Ed 2.1
+    urn: urn:mrn:iala:pub:g1046:ed2.1
+  style: v3
+- id: iala.guideline.0154
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1046'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1046 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1046:ed2.1:e
+  style: v3
+- id: iala.guideline.0155
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1047'
+    edition: '1.1'
+  representations:
+    human: IALA G1047 Ed 1.1
+    urn: urn:mrn:iala:pub:g1047:ed1.1
+  style: v3
+- id: iala.guideline.0156
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1047'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1047 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1047:ed1.1:e
+  style: v3
+- id: iala.guideline.0157
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1048'
+    edition: '1.1'
+  representations:
+    human: IALA G1048 Ed 1.1
+    urn: urn:mrn:iala:pub:g1048:ed1.1
+  style: v3
+- id: iala.guideline.0158
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1048'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1048 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1048:ed1.1:e
+  style: v3
+- id: iala.guideline.0159
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1049'
+    edition: '2.1'
+  representations:
+    human: IALA G1049 Ed 2.1
+    urn: urn:mrn:iala:pub:g1049:ed2.1
+  style: v3
+- id: iala.guideline.0160
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1049'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1049 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1049:ed2.1:e
+  style: v3
+- id: iala.guideline.0161
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1050'
+    edition: '1.1'
+  representations:
+    human: IALA G1050 Ed 1.1
+    urn: urn:mrn:iala:pub:g1050:ed1.1
+  style: v3
+- id: iala.guideline.0162
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1050'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1050 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1050:ed1.1:e
+  style: v3
+- id: iala.guideline.0163
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1051'
+    edition: '1.1'
+  representations:
+    human: IALA G1051 Ed 1.1
+    urn: urn:mrn:iala:pub:g1051:ed1.1
+  style: v3
+- id: iala.guideline.0164
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1051'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1051 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1051:ed1.1:e
+  style: v3
+- id: iala.guideline.0165
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1052'
+    edition: '2'
+    language: S
+  representations:
+    human: IALA G1052 Ed 2 (S)
+    urn: urn:mrn:iala:pub:g1052:ed2:s
+  style: v3
+- id: iala.guideline.0166
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1052'
+    edition: '3.2'
+  representations:
+    human: IALA G1052 Ed 3.2
+    urn: urn:mrn:iala:pub:g1052:ed3.2
+  style: v3
+- id: iala.guideline.0167
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1052'
+    edition: '3.2'
+    language: E
+  representations:
+    human: IALA G1052 Ed 3.2 (E)
+    urn: urn:mrn:iala:pub:g1052:ed3.2:e
+  style: v3
+- id: iala.guideline.0168
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1053'
+    edition: '1.1'
+  representations:
+    human: IALA G1053 Ed 1.1
+    urn: urn:mrn:iala:pub:g1053:ed1.1
+  style: v3
+- id: iala.guideline.0169
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1053'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1053 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1053:ed1.1:e
+  style: v3
+- id: iala.guideline.0170
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1054'
+    edition: '2.0'
+  representations:
+    human: IALA G1054 Ed 2.0
+    urn: urn:mrn:iala:pub:g1054:ed2.0
+  style: v3
+- id: iala.guideline.0171
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1054'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA G1054 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:g1054:ed2.0:e
+  style: v3
+- id: iala.guideline.0172
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1057'
+    edition: '1.1'
+  representations:
+    human: IALA G1057 Ed 1.1
+    urn: urn:mrn:iala:pub:g1057:ed1.1
+  style: v3
+- id: iala.guideline.0173
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1057'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1057 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1057:ed1.1:e
+  style: v3
+- id: iala.guideline.0174
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1058'
+    edition: '3.0'
+  representations:
+    human: IALA G1058 Ed 3.0
+    urn: urn:mrn:iala:pub:g1058:ed3.0
+  style: v3
+- id: iala.guideline.0175
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1058'
+    edition: '3.0'
+    language: E
+  representations:
+    human: IALA G1058 Ed 3.0 (E)
+    urn: urn:mrn:iala:pub:g1058:ed3.0:e
+  style: v3
+- id: iala.guideline.0176
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1060'
+    edition: '2.1'
+  representations:
+    human: IALA G1060 Ed 2.1
+    urn: urn:mrn:iala:pub:g1060:ed2.1
+  style: v3
+- id: iala.guideline.0177
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1060'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1060 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1060:ed2.1:e
+  style: v3
+- id: iala.guideline.0178
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1061'
+    edition: '1.1'
+  representations:
+    human: IALA G1061 Ed 1.1
+    urn: urn:mrn:iala:pub:g1061:ed1.1
+  style: v3
+- id: iala.guideline.0179
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1061'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1061 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1061:ed1.1:e
+  style: v3
+- id: iala.guideline.0180
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1062'
+    edition: '1.1'
+  representations:
+    human: IALA G1062 Ed 1.1
+    urn: urn:mrn:iala:pub:g1062:ed1.1
+  style: v3
+- id: iala.guideline.0181
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1062'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1062 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1062:ed1.1:e
+  style: v3
+- id: iala.guideline.0182
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1063'
+    edition: '2.0'
+  representations:
+    human: IALA G1063 Ed 2.0
+    urn: urn:mrn:iala:pub:g1063:ed2.0
+  style: v3
+- id: iala.guideline.0183
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1063'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA G1063 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:g1063:ed2.0:e
+  style: v3
+- id: iala.guideline.0184
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1064'
+    edition: '1.1'
+  representations:
+    human: IALA G1064 Ed 1.1
+    urn: urn:mrn:iala:pub:g1064:ed1.1
+  style: v3
+- id: iala.guideline.0185
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1064'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1064 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1064:ed1.1:e
+  style: v3
+- id: iala.guideline.0186
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1065'
+    edition: '4.2'
+  representations:
+    human: IALA G1065 Ed 4.2
+    urn: urn:mrn:iala:pub:g1065:ed4.2
+  style: v3
+- id: iala.guideline.0187
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1065'
+    edition: '4.2'
+    language: E
+  representations:
+    human: IALA G1065 Ed 4.2 (E)
+    urn: urn:mrn:iala:pub:g1065:ed4.2:e
+  style: v3
+- id: iala.guideline.0188
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1066'
+    edition: '1.2'
+  representations:
+    human: IALA G1066 Ed 1.2
+    urn: urn:mrn:iala:pub:g1066:ed1.2
+  style: v3
+- id: iala.guideline.0189
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1066'
+    edition: '1.2'
+    language: E
+  representations:
+    human: IALA G1066 Ed 1.2 (E)
+    urn: urn:mrn:iala:pub:g1066:ed1.2:e
+  style: v3
+- id: iala.guideline.0190
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1067-0
+    edition: '3.1'
+  representations:
+    human: IALA G1067-0 Ed 3.1
+    urn: urn:mrn:iala:pub:g1067-0:ed3.1
+  style: v3
+- id: iala.guideline.0191
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1067-0
+    edition: '3.1'
+    language: E
+  representations:
+    human: IALA G1067-0 Ed 3.1 (E)
+    urn: urn:mrn:iala:pub:g1067-0:ed3.1:e
+  style: v3
+- id: iala.guideline.0192
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1067-1
+    edition: '2.1'
+  representations:
+    human: IALA G1067-1 Ed 2.1
+    urn: urn:mrn:iala:pub:g1067-1:ed2.1
+  style: v3
+- id: iala.guideline.0193
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1067-1
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1067-1 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1067-1:ed2.1:e
+  style: v3
+- id: iala.guideline.0194
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1067-2
+    edition: '2.1'
+  representations:
+    human: IALA G1067-2 Ed 2.1
+    urn: urn:mrn:iala:pub:g1067-2:ed2.1
+  style: v3
+- id: iala.guideline.0195
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1067-2
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1067-2 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1067-2:ed2.1:e
+  style: v3
+- id: iala.guideline.0196
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1067-3
+    edition: '3.1'
+  representations:
+    human: IALA G1067-3 Ed 3.1
+    urn: urn:mrn:iala:pub:g1067-3:ed3.1
+  style: v3
+- id: iala.guideline.0197
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1067-3
+    edition: '3.1'
+    language: E
+  representations:
+    human: IALA G1067-3 Ed 3.1 (E)
+    urn: urn:mrn:iala:pub:g1067-3:ed3.1:e
+  style: v3
+- id: iala.guideline.0198
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1070'
+    edition: '1.1'
+  representations:
+    human: IALA G1070 Ed 1.1
+    urn: urn:mrn:iala:pub:g1070:ed1.1
+  style: v3
+- id: iala.guideline.0199
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1070'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1070 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1070:ed1.1:e
+  style: v3
+- id: iala.guideline.0200
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1073'
+    edition: '2.1'
+  representations:
+    human: IALA G1073 Ed 2.1
+    urn: urn:mrn:iala:pub:g1073:ed2.1
+  style: v3
+- id: iala.guideline.0201
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1073'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1073 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1073:ed2.1:e
+  style: v3
+- id: iala.guideline.0202
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1074'
+    edition: '1.2'
+  representations:
+    human: IALA G1074 Ed 1.2
+    urn: urn:mrn:iala:pub:g1074:ed1.2
+  style: v3
+- id: iala.guideline.0203
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1074'
+    edition: '1.2'
+    language: E
+  representations:
+    human: IALA G1074 Ed 1.2 (E)
+    urn: urn:mrn:iala:pub:g1074:ed1.2:e
+  style: v3
+- id: iala.guideline.0204
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1075'
+    edition: '1.1'
+  representations:
+    human: IALA G1075 Ed 1.1
+    urn: urn:mrn:iala:pub:g1075:ed1.1
+  style: v3
+- id: iala.guideline.0205
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1075'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1075 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1075:ed1.1:e
+  style: v3
+- id: iala.guideline.0206
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1077'
+    edition: '2.0'
+  representations:
+    human: IALA G1077 Ed 2.0
+    urn: urn:mrn:iala:pub:g1077:ed2.0
+  style: v3
+- id: iala.guideline.0207
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1077'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA G1077 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:g1077:ed2.0:e
+  style: v3
+- id: iala.guideline.0208
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1078'
+    edition: '2.1'
+  representations:
+    human: IALA G1078 Ed 2.1
+    urn: urn:mrn:iala:pub:g1078:ed2.1
+  style: v3
+- id: iala.guideline.0209
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1078'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1078 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1078:ed2.1:e
+  style: v3
+- id: iala.guideline.0210
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1079'
+    edition: '1.1'
+  representations:
+    human: IALA G1079 Ed 1.1
+    urn: urn:mrn:iala:pub:g1079:ed1.1
+  style: v3
+- id: iala.guideline.0211
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1079'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1079 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1079:ed1.1:e
+  style: v3
+- id: iala.guideline.0212
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1080'
+    edition: '1.1'
+  representations:
+    human: IALA G1080 Ed 1.1
+    urn: urn:mrn:iala:pub:g1080:ed1.1
+  style: v3
+- id: iala.guideline.0213
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1080'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1080 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1080:ed1.1:e
+  style: v3
+- id: iala.guideline.0214
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1081'
+  representations:
+    human: IALA G1081
+    urn: urn:mrn:iala:pub:g1081
+  style: v3
+- id: iala.guideline.0215
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1081'
+    edition: '1.0'
+    language: S
+  representations:
+    human: IALA G1081 Ed 1.0 (S)
+    urn: urn:mrn:iala:pub:g1081:ed1.0:s
+  style: v3
+- id: iala.guideline.0216
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1082'
+    edition: '2.1'
+  representations:
+    human: IALA G1082 Ed 2.1
+    urn: urn:mrn:iala:pub:g1082:ed2.1
+  style: v3
+- id: iala.guideline.0217
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1082'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1082 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1082:ed2.1:e
+  style: v3
+- id: iala.guideline.0218
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1083'
+    edition: '1.1'
+  representations:
+    human: IALA G1083 Ed 1.1
+    urn: urn:mrn:iala:pub:g1083:ed1.1
+  style: v3
+- id: iala.guideline.0219
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1083'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1083 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1083:ed1.1:e
+  style: v3
+- id: iala.guideline.0220
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1084'
+    edition: '1.1'
+  representations:
+    human: IALA G1084 Ed 1.1
+    urn: urn:mrn:iala:pub:g1084:ed1.1
+  style: v3
+- id: iala.guideline.0221
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1084'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1084 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1084:ed1.1:e
+  style: v3
+- id: iala.guideline.0222
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1085'
+    edition: '1.1'
+  representations:
+    human: IALA G1085 Ed 1.1
+    urn: urn:mrn:iala:pub:g1085:ed1.1
+  style: v3
+- id: iala.guideline.0223
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1085'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1085 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1085:ed1.1:e
+  style: v3
+- id: iala.guideline.0224
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1086'
+    edition: '1.1'
+  representations:
+    human: IALA G1086 Ed 1.1
+    urn: urn:mrn:iala:pub:g1086:ed1.1
+  style: v3
+- id: iala.guideline.0225
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1086'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1086 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1086:ed1.1:e
+  style: v3
+- id: iala.guideline.0226
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1087'
+    edition: '4.0'
+  representations:
+    human: IALA G1087 Ed 4.0
+    urn: urn:mrn:iala:pub:g1087:ed4.0
+  style: v3
+- id: iala.guideline.0227
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1087'
+    edition: '4.0'
+    language: E
+  representations:
+    human: IALA G1087 Ed 4.0 (E)
+    urn: urn:mrn:iala:pub:g1087:ed4.0:e
+  style: v3
+- id: iala.guideline.0228
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1088'
+    edition: '1.1'
+  representations:
+    human: IALA G1088 Ed 1.1
+    urn: urn:mrn:iala:pub:g1088:ed1.1
+  style: v3
+- id: iala.guideline.0229
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1088'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1088 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1088:ed1.1:e
+  style: v3
+- id: iala.guideline.0230
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1089'
+    edition: '3.0'
+  representations:
+    human: IALA G1089 Ed 3.0
+    urn: urn:mrn:iala:pub:g1089:ed3.0
+  style: v3
+- id: iala.guideline.0231
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1089'
+    edition: '3.0'
+    language: E
+  representations:
+    human: IALA G1089 Ed 3.0 (E)
+    urn: urn:mrn:iala:pub:g1089:ed3.0:e
+  style: v3
+- id: iala.guideline.0232
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1090'
+    edition: '1.1'
+  representations:
+    human: IALA G1090 Ed 1.1
+    urn: urn:mrn:iala:pub:g1090:ed1.1
+  style: v3
+- id: iala.guideline.0233
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1090'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1090 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1090:ed1.1:e
+  style: v3
+- id: iala.guideline.0234
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1091'
+    edition: '2.1'
+  representations:
+    human: IALA G1091 Ed 2.1
+    urn: urn:mrn:iala:pub:g1091:ed2.1
+  style: v3
+- id: iala.guideline.0235
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1091'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1091 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1091:ed2.1:e
+  style: v3
+- id: iala.guideline.0236
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1092'
+    edition: '2.0'
+  representations:
+    human: IALA G1092 Ed 2.0
+    urn: urn:mrn:iala:pub:g1092:ed2.0
+  style: v3
+- id: iala.guideline.0237
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1092'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA G1092 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:g1092:ed2.0:e
+  style: v3
+- id: iala.guideline.0238
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1093'
+    edition: '1.2'
+  representations:
+    human: IALA G1093 Ed 1.2
+    urn: urn:mrn:iala:pub:g1093:ed1.2
+  style: v3
+- id: iala.guideline.0239
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1093'
+    edition: '1.2'
+    language: E
+  representations:
+    human: IALA G1093 Ed 1.2 (E)
+    urn: urn:mrn:iala:pub:g1093:ed1.2:e
+  style: v3
+- id: iala.guideline.0240
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1094'
+    edition: '2.1'
+  representations:
+    human: IALA G1094 Ed 2.1
+    urn: urn:mrn:iala:pub:g1094:ed2.1
+  style: v3
+- id: iala.guideline.0241
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1094'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1094 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1094:ed2.1:e
+  style: v3
+- id: iala.guideline.0242
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1095'
+    edition: '1.1'
+  representations:
+    human: IALA G1095 Ed 1.1
+    urn: urn:mrn:iala:pub:g1095:ed1.1
+  style: v3
+- id: iala.guideline.0243
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1095'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1095 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1095:ed1.1:e
+  style: v3
+- id: iala.guideline.0244
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1096'
+    edition: '1.1'
+  representations:
+    human: IALA G1096 Ed 1.1
+    urn: urn:mrn:iala:pub:g1096:ed1.1
+  style: v3
+- id: iala.guideline.0245
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1096'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1096 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1096:ed1.1:e
+  style: v3
+- id: iala.guideline.0246
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1098'
+    edition: '1.1'
+  representations:
+    human: IALA G1098 Ed 1.1
+    urn: urn:mrn:iala:pub:g1098:ed1.1
+  style: v3
+- id: iala.guideline.0247
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1098'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1098 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1098:ed1.1:e
+  style: v3
+- id: iala.guideline.0248
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1099'
+    edition: '1.1'
+  representations:
+    human: IALA G1099 Ed 1.1
+    urn: urn:mrn:iala:pub:g1099:ed1.1
+  style: v3
+- id: iala.guideline.0249
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1099'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1099 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1099:ed1.1:e
+  style: v3
+- id: iala.guideline.0250
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1100'
+    edition: '2.0'
+  representations:
+    human: IALA G1100 Ed 2.0
+    urn: urn:mrn:iala:pub:g1100:ed2.0
+  style: v3
+- id: iala.guideline.0251
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1100'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA G1100 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:g1100:ed2.0:e
+  style: v3
+- id: iala.guideline.0252
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1101'
+    edition: '1.1'
+  representations:
+    human: IALA G1101 Ed 1.1
+    urn: urn:mrn:iala:pub:g1101:ed1.1
+  style: v3
+- id: iala.guideline.0253
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1101'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1101 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1101:ed1.1:e
+  style: v3
+- id: iala.guideline.0254
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1102'
+    edition: '1.1'
+  representations:
+    human: IALA G1102 Ed 1.1
+    urn: urn:mrn:iala:pub:g1102:ed1.1
+  style: v3
+- id: iala.guideline.0255
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1102'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1102 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1102:ed1.1:e
+  style: v3
+- id: iala.guideline.0256
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1103'
+    edition: '1.1'
+  representations:
+    human: IALA G1103 Ed 1.1
+    urn: urn:mrn:iala:pub:g1103:ed1.1
+  style: v3
+- id: iala.guideline.0257
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1103'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1103 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1103:ed1.1:e
+  style: v3
+- id: iala.guideline.0258
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1104'
+    edition: '1.1'
+  representations:
+    human: IALA G1104 Ed 1.1
+    urn: urn:mrn:iala:pub:g1104:ed1.1
+  style: v3
+- id: iala.guideline.0259
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1104'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1104 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1104:ed1.1:e
+  style: v3
+- id: iala.guideline.0260
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1105'
+    edition: '2.0'
+  representations:
+    human: IALA G1105 Ed 2.0
+    urn: urn:mrn:iala:pub:g1105:ed2.0
+  style: v3
+- id: iala.guideline.0261
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1105'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA G1105 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:g1105:ed2.0:e
+  style: v3
+- id: iala.guideline.0262
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1106'
+    edition: '3.0'
+  representations:
+    human: IALA G1106 Ed 3.0
+    urn: urn:mrn:iala:pub:g1106:ed3.0
+  style: v3
+- id: iala.guideline.0263
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1106'
+    edition: '3.0'
+    language: E
+  representations:
+    human: IALA G1106 Ed 3.0 (E)
+    urn: urn:mrn:iala:pub:g1106:ed3.0:e
+  style: v3
+- id: iala.guideline.0264
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1106-1
+    edition: '1.1'
+  representations:
+    human: IALA G1106-1 Ed 1.1
+    urn: urn:mrn:iala:pub:g1106-1:ed1.1
+  style: v3
+- id: iala.guideline.0265
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1106-1
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1106-1 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1106-1:ed1.1:e
+  style: v3
+- id: iala.guideline.0266
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1106-2
+    edition: '1.1'
+  representations:
+    human: IALA G1106-2 Ed 1.1
+    urn: urn:mrn:iala:pub:g1106-2:ed1.1
+  style: v3
+- id: iala.guideline.0267
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1106-2
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1106-2 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1106-2:ed1.1:e
+  style: v3
+- id: iala.guideline.0268
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1106-3
+    edition: '1.1'
+  representations:
+    human: IALA G1106-3 Ed 1.1
+    urn: urn:mrn:iala:pub:g1106-3:ed1.1
+  style: v3
+- id: iala.guideline.0269
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1106-3
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1106-3 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1106-3:ed1.1:e
+  style: v3
+- id: iala.guideline.0270
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1107'
+    edition: '3.0'
+  representations:
+    human: IALA G1107 Ed 3.0
+    urn: urn:mrn:iala:pub:g1107:ed3.0
+  style: v3
+- id: iala.guideline.0271
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1107'
+    edition: '3.0'
+    language: E
+  representations:
+    human: IALA G1107 Ed 3.0 (E)
+    urn: urn:mrn:iala:pub:g1107:ed3.0:e
+  style: v3
+- id: iala.guideline.0272
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1109'
+    edition: '1.1'
+  representations:
+    human: IALA G1109 Ed 1.1
+    urn: urn:mrn:iala:pub:g1109:ed1.1
+  style: v3
+- id: iala.guideline.0273
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1109'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1109 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1109:ed1.1:e
+  style: v3
+- id: iala.guideline.0274
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1110'
+    edition: '2.1'
+  representations:
+    human: IALA G1110 Ed 2.1
+    urn: urn:mrn:iala:pub:g1110:ed2.1
+  style: v3
+- id: iala.guideline.0275
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1110'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1110 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1110:ed2.1:e
+  style: v3
+- id: iala.guideline.0276
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1111'
+    edition: '2.0'
+  representations:
+    human: IALA G1111 Ed 2.0
+    urn: urn:mrn:iala:pub:g1111:ed2.0
+  style: v3
+- id: iala.guideline.0277
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1111'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA G1111 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:g1111:ed2.0:e
+  style: v3
+- id: iala.guideline.0278
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1111-1
+    edition: '1.0'
+  representations:
+    human: IALA G1111-1 Ed 1.0
+    urn: urn:mrn:iala:pub:g1111-1:ed1.0
+  style: v3
+- id: iala.guideline.0279
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1111-1
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1111-1 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1111-1:ed1.0:e
+  style: v3
+- id: iala.guideline.0280
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1111-2
+    edition: '1.0'
+  representations:
+    human: IALA G1111-2 Ed 1.0
+    urn: urn:mrn:iala:pub:g1111-2:ed1.0
+  style: v3
+- id: iala.guideline.0281
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1111-2
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1111-2 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1111-2:ed1.0:e
+  style: v3
+- id: iala.guideline.0282
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1111-3
+    edition: '1.0'
+  representations:
+    human: IALA G1111-3 Ed 1.0
+    urn: urn:mrn:iala:pub:g1111-3:ed1.0
+  style: v3
+- id: iala.guideline.0283
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1111-3
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1111-3 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1111-3:ed1.0:e
+  style: v3
+- id: iala.guideline.0284
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1111-4
+    edition: '1.0'
+  representations:
+    human: IALA G1111-4 Ed 1.0
+    urn: urn:mrn:iala:pub:g1111-4:ed1.0
+  style: v3
+- id: iala.guideline.0285
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1111-4
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1111-4 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1111-4:ed1.0:e
+  style: v3
+- id: iala.guideline.0286
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1111-5
+    edition: '1.0'
+  representations:
+    human: IALA G1111-5 Ed 1.0
+    urn: urn:mrn:iala:pub:g1111-5:ed1.0
+  style: v3
+- id: iala.guideline.0287
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1111-5
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1111-5 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1111-5:ed1.0:e
+  style: v3
+- id: iala.guideline.0288
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1111-6
+    edition: '1.0'
+  representations:
+    human: IALA G1111-6 Ed 1.0
+    urn: urn:mrn:iala:pub:g1111-6:ed1.0
+  style: v3
+- id: iala.guideline.0289
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1111-6
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1111-6 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1111-6:ed1.0:e
+  style: v3
+- id: iala.guideline.0290
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1111-7
+    edition: '1.0'
+  representations:
+    human: IALA G1111-7 Ed 1.0
+    urn: urn:mrn:iala:pub:g1111-7:ed1.0
+  style: v3
+- id: iala.guideline.0291
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1111-7
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1111-7 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1111-7:ed1.0:e
+  style: v3
+- id: iala.guideline.0292
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1111-8
+    edition: '1.0'
+  representations:
+    human: IALA G1111-8 Ed 1.0
+    urn: urn:mrn:iala:pub:g1111-8:ed1.0
+  style: v3
+- id: iala.guideline.0293
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1111-8
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1111-8 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1111-8:ed1.0:e
+  style: v3
+- id: iala.guideline.0294
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1111-9
+    edition: '1.0'
+  representations:
+    human: IALA G1111-9 Ed 1.0
+    urn: urn:mrn:iala:pub:g1111-9:ed1.0
+  style: v3
+- id: iala.guideline.0295
+  identifier:
+    _type: pubid:iala:guideline
+    number: 1111-9
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1111-9 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1111-9:ed1.0:e
+  style: v3
+- id: iala.guideline.0296
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1112'
+    edition: '1.1'
+  representations:
+    human: IALA G1112 Ed 1.1
+    urn: urn:mrn:iala:pub:g1112:ed1.1
+  style: v3
+- id: iala.guideline.0297
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1112'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1112 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1112:ed1.1:e
+  style: v3
+- id: iala.guideline.0298
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1113'
+    edition: '1.1'
+  representations:
+    human: IALA G1113 Ed 1.1
+    urn: urn:mrn:iala:pub:g1113:ed1.1
+  style: v3
+- id: iala.guideline.0299
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1113'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1113 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1113:ed1.1:e
+  style: v3
+- id: iala.guideline.0300
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1114'
+    edition: '1.1'
+  representations:
+    human: IALA G1114 Ed 1.1
+    urn: urn:mrn:iala:pub:g1114:ed1.1
+  style: v3
+- id: iala.guideline.0301
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1114'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1114 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1114:ed1.1:e
+  style: v3
+- id: iala.guideline.0302
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1115'
+    edition: '1.1'
+  representations:
+    human: IALA G1115 Ed 1.1
+    urn: urn:mrn:iala:pub:g1115:ed1.1
+  style: v3
+- id: iala.guideline.0303
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1115'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1115 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1115:ed1.1:e
+  style: v3
+- id: iala.guideline.0304
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1116'
+    edition: '1.1'
+  representations:
+    human: IALA G1116 Ed 1.1
+    urn: urn:mrn:iala:pub:g1116:ed1.1
+  style: v3
+- id: iala.guideline.0305
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1116'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1116 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1116:ed1.1:e
+  style: v3
+- id: iala.guideline.0306
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1117'
+    edition: '4.0'
+  representations:
+    human: IALA G1117 Ed 4.0
+    urn: urn:mrn:iala:pub:g1117:ed4.0
+  style: v3
+- id: iala.guideline.0307
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1117'
+    edition: '4.0'
+    language: E
+  representations:
+    human: IALA G1117 Ed 4.0 (E)
+    urn: urn:mrn:iala:pub:g1117:ed4.0:e
+  style: v3
+- id: iala.guideline.0308
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1118'
+    edition: '1.1'
+  representations:
+    human: IALA G1118 Ed 1.1
+    urn: urn:mrn:iala:pub:g1118:ed1.1
+  style: v3
+- id: iala.guideline.0309
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1118'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1118 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1118:ed1.1:e
+  style: v3
+- id: iala.guideline.0310
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1119'
+    edition: '1.1'
+  representations:
+    human: IALA G1119 Ed 1.1
+    urn: urn:mrn:iala:pub:g1119:ed1.1
+  style: v3
+- id: iala.guideline.0311
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1119'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1119 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1119:ed1.1:e
+  style: v3
+- id: iala.guideline.0312
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1120'
+    edition: '1.1'
+  representations:
+    human: IALA G1120 Ed 1.1
+    urn: urn:mrn:iala:pub:g1120:ed1.1
+  style: v3
+- id: iala.guideline.0313
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1120'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1120 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1120:ed1.1:e
+  style: v3
+- id: iala.guideline.0314
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1121'
+    edition: '1.2'
+  representations:
+    human: IALA G1121 Ed 1.2
+    urn: urn:mrn:iala:pub:g1121:ed1.2
+  style: v3
+- id: iala.guideline.0315
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1121'
+    edition: '1.2'
+    language: E
+  representations:
+    human: IALA G1121 Ed 1.2 (E)
+    urn: urn:mrn:iala:pub:g1121:ed1.2:e
+  style: v3
+- id: iala.guideline.0316
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1122'
+    edition: '1.1'
+  representations:
+    human: IALA G1122 Ed 1.1
+    urn: urn:mrn:iala:pub:g1122:ed1.1
+  style: v3
+- id: iala.guideline.0317
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1122'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1122 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1122:ed1.1:e
+  style: v3
+- id: iala.guideline.0318
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1123'
+    edition: '2.1'
+  representations:
+    human: IALA G1123 Ed 2.1
+    urn: urn:mrn:iala:pub:g1123:ed2.1
+  style: v3
+- id: iala.guideline.0319
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1123'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1123 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1123:ed2.1:e
+  style: v3
+- id: iala.guideline.0320
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1124'
+    edition: '2.1'
+  representations:
+    human: IALA G1124 Ed 2.1
+    urn: urn:mrn:iala:pub:g1124:ed2.1
+  style: v3
+- id: iala.guideline.0321
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1124'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1124 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1124:ed2.1:e
+  style: v3
+- id: iala.guideline.0322
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1125'
+    edition: '1.1'
+  representations:
+    human: IALA G1125 Ed 1.1
+    urn: urn:mrn:iala:pub:g1125:ed1.1
+  style: v3
+- id: iala.guideline.0323
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1125'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1125 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1125:ed1.1:e
+  style: v3
+- id: iala.guideline.0324
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1126'
+    edition: '1.1'
+  representations:
+    human: IALA G1126 Ed 1.1
+    urn: urn:mrn:iala:pub:g1126:ed1.1
+  style: v3
+- id: iala.guideline.0325
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1126'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1126 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1126:ed1.1:e
+  style: v3
+- id: iala.guideline.0326
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1127'
+    edition: '2.1'
+  representations:
+    human: IALA G1127 Ed 2.1
+    urn: urn:mrn:iala:pub:g1127:ed2.1
+  style: v3
+- id: iala.guideline.0327
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1127'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1127 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1127:ed2.1:e
+  style: v3
+- id: iala.guideline.0336
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1128'
+    edition: '1.6'
+  representations:
+    human: IALA G1128 Ed 1.6
+    urn: urn:mrn:iala:pub:g1128:ed1.6
+  style: v3
+- id: iala.guideline.0337
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1128'
+    edition: '1.6'
+    language: E
+  representations:
+    human: IALA G1128 Ed 1.6 (E)
+    urn: urn:mrn:iala:pub:g1128:ed1.6:e
+  style: v3
+- id: iala.guideline.0338
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1129'
+    edition: '2.0'
+  representations:
+    human: IALA G1129 Ed 2.0
+    urn: urn:mrn:iala:pub:g1129:ed2.0
+  style: v3
+- id: iala.guideline.0339
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1129'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA G1129 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:g1129:ed2.0:e
+  style: v3
+- id: iala.guideline.0340
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1130'
+    edition: '2.0'
+  representations:
+    human: IALA G1130 Ed 2.0
+    urn: urn:mrn:iala:pub:g1130:ed2.0
+  style: v3
+- id: iala.guideline.0341
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1130'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA G1130 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:g1130:ed2.0:e
+  style: v3
+- id: iala.guideline.0342
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1131'
+    edition: '1.1'
+  representations:
+    human: IALA G1131 Ed 1.1
+    urn: urn:mrn:iala:pub:g1131:ed1.1
+  style: v3
+- id: iala.guideline.0343
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1131'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1131 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1131:ed1.1:e
+  style: v3
+- id: iala.guideline.0344
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1132'
+    edition: '2.2'
+  representations:
+    human: IALA G1132 Ed 2.2
+    urn: urn:mrn:iala:pub:g1132:ed2.2
+  style: v3
+- id: iala.guideline.0345
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1132'
+    edition: '2.2'
+    language: E
+  representations:
+    human: IALA G1132 Ed 2.2 (E)
+    urn: urn:mrn:iala:pub:g1132:ed2.2:e
+  style: v3
+- id: iala.guideline.0346
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1133'
+    edition: '1.1'
+  representations:
+    human: IALA G1133 Ed 1.1
+    urn: urn:mrn:iala:pub:g1133:ed1.1
+  style: v3
+- id: iala.guideline.0347
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1133'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1133 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1133:ed1.1:e
+  style: v3
+- id: iala.guideline.0348
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1134'
+    edition: '2.1'
+  representations:
+    human: IALA G1134 Ed 2.1
+    urn: urn:mrn:iala:pub:g1134:ed2.1
+  style: v3
+- id: iala.guideline.0349
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1134'
+    edition: '2.1'
+    language: E
+  representations:
+    human: IALA G1134 Ed 2.1 (E)
+    urn: urn:mrn:iala:pub:g1134:ed2.1:e
+  style: v3
+- id: iala.guideline.0350
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1135'
+    edition: '3.1'
+  representations:
+    human: IALA G1135 Ed 3.1
+    urn: urn:mrn:iala:pub:g1135:ed3.1
+  style: v3
+- id: iala.guideline.0351
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1135'
+    edition: '3.1'
+    language: E
+  representations:
+    human: IALA G1135 Ed 3.1 (E)
+    urn: urn:mrn:iala:pub:g1135:ed3.1:e
+  style: v3
+- id: iala.guideline.0352
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1137'
+    edition: '1.1'
+  representations:
+    human: IALA G1137 Ed 1.1
+    urn: urn:mrn:iala:pub:g1137:ed1.1
+  style: v3
+- id: iala.guideline.0353
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1137'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1137 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1137:ed1.1:e
+  style: v3
+- id: iala.guideline.0354
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1138'
+    edition: '2.0'
+  representations:
+    human: IALA G1138 Ed 2.0
+    urn: urn:mrn:iala:pub:g1138:ed2.0
+  style: v3
+- id: iala.guideline.0355
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1138'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA G1138 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:g1138:ed2.0:e
+  style: v3
+- id: iala.guideline.0356
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1140'
+    edition: '1.1'
+  representations:
+    human: IALA G1140 Ed 1.1
+    urn: urn:mrn:iala:pub:g1140:ed1.1
+  style: v3
+- id: iala.guideline.0357
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1140'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1140 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1140:ed1.1:e
+  style: v3
+- id: iala.guideline.0358
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1142'
+    edition: '1.1'
+  representations:
+    human: IALA G1142 Ed 1.1
+    urn: urn:mrn:iala:pub:g1142:ed1.1
+  style: v3
+- id: iala.guideline.0359
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1142'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1142 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1142:ed1.1:e
+  style: v3
+- id: iala.guideline.0360
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1144'
+    edition: '1.1'
+  representations:
+    human: IALA G1144 Ed 1.1
+    urn: urn:mrn:iala:pub:g1144:ed1.1
+  style: v3
+- id: iala.guideline.0361
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1144'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1144 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1144:ed1.1:e
+  style: v3
+- id: iala.guideline.0362
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1145'
+    edition: '1.1'
+  representations:
+    human: IALA G1145 Ed 1.1
+    urn: urn:mrn:iala:pub:g1145:ed1.1
+  style: v3
+- id: iala.guideline.0363
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1145'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1145 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1145:ed1.1:e
+  style: v3
+- id: iala.guideline.0364
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1147'
+    edition: '1.1'
+  representations:
+    human: IALA G1147 Ed 1.1
+    urn: urn:mrn:iala:pub:g1147:ed1.1
+  style: v3
+- id: iala.guideline.0365
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1147'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1147 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1147:ed1.1:e
+  style: v3
+- id: iala.guideline.0366
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1148'
+    edition: '1.1'
+  representations:
+    human: IALA G1148 Ed 1.1
+    urn: urn:mrn:iala:pub:g1148:ed1.1
+  style: v3
+- id: iala.guideline.0367
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1148'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1148 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1148:ed1.1:e
+  style: v3
+- id: iala.guideline.0368
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1149'
+    edition: '1.1'
+  representations:
+    human: IALA G1149 Ed 1.1
+    urn: urn:mrn:iala:pub:g1149:ed1.1
+  style: v3
+- id: iala.guideline.0369
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1149'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1149 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1149:ed1.1:e
+  style: v3
+- id: iala.guideline.0370
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1151'
+    edition: '1.1'
+  representations:
+    human: IALA G1151 Ed 1.1
+    urn: urn:mrn:iala:pub:g1151:ed1.1
+  style: v3
+- id: iala.guideline.0371
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1151'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1151 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1151:ed1.1:e
+  style: v3
+- id: iala.guideline.0372
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1152'
+    edition: '1.1'
+  representations:
+    human: IALA G1152 Ed 1.1
+    urn: urn:mrn:iala:pub:g1152:ed1.1
+  style: v3
+- id: iala.guideline.0373
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1152'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1152 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1152:ed1.1:e
+  style: v3
+- id: iala.guideline.0374
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1153'
+    edition: '2.0'
+  representations:
+    human: IALA G1153 Ed 2.0
+    urn: urn:mrn:iala:pub:g1153:ed2.0
+  style: v3
+- id: iala.guideline.0375
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1153'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA G1153 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:g1153:ed2.0:e
+  style: v3
+- id: iala.guideline.0376
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1157'
+    edition: '2.0'
+  representations:
+    human: IALA G1157 Ed 2.0
+    urn: urn:mrn:iala:pub:g1157:ed2.0
+  style: v3
+- id: iala.guideline.0377
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1157'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA G1157 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:g1157:ed2.0:e
+  style: v3
+- id: iala.guideline.0378
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1159'
+    edition: '2.0'
+  representations:
+    human: IALA G1159 Ed 2.0
+    urn: urn:mrn:iala:pub:g1159:ed2.0
+  style: v3
+- id: iala.guideline.0379
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1159'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA G1159 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:g1159:ed2.0:e
+  style: v3
+- id: iala.guideline.0380
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1165'
+    edition: '1.2'
+  representations:
+    human: IALA G1165 Ed 1.2
+    urn: urn:mrn:iala:pub:g1165:ed1.2
+  style: v3
+- id: iala.guideline.0381
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1165'
+    edition: '1.2'
+    language: E
+  representations:
+    human: IALA G1165 Ed 1.2 (E)
+    urn: urn:mrn:iala:pub:g1165:ed1.2:e
+  style: v3
+- id: iala.guideline.0382
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1166'
+    edition: '1.1'
+  representations:
+    human: IALA G1166 Ed 1.1
+    urn: urn:mrn:iala:pub:g1166:ed1.1
+  style: v3
+- id: iala.guideline.0383
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1166'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1166 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1166:ed1.1:e
+  style: v3
+- id: iala.guideline.0384
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1167'
+    edition: '1.1'
+  representations:
+    human: IALA G1167 Ed 1.1
+    urn: urn:mrn:iala:pub:g1167:ed1.1
+  style: v3
+- id: iala.guideline.0385
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1167'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1167 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1167:ed1.1:e
+  style: v3
+- id: iala.guideline.0386
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1168'
+    edition: '1.1'
+  representations:
+    human: IALA G1168 Ed 1.1
+    urn: urn:mrn:iala:pub:g1168:ed1.1
+  style: v3
+- id: iala.guideline.0387
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1168'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1168 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1168:ed1.1:e
+  style: v3
+- id: iala.guideline.0388
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1169'
+    edition: '1.1'
+  representations:
+    human: IALA G1169 Ed 1.1
+    urn: urn:mrn:iala:pub:g1169:ed1.1
+  style: v3
+- id: iala.guideline.0389
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1169'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1169 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1169:ed1.1:e
+  style: v3
+- id: iala.guideline.0390
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1170'
+    edition: '1.1'
+  representations:
+    human: IALA G1170 Ed 1.1
+    urn: urn:mrn:iala:pub:g1170:ed1.1
+  style: v3
+- id: iala.guideline.0391
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1170'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1170 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1170:ed1.1:e
+  style: v3
+- id: iala.guideline.0392
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1171'
+    edition: '1.1'
+  representations:
+    human: IALA G1171 Ed 1.1
+    urn: urn:mrn:iala:pub:g1171:ed1.1
+  style: v3
+- id: iala.guideline.0393
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1171'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1171 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1171:ed1.1:e
+  style: v3
+- id: iala.guideline.0394
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1172'
+    edition: '1.0'
+  representations:
+    human: IALA G1172 Ed 1.0
+    urn: urn:mrn:iala:pub:g1172:ed1.0
+  style: v3
+- id: iala.guideline.0395
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1172'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1172 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1172:ed1.0:e
+  style: v3
+- id: iala.guideline.0396
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1173'
+    edition: '1.0'
+  representations:
+    human: IALA G1173 Ed 1.0
+    urn: urn:mrn:iala:pub:g1173:ed1.0
+  style: v3
+- id: iala.guideline.0397
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1173'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1173 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1173:ed1.0:e
+  style: v3
+- id: iala.guideline.0398
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1174'
+    edition: '1.0'
+  representations:
+    human: IALA G1174 Ed 1.0
+    urn: urn:mrn:iala:pub:g1174:ed1.0
+  style: v3
+- id: iala.guideline.0399
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1174'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1174 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1174:ed1.0:e
+  style: v3
+- id: iala.guideline.0400
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1175'
+    edition: '2.0'
+  representations:
+    human: IALA G1175 Ed 2.0
+    urn: urn:mrn:iala:pub:g1175:ed2.0
+  style: v3
+- id: iala.guideline.0401
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1175'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA G1175 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:g1175:ed2.0:e
+  style: v3
+- id: iala.guideline.0402
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1176'
+    edition: '1.0'
+  representations:
+    human: IALA G1176 Ed 1.0
+    urn: urn:mrn:iala:pub:g1176:ed1.0
+  style: v3
+- id: iala.guideline.0403
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1176'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1176 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1176:ed1.0:e
+  style: v3
+- id: iala.guideline.0404
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1177'
+    edition: '2.0'
+  representations:
+    human: IALA G1177 Ed 2.0
+    urn: urn:mrn:iala:pub:g1177:ed2.0
+  style: v3
+- id: iala.guideline.0405
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1177'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA G1177 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:g1177:ed2.0:e
+  style: v3
+- id: iala.guideline.0406
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1178'
+    edition: '1.0'
+  representations:
+    human: IALA G1178 Ed 1.0
+    urn: urn:mrn:iala:pub:g1178:ed1.0
+  style: v3
+- id: iala.guideline.0407
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1178'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1178 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1178:ed1.0:e
+  style: v3
+- id: iala.guideline.0408
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1179'
+    edition: '1.0'
+  representations:
+    human: IALA G1179 Ed 1.0
+    urn: urn:mrn:iala:pub:g1179:ed1.0
+  style: v3
+- id: iala.guideline.0409
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1179'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1179 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1179:ed1.0:e
+  style: v3
+- id: iala.guideline.0410
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1180'
+    edition: '1.0'
+  representations:
+    human: IALA G1180 Ed 1.0
+    urn: urn:mrn:iala:pub:g1180:ed1.0
+  style: v3
+- id: iala.guideline.0411
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1180'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1180 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1180:ed1.0:e
+  style: v3
+- id: iala.guideline.0412
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1181'
+    edition: '1.0'
+  representations:
+    human: IALA G1181 Ed 1.0
+    urn: urn:mrn:iala:pub:g1181:ed1.0
+  style: v3
+- id: iala.guideline.0413
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1181'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1181 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1181:ed1.0:e
+  style: v3
+- id: iala.guideline.0414
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1182'
+    edition: '1.0'
+  representations:
+    human: IALA G1182 Ed 1.0
+    urn: urn:mrn:iala:pub:g1182:ed1.0
+  style: v3
+- id: iala.guideline.0415
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1182'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1182 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1182:ed1.0:e
+  style: v3
+- id: iala.guideline.0416
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1183'
+    edition: '1.1'
+  representations:
+    human: IALA G1183 Ed 1.1
+    urn: urn:mrn:iala:pub:g1183:ed1.1
+  style: v3
+- id: iala.guideline.0417
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1183'
+    edition: '1.1'
+    language: E
+  representations:
+    human: IALA G1183 Ed 1.1 (E)
+    urn: urn:mrn:iala:pub:g1183:ed1.1:e
+  style: v3
+- id: iala.guideline.0418
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1184'
+    edition: '1.0'
+  representations:
+    human: IALA G1184 Ed 1.0
+    urn: urn:mrn:iala:pub:g1184:ed1.0
+  style: v3
+- id: iala.guideline.0419
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1184'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1184 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1184:ed1.0:e
+  style: v3
+- id: iala.guideline.0420
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1185'
+    edition: '2.0'
+  representations:
+    human: IALA G1185 Ed 2.0
+    urn: urn:mrn:iala:pub:g1185:ed2.0
+  style: v3
+- id: iala.guideline.0421
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1185'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA G1185 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:g1185:ed2.0:e
+  style: v3
+- id: iala.guideline.0422
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1186'
+    edition: '1.0'
+  representations:
+    human: IALA G1186 Ed 1.0
+    urn: urn:mrn:iala:pub:g1186:ed1.0
+  style: v3
+- id: iala.guideline.0423
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1186'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1186 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1186:ed1.0:e
+  style: v3
+- id: iala.guideline.0424
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1187'
+    edition: '1.0'
+  representations:
+    human: IALA G1187 Ed 1.0
+    urn: urn:mrn:iala:pub:g1187:ed1.0
+  style: v3
+- id: iala.guideline.0425
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1187'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1187 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1187:ed1.0:e
+  style: v3
+- id: iala.guideline.0426
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1188'
+    edition: '1.0'
+  representations:
+    human: IALA G1188 Ed 1.0
+    urn: urn:mrn:iala:pub:g1188:ed1.0
+  style: v3
+- id: iala.guideline.0427
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1188'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1188 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1188:ed1.0:e
+  style: v3
+- id: iala.guideline.0428
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1189'
+    edition: '1.0'
+  representations:
+    human: IALA G1189 Ed 1.0
+    urn: urn:mrn:iala:pub:g1189:ed1.0
+  style: v3
+- id: iala.guideline.0429
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1189'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1189 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1189:ed1.0:e
+  style: v3
+- id: iala.guideline.0430
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1190'
+    edition: '1.0'
+  representations:
+    human: IALA G1190 Ed 1.0
+    urn: urn:mrn:iala:pub:g1190:ed1.0
+  style: v3
+- id: iala.guideline.0431
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1190'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1190 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1190:ed1.0:e
+  style: v3
+- id: iala.guideline.0432
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1191'
+    edition: '1.2'
+  representations:
+    human: IALA G1191 Ed 1.2
+    urn: urn:mrn:iala:pub:g1191:ed1.2
+  style: v3
+- id: iala.guideline.0433
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1191'
+    edition: '1.2'
+    language: E
+  representations:
+    human: IALA G1191 Ed 1.2 (E)
+    urn: urn:mrn:iala:pub:g1191:ed1.2:e
+  style: v3
+- id: iala.guideline.0434
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1192'
+    edition: '1.0'
+  representations:
+    human: IALA G1192 Ed 1.0
+    urn: urn:mrn:iala:pub:g1192:ed1.0
+  style: v3
+- id: iala.guideline.0435
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1192'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1192 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1192:ed1.0:e
+  style: v3
+- id: iala.guideline.0436
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1193'
+    edition: '1.0'
+  representations:
+    human: IALA G1193 Ed 1.0
+    urn: urn:mrn:iala:pub:g1193:ed1.0
+  style: v3
+- id: iala.guideline.0437
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1193'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1193 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1193:ed1.0:e
+  style: v3
+- id: iala.guideline.0438
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1194'
+    edition: '1.0'
+  representations:
+    human: IALA G1194 Ed 1.0
+    urn: urn:mrn:iala:pub:g1194:ed1.0
+  style: v3
+- id: iala.guideline.0439
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1194'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1194 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1194:ed1.0:e
+  style: v3
+- id: iala.guideline.0440
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1195'
+    edition: '1.0'
+  representations:
+    human: IALA G1195 Ed 1.0
+    urn: urn:mrn:iala:pub:g1195:ed1.0
+  style: v3
+  non_normalized_aliases:
+  - spelling: urn:mrn:iala:pub:g1195:ed1.0
+    style: v3
+- id: iala.guideline.0441
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1195'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1195 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1195:ed1.0:e
+  style: v3
+- id: iala.guideline.0442
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1196'
+    edition: '1.0'
+  representations:
+    human: IALA G1196 Ed 1.0
+    urn: urn:mrn:iala:pub:g1196:ed1.0
+  style: v3
+- id: iala.guideline.0443
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1196'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1196 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1196:ed1.0:e
+  style: v3
+- id: iala.guideline.0444
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1197'
+    edition: '1.0'
+  representations:
+    human: IALA G1197 Ed 1.0
+    urn: urn:mrn:iala:pub:g1197:ed1.0
+  style: v3
+- id: iala.guideline.0445
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1197'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1197 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1197:ed1.0:e
+  style: v3
+- id: iala.guideline.0446
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1198'
+    edition: '1.0'
+  representations:
+    human: IALA G1198 Ed 1.0
+    urn: urn:mrn:iala:pub:g1198:ed1.0
+  style: v3
+- id: iala.guideline.0447
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1198'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1198 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1198:ed1.0:e
+  style: v3
+- id: iala.guideline.0448
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1199'
+    edition: '1.0'
+  representations:
+    human: IALA G1199 Ed 1.0
+    urn: urn:mrn:iala:pub:g1199:ed1.0
+  style: v3
+  non_normalized_aliases:
+  - spelling: urn:mrn:iala:pub:g1199:ed1.0
+    style: v3
+- id: iala.guideline.0449
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1199'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1199 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1199:ed1.0:e
+  style: v3
+- id: iala.guideline.0450
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1200'
+    edition: '1.0'
+  representations:
+    human: IALA G1200 Ed 1.0
+    urn: urn:mrn:iala:pub:g1200:ed1.0
+  style: v3
+- id: iala.guideline.0451
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1200'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1200 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1200:ed1.0:e
+  style: v3
+- id: iala.guideline.0452
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1201'
+    edition: '1.0'
+  representations:
+    human: IALA G1201 Ed 1.0
+    urn: urn:mrn:iala:pub:g1201:ed1.0
+  style: v3
+  non_normalized_aliases:
+  - spelling: urn:mrn:iala:pub:g1201:ed1.0
+    style: v3
+- id: iala.guideline.0453
+  identifier:
+    _type: pubid:iala:guideline
+    number: '1201'
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA G1201 Ed 1.0 (E)
+    urn: urn:mrn:iala:pub:g1201:ed1.0:e
+  style: v3

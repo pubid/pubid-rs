@@ -93,3 +93,28 @@ testsuite_ref_iho: 9dcf0eb34b3600d9b0667f7b211045a3f78103cf
 # ones. The flavor ships the reconciled S-158 model (pubid#774/#775/
 # #776) against this envelope.
 grammar_ref_iho: 91024661c7ea54b97e3e28ccddc13bf5c0652375
+# pubid-grammar main (c1a11bf1e54f, the IALA S-100-family
+# product-specification commit, mirroring the gem's round at pubid
+# a0f8e64f / 2.0.53, which rides on the iala slug hand-off at
+# 4f5208b): the iala.json envelope was byte-copied from here (grammar
+# 0.2.0 - the slug_identifier alternative for the codeless
+# publications of gem #772, LAST in the ordered choice so the typed
+# codes keep priority, and the s100_identifier / s100_annex_identifier
+# forms for the IHO-granted S-201..S-299 range of gem #777 with the
+# grant bounding the grammar and the sub-numbered annex letters,
+# baked at parsanol 1.5.1.0, artifact edition 2). A flavor-only pin,
+# like the eu/arxiv/ansi/wmo/iho ones: every other artifact that
+# exists at c1a11bf is byte-identical to the earlier pins above.
+grammar_ref_iala: c1a11bf1e54f854218bd66eef8b877f1ad11c50f
+# pubid-testsuite main (6179c23b117d, the iala round freeze at pubid
+# acae7a620e95, the 2.0.54 release span): the tests/iala corpus was
+# byte-copied from here (10 corpus files, _negative.yaml,
+# _status.yaml; status clean, known_mismatches 0 — 880 gated cases
+# including the new pubid:iala:product-specification rows, the
+# S-201 ANNEX B2 annex sub-number, the 162 slug-publication rows and
+# the 6 grant-bound rejects). A flavor-only testsuite pin, like the
+# wmo and iho ones: the tests/iala rows at the generic testsuite_ref
+# still record the pre-round corpus (no publication or
+# product_specification files), so the generic --all checkout run
+# skips the flavor and the dedicated pinned-ref run gates it.
+testsuite_ref_iala: 6179c23b117dd33d24e82b5ec6832618bce157f1

@@ -108,6 +108,9 @@ pub enum Identifier {
     /// model). The flavor is ported; its testsuite corpus slice waits
     /// on the S-158 re-key round, so the vendored gate skips it.
     Iho(crate::iho::IhoIdentifier),
+    /// An IALA identifier (the typed series, the S-2xx product
+    /// specifications and the codeless slug publications).
+    Iala(crate::iala::IalaIdentifier),
 }
 
 impl Identifier {
@@ -141,6 +144,7 @@ impl Identifier {
             Identifier::Arxiv(id) => id.to_hash(),
             Identifier::Wmo(id) => id.to_hash(),
             Identifier::Iho(id) => id.to_hash(),
+            Identifier::Iala(id) => id.to_hash(),
         }
     }
 
@@ -174,6 +178,7 @@ impl Identifier {
             Identifier::Arxiv(id) => id.to_human(),
             Identifier::Wmo(id) => id.to_human(),
             Identifier::Iho(id) => id.to_human(),
+            Identifier::Iala(id) => id.to_human(),
         }
     }
 
@@ -207,6 +212,7 @@ impl Identifier {
             Identifier::Arxiv(id) => Some(id.to_urn()),
             Identifier::Wmo(id) => Some(id.to_urn()),
             Identifier::Iho(id) => id.to_urn().ok(),
+            Identifier::Iala(id) => id.to_urn(),
         }
     }
 
@@ -270,6 +276,9 @@ impl Identifier {
             _ if kind.starts_with(crate::iho::IhoKind::KIND_PREFIX) => {
                 Ok(Identifier::Iho(crate::iho::IhoIdentifier::from_hash(hash)?))
             }
+            _ if kind.starts_with(crate::iala::IalaKind::KIND_PREFIX) => Ok(Identifier::Iala(
+                crate::iala::IalaIdentifier::from_hash(hash)?,
+            )),
             IreIdentifier::TYPE => Ok(Identifier::Ire(IreIdentifier::from_hash(hash)?)),
             _ if kind.starts_with(ApiKind::KIND_PREFIX) => {
                 Ok(Identifier::Api(ApiIdentifier::from_hash(hash)?))
@@ -359,6 +368,7 @@ flavor_impls!(
     "arxiv" => ArxivImpl, Arxiv, ArxivIdentifier,
     "wmo" => WmoImpl, Wmo, WmoIdentifier,
     "iho" => IhoImpl, Iho, crate::iho::IhoIdentifier,
+    "iala" => IalaImpl, Iala, crate::iala::IalaIdentifier,
 );
 
 // ---------------------------------------------------------------------------
@@ -654,6 +664,20 @@ vendored_corpora!(
         ("standard.yaml", IHO_STANDARD),
         ("_negative.yaml", IHO_NEGATIVE),
         ("_status.yaml", IHO_STATUS),
+    ],
+    "iala" => [
+        ("annex.yaml", IALA_ANNEX),
+        ("general_assembly.yaml", IALA_GENERAL_ASSEMBLY),
+        ("guideline.yaml", IALA_GUIDELINE),
+        ("letter.yaml", IALA_LETTER),
+        ("manual.yaml", IALA_MANUAL),
+        ("model_course.yaml", IALA_MODEL_COURSE),
+        ("product_specification.yaml", IALA_PRODUCT_SPECIFICATION),
+        ("publication.yaml", IALA_PUBLICATION),
+        ("recommendation.yaml", IALA_RECOMMENDATION),
+        ("standard.yaml", IALA_STANDARD),
+        ("_negative.yaml", IALA_NEGATIVE),
+        ("_status.yaml", IALA_STATUS),
     ],
 );
 
