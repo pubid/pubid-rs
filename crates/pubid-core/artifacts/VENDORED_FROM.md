@@ -40,7 +40,7 @@ pair):
 | jis    | `e06886e29d8b73b9492bc6d6146d8160485604568059c288c6fdfe9339c2a591` |
 | plateau    | `9a98935831f11105e22a7d770b098b08c3d26b76f314452c6ca37d896cec93a7` |
 | wmo    | `b8c08b293b8f33d68a044c1672c5930f7015d02e29f4b5b2a1d7148971b79f2c` |
-| iho    | `604a9d027565eeb7284815b85a15e839d3dd084c2e8a6cdf495b8014a9405df4` |
+| iho    | `ebe28be0ece78b8fe6cbf987e66f17eaa8e64d2ed295baf877b4644cba5345f7` |
 
 Every envelope is artifact edition 2, shape `parsanol-tree/v2`, baked at
 parsanol compiler 1.5.1.0 (the #129 re-seal round: the doi grammar is
@@ -105,13 +105,21 @@ own pin (`grammar_ref_wmo` in `/pins.yaml`) and its own drift gate.
 Baked at parsanol 1.5.1.0, artifact edition 2; loads and self-tests
 green (43/43) under the locked `parsanol = "0.20"` runtime.
 
-The `iho` envelope comes from a flavor-only grammar ref (`5b3b035e6286`,
-pubid-grammar main: the IALA slug-form commit; the envelope is
-byte-identical from `4c964ea`, the parsanol 1.5.1.0 toolchain rebake,
-forward — `grammar_ref_iho` in `/pins.yaml`). The flavor is PORTED
-(`crates/pubid-core/src/iho.rs`, carrying the S-158 `checks_for` series
-model, pubid#774/#775), but its testsuite corpus slice is deliberately
-not vendored yet: the `tests/iho` rows at the pinned testsuite refs
-still record the pre-re-key model (the opaque `158:NNN` numbers, the
-`part-S-102` URN segments), so the vendored gate reports the flavor as
-ported-no-slice until the re-key round lands.
+The `iho` envelope comes from a flavor-only grammar ref (`91024661c7ea`,
+pubid-grammar main: the IHO S-158 series-member commit, grammar #143,
+mirroring the gem's S-158 round at pubid 8133a782 / #776 —
+`grammar_ref_iho` in `/pins.yaml`; it started at `5b3b035e6286`, the
+pre-checks envelope, and moved with the re-bake exactly as that pin's
+note required). Grammar 0.4.0: the colon form binds the typed
+`checks_for` capture instead of gluing the opaque `158:NNN` number,
+and the draft-era spellings bind `part`. Baked at parsanol 1.5.1.0,
+artifact edition 2; byte-identical to the gem's `data/parg/iho.json`
+provenance twin at the same commit. The flavor
+(`crates/pubid-core/src/iho.rs`) is RECONCILED against the landed gem
+reference (the S-158 `checks_for` member model, pubid#774/#775/#776:
+the per-series MRN guidance types spec/per/reg with the B/C legacy
+emission, the marker-form trailing atoms, and the checks_for_face
+spelling model). Its testsuite corpus slice is deliberately not
+vendored yet: the `tests/iho` rows at the pinned testsuite refs still
+record the pre-re-key model, so the vendored gate reports the flavor
+as ported-no-slice until the re-key round lands.

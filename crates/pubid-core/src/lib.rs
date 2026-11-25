@@ -76,7 +76,7 @@ pub use gb::{GbIdentifier, GbKind};
 pub use gost::{GostIdentifier, GostKind};
 pub use iana::IanaIdentifier;
 pub use ietf::{IetfIdentifier, IetfKind};
-pub use iho::{ChecksFace, IhoIdentifier, IhoKind};
+pub use iho::{IhoIdentifier, IhoKind};
 pub use ire::IreIdentifier;
 pub use isbn::IsbnIdentifier;
 pub use jis::JisIdentifier;
