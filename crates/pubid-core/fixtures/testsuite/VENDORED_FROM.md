@@ -215,3 +215,27 @@ export, unmodified (clean status, no debt).
   - `annex.yaml` sha256 e591599cfc83d8ae5cc52f51bd3818dc45bb7e7261645012b511cb88f70c0839
   - `publication.yaml` sha256 dbdc03c1007ce93e0ed95089b640e07f818928459c9d0b6456c8d2e6f1925124
   - `standard.yaml` sha256 95d2a85f1b27a06926d8fcd95b49407bac4bb0be4af0c8f964a3d711e10b3362
+
+The iho slice is a byte copy from its own flavor-only testsuite ref:
+`pubid/pubid-testsuite@9dcf0eb34b3600d9b0667f7b211045a3f78103cf`
+(`tests/iho/`, the S-158 re-freeze round at pubid 561ae27693bb — see
+`/pins.yaml`, `testsuite_ref_iho`; the round re-keys the corpus onto
+the landed #774/#775/#776 model: the typed `checks_for` component
+replacing the opaque `158:NNN` numbers, the draft-era part spellings
+unified, and the `urn:mrn:iho:pub:` guidance URNs replacing the
+retired `urn:iho:` emission). The span from `testsuite_ref` (e6cf11b)
+to that ref re-exports adobe/iala/ieee, which this repository's slices
+do not fold back yet, so the iho slice is checked against its own ref.
+Everything here is the testsuite's export, unmodified (clean status,
+known_mismatches 0); the `_debt.yaml` / `_normalization.yaml` exporter
+metadata is not vendored (the corpus loader skips underscore files
+besides `_negative.yaml` / `_status.yaml`).
+
+- iho:
+  - `_negative.yaml` sha256 2289bc64e062a2c9ae7fc697359c5cdafb7980118a314edb4971d5b72b281d25
+  - `_status.yaml` sha256 da8b5c732041f6936d83e8f046b33824cea9c87e149da4d107ae8efd143a050f
+  - `bibliographic.yaml` sha256 98d09bad61068d862a1084927f485854eb3da62179513c3b88b33e2b77faf0d5
+  - `circular_letter.yaml` sha256 d7e6a669b7766c7d7eeef66d77fd560c00c44d09ba1895e03f380a37abfd1a19
+  - `miscellaneous.yaml` sha256 70083ab4527a143a2576c66dba18455b4058b6fcc962f561479b41f660067f14
+  - `publication.yaml` sha256 e2bf0f978e20c68e8a1d3d881b969c0f34b58864c303bc59475808ccd101d5b5
+  - `standard.yaml` sha256 21b591192e316b5afb0a1a573a0487793e06192f2d6c73467ba523591e9031a2

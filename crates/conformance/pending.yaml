@@ -6,14 +6,6 @@
 # ansi slice is regenerated from the reference and needs no marks).
 # Mirrors the gem conformance/pending.yaml at pubid a6c7f8b5 (pubid#760).
 ---
-# pubid#774/#775: the iho flavor is ported WITH the S-158 checks_for
-# model and the migrated urn:mrn:iho:pub:spec: emission, but the
-# testsuite's tests/iho rows at the pinned ref still record the
-# PRE-re-key model (the opaque 158:NNN numbers, the part-S-102 draft
-# spellings, the retired urn:iho: scheme). Every row re-keys when the
-# testsuite corpus round lands; unmark the wildcard then (the
-# pending-satisfied alarm names the ids).
-"iho.*": {reason: "the S-158 re-key round has not landed: the checkout rows record the pre-re-key model and the retired urn:iho: scheme", since: "2026-11-25", ref: "pubid#774/#775 (the testsuite iho re-key round)"}
 # relaton#45: a trailing -YYYY is the year, not a part. These testsuite
 # rows still record part: 'YYYY'; unmark them after the pubid-testsuite
 # ANSI round (the pending-satisfied alarm names them).

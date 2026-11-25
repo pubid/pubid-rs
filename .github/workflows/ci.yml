@@ -25,6 +25,7 @@ jobs:
           echo "grammar_ref_iho=$(sed -n 's/^grammar_ref_iho: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
           echo "testsuite_ref=$(sed -n 's/^testsuite_ref: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
           echo "testsuite_ref_wmo=$(sed -n 's/^testsuite_ref_wmo: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
+          echo "testsuite_ref_iho=$(sed -n 's/^testsuite_ref_iho: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
 
       - name: Checkout pinned pubid-grammar
         uses: actions/checkout@v4
@@ -74,6 +75,13 @@ jobs:
           repository: pubid/pubid-testsuite
           ref: ${{ steps.pins.outputs.testsuite_ref_wmo }}
           path: pubid-testsuite-wmo
+
+      - name: Checkout pinned pubid-testsuite (the iho flavor ref)
+        uses: actions/checkout@v4
+        with:
+          repository: pubid/pubid-testsuite
+          ref: ${{ steps.pins.outputs.testsuite_ref_iho }}
+          path: pubid-testsuite-iho
 
       - name: Vendored artifacts match the pinned grammar ref (drift gate)
         run: |
@@ -129,6 +137,11 @@ jobs:
             # VENDORED_FROM.md) - fold back when the testsuite exports
             # the ANSI year round.
             [ "$flavor" = "ansi" ] && continue
+            # The iho slice is a byte copy of the S-158 re-freeze round
+            # (the #776 re-keyed rows), which postdates the
+            # testsuite_ref pin - it carries its own flavor-only gate
+            # below (see the fixtures VENDORED_FROM.md).
+            [ "$flavor" = "iho" ] && continue
             for file in "$dir"*.yaml; do
               # Vendored-only flavors (e.g. ire) carry no tests/<flavor>/
               # corpus in the testsuite checkout — nothing to drift against.
@@ -146,6 +159,16 @@ jobs:
           # /pins.yaml).
           for file in crates/pubid-core/fixtures/testsuite/wmo/*.yaml; do
             cmp "$file" "pubid-testsuite-wmo/tests/wmo/$(basename "$file")"
+          done
+
+      - name: Vendored iho slice matches its pinned testsuite ref (drift gate)
+        run: |
+          # The iho corpus (the S-158 re-freeze round, the #776
+          # re-keyed rows) postdates the testsuite_ref pin and rides
+          # with the adobe/iala/ieee freezes - it carries its own
+          # flavor-only pin (see /pins.yaml).
+          for file in crates/pubid-core/fixtures/testsuite/iho/*.yaml; do
+            cmp "$file" "pubid-testsuite-iho/tests/iho/$(basename "$file")"
           done
 
       - uses: dtolnay/rust-toolchain@stable
@@ -178,6 +201,14 @@ jobs:
           # --all run above falls back to the vendored slice for wmo;
           # this run gates the flavor against its own pinned corpus.
           cargo run -q -p conformance -- --testsuite pubid-testsuite-wmo/tests --flavor wmo
+
+      - name: Conformance (iho, the pinned testsuite flavor ref)
+        run: |
+          # The testsuite_ref checkout predates the S-158 re-freeze
+          # round, so the --all run above falls back to the vendored
+          # slice for iho; this run gates the flavor against its own
+          # pinned corpus (the re-keyed rows, unmarked pendings).
+          cargo run -q -p conformance -- --testsuite pubid-testsuite-iho/tests --flavor iho
 
       - name: CLI smoke
         run: |

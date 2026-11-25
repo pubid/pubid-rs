@@ -1,0 +1,21 @@
+---
+- id: iho.neg.bibliographic.0001
+  input: IHO B-12 3.0
+  expect:
+    error:
+      code: unclassified
+- id: iho.neg.standard.0001
+  input: 'IHO S-158:'
+  expect:
+    error:
+      code: unclassified
+- id: iho.neg.standard.0002
+  input: IHO S-158:abc
+  expect:
+    error:
+      code: unclassified
+- id: iho.neg.standard.0003
+  input: IHO S-44:5
+  expect:
+    error:
+      code: invalid_argument

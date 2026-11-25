@@ -1,0 +1,199 @@
+---
+- id: iho.publication.0034
+  identifier:
+    _type: pubid:iho:publication
+    number: '1'
+    edition: 1.0.0
+  representations:
+    human: IHO P-1 1.0.0
+    urn: urn:mrn:iho:pub:per:p1:1.0.0
+  style: v3
+- id: iho.publication.0035
+  identifier:
+    _type: pubid:iho:publication
+    number: '1'
+    volume: '21'
+    volume_edition: 1.0.0
+  representations:
+    human: IHO P-1 Vol. 21 1.0.0
+    urn: urn:mrn:iho:pub:per:p1:vol-21:ed-1.0.0
+  style: v3
+  non_normalized_aliases:
+  - spelling: IHO P-1/21 1.0.0
+    style: v3
+- id: iho.publication.0036
+  identifier:
+    _type: pubid:iho:publication
+    number: '1'
+    volume: '22'
+    volume_edition: 1.0.0
+  representations:
+    human: IHO P-1 Vol. 22 1.0.0
+    urn: urn:mrn:iho:pub:per:p1:vol-22:ed-1.0.0
+  style: v3
+  non_normalized_aliases:
+  - spelling: IHO P-1/22 1.0.0
+    style: v3
+- id: iho.publication.0037
+  identifier:
+    _type: pubid:iho:publication
+    number: '1'
+    volume: '30'
+  representations:
+    human: IHO P-1 Vol. 30
+    urn: urn:mrn:iho:pub:per:p1:vol-30
+  style: v3
+  non_normalized_aliases:
+  - spelling: IHO P-1/30
+    style: v3
+- id: iho.publication.0038
+  identifier:
+    _type: pubid:iho:publication
+    number: '1'
+    volume: '30'
+    issue: '2'
+  representations:
+    human: IHO P-1 Vol. 30 (2)
+    urn: urn:mrn:iho:pub:per:p1:vol-30:issue-2
+  style: v3
+  non_normalized_aliases:
+  - spelling: IHO P-1 Vol. 30 Issue 2
+    style: v3
+- id: iho.publication.0039
+  identifier:
+    _type: pubid:iho:publication
+    number: '1'
+    volume: '30'
+    volume_edition: 1.0.0
+  representations:
+    human: IHO P-1 Vol. 30 1.0.0
+    urn: urn:mrn:iho:pub:per:p1:vol-30:ed-1.0.0
+  style: v3
+  non_normalized_aliases:
+  - spelling: IHO P-1/30 1.0.0
+    style: v3
+- id: iho.publication.0040
+  identifier:
+    _type: pubid:iho:publication
+    number: '5'
+    edition: 1.0.0
+  representations:
+    human: IHO P-5 1.0.0
+    urn: urn:mrn:iho:pub:per:p5:1.0.0
+  style: v3
+- id: iho.publication.0041
+  identifier:
+    _type: pubid:iho:publication
+    number: '5'
+    volume: '2024'
+  representations:
+    human: IHO P-5 Vol. 2024
+    urn: urn:mrn:iho:pub:per:p5:vol-2024
+  style: v3
+  non_normalized_aliases:
+  - spelling: IHO P-5 2024
+    style: v3
+  - spelling: IHO P-5/2024
+    style: v3
+- id: iho.publication.0042
+  identifier:
+    _type: pubid:iho:publication
+    number: '6'
+    edition: 1.0.0
+  representations:
+    human: IHO P-6 1.0.0
+    urn: urn:mrn:iho:pub:per:p6:1.0.0
+  style: v3
+- id: iho.publication.0043
+  identifier:
+    _type: pubid:iho:publication
+    number: '6'
+    edition: 1.0.0
+    part: '3'
+  representations:
+    human: IHO P-6 1.0.0 Part 3
+    urn: urn:mrn:iho:pub:per:p6:1.0.0:part-3
+  style: v3
+  non_normalized_aliases:
+  - spelling: IHO P-6-3 1.0.0
+    style: v3
+- id: iho.publication.0044
+  identifier:
+    _type: pubid:iho:publication
+    number: '6'
+    edition: 1.0.0
+    volume: '2'
+  representations:
+    human: IHO P-6 1.0.0 Vol. 2
+    urn: urn:mrn:iho:pub:per:p6:1.0.0:vol-2
+  style: v3
+- id: iho.publication.0045
+  identifier:
+    _type: pubid:iho:publication
+    number: '6'
+    volume: '2'
+    volume_edition: 1.0.1
+  representations:
+    human: IHO P-6 Vol. 2 1.0.1
+    urn: urn:mrn:iho:pub:per:p6:vol-2:ed-1.0.1
+  style: v3
+- id: iho.publication.0046
+  identifier:
+    _type: pubid:iho:publication
+    number: '6'
+    volume: '2024'
+  representations:
+    human: IHO P-6 Vol. 2024
+    urn: urn:mrn:iho:pub:per:p6:vol-2024
+  style: v3
+  non_normalized_aliases:
+  - spelling: IHO P-6 2024
+    style: v3
+- id: iho.publication.0047
+  identifier:
+    _type: pubid:iho:publication
+    number: '7'
+    edition: 1.0.6
+  representations:
+    human: IHO P-7 1.0.6
+    urn: urn:mrn:iho:pub:per:p7:1.0.6
+  style: v3
+- id: iho.publication.0048
+  identifier:
+    _type: pubid:iho:publication
+    number: '7'
+    edition: 1.0.7
+  representations:
+    human: IHO P-7 1.0.7
+    urn: urn:mrn:iho:pub:per:p7:1.0.7
+  style: v3
+- id: iho.publication.0049
+  identifier:
+    _type: pubid:iho:publication
+    number: '7'
+    edition: 1.0.8
+  representations:
+    human: IHO P-7 1.0.8
+    urn: urn:mrn:iho:pub:per:p7:1.0.8
+  style: v3
+- id: iho.publication.0050
+  identifier:
+    _type: pubid:iho:publication
+    number: '7'
+    edition: 1.0.9
+  representations:
+    human: IHO P-7 1.0.9
+    urn: urn:mrn:iho:pub:per:p7:1.0.9
+  style: v3
+- id: iho.publication.0051
+  identifier:
+    _type: pubid:iho:publication
+    number: '7'
+    volume: '2024'
+  representations:
+    human: IHO P-7 Vol. 2024
+    urn: urn:mrn:iho:pub:per:p7:vol-2024
+  style: v3
+  non_normalized_aliases:
+  - spelling: IHO P-7 2024
+    style: v3

@@ -646,6 +646,15 @@ vendored_corpora!(
         ("_negative.yaml", WMO_NEGATIVE),
         ("_status.yaml", WMO_STATUS),
     ],
+    "iho" => [
+        ("bibliographic.yaml", IHO_BIBLIOGRAPHIC),
+        ("circular_letter.yaml", IHO_CIRCULAR_LETTER),
+        ("miscellaneous.yaml", IHO_MISCELLANEOUS),
+        ("publication.yaml", IHO_PUBLICATION),
+        ("standard.yaml", IHO_STANDARD),
+        ("_negative.yaml", IHO_NEGATIVE),
+        ("_status.yaml", IHO_STATUS),
+    ],
 );
 
 /// The doi vendored slice (the bootstrap flavor's accessor, kept for
