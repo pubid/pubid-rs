@@ -989,15 +989,31 @@ impl IhoIdentifier {
                 continue;
             }
             if let Some(value) = segment.strip_prefix("supplement") {
+                if attrs.supplement.is_some() {
+                    return Err(urn_error(format!(
+                        "duplicate supplement segment: {segment:?}"
+                    )));
+                }
                 attrs.supplement = Some(mrn_word(value));
                 component = Some("supplement");
             } else if let Some(value) = segment.strip_prefix("part") {
+                if attrs.part.is_some() {
+                    return Err(urn_error(format!("duplicate part segment: {segment:?}")));
+                }
                 attrs.part = Some(mrn_word(value));
                 component = Some("part");
             } else if let Some(value) = segment.strip_prefix("annex") {
+                if attrs.annex.is_some() {
+                    return Err(urn_error(format!("duplicate annex segment: {segment:?}")));
+                }
                 attrs.annex = Some(mrn_word(value));
                 component = Some("annex");
             } else if let Some(value) = segment.strip_prefix("appendix") {
+                if attrs.appendix.is_some() {
+                    return Err(urn_error(format!(
+                        "duplicate appendix segment: {segment:?}"
+                    )));
+                }
                 match value.split_once('-') {
                     Some((head, sub)) if is_digits(sub) => {
                         attrs.appendix = Some(mrn_word(head));
@@ -1007,12 +1023,23 @@ impl IhoIdentifier {
                 }
                 component = Some("appendix");
             } else if let Some(value) = segment.strip_prefix("vol") {
+                if attrs.volume.is_some() {
+                    return Err(urn_error(format!("duplicate volume segment: {segment:?}")));
+                }
                 attrs.volume = Some(value.to_string());
                 component = Some("volume");
             } else if let Some(value) = segment.strip_prefix("issue") {
+                if attrs.issue.is_some() {
+                    return Err(urn_error(format!("duplicate issue segment: {segment:?}")));
+                }
                 attrs.issue = Some(value.to_string());
                 component = Some("issue");
             } else if let Some(citation) = parse_mrn_citation(segment) {
+                if attrs.spec.is_some() {
+                    return Err(urn_error(format!(
+                        "duplicate citation segment: {segment:?}"
+                    )));
+                }
                 attrs.part = Some(citation.0);
                 attrs.spec = Some(citation.1);
                 attrs.spec_sub = citation.2;
@@ -1953,18 +1980,20 @@ mod tests {
     #[test]
     fn rejects_the_bad_mrn_urns() {
         for urn in [
-            "urn:mrn:iho:pub:spec:s100-2:1.0.0",    // member off s158
-            "urn:mrn:iho:pub:spec:x158:1.0.0",      // unknown series
-            "urn:mrn:iho:pub:bathy:s44:5.0.0",      // not this change's type
-            "urn:mrn:iho:pub:spec:",                // no name
-            "urn:mrn:iho:pub:spec:s44:junk",        // unknown segment
-            "urn:mrn:iho:pub:spec:s44:5.0.0:6.0.0", // duplicate edition
-            "urn:mrn:iho:pub:spec:s44:ed-5.0.0",    // marker spelling is not MRN
-            "urn:mrn:iho:spec:s44:5.0.0",           // not the pub namespace
-            "urn:mrn:wmo:pub:spec:s44:5.0.0",       // another namespace
+            "urn:mrn:iho:pub:spec:s100-2:1.0.0",          // member off s158
+            "urn:mrn:iho:pub:spec:x158:1.0.0",            // unknown series
+            "urn:mrn:iho:pub:bathy:s44:5.0.0",            // not this change's type
+            "urn:mrn:iho:pub:spec:",                      // no name
+            "urn:mrn:iho:pub:spec:s44:junk",              // unknown segment
+            "urn:mrn:iho:pub:spec:s44:5.0.0:6.0.0",       // duplicate edition
+            "urn:mrn:iho:pub:spec:s44:parta:partb",       // duplicate part
+            "urn:mrn:iho:pub:spec:s4:4.10.0:b-401:b-402", // duplicate citation
+            "urn:mrn:iho:pub:spec:s44:ed-5.0.0",          // marker spelling is not MRN
+            "urn:mrn:iho:spec:s44:5.0.0",                 // not the pub namespace
+            "urn:mrn:wmo:pub:spec:s44:5.0.0",             // another namespace
             "urn:mrn:iho:pub:spec:s4:4.10.0:b-401:ed-1.0.0", // ed after a citation
-            "urn:mrn:iho:pub:spec:s158-abc:1.0.0",  // malformed member
-            "urn:mrn:iho:pub:spec:s44:year20",      // not a year
+            "urn:mrn:iho:pub:spec:s158-abc:1.0.0",        // malformed member
+            "urn:mrn:iho:pub:spec:s44:year20",            // not a year
         ] {
             assert!(IhoIdentifier::parse(urn).is_err(), "{urn} must be rejected");
         }
