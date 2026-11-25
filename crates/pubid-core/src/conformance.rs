@@ -104,6 +104,10 @@ pub enum Identifier {
     Arxiv(ArxivIdentifier),
     /// A WMO identifier (WMO-No. publications, S-100 specs, annexes).
     Wmo(WmoIdentifier),
+    /// An IHO identifier (the S/P/M/B/C series, the S-158 checks_for
+    /// model). The flavor is ported; its testsuite corpus slice waits
+    /// on the S-158 re-key round, so the vendored gate skips it.
+    Iho(crate::iho::IhoIdentifier),
 }
 
 impl Identifier {
@@ -136,6 +140,7 @@ impl Identifier {
             Identifier::Eu(id) => id.to_hash(),
             Identifier::Arxiv(id) => id.to_hash(),
             Identifier::Wmo(id) => id.to_hash(),
+            Identifier::Iho(id) => id.to_hash(),
         }
     }
 
@@ -168,6 +173,7 @@ impl Identifier {
             Identifier::Eu(id) => id.to_human(),
             Identifier::Arxiv(id) => id.to_human(),
             Identifier::Wmo(id) => id.to_human(),
+            Identifier::Iho(id) => id.to_human(),
         }
     }
 
@@ -200,6 +206,7 @@ impl Identifier {
             Identifier::Eu(id) => Some(id.to_urn()),
             Identifier::Arxiv(id) => Some(id.to_urn()),
             Identifier::Wmo(id) => Some(id.to_urn()),
+            Identifier::Iho(id) => id.to_urn().ok(),
         }
     }
 
@@ -259,6 +266,9 @@ impl Identifier {
             ArxivIdentifier::TYPE => Ok(Identifier::Arxiv(ArxivIdentifier::from_hash(hash)?)),
             _ if kind.starts_with(WmoKind::KIND_PREFIX) => {
                 Ok(Identifier::Wmo(WmoIdentifier::from_hash(hash)?))
+            }
+            _ if kind.starts_with(crate::iho::IhoKind::KIND_PREFIX) => {
+                Ok(Identifier::Iho(crate::iho::IhoIdentifier::from_hash(hash)?))
             }
             IreIdentifier::TYPE => Ok(Identifier::Ire(IreIdentifier::from_hash(hash)?)),
             _ if kind.starts_with(ApiKind::KIND_PREFIX) => {
@@ -348,6 +358,7 @@ flavor_impls!(
     "eu" => EuImpl, Eu, EuIdentifier,
     "arxiv" => ArxivImpl, Arxiv, ArxivIdentifier,
     "wmo" => WmoImpl, Wmo, WmoIdentifier,
+    "iho" => IhoImpl, Iho, crate::iho::IhoIdentifier,
 );
 
 // ---------------------------------------------------------------------------

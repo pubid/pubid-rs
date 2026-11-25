@@ -73,3 +73,12 @@ testsuite_ref_wmo: af9068bccb5a740240c6e56289949a0604576833
 # fixtures VENDORED_FROM.md. When the testsuite exports the flavors at
 # the moved expectations, replace the slices with the byte copy and
 # fold them back into testsuite_ref.
+# pubid-grammar main (5b3b035e6286, the IALA slug-form commit): the
+# iho.json envelope was byte-copied from here (the artifact is
+# byte-identical from 4c964ea, the parsanol 1.5.1.0 toolchain rebake,
+# forward). A flavor-only pin, like the eu/arxiv/ansi/wmo ones. The
+# flavor is ported WITH the S-158 checks_for model (pubid#774/#775)
+# ahead of the grammar's own re-bake: when the iho re-bake lands in
+# pubid-grammar (a checks_for binding artifact), re-vendor the
+# envelope and move this pin in the same change.
+grammar_ref_iho: 5b3b035e62861b0ab355cb9939e18cde008c

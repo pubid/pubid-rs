@@ -11,7 +11,9 @@
 //!   flavor, `flavor_artifact` is the lookup)
 //! - the flavor modules: `doi` (the bootstrap smoke) plus the wave-2
 //!   render-layer flavors `isbn`, `iana`, `oasis`, `xsf`, `un`, `ogc`,
-//!   `ietf`, `w3c` — each parse → cast → render over its bound hash
+//!   `ietf`, `w3c` — each parse → cast → render over its bound hash;
+//!   the later rounds add the mid fleet and `iho` (the S-158
+//!   `checks_for` series model, pubid#774/#775)
 //! - `bound`: the shared bound-hash / canonical-hash readers
 //! - `conformance`: the corpus wire contract and the checker
 //! - `Pubid` / `materialize_from_schema`: the schema-driven
@@ -37,6 +39,7 @@ pub mod gost;
 pub mod iana;
 pub mod ieee_code;
 pub mod ietf;
+pub mod iho;
 pub mod ire;
 pub mod isbn;
 pub mod jis;
@@ -73,6 +76,7 @@ pub use gb::{GbIdentifier, GbKind};
 pub use gost::{GostIdentifier, GostKind};
 pub use iana::IanaIdentifier;
 pub use ietf::{IetfIdentifier, IetfKind};
+pub use iho::{ChecksFace, IhoIdentifier, IhoKind};
 pub use ire::IreIdentifier;
 pub use isbn::IsbnIdentifier;
 pub use jis::JisIdentifier;
