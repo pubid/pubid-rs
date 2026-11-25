@@ -81,17 +81,22 @@ fn main() -> ExitCode {
         None => None,
     };
     for flavor in &flavors {
-        // A ported flavor whose vendored corpus slice has not landed
-        // yet (iho waits on the testsuite S-158 re-key round) is
-        // reported and skipped on a vendored run — visible debt,
-        // never a silent pass and never a fabricated gate.
-        if opts.testsuite.is_none()
-            && pubid_core::flavor_impl(flavor).is_some()
+        // A ported flavor whose corpus slice has not landed yet (iho
+        // waits on the testsuite S-158 re-key round) is reported and
+        // skipped when no corpus can be loaded at all — visible debt,
+        // never a silent pass and never a fabricated gate. When a
+        // checkout DOES carry the flavor's rows, the run proceeds and
+        // the pending registry records the pre-round debt.
+        let checkout_has_corpus = opts
+            .testsuite
+            .as_ref()
+            .map(|root| root.join(flavor).exists())
+            .unwrap_or(false);
+        if pubid_core::flavor_impl(flavor).is_some()
             && pubid_core::vendored_corpus(flavor).is_none()
+            && !checkout_has_corpus
         {
-            println!(
-                "flavor {flavor} outcome pass (ported; no vendored corpus slice yet — skipped)"
-            );
+            println!("flavor {flavor} outcome pass (ported; no corpus slice yet — skipped)");
             continue;
         }
         let report = match run_one(&opts, flavor, pending.as_ref()) {
