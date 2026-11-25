@@ -22,6 +22,7 @@ jobs:
           echo "grammar_ref_eu_arxiv=$(sed -n 's/^grammar_ref_eu_arxiv: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
           echo "grammar_ref_ansi=$(sed -n 's/^grammar_ref_ansi: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
           echo "grammar_ref_wmo=$(sed -n 's/^grammar_ref_wmo: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
+          echo "grammar_ref_iho=$(sed -n 's/^grammar_ref_iho: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
           echo "testsuite_ref=$(sed -n 's/^testsuite_ref: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
           echo "testsuite_ref_wmo=$(sed -n 's/^testsuite_ref_wmo: *//p' pins.yaml)" >> "$GITHUB_OUTPUT"
 
@@ -52,6 +53,13 @@ jobs:
           repository: pubid/pubid-grammar
           ref: ${{ steps.pins.outputs.grammar_ref_wmo }}
           path: pubid-grammar-wmo
+
+      - name: Checkout pinned pubid-grammar (the iho flavor ref)
+        uses: actions/checkout@v4
+        with:
+          repository: pubid/pubid-grammar
+          ref: ${{ steps.pins.outputs.grammar_ref_iho }}
+          path: pubid-grammar-iho
 
       - name: Checkout pinned pubid-testsuite
         uses: actions/checkout@v4
@@ -102,6 +110,15 @@ jobs:
           # /pins.yaml).
           cmp "pubid-grammar-wmo/artifacts/wmo.json" \
               "crates/pubid-core/artifacts/wmo.json"
+
+      - name: Vendored iho artifact matches its pinned grammar ref (drift gate)
+        run: |
+          # The iho flavor (grammar_ref_iho) carries its own
+          # flavor-only pin, like the eu/arxiv, ansi and wmo ones (see
+          # /pins.yaml): the re-bake with the checks_for binding moves
+          # the pin in the same change that re-vendors the envelope.
+          cmp "pubid-grammar-iho/artifacts/iho.json" \
+              "crates/pubid-core/artifacts/iho.json"
 
       - name: Vendored slices match the pinned testsuite ref (drift gate)
         run: |
@@ -173,4 +190,6 @@ jobs:
           cargo run -q -p pubid-cli -- parse arxiv "arXiv:math.GT/0309136"
           cargo run -q -p pubid-cli -- parse wmo "WMO-No. 8"
           cargo run -q -p pubid-cli -- parse wmo "S-411 1.2.1"
+          cargo run -q -p pubid-cli -- parse iho "IHO S-158:102 1.0.0"
+          cargo run -q -p pubid-cli -- parse iho "IHO S-158 0.2.0 Part S-102"
           cargo run -q -p pubid-cli -- smoke
