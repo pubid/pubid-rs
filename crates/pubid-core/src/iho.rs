@@ -2251,11 +2251,8 @@ mod tests {
         assert_eq!(id.checks_for.as_deref(), Some("102"));
         assert_eq!(id.part.as_deref(), Some("2"));
         assert_eq!(id.to_human(), "IHO S-158:102 1.0.0 Part 2");
-        assert_eq!(
-            id.to_urn().as_deref(),
-            Some("urn:mrn:iho:pub:spec:s158-102:1.0.0:part2")
-        );
-        let round = IhoIdentifier::parse(id.to_urn().as_deref().unwrap()).expect("round");
+        assert_eq!(urn_str(&id), "urn:mrn:iho:pub:spec:s158-102:1.0.0:part2");
+        let round = IhoIdentifier::parse(urn_str(&id).as_str()).expect("round");
         assert_eq!(round, id);
         let rebuilt = IhoIdentifier::from_hash(&id.to_hash()).expect("from_hash");
         assert_eq!(rebuilt.to_hash(), id.to_hash());
