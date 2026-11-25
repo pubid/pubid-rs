@@ -40,6 +40,7 @@ pair):
 | jis    | `e06886e29d8b73b9492bc6d6146d8160485604568059c288c6fdfe9339c2a591` |
 | plateau    | `9a98935831f11105e22a7d770b098b08c3d26b76f314452c6ca37d896cec93a7` |
 | wmo    | `b8c08b293b8f33d68a044c1672c5930f7015d02e29f4b5b2a1d7148971b79f2c` |
+| iho    | `604a9d027565eeb7284815b85a15e839d3dd084c2e8a6cdf495b8014a9405df4` |
 
 Every envelope is artifact edition 2, shape `parsanol-tree/v2`, baked at
 parsanol compiler 1.5.1.0 (the #129 re-seal round: the doi grammar is
@@ -103,3 +104,14 @@ and the TD/JCOMM/GAW series, for the gem's widening round at pubid
 own pin (`grammar_ref_wmo` in `/pins.yaml`) and its own drift gate.
 Baked at parsanol 1.5.1.0, artifact edition 2; loads and self-tests
 green (43/43) under the locked `parsanol = "0.20"` runtime.
+
+The `iho` envelope comes from a flavor-only grammar ref (`5b3b035e6286`,
+pubid-grammar main: the IALA slug-form commit; the envelope is
+byte-identical from `4c964ea`, the parsanol 1.5.1.0 toolchain rebake,
+forward — `grammar_ref_iho` in `/pins.yaml`). The flavor is PORTED
+(`crates/pubid-core/src/iho.rs`, carrying the S-158 `checks_for` series
+model, pubid#774/#775), but its testsuite corpus slice is deliberately
+not vendored yet: the `tests/iho` rows at the pinned testsuite refs
+still record the pre-re-key model (the opaque `158:NNN` numbers, the
+`part-S-102` URN segments), so the vendored gate reports the flavor as
+ported-no-slice until the re-key round lands.

@@ -43,15 +43,19 @@ pins.yaml            pinned testsuite + grammar refs (single source)
 
 ## Conformance status (waves 1–3, measured)
 
-Twenty-five flavors are ported end to end: `doi` (bootstrap), the
+Twenty-six flavors are ported: `doi` (bootstrap), the
 wave-2 render-layer flavors `isbn`, `iana`, `oasis`, `xsf`, `un`,
 `ogc`, `ietf`, `w3c`, the wave-3 mid-fleet flavors `api`, `amca`,
 `nesc`, `ire`, `ansi`, `ecma`, `gb`, `gost`, the wave-3 tier
 `plateau`, `evs`, `ccsds`, `cen_cenelec`, `jis`, `etsi` (the
 big-corpus flavors — `etsi` alone is 24,718 rows), and the new-flavor
 round `eu`, `arxiv` (pubid#752/#753, the EU legal acts and the arXiv
-e-prints). Measured against the full pubid-testsuite corpora at the
-pinned ref — every gated case passes except the one api ledger row
+e-prints), and the S-158 round `iho` (pubid#774/#775 — the flavor is
+ported with the `checks_for` series model and the migrated
+`urn:mrn:iho:pub:spec:` emission; its corpus slice waits on the
+testsuite re-key round, so the vendored gate reports it as
+ported-no-slice). Measured against the full pubid-testsuite corpora at
+the pinned ref — every gated case passes except the one api ledger row
 (below), nothing hidden. The `eu`/`arxiv` rows measure their
 gem-fixture-derived vendored slices, the only corpora the two flavors
 have until the testsuite exports them (see the fixtures provenance
