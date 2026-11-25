@@ -193,7 +193,13 @@ jobs:
         run: cargo run -q -p conformance -- --all
 
       - name: Conformance (pinned testsuite checkout, every ported flavor)
-        run: cargo run -q -p conformance -- --testsuite pubid-testsuite/tests --all
+        run: |
+          # The iho flavor is gated at its own flavor-only testsuite
+          # ref (the step below): tests/iho at THIS ref carries the
+          # pre-S-158-re-key rows, so the generic run skips it
+          # (visible skip line, never a silent pass) — the same shape
+          # the wmo flavor gets from its dir being absent here.
+          cargo run -q -p conformance -- --testsuite pubid-testsuite/tests --all --skip-flavor iho
 
       - name: Conformance (wmo, the pinned testsuite flavor ref)
         run: |

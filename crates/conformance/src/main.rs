@@ -29,6 +29,12 @@ struct Options {
     testsuite: Option<PathBuf>,
     flavor: String,
     all: bool,
+    /// Flavors to skip on an `--all` run: the ones gated at their own
+    /// flavor-only testsuite ref (see `/pins.yaml`,
+    /// `testsuite_ref_*`), whose `tests/<flavor>/` at the generic ref
+    /// records the pre-round rows. A skipped flavor prints its line —
+    /// visible debt placement, never a silent pass.
+    skip: Vec<String>,
 }
 
 fn main() -> ExitCode {
@@ -36,6 +42,7 @@ fn main() -> ExitCode {
         testsuite: std::env::var_os("TESTSUITE_DIR").map(PathBuf::from),
         flavor: "doi".to_string(),
         all: false,
+        skip: Vec::new(),
     };
     let mut args = std::env::args().skip(1);
     while let Some(arg) = args.next() {
@@ -48,6 +55,12 @@ fn main() -> ExitCode {
             }
             "--flavor" => opts.flavor = args.next().unwrap_or_else(|| die("--flavor needs a name")),
             "--all" => opts.all = true,
+            "--skip-flavor" => {
+                opts.skip.push(
+                    args.next()
+                        .unwrap_or_else(|| die("--skip-flavor needs a name")),
+                );
+            }
             "--help" | "-h" => {
                 print_help();
                 return ExitCode::SUCCESS;
@@ -81,12 +94,21 @@ fn main() -> ExitCode {
         None => None,
     };
     for flavor in &flavors {
-        // A ported flavor whose corpus slice has not landed yet (iho
-        // waits on the testsuite S-158 re-key round) is reported and
-        // skipped when no corpus can be loaded at all — visible debt,
-        // never a silent pass and never a fabricated gate. When a
-        // checkout DOES carry the flavor's rows, the run proceeds and
-        // the pending registry records the pre-round debt.
+        // A flavor gated at its own flavor-only testsuite ref skips
+        // the generic checkout run: its `tests/<flavor>/` at this ref
+        // records the pre-round rows, and the dedicated
+        // `--testsuite <flavor-ref>/tests --flavor <name>` step gates
+        // it at the pinned corpus (the wmo shape, where the fallback
+        // is dir absence; iho's dir exists with the pre-re-key rows).
+        if opts.all && opts.skip.iter().any(|skipped| skipped == flavor) {
+            println!("flavor {flavor} skipped (gated at its flavor-only testsuite ref)");
+            continue;
+        }
+        // A ported flavor whose corpus slice has not landed yet is
+        // reported and skipped when no corpus can be loaded at all —
+        // visible debt, never a silent pass and never a fabricated
+        // gate. When a checkout DOES carry the flavor's rows, the run
+        // proceeds and the pending registry records the pre-round debt.
         let checkout_has_corpus = opts
             .testsuite
             .as_ref()
@@ -201,9 +223,10 @@ fn die(message: &str) -> ! {
 
 fn print_help() {
     eprintln!(
-        "usage: conformance [--flavor <name>] [--all] [--testsuite <tests-dir>]\
+        "usage: conformance [--flavor <name>] [--all] [--skip-flavor <name>] [--testsuite <tests-dir>]\
          \n  default: the vendored doi slice\
          \n  --all: every ported flavor (vendored slices, or the testsuite checkout)\
+         \n  --skip-flavor: exclude a flavor from --all (gated at its flavor-only testsuite ref)\
          \n  TESTSUITE_DIR or --testsuite: run against a pubid-testsuite checkout"
     );
 }
