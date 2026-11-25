@@ -12,8 +12,10 @@
 //! - the flavor modules: `doi` (the bootstrap smoke) plus the wave-2
 //!   render-layer flavors `isbn`, `iana`, `oasis`, `xsf`, `un`, `ogc`,
 //!   `ietf`, `w3c` — each parse → cast → render over its bound hash;
-//!   the later rounds add the mid fleet and `iho` (the S-158
-//!   `checks_for` series model, pubid#774/#775)
+//!   the later rounds add the mid fleet, `iho` (the S-158
+//!   `checks_for` series model, pubid#774/#775) and `iala` (the
+//!   S-2xx product specifications and the codeless slug publications,
+//!   gem #772/#777)
 //! - `bound`: the shared bound-hash / canonical-hash readers
 //! - `conformance`: the corpus wire contract and the checker
 //! - `Pubid` / `materialize_from_schema`: the schema-driven
@@ -36,6 +38,7 @@ pub mod eu;
 pub mod evs;
 pub mod gb;
 pub mod gost;
+pub mod iala;
 pub mod iana;
 pub mod ieee_code;
 pub mod ietf;
@@ -74,6 +77,7 @@ pub use eu::{EuIdentifier, EuKind};
 pub use evs::EvsIdentifier;
 pub use gb::{GbIdentifier, GbKind};
 pub use gost::{GostIdentifier, GostKind};
+pub use iala::{IalaIdentifier, IalaKind};
 pub use iana::IanaIdentifier;
 pub use ietf::{IetfIdentifier, IetfKind};
 pub use iho::{IhoIdentifier, IhoKind};

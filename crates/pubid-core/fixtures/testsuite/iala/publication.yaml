@@ -1,0 +1,1236 @@
+---
+- id: iala.publication.0001
+  identifier:
+    _type: pubid:iala:publication
+    number: 13th-vts-symposium-sustainable-safe-navigation-august-2016-report
+  representations:
+    human: IALA 13th-vts-symposium-sustainable-safe-navigation-august-2016-report
+  style: v3
+- id: iala.publication.0002
+  identifier:
+    _type: pubid:iala:publication
+    number: 13th-vts-symposium-sustainable-safe-navigation-august-2016-report
+    language: E
+  representations:
+    human: IALA 13th-vts-symposium-sustainable-safe-navigation-august-2016-report
+      (E)
+  style: v3
+- id: iala.publication.0003
+  identifier:
+    _type: pubid:iala:publication
+    number: 14th-iala-symposium-report
+  representations:
+    human: IALA 14th-iala-symposium-report
+  style: v3
+- id: iala.publication.0004
+  identifier:
+    _type: pubid:iala:publication
+    number: 14th-iala-symposium-report
+    language: E
+  representations:
+    human: IALA 14th-iala-symposium-report (E)
+  style: v3
+- id: iala.publication.0005
+  identifier:
+    _type: pubid:iala:publication
+    number: 19th-iala-conference-report-without-the-delegates-contact-details
+  representations:
+    human: IALA 19th-iala-conference-report-without-the-delegates-contact-details
+  style: v3
+- id: iala.publication.0006
+  identifier:
+    _type: pubid:iala:publication
+    number: 19th-iala-conference-report-without-the-delegates-contact-details
+    language: E
+  representations:
+    human: IALA 19th-iala-conference-report-without-the-delegates-contact-details
+      (E)
+  style: v3
+- id: iala.publication.0709
+  identifier:
+    _type: pubid:iala:publication
+    number: a-history-of-floating-aids-to-navigation-by-adrian-h-wilkins
+  representations:
+    human: IALA a-history-of-floating-aids-to-navigation-by-adrian-h-wilkins
+  style: v3
+- id: iala.publication.0710
+  identifier:
+    _type: pubid:iala:publication
+    number: a-history-of-floating-aids-to-navigation-by-adrian-h-wilkins
+    language: E
+  representations:
+    human: IALA a-history-of-floating-aids-to-navigation-by-adrian-h-wilkins (E)
+  style: v3
+- id: iala.publication.0711
+  identifier:
+    _type: pubid:iala:publication
+    number: ais-in-a-historic-perspective
+  representations:
+    human: IALA ais-in-a-historic-perspective
+  style: v3
+- id: iala.publication.0712
+  identifier:
+    _type: pubid:iala:publication
+    number: ais-in-a-historic-perspective
+    language: E
+  representations:
+    human: IALA ais-in-a-historic-perspective (E)
+  style: v3
+- id: iala.publication.0713
+  identifier:
+    _type: pubid:iala:publication
+    number: arctic-seminar-report
+  representations:
+    human: IALA arctic-seminar-report
+  style: v3
+- id: iala.publication.0714
+  identifier:
+    _type: pubid:iala:publication
+    number: arctic-seminar-report
+    language: E
+  representations:
+    human: IALA arctic-seminar-report (E)
+  style: v3
+- id: iala.publication.0715
+  identifier:
+    _type: pubid:iala:publication
+    number: cooperation-international-en-signalisation-maritime-1889-1955
+  representations:
+    human: IALA cooperation-international-en-signalisation-maritime-1889-1955
+  style: v3
+- id: iala.publication.0716
+  identifier:
+    _type: pubid:iala:publication
+    number: cooperation-international-en-signalisation-maritime-1889-1955
+    language: E
+  representations:
+    human: IALA cooperation-international-en-signalisation-maritime-1889-1955 (E)
+  style: v3
+- id: iala.publication.0717
+  identifier:
+    _type: pubid:iala:publication
+    number: definitions-conservation-of-historic-lighthouses
+  representations:
+    human: IALA definitions-conservation-of-historic-lighthouses
+  style: v3
+- id: iala.publication.0718
+  identifier:
+    _type: pubid:iala:publication
+    number: definitions-conservation-of-historic-lighthouses
+    language: E
+  representations:
+    human: IALA definitions-conservation-of-historic-lighthouses (E)
+  style: v3
+- id: iala.publication.0719
+  identifier:
+    _type: pubid:iala:publication
+    number: e-navigation-underway-2014-north-america
+  representations:
+    human: IALA e-navigation-underway-2014-north-america
+  style: v3
+- id: iala.publication.0720
+  identifier:
+    _type: pubid:iala:publication
+    number: e-navigation-underway-2014-north-america
+    language: E
+  representations:
+    human: IALA e-navigation-underway-2014-north-america (E)
+  style: v3
+- id: iala.publication.0721
+  identifier:
+    _type: pubid:iala:publication
+    number: e-navigation-underway-asia-pacific-conference-report
+  representations:
+    human: IALA e-navigation-underway-asia-pacific-conference-report
+  style: v3
+- id: iala.publication.0722
+  identifier:
+    _type: pubid:iala:publication
+    number: e-navigation-underway-asia-pacific-conference-report
+    language: E
+  representations:
+    human: IALA e-navigation-underway-asia-pacific-conference-report (E)
+  style: v3
+- id: iala.publication.0723
+  identifier:
+    _type: pubid:iala:publication
+    number: floataid-workshop
+  representations:
+    human: IALA floataid-workshop
+  style: v3
+- id: iala.publication.0724
+  identifier:
+    _type: pubid:iala:publication
+    number: floataid-workshop
+    language: E
+  representations:
+    human: IALA floataid-workshop (E)
+  style: v3
+- id: iala.publication.0725
+  identifier:
+    _type: pubid:iala:publication
+    number: global-sharing-of-maritime-data-2011
+  representations:
+    human: IALA global-sharing-of-maritime-data-2011
+  style: v3
+- id: iala.publication.0726
+  identifier:
+    _type: pubid:iala:publication
+    number: global-sharing-of-maritime-data-2011
+    language: E
+  representations:
+    human: IALA global-sharing-of-maritime-data-2011 (E)
+  style: v3
+- id: iala.publication.0727
+  identifier:
+    _type: pubid:iala:publication
+    number: guideline-for-preparation-of-conference-or-symposium
+    edition: '3.0'
+  representations:
+    human: IALA guideline-for-preparation-of-conference-or-symposium Ed 3.0
+  style: v3
+- id: iala.publication.0728
+  identifier:
+    _type: pubid:iala:publication
+    number: guideline-for-preparation-of-conference-or-symposium
+    edition: '3.0'
+    language: E
+  representations:
+    human: IALA guideline-for-preparation-of-conference-or-symposium Ed 3.0 (E)
+  style: v3
+- id: iala.publication.0729
+  identifier:
+    _type: pubid:iala:publication
+    number: heritage-seminar-santander-june-2008
+  representations:
+    human: IALA heritage-seminar-santander-june-2008
+  style: v3
+- id: iala.publication.0730
+  identifier:
+    _type: pubid:iala:publication
+    number: heritage-seminar-santander-june-2008
+    language: E
+  representations:
+    human: IALA heritage-seminar-santander-june-2008 (E)
+  style: v3
+- id: iala.publication.0731
+  identifier:
+    _type: pubid:iala:publication
+    number: iala-1957-1990-33-year-of-international-cooperation
+  representations:
+    human: IALA iala-1957-1990-33-year-of-international-cooperation
+  style: v3
+- id: iala.publication.0732
+  identifier:
+    _type: pubid:iala:publication
+    number: iala-1957-1990-33-year-of-international-cooperation
+    language: E
+  representations:
+    human: IALA iala-1957-1990-33-year-of-international-cooperation (E)
+  style: v3
+- id: iala.publication.0733
+  identifier:
+    _type: pubid:iala:publication
+    number: iala-complementary-lighthouse-manual
+  representations:
+    human: IALA iala-complementary-lighthouse-manual
+  style: v3
+- id: iala.publication.0734
+  identifier:
+    _type: pubid:iala:publication
+    number: iala-complementary-lighthouse-manual
+    language: E
+  representations:
+    human: IALA iala-complementary-lighthouse-manual (E)
+  style: v3
+- id: iala.publication.0735
+  identifier:
+    _type: pubid:iala:publication
+    number: iala-style-guide
+    edition: '1.0'
+  representations:
+    human: IALA iala-style-guide Ed 1.0
+  style: v3
+- id: iala.publication.0736
+  identifier:
+    _type: pubid:iala:publication
+    number: iala-style-guide
+    edition: '1.0'
+    language: E
+  representations:
+    human: IALA iala-style-guide Ed 1.0 (E)
+  style: v3
+- id: iala.publication.0737
+  identifier:
+    _type: pubid:iala:publication
+    number: iala-world-wide-radio-navigation-plan
+    edition: '2'
+  representations:
+    human: IALA iala-world-wide-radio-navigation-plan Ed 2
+  style: v3
+- id: iala.publication.0738
+  identifier:
+    _type: pubid:iala:publication
+    number: iala-world-wide-radio-navigation-plan
+    edition: '2'
+    language: E
+  representations:
+    human: IALA iala-world-wide-radio-navigation-plan Ed 2 (E)
+  style: v3
+- id: iala.publication.0739
+  identifier:
+    _type: pubid:iala:publication
+    number: ialabatt-ialalite-2008
+  representations:
+    human: IALA ialabatt-ialalite-2008
+  style: v3
+- id: iala.publication.0740
+  identifier:
+    _type: pubid:iala:publication
+    number: ialabatt-ialalite-2008
+    language: E
+  representations:
+    human: IALA ialabatt-ialalite-2008 (E)
+  style: v3
+- id: iala.publication.0741
+  identifier:
+    _type: pubid:iala:publication
+    number: international-cooperation-in-aids-to-navigation-1889-1955
+  representations:
+    human: IALA international-cooperation-in-aids-to-navigation-1889-1955
+  style: v3
+- id: iala.publication.0742
+  identifier:
+    _type: pubid:iala:publication
+    number: international-cooperation-in-aids-to-navigation-1889-1955
+    language: E
+  representations:
+    human: IALA international-cooperation-in-aids-to-navigation-1889-1955 (E)
+  style: v3
+- id: iala.publication.0743
+  identifier:
+    _type: pubid:iala:publication
+    number: international-e-navigation-underway-2014
+  representations:
+    human: IALA international-e-navigation-underway-2014
+  style: v3
+- id: iala.publication.0744
+  identifier:
+    _type: pubid:iala:publication
+    number: international-e-navigation-underway-2014
+    language: E
+  representations:
+    human: IALA international-e-navigation-underway-2014 (E)
+  style: v3
+- id: iala.publication.0745
+  identifier:
+    _type: pubid:iala:publication
+    number: international-e-navigation-underway-2015
+  representations:
+    human: IALA international-e-navigation-underway-2015
+  style: v3
+- id: iala.publication.0746
+  identifier:
+    _type: pubid:iala:publication
+    number: international-e-navigation-underway-2015
+    language: E
+  representations:
+    human: IALA international-e-navigation-underway-2015 (E)
+  style: v3
+- id: iala.publication.0747
+  identifier:
+    _type: pubid:iala:publication
+    number: international-e-navigation-underway-2016
+  representations:
+    human: IALA international-e-navigation-underway-2016
+  style: v3
+- id: iala.publication.0748
+  identifier:
+    _type: pubid:iala:publication
+    number: international-e-navigation-underway-2016
+    language: E
+  representations:
+    human: IALA international-e-navigation-underway-2016 (E)
+  style: v3
+- id: iala.publication.0749
+  identifier:
+    _type: pubid:iala:publication
+    number: international-e-navigation-underway-2018
+  representations:
+    human: IALA international-e-navigation-underway-2018
+  style: v3
+- id: iala.publication.0750
+  identifier:
+    _type: pubid:iala:publication
+    number: international-e-navigation-underway-2018
+    language: E
+  representations:
+    human: IALA international-e-navigation-underway-2018 (E)
+  style: v3
+- id: iala.publication.0751
+  identifier:
+    _type: pubid:iala:publication
+    number: international-e-navigation-underway-2019
+  representations:
+    human: IALA international-e-navigation-underway-2019
+  style: v3
+- id: iala.publication.0752
+  identifier:
+    _type: pubid:iala:publication
+    number: international-e-navigation-underway-2019
+    language: E
+  representations:
+    human: IALA international-e-navigation-underway-2019 (E)
+  style: v3
+- id: iala.publication.0753
+  identifier:
+    _type: pubid:iala:publication
+    number: maritime-radio-communications-plan
+  representations:
+    human: IALA maritime-radio-communications-plan
+  style: v3
+- id: iala.publication.0754
+  identifier:
+    _type: pubid:iala:publication
+    number: maritime-radio-communications-plan
+    language: E
+  representations:
+    human: IALA maritime-radio-communications-plan (E)
+  style: v3
+- id: iala.publication.0755
+  identifier:
+    _type: pubid:iala:publication
+    number: preliminary-results-iala-vts-questionnaire
+  representations:
+    human: IALA preliminary-results-iala-vts-questionnaire
+  style: v3
+- id: iala.publication.0756
+  identifier:
+    _type: pubid:iala:publication
+    number: preliminary-results-iala-vts-questionnaire
+    language: E
+  representations:
+    human: IALA preliminary-results-iala-vts-questionnaire (E)
+  style: v3
+- id: iala.publication.0757
+  identifier:
+    _type: pubid:iala:publication
+    number: questionnaire-responses-complementary-use-of-lighthouses
+  representations:
+    human: IALA questionnaire-responses-complementary-use-of-lighthouses
+  style: v3
+- id: iala.publication.0758
+  identifier:
+    _type: pubid:iala:publication
+    number: questionnaire-responses-complementary-use-of-lighthouses
+    language: E
+  representations:
+    human: IALA questionnaire-responses-complementary-use-of-lighthouses (E)
+  style: v3
+- id: iala.publication.0759
+  identifier:
+    _type: pubid:iala:publication
+    number: report-18th-iala-conference
+  representations:
+    human: IALA report-18th-iala-conference
+  style: v3
+- id: iala.publication.0760
+  identifier:
+    _type: pubid:iala:publication
+    number: report-18th-iala-conference
+    language: E
+  representations:
+    human: IALA report-18th-iala-conference (E)
+  style: v3
+- id: iala.publication.0761
+  identifier:
+    _type: pubid:iala:publication
+    number: report-conference-20th-iala-conference-in-brazil
+  representations:
+    human: IALA report-conference-20th-iala-conference-in-brazil
+  style: v3
+- id: iala.publication.0762
+  identifier:
+    _type: pubid:iala:publication
+    number: report-conference-20th-iala-conference-in-brazil
+    language: E
+  representations:
+    human: IALA report-conference-20th-iala-conference-in-brazil (E)
+  style: v3
+- id: iala.publication.0763
+  identifier:
+    _type: pubid:iala:publication
+    number: report-e-navigation-underway-international-2017
+  representations:
+    human: IALA report-e-navigation-underway-international-2017
+  style: v3
+- id: iala.publication.0764
+  identifier:
+    _type: pubid:iala:publication
+    number: report-e-navigation-underway-international-2017
+    language: E
+  representations:
+    human: IALA report-e-navigation-underway-international-2017 (E)
+  style: v3
+- id: iala.publication.0765
+  identifier:
+    _type: pubid:iala:publication
+    number: report-e-navigation-underway-north-america-2017
+  representations:
+    human: IALA report-e-navigation-underway-north-america-2017
+  style: v3
+- id: iala.publication.0766
+  identifier:
+    _type: pubid:iala:publication
+    number: report-e-navigation-underway-north-america-2017
+    language: E
+  representations:
+    human: IALA report-e-navigation-underway-north-america-2017 (E)
+  style: v3
+- id: iala.publication.0767
+  identifier:
+    _type: pubid:iala:publication
+    number: report-iala-workshop-common-phraseology-procedures-vts-communication
+  representations:
+    human: IALA report-iala-workshop-common-phraseology-procedures-vts-communication
+  style: v3
+- id: iala.publication.0768
+  identifier:
+    _type: pubid:iala:publication
+    number: report-iala-workshop-common-phraseology-procedures-vts-communication
+    language: E
+  representations:
+    human: IALA report-iala-workshop-common-phraseology-procedures-vts-communication
+      (E)
+  style: v3
+- id: iala.publication.0769
+  identifier:
+    _type: pubid:iala:publication
+    number: report-iala-workshop-sustainable-light-power-next-generation
+  representations:
+    human: IALA report-iala-workshop-sustainable-light-power-next-generation
+  style: v3
+- id: iala.publication.0770
+  identifier:
+    _type: pubid:iala:publication
+    number: report-iala-workshop-sustainable-light-power-next-generation
+    language: E
+  representations:
+    human: IALA report-iala-workshop-sustainable-light-power-next-generation (E)
+  style: v3
+- id: iala.publication.0771
+  identifier:
+    _type: pubid:iala:publication
+    number: report-of-the-iala-workshop-on-the-future-of-marine-radiobeacon-dgps-dgnss
+  representations:
+    human: IALA report-of-the-iala-workshop-on-the-future-of-marine-radiobeacon-dgps-dgnss
+  style: v3
+- id: iala.publication.0772
+  identifier:
+    _type: pubid:iala:publication
+    number: report-of-the-iala-workshop-on-the-future-of-marine-radiobeacon-dgps-dgnss
+    language: E
+  representations:
+    human: IALA report-of-the-iala-workshop-on-the-future-of-marine-radiobeacon-dgps-dgnss
+      (E)
+  style: v3
+- id: iala.publication.0773
+  identifier:
+    _type: pubid:iala:publication
+    number: report-of-the-workshop-on-marine-aton-in-the-autonomous-world
+  representations:
+    human: IALA report-of-the-workshop-on-marine-aton-in-the-autonomous-world
+  style: v3
+- id: iala.publication.0774
+  identifier:
+    _type: pubid:iala:publication
+    number: report-of-the-workshop-on-marine-aton-in-the-autonomous-world
+    language: E
+  representations:
+    human: IALA report-of-the-workshop-on-marine-aton-in-the-autonomous-world (E)
+  style: v3
+- id: iala.publication.0775
+  identifier:
+    _type: pubid:iala:publication
+    number: report-of-the-workshop-on-vts-competent-authorities
+  representations:
+    human: IALA report-of-the-workshop-on-vts-competent-authorities
+  style: v3
+- id: iala.publication.0776
+  identifier:
+    _type: pubid:iala:publication
+    number: report-of-the-workshop-on-vts-competent-authorities
+    language: E
+  representations:
+    human: IALA report-of-the-workshop-on-vts-competent-authorities (E)
+  style: v3
+- id: iala.publication.0777
+  identifier:
+    _type: pubid:iala:publication
+    number: report-of-the-wwa-seminar-on-the-safety-of-navigation-2019-turkey
+  representations:
+    human: IALA report-of-the-wwa-seminar-on-the-safety-of-navigation-2019-turkey
+  style: v3
+- id: iala.publication.0778
+  identifier:
+    _type: pubid:iala:publication
+    number: report-of-the-wwa-seminar-on-the-safety-of-navigation-2019-turkey
+    language: E
+  representations:
+    human: IALA report-of-the-wwa-seminar-on-the-safety-of-navigation-2019-turkey
+      (E)
+  style: v3
+- id: iala.publication.0779
+  identifier:
+    _type: pubid:iala:publication
+    number: report-on-iala-workshop-on-vts-training-and-qualifications-2020-and-beyond
+  representations:
+    human: IALA report-on-iala-workshop-on-vts-training-and-qualifications-2020-and-beyond
+  style: v3
+- id: iala.publication.0780
+  identifier:
+    _type: pubid:iala:publication
+    number: report-on-iala-workshop-on-vts-training-and-qualifications-2020-and-beyond
+    language: E
+  representations:
+    human: IALA report-on-iala-workshop-on-vts-training-and-qualifications-2020-and-beyond
+      (E)
+  style: v3
+- id: iala.publication.0781
+  identifier:
+    _type: pubid:iala:publication
+    number: report-on-joint-iala-iho-workshop-on-s-100-s-200-product-specification-development-and-portrayal
+  representations:
+    human: IALA report-on-joint-iala-iho-workshop-on-s-100-s-200-product-specification-development-and-portrayal
+  style: v3
+- id: iala.publication.0782
+  identifier:
+    _type: pubid:iala:publication
+    number: report-on-joint-iala-iho-workshop-on-s-100-s-200-product-specification-development-and-portrayal
+    language: E
+  representations:
+    human: IALA report-on-joint-iala-iho-workshop-on-s-100-s-200-product-specification-development-and-portrayal
+      (E)
+  style: v3
+- id: iala.publication.0783
+  identifier:
+    _type: pubid:iala:publication
+    number: report-on-the-2nd-joint-iho-iala-workshop-s-100-s-200
+  representations:
+    human: IALA report-on-the-2nd-joint-iho-iala-workshop-s-100-s-200
+  style: v3
+- id: iala.publication.0784
+  identifier:
+    _type: pubid:iala:publication
+    number: report-on-the-2nd-joint-iho-iala-workshop-s-100-s-200
+    language: E
+  representations:
+    human: IALA report-on-the-2nd-joint-iho-iala-workshop-s-100-s-200 (E)
+  style: v3
+- id: iala.publication.0785
+  identifier:
+    _type: pubid:iala:publication
+    number: report-on-the-aton-engineering-workshop
+  representations:
+    human: IALA report-on-the-aton-engineering-workshop
+  style: v3
+- id: iala.publication.0786
+  identifier:
+    _type: pubid:iala:publication
+    number: report-on-the-aton-engineering-workshop
+    language: E
+  representations:
+    human: IALA report-on-the-aton-engineering-workshop (E)
+  style: v3
+- id: iala.publication.0787
+  identifier:
+    _type: pubid:iala:publication
+    number: report-on-the-iala-workshop-on-r-mode
+  representations:
+    human: IALA report-on-the-iala-workshop-on-r-mode
+  style: v3
+- id: iala.publication.0788
+  identifier:
+    _type: pubid:iala:publication
+    number: report-on-the-iala-workshop-on-r-mode
+    language: E
+  representations:
+    human: IALA report-on-the-iala-workshop-on-r-mode (E)
+  style: v3
+- id: iala.publication.0789
+  identifier:
+    _type: pubid:iala:publication
+    number: report-on-the-on-imt-workshop-for-marine-atons-september-2025-germany
+  representations:
+    human: IALA report-on-the-on-imt-workshop-for-marine-atons-september-2025-germany
+  style: v3
+- id: iala.publication.0790
+  identifier:
+    _type: pubid:iala:publication
+    number: report-on-the-on-imt-workshop-for-marine-atons-september-2025-germany
+    language: E
+  representations:
+    human: IALA report-on-the-on-imt-workshop-for-marine-atons-september-2025-germany
+      (E)
+  style: v3
+- id: iala.publication.0791
+  identifier:
+    _type: pubid:iala:publication
+    number: report-on-the-seminar-on-vdes-singapore-2025
+  representations:
+    human: IALA report-on-the-seminar-on-vdes-singapore-2025
+  style: v3
+- id: iala.publication.0792
+  identifier:
+    _type: pubid:iala:publication
+    number: report-on-the-seminar-on-vdes-singapore-2025
+    language: E
+  representations:
+    human: IALA report-on-the-seminar-on-vdes-singapore-2025 (E)
+  style: v3
+- id: iala.publication.0793
+  identifier:
+    _type: pubid:iala:publication
+    number: report-on-the-workshop-digital-maritime-communications
+  representations:
+    human: IALA report-on-the-workshop-digital-maritime-communications
+  style: v3
+- id: iala.publication.0794
+  identifier:
+    _type: pubid:iala:publication
+    number: report-on-the-workshop-digital-maritime-communications
+    language: E
+  representations:
+    human: IALA report-on-the-workshop-digital-maritime-communications (E)
+  style: v3
+- id: iala.publication.0795
+  identifier:
+    _type: pubid:iala:publication
+    number: report-on-the-workshop-on-radionavigation-and-radiocommunication-technologies
+  representations:
+    human: IALA report-on-the-workshop-on-radionavigation-and-radiocommunication-technologies
+  style: v3
+- id: iala.publication.0796
+  identifier:
+    _type: pubid:iala:publication
+    number: report-on-the-workshop-on-radionavigation-and-radiocommunication-technologies
+    language: E
+  representations:
+    human: IALA report-on-the-workshop-on-radionavigation-and-radiocommunication-technologies
+      (E)
+  style: v3
+- id: iala.publication.0797
+  identifier:
+    _type: pubid:iala:publication
+    number: report-on-the-workshop-on-sustainability-in-aton-provision
+  representations:
+    human: IALA report-on-the-workshop-on-sustainability-in-aton-provision
+  style: v3
+- id: iala.publication.0798
+  identifier:
+    _type: pubid:iala:publication
+    number: report-on-the-workshop-on-sustainability-in-aton-provision
+    language: E
+  representations:
+    human: IALA report-on-the-workshop-on-sustainability-in-aton-provision (E)
+  style: v3
+- id: iala.publication.0799
+  identifier:
+    _type: pubid:iala:publication
+    number: report-seminar-on-preservation-of-lighthouse-heritage-june-2013
+  representations:
+    human: IALA report-seminar-on-preservation-of-lighthouse-heritage-june-2013
+  style: v3
+- id: iala.publication.0800
+  identifier:
+    _type: pubid:iala:publication
+    number: report-seminar-on-preservation-of-lighthouse-heritage-june-2013
+    language: E
+  representations:
+    human: IALA report-seminar-on-preservation-of-lighthouse-heritage-june-2013 (E)
+  style: v3
+- id: iala.publication.0801
+  identifier:
+    _type: pubid:iala:publication
+    number: report-training-and-certification-of-aton-and-vts-personnel
+  representations:
+    human: IALA report-training-and-certification-of-aton-and-vts-personnel
+  style: v3
+- id: iala.publication.0802
+  identifier:
+    _type: pubid:iala:publication
+    number: report-training-and-certification-of-aton-and-vts-personnel
+    language: E
+  representations:
+    human: IALA report-training-and-certification-of-aton-and-vts-personnel (E)
+  style: v3
+- id: iala.publication.0803
+  identifier:
+    _type: pubid:iala:publication
+    number: report-workshop-iala-cyber-security
+  representations:
+    human: IALA report-workshop-iala-cyber-security
+  style: v3
+- id: iala.publication.0804
+  identifier:
+    _type: pubid:iala:publication
+    number: report-workshop-iala-cyber-security
+    language: E
+  representations:
+    human: IALA report-workshop-iala-cyber-security (E)
+  style: v3
+- id: iala.publication.0805
+  identifier:
+    _type: pubid:iala:publication
+    number: report-workshop-iala-erps
+  representations:
+    human: IALA report-workshop-iala-erps
+  style: v3
+- id: iala.publication.0806
+  identifier:
+    _type: pubid:iala:publication
+    number: report-workshop-iala-erps
+    language: E
+  representations:
+    human: IALA report-workshop-iala-erps (E)
+  style: v3
+- id: iala.publication.0807
+  identifier:
+    _type: pubid:iala:publication
+    number: report-workshop-iala-initial-operating-capabilities-phase-of-e-navigation-services-singapore
+  representations:
+    human: IALA report-workshop-iala-initial-operating-capabilities-phase-of-e-navigation-services-singapore
+  style: v3
+- id: iala.publication.0808
+  identifier:
+    _type: pubid:iala:publication
+    number: report-workshop-iala-initial-operating-capabilities-phase-of-e-navigation-services-singapore
+    language: E
+  representations:
+    human: IALA report-workshop-iala-initial-operating-capabilities-phase-of-e-navigation-services-singapore
+      (E)
+  style: v3
+- id: iala.publication.0809
+  identifier:
+    _type: pubid:iala:publication
+    number: report-workshop-iala-the-enhancing-e-navigation-capability-digitalsea
+  representations:
+    human: IALA report-workshop-iala-the-enhancing-e-navigation-capability-digitalsea
+  style: v3
+- id: iala.publication.0810
+  identifier:
+    _type: pubid:iala:publication
+    number: report-workshop-iala-the-enhancing-e-navigation-capability-digitalsea
+    language: E
+  representations:
+    human: IALA report-workshop-iala-the-enhancing-e-navigation-capability-digitalsea
+      (E)
+  style: v3
+- id: iala.publication.0811
+  identifier:
+    _type: pubid:iala:publication
+    number: risk-management-pawsa-iwrap-mk2-simulation
+  representations:
+    human: IALA risk-management-pawsa-iwrap-mk2-simulation
+  style: v3
+- id: iala.publication.0812
+  identifier:
+    _type: pubid:iala:publication
+    number: risk-management-pawsa-iwrap-mk2-simulation
+    language: E
+  representations:
+    human: IALA risk-management-pawsa-iwrap-mk2-simulation (E)
+  style: v3
+- id: iala.publication.0813
+  identifier:
+    _type: pubid:iala:publication
+    number: risk-seminar-singapore-2015
+  representations:
+    human: IALA risk-seminar-singapore-2015
+  style: v3
+- id: iala.publication.0814
+  identifier:
+    _type: pubid:iala:publication
+    number: risk-seminar-singapore-2015
+    language: E
+  representations:
+    human: IALA risk-seminar-singapore-2015 (E)
+  style: v3
+- id: iala.publication.0815
+  identifier:
+    _type: pubid:iala:publication
+    number: risk-seminar-turkey-2018
+  representations:
+    human: IALA risk-seminar-turkey-2018
+  style: v3
+- id: iala.publication.0816
+  identifier:
+    _type: pubid:iala:publication
+    number: risk-seminar-turkey-2018
+    language: E
+  representations:
+    human: IALA risk-seminar-turkey-2018 (E)
+  style: v3
+- id: iala.publication.0817
+  identifier:
+    _type: pubid:iala:publication
+    number: risk-training-seminar-cartagena-2019
+  representations:
+    human: IALA risk-training-seminar-cartagena-2019
+  style: v3
+- id: iala.publication.0818
+  identifier:
+    _type: pubid:iala:publication
+    number: risk-training-seminar-cartagena-2019
+    language: E
+  representations:
+    human: IALA risk-training-seminar-cartagena-2019 (E)
+  style: v3
+- id: iala.publication.0819
+  identifier:
+    _type: pubid:iala:publication
+    number: risk-training-seminar-china-2017
+  representations:
+    human: IALA risk-training-seminar-china-2017
+  style: v3
+- id: iala.publication.0820
+  identifier:
+    _type: pubid:iala:publication
+    number: risk-training-seminar-china-2017
+    language: E
+  representations:
+    human: IALA risk-training-seminar-china-2017 (E)
+  style: v3
+- id: iala.publication.0821
+  identifier:
+    _type: pubid:iala:publication
+    number: risk-training-seminar-france-2019
+  representations:
+    human: IALA risk-training-seminar-france-2019
+  style: v3
+- id: iala.publication.0822
+  identifier:
+    _type: pubid:iala:publication
+    number: risk-training-seminar-france-2019
+    language: E
+  representations:
+    human: IALA risk-training-seminar-france-2019 (E)
+  style: v3
+- id: iala.publication.0823
+  identifier:
+    _type: pubid:iala:publication
+    number: risk-training-seminar-oman-2011
+  representations:
+    human: IALA risk-training-seminar-oman-2011
+  style: v3
+- id: iala.publication.0824
+  identifier:
+    _type: pubid:iala:publication
+    number: risk-training-seminar-oman-2011
+    language: E
+  representations:
+    human: IALA risk-training-seminar-oman-2011 (E)
+  style: v3
+- id: iala.publication.0825
+  identifier:
+    _type: pubid:iala:publication
+    number: risk-training-seminar-panama-2016
+  representations:
+    human: IALA risk-training-seminar-panama-2016
+  style: v3
+- id: iala.publication.0826
+  identifier:
+    _type: pubid:iala:publication
+    number: risk-training-seminar-panama-2016
+    language: E
+  representations:
+    human: IALA risk-training-seminar-panama-2016 (E)
+  style: v3
+- id: iala.publication.0827
+  identifier:
+    _type: pubid:iala:publication
+    number: risk-training-seminar-south-africa-2018
+  representations:
+    human: IALA risk-training-seminar-south-africa-2018
+  style: v3
+- id: iala.publication.0828
+  identifier:
+    _type: pubid:iala:publication
+    number: risk-training-seminar-south-africa-2018
+    language: E
+  representations:
+    human: IALA risk-training-seminar-south-africa-2018 (E)
+  style: v3
+- id: iala.publication.0829
+  identifier:
+    _type: pubid:iala:publication
+    number: risk-training-seminar-sydney-2012
+  representations:
+    human: IALA risk-training-seminar-sydney-2012
+  style: v3
+- id: iala.publication.0830
+  identifier:
+    _type: pubid:iala:publication
+    number: risk-training-seminar-sydney-2012
+    language: E
+  representations:
+    human: IALA risk-training-seminar-sydney-2012 (E)
+  style: v3
+- id: iala.publication.0831
+  identifier:
+    _type: pubid:iala:publication
+    number: seminar-iwrap-mk-ii-2009-kuala-lumpur
+  representations:
+    human: IALA seminar-iwrap-mk-ii-2009-kuala-lumpur
+  style: v3
+- id: iala.publication.0832
+  identifier:
+    _type: pubid:iala:publication
+    number: seminar-iwrap-mk-ii-2009-kuala-lumpur
+    language: E
+  representations:
+    human: IALA seminar-iwrap-mk-ii-2009-kuala-lumpur (E)
+  style: v3
+- id: iala.publication.0833
+  identifier:
+    _type: pubid:iala:publication
+    number: seminar-on-maritime-digital-infrastructures-and-testbeds
+  representations:
+    human: IALA seminar-on-maritime-digital-infrastructures-and-testbeds
+  style: v3
+- id: iala.publication.0834
+  identifier:
+    _type: pubid:iala:publication
+    number: seminar-on-maritime-digital-infrastructures-and-testbeds
+    language: E
+  representations:
+    human: IALA seminar-on-maritime-digital-infrastructures-and-testbeds (E)
+  style: v3
+- id: iala.publication.0835
+  identifier:
+    _type: pubid:iala:publication
+    number: seminar-on-the-revision-of-imo-resolution-a-85720-guidelines-for-vts
+  representations:
+    human: IALA seminar-on-the-revision-of-imo-resolution-a-85720-guidelines-for-vts
+  style: v3
+- id: iala.publication.0836
+  identifier:
+    _type: pubid:iala:publication
+    number: seminar-on-the-revision-of-imo-resolution-a-85720-guidelines-for-vts
+    language: E
+  representations:
+    human: IALA seminar-on-the-revision-of-imo-resolution-a-85720-guidelines-for-vts
+      (E)
+  style: v3
+- id: iala.publication.0837
+  identifier:
+    _type: pubid:iala:publication
+    number: seminar-simulation-in-vts-training-wageningen-2013
+  representations:
+    human: IALA seminar-simulation-in-vts-training-wageningen-2013
+  style: v3
+- id: iala.publication.0838
+  identifier:
+    _type: pubid:iala:publication
+    number: seminar-simulation-in-vts-training-wageningen-2013
+    language: E
+  representations:
+    human: IALA seminar-simulation-in-vts-training-wageningen-2013 (E)
+  style: v3
+- id: iala.publication.0839
+  identifier:
+    _type: pubid:iala:publication
+    number: short-range-aton-in-e-navigation-era-2012-brest
+  representations:
+    human: IALA short-range-aton-in-e-navigation-era-2012-brest
+  style: v3
+- id: iala.publication.0840
+  identifier:
+    _type: pubid:iala:publication
+    number: short-range-aton-in-e-navigation-era-2012-brest
+    language: E
+  representations:
+    human: IALA short-range-aton-in-e-navigation-era-2012-brest (E)
+  style: v3
+- id: iala.publication.0841
+  identifier:
+    _type: pubid:iala:publication
+    number: vts-training-workshop-warnemunda-2009
+  representations:
+    human: IALA vts-training-workshop-warnemunda-2009
+  style: v3
+- id: iala.publication.0842
+  identifier:
+    _type: pubid:iala:publication
+    number: vts-training-workshop-warnemunda-2009
+    language: E
+  representations:
+    human: IALA vts-training-workshop-warnemunda-2009 (E)
+  style: v3
+- id: iala.publication.0843
+  identifier:
+    _type: pubid:iala:publication
+    number: workshop-ais-aton-real-virtual-developments-uses
+  representations:
+    human: IALA workshop-ais-aton-real-virtual-developments-uses
+  style: v3
+- id: iala.publication.0844
+  identifier:
+    _type: pubid:iala:publication
+    number: workshop-ais-aton-real-virtual-developments-uses
+    language: E
+  representations:
+    human: IALA workshop-ais-aton-real-virtual-developments-uses (E)
+  style: v3
+- id: iala.publication.0845
+  identifier:
+    _type: pubid:iala:publication
+    number: workshop-application-of-aids-to-navigation-within-marine-spatial-planning-iala-2013
+  representations:
+    human: IALA workshop-application-of-aids-to-navigation-within-marine-spatial-planning-iala-2013
+  style: v3
+- id: iala.publication.0846
+  identifier:
+    _type: pubid:iala:publication
+    number: workshop-application-of-aids-to-navigation-within-marine-spatial-planning-iala-2013
+    language: E
+  representations:
+    human: IALA workshop-application-of-aids-to-navigation-within-marine-spatial-planning-iala-2013
+      (E)
+  style: v3
+- id: iala.publication.0847
+  identifier:
+    _type: pubid:iala:publication
+    number: workshop-aton-services-extremely-hot-climates
+  representations:
+    human: IALA workshop-aton-services-extremely-hot-climates
+  style: v3
+- id: iala.publication.0848
+  identifier:
+    _type: pubid:iala:publication
+    number: workshop-aton-services-extremely-hot-climates
+    language: E
+  representations:
+    human: IALA workshop-aton-services-extremely-hot-climates (E)
+  style: v3
+- id: iala.publication.0849
+  identifier:
+    _type: pubid:iala:publication
+    number: workshop-challenges-of-providing-aton-services-in-polar-regions
+  representations:
+    human: IALA workshop-challenges-of-providing-aton-services-in-polar-regions
+  style: v3
+- id: iala.publication.0850
+  identifier:
+    _type: pubid:iala:publication
+    number: workshop-challenges-of-providing-aton-services-in-polar-regions
+    language: E
+  representations:
+    human: IALA workshop-challenges-of-providing-aton-services-in-polar-regions (E)
+  style: v3
+- id: iala.publication.0851
+  identifier:
+    _type: pubid:iala:publication
+    number: workshop-employing-e-navigation-cssa
+  representations:
+    human: IALA workshop-employing-e-navigation-cssa
+  style: v3
+- id: iala.publication.0852
+  identifier:
+    _type: pubid:iala:publication
+    number: workshop-employing-e-navigation-cssa
+    language: E
+  representations:
+    human: IALA workshop-employing-e-navigation-cssa (E)
+  style: v3
+- id: iala.publication.0853
+  identifier:
+    _type: pubid:iala:publication
+    number: workshop-on-development-of-vhf-data-exchange-system-vdes
+  representations:
+    human: IALA workshop-on-development-of-vhf-data-exchange-system-vdes
+  style: v3
+- id: iala.publication.0854
+  identifier:
+    _type: pubid:iala:publication
+    number: workshop-on-development-of-vhf-data-exchange-system-vdes
+    language: E
+  representations:
+    human: IALA workshop-on-development-of-vhf-data-exchange-system-vdes (E)
+  style: v3
+- id: iala.publication.0855
+  identifier:
+    _type: pubid:iala:publication
+    number: workshop-on-harmonizing-vts-voice-communication
+  representations:
+    human: IALA workshop-on-harmonizing-vts-voice-communication
+  style: v3
+- id: iala.publication.0856
+  identifier:
+    _type: pubid:iala:publication
+    number: workshop-on-harmonizing-vts-voice-communication
+    language: E
+  representations:
+    human: IALA workshop-on-harmonizing-vts-voice-communication (E)
+  style: v3
+- id: iala.publication.0857
+  identifier:
+    _type: pubid:iala:publication
+    number: workshop-on-ioc-phase-for-e-navigation-services
+  representations:
+    human: IALA workshop-on-ioc-phase-for-e-navigation-services
+  style: v3
+- id: iala.publication.0858
+  identifier:
+    _type: pubid:iala:publication
+    number: workshop-on-ioc-phase-for-e-navigation-services
+    language: E
+  representations:
+    human: IALA workshop-on-ioc-phase-for-e-navigation-services (E)
+  style: v3
+- id: iala.publication.0859
+  identifier:
+    _type: pubid:iala:publication
+    number: workshop-on-shore-based-maritime-services-from-theory-to-practical-use
+  representations:
+    human: IALA workshop-on-shore-based-maritime-services-from-theory-to-practical-use
+  style: v3
+- id: iala.publication.0860
+  identifier:
+    _type: pubid:iala:publication
+    number: workshop-on-shore-based-maritime-services-from-theory-to-practical-use
+    language: E
+  representations:
+    human: IALA workshop-on-shore-based-maritime-services-from-theory-to-practical-use
+      (E)
+  style: v3
+- id: iala.publication.0861
+  identifier:
+    _type: pubid:iala:publication
+    number: workshop-portrayal-of-data-and-information-at-a-vts-bremen-2013
+  representations:
+    human: IALA workshop-portrayal-of-data-and-information-at-a-vts-bremen-2013
+  style: v3
+- id: iala.publication.0862
+  identifier:
+    _type: pubid:iala:publication
+    number: workshop-portrayal-of-data-and-information-at-a-vts-bremen-2013
+    language: E
+  representations:
+    human: IALA workshop-portrayal-of-data-and-information-at-a-vts-bremen-2013 (E)
+  style: v3
+- id: iala.publication.0863
+  identifier:
+    _type: pubid:iala:publication
+    number: wwa-safety-of-navigation-seminar-february-2025
+  representations:
+    human: IALA wwa-safety-of-navigation-seminar-february-2025
+  style: v3
+- id: iala.publication.0864
+  identifier:
+    _type: pubid:iala:publication
+    number: wwa-safety-of-navigation-seminar-february-2025
+    language: E
+  representations:
+    human: IALA wwa-safety-of-navigation-seminar-february-2025 (E)
+  style: v3

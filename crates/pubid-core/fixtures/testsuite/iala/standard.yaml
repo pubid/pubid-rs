@@ -1,0 +1,143 @@
+---
+- id: iala.standard.0695
+  identifier:
+    _type: pubid:iala:standard
+    number: '1010'
+    edition: '2.0'
+  representations:
+    human: IALA S1010 Ed 2.0
+    urn: urn:mrn:iala:pub:s1010:ed2.0
+  style: v3
+- id: iala.standard.0696
+  identifier:
+    _type: pubid:iala:standard
+    number: '1010'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA S1010 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:s1010:ed2.0:e
+  style: v3
+- id: iala.standard.0697
+  identifier:
+    _type: pubid:iala:standard
+    number: '1020'
+    edition: '2.0'
+  representations:
+    human: IALA S1020 Ed 2.0
+    urn: urn:mrn:iala:pub:s1020:ed2.0
+  style: v3
+- id: iala.standard.0698
+  identifier:
+    _type: pubid:iala:standard
+    number: '1020'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA S1020 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:s1020:ed2.0:e
+  style: v3
+- id: iala.standard.0699
+  identifier:
+    _type: pubid:iala:standard
+    number: '1030'
+    edition: '2.0'
+  representations:
+    human: IALA S1030 Ed 2.0
+    urn: urn:mrn:iala:pub:s1030:ed2.0
+  style: v3
+- id: iala.standard.0700
+  identifier:
+    _type: pubid:iala:standard
+    number: '1030'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA S1030 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:s1030:ed2.0:e
+  style: v3
+- id: iala.standard.0701
+  identifier:
+    _type: pubid:iala:standard
+    number: '1040'
+    edition: '2.0'
+  representations:
+    human: IALA S1040 Ed 2.0
+    urn: urn:mrn:iala:pub:s1040:ed2.0
+  style: v3
+  non_normalized_aliases:
+  - spelling: urn:mrn:iala:pub:s1040:ed2.0
+    style: v3
+- id: iala.standard.0702
+  identifier:
+    _type: pubid:iala:standard
+    number: '1040'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA S1040 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:s1040:ed2.0:e
+  style: v3
+- id: iala.standard.0703
+  identifier:
+    _type: pubid:iala:standard
+    number: '1050'
+    edition: '2.0'
+  representations:
+    human: IALA S1050 Ed 2.0
+    urn: urn:mrn:iala:pub:s1050:ed2.0
+  style: v3
+  non_normalized_aliases:
+  - spelling: urn:mrn:iala:pub:s1050:ed2.0
+    style: v3
+- id: iala.standard.0704
+  identifier:
+    _type: pubid:iala:standard
+    number: '1050'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA S1050 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:s1050:ed2.0:e
+  style: v3
+- id: iala.standard.0705
+  identifier:
+    _type: pubid:iala:standard
+    number: '1060'
+    edition: '2.0'
+  representations:
+    human: IALA S1060 Ed 2.0
+    urn: urn:mrn:iala:pub:s1060:ed2.0
+  style: v3
+  non_normalized_aliases:
+  - spelling: urn:mrn:iala:pub:s1060:ed2.0
+    style: v3
+- id: iala.standard.0706
+  identifier:
+    _type: pubid:iala:standard
+    number: '1060'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA S1060 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:s1060:ed2.0:e
+  style: v3
+- id: iala.standard.0707
+  identifier:
+    _type: pubid:iala:standard
+    number: '1070'
+    edition: '2.0'
+  representations:
+    human: IALA S1070 Ed 2.0
+    urn: urn:mrn:iala:pub:s1070:ed2.0
+  style: v3
+- id: iala.standard.0708
+  identifier:
+    _type: pubid:iala:standard
+    number: '1070'
+    edition: '2.0'
+    language: E
+  representations:
+    human: IALA S1070 Ed 2.0 (E)
+    urn: urn:mrn:iala:pub:s1070:ed2.0:e
+  style: v3

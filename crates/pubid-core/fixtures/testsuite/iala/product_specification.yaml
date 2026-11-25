@@ -1,0 +1,143 @@
+---
+- id: iala.product_specification.0865
+  identifier:
+    _type: pubid:iala:product-specification
+    number: '201'
+  representations:
+    human: S-201
+    urn: urn:mrn:iala:pub:s-201
+  style: v3
+- id: iala.product_specification.0866
+  identifier:
+    _type: pubid:iala:product-specification
+    number: '201'
+    edition: 0.0.7
+  representations:
+    human: S-201 0.0.7
+    urn: urn:mrn:iala:pub:s-201:ed0.0.7
+  style: v3
+- id: iala.product_specification.0867
+  identifier:
+    _type: pubid:iala:product-specification
+    number: '201'
+    edition: 1.1.0
+  representations:
+    human: S-201 1.1.0
+    urn: urn:mrn:iala:pub:s-201:ed1.1.0
+  style: v3
+- id: iala.product_specification.0868
+  identifier:
+    _type: pubid:iala:product-specification
+    number: '201'
+    edition: 2.0.0
+  representations:
+    human: S-201 2.0.0
+    urn: urn:mrn:iala:pub:s-201:ed2.0.0
+  style: v3
+  non_normalized_aliases:
+  - spelling: IALA S-201 2.0.0
+    style: v3
+  - spelling: IALA S-201 Ed 2.0.0
+    style: v3
+  - spelling: IALA S-201:ed2.0.0
+    style: v3
+  - spelling: IALA s-201 2.0.0
+    style: v3
+  - spelling: urn:mrn:iala:pub:s-201:ed2.0.0
+    style: v3
+- id: iala.product_specification.0870
+  identifier:
+    _type: pubid:iala:product-specification
+    number: '210'
+  representations:
+    human: S-210
+    urn: urn:mrn:iala:pub:s-210
+  style: v3
+- id: iala.product_specification.0871
+  identifier:
+    _type: pubid:iala:product-specification
+    number: '211'
+  representations:
+    human: S-211
+    urn: urn:mrn:iala:pub:s-211
+  style: v3
+- id: iala.product_specification.0872
+  identifier:
+    _type: pubid:iala:product-specification
+    number: '212'
+  representations:
+    human: S-212
+    urn: urn:mrn:iala:pub:s-212
+  style: v3
+- id: iala.product_specification.0873
+  identifier:
+    _type: pubid:iala:product-specification
+    number: '230'
+  representations:
+    human: S-230
+    urn: urn:mrn:iala:pub:s-230
+  style: v3
+- id: iala.product_specification.0874
+  identifier:
+    _type: pubid:iala:product-specification
+    number: '230'
+    edition: 1.0.0
+  representations:
+    human: S-230 1.0.0
+    urn: urn:mrn:iala:pub:s-230:ed1.0.0
+  style: v3
+- id: iala.product_specification.0875
+  identifier:
+    _type: pubid:iala:product-specification
+    number: '230'
+    edition: 1.0.0
+    language: E
+  representations:
+    human: S-230 1.0.0 (E)
+    urn: urn:mrn:iala:pub:s-230:ed1.0.0:e
+  style: v3
+- id: iala.product_specification.0876
+  identifier:
+    _type: pubid:iala:product-specification
+    number: '240'
+  representations:
+    human: S-240
+    urn: urn:mrn:iala:pub:s-240
+  style: v3
+- id: iala.product_specification.0877
+  identifier:
+    _type: pubid:iala:product-specification
+    number: '245'
+  representations:
+    human: S-245
+    urn: urn:mrn:iala:pub:s-245
+  style: v3
+- id: iala.product_specification.0878
+  identifier:
+    _type: pubid:iala:product-specification
+    number: '246'
+  representations:
+    human: S-246
+    urn: urn:mrn:iala:pub:s-246
+  style: v3
+- id: iala.product_specification.0879
+  identifier:
+    _type: pubid:iala:product-specification
+    number: '247'
+  representations:
+    human: S-247
+    urn: urn:mrn:iala:pub:s-247
+  style: v3
+- id: iala.product_specification.0880
+  identifier:
+    _type: pubid:iala:product-specification
+    number: '247'
+    edition: 0.2.0
+    language: E
+  representations:
+    human: S-247 0.2.0 (E)
+    urn: urn:mrn:iala:pub:s-247:ed0.2.0:e
+  style: v3
+  non_normalized_aliases:
+  - spelling: urn:mrn:iala:pub:s-247:ed0.2.0:e
+    style: v3

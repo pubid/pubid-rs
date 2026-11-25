@@ -239,3 +239,39 @@ besides `_negative.yaml` / `_status.yaml`).
   - `miscellaneous.yaml` sha256 70083ab4527a143a2576c66dba18455b4058b6fcc962f561479b41f660067f14
   - `publication.yaml` sha256 e2bf0f978e20c68e8a1d3d881b969c0f34b58864c303bc59475808ccd101d5b5
   - `standard.yaml` sha256 21b591192e316b5afb0a1a573a0487793e06192f2d6c73467ba523591e9031a2
+
+The iala slice is a byte copy from its own flavor-only testsuite ref:
+`pubid/pubid-testsuite@6179c23b117dd33d24e82b5ec6832618bce157f1`
+(`tests/iala/`, the iala round freeze at pubid acae7a620e95, the
+2.0.54 release span — see `/pins.yaml`, `testsuite_ref_iala`). The
+corpus gates the 880-case iala round: the new
+`pubid:iala:product-specification` rows (gem #777 — the IHO-granted
+S-201..S-299 range with the bare designation face, the dotted x.y.z
+editions and the `S-201 ANNEX B2` sub-numbered annex), the 162
+codeless slug-publication rows (gem #772, round #122 — the first
+gating of that corpus in this repository), and the 6 grant-bound
+rejects (`S-200`, `S-411`, `S-101`, `S-30`, `S-2011`, `S-201 Ed`) in
+`_negative.yaml`. The span from `testsuite_ref` (e6cf11b) to that ref
+re-exports adobe/iala/ieee, which this repository's other slices do
+not fold back yet; `tests/iala` at the generic ref still records the
+pre-round corpus (no publication or product_specification files), so
+the generic `--all` checkout run skips the flavor and the dedicated
+pinned-ref run gates it. Everything here is the testsuite's export,
+unmodified (clean status, known_mismatches 0); the `_debt.yaml` /
+`_normalization.yaml` exporter metadata is not vendored (the corpus
+loader skips underscore files besides `_negative.yaml` /
+`_status.yaml`).
+
+- iala:
+  - `_negative.yaml` sha256 302c7eb6554da7df24d0e019026778ec66e452840e0b1a784380597778022806
+  - `_status.yaml` sha256 da8b5c732041f6936d83e8f046b33824cea9c87e149da4d107ae8efd143a050f
+  - `annex.yaml` sha256 e33e6bf9fc5959d3e2f76b3f24898203bb58ef0a723b9b562f6c80d5b733590f
+  - `general_assembly.yaml` sha256 693474f75fca00a874777ba11d624c647bf1435c89573daf7204138940844fa9
+  - `guideline.yaml` sha256 a5a109643013fbd3752ef620fb6aedd0c30ac6d8011dfe9de2a39613649c7201
+  - `letter.yaml` sha256 3fef63af9ec88d79f0b46cb1f3ef972bf7ab734866bef959c4536425f9d1f004
+  - `manual.yaml` sha256 591ef9dca9116c07546473af9f8a11c4dfb30338927e445d683e10209ea15c75
+  - `model_course.yaml` sha256 995bb436f4359a67dbafc49ca10aa18e924e570d48a464f13bcb9ef52c478714
+  - `product_specification.yaml` sha256 3996196fd10ee53c0cbb221ebb81ac9a70ae0ba8263ec7eb5f9b02f04740b002
+  - `publication.yaml` sha256 125cffb404acc8dd2cd297e52990f2ae88df9d7b320149561a5f57a74356b4f6
+  - `recommendation.yaml` sha256 80832a5b8ce9a5cf6a2f6a66270e24bb1dfd246917622e700faa0b2584fb7639
+  - `standard.yaml` sha256 a1016508d71b92cf698ab32a234586ffe147635052d7bd38059ec0f7a816637a

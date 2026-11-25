@@ -41,6 +41,7 @@ pair):
 | plateau    | `9a98935831f11105e22a7d770b098b08c3d26b76f314452c6ca37d896cec93a7` |
 | wmo    | `b8c08b293b8f33d68a044c1672c5930f7015d02e29f4b5b2a1d7148971b79f2c` |
 | iho    | `ebe28be0ece78b8fe6cbf987e66f17eaa8e64d2ed295baf877b4644cba5345f7` |
+| iala   | `6631e5e2e6cb9059c18778a1b8063e4b091591104e3f08e3daa602d8aadfe123` |
 
 Every envelope is artifact edition 2, shape `parsanol-tree/v2`, baked at
 parsanol compiler 1.5.1.0 (the #129 re-seal round: the doi grammar is
@@ -123,3 +124,26 @@ spelling model). Its testsuite corpus slice is deliberately not
 vendored yet: the `tests/iho` rows at the pinned testsuite refs still
 record the pre-re-key model, so the vendored gate reports the flavor
 as ported-no-slice until the re-key round lands.
+
+The `iala` envelope comes from a flavor-only grammar ref (`c1a11bf1e54f`,
+pubid-grammar main: the IALA S-100-family product-specification commit,
+mirroring the gem's round at pubid a0f8e64f / 2.0.53, which rides on
+the iala slug hand-off at grammar 4f5208b — `grammar_ref_iala` in
+`/pins.yaml`). Grammar 0.2.0: the `slug_identifier` alternative for the
+codeless publications of gem #772, LAST in the ordered choice so every
+typed code keeps priority (a typed code starts upper-case, a slug
+lower-case or with a digit, and the first slug run must not look like a
+code), and the `s100_identifier` / `s100_annex_identifier` forms for
+the IHO-granted S-201..S-299 range of gem #777 — the grant bounds the
+grammar itself (`(!"200" ("2" digit digit))`), the bare designation
+face carries no publisher token, and the annex letters take the
+sub-numbered `ANNEX B2` shape. Baked at parsanol 1.5.1.0, artifact
+edition 2. The flavor (`crates/pubid-core/src/iala.rs`) is ported
+against the landed gem reference (pubid a604fc07): the typed series
+with the class-driven zero-pad widths, the S-2xx product
+specifications with the MRN `s-2xx` codes, the slug publications with
+`to_urn = nil`, and the official R1023/G1143 MRN scheme
+(`urn:mrn:iala:pub:<code>[:annex[-<letter>]][:ed<edition>][:<lang>]`).
+Its testsuite corpus slice is vendored at its own round freeze
+(`testsuite_ref_iala`, 6179c23b117d — see the fixtures
+VENDORED_FROM.md).

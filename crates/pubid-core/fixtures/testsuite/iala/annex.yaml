@@ -1,0 +1,146 @@
+---
+- id: iala.annex.0149
+  identifier:
+    _type: pubid:iala:annex
+    edition: '1'
+    base:
+      _type: pubid:iala:guideline
+      number: '1045'
+    annex_form: Annex
+  representations:
+    human: IALA G1045 Annex Ed 1
+    urn: urn:mrn:iala:pub:g1045:annex:ed1
+  style: v3
+- id: iala.annex.0150
+  identifier:
+    _type: pubid:iala:annex
+    edition: '1'
+    language: E
+    base:
+      _type: pubid:iala:guideline
+      number: '1045'
+    annex_form: Annex
+  representations:
+    human: IALA G1045 Annex Ed 1 (E)
+    urn: urn:mrn:iala:pub:g1045:annex:ed1:e
+  style: v3
+- id: iala.annex.0328
+  identifier:
+    _type: pubid:iala:annex
+    edition: '1.6'
+    base:
+      _type: pubid:iala:guideline
+      number: '1128'
+    annex_form: ANNEX
+    letter: A
+  representations:
+    human: IALA G1128 ANNEX A Ed 1.6
+    urn: urn:mrn:iala:pub:g1128:annex-a:ed1.6
+  style: v3
+- id: iala.annex.0329
+  identifier:
+    _type: pubid:iala:annex
+    edition: '1.6'
+    language: E
+    base:
+      _type: pubid:iala:guideline
+      number: '1128'
+    annex_form: ANNEX
+    letter: A
+  representations:
+    human: IALA G1128 ANNEX A Ed 1.6 (E)
+    urn: urn:mrn:iala:pub:g1128:annex-a:ed1.6:e
+  style: v3
+- id: iala.annex.0330
+  identifier:
+    _type: pubid:iala:annex
+    edition: '1.6'
+    base:
+      _type: pubid:iala:guideline
+      number: '1128'
+    annex_form: ANNEX
+    letter: B
+  representations:
+    human: IALA G1128 ANNEX B Ed 1.6
+    urn: urn:mrn:iala:pub:g1128:annex-b:ed1.6
+  style: v3
+- id: iala.annex.0331
+  identifier:
+    _type: pubid:iala:annex
+    edition: '1.6'
+    language: E
+    base:
+      _type: pubid:iala:guideline
+      number: '1128'
+    annex_form: ANNEX
+    letter: B
+  representations:
+    human: IALA G1128 ANNEX B Ed 1.6 (E)
+    urn: urn:mrn:iala:pub:g1128:annex-b:ed1.6:e
+  style: v3
+- id: iala.annex.0332
+  identifier:
+    _type: pubid:iala:annex
+    edition: '1.6'
+    base:
+      _type: pubid:iala:guideline
+      number: '1128'
+    annex_form: ANNEX
+    letter: C
+  representations:
+    human: IALA G1128 ANNEX C Ed 1.6
+    urn: urn:mrn:iala:pub:g1128:annex-c:ed1.6
+  style: v3
+- id: iala.annex.0333
+  identifier:
+    _type: pubid:iala:annex
+    edition: '1.6'
+    language: E
+    base:
+      _type: pubid:iala:guideline
+      number: '1128'
+    annex_form: ANNEX
+    letter: C
+  representations:
+    human: IALA G1128 ANNEX C Ed 1.6 (E)
+    urn: urn:mrn:iala:pub:g1128:annex-c:ed1.6:e
+  style: v3
+- id: iala.annex.0334
+  identifier:
+    _type: pubid:iala:annex
+    edition: '1.6'
+    base:
+      _type: pubid:iala:guideline
+      number: '1128'
+    annex_form: ANNEX
+    letter: D
+  representations:
+    human: IALA G1128 ANNEX D Ed 1.6
+    urn: urn:mrn:iala:pub:g1128:annex-d:ed1.6
+  style: v3
+- id: iala.annex.0335
+  identifier:
+    _type: pubid:iala:annex
+    edition: '1.6'
+    language: E
+    base:
+      _type: pubid:iala:guideline
+      number: '1128'
+    annex_form: ANNEX
+    letter: D
+  representations:
+    human: IALA G1128 ANNEX D Ed 1.6 (E)
+    urn: urn:mrn:iala:pub:g1128:annex-d:ed1.6:e
+  style: v3
+- id: iala.annex.0869
+  identifier:
+    _type: pubid:iala:annex
+    base:
+      _type: pubid:iala:product-specification
+      number: '201'
+    annex_form: ANNEX
+    letter: B2
+  representations:
+    human: S-201 ANNEX B2
+    urn: urn:mrn:iala:pub:s-201:annex-b2
+  style: v3

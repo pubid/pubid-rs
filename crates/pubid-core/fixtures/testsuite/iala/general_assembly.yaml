@@ -1,0 +1,316 @@
+---
+- id: iala.general_assembly.0007
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: 12-01
+  representations:
+    human: IALA A12-01
+    urn: urn:mrn:iala:pub:a12-01
+  style: v3
+- id: iala.general_assembly.0008
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: 12-01
+    language: E
+  representations:
+    human: IALA A12-01 (E)
+    urn: urn:mrn:iala:pub:a12-01:e
+  style: v3
+- id: iala.general_assembly.0009
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: 12-01
+    language: F
+  representations:
+    human: IALA A12-01 (F)
+    urn: urn:mrn:iala:pub:a12-01:f
+  style: v3
+- id: iala.general_assembly.0010
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: 13-01
+  representations:
+    human: IALA A13-01
+    urn: urn:mrn:iala:pub:a13-01
+  style: v3
+- id: iala.general_assembly.0011
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: 13-01
+    language: E
+  representations:
+    human: IALA A13-01 (E)
+    urn: urn:mrn:iala:pub:a13-01:e
+  style: v3
+- id: iala.general_assembly.0012
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: 13-02
+  representations:
+    human: IALA A13-02
+    urn: urn:mrn:iala:pub:a13-02
+  style: v3
+- id: iala.general_assembly.0013
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: 13-02
+    language: E
+  representations:
+    human: IALA A13-02 (E)
+    urn: urn:mrn:iala:pub:a13-02:e
+  style: v3
+- id: iala.general_assembly.0014
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: 13-03
+  representations:
+    human: IALA A13-03
+    urn: urn:mrn:iala:pub:a13-03
+  style: v3
+- id: iala.general_assembly.0015
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: 13-03
+    language: E
+  representations:
+    human: IALA A13-03 (E)
+    urn: urn:mrn:iala:pub:a13-03:e
+  style: v3
+- id: iala.general_assembly.0016
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: 13-04
+  representations:
+    human: IALA A13-04
+    urn: urn:mrn:iala:pub:a13-04
+  style: v3
+- id: iala.general_assembly.0017
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: 13-04
+    language: E
+  representations:
+    human: IALA A13-04 (E)
+    urn: urn:mrn:iala:pub:a13-04:e
+  style: v3
+- id: iala.general_assembly.0454
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.01'
+  representations:
+    human: IALA GA01.01
+    urn: urn:mrn:iala:pub:ga01.01
+  style: v3
+- id: iala.general_assembly.0455
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.01'
+    language: E
+  representations:
+    human: IALA GA01.01 (E)
+    urn: urn:mrn:iala:pub:ga01.01:e
+  style: v3
+- id: iala.general_assembly.0456
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.012'
+  representations:
+    human: IALA GA01.012
+    urn: urn:mrn:iala:pub:ga01.012
+  style: v3
+- id: iala.general_assembly.0457
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.012'
+    language: E
+  representations:
+    human: IALA GA01.012 (E)
+    urn: urn:mrn:iala:pub:ga01.012:e
+  style: v3
+- id: iala.general_assembly.0458
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.02'
+  representations:
+    human: IALA GA01.02
+    urn: urn:mrn:iala:pub:ga01.02
+  style: v3
+- id: iala.general_assembly.0459
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.02'
+    language: E
+  representations:
+    human: IALA GA01.02 (E)
+    urn: urn:mrn:iala:pub:ga01.02:e
+  style: v3
+- id: iala.general_assembly.0460
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.03'
+  representations:
+    human: IALA GA01.03
+    urn: urn:mrn:iala:pub:ga01.03
+  style: v3
+- id: iala.general_assembly.0461
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.03'
+    language: E
+  representations:
+    human: IALA GA01.03 (E)
+    urn: urn:mrn:iala:pub:ga01.03:e
+  style: v3
+- id: iala.general_assembly.0462
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.04'
+  representations:
+    human: IALA GA01.04
+    urn: urn:mrn:iala:pub:ga01.04
+  style: v3
+- id: iala.general_assembly.0463
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.04'
+    language: E
+  representations:
+    human: IALA GA01.04 (E)
+    urn: urn:mrn:iala:pub:ga01.04:e
+  style: v3
+- id: iala.general_assembly.0464
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.05'
+  representations:
+    human: IALA GA01.05
+    urn: urn:mrn:iala:pub:ga01.05
+  style: v3
+- id: iala.general_assembly.0465
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.05'
+    language: E
+  representations:
+    human: IALA GA01.05 (E)
+    urn: urn:mrn:iala:pub:ga01.05:e
+  style: v3
+- id: iala.general_assembly.0466
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.06'
+  representations:
+    human: IALA GA01.06
+    urn: urn:mrn:iala:pub:ga01.06
+  style: v3
+- id: iala.general_assembly.0467
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.06'
+    language: E
+  representations:
+    human: IALA GA01.06 (E)
+    urn: urn:mrn:iala:pub:ga01.06:e
+  style: v3
+- id: iala.general_assembly.0468
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.07'
+  representations:
+    human: IALA GA01.07
+    urn: urn:mrn:iala:pub:ga01.07
+  style: v3
+- id: iala.general_assembly.0469
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.07'
+    language: E
+  representations:
+    human: IALA GA01.07 (E)
+    urn: urn:mrn:iala:pub:ga01.07:e
+  style: v3
+- id: iala.general_assembly.0470
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.08'
+  representations:
+    human: IALA GA01.08
+    urn: urn:mrn:iala:pub:ga01.08
+  style: v3
+- id: iala.general_assembly.0471
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.08'
+    language: E
+  representations:
+    human: IALA GA01.08 (E)
+    urn: urn:mrn:iala:pub:ga01.08:e
+  style: v3
+- id: iala.general_assembly.0472
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.09'
+  representations:
+    human: IALA GA01.09
+    urn: urn:mrn:iala:pub:ga01.09
+  style: v3
+- id: iala.general_assembly.0473
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.09'
+    language: E
+  representations:
+    human: IALA GA01.09 (E)
+    urn: urn:mrn:iala:pub:ga01.09:e
+  style: v3
+- id: iala.general_assembly.0474
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.10'
+  representations:
+    human: IALA GA01.10
+    urn: urn:mrn:iala:pub:ga01.10
+  style: v3
+- id: iala.general_assembly.0475
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.10'
+    language: E
+  representations:
+    human: IALA GA01.10 (E)
+    urn: urn:mrn:iala:pub:ga01.10:e
+  style: v3
+- id: iala.general_assembly.0476
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.11'
+  representations:
+    human: IALA GA01.11
+    urn: urn:mrn:iala:pub:ga01.11
+  style: v3
+- id: iala.general_assembly.0477
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.11'
+    language: E
+  representations:
+    human: IALA GA01.11 (E)
+    urn: urn:mrn:iala:pub:ga01.11:e
+  style: v3
+- id: iala.general_assembly.0478
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.13'
+  representations:
+    human: IALA GA01.13
+    urn: urn:mrn:iala:pub:ga01.13
+  style: v3
+- id: iala.general_assembly.0479
+  identifier:
+    _type: pubid:iala:general-assembly
+    number: '01.13'
+    language: E
+  representations:
+    human: IALA GA01.13 (E)
+    urn: urn:mrn:iala:pub:ga01.13:e
+  style: v3

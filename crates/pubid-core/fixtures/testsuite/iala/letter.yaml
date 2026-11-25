@@ -1,0 +1,58 @@
+---
+- id: iala.letter.0480
+  identifier:
+    _type: pubid:iala:letter
+    number: 2.1.11
+    edition: '2'
+  representations:
+    human: IALA L2.1.11 Ed 2
+    urn: urn:mrn:iala:pub:l2.1.11:ed2
+  style: v3
+- id: iala.letter.0481
+  identifier:
+    _type: pubid:iala:letter
+    number: 2.1.11
+    edition: '2'
+    language: E
+  representations:
+    human: IALA L2.1.11 Ed 2 (E)
+    urn: urn:mrn:iala:pub:l2.1.11:ed2:e
+  style: v3
+- id: iala.letter.0482
+  identifier:
+    _type: pubid:iala:letter
+    number: 2.1.12
+    edition: '2'
+  representations:
+    human: IALA L2.1.12 Ed 2
+    urn: urn:mrn:iala:pub:l2.1.12:ed2
+  style: v3
+- id: iala.letter.0483
+  identifier:
+    _type: pubid:iala:letter
+    number: 2.1.12
+    edition: '2'
+    language: E
+  representations:
+    human: IALA L2.1.12 Ed 2 (E)
+    urn: urn:mrn:iala:pub:l2.1.12:ed2:e
+  style: v3
+- id: iala.letter.0484
+  identifier:
+    _type: pubid:iala:letter
+    number: 2.7.1-2
+    edition: '2'
+  representations:
+    human: IALA L2.7.1-2 Ed 2
+    urn: urn:mrn:iala:pub:l2.7.1-2:ed2
+  style: v3
+- id: iala.letter.0485
+  identifier:
+    _type: pubid:iala:letter
+    number: 2.7.1-2
+    edition: '2'
+    language: E
+  representations:
+    human: IALA L2.7.1-2 Ed 2 (E)
+    urn: urn:mrn:iala:pub:l2.7.1-2:ed2:e
+  style: v3
