@@ -13,12 +13,12 @@
 //! check publications. Each member is designated `S-158:<NNN>` — the
 //! S-100 product number whose validation checks the publication
 //! specifies — NOT a part and NOT an opaque number. The typed facet is
-//! `checks_for` (`S-158:102` → `number = 158, checks_for = 102`), and
+//! `product` (`S-158:102` → `number = 158, product = 102`), and
 //! only the S-158 family carries it (the colon form binds on every
 //! series at the grammar level; the anchor assert rejects `S-44:5` —
 //! the member designator is the S-158 series device):
 //!
-//!   IHO S-158 1.0.0            the framework (no checks_for)
+//!   IHO S-158 1.0.0            the framework (no product)
 //!   IHO S-158:102 1.0.0        the S-102 check specification (PRIMARY
 //!                              designator form)
 //!   IHO S-158 0.2.0 Part S-102 the draft-era expanded spelling
@@ -27,16 +27,16 @@
 //!   IHO S-158 Part 102         the draft-era bare-number spelling
 //!
 //! The four draft-era spellings parse to the SAME identity as
-//! non-normalized aliases (`checks_for = 102`): the draft-era part
+//! non-normalized aliases (`product = 102`): the draft-era part
 //! value — a series reference (`S-102`, any of S/P/M/B/C) or a bare
-//! member number (`102`) — rebinds onto `checks_for`, and the edition
+//! member number (`102`) — rebinds onto `product`, and the edition
 //! that follows the part face is the publication's OWN edition (the
 //! `parted-` mis-bind of #775 is gone). A lettered or compound part
 //! value (`Part A`, `Part 4a`) is a genuine part face and never
 //! rebinds; a series-reference part beside a BOUND member also stays a
 //! plain part (`S-158:100 Part 2` keeps the part).
 //!
-//! The spelling face ([`IhoIdentifier::checks_for_face`]) records the
+//! The spelling face ([`IhoIdentifier::product_face`]) records the
 //! draft-era part value AS WRITTEN, so the render keeps the input's
 //! spelling — the face always prints in the Part slot, AFTER the
 //! edition (the declaration order of #775; the citation order never
@@ -82,8 +82,8 @@
 //!   emitter.
 //!
 //! The retired positional `urn:iho:` scheme (the B/C emission) and the
-//! legacy pubid-URN shapes (`158~3A102`, `part-S-102:parted-0.2.0`)
-//! stay decodable, never emitted.
+//! legacy pubid-URN shapes (`158~3A102`, `part-S-102:parted-0.2.0`,
+//! the pre-rename `product-` atom) stay decodable, never emitted.
 
 use serde_json::Value;
 
@@ -189,7 +189,7 @@ pub struct IhoIdentifier {
     /// The concrete series class.
     pub kind: IhoKind,
     /// The document number (`"44"`, `"158"`). The grammar binds the
-    /// S-158 colon designator as the typed `checks_for` capture, so a
+    /// S-158 colon designator as the typed `product` capture, so a
     /// parsed number never carries a colon run; a decoded legacy shape
     /// (`158~3A102`, a stored pre-migration row) stays verbatim
     /// (untouched legacy shape — the reference's `normalize_checks_alias`
@@ -199,14 +199,14 @@ pub struct IhoIdentifier {
     /// publication specifies (`"102"`). S-158 family only (asserted on
     /// the parse and URN decode paths; a stored hash is the
     /// reference's permissive `from_hash`).
-    pub checks_for: Option<String>,
+    pub product: Option<String>,
     /// The spelling face of the member designator (facets-spelling-
     /// only, equality-ignored): the parse records the draft-era part
     /// value as written ("S-102", "102") so the render keeps the
     /// input's spelling; `None` = the canonical colon designator.
     /// Deserialization and every URN decode restore no face —
     /// equality/URN use the canonical shape.
-    pub checks_for_face: Option<String>,
+    pub product_face: Option<String>,
     /// The dotted x.y.z edition (`"1.0.0"`); absent = edition-less.
     pub edition: Option<String>,
     /// The with-year qualifier (`"2024"`, parenthesized beside an
@@ -243,7 +243,7 @@ impl PartialEq for IhoIdentifier {
     fn eq(&self, other: &Self) -> bool {
         self.kind == other.kind
             && self.number == other.number
-            && self.checks_for == other.checks_for
+            && self.product == other.product
             && self.edition == other.edition
             && self.year == other.year
             && self.supplement == other.supplement
@@ -277,7 +277,7 @@ impl Eq for IhoIdentifier {}
 struct Attrs {
     kind: Option<IhoKind>,
     number: Option<String>,
-    checks_for: Option<String>,
+    product: Option<String>,
     edition: Option<String>,
     year: Option<String>,
     supplement: Option<String>,
@@ -302,7 +302,7 @@ struct Attrs {
     spec_variant: Option<String>,
 }
 
-/// The construction path, deciding the two checks-side behaviors the
+/// The construction path, deciding the two product-side behaviors the
 /// reference splits between its builder and its lutaml deserialization
 /// (`Builder#resolve_checks_alias!` vs `Builder.normalize_checks_alias`
 /// on `from_hash`).
@@ -317,7 +317,7 @@ enum Construction {
     Urn,
     /// The deserialization path (the gem's `from_hash` +
     /// `normalize_checks_alias`): NO checks anchor assert (a stored
-    /// hash carrying `checks_for` on another anchor is the reference's
+    /// hash carrying `product` on another anchor is the reference's
     /// permissive decode), and a member year yields to a base year.
     FromHash,
 }
@@ -341,7 +341,7 @@ impl IhoIdentifier {
     pub const ENTRY: &'static str = "identifier";
 
     /// The S-158 framework number: the only series member that turns
-    /// a series reference into `checks_for`.
+    /// a series reference into `product`.
     const S158: &'static str = "158";
 
     /// The S-4 loose-leaf anchor every spec citation rides.
@@ -457,11 +457,11 @@ impl IhoIdentifier {
         // The S-158 unification (pubid#774/#775/#776): the colon
         // designator is the primary form, the draft-era part spellings
         // (a series reference or the bare member number) re-key onto
-        // checks_for. Only the S-158 family moves; a lettered or
+        // product. Only the S-158 family moves; a lettered or
         // compound part value is a genuine part face.
-        let mut checks_for = attrs.checks_for.take();
-        let mut checks_for_face = None;
-        if checks_for.is_some() {
+        let mut product = attrs.product.take();
+        let mut product_face = None;
+        if product.is_some() {
             // The member designator is the S-158 series device: the
             // grammar binds the colon shape for every series; the
             // anchor is semantic. Asserted on the builder-driven paths
@@ -472,11 +472,11 @@ impl IhoIdentifier {
             {
                 return Err(Error::InvalidHash {
                     detail: format!(
-                        "the checks_for member designator is the S-158 series device: \
+                        "the product member designator is the S-158 series device: \
                          {}-{}:{} cannot carry it",
                         kind.letter(),
                         number,
-                        checks_for.clone().unwrap_or_default(),
+                        product.clone().unwrap_or_default(),
                     ),
                 });
             }
@@ -512,12 +512,12 @@ impl IhoIdentifier {
                             ),
                         });
                     }
-                    checks_for = Some(member);
+                    product = Some(member);
                     if construction == Construction::Parse {
                         // The spelling face records the part value as
                         // written so the render keeps the input's
                         // spelling (facets-spelling-only).
-                        checks_for_face = Some(part);
+                        product_face = Some(part);
                     }
                     if attrs.edition.is_none() {
                         attrs.edition = member_edition;
@@ -535,8 +535,8 @@ impl IhoIdentifier {
         Ok(Self {
             kind,
             number,
-            checks_for,
-            checks_for_face,
+            product,
+            product_face,
             edition: attrs.edition,
             year: attrs.year,
             supplement: attrs.supplement,
@@ -566,7 +566,7 @@ impl IhoIdentifier {
     /// the flavor `key_value` shape; absent fields drop). The
     /// deserialization applies the same S-158 alias unification the
     /// parse path applies (`Builder.normalize_checks_alias` — a stored
-    /// row carrying the draft-era part model decodes to the checks_for
+    /// row carrying the draft-era part model decodes to the product
     /// identity), restores no spelling face, and runs no checks anchor
     /// assert (the reference's permissive lutaml decode).
     pub fn from_hash(hash: &Value) -> Result<Self> {
@@ -580,7 +580,7 @@ impl IhoIdentifier {
         let attrs = Attrs {
             kind: Some(kind),
             number: Some(hash_str(hash, "number")?.to_string()),
-            checks_for: optional_hash_str(hash, "checks_for").map(str::to_string),
+            product: optional_hash_str(hash, "product").map(str::to_string),
             edition: optional_hash_str(hash, "edition").map(str::to_string),
             year: optional_hash_str(hash, "year").map(str::to_string),
             supplement: optional_hash_str(hash, "supplement").map(str::to_string),
@@ -615,7 +615,7 @@ impl IhoIdentifier {
         object.insert("_type".into(), self.kind.type_tag().into());
         object.insert("number".into(), self.number.clone().into());
         let fields: [(&str, Option<&String>); 23] = [
-            ("checks_for", self.checks_for.as_ref()),
+            ("product", self.product.as_ref()),
             ("edition", self.edition.as_ref()),
             ("year", self.year.as_ref()),
             ("supplement", self.supplement.as_ref()),
@@ -657,13 +657,13 @@ impl IhoIdentifier {
     ///
     /// The S-158 member designator prints the canonical colon face
     /// (`S-158:102`) when no spelling face is set; the draft-era face
-    /// (`checks_for_face`, the part value as written) takes the Part
+    /// (`product_face`, the part value as written) takes the Part
     /// slot — after the edition, the declaration order of #775 (the
     /// citation order never moves a face).
     pub fn to_human(&self) -> String {
         let mut out = format!("IHO {}-{}", self.kind.letter(), self.number);
-        if let Some(checks) = &self.checks_for {
-            if self.checks_for_face.is_none() {
+        if let Some(checks) = &self.product {
+            if self.product_face.is_none() {
                 out.push_str(&format!(":{checks}"));
             }
         }
@@ -671,7 +671,7 @@ impl IhoIdentifier {
         push_face(&mut out, &self.supplement, " Sup {}");
         push_face(&mut out, &self.supplement_edition, " {}");
         push_face(&mut out, &self.supplement_year, " ({})");
-        if let Some(face) = &self.checks_for_face {
+        if let Some(face) = &self.product_face {
             // The draft-era face takes the Part slot (the reference's
             // face_value: the member is not a part, the slot is).
             out.push_str(&format!(" Part {face}"));
@@ -742,7 +742,7 @@ fn checks_digits_of(part: &str) -> Option<String> {
 // ---------------------------------------------------------------------------
 
 /// The attribute set from the artifact's flat bound map (the builder's
-/// cast): the typed `checks_for` binding (the colon designator binds
+/// cast): the typed `product` binding (the colon designator binds
 /// for every series; the anchor assert is semantic), spec-citation
 /// resolution and the edition shorthand padding.
 fn attrs_from_bound(bound: &Value) -> Result<Attrs> {
@@ -751,7 +751,7 @@ fn attrs_from_bound(bound: &Value) -> Result<Attrs> {
             .and_then(|t| t.chars().next())
             .and_then(IhoKind::from_letter),
         number: optional_bound_str(bound, "number").map(str::to_string),
-        checks_for: optional_bound_str(bound, "checks_for").map(str::to_string),
+        product: optional_bound_str(bound, "product").map(str::to_string),
         year: optional_bound_str(bound, "year").map(str::to_string),
         supplement: optional_bound_str(bound, "supplement").map(str::to_string),
         supplement_edition: optional_bound_str(bound, "supplement_edition").map(str::to_string),
@@ -898,7 +898,7 @@ fn is_part_value(value: &str) -> bool {
 /// base with-year qualifier right after the edition, then each
 /// component with its own edition/year right after it (`ed-`). The
 /// Appendix subnumber hyphen-joins its appendix (one compound
-/// segment); the checks_for member rides the name segment; the S-4
+/// segment); the product member rides the name segment; the S-4
 /// citation's letter rides `part-`.
 const MRN_SEGMENTS: [(&str, &str); 20] = [
     ("year", "year"),
@@ -997,7 +997,7 @@ impl IhoIdentifier {
     /// canonical 4th position: s158-102.
     fn mrn_name(&self) -> String {
         let mut name = format!("{}{}", self.kind.letter().to_lowercase(), self.number);
-        if let Some(checks) = &self.checks_for {
+        if let Some(checks) = &self.product {
             name.push_str(&format!("-{checks}"));
         }
         name
@@ -1059,7 +1059,7 @@ impl IhoIdentifier {
         let mut attrs = Attrs {
             kind: Some(letter),
             number: Some(number.to_string()),
-            checks_for: member.map(str::to_string),
+            product: member.map(str::to_string),
             ..Attrs::default()
         };
         // The bare dotted edition in the canonical 4th segment.
@@ -1382,7 +1382,7 @@ fn store_attr(attrs: &mut Attrs, key: &str, value: &str, urn: &str) -> Result<()
 
 fn attrs_field<'a>(attrs: &'a Attrs, field: &str) -> Option<&'a String> {
     match field {
-        "checks_for" => attrs.checks_for.as_ref(),
+        "product" => attrs.product.as_ref(),
         "edition" => attrs.edition.as_ref(),
         "year" => attrs.year.as_ref(),
         "supplement" => attrs.supplement.as_ref(),
@@ -1411,7 +1411,7 @@ fn attrs_field<'a>(attrs: &'a Attrs, field: &str) -> Option<&'a String> {
 
 fn set_attr(attrs: &mut Attrs, field: &str, value: String) {
     match field {
-        "checks_for" => attrs.checks_for = Some(value),
+        "product" => attrs.product = Some(value),
         "edition" => attrs.edition = Some(value),
         "year" => attrs.year = Some(value),
         "supplement" => attrs.supplement = Some(value),
@@ -1456,13 +1456,13 @@ impl IhoIdentifier {
     /// decodable for the pre-migration forms — the emitted URN is the
     /// MRN above for S/P/M and this same shape for B/C. The first bare
     /// number segment is the docnumber; the next bare digit segment
-    /// binds the S-158 member number (checks_for — the member as its
+    /// binds the S-158 member number (product — the member as its
     /// own segment, never glued into the number); every other
     /// component is a marker-prefixed segment validated against its
     /// own pattern; `ed-`/`year-` are positional (the edition attaches
     /// to the node it follows); unknown, reordered, duplicate or junk
     /// segments reject. The draft-era `part-S-102` segments decode
-    /// into `checks_for` through the shared construction path.
+    /// into `product` through the shared construction path.
     fn parse_legacy_urn(urn: &str) -> Result<Self> {
         let body = urn
             .strip_prefix("urn:iho:")
@@ -1491,9 +1491,9 @@ impl IhoIdentifier {
             ..Attrs::default()
         };
         // The further bare digit segment binds the S-158 member number
-        // (checks_for — the member as its own segment).
+        // (product — the member as its own segment).
         if segments.first().is_some_and(|s| is_digits(s)) {
-            attrs.checks_for = Some(segments.remove(0).to_string());
+            attrs.product = Some(segments.remove(0).to_string());
         }
         consume_segments(&mut attrs, &segments, urn)?;
         Self::assemble(attrs, Construction::Urn)
@@ -1528,10 +1528,10 @@ fn is_legacy_number(segment: &str) -> bool {
 
 /// The pubid-URN atoms in schema declaration order (`(field, marker)`
 /// pairs; the canonical segment order — citation face order never
-/// moves a segment). `checks_for` leads: the member atom sits closest
+/// moves a segment). `product` leads: the member atom sits closest
 /// to the document number (`Pubid::Iho::PubidUrnSchema`).
 const PUBID_ATOMS: [(&str, &str); 23] = [
-    ("checks_for", "checks"),
+    ("product", "product"),
     ("edition", "ed"),
     ("year", "year"),
     ("supplement", "sup"),
@@ -1555,6 +1555,13 @@ const PUBID_ATOMS: [(&str, &str); 23] = [
     ("volume_edition", "voled"),
     ("volume_year", "voly"),
 ];
+
+/// The legacy pubid-URN atoms: the markers the rename retired, kept
+/// decodable and never emitted (the `checks-` marker of the pre-rename
+/// schema decodes onto `product` — gem #783). A legacy atom stores
+/// through the same field as its replacement, so the duplicate check
+/// rejects any mix of the two spellings for one component.
+const LEGACY_PUBID_ATOMS: [(&str, &str); 1] = [("product", "checks")];
 
 impl IhoIdentifier {
     /// The pubid-scheme URN (`urn:pubid:iho:<type>:<number>[:atoms]`):
@@ -1580,10 +1587,11 @@ impl IhoIdentifier {
     /// Parse a pubid-scheme URN: the type key, the (escaped) number,
     /// then the atoms in schema order, each validated against its
     /// field's pattern; duplicates and unknown segments reject. The
-    /// decoded shape rebuilds through the shared construction path
-    /// (the draft-era `part-S-102` shapes re-key into `checks_for`;
-    /// the reference decodes this scheme through the permissive
-    /// `from_hash` — no checks anchor assert).
+    /// pre-rename `product-` marker decodes onto `product` (decodable,
+    /// never emitted — gem #783). The decoded shape rebuilds through
+    /// the shared construction path (the draft-era `part-S-102` shapes
+    /// re-key into `product`; the reference decodes this scheme through
+    /// the permissive `from_hash` — no checks anchor assert).
     fn parse_pubid_urn(urn: &str) -> Result<Self> {
         let body = urn
             .strip_prefix("urn:pubid:iho:")
@@ -1618,6 +1626,7 @@ impl IhoIdentifier {
             let field = PUBID_ATOMS
                 .iter()
                 .find(|(_, atom)| *atom == marker)
+                .or_else(|| LEGACY_PUBID_ATOMS.iter().find(|(_, atom)| *atom == marker))
                 .map(|(field, _)| *field)
                 .ok_or_else(|| unexpected_segment(segment, urn))?;
             if attrs_field(&attrs, field).is_some() {
@@ -1637,7 +1646,7 @@ impl IhoIdentifier {
 /// The same field read off a built identifier (the URN emitters).
 fn attr_value<'a>(id: &'a IhoIdentifier, field: &str) -> Option<&'a String> {
     match field {
-        "checks_for" => id.checks_for.as_ref(),
+        "product" => id.product.as_ref(),
         "edition" => id.edition.as_ref(),
         "year" => id.year.as_ref(),
         "supplement" => id.supplement.as_ref(),
@@ -1666,7 +1675,7 @@ fn attr_value<'a>(id: &'a IhoIdentifier, field: &str) -> Option<&'a String> {
 
 fn pubid_value_valid(field: &str, value: &str) -> bool {
     match field {
-        "checks_for" => is_digits(value),
+        "product" => is_digits(value),
         "edition" | "part_edition" | "supplement_edition" | "annex_edition"
         | "appendix_edition" | "volume_edition" => is_dotted_edition(value),
         "year" | "supplement_year" | "part_year" | "annex_year" | "appendix_year"
@@ -1754,8 +1763,8 @@ mod tests {
             let id = parse(input);
             assert_eq!(id.kind, IhoKind::Standard, "{input}");
             assert_eq!(id.number, "158", "{input}");
-            assert_eq!(id.checks_for.as_deref(), Some(checks), "{input}");
-            assert_eq!(id.checks_for_face, None, "{input}");
+            assert_eq!(id.product.as_deref(), Some(checks), "{input}");
+            assert_eq!(id.product_face, None, "{input}");
             assert_eq!(id.part, None, "{input}");
         }
         // The colon face is the primary designator: byte-exact.
@@ -1766,7 +1775,7 @@ mod tests {
             json!({
                 "_type": "pubid:iho:standard",
                 "number": "158",
-                "checks_for": "102",
+                "product": "102",
                 "edition": "1.0.0",
             })
         );
@@ -1775,9 +1784,9 @@ mod tests {
     }
 
     #[test]
-    fn the_framework_has_no_checks_for() {
+    fn the_framework_has_no_product() {
         let id = parse("IHO S-158 1.0.0");
-        assert_eq!(id.checks_for, None);
+        assert_eq!(id.product, None);
         assert_eq!(id.to_human(), "IHO S-158 1.0.0");
         assert_eq!(urn("IHO S-158 1.0.0"), "urn:mrn:iho:pub:spec:s158:1.0.0");
         assert_eq!(
@@ -1802,7 +1811,7 @@ mod tests {
         for id in [&expanded, &reversed, &compact, &bare] {
             assert_eq!(id, &colon, "{}", id.to_human());
             assert_eq!(id.number, "158");
-            assert_eq!(id.checks_for.as_deref(), Some("102"));
+            assert_eq!(id.product.as_deref(), Some("102"));
             assert_eq!(id.part, None);
             assert_eq!(id.part_edition, None);
             assert_eq!(id.edition.as_deref(), Some("0.2.0"));
@@ -1820,7 +1829,7 @@ mod tests {
             json!({
                 "_type": "pubid:iho:standard",
                 "number": "158",
-                "checks_for": "102",
+                "product": "102",
                 "edition": "0.2.0",
             })
         );
@@ -1830,8 +1839,8 @@ mod tests {
             assert_eq!(id.to_pubid_urn(), colon.to_pubid_urn());
         }
         // The face values are the part values as written.
-        assert_eq!(expanded.checks_for_face.as_deref(), Some("S-102"));
-        assert_eq!(bare.checks_for_face.as_deref(), Some("102"));
+        assert_eq!(expanded.product_face.as_deref(), Some("S-102"));
+        assert_eq!(bare.product_face.as_deref(), Some("102"));
         // An edition-less draft-era spelling keeps its face with
         // nothing before it.
         assert_eq!(
@@ -1853,7 +1862,7 @@ mod tests {
         assert!(!id.to_pubid_urn().contains("parted-"));
         assert_eq!(
             id.to_pubid_urn(),
-            "urn:pubid:iho:std:158:checks-102:ed-0.2.0"
+            "urn:pubid:iho:std:158:product-102:ed-0.2.0"
         );
         // The legacy mis-bound form still decodes into the same
         // identity, never emitted.
@@ -1861,7 +1870,7 @@ mod tests {
         assert_eq!(legacy, id);
         assert_eq!(
             legacy.to_pubid_urn(),
-            "urn:pubid:iho:std:158:checks-102:ed-0.2.0"
+            "urn:pubid:iho:std:158:product-102:ed-0.2.0"
         );
         // The member year folds the same way.
         let dated = parse("IHO S-158 Part S-102 0.2.0 (2023)");
@@ -1889,14 +1898,14 @@ mod tests {
     #[test]
     fn the_retired_part_segment_decodes_never_emits() {
         // The `part-S-102` URN segment dies on this family: both
-        // retired orders decode into checks_for, and every emit is
+        // retired orders decode into product, and every emit is
         // the MRN member form.
         for legacy in [
             "urn:iho:s:158:ed-0.2.0:part-S-102",
             "urn:iho:s:158:part-S-102:ed-0.2.0",
         ] {
             let id = parse(legacy);
-            assert_eq!(id.checks_for.as_deref(), Some("102"), "{legacy}");
+            assert_eq!(id.product.as_deref(), Some("102"), "{legacy}");
             assert_eq!(id.part, None, "{legacy}");
             assert_eq!(id.edition.as_deref(), Some("0.2.0"), "{legacy}");
             assert_eq!(
@@ -1909,7 +1918,7 @@ mod tests {
         // the opaque legacy number (the reference re-keys the
         // draft-era PART model only) and round-trips verbatim.
         let escaped = parse("urn:pubid:iho:std:158~3A102:ed-1.0.0");
-        assert_eq!(escaped.checks_for, None);
+        assert_eq!(escaped.product, None);
         assert_eq!(escaped.number, "158:102");
         assert_eq!(
             escaped.to_pubid_urn(),
@@ -1920,16 +1929,16 @@ mod tests {
     #[test]
     fn the_member_and_a_genuine_part_coexist() {
         // A series-reference part beside a BOUND member stays a plain
-        // part (the rebind runs only while checks_for is unbound), and
+        // part (the rebind runs only while product is unbound), and
         // the numbered part beside the member keeps its own edition
         // (the part's own, separately-published).
         let part_ref = parse("IHO S-158:102 1.0.0 Part S-103");
-        assert_eq!(part_ref.checks_for.as_deref(), Some("102"));
+        assert_eq!(part_ref.product.as_deref(), Some("102"));
         assert_eq!(part_ref.part.as_deref(), Some("S-103"));
         assert_eq!(part_ref.to_human(), "IHO S-158:102 1.0.0 Part S-103");
 
         let numbered = parse("IHO S-158:100 Part 2 1.0.0");
-        assert_eq!(numbered.checks_for.as_deref(), Some("100"));
+        assert_eq!(numbered.product.as_deref(), Some("100"));
         assert_eq!(numbered.part.as_deref(), Some("2"));
         assert_eq!(numbered.part_edition.as_deref(), Some("1.0.0"));
         assert_eq!(numbered.edition, None);
@@ -1939,7 +1948,7 @@ mod tests {
         );
         assert_eq!(
             numbered.to_pubid_urn(),
-            "urn:pubid:iho:std:158:checks-100:part-2:parted-1.0.0"
+            "urn:pubid:iho:std:158:product-100:part-2:parted-1.0.0"
         );
     }
 
@@ -1967,7 +1976,7 @@ mod tests {
         );
         assert_eq!(
             parse("IHO S-158:102 1.0.0").to_pubid_urn(),
-            "urn:pubid:iho:std:158:checks-102:ed-1.0.0"
+            "urn:pubid:iho:std:158:product-102:ed-1.0.0"
         );
     }
 
@@ -2269,7 +2278,7 @@ mod tests {
         );
         assert_eq!(
             parse("IHO S-158:100").to_pubid_urn(),
-            "urn:pubid:iho:std:158:checks-100"
+            "urn:pubid:iho:std:158:product-100"
         );
     }
 
@@ -2301,15 +2310,35 @@ mod tests {
     #[test]
     fn rejects_the_bad_pubid_urns() {
         for urn in [
-            "urn:pubid:iho:std:158:checks-102:checks-103", // duplicate
-            "urn:pubid:iho:std:158:checks-abc",            // not digits
-            "urn:pubid:iho:std:158:junk-1",                // unknown atom
-            "urn:pubid:iho:zz:158",                        // unknown type key
-            "urn:pubid:iho:std:158:ed-1.0",                // not dotted
-            "urn:pubid:iho",                               // truncated
+            "urn:pubid:iho:std:158:product-102:product-103", // duplicate
+            "urn:pubid:iho:std:158:product-102:checks-103",  // legacy duplicate
+            "urn:pubid:iho:std:158:product-abc",             // not digits
+            "urn:pubid:iho:std:158:checks-abc",              // ditto, legacy atom
+            "urn:pubid:iho:std:158:junk-1",                  // unknown atom
+            "urn:pubid:iho:zz:158",                          // unknown type key
+            "urn:pubid:iho:std:158:ed-1.0",                  // not dotted
+            "urn:pubid:iho",                                 // truncated
         ] {
             assert!(IhoIdentifier::parse(urn).is_err(), "{urn} must be rejected");
         }
+    }
+
+    #[test]
+    fn the_pre_rename_checks_atom_decodes_never_emits() {
+        // The `checks-` atom of the pre-rename schema (gem #783) stays
+        // decodable onto `product` and never emits: every emit is the
+        // `product-` atom.
+        let id = parse("urn:pubid:iho:std:158:checks-102:ed-1.0.0");
+        assert_eq!(id.product.as_deref(), Some("102"));
+        assert_eq!(id.to_human(), "IHO S-158:102 1.0.0");
+        assert_eq!(
+            id.to_pubid_urn(),
+            "urn:pubid:iho:std:158:product-102:ed-1.0.0"
+        );
+        assert_eq!(id, parse("IHO S-158:102 1.0.0"));
+        // The legacy atom stores through the same field: one spelling
+        // per component.
+        assert!(IhoIdentifier::parse("urn:pubid:iho:std:158:checks-102:checks-103").is_err());
     }
 
     // -----------------------------------------------------------------
@@ -2346,7 +2375,7 @@ mod tests {
             // its component, a bare base edition on the base.
             ("urn:iho:p:6:vol-2:ed-1.0.1", "IHO P-6 Vol. 2 1.0.1"),
             ("urn:iho:p:6:ed-1.0.0:vol-2", "IHO P-6 1.0.0 Vol. 2"),
-            // The draft-era part-S-102 URN decodes to the checks_for
+            // The draft-era part-S-102 URN decodes to the product
             // identity; the render keeps the Part face only on the
             // parse path — a URN decode renders the canonical colon.
             ("urn:iho:s:158:part-S-102:ed-0.2.0", "IHO S-158:102 0.2.0"),
@@ -2505,8 +2534,8 @@ mod tests {
             assert_eq!(rebuilt.to_hash(), hash, "{input}");
             // The canonical hash carries no spelling face, so the
             // rebuild renders the canonical colon designator for S-158.
-            if id.checks_for.is_some() {
-                assert_eq!(rebuilt.checks_for_face, None, "{input}");
+            if id.product.is_some() {
+                assert_eq!(rebuilt.product_face, None, "{input}");
             }
         }
     }
@@ -2514,7 +2543,7 @@ mod tests {
     #[test]
     fn a_draft_era_hash_re_keys_on_deserialization() {
         // The legacy serialized shape (part: S-102) re-keys into
-        // checks_for — the deserialization side of #774.
+        // product — the deserialization side of #774.
         let id = IhoIdentifier::from_hash(&json!({
             "_type": "pubid:iho:standard",
             "number": "158",
@@ -2522,15 +2551,15 @@ mod tests {
             "part": "S-102",
         }))
         .expect("from_hash");
-        assert_eq!(id.checks_for.as_deref(), Some("102"));
+        assert_eq!(id.product.as_deref(), Some("102"));
         assert_eq!(id.part, None);
-        assert_eq!(id.checks_for_face, None);
+        assert_eq!(id.product_face, None);
         assert_eq!(
             id.to_hash(),
             json!({
                 "_type": "pubid:iho:standard",
                 "number": "158",
-                "checks_for": "102",
+                "product": "102",
                 "edition": "0.2.0",
             })
         );
@@ -2542,7 +2571,7 @@ mod tests {
             "part": "102",
         }))
         .expect("from_hash");
-        assert_eq!(bare.checks_for.as_deref(), Some("102"));
+        assert_eq!(bare.product.as_deref(), Some("102"));
         // The member edition folds onto the publication.
         let mis_bound = IhoIdentifier::from_hash(&json!({
             "_type": "pubid:iho:standard",
@@ -2568,24 +2597,24 @@ mod tests {
     fn from_hash_is_the_permissive_decode() {
         // The reference's from_hash runs the part-model unification
         // only: no checks anchor assert (a stored hash may carry
-        // checks_for on another anchor) and no mutual-exclusion raise
-        // when checks_for and part both ride.
+        // product on another anchor) and no mutual-exclusion raise
+        // when product and part both ride.
         let off_anchor = IhoIdentifier::from_hash(&json!({
             "_type": "pubid:iho:standard",
             "number": "100",
-            "checks_for": "2",
+            "product": "2",
         }))
         .expect("from_hash is permissive off the S-158 anchor");
-        assert_eq!(off_anchor.checks_for.as_deref(), Some("2"));
+        assert_eq!(off_anchor.product.as_deref(), Some("2"));
 
         let both = IhoIdentifier::from_hash(&json!({
             "_type": "pubid:iho:standard",
             "number": "158",
-            "checks_for": "102",
+            "product": "102",
             "part": "S-103",
         }))
         .expect("from_hash keeps both components");
-        assert_eq!(both.checks_for.as_deref(), Some("102"));
+        assert_eq!(both.product.as_deref(), Some("102"));
         assert_eq!(both.part.as_deref(), Some("S-103"));
         // A member year yields to a base year on deserialization.
         let years = IhoIdentifier::from_hash(&json!({
@@ -2606,7 +2635,7 @@ mod tests {
         // shape: only the member faces re-key.
         let id = parse("IHO S-158:102 1.0.0 Part 2");
         assert_eq!(id.number, "158");
-        assert_eq!(id.checks_for.as_deref(), Some("102"));
+        assert_eq!(id.product.as_deref(), Some("102"));
         assert_eq!(id.part.as_deref(), Some("2"));
         assert_eq!(id.to_human(), "IHO S-158:102 1.0.0 Part 2");
         assert_eq!(urn_str(&id), "urn:mrn:iho:pub:spec:s158-102:1.0.0:part-2");
@@ -2630,7 +2659,7 @@ mod tests {
         let human = parse("IHO S-158:102 1.0.0");
         let from_mrn = parse("urn:mrn:iho:pub:spec:s158-102:1.0.0");
         let from_retired = parse("urn:iho:s:158:102:ed-1.0.0");
-        let from_pubid = parse("urn:pubid:iho:std:158:checks-102:ed-1.0.0");
+        let from_pubid = parse("urn:pubid:iho:std:158:product-102:ed-1.0.0");
         assert_eq!(from_mrn, human);
         assert_eq!(from_retired, human);
         assert_eq!(from_pubid, human);
@@ -2642,7 +2671,7 @@ mod tests {
     fn the_spelling_face_never_reaches_the_hash_or_urns() {
         let colon = parse("IHO S-158:102 0.2.0");
         let expanded = parse("IHO S-158 0.2.0 Part S-102");
-        assert_ne!(colon.checks_for_face, expanded.checks_for_face);
+        assert_ne!(colon.product_face, expanded.product_face);
         assert_eq!(colon.to_hash(), expanded.to_hash());
         assert_eq!(urn_str(&colon), urn_str(&expanded));
         assert_eq!(colon.to_pubid_urn(), expanded.to_pubid_urn());
@@ -2656,10 +2685,10 @@ mod tests {
         let other = parse("IHO S-98 Part S-102");
         assert_eq!(other.number, "98");
         assert_eq!(other.part.as_deref(), Some("S-102"));
-        assert_eq!(other.checks_for, None);
+        assert_eq!(other.product, None);
         // Any of the S/P/M/B/C series references re-keys on S-158.
         let widened = parse("IHO S-158 1.0.0 Part P-5");
-        assert_eq!(widened.checks_for.as_deref(), Some("5"));
+        assert_eq!(widened.product.as_deref(), Some("5"));
         assert_eq!(widened.part, None);
     }
 }

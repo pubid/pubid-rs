@@ -217,10 +217,11 @@ export, unmodified (clean status, no debt).
   - `standard.yaml` sha256 95d2a85f1b27a06926d8fcd95b49407bac4bb0be4af0c8f964a3d711e10b3362
 
 The iho slice is a byte copy from its own flavor-only testsuite ref:
-`pubid/pubid-testsuite@9dcf0eb34b3600d9b0667f7b211045a3f78103cf`
-(`tests/iho/`, the S-158 re-freeze round at pubid 561ae27693bb — see
-`/pins.yaml`, `testsuite_ref_iho`; the round re-keys the corpus onto
-the landed #774/#775/#776 model: the typed `checks_for` component
+`pubid/pubid-testsuite@4a3b030feb349e922881cd987cffd062e5853384`
+(`tests/iho/`, the S-158 product-facet re-freeze round at pubid
+81b786888833 — see `/pins.yaml`, `testsuite_ref_iho`; the round
+re-keys the corpus onto the landed #774/#775/#776 model renamed by
+gem #783: the typed `product` component (the `checks_for` rename)
 replacing the opaque `158:NNN` numbers, the draft-era part spellings
 unified, and the `urn:mrn:iho:pub:` guidance URNs replacing the
 retired `urn:iho:` emission). The span from `testsuite_ref` (e6cf11b)
@@ -238,7 +239,7 @@ besides `_negative.yaml` / `_status.yaml`).
   - `circular_letter.yaml` sha256 d7e6a669b7766c7d7eeef66d77fd560c00c44d09ba1895e03f380a37abfd1a19
   - `miscellaneous.yaml` sha256 70083ab4527a143a2576c66dba18455b4058b6fcc962f561479b41f660067f14
   - `publication.yaml` sha256 e2bf0f978e20c68e8a1d3d881b969c0f34b58864c303bc59475808ccd101d5b5
-  - `standard.yaml` sha256 21b591192e316b5afb0a1a573a0487793e06192f2d6c73467ba523591e9031a2
+  - `standard.yaml` sha256 946767690892542b96854cb4491a497d1146bebff1e82440a448af13131e8575
 
 The iala slice is a byte copy from its own flavor-only testsuite ref:
 `pubid/pubid-testsuite@6179c23b117dd33d24e82b5ec6832618bce157f1`

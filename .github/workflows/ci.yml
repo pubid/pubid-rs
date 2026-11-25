@@ -139,8 +139,9 @@ jobs:
         run: |
           # The iho flavor (grammar_ref_iho) carries its own
           # flavor-only pin, like the eu/arxiv, ansi and wmo ones (see
-          # /pins.yaml): the re-bake with the checks_for binding moves
-          # the pin in the same change that re-vendors the envelope.
+          # /pins.yaml): the re-bake with the product binding (the
+          # checks_for rename, grammar #148) moves the pin in the same
+          # change that re-vendors the envelope.
           cmp "pubid-grammar-iho/artifacts/iho.json" \
               "crates/pubid-core/artifacts/iho.json"
 
@@ -193,10 +194,10 @@ jobs:
 
       - name: Vendored iho slice matches its pinned testsuite ref (drift gate)
         run: |
-          # The iho corpus (the S-158 re-freeze round, the #776
-          # re-keyed rows) postdates the testsuite_ref pin and rides
-          # with the adobe/iala/ieee freezes - it carries its own
-          # flavor-only pin (see /pins.yaml).
+          # The iho corpus (the product-facet re-freeze round, the
+          # checks_for -> product re-keyed rows of gem #783) postdates
+          # the testsuite_ref pin and rides with the iala freeze - it
+          # carries its own flavor-only pin (see /pins.yaml).
           for file in crates/pubid-core/fixtures/testsuite/iho/*.yaml; do
             cmp "$file" "pubid-testsuite-iho/tests/iho/$(basename "$file")"
           done
