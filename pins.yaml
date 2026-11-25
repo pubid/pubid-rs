@@ -67,6 +67,15 @@ grammar_ref_wmo: 588687ec7de76ed1e9e679b81b200d5c5ca72baf
 # the OTHER flavors is checked against the testsuite_ref pin above, the
 # wmo slice against this one.
 testsuite_ref_wmo: af9068bccb5a740240c6e56289949a0604576833
+# pubid-testsuite main (9dcf0eb34b36, the iho re-freeze round at pubid
+# 561ae27693bb, the 2.0.52 release span): the tests/iho corpus was
+# byte-copied from here (5 corpus files, _negative.yaml, _status.yaml;
+# status clean, known_mismatches 0 — the S-158 checks_for re-keyed rows
+# and the migrated urn:mrn:iho:pub: URNs of the #774/#775/#776 model).
+# A flavor-only testsuite pin, like the wmo one: the same span carries
+# the adobe/iala/ieee freezes, whose regenerated slices this repository
+# does not fold back yet.
+testsuite_ref_iho: 9dcf0eb34b3600d9b0667f7b211045a3f78103cf
 # The eu/arxiv fixture slices are NOT testsuite copies, and the ansi
 # slice is REGENERATED ahead of the testsuite: the corpora live in (or
 # were generated in-process from) the gem's spec/fixtures - see the

@@ -1,0 +1,121 @@
+---
+- id: iho.miscellaneous.0021
+  identifier:
+    _type: pubid:iho:miscellaneous
+    number: '1'
+    edition: 2.1.0
+  representations:
+    human: IHO M-1 2.1.0
+    urn: urn:mrn:iho:pub:reg:m1:2.1.0
+  style: v3
+- id: iho.miscellaneous.0022
+  identifier:
+    _type: pubid:iho:miscellaneous
+    number: '1'
+    edition: 2.1.1
+  representations:
+    human: IHO M-1 2.1.1
+    urn: urn:mrn:iho:pub:reg:m1:2.1.1
+  style: v3
+- id: iho.miscellaneous.0023
+  identifier:
+    _type: pubid:iho:miscellaneous
+    number: '1'
+    edition: 2.1.2
+  representations:
+    human: IHO M-1 2.1.2
+    urn: urn:mrn:iho:pub:reg:m1:2.1.2
+  style: v3
+- id: iho.miscellaneous.0024
+  identifier:
+    _type: pubid:iho:miscellaneous
+    number: '1'
+    edition: 2.1.3
+  representations:
+    human: IHO M-1 2.1.3
+    urn: urn:mrn:iho:pub:reg:m1:2.1.3
+  style: v3
+- id: iho.miscellaneous.0025
+  identifier:
+    _type: pubid:iho:miscellaneous
+    number: '10'
+    edition: 3.0.0
+  representations:
+    human: IHO M-10 3.0.0
+    urn: urn:mrn:iho:pub:reg:m10:3.0.0
+  style: v3
+- id: iho.miscellaneous.0026
+  identifier:
+    _type: pubid:iho:miscellaneous
+    number: '2'
+    edition: 3.0.7
+  representations:
+    human: IHO M-2 3.0.7
+    urn: urn:mrn:iho:pub:reg:m2:3.0.7
+  style: v3
+- id: iho.miscellaneous.0027
+  identifier:
+    _type: pubid:iho:miscellaneous
+    number: '2'
+    supplement: '1'
+  representations:
+    human: IHO M-2 Sup 1
+    urn: urn:mrn:iho:pub:reg:m2:sup-1
+  style: v3
+- id: iho.miscellaneous.0028
+  identifier:
+    _type: pubid:iho:miscellaneous
+    number: '2'
+    supplement: '3'
+  representations:
+    human: IHO M-2 Sup 3
+    urn: urn:mrn:iho:pub:reg:m2:sup-3
+  style: v3
+  non_normalized_aliases:
+  - spelling: IHO M-2 Suppl 3
+    style: v3
+- id: iho.miscellaneous.0029
+  identifier:
+    _type: pubid:iho:miscellaneous
+    number: '2'
+    supplement: '6'
+  representations:
+    human: IHO M-2 Sup 6
+    urn: urn:mrn:iho:pub:reg:m2:sup-6
+  style: v3
+- id: iho.miscellaneous.0030
+  identifier:
+    _type: pubid:iho:miscellaneous
+    number: '3'
+    edition: 2.0.0
+  representations:
+    human: IHO M-3 2.0.0
+    urn: urn:mrn:iho:pub:reg:m3:2.0.0
+  style: v3
+- id: iho.miscellaneous.0031
+  identifier:
+    _type: pubid:iho:miscellaneous
+    number: '7'
+    edition: 3.0.0
+  representations:
+    human: IHO M-7 3.0.0
+    urn: urn:mrn:iho:pub:reg:m7:3.0.0
+  style: v3
+- id: iho.miscellaneous.0032
+  identifier:
+    _type: pubid:iho:miscellaneous
+    number: '7'
+    edition: 8.0.0
+  representations:
+    human: IHO M-7 8.0.0
+    urn: urn:mrn:iho:pub:reg:m7:8.0.0
+  style: v3
+- id: iho.miscellaneous.0033
+  identifier:
+    _type: pubid:iho:miscellaneous
+    number: '7'
+    edition: 9.0.0
+  representations:
+    human: IHO M-7 9.0.0
+    urn: urn:mrn:iho:pub:reg:m7:9.0.0
+  style: v3
