@@ -1,11 +1,14 @@
 [package]
 name = "pubid-wasm"
 description = "WebAssembly bindings for pubid-core: the parse/detect/URN surface for the playground"
-version.workspace = true
-edition.workspace = true
-license.workspace = true
-repository.workspace = true
-authors.workspace = true
+# wasm-pack's own manifest reader cannot parse workspace inheritance (it sees
+# `{ workspace = true }` maps where it expects strings) — the package fields
+# are inlined on purpose; keep them in sync with [workspace.package].
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/pubid/pubid-rs"
+authors = ["PubID contributors"]
 publish = false
 
 [lib]
