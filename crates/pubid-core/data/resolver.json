@@ -1,0 +1,183 @@
+{
+  "version": "1.0.0",
+  "notes": [
+    "The publisher-URL mapping: one row per attested canonical landing page.",
+    "Every entry cites its source; the example row is re-parsed and the",
+    "rendered canonical URL is asserted against `example.url` by the",
+    "resolver tests (crates/pubid-core/tests/resolver.rs). An entry whose",
+    "URL pattern cannot be attested from the publisher's own site or a",
+    "documented deep-link scheme stays out of this table.",
+    "All receipts probed 2026-11-26.",
+    "DOI mappings land per ported flavor, attested patterns only; the",
+    "IEEE/ISO/IEC DOI patterns wait for those flavors' pubid-rs port."
+  ],
+  "entries": [
+    {
+      "flavor": "doi",
+      "type": "pubid:doi:resource",
+      "canonical": "https://doi.org/{prefix}/{suffix}",
+      "alternates": [
+        "https://dx.doi.org/{prefix}/{suffix}"
+      ],
+      "example": {
+        "input": "doi:10.1000/182",
+        "url": "https://doi.org/10.1000/182"
+      },
+      "source": "ISO 26324 / the DOI Handbook handle resolution: https://doi.org/10.1000/182 resolves (HTTP 200) to the DOI Handbook landing; doi.org is the resolver designated by ISO 26324. The legacy dx.doi.org host is the DOI Handbook's documented alias form."
+    },
+    {
+      "flavor": "ietf",
+      "type": "pubid:ietf:rfc",
+      "canonical": "https://www.rfc-editor.org/rfc/rfc{number}.html",
+      "alternates": [
+        "https://www.rfc-editor.org/info/rfc{number}",
+        "https://datatracker.ietf.org/doc/rfc{number}/"
+      ],
+      "doi": "10.17487/RFC{number}",
+      "example": {
+        "input": "RFC 9110",
+        "url": "https://www.rfc-editor.org/rfc/rfc9110.html"
+      },
+      "source": "RFC Editor: https://www.rfc-editor.org/rfc/rfc9110.html (HTTP 200) and the info page https://www.rfc-editor.org/info/rfc9110 (HTTP 200), which cites the DOI 10.17487/RFC9110; datatracker.ietf.org/doc/rfc9110/ (HTTP 200)."
+    },
+    {
+      "flavor": "ietf",
+      "type": "pubid:ietf:bcp",
+      "canonical": "https://www.rfc-editor.org/info/bcp{number}",
+      "alternates": [
+        "https://datatracker.ietf.org/doc/bcp{number}/"
+      ],
+      "example": {
+        "input": "BCP 10",
+        "url": "https://www.rfc-editor.org/info/bcp10"
+      },
+      "source": "RFC Editor info pages carry the BCP sub-series: https://www.rfc-editor.org/info/bcp10 (HTTP 200); datatracker.ietf.org/doc/bcp10/ (HTTP 200)."
+    },
+    {
+      "flavor": "ietf",
+      "type": "pubid:ietf:std",
+      "canonical": "https://www.rfc-editor.org/info/std{number}",
+      "alternates": [
+        "https://datatracker.ietf.org/doc/std{number}/"
+      ],
+      "example": {
+        "input": "STD 1",
+        "url": "https://www.rfc-editor.org/info/std1"
+      },
+      "source": "RFC Editor info pages carry the STD sub-series: https://www.rfc-editor.org/info/std1 (HTTP 200); datatracker.ietf.org/doc/std1/ (HTTP 200)."
+    },
+    {
+      "flavor": "ietf",
+      "type": "pubid:ietf:fyi",
+      "canonical": "https://www.rfc-editor.org/info/fyi{number}",
+      "alternates": [
+        "https://datatracker.ietf.org/doc/fyi{number}/"
+      ],
+      "example": {
+        "input": "FYI 4",
+        "url": "https://www.rfc-editor.org/info/fyi4"
+      },
+      "source": "RFC Editor info pages carry the FYI sub-series: https://www.rfc-editor.org/info/fyi4 (HTTP 200)."
+    },
+    {
+      "flavor": "ietf",
+      "type": "pubid:ietf:internet-draft",
+      "canonical": "https://datatracker.ietf.org/doc/{number}/",
+      "alternates": [
+        "https://datatracker.ietf.org/doc/{number}/{version}/"
+      ],
+      "example": {
+        "input": "draft-ietf-httpbis-messaging-19",
+        "url": "https://datatracker.ietf.org/doc/draft-ietf-httpbis-messaging/"
+      },
+      "source": "IETF Datatracker document pages: https://datatracker.ietf.org/doc/draft-ietf-httpbis-messaging/ (HTTP 200) and the revision-specific https://datatracker.ietf.org/doc/draft-ietf-httpbis-messaging/19/ (HTTP 200)."
+    },
+    {
+      "flavor": "w3c",
+      "type_prefix": "pubid:w3c:",
+      "canonical": "https://www.w3.org/TR/{number}/",
+      "alternates": [
+        "https://www.w3.org/TR/{w3c_dated}/"
+      ],
+      "example": {
+        "input": "W3C CR-exi-20091208",
+        "url": "https://www.w3.org/TR/exi/"
+      },
+      "source": "W3C technical-report 'latest version' pages: https://www.w3.org/TR/html40/, https://www.w3.org/TR/exi/ and https://www.w3.org/TR/css-backgrounds-3/ (HTTP 200 each); the dated companion form https://www.w3.org/TR/2009/CR-exi-20091208/ (HTTP 200)."
+    },
+    {
+      "flavor": "eu",
+      "type_prefix": "pubid:eu:",
+      "canonical": "https://eur-lex.europa.eu/eli/{eli_tag}/{year}/{number}/oj",
+      "alternates": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:{celex}"
+      ],
+      "example": {
+        "input": "EU Regulation 1227/2011",
+        "url": "https://eur-lex.europa.eu/eli/reg/2011/1227/oj"
+      },
+      "source": "EUR-Lex ELI URIs per Regulation (EU) No 182/2011 Annex II: https://eur-lex.europa.eu/eli/reg/2011/1227/oj, /eli/reg/2016/679/oj, /eli/dir/2004/38/oj, /eli/dec/2014/101/oj (all resolve, EUR-Lex serves HTTP 202); CELEX 32011R1227, 32016R0679, 32004L0038, 32014D0101 resolve in the legal-content form; the pubid-testsuite eu rows record the data.europa.eu/eli aliases as attested spellings."
+    },
+    {
+      "flavor": "arxiv",
+      "type": "pubid:arxiv:eprint",
+      "canonical": "https://arxiv.org/abs/{arxiv_id}",
+      "doi": "10.48550/arXiv.{arxiv_doi_id}",
+      "example": {
+        "input": "arXiv:0704.0001",
+        "url": "https://arxiv.org/abs/0704.0001"
+      },
+      "source": "arXiv abs pages carry the data DOI: https://arxiv.org/abs/0704.0001 cites DOI 10.48550/arXiv.0704.0001 and https://arxiv.org/abs/math.GT/0309136 cites DOI 10.48550/arXiv.math/0309136 (subject class dropped from the DOI id, kept in the abs id)."
+    },
+    {
+      "flavor": "xsf",
+      "type": "pubid:xsf:xep",
+      "canonical": "https://xmpp.org/extensions/xep-{number}.html",
+      "example": {
+        "input": "XEP 0004",
+        "url": "https://xmpp.org/extensions/xep-0004.html"
+      },
+      "source": "XMPP Extensions Editor: every XEP page is served at https://xmpp.org/extensions/xep-{number}.html (https://xmpp.org/extensions/xep-0004.html, HTTP 200)."
+    },
+    {
+      "flavor": "un",
+      "type": "pubid:un:document",
+      "canonical": "https://docs.un.org/en/{un_symbol}",
+      "example": {
+        "input": "A/RES/78/1",
+        "url": "https://docs.un.org/en/A/RES/78/1"
+      },
+      "source": "The UN official document system resolves symbols: https://docs.un.org/en/A/RES/78/1 (HTTP 200)."
+    },
+    {
+      "flavor": "iana",
+      "type": "pubid:iana:registry",
+      "canonical": "https://www.iana.org/assignments/{number}",
+      "example": {
+        "input": "IANA _6lowpan-parameters",
+        "url": "https://www.iana.org/assignments/_6lowpan-parameters"
+      },
+      "source": "IANA parameter-registry pages live at https://www.iana.org/assignments/{registry} (https://www.iana.org/assignments/_6lowpan-parameters, HTTP 200). The sub-registry facet has no reliably derivable page (value deep links 404 outside the self-nesting registries), so it is not mapped."
+    },
+    {
+      "flavor": "ecma",
+      "type": "pubid:ecma:standard",
+      "canonical": "https://www.ecma-international.org/publications-and-standards/standards/ecma-{number}/",
+      "example": {
+        "input": "ECMA-262",
+        "url": "https://www.ecma-international.org/publications-and-standards/standards/ecma-262/"
+      },
+      "source": "Ecma International standards landing pages: https://www.ecma-international.org/publications-and-standards/standards/ecma-262/ and /ecma-334/ (HTTP 200 each)."
+    },
+    {
+      "flavor": "iho",
+      "type_prefix": "pubid:iho:",
+      "canonical": "https://iho.int/en/{iho_page}",
+      "example": {
+        "input": "IHO S-411 2.0.0",
+        "url": "https://iho.int/en/s-411"
+      },
+      "source": "IHO publication pages key on the series designator: https://iho.int/en/s-4, /s-158, /s-411, /b-1, /b-12, /m-2, /p-5 (HTTP 200 each), one page per S/P/M/B/C series document."
+    }
+  ]
+}

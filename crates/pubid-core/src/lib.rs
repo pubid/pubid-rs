@@ -50,6 +50,7 @@ pub mod nesc;
 pub mod oasis;
 pub mod ogc;
 pub mod plateau;
+pub mod resolver;
 pub mod un;
 pub mod w3c;
 pub mod wmo;
@@ -72,6 +73,10 @@ pub use conformance::{
 pub use doi::DoiIdentifier;
 pub use ecma::{EcmaIdentifier, EcmaKind};
 pub use error::{Error, Result};
+pub use resolver::{
+    resolve, resolver_table, resolver_version, ResolveError, Resolved, ResolverEntry,
+    ResolverExample, ResolverTable,
+};
 pub use etsi::EtsiIdentifier;
 pub use eu::{EuIdentifier, EuKind};
 pub use evs::EvsIdentifier;
