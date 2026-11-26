@@ -1,0 +1,24 @@
+[package]
+name = "pubid-wasm"
+description = "WebAssembly bindings for pubid-core: the parse/detect/URN surface for the playground"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+pubid-core.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+serde-wasm-bindgen = "0.6"
+wasm-bindgen = "0.2"
+console_error_panic_hook = "0.1"
+
+[dev-dependencies]
+js-sys = "0.3"
+wasm-bindgen-test = "0.3"
