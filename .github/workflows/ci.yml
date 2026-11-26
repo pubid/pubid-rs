@@ -395,8 +395,8 @@ jobs:
         with:
           prefix-key: fuzz
 
-      - name: Generate the seed corpora from the vendored slices
-        run: python3 fuzz/gen_seeds.py
+      - name: Generate the seed corpora (capped so the smoke budget fuzzes, not replays)
+        run: python3 fuzz/gen_seeds.py --limit 40
 
       - name: Build the fuzz targets
         run: cargo fuzz build --target x86_64-unknown-linux-gnu
