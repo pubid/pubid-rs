@@ -31,9 +31,9 @@ fn every_entry_is_attested_and_renders() {
         let Some(impl_) = flavor_impl(&entry.flavor) else {
             panic!("entry maps flavor {:?}, which is not ported", entry.flavor);
         };
-        let identifier = impl_
-            .parse(&entry.example.input)
-            .unwrap_or_else(|error| panic!("example {:?} does not parse: {error}", entry.example.input));
+        let identifier = impl_.parse(&entry.example.input).unwrap_or_else(|error| {
+            panic!("example {:?} does not parse: {error}", entry.example.input)
+        });
         let type_tag = identifier
             .to_hash()
             .get("_type")
@@ -45,8 +45,12 @@ fn every_entry_is_attested_and_renders() {
             "entry for flavor {} does not match its own example's _type {type_tag}",
             entry.flavor
         );
-        let resolved = resolve(&entry.example.input, Some(&entry.flavor))
-            .unwrap_or_else(|error| panic!("example {:?} does not resolve: {error}", entry.example.input));
+        let resolved = resolve(&entry.example.input, Some(&entry.flavor)).unwrap_or_else(|error| {
+            panic!(
+                "example {:?} does not resolve: {error}",
+                entry.example.input
+            )
+        });
         assert_eq!(resolved.url, entry.example.url, "canonical URL drifted");
         assert!(
             resolved.url.starts_with("https://"),
@@ -78,7 +82,10 @@ fn rfc_resolves_with_doi_and_alternates() {
         ]
     );
     assert_eq!(resolved.doi.as_deref(), Some("10.17487/RFC9110"));
-    assert_eq!(resolved.doi_url.as_deref(), Some("https://doi.org/10.17487/RFC9110"));
+    assert_eq!(
+        resolved.doi_url.as_deref(),
+        Some("https://doi.org/10.17487/RFC9110")
+    );
     assert_eq!(resolved.type_tag, "pubid:ietf:rfc");
 }
 
@@ -97,13 +104,15 @@ fn draft_revision_alternate_needs_a_version() {
     );
     assert_eq!(with_version.doi, None);
 
-    let without_version =
-        resolve("draft-ietf-httpbis-messaging", Some("ietf")).expect("resolves");
+    let without_version = resolve("draft-ietf-httpbis-messaging", Some("ietf")).expect("resolves");
     assert_eq!(
         without_version.url,
         "https://datatracker.ietf.org/doc/draft-ietf-httpbis-messaging/"
     );
-    assert!(without_version.alternates.is_empty(), "no revision stated, no revision alternate");
+    assert!(
+        without_version.alternates.is_empty(),
+        "no revision stated, no revision alternate"
+    );
 }
 
 /// The arXiv id keeps the subject class; the DOI id drops it, per the
@@ -162,7 +171,10 @@ fn iho_page_follows_the_series_letter() {
 fn w3c_dated_alternate_is_conditional() {
     let dated = resolve("W3C CR-exi-20091208", Some("w3c")).expect("resolves");
     assert_eq!(dated.url, "https://www.w3.org/TR/exi/");
-    assert_eq!(dated.alternates, vec!["https://www.w3.org/TR/2009/CR-exi-20091208/"]);
+    assert_eq!(
+        dated.alternates,
+        vec!["https://www.w3.org/TR/2009/CR-exi-20091208/"]
+    );
 }
 
 /// The UN symbol slot joins the path tokens with the trailing number.
@@ -178,10 +190,7 @@ fn detection_resolves_the_unambiguous_input() {
     let resolved = resolve("doi:10.1000/182", None).expect("resolves");
     assert_eq!(resolved.flavor, "doi");
     assert_eq!(resolved.url, "https://doi.org/10.1000/182");
-    assert_eq!(
-        resolved.alternates,
-        vec!["https://dx.doi.org/10.1000/182"]
-    );
+    assert_eq!(resolved.alternates, vec!["https://dx.doi.org/10.1000/182"]);
 }
 
 /// A parsed identifier with no attested mapping is `Unmapped`, not a
@@ -204,7 +213,10 @@ fn unmapped_flavor_is_unmapped() {
 fn rejected_input_is_rejected() {
     let error = resolve("this is not an identifier of any ported flavor", None)
         .expect_err("rejection expected");
-    assert!(matches!(error, ResolveError::Rejected { .. }), "got {error}");
+    assert!(
+        matches!(error, ResolveError::Rejected { .. }),
+        "got {error}"
+    );
 }
 
 /// An ambiguous input names the flavors and requires `--flavor`.
@@ -231,14 +243,14 @@ fn ambiguous_input_names_the_flavors() {
     }
 }
 
-/// An unknown flavor name surfaces as a rejection naming the flavor.
+/// An unknown flavor name is its own error class.
 #[test]
-fn unknown_flavor_name_is_rejected() {
+fn unknown_flavor_name_is_its_own_error() {
     let error = resolve("RFC 9110", Some("nosuchflavor")).expect_err("rejection expected");
     match error {
-        ResolveError::Rejected { flavor, .. } => {
-            assert_eq!(flavor.as_deref(), Some("nosuchflavor"));
+        ResolveError::UnknownFlavor { name } => {
+            assert_eq!(name, "nosuchflavor");
         }
-        other => panic!("expected Rejected, got {other:?}"),
+        other => panic!("expected UnknownFlavor, got {other:?}"),
     }
 }

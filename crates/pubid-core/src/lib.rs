@@ -73,10 +73,6 @@ pub use conformance::{
 pub use doi::DoiIdentifier;
 pub use ecma::{EcmaIdentifier, EcmaKind};
 pub use error::{Error, Result};
-pub use resolver::{
-    resolve, resolver_table, resolver_version, ResolveError, Resolved, ResolverEntry,
-    ResolverExample, ResolverTable,
-};
 pub use etsi::EtsiIdentifier;
 pub use eu::{EuIdentifier, EuKind};
 pub use evs::EvsIdentifier;
@@ -93,6 +89,10 @@ pub use nesc::{NescIdentifier, NescKind};
 pub use oasis::OasisIdentifier;
 pub use ogc::OgcIdentifier;
 pub use plateau::PlateauIdentifier;
+pub use resolver::{
+    accepting_flavors, detect_identifier, resolve, resolver_table, resolver_version, ResolveError,
+    Resolved, ResolverEntry, ResolverExample, ResolverTable,
+};
 pub use un::UnIdentifier;
 pub use w3c::{W3cIdentifier, W3cKind};
 pub use wmo::{WmoIdentifier, WmoKind};

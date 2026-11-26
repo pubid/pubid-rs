@@ -1,6 +1,6 @@
 [package]
 name = "pubid-cli"
-description = "Parse and render a PubID from the command line"
+description = "The pubid command line: parse, detect, resolve and render PubIDs"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
@@ -8,10 +8,14 @@ repository.workspace = true
 authors.workspace = true
 publish = false
 
+# The installed binary is `pubid` (cargo install -p pubid-cli); the
+# crate name stays pubid-cli so `cargo run -p pubid-cli` keeps working.
 [[bin]]
-name = "pubid-cli"
+name = "pubid"
 path = "src/main.rs"
 
 [dependencies]
+clap.workspace = true
 pubid-core.workspace = true
+serde.workspace = true
 serde_json.workspace = true
