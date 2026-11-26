@@ -42,6 +42,7 @@ pair):
 | wmo    | `b8c08b293b8f33d68a044c1672c5930f7015d02e29f4b5b2a1d7148971b79f2c` |
 | iho    | `9437df5a43953604c3157caadccb8dec71bbc01fe87347371ec20ac8c583ef78` |
 | iala   | `6631e5e2e6cb9059c18778a1b8063e4b091591104e3f08e3daa602d8aadfe123` |
+| iec    | `8e799e34f223e20c7c98c38aa227c68c01d588f3895b678ddac5f8e0dcf9eb38` |
 
 Every envelope is artifact edition 2, shape `parsanol-tree/v2`, baked at
 parsanol compiler 1.5.1.0 (the #129 re-seal round: the doi grammar is
@@ -154,3 +155,15 @@ specifications with the MRN `s-2xx` codes, the slug publications with
 Its testsuite corpus slice is vendored at its own round freeze
 (`testsuite_ref_iala`, 6179c23b117d — see the fixtures
 VENDORED_FROM.md).
+
+The `iec` envelope is byte-copied from the pinned `grammar_ref`
+(`dcd67cb`) — the same bytes as the gem's `data/parg/iec.json` at the
+consolidated-chains round (pubid 95d81717 / PR #795): the consolidated
+chain grammar is in the envelope, and gem #788 needed no grammar
+change and no rebake. Vendored for the consolidated-chain flavor
+(`crates/pubid-core/src/iec.rs`, gem pubid#788): the flavor mirrors the
+chain composition, the URN/MR surfaces and the algebra over the
+attested chain faces; it is not registered in the conformance runner
+yet (the full-flavor port and its corpus slice follow), so the smoke
+reports it as vendored-not-ported — no ground truth, no invented
+fixture.

@@ -103,7 +103,7 @@ jobs:
         run: |
           for flavor in doi isbn iana oasis xsf un ogc ietf w3c api amca \
             nesc ire ecma gb gost adobe plateau evs ccsds cen_cenelec \
-            jis etsi doi_pfs calconnect_pfs cen_pfs etsi_pfs bsi_pfs; do
+            jis etsi iec doi_pfs calconnect_pfs cen_pfs etsi_pfs bsi_pfs; do
             cmp "pubid-grammar/artifacts/$flavor.json" \
                 "crates/pubid-core/artifacts/$flavor.json"
           done
