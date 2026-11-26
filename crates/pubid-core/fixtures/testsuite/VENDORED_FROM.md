@@ -217,26 +217,29 @@ export, unmodified (clean status, no debt).
   - `standard.yaml` sha256 95d2a85f1b27a06926d8fcd95b49407bac4bb0be4af0c8f964a3d711e10b3362
 
 The iho slice is a byte copy from its own flavor-only testsuite ref:
-`pubid/pubid-testsuite@4a3b030feb349e922881cd987cffd062e5853384`
-(`tests/iho/`, the S-158 product-facet re-freeze round at pubid
-81b786888833 — see `/pins.yaml`, `testsuite_ref_iho`; the round
-re-keys the corpus onto the landed #774/#775/#776 model renamed by
-gem #783: the typed `product` component (the `checks_for` rename)
-replacing the opaque `158:NNN` numbers, the draft-era part spellings
-unified, and the `urn:mrn:iho:pub:` guidance URNs replacing the
-retired `urn:iho:` emission). The span from `testsuite_ref` (e6cf11b)
-to that ref re-exports adobe/iala/ieee, which this repository's slices
-do not fold back yet, so the iho slice is checked against its own ref.
-Everything here is the testsuite's export, unmodified (clean status,
-known_mismatches 0); the `_debt.yaml` / `_normalization.yaml` exporter
-metadata is not vendored (the corpus loader skips underscore files
-besides `_negative.yaml` / `_status.yaml`).
+`pubid/pubid-testsuite@80cd08a826ab0b2f880899322a761f903b8ba744`
+(`tests/iho/`, the B/C rename round freeze at pubid 9c69f8d5c06e, the
+2.0.56 release span — see `/pins.yaml`, `testsuite_ref_iho`; the round
+renames the B/C rows onto the honest types — `bibliographic.yaml` ->
+`bathymetric.yaml` (`pubid:iho:bathymetric`), `circular_letter.yaml`
+-> `capacity_building.yaml` (`pubid:iho:capacity_building`) — and
+re-freezes their URN expectations onto the bathy/cb MRN guidance codes
+of gem #785, mirroring the S-158 `product` re-key of the earlier
+freeze). The span from `testsuite_ref` (e6cf11b) to that ref
+re-exports adobe/iala/ieee, which this repository's slices do not fold
+back yet, so the iho slice is checked against its own ref. Everything
+here is the testsuite's export, unmodified (clean status,
+known_mismatches 0; 184 gated cases — bathymetric 12,
+capacity_building 8, miscellaneous 13, publication 18, standard 133);
+the `_debt.yaml` / `_normalization.yaml` exporter metadata is not
+vendored (the corpus loader skips underscore files besides
+`_negative.yaml` / `_status.yaml`).
 
 - iho:
-  - `_negative.yaml` sha256 2289bc64e062a2c9ae7fc697359c5cdafb7980118a314edb4971d5b72b281d25
+  - `_negative.yaml` sha256 581a225fc48f7f2058252894908c7221d3c0cf5eaea8ce1850002e5bf249bd61
   - `_status.yaml` sha256 da8b5c732041f6936d83e8f046b33824cea9c87e149da4d107ae8efd143a050f
-  - `bibliographic.yaml` sha256 98d09bad61068d862a1084927f485854eb3da62179513c3b88b33e2b77faf0d5
-  - `circular_letter.yaml` sha256 d7e6a669b7766c7d7eeef66d77fd560c00c44d09ba1895e03f380a37abfd1a19
+  - `bathymetric.yaml` sha256 731ef7b1d93899b611dd16c7d5cc6d604c402f82ffa6c9a8a76a2731e2887051
+  - `capacity_building.yaml` sha256 f62d222ed6c81318939be761eae23f016d698af52e4fed7db827b9bfe9d2cfee
   - `miscellaneous.yaml` sha256 70083ab4527a143a2576c66dba18455b4058b6fcc962f561479b41f660067f14
   - `publication.yaml` sha256 e2bf0f978e20c68e8a1d3d881b969c0f34b58864c303bc59475808ccd101d5b5
   - `standard.yaml` sha256 946767690892542b96854cb4491a497d1146bebff1e82440a448af13131e8575

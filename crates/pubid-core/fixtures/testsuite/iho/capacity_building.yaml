@@ -1,0 +1,73 @@
+---
+- id: iho.capacity_building.0013
+  identifier:
+    _type: pubid:iho:capacity_building
+    number: '13'
+    edition: 1.0.0
+  representations:
+    human: IHO C-13 1.0.0
+    urn: urn:mrn:iho:pub:cb:c13:1.0.0
+  style: v3
+- id: iho.capacity_building.0014
+  identifier:
+    _type: pubid:iho:capacity_building
+    number: '16'
+    edition: 1.0.0
+  representations:
+    human: IHO C-16 1.0.0
+    urn: urn:mrn:iho:pub:cb:c16:1.0.0
+  style: v3
+- id: iho.capacity_building.0015
+  identifier:
+    _type: pubid:iho:capacity_building
+    number: '17'
+    edition: 2.0.0
+  representations:
+    human: IHO C-17 2.0.0
+    urn: urn:mrn:iho:pub:cb:c17:2.0.0
+  style: v3
+- id: iho.capacity_building.0016
+  identifier:
+    _type: pubid:iho:capacity_building
+    number: '17'
+    edition: 3.0.0
+  representations:
+    human: IHO C-17 3.0.0
+    urn: urn:mrn:iho:pub:cb:c17:3.0.0
+  style: v3
+- id: iho.capacity_building.0017
+  identifier:
+    _type: pubid:iho:capacity_building
+    number: '33'
+    edition: 1.0.0
+  representations:
+    human: IHO C-33 1.0.0
+    urn: urn:mrn:iho:pub:cb:c33:1.0.0
+  style: v3
+- id: iho.capacity_building.0018
+  identifier:
+    _type: pubid:iho:capacity_building
+    number: '47'
+    edition: 7.0.0
+  representations:
+    human: IHO C-47 7.0.0
+    urn: urn:mrn:iho:pub:cb:c47:7.0.0
+  style: v3
+- id: iho.capacity_building.0019
+  identifier:
+    _type: pubid:iho:capacity_building
+    number: '51'
+    edition: 6.0.0
+  representations:
+    human: IHO C-51 6.0.0
+    urn: urn:mrn:iho:pub:cb:c51:6.0.0
+  style: v3
+- id: iho.capacity_building.0020
+  identifier:
+    _type: pubid:iho:capacity_building
+    number: '55'
+    edition: 6.0.0
+  representations:
+    human: IHO C-55 6.0.0
+    urn: urn:mrn:iho:pub:cb:c55:6.0.0
+  style: v3

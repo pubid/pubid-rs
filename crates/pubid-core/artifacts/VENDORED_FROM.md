@@ -40,7 +40,7 @@ pair):
 | jis    | `e06886e29d8b73b9492bc6d6146d8160485604568059c288c6fdfe9339c2a591` |
 | plateau    | `9a98935831f11105e22a7d770b098b08c3d26b76f314452c6ca37d896cec93a7` |
 | wmo    | `b8c08b293b8f33d68a044c1672c5930f7015d02e29f4b5b2a1d7148971b79f2c` |
-| iho    | `efb3e7be1a4552890c8b67c67d5594f962c90a4c6fae9cabf933625398efd13b` |
+| iho    | `9437df5a43953604c3157caadccb8dec71bbc01fe87347371ec20ac8c583ef78` |
 | iala   | `6631e5e2e6cb9059c18778a1b8063e4b091591104e3f08e3daa602d8aadfe123` |
 
 Every envelope is artifact edition 2, shape `parsanol-tree/v2`, baked at
@@ -110,20 +110,27 @@ The `iho` envelope comes from a flavor-only grammar ref. It started at
 `5b3b035e6286` (the pre-checks envelope), moved to `91024661c7ea`
 (grammar #143, the IHO S-158 series-member commit — the colon form
 binding the typed capture instead of gluing the opaque `158:NNN`
-number, the draft-era spellings binding `part`) and now sits at
+number, the draft-era spellings binding `part`), then to
 `51f5c4b21a88` (grammar #148, the S-158 member-facet rename
 `checks_for` -> `product`, mirroring the gem's rename round at pubid
-81b78688 / #783 — `grammar_ref_iho` in `/pins.yaml`). Baked at
+81b78688 / #783) and now sits at `4ceffc7637d0` (grammar #149, the
+B/C series joining the MRN-guidance emission — the bathy/cb type
+codes bound beside spec/per/reg, mirroring the gem's B/C round at
+pubid fe2b8b1f/c3ff8636 — `grammar_ref_iho` in `/pins.yaml`). Baked at
 parsanol 1.5.1.0, artifact edition 2; byte-identical to the gem's
 `data/parg/iho.json` provenance twin at the same commit. The flavor
-(`crates/pubid-core/src/iho.rs`) is RECONCILED against the landed gem
-reference (the S-158 `product` member model, pubid#774/#775/#776
-renamed by #783: the per-series MRN guidance types spec/per/reg with
-the B/C legacy emission, the marker-form trailing atoms, and the
+(`crates/pubid-core/src/iho.rs`) mirrors the landed gem reference (the
+bathy/cb MRN codes for the B/C series — every series emits the
+guidance form and the legacy `urn:iho:` emission is dead; the renamed
+`Bathymetric`/`CapacityBuilding` kinds with the
+`pubid:iho:bathymetric` / `pubid:iho:capacity_building` `_type` tags,
+the pre-rename `pubid:iho:bibliographic` /
+`pubid:iho:circular-letter` wire names staying decode-only; the
+marker-form trailing atoms, the product member model and the
 product_face spelling model; the pre-rename `checks-` pubid-URN atom
 stays decodable, never emitted). Its testsuite corpus slice is
-vendored at its own round freeze (`testsuite_ref_iho`, 4a3b030feb34 —
-see the fixtures VENDORED_FROM.md).
+vendored at its own round freeze (`testsuite_ref_iho` — see the
+fixtures VENDORED_FROM.md).
 
 The `iala` envelope comes from a flavor-only grammar ref (`c1a11bf1e54f`,
 pubid-grammar main: the IALA S-100-family product-specification commit,

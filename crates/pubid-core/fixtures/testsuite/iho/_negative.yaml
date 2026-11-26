@@ -1,5 +1,5 @@
 ---
-- id: iho.neg.bibliographic.0001
+- id: iho.neg.bathymetric.0001
   input: IHO B-12 3.0
   expect:
     error:
