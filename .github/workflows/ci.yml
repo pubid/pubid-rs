@@ -381,19 +381,11 @@ jobs:
       # cargo-fuzz spawns rustc from PATH for its target probe; pin the
       # whole job to nightly (the libFuzzer passes need -Zsanitizer).
       RUSTUP_TOOLCHAIN: nightly
-      # cargo-fuzz 0.13 builds the ASAN runtime against the musl target
-      # on Linux; the musl std defaults to crt-static, which is
-      # incompatible with the sanitizer (cargo-fuzz appends its own
-      # instrumentation flags to this).
-      RUSTFLAGS: -C target-feature=-crt-static
     steps:
       - uses: actions/checkout@v4
 
-      # libFuzzer coverage instrumentation needs nightly; cargo-fuzz 0.13
-      # builds the ASAN runtime against the musl target on Linux.
+      # libFuzzer coverage instrumentation needs nightly.
       - uses: dtolnay/rust-toolchain@nightly
-        with:
-          targets: x86_64-unknown-linux-musl
 
       - uses: taiki-e/install-action@v2
         with:
@@ -407,10 +399,10 @@ jobs:
         run: python3 fuzz/gen_seeds.py
 
       - name: Build the fuzz targets
-        run: cargo fuzz build
+        run: cargo fuzz build --target x86_64-unknown-linux-gnu
 
       - name: Smoke parse_flavor (every ported flavor, no panic)
-        run: cargo fuzz run parse_flavor -- -max_total_time=20 -rss_limit_mb=2048
+        run: cargo fuzz run parse_flavor --target x86_64-unknown-linux-gnu -- -max_total_time=20 -rss_limit_mb=2048
 
       - name: Smoke roundtrip (the closures on arbitrary input)
-        run: cargo fuzz run roundtrip -- -max_total_time=20 -rss_limit_mb=2048
+        run: cargo fuzz run roundtrip --target x86_64-unknown-linux-gnu -- -max_total_time=20 -rss_limit_mb=2048
