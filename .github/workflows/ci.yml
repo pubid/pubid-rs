@@ -353,3 +353,52 @@ jobs:
           name: pubid-wasm-web-${{ github.sha }}
           path: crates/pubid-wasm/pkg
           retention-days: 30
+
+  properties:
+    name: Property suite (budgeted)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: properties
+
+      - name: Property suite (parse(render(x)) == x over the mined corpus)
+        run: cargo test -p pubid-core --test properties
+        env:
+          # The budgeted PR run; the nightly job runs the wide sweep.
+          PUBID_PROPERTY_CASES: 128
+
+  fuzz-smoke:
+    name: Fuzz targets build + smoke
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      # libFuzzer coverage instrumentation needs nightly.
+      - uses: dtolnay/rust-toolchain@nightly
+
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: cargo-fuzz
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          prefix-key: fuzz
+
+      - name: Generate the seed corpora from the vendored slices
+        run: python3 fuzz/gen_seeds.py
+
+      - name: Build the fuzz targets
+        run: cargo fuzz build
+
+      - name: Smoke parse_flavor (every ported flavor, no panic)
+        run: cargo fuzz run parse_flavor -- -max_total_time=20 -rss_limit_mb=2048
+
+      - name: Smoke roundtrip (the closures on arbitrary input)
+        run: cargo fuzz run roundtrip -- -max_total_time=20 -rss_limit_mb=2048

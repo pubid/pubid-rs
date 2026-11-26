@@ -1,0 +1,136 @@
+name: Nightly
+
+# The standing quality rounds behind the dashboard: the wide property
+# sweep, the long fuzz runs, and the three-engine differential report
+# the site consumes. Drifts from the differential never gate - the
+# report is the data, the triage is human.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  properties:
+    name: Property suite (wide sweep)
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          prefix-key: properties-nightly
+
+      - name: Property suite
+        run: cargo test -p pubid-core --test properties
+        env:
+          PUBID_PROPERTY_CASES: 2048
+
+  fuzz:
+    name: Fuzz rounds
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      # libFuzzer coverage instrumentation needs nightly.
+      - uses: dtolnay/rust-toolchain@nightly
+
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: cargo-fuzz
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          prefix-key: fuzz
+
+      - name: Generate the seed corpora from the vendored slices
+        run: python3 fuzz/gen_seeds.py
+
+      - name: parse_flavor round (5 minutes)
+        run: cargo fuzz run parse_flavor -- -max_total_time=300 -rss_limit_mb=2048
+
+      - name: roundtrip round (5 minutes)
+        run: cargo fuzz run roundtrip -- -max_total_time=300 -rss_limit_mb=2048
+
+      - name: Crashing inputs (only on failure)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fuzz-artifacts-${{ github.run_id }}
+          path: fuzz/artifacts
+          if-no-files-found: ignore
+
+  differential:
+    name: Differential report (Ruby vs Rust vs TS)
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      # The Ruby reference: the released pubid gem (the dashboard tracks
+      # the released engines; the report records their versions).
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "ruby"
+
+      - name: Install the pubid gem
+        run: gem install pubid --no-document
+
+      # The TS engine: pubid-ts main, built to dist/.
+      - uses: actions/checkout@v4
+        with:
+          repository: pubid/pubid-ts
+          path: pubid-ts
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build pubid-ts
+        run: |
+          npm ci --no-audit --no-fund
+          npm run build
+        working-directory: pubid-ts
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          prefix-key: differential
+
+      - name: Build the runner
+        run: cargo build -q -p differential
+
+      - name: Run the differential
+        run: |
+          ./target/debug/differential --all \
+            --rows 16 --mutants 16 --recombinations 16 \
+            --ts-root "$GITHUB_WORKSPACE/pubid-ts" \
+            --stamp "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+            --out differential-report.json
+
+      - name: Report receipt
+        run: |
+          python3 - <<'EOF'
+          import json
+          report = json.load(open("differential-report.json"))
+          summary = report["summary"]
+          print(f"cases: {summary['cases']}, drifts: {summary['drifts']}")
+          print("by delta class:", summary["by_delta_class"])
+          assert report["engines"]["ruby"]["available"], "ruby engine unavailable"
+          assert report["engines"]["ts"]["available"], "ts engine unavailable"
+          assert summary["cases"] > 0, "empty differential run"
+          EOF
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: differential-report-${{ github.run_id }}
+          path: differential-report.json
+          retention-days: 90
