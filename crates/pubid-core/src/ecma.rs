@@ -187,20 +187,37 @@ impl EcmaIdentifier {
 /// suffix. `None` when the input has no recognizable edition tail.
 fn normalize_edition(input: &str) -> Option<String> {
     let trimmed = input.trim_end();
-    // The edition tail: the trailing run of digits and dots.
-    let tail_start = trimmed.rfind(|c: char| !(c.is_ascii_digit() || c == '.'))? + 1;
+    // The edition tail: the trailing run of digits and dots. Walked
+    // char-wise so a multibyte character at the run boundary cannot
+    // produce a mid-char byte index (the byte-count rfind here once
+    // panicked on exactly that).
+    let tail_start = trimmed
+        .char_indices()
+        .rev()
+        .take_while(|(_, c)| c.is_ascii_digit() || *c == '.')
+        .map(|(i, _)| i)
+        .last()
+        .unwrap_or(trimmed.len());
     let (head, tail) = trimmed.split_at(tail_start);
     if tail.is_empty() || !tail.contains(|c: char| c.is_ascii_digit()) {
         return None;
     }
     let head = head.trim_end();
-    let lowered = head.to_lowercase();
     for word in [" edition", " ed.", " ed"] {
-        if let Some(rest) = lowered.strip_suffix(word) {
-            // The suffixes are ASCII, so the byte cut matches; the
-            // dotted word form leaves its dot in the tail.
+        // Case-insensitive ASCII suffix match on the head's own bytes;
+        // the cut can never sit inside a multibyte character because
+        // the match starts on an ASCII byte (continuation bytes are
+        // >= 0x80 and never ASCII-case-equal).
+        let matches_suffix = head.len() >= word.len()
+            && head.as_bytes()[head.len() - word.len()..].eq_ignore_ascii_case(word.as_bytes());
+        if matches_suffix {
+            let cut = head.len() - word.len();
+            let Some(prefix) = head.get(..cut) else {
+                continue;
+            };
+            // The dotted word form leaves its dot in the tail.
             let tail = tail.trim_start_matches('.');
-            return Some(format!("{} ed{}", &head[..rest.len()], tail));
+            return Some(format!("{prefix} ed{tail}"));
         }
     }
     // The bare form: `ECMA 262 5.1` / `ECMA-262 5.1` — the head is
@@ -217,10 +234,15 @@ fn normalize_edition(input: &str) -> Option<String> {
     None
 }
 
-/// Case-insensitive ASCII prefix strip.
+/// Case-insensitive ASCII prefix strip. The window compare runs on
+/// bytes so a multibyte character inside the window can never panic
+/// (UTF-8 continuation bytes are >= 0x80 and never ASCII-case-equal);
+/// the split only succeeds at a char boundary.
 fn stripped_prefix<'a>(text: &'a str, prefix: &str) -> Option<&'a str> {
-    if text.len() >= prefix.len() && text[..prefix.len()].eq_ignore_ascii_case(prefix) {
-        Some(&text[prefix.len()..])
+    if text.len() >= prefix.len()
+        && text.as_bytes()[..prefix.len()].eq_ignore_ascii_case(prefix.as_bytes())
+    {
+        text.get(prefix.len()..)
     } else {
         None
     }

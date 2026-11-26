@@ -1,0 +1,29 @@
+[package]
+name = "pubid-fuzz"
+description = "cargo-fuzz targets over the pubid-core grammar runtime"
+publish = false
+edition = "2021"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+pubid-core = { path = "../crates/pubid-core" }
+
+# The pubid workspace does not own this crate; cargo-fuzz builds it standalone.
+[workspace]
+
+[[bin]]
+name = "parse_flavor"
+path = "fuzz_targets/parse_flavor.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "roundtrip"
+path = "fuzz_targets/roundtrip.rs"
+test = false
+doc = false
+bench = false

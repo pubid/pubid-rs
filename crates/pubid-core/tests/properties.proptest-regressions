@@ -1,0 +1,9 @@
+# Seeds for failure cases proptest has generated in the past. It is
+# automatically read and these particular cases re-run before any
+# novel cases are generated.
+#
+# It is recommended to check this file in to source control so that
+# everyone who runs the test benefits from these saved cases.
+cc ba50ac89ad82567c08e79ff9bee67c05f69b06d3ee8d952cf0a10d62b2d0ac07 # shrinks to case = Case { flavor: "eu", input: "Directive 2010/75/EU" }
+cc 2b2d6378bf8f1e85c814e873b390fd92667fc576ba7dcced3675cc211376e843 # shrinks to case = Case { flavor: "api", input: "API COS 1-07/RP 75, 4th edition", rounds: 1, expect: Some("API 75-07") }
+cc b2f03bedac1ca8a2336a092948a1b323dd3b44f549eb37779e7c07446419d5e0 # shrinks to case = Case { flavor: "ecma", input: "ECMʄ-48", rounds: 1, expect: None }
