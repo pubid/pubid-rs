@@ -37,6 +37,7 @@ pub mod etsi;
 pub mod eu;
 pub mod evs;
 pub mod gb;
+pub mod generators;
 pub mod gost;
 pub mod iala;
 pub mod iana;
@@ -77,6 +78,9 @@ pub use etsi::EtsiIdentifier;
 pub use eu::{EuIdentifier, EuKind};
 pub use evs::EvsIdentifier;
 pub use gb::{GbIdentifier, GbKind};
+pub use generators::{
+    attested_universe, mutate_row, AliasSpelling, FacetTemplate, FlavorUniverse, Universe,
+};
 pub use gost::{GostIdentifier, GostKind};
 pub use iala::{IalaIdentifier, IalaKind};
 pub use iana::IanaIdentifier;
