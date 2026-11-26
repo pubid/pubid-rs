@@ -65,6 +65,7 @@ fn main() -> ExitCode {
                 print_help();
                 return ExitCode::SUCCESS;
             }
+            "--examples" => return emit_examples(),
             other => die(&format!("unknown argument {other:?}")),
         }
     }
@@ -215,6 +216,54 @@ fn vendored_corpus_or_report(flavor: &str) -> Result<FlavorCorpus, Error> {
     }
 }
 
+/// The example rows per flavor the `--examples` emitter distills.
+const EXAMPLES_PER_FLAVOR: usize = 5;
+
+/// Emit the corpus-fed example set (`--examples`): the canonical
+/// rows of every vendored slice, keyed by flavor, as the JSON the
+/// pubid-wasm bundle embeds for the playground's example feed.
+///
+/// Rows are the gated positive corpus cases in file order, skipping
+/// the quarantined (reference-debt) and render-unreparseable ones —
+/// the playground feeds these strings back through the same parse, so
+/// only rows whose canonical spelling re-parses cleanly are useful.
+/// The pubid-wasm example gate test re-parses every emitted row, so a
+/// slice refresh that drifts a row fails the suite.
+fn emit_examples() -> ExitCode {
+    use pubid_core::conformance::CorpusCase;
+
+    let mut set = serde_json::Map::new();
+    for flavor in implemented_flavors() {
+        let Some(corpus) = vendored_corpus_or_report(flavor).ok() else {
+            continue;
+        };
+        let rows: Vec<serde_json::Value> = corpus
+            .positives
+            .iter()
+            .filter(|case: &&CorpusCase| {
+                !case.quarantined && !case.render_unreparseable && case.human.is_some()
+            })
+            .take(EXAMPLES_PER_FLAVOR)
+            .map(|case| {
+                serde_json::json!({
+                    "id": case.id,
+                    "input": case.human,
+                    "urn": case.urn,
+                })
+            })
+            .collect();
+        if rows.is_empty() {
+            continue;
+        }
+        set.insert(flavor.to_string(), serde_json::Value::Array(rows));
+    }
+    println!(
+        "{}",
+        serde_json::to_string_pretty(&serde_json::Value::Object(set)).expect("examples json")
+    );
+    ExitCode::SUCCESS
+}
+
 fn die(message: &str) -> ! {
     eprintln!("{message}");
     print_help();
@@ -227,6 +276,7 @@ fn print_help() {
          \n  default: the vendored doi slice\
          \n  --all: every ported flavor (vendored slices, or the testsuite checkout)\
          \n  --skip-flavor: exclude a flavor from --all (gated at its flavor-only testsuite ref)\
+         \n  --examples: emit the corpus-fed example set (vendored slices, JSON)\
          \n  TESTSUITE_DIR or --testsuite: run against a pubid-testsuite checkout"
     );
 }

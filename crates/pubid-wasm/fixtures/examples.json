@@ -1,0 +1,713 @@
+{
+  "amca": [
+    {
+      "id": "amca.interpretation.0001",
+      "input": "AMCA 204 AW Interp",
+      "urn": "urn:amca:204:interp.aw:copub.amca:interpretation"
+    },
+    {
+      "id": "amca.interpretation.0002",
+      "input": "AMCA 208 AH Interp",
+      "urn": "urn:amca:208:interp.ah:copub.amca:interpretation"
+    },
+    {
+      "id": "amca.interpretation.0003",
+      "input": "AMCA 511 Interp",
+      "urn": "urn:amca:511:copub.amca:interpretation"
+    },
+    {
+      "id": "amca.interpretation.0004",
+      "input": "AMCA 99 JW Interp",
+      "urn": "urn:amca:99:interp.jw:copub.amca:interpretation"
+    },
+    {
+      "id": "amca.interpretation.0005",
+      "input": "AMCA 99 KB Interp",
+      "urn": "urn:amca:99:interp.kb:copub.amca:interpretation"
+    }
+  ],
+  "ansi": [
+    {
+      "id": "ansi.standard.0001",
+      "input": "ANSI 802.3-2012",
+      "urn": "urn:ansi:802.3:2012"
+    },
+    {
+      "id": "ansi.standard.0002",
+      "input": "ANSI C135.14-1979",
+      "urn": "urn:ansi:C135.14:1979"
+    },
+    {
+      "id": "ansi.standard.0003",
+      "input": "ANSI C135.22-1988",
+      "urn": "urn:ansi:C135.22:1988"
+    },
+    {
+      "id": "ansi.standard.0004",
+      "input": "ANSI C135.30-1988",
+      "urn": "urn:ansi:C135.30:1988"
+    },
+    {
+      "id": "ansi.standard.0005",
+      "input": "ANSI C135.31-1988",
+      "urn": "urn:ansi:C135.31:1988"
+    }
+  ],
+  "api": [
+    {
+      "id": "api.bulletin.0008",
+      "input": "API BULL 1178",
+      "urn": "urn:api:std:1178"
+    },
+    {
+      "id": "api.bulletin.0009",
+      "input": "API BULL 11L2",
+      "urn": "urn:api:std:11L2"
+    },
+    {
+      "id": "api.bulletin.0010",
+      "input": "API BULL 4785",
+      "urn": "urn:api:std:4785"
+    },
+    {
+      "id": "api.bulletin.0011",
+      "input": "API BULL 5100",
+      "urn": "urn:api:std:5100"
+    },
+    {
+      "id": "api.bulletin.0012",
+      "input": "API BULL 592",
+      "urn": "urn:api:std:592"
+    }
+  ],
+  "arxiv": [
+    {
+      "id": "arxiv.eprint.0001",
+      "input": "arXiv:0704.0001",
+      "urn": "urn:pubid:arxiv:eprint:2007:4:0001"
+    },
+    {
+      "id": "arxiv.eprint.0002",
+      "input": "arXiv:0704.0001v1",
+      "urn": "urn:pubid:arxiv:eprint:2007:4:0001:v-1"
+    },
+    {
+      "id": "arxiv.eprint.0003",
+      "input": "arXiv:1412.9999v3",
+      "urn": "urn:pubid:arxiv:eprint:2014:12:9999:v-3"
+    },
+    {
+      "id": "arxiv.eprint.0004",
+      "input": "arXiv:1501.00001",
+      "urn": "urn:pubid:arxiv:eprint:2015:1:00001"
+    },
+    {
+      "id": "arxiv.eprint.0005",
+      "input": "arXiv:2301.00001",
+      "urn": "urn:pubid:arxiv:eprint:2023:1:00001"
+    }
+  ],
+  "ccsds": [
+    {
+      "id": "ccsds.base.0001",
+      "input": "CCSDS 100.0-G-1-S",
+      "urn": "urn:ccsds:100.0-G-1-S"
+    },
+    {
+      "id": "ccsds.base.0002",
+      "input": "CCSDS 101.0-B-1-S",
+      "urn": "urn:ccsds:101.0-B-1-S"
+    },
+    {
+      "id": "ccsds.base.0003",
+      "input": "CCSDS 101.0-B-3-S",
+      "urn": "urn:ccsds:101.0-B-3-S"
+    },
+    {
+      "id": "ccsds.base.0004",
+      "input": "CCSDS 101.0-B-4-S",
+      "urn": "urn:ccsds:101.0-B-4-S"
+    },
+    {
+      "id": "ccsds.base.0005",
+      "input": "CCSDS 101.0-B-5-S",
+      "urn": "urn:ccsds:101.0-B-5-S"
+    }
+  ],
+  "cen_cenelec": [
+    {
+      "id": "cen_cenelec.amendment.0008",
+      "input": "CEN ISO/TS 21003-7:2008/A1:2010",
+      "urn": "urn:cen:cen:iso:ts:21003-7:2008:amd:1:2010"
+    },
+    {
+      "id": "cen_cenelec.amendment.0059",
+      "input": "EN 13250:2000/A1:2005",
+      "urn": "urn:cen:en:13250:2000:amd:1:2005"
+    },
+    {
+      "id": "cen_cenelec.amendment.0064",
+      "input": "EN 13251:2000/A1:2005",
+      "urn": "urn:cen:en:13251:2000:amd:1:2005"
+    },
+    {
+      "id": "cen_cenelec.amendment.0069",
+      "input": "EN 13252:2000/A1:2005",
+      "urn": "urn:cen:en:13252:2000:amd:1:2005"
+    },
+    {
+      "id": "cen_cenelec.amendment.0074",
+      "input": "EN 13253:2000/A1:2005",
+      "urn": "urn:cen:en:13253:2000:amd:1:2005"
+    }
+  ],
+  "doi": [
+    {
+      "id": "doi.resource.0001",
+      "input": "doi:10.1000/182",
+      "urn": "urn:doi"
+    },
+    {
+      "id": "doi.resource.0002",
+      "input": "doi:10.1006/jmbi.1998.2354",
+      "urn": "urn:doi"
+    },
+    {
+      "id": "doi.resource.0003",
+      "input": "doi:10.6028/NIST.2022-04-15.001",
+      "urn": "urn:doi"
+    }
+  ],
+  "ecma": [
+    {
+      "id": "ecma.memento.0001",
+      "input": "ECMA MEM/1962",
+      "urn": "urn:ecma:mem:1962"
+    },
+    {
+      "id": "ecma.memento.0002",
+      "input": "ECMA MEM/1964",
+      "urn": "urn:ecma:mem:1964"
+    },
+    {
+      "id": "ecma.memento.0003",
+      "input": "ECMA MEM/1965",
+      "urn": "urn:ecma:mem:1965"
+    },
+    {
+      "id": "ecma.memento.0004",
+      "input": "ECMA MEM/1966",
+      "urn": "urn:ecma:mem:1966"
+    },
+    {
+      "id": "ecma.memento.0005",
+      "input": "ECMA MEM/1967",
+      "urn": "urn:ecma:mem:1967"
+    }
+  ],
+  "etsi": [
+    {
+      "id": "etsi.amendment.2728",
+      "input": "ETSI ETR 108/A1 ed.1 (1995-08)",
+      "urn": null
+    },
+    {
+      "id": "etsi.amendment.3017",
+      "input": "ETSI ETS 300 011/A1 ed.1 (1994-12)",
+      "urn": "urn:etsi:ets:300 011:ed.1:1994-12"
+    },
+    {
+      "id": "etsi.amendment.3018",
+      "input": "ETSI ETS 300 011/A2 ed.1 (1996-03)",
+      "urn": "urn:etsi:ets:300 011:ed.1:1996-03"
+    },
+    {
+      "id": "etsi.amendment.3027",
+      "input": "ETSI ETS 300 012/A1 ed.1 (1994-12)",
+      "urn": "urn:etsi:ets:300 012:ed.1:1994-12"
+    },
+    {
+      "id": "etsi.amendment.3028",
+      "input": "ETSI ETS 300 012/A2 ed.1 (1996-03)",
+      "urn": "urn:etsi:ets:300 012:ed.1:1996-03"
+    }
+  ],
+  "eu": [
+    {
+      "id": "eu.regulation.0001",
+      "input": "EU Regulation 1227/2011",
+      "urn": "urn:eu:reg:2011:1227"
+    },
+    {
+      "id": "eu.regulation.0002",
+      "input": "EU Regulation 2016/679",
+      "urn": "urn:eu:reg:2016:679"
+    },
+    {
+      "id": "eu.regulation.0003",
+      "input": "EU Regulation 2003/2003",
+      "urn": "urn:eu:reg:2003:2003"
+    },
+    {
+      "id": "eu.regulation.0004",
+      "input": "EU Regulation 1907/2006",
+      "urn": "urn:eu:reg:2006:1907"
+    },
+    {
+      "id": "eu.regulation.0005",
+      "input": "EU Regulation No 2015/2014",
+      "urn": "urn:eu:reg:2014:2015"
+    }
+  ],
+  "evs": [
+    {
+      "id": "evs.estonian_standard.0001",
+      "input": "EVS 811:2018 et-en",
+      "urn": "urn:evs:811:2018:et-en"
+    },
+    {
+      "id": "evs.estonian_standard.0002",
+      "input": "EVS 906:2026",
+      "urn": "urn:evs:906:2026"
+    },
+    {
+      "id": "evs.estonian_standard.0003",
+      "input": "EVS 921:2019",
+      "urn": "urn:evs:921:2019"
+    },
+    {
+      "id": "evs.estonian_standard.0004",
+      "input": "EVS 945:2023",
+      "urn": "urn:evs:945:2023"
+    },
+    {
+      "id": "evs.estonian_standard.0033",
+      "input": "EVS-TR 1:2019",
+      "urn": "urn:evs:tr:1:2019"
+    }
+  ],
+  "gb": [
+    {
+      "id": "gb.all_parts.0003",
+      "input": "GB/T 5606 (all parts)",
+      "urn": "urn:gb:gb:5606"
+    },
+    {
+      "id": "gb.standard.0001",
+      "input": "GB 1234-2010",
+      "urn": "urn:gb:gb:1234:2010"
+    },
+    {
+      "id": "gb.standard.0002",
+      "input": "GB/T 20223-2006",
+      "urn": "urn:gb:gb:20223:2006"
+    },
+    {
+      "id": "gb.standard.0004",
+      "input": "GB/T 5606.1-2004",
+      "urn": "urn:gb:gb:5606:-1:2004"
+    },
+    {
+      "id": "gb.standard.0005",
+      "input": "GB/Z 123-2008",
+      "urn": "urn:gb:gb:123:2008"
+    }
+  ],
+  "gost": [
+    {
+      "id": "gost.harmonized.0018",
+      "input": "GOST 1437-2024 (ASTM D129-18)",
+      "urn": "urn:gost:std:1437:2024"
+    },
+    {
+      "id": "gost.harmonized.0026",
+      "input": "GOST 166 (ISO 3599-76)",
+      "urn": "urn:gost:std:166"
+    },
+    {
+      "id": "gost.harmonized.0037",
+      "input": "GOST 28100 (ISO 7235:2003)",
+      "urn": "urn:gost:std:28100"
+    },
+    {
+      "id": "gost.harmonized.0039",
+      "input": "GOST 28246.2-2025 (IEC 63242-2:2024)",
+      "urn": "urn:gost:std:28246.2:2025"
+    },
+    {
+      "id": "gost.harmonized.0042",
+      "input": "GOST 30893.1 (ISO 2768-1-89)",
+      "urn": "urn:gost:std:30893.1"
+    }
+  ],
+  "iala": [
+    {
+      "id": "iala.annex.0149",
+      "input": "IALA G1045 Annex Ed 1",
+      "urn": "urn:mrn:iala:pub:g1045:annex:ed1"
+    },
+    {
+      "id": "iala.annex.0150",
+      "input": "IALA G1045 Annex Ed 1 (E)",
+      "urn": "urn:mrn:iala:pub:g1045:annex:ed1:e"
+    },
+    {
+      "id": "iala.annex.0328",
+      "input": "IALA G1128 ANNEX A Ed 1.6",
+      "urn": "urn:mrn:iala:pub:g1128:annex-a:ed1.6"
+    },
+    {
+      "id": "iala.annex.0329",
+      "input": "IALA G1128 ANNEX A Ed 1.6 (E)",
+      "urn": "urn:mrn:iala:pub:g1128:annex-a:ed1.6:e"
+    },
+    {
+      "id": "iala.annex.0330",
+      "input": "IALA G1128 ANNEX B Ed 1.6",
+      "urn": "urn:mrn:iala:pub:g1128:annex-b:ed1.6"
+    }
+  ],
+  "iana": [
+    {
+      "id": "iana.registry.0001",
+      "input": "IANA _6lowpan-parameters",
+      "urn": "urn:iana:_6lowpan-parameters"
+    },
+    {
+      "id": "iana.registry.0002",
+      "input": "IANA _6lowpan-parameters/critical-6lowpan-routing-header-type",
+      "urn": "urn:iana:_6lowpan-parameters:critical-6lowpan-routing-header-type"
+    },
+    {
+      "id": "iana.registry.0003",
+      "input": "IANA _6lowpan-parameters/esc-extension-types",
+      "urn": "urn:iana:_6lowpan-parameters:esc-extension-types"
+    },
+    {
+      "id": "iana.registry.0004",
+      "input": "IANA _6lowpan-parameters/lowpan_nhc",
+      "urn": "urn:iana:_6lowpan-parameters:lowpan_nhc"
+    },
+    {
+      "id": "iana.registry.0005",
+      "input": "IANA _6tisch",
+      "urn": "urn:iana:_6tisch"
+    }
+  ],
+  "ietf": [
+    {
+      "id": "ietf.bcp.0001",
+      "input": "BCP 10",
+      "urn": "urn:ietf:bcp:10"
+    },
+    {
+      "id": "ietf.bcp.0002",
+      "input": "BCP 100",
+      "urn": "urn:ietf:bcp:100"
+    },
+    {
+      "id": "ietf.bcp.0003",
+      "input": "BCP 101",
+      "urn": "urn:ietf:bcp:101"
+    },
+    {
+      "id": "ietf.bcp.0004",
+      "input": "BCP 102",
+      "urn": "urn:ietf:bcp:102"
+    },
+    {
+      "id": "ietf.bcp.0005",
+      "input": "BCP 103",
+      "urn": "urn:ietf:bcp:103"
+    }
+  ],
+  "iho": [
+    {
+      "id": "iho.bathymetric.0001",
+      "input": "IHO B-1 1.0.0",
+      "urn": "urn:mrn:iho:pub:bathy:b1:1.0.0"
+    },
+    {
+      "id": "iho.bathymetric.0002",
+      "input": "IHO B-10 5.0.0",
+      "urn": "urn:mrn:iho:pub:bathy:b10:5.0.0"
+    },
+    {
+      "id": "iho.bathymetric.0003",
+      "input": "IHO B-11 1.0.0",
+      "urn": "urn:mrn:iho:pub:bathy:b11:1.0.0"
+    },
+    {
+      "id": "iho.bathymetric.0004",
+      "input": "IHO B-12 2.0.3",
+      "urn": "urn:mrn:iho:pub:bathy:b12:2.0.3"
+    },
+    {
+      "id": "iho.bathymetric.0005",
+      "input": "IHO B-12 3.0.0",
+      "urn": "urn:mrn:iho:pub:bathy:b12:3.0.0"
+    }
+  ],
+  "ire": [
+    {
+      "id": "ieee.ire.0002",
+      "input": "52 IRE 7.S2",
+      "urn": "urn:ieee:ire:7.S2:1952"
+    }
+  ],
+  "isbn": [
+    {
+      "id": "isbn.book.0001",
+      "input": "ISBN 0-306-40615-2",
+      "urn": "urn:isbn"
+    },
+    {
+      "id": "isbn.book.0002",
+      "input": "ISBN 978-3-16-148410-0",
+      "urn": "urn:isbn"
+    },
+    {
+      "id": "isbn.book.0003",
+      "input": "ISBN 9783161484100",
+      "urn": "urn:isbn"
+    }
+  ],
+  "jis": [
+    {
+      "id": "jis.amendment.10564",
+      "input": "WES 3003(E):1995/AMD 1:2025",
+      "urn": "urn:jis:WES 3003:2025:amd 1:2025"
+    },
+    {
+      "id": "jis.japanese_industrial_standard.0001",
+      "input": "JIS A 0001:1999",
+      "urn": "urn:jis:A 0001:1999"
+    },
+    {
+      "id": "jis.japanese_industrial_standard.0002",
+      "input": "JIS A 0005:1966",
+      "urn": "urn:jis:A 0005:1966"
+    },
+    {
+      "id": "jis.japanese_industrial_standard.0003",
+      "input": "JIS A 0015:1976",
+      "urn": "urn:jis:A 0015:1976"
+    },
+    {
+      "id": "jis.japanese_industrial_standard.0004",
+      "input": "JIS A 0016:1979",
+      "urn": "urn:jis:A 0016:1979"
+    }
+  ],
+  "nesc": [
+    {
+      "id": "ieee.nesc_edition.6232",
+      "input": "IEEE Std 2017 National Electrical Safety Code(R) (NESC(R))",
+      "urn": "urn:ieee:ieee:C2:2017"
+    },
+    {
+      "id": "ieee.nesc_handbook.6230",
+      "input": "IEEE Std 2012 NESC Handbook, Seventh Edition",
+      "urn": "urn:ieee:ieee:C2:2012:ed.Seventh Edition"
+    },
+    {
+      "id": "ieee.nesc_handbook.6231",
+      "input": "IEEE Std 2017 NESC(R) Handbook, Premier Edition",
+      "urn": "urn:ieee:ieee:C2:2017:ed.Premier Edition"
+    },
+    {
+      "id": "ieee.nesc_preprint.7546",
+      "input": "IEEE Std C2.2002.Preprint",
+      "urn": "urn:ieee:ieee:C2:2002:preprint"
+    },
+    {
+      "id": "ieee.nesc_preprint.7547",
+      "input": "IEEE Std C2.2007.Preprint",
+      "urn": "urn:ieee:ieee:C2:2007:preprint"
+    }
+  ],
+  "oasis": [
+    {
+      "id": "oasis.standard.0001",
+      "input": "OASIS AkomaNtosoCore-v1.0-Pt2-Specifications",
+      "urn": "urn:oasis:AkomaNtosoCore-v1.0-Pt2-Specifications"
+    },
+    {
+      "id": "oasis.standard.0002",
+      "input": "OASIS BIASPROFILE",
+      "urn": "urn:oasis:BIASPROFILE"
+    },
+    {
+      "id": "oasis.standard.0003",
+      "input": "OASIS BasicSecurityProfile-v1.1-CS01",
+      "urn": "urn:oasis:BasicSecurityProfile-v1.1-CS01"
+    },
+    {
+      "id": "oasis.standard.0004",
+      "input": "OASIS CMIS-v1.1-Errata01",
+      "urn": "urn:oasis:CMIS-v1.1-Errata01"
+    },
+    {
+      "id": "oasis.standard.0005",
+      "input": "OASIS CMIS-v1.1-Plus-Errata01",
+      "urn": "urn:oasis:CMIS-v1.1-Plus-Errata01"
+    }
+  ],
+  "ogc": [
+    {
+      "id": "ogc.document.0001",
+      "input": "01-009a",
+      "urn": "urn:ogc:01:009:a"
+    },
+    {
+      "id": "ogc.document.0002",
+      "input": "01-036",
+      "urn": "urn:ogc:01:036"
+    },
+    {
+      "id": "ogc.document.0003",
+      "input": "02-023r4",
+      "urn": "urn:ogc:02:023:r4"
+    },
+    {
+      "id": "ogc.document.0004",
+      "input": "02-028",
+      "urn": "urn:ogc:02:028"
+    },
+    {
+      "id": "ogc.document.0005",
+      "input": "02-039r1",
+      "urn": "urn:ogc:02:039:r1"
+    }
+  ],
+  "plateau": [
+    {
+      "id": "plateau.handbook.0001",
+      "input": "PLATEAU Handbook #00 第1.0版",
+      "urn": "urn:plateau:handbook:00"
+    },
+    {
+      "id": "plateau.handbook.0002",
+      "input": "PLATEAU Handbook #00 第2.0版",
+      "urn": "urn:plateau:handbook:00"
+    },
+    {
+      "id": "plateau.handbook.0003",
+      "input": "PLATEAU Handbook #00 第3.0版",
+      "urn": "urn:plateau:handbook:00"
+    },
+    {
+      "id": "plateau.handbook.0004",
+      "input": "PLATEAU Handbook #00 第4.0版",
+      "urn": "urn:plateau:handbook:00"
+    },
+    {
+      "id": "plateau.handbook.0005",
+      "input": "PLATEAU Handbook #00 第5.0版 本編",
+      "urn": "urn:plateau:handbook:00"
+    }
+  ],
+  "un": [
+    {
+      "id": "un.document.0001",
+      "input": "A/RES/78/1",
+      "urn": "urn:un:1"
+    },
+    {
+      "id": "un.document.0002",
+      "input": "TRADE/CEFACT/2004/32",
+      "urn": "urn:un:32:2004"
+    },
+    {
+      "id": "un.document.0003",
+      "input": "TRADE/WP.4/1068",
+      "urn": "urn:un:1068"
+    },
+    {
+      "id": "un.document.0004",
+      "input": "TRADE/WP.4/R.1068",
+      "urn": "urn:un:R.1068"
+    }
+  ],
+  "w3c": [
+    {
+      "id": "w3c.candidate_recommendation.0003",
+      "input": "W3C CR-exi-20091208",
+      "urn": "urn:w3c:cr:exi:20091208"
+    },
+    {
+      "id": "w3c.candidate_recommendation_draft.0004",
+      "input": "W3C CRD-accelerometer-20250212",
+      "urn": "urn:w3c:crd:accelerometer:20250212"
+    },
+    {
+      "id": "w3c.candidate_recommendation_draft.0005",
+      "input": "W3C CRD-css-backgrounds-3-20210726",
+      "urn": "urn:w3c:crd:css-backgrounds-3:20210726"
+    },
+    {
+      "id": "w3c.draft_note.0006",
+      "input": "W3C DNOTE-webcodecs-alaw-codec-registration-20230821",
+      "urn": "urn:w3c:dnote:webcodecs-alaw-codec-registration:20230821"
+    },
+    {
+      "id": "w3c.draft_note.0007",
+      "input": "W3C DNOTE-webcodecs-flac-codec-registration-20240419",
+      "urn": "urn:w3c:dnote:webcodecs-flac-codec-registration:20240419"
+    }
+  ],
+  "wmo": [
+    {
+      "id": "wmo.annex.0011",
+      "input": "S-411 Annex A",
+      "urn": "urn:mrn:wmo:pub:s-411:annex-a"
+    },
+    {
+      "id": "wmo.publication.0001",
+      "input": "GAW Report No. 285",
+      "urn": "urn:mrn:wmo:pub:gaw-285"
+    },
+    {
+      "id": "wmo.publication.0002",
+      "input": "GAW Report No. 312",
+      "urn": "urn:mrn:wmo:pub:gaw-312"
+    },
+    {
+      "id": "wmo.publication.0003",
+      "input": "JCOMM Technical Report No. 14",
+      "urn": "urn:mrn:wmo:pub:jcomm-tr-14"
+    },
+    {
+      "id": "wmo.publication.0004",
+      "input": "JCOMM Technical Report No. 24",
+      "urn": "urn:mrn:wmo:pub:jcomm-tr-24"
+    }
+  ],
+  "xsf": [
+    {
+      "id": "xsf.xep.0001",
+      "input": "XEP 0001",
+      "urn": "urn:xsf:xep:0001"
+    },
+    {
+      "id": "xsf.xep.0002",
+      "input": "XEP 0004",
+      "urn": "urn:xsf:xep:0004"
+    },
+    {
+      "id": "xsf.xep.0003",
+      "input": "XEP 0013",
+      "urn": "urn:xsf:xep:0013"
+    },
+    {
+      "id": "xsf.xep.0004",
+      "input": "XEP 0025",
+      "urn": "urn:xsf:xep:0025"
+    },
+    {
+      "id": "xsf.xep.0005",
+      "input": "XEP 0030",
+      "urn": "urn:xsf:xep:0030"
+    }
+  ]
+}

@@ -289,3 +289,42 @@ jobs:
           cargo run -q -p pubid-cli -- parse iala "S-201 ANNEX B2"
           cargo run -q -p pubid-cli -- parse iala "IALA arctic-seminar-report (E)"
           cargo run -q -p pubid-cli -- smoke
+
+  wasm:
+    name: wasm-pack build + wasm-bindgen tests (the playground target)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: wasm
+
+      - uses: jetli/wasm-pack-action@v0.4.0
+        with:
+          version: latest
+
+      - name: The wasm-facing API (wasm-bindgen-test, node backend)
+        run: |
+          # The suite includes the example-set gate, so the corpus-fed
+          # rows are re-parsed on the exact binary the playground
+          # ships (not only on the native suite).
+          wasm-pack test --node crates/pubid-wasm
+
+      - name: The release bundle (bundler target, the playground artifact)
+        run: wasm-pack build crates/pubid-wasm --target bundler --release
+
+      - name: Bundle receipts (size and the shipped files)
+        run: |
+          du -k crates/pubid-wasm/pkg/*
+          ls -la crates/pubid-wasm/pkg
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pubid-wasm-bundler-${{ github.sha }}
+          path: crates/pubid-wasm/pkg
+          retention-days: 30

@@ -4,6 +4,7 @@ members = [
     "crates/pubid-core",
     "crates/pubid-cli",
     "crates/conformance",
+    "crates/pubid-wasm",
 ]
 
 [workspace.package]

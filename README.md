@@ -26,7 +26,52 @@ corpus runs fleet-wide.
   forms; `pubid-cli smoke` runs every vendored slice.
 - `conformance` — the pubid-testsuite runner: load a flavor's corpus,
   parse → render → compare, report the measured counts, gate on clean
-  flavors only. `--all` runs every ported flavor.
+  flavors only. `--all` runs every ported flavor. `--examples` emits
+  the corpus-fed example set (the JSON the wasm bundle embeds).
+- `pubid-wasm` — the WebAssembly target: the pubid-core flavor layer
+  compiled to wasm for the pubid.github.io playground.
+
+## The wasm target (crates/pubid-wasm)
+
+`pubid-wasm` compiles pubid-core + the grammar-artifact runtime to
+wasm-bindgen/wasm-pack for the site playground — a thin JS-facing shim
+over the same checksum-verified artifacts, no grammar logic of its
+own. The JS surface mirrors the Rust API:
+
+| export | the Rust mirror |
+| ------ | --------------- |
+| `pubid_version()` | the crate version |
+| `pubid_flavors()` | `implemented_flavors()` |
+| `pubid_parse(flavor, input)` | `FlavorImpl::parse` + the canonical forms (throws on rejection) |
+| `pubid_try_parse(flavor, input)` | the same parse as a `{ ok, result?, error?, code? }` verdict (never throws) |
+| `pubid_detect(input)` | every ported flavor that accepts the input |
+| `pubid_artifacts()` | the vendored-artifact receipts (checksum / semantics hash, by flavor) |
+| `pubid_examples()` | the corpus-fed example rows (vendored slices, distilled) |
+
+The parse report carries the typed tree (the canonical `_type`-tagged
+attribute hash), the canonical human, and the URN with its namespace
+class (`urn` for the RFC 8141 forms, `mrn` for the
+`urn:mrn:` guidance forms — IHO/IALA/WMO). The verdict `code` classes
+are `unknown_flavor`, `parse`, `invalid`, `artifact`.
+
+The grammar artifacts are **bundled**, not fetched: the ported
+flavors' envelopes total a few hundred kilobytes of JSON, so the
+playground stays a fully client-side, zero-round-trip parse; the
+envelopes are the vendored checksummed ones from `pubid-core`
+(`/pins.yaml`), and the 11 MB corpus fixtures stay out of the bundle
+(the linker GCs the unreferenced slice data; only the distilled
+`examples.json` rides along). Release bundle at `wasm-opt -O3`: ~2.6 MB
+raw, ~850 KB gzipped.
+
+Build and test:
+
+```
+wasm-pack build crates/pubid-wasm --target bundler --release --out-dir pkg
+wasm-pack test --node crates/pubid-wasm
+```
+
+The `pubid_examples` gate test re-parses every example row through its
+flavor, so a slice refresh that moves a row fails the suite.
 
 ## Layout
 
@@ -37,6 +82,7 @@ crates/pubid-core/
   fixtures/      vendored testsuite slice(s) (+ VENDORED_FROM.md)
 crates/pubid-cli/    the `pubid-cli` binary
 crates/conformance/  the `conformance` runner binary
+crates/pubid-wasm/   the wasm target (built pkg/ is gitignored)
 pins.yaml            pinned testsuite + grammar refs (single source)
 .github/workflows/   CI
 ```
