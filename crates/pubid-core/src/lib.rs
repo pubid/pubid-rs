@@ -15,7 +15,9 @@
 //!   the later rounds add the mid fleet, `iho` (the S-158
 //!   `product` series model, pubid#774/#775, renamed from `checks_for` by gem #783) and `iala` (the
 //!   S-2xx product specifications and the codeless slug publications,
-//!   gem #772/#777)
+//!   gem #772/#777) and `iec` (the consolidated-chain surface, the
+//!   `+AMD+COR` composition, gem pubid#788 — the full flavor port
+//!   follows)
 //! - `bound`: the shared bound-hash / canonical-hash readers
 //! - `conformance`: the corpus wire contract and the checker
 //! - `Pubid` / `materialize_from_schema`: the schema-driven
@@ -41,6 +43,7 @@ pub mod generators;
 pub mod gost;
 pub mod iala;
 pub mod iana;
+pub mod iec;
 pub mod ieee_code;
 pub mod ietf;
 pub mod iho;
@@ -84,6 +87,7 @@ pub use generators::{
 pub use gost::{GostIdentifier, GostKind};
 pub use iala::{IalaIdentifier, IalaKind};
 pub use iana::IanaIdentifier;
+pub use iec::{IecDocument, IecIdentifier, IecKind, IecSupplement};
 pub use ietf::{IetfIdentifier, IetfKind};
 pub use iho::{IhoIdentifier, IhoKind};
 pub use ire::IreIdentifier;
