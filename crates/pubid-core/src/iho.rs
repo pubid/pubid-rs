@@ -48,17 +48,21 @@
 //! ## URN schemes
 //!
 //! `to_urn` emits the IHO MRN guidance namespace (S-100WG4, "MRN
-//! Guidelines for IHO") for the series the guidance gives a
-//! publication type — S/P/M:
+//! Guidelines for IHO") for EVERY series — the five S-11 Part C Ed
+//! 1.0.0 section 1.2 publication groups bind 1:1 onto the guidance's
+//! five publication type codes:
 //!
 //!   urn:mrn:iho:pub:<type>:<name>[:<dotted edition>][:<atoms>...]
 //!
 //! - `<type>`: `spec` (S, Standards and Specifications) / `per` (P,
 //!   the periodic publications) / `reg` (M, Miscellaneous Base
-//!   Regulatory Publications). The B (Bibliographic) and C (Circular
-//!   Letter) series have NO guidance type code — until IHO assigns one
-//!   they keep the legacy positional `urn:iho:` emission below (which
-//!   stays decodable for every series, never emitted for S/P/M).
+//!   Regulatory Publications) / `bathy` (B, Bathymetric Publications —
+//!   "Mainly related to GEBCO") / `cb` (C, Capacity Building
+//!   Publications). The B/C bindings cite S-11 Part C Ed 1.0.0
+//!   section 1.2, which arranges the IHO publications under the five
+//!   groups; before the bathy/cb round the B/C series had no guidance
+//!   code and kept the legacy positional `urn:iho:` emission — that
+//!   emission is dead now (every series carries a code).
 //! - `<name>`: `sNNN` — the lowercase series letter + number (the
 //!   guidance's own s57/s98 spelling). The S-158 member joins the name
 //!   segment hyphenated (`s158-102` — the fleet extension for compound
@@ -81,9 +85,14 @@
 //!   here: every construction path funnels through one ordered
 //!   emitter.
 //!
-//! The retired positional `urn:iho:` scheme (the B/C emission) and the
-//! legacy pubid-URN shapes (`158~3A102`, `part-S-102:parted-0.2.0`,
-//! the pre-rename `product-` atom) stay decodable, never emitted.
+//! The retired positional `urn:iho:` scheme (decode-only for every
+//! series — all five carry a guidance type code, so the guidance form
+//! above is the only emission) and the legacy pubid-URN shapes
+//! (`158~3A102`, `part-S-102:parted-0.2.0`, the pre-rename `product-`
+//! atom) stay decodable, never emitted. The pre-rename B/C wire-type
+//! names (`pubid:iho:bibliographic`, `pubid:iho:circular-letter` — the
+//! rows were misnomered before the bathy/cb rename) decode onto the
+//! renamed kinds through the hash route, canonically re-tagged.
 
 use serde_json::Value;
 
@@ -102,10 +111,13 @@ pub enum IhoKind {
     Publication,
     /// Miscellaneous Publication (`IHO M-2 Sup 1`).
     Miscellaneous,
-    /// Bibliographic Publication (`IHO B-4`).
-    Bibliographic,
-    /// Circular Letter (`IHO C-13`).
-    CircularLetter,
+    /// Bathymetric Publication (`IHO B-4`; the S-11 Part C "B -
+    /// Bathymetric Publications (Mainly related to GEBCO)" group).
+    Bathymetric,
+    /// Capacity Building Publication (`IHO C-13`, the Manual on
+    /// Hydrography; the S-11 Part C "C - Capacity Building
+    /// Publications" group).
+    CapacityBuilding,
 }
 
 impl IhoKind {
@@ -118,8 +130,8 @@ impl IhoKind {
             IhoKind::Standard => "pubid:iho:standard",
             IhoKind::Publication => "pubid:iho:publication",
             IhoKind::Miscellaneous => "pubid:iho:miscellaneous",
-            IhoKind::Bibliographic => "pubid:iho:bibliographic",
-            IhoKind::CircularLetter => "pubid:iho:circular-letter",
+            IhoKind::Bathymetric => "pubid:iho:bathymetric",
+            IhoKind::CapacityBuilding => "pubid:iho:capacity_building",
         }
     }
 
@@ -129,8 +141,8 @@ impl IhoKind {
             IhoKind::Standard => 'S',
             IhoKind::Publication => 'P',
             IhoKind::Miscellaneous => 'M',
-            IhoKind::Bibliographic => 'B',
-            IhoKind::CircularLetter => 'C',
+            IhoKind::Bathymetric => 'B',
+            IhoKind::CapacityBuilding => 'C',
         }
     }
 
@@ -140,33 +152,51 @@ impl IhoKind {
             IhoKind::Standard => "std",
             IhoKind::Publication => "pub",
             IhoKind::Miscellaneous => "m",
-            IhoKind::Bibliographic => "b",
-            IhoKind::CircularLetter => "cl",
+            IhoKind::Bathymetric => "b",
+            IhoKind::CapacityBuilding => "cl",
         }
     }
 
-    /// The MRN guidance publication type per series letter
-    /// (`UrnGenerator::MRN_TYPES`): S = Standards and Specifications
-    /// → spec (the owner ruling names the guidance code explicitly);
-    /// P = the periodic publications → per; M = Miscellaneous (Base
-    /// Regulatory Publications) → reg. B and C have no guidance code
-    /// (`None` — the legacy emission until IHO assigns one).
-    fn mrn_type(self) -> Option<&'static str> {
+    /// The MRN guidance publication type per series letter — the five
+    /// S-11 Part C Ed 1.0.0 section 1.2 groups onto the guidance's
+    /// five codes (`UrnGenerator::MRN_TYPES`): S = Standards and
+    /// Specifications → spec (the owner ruling names the guidance code
+    /// explicitly); P = the periodic publications → per; M =
+    /// Miscellaneous (Base Regulatory Publications) → reg; B =
+    /// Bathymetric Publications → bathy; C = Capacity Building
+    /// Publications → cb. Every series carries a code, so the legacy
+    /// positional emission is dead.
+    fn mrn_type(self) -> &'static str {
         match self {
-            IhoKind::Standard => Some("spec"),
-            IhoKind::Publication => Some("per"),
-            IhoKind::Miscellaneous => Some("reg"),
-            IhoKind::Bibliographic | IhoKind::CircularLetter => None,
+            IhoKind::Standard => "spec",
+            IhoKind::Publication => "per",
+            IhoKind::Miscellaneous => "reg",
+            IhoKind::Bathymetric => "bathy",
+            IhoKind::CapacityBuilding => "cb",
         }
     }
 
+    /// The hash `_type` route (`IhoKind::from_type_tag` under the
+    /// reference's `polymorphic_type_map`): the canonical names route
+    /// every emitted row; the PRE-RENAME B/C wire names
+    /// (`bibliographic`/`circular-letter` — the rows were misnomered
+    /// before the bathy/cb rename) merge in beside them as decode-only
+    /// aliases — stored rows (the relaton-data-iho v2 index, any
+    /// snapshot crawled before the rename) still carry them. Decode
+    /// re-tags canonically: the rebuilt identifier is the renamed kind
+    /// and `to_hash` writes the renamed tag. Decode-only, never
+    /// emitted.
     fn from_type_tag(tag: &str) -> Option<Self> {
         match tag {
             "pubid:iho:standard" => Some(IhoKind::Standard),
             "pubid:iho:publication" => Some(IhoKind::Publication),
             "pubid:iho:miscellaneous" => Some(IhoKind::Miscellaneous),
-            "pubid:iho:bibliographic" => Some(IhoKind::Bibliographic),
-            "pubid:iho:circular-letter" => Some(IhoKind::CircularLetter),
+            "pubid:iho:bathymetric" => Some(IhoKind::Bathymetric),
+            "pubid:iho:capacity_building" => Some(IhoKind::CapacityBuilding),
+            // The pre-rename B/C names, decode-only (removable once
+            // relaton-data-iho is re-crawled).
+            "pubid:iho:bibliographic" => Some(IhoKind::Bathymetric),
+            "pubid:iho:circular-letter" => Some(IhoKind::CapacityBuilding),
             _ => None,
         }
     }
@@ -176,8 +206,8 @@ impl IhoKind {
             'S' => Some(IhoKind::Standard),
             'P' => Some(IhoKind::Publication),
             'M' => Some(IhoKind::Miscellaneous),
-            'B' => Some(IhoKind::Bibliographic),
-            'C' => Some(IhoKind::CircularLetter),
+            'B' => Some(IhoKind::Bathymetric),
+            'C' => Some(IhoKind::CapacityBuilding),
             _ => None,
         }
     }
@@ -567,16 +597,31 @@ impl IhoIdentifier {
     /// deserialization applies the same S-158 alias unification the
     /// parse path applies (`Builder.normalize_checks_alias` — a stored
     /// row carrying the draft-era part model decodes to the product
-    /// identity), restores no spelling face, and runs no checks anchor
-    /// assert (the reference's permissive lutaml decode).
+    /// identity), re-tags a PRE-RENAME B/C `_type` canonically (the
+    /// route aliases of [`IhoKind::from_type_tag`] decode the row and
+    /// the rebuilt [`Self::to_hash`] writes the renamed tag, so a
+    /// decoded legacy row equals a parsed query), restores no spelling
+    /// face, and runs no checks anchor assert (the reference's
+    /// permissive lutaml decode).
     pub fn from_hash(hash: &Value) -> Result<Self> {
-        let kind = hash
-            .get("_type")
-            .and_then(Value::as_str)
+        let tag = hash.get("_type").and_then(Value::as_str);
+        let kind = tag
             .and_then(IhoKind::from_type_tag)
             .ok_or_else(|| Error::InvalidHash {
                 detail: format!("unknown iho _type {:?}", hash.get("_type")),
             })?;
+        // The legacy `_type` never survives the decode: the row reads
+        // and re-emits as the renamed tag (the reference's
+        // normalize_legacy_type; removable once relaton-data-iho is
+        // re-crawled). A canonical hash passes through untouched.
+        let canonical_tag = kind.type_tag();
+        let hash: &Value = &if tag.is_some_and(|tag| tag != canonical_tag) {
+            let mut retagged = hash.clone();
+            retagged["_type"] = canonical_tag.into();
+            retagged
+        } else {
+            hash.clone()
+        };
         let attrs = Attrs {
             kind: Some(kind),
             number: Some(hash_str(hash, "number")?.to_string()),
@@ -889,8 +934,8 @@ fn is_part_value(value: &str) -> bool {
 }
 
 // ---------------------------------------------------------------------------
-// URN emission: the MRN guidance form (S/P/M) and the legacy positional
-// form (B/C) — `UrnGenerator`
+// URN emission: the MRN guidance form (the emission of every series)
+// — `UrnGenerator`
 // ---------------------------------------------------------------------------
 
 /// The guidance-form trailing atoms in containment order
@@ -923,45 +968,13 @@ const MRN_SEGMENTS: [(&str, &str); 20] = [
     ("volume_year", "year"),
 ];
 
-/// `[component, marker]` pairs of the legacy positional scheme
-/// (`UrnGenerator::SEGMENTS`), in the containment/canonical-face
-/// order. A component edition/year emits right after its component
-/// (the `ed-` segment attaches to the node it follows, recording the
-/// separately-published mode). `None` markers emit their component as
-/// a BARE atom (the appendix subnumber directly after its appendix).
-const LEGACY_EMISSION: [(&str, Option<&str>); 22] = [
-    ("edition", Some("ed")),
-    ("year", Some("year")),
-    ("supplement", Some("sup")),
-    ("supplement_edition", Some("ed")),
-    ("supplement_year", Some("year")),
-    ("part", Some("part")),
-    ("part_edition", Some("ed")),
-    ("part_year", Some("year")),
-    ("spec", Some("spec")),
-    ("spec_sub", Some("specsub")),
-    ("spec_variant", Some("specvar")),
-    ("annex", Some("annex")),
-    ("annex_edition", Some("ed")),
-    ("annex_year", Some("year")),
-    ("appendix", Some("appendix")),
-    ("appendix_subnumber", None),
-    ("appendix_edition", Some("ed")),
-    ("appendix_year", Some("year")),
-    ("volume", Some("vol")),
-    ("issue", Some("issue")),
-    ("volume_edition", Some("ed")),
-    ("volume_year", Some("year")),
-];
-
 impl IhoIdentifier {
-    /// The official URN: the adopted IHO MRN guidance form for S/P/M,
-    /// the legacy positional form for B/C (no guidance type code).
+    /// The official URN: the adopted IHO MRN guidance form for every
+    /// series (all five carry a guidance type code — the legacy
+    /// positional emission is dead; the `urn:iho:` grammar stays
+    /// decodable, emitted by none).
     pub fn to_urn(&self) -> Result<String> {
-        match self.kind.mrn_type() {
-            Some(mrn_type) => Ok(self.to_mrn_urn(mrn_type)),
-            None => Ok(self.to_legacy_urn()),
-        }
+        Ok(self.to_mrn_urn(self.kind.mrn_type()))
     }
 
     /// The guidance form: type, name (sNNN / s158-NNN), the bare
@@ -1003,29 +1016,6 @@ impl IhoIdentifier {
         name
     }
 
-    /// The legacy positional form (B/C today; the shape every legacy
-    /// `urn:iho:` URN decodes from): the lowercased series letter, the
-    /// number verbatim, then the marker segments in containment order.
-    fn to_legacy_urn(&self) -> String {
-        let mut segments = vec![
-            "urn:iho".to_string(),
-            self.kind.letter().to_lowercase().to_string(),
-            self.number.clone(),
-        ];
-        for (component, marker) in LEGACY_EMISSION {
-            let Some(value) = attr_value(self, component) else {
-                continue;
-            };
-            match marker {
-                Some(marker) => segments.push(format!("{marker}-{value}")),
-                // The bare atom: the appendix subnumber directly after
-                // its appendix.
-                None => segments.push(value.clone()),
-            }
-        }
-        segments.join(":")
-    }
-
     /// Parse an MRN URN: the `pub` namespace, the guidance publication
     /// type, the lowercase name (the S-158 member hyphenated), the
     /// bare dotted edition, then the trailing atoms through the shared
@@ -1042,10 +1032,15 @@ impl IhoIdentifier {
         let [type_segment, rest @ ..] = segments.as_slice() else {
             return Err(urn_error(format!("invalid IHO MRN: {urn:?}")));
         };
+        // The guidance publication type -> series letter (the
+        // emission's mrn_type inverted): the five S-11 Part C groups
+        // onto their series letters. An unknown type rejects.
         let letter = match *type_segment {
             "spec" => IhoKind::Standard,
             "per" => IhoKind::Publication,
             "reg" => IhoKind::Miscellaneous,
+            "bathy" => IhoKind::Bathymetric,
+            "cb" => IhoKind::CapacityBuilding,
             other => {
                 return Err(urn_error(format!(
                     "unknown IHO publication type {other:?} in {urn:?}"
@@ -1447,14 +1442,15 @@ fn urn_error(detail: impl Into<String>) -> Error {
 }
 
 // ---------------------------------------------------------------------------
-// Retired positional urn:iho: scheme (the B/C emission; decodable for
-// every series, never emitted for S/P/M)
+// Retired positional urn:iho: scheme (decode-only for every series;
+// emitted by none — all five series carry a guidance type code)
 // ---------------------------------------------------------------------------
 
 impl IhoIdentifier {
     /// The positional scheme (`urn:iho:<type>:<number>:...`), kept
-    /// decodable for the pre-migration forms — the emitted URN is the
-    /// MRN above for S/P/M and this same shape for B/C. The first bare
+    /// decodable for the pre-migration forms — never emitted: all five
+    /// series carry a guidance type code, so the MRN form above is the
+    /// only emission. The first bare
     /// number segment is the docnumber; the next bare digit segment
     /// binds the S-158 member number (product — the member as its
     /// own segment, never glued into the number); every other
@@ -1604,8 +1600,8 @@ impl IhoIdentifier {
             "std" => IhoKind::Standard,
             "pub" => IhoKind::Publication,
             "m" => IhoKind::Miscellaneous,
-            "b" => IhoKind::Bibliographic,
-            "cl" => IhoKind::CircularLetter,
+            "b" => IhoKind::Bathymetric,
+            "cl" => IhoKind::CapacityBuilding,
             other => return Err(urn_error(format!("unknown pubid IHO type key {other:?}"))),
         };
         let mut attrs = Attrs {
@@ -2046,13 +2042,23 @@ mod tests {
 
     #[test]
     fn the_mrn_guidance_types_per_series() {
-        // S -> spec, P -> per, M -> reg; the B/C series keep the
-        // legacy positional emission (no guidance type code).
+        // The five S-11 Part C Ed 1.0.0 section 1.2 groups onto the
+        // guidance's five codes: S -> spec, P -> per, M -> reg, and
+        // B -> bathy, C -> cb (the B/C rows moved off the dead legacy
+        // emission onto their guidance codes).
         assert_eq!(urn("IHO S-98 1.0.0"), "urn:mrn:iho:pub:spec:s98:1.0.0");
         assert_eq!(urn("IHO P-1 1.0.0"), "urn:mrn:iho:pub:per:p1:1.0.0");
         assert_eq!(urn("IHO M-1 2.1.0"), "urn:mrn:iho:pub:reg:m1:2.1.0");
-        assert_eq!(urn("IHO B-4 2.19.0"), "urn:iho:b:4:ed-2.19.0");
-        assert_eq!(urn("IHO C-13 1.0.0"), "urn:iho:c:13:ed-1.0.0");
+        // The bathy/cb receipts (the testsuite corpus rows: B-12 the
+        // CSB Guidance, C-13 the Manual on Hydrography, C-51 6.0.0).
+        assert_eq!(urn("IHO B-4 2.19.0"), "urn:mrn:iho:pub:bathy:b4:2.19.0");
+        assert_eq!(urn("IHO B-12 3.0.0"), "urn:mrn:iho:pub:bathy:b12:3.0.0");
+        assert_eq!(urn("IHO C-13 1.0.0"), "urn:mrn:iho:pub:cb:c13:1.0.0");
+        assert_eq!(urn("IHO C-51 6.0.0"), "urn:mrn:iho:pub:cb:c51:6.0.0");
+        assert_eq!(
+            urn("IHO B-7 Vol. 2023"),
+            "urn:mrn:iho:pub:bathy:b7:vol-2023"
+        );
     }
 
     #[test]
@@ -2155,23 +2161,24 @@ mod tests {
     #[test]
     fn rejects_the_bad_mrn_urns() {
         for urn in [
-            "urn:mrn:iho:pub:spec:s100-2:1.0.0",          // member off s158
-            "urn:mrn:iho:pub:spec:s44-5:1.0.0",           // ditto
-            "urn:mrn:iho:pub:spec:x158:1.0.0",            // unknown series letter
-            "urn:mrn:iho:pub:spec:S158:1.0.0",            // uppercase name
-            "urn:mrn:iho:pub:bathy:s44:5.0.0",            // not a guidance type
-            "urn:mrn:iho:pub:spec:",                      // no name
-            "urn:mrn:iho:pub:spec:s44:junk",              // unknown segment
-            "urn:mrn:iho:pub:spec:s44:5.0.0:6.0.0",       // duplicate edition
-            "urn:mrn:iho:pub:spec:s44:parta:partb",       // duplicate part
-            "urn:mrn:iho:pub:spec:s4:4.10.0:b-401:b-402", // no citation atoms in MRN
-            "urn:mrn:iho:pub:spec:s57:3:1",               // the bare correction slot
-            "urn:mrn:iho:spec:s44:5.0.0",                 // not the pub namespace
-            "urn:mrn:wmo:pub:spec:s44:5.0.0",             // another namespace
-            "urn:mrn:iho:pub:spec:s4:4.10.0:b-401:ed-1.0.0", // junk before a marker
-            "urn:mrn:iho:pub:spec:s158-abc:1.0.0",        // malformed member
-            "urn:mrn:iho:pub:spec:s44:year20",            // not a year
-            "urn:mrn:iho:pub:spec:s122:1.0.0:appendix-d-2", // letters stay case-preserved
+            "urn:mrn:iho:pub:spec:s100-2:1.0.0", // member off s158
+            "urn:mrn:iho:pub:spec:s44-5:1.0.0",  // ditto
+            "urn:mrn:iho:pub:spec:x158:1.0.0",   // unknown series letter
+            "urn:mrn:iho:pub:spec:S158:1.0.0",   // uppercase name
+            // not a guidance type — bathy/cb are five of the five now
+            "urn:mrn:iho:pub:bogus:s44:5.0.0",
+            "urn:mrn:iho:pub:spec:",                          // no name
+            "urn:mrn:iho:pub:spec:s44:junk",                  // unknown segment
+            "urn:mrn:iho:pub:spec:s44:5.0.0:6.0.0",           // duplicate edition
+            "urn:mrn:iho:pub:spec:s44:parta:partb",           // duplicate part
+            "urn:mrn:iho:pub:spec:s4:4.10.0:b-401:b-402",     // no citation atoms in MRN
+            "urn:mrn:iho:pub:spec:s57:3:1",                   // the bare correction slot
+            "urn:mrn:iho:spec:s44:5.0.0",                     // not the pub namespace
+            "urn:mrn:wmo:pub:spec:s44:5.0.0",                 // another namespace
+            "urn:mrn:iho:pub:spec:s4:4.10.0:b-401:ed-1.0.0",  // junk before a marker
+            "urn:mrn:iho:pub:spec:s158-abc:1.0.0",            // malformed member
+            "urn:mrn:iho:pub:spec:s44:year20",                // not a year
+            "urn:mrn:iho:pub:spec:s122:1.0.0:appendix-d-2",   // letters stay case-preserved
             "urn:mrn:iho:pub:spec:s122:1.0.0:appendix-D:2:3", // stray bare atom
         ] {
             assert!(IhoIdentifier::parse(urn).is_err(), "{urn} must be rejected");
@@ -2220,6 +2227,15 @@ mod tests {
                 "IHO S-98 Part A 1.0.0 (2024)",
             ),
             ("urn:mrn:iho:pub:spec:s98:1.0.0", "IHO S-98 1.0.0"),
+            // The bathy (B) and cb (C) codes: the S-11 Part C Ed 1.0.0
+            // section 1.2 groups onto the guidance codes; the receipts
+            // are the testsuite corpus rows (B-12 the CSB Guidance,
+            // C-13 the Manual on Hydrography, C-51 6.0.0).
+            ("urn:mrn:iho:pub:bathy:b12:3.0.0", "IHO B-12 3.0.0"),
+            ("urn:mrn:iho:pub:bathy:b4:2.19.0", "IHO B-4 2.19.0"),
+            ("urn:mrn:iho:pub:cb:c13:1.0.0", "IHO C-13 1.0.0"),
+            ("urn:mrn:iho:pub:cb:c51:6.0.0", "IHO C-51 6.0.0"),
+            ("urn:mrn:iho:pub:bathy:b7:vol-2023", "IHO B-7 Vol. 2023"),
         ] {
             let id = parse(mrn);
             assert_eq!(id.to_human(), text, "{mrn}");
@@ -2342,8 +2358,8 @@ mod tests {
     }
 
     // -----------------------------------------------------------------
-    // The positional urn:iho: scheme (the B/C emission; decodable for
-    // every series, never emitted for S/P/M)
+    // The positional urn:iho: scheme (decode-only for every series,
+    // emitted by none)
     // -----------------------------------------------------------------
 
     #[test]
@@ -2485,7 +2501,10 @@ mod tests {
         assert_eq!(shorthand.to_human(), "IHO S-100 5.1.0");
 
         let letter = parse("IHO C-13 1.0.0");
-        assert_eq!(letter.kind, IhoKind::CircularLetter);
+        assert_eq!(letter.kind, IhoKind::CapacityBuilding);
+
+        let bathy = parse("IHO B-12 3.0.0");
+        assert_eq!(bathy.kind, IhoKind::Bathymetric);
 
         let citation = parse("IHO S-4 4.10.0 B-401");
         assert_eq!(citation.part.as_deref(), Some("B"));
@@ -2627,6 +2646,57 @@ mod tests {
         .expect("from_hash");
         assert_eq!(years.year.as_deref(), Some("2024"));
         assert_eq!(years.part_year, None);
+    }
+
+    #[test]
+    fn the_pre_rename_wire_names_decode_onto_the_renamed_types() {
+        // The pre-rename B/C wire names (`bibliographic`/
+        // `circular-letter` — the rows were misnomered before the
+        // bathy/cb rename) stay decodable: stored rows (the
+        // relaton-data-iho v2 index, any snapshot crawled before the
+        // rename) still carry them. Decode re-tags canonically: the
+        // rebuilt identifier is the renamed kind AND re-emits the
+        // renamed `_type`, so a decoded legacy row equals a parsed
+        // query. Decode-only, never emitted. Removable once
+        // relaton-data-iho is re-crawled.
+        for (legacy, kind, human) in [
+            (
+                "pubid:iho:bibliographic",
+                IhoKind::Bathymetric,
+                "IHO B-1 1.0.0",
+            ),
+            (
+                "pubid:iho:circular-letter",
+                IhoKind::CapacityBuilding,
+                "IHO C-1 1.0.0",
+            ),
+        ] {
+            let id = IhoIdentifier::from_hash(&json!({
+                "_type": legacy,
+                "number": "1",
+                "edition": "1.0.0",
+            }))
+            .expect("from_hash");
+            assert_eq!(id.kind, kind, "{legacy}");
+            assert_eq!(id.kind.type_tag(), kind.type_tag(), "{legacy}");
+            // The canonical hash: the renamed tag, and the round trip
+            // through it is stable.
+            assert_eq!(id.to_hash()["_type"], json!(kind.type_tag()));
+            assert_eq!(
+                IhoIdentifier::from_hash(&id.to_hash()).expect("from_hash"),
+                id,
+                "{legacy}"
+            );
+            // A decoded legacy row equals the parsed query of the same
+            // document (the relaton matcher's identity).
+            assert_eq!(id, parse(human), "{legacy}");
+        }
+        // An unrouteable `_type` still rejects.
+        assert!(IhoIdentifier::from_hash(&json!({
+            "_type": "pubid:iho:bogus",
+            "number": "1",
+        }))
+        .is_err());
     }
 
     #[test]

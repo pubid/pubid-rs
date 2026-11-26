@@ -1,112 +1,112 @@
 ---
-- id: iho.bibliographic.0001
+- id: iho.bathymetric.0001
   identifier:
-    _type: pubid:iho:bibliographic
+    _type: pubid:iho:bathymetric
     number: '1'
     edition: 1.0.0
   representations:
     human: IHO B-1 1.0.0
-    urn: urn:iho:b:1:ed-1.0.0
+    urn: urn:mrn:iho:pub:bathy:b1:1.0.0
   style: v3
-- id: iho.bibliographic.0002
+- id: iho.bathymetric.0002
   identifier:
-    _type: pubid:iho:bibliographic
+    _type: pubid:iho:bathymetric
     number: '10'
     edition: 5.0.0
   representations:
     human: IHO B-10 5.0.0
-    urn: urn:iho:b:10:ed-5.0.0
+    urn: urn:mrn:iho:pub:bathy:b10:5.0.0
   style: v3
-- id: iho.bibliographic.0003
+- id: iho.bathymetric.0003
   identifier:
-    _type: pubid:iho:bibliographic
+    _type: pubid:iho:bathymetric
     number: '11'
     edition: 1.0.0
   representations:
     human: IHO B-11 1.0.0
-    urn: urn:iho:b:11:ed-1.0.0
+    urn: urn:mrn:iho:pub:bathy:b11:1.0.0
   style: v3
-- id: iho.bibliographic.0004
+- id: iho.bathymetric.0004
   identifier:
-    _type: pubid:iho:bibliographic
+    _type: pubid:iho:bathymetric
     number: '12'
     edition: 2.0.3
   representations:
     human: IHO B-12 2.0.3
-    urn: urn:iho:b:12:ed-2.0.3
+    urn: urn:mrn:iho:pub:bathy:b12:2.0.3
   style: v3
-- id: iho.bibliographic.0005
+- id: iho.bathymetric.0005
   identifier:
-    _type: pubid:iho:bibliographic
+    _type: pubid:iho:bathymetric
     number: '12'
     edition: 3.0.0
   representations:
     human: IHO B-12 3.0.0
-    urn: urn:iho:b:12:ed-3.0.0
+    urn: urn:mrn:iho:pub:bathy:b12:3.0.0
   style: v3
-- id: iho.bibliographic.0006
+- id: iho.bathymetric.0006
   identifier:
-    _type: pubid:iho:bibliographic
+    _type: pubid:iho:bathymetric
     number: '13'
     edition: 1.0.0
   representations:
     human: IHO B-13 1.0.0
-    urn: urn:iho:b:13:ed-1.0.0
+    urn: urn:mrn:iho:pub:bathy:b13:1.0.0
   style: v3
-- id: iho.bibliographic.0007
+- id: iho.bathymetric.0007
   identifier:
-    _type: pubid:iho:bibliographic
+    _type: pubid:iho:bathymetric
     number: '4'
     edition: 2.19.0
   representations:
     human: IHO B-4 2.19.0
-    urn: urn:iho:b:4:ed-2.19.0
+    urn: urn:mrn:iho:pub:bathy:b4:2.19.0
   style: v3
-- id: iho.bibliographic.0008
+- id: iho.bathymetric.0008
   identifier:
-    _type: pubid:iho:bibliographic
+    _type: pubid:iho:bathymetric
     number: '6'
     edition: 4.2.0
   representations:
     human: IHO B-6 4.2.0
-    urn: urn:iho:b:6:ed-4.2.0
+    urn: urn:mrn:iho:pub:bathy:b6:4.2.0
   style: v3
-- id: iho.bibliographic.0009
+- id: iho.bathymetric.0009
   identifier:
-    _type: pubid:iho:bibliographic
+    _type: pubid:iho:bathymetric
     number: '7'
     edition: 1.0.0
   representations:
     human: IHO B-7 1.0.0
-    urn: urn:iho:b:7:ed-1.0.0
+    urn: urn:mrn:iho:pub:bathy:b7:1.0.0
   style: v3
-- id: iho.bibliographic.0010
+- id: iho.bathymetric.0010
   identifier:
-    _type: pubid:iho:bibliographic
+    _type: pubid:iho:bathymetric
     number: '7'
     volume: '2023'
   representations:
     human: IHO B-7 Vol. 2023
-    urn: urn:iho:b:7:vol-2023
+    urn: urn:mrn:iho:pub:bathy:b7:vol-2023
   style: v3
   non_normalized_aliases:
   - spelling: IHO B-7 2023
     style: v3
-- id: iho.bibliographic.0011
+- id: iho.bathymetric.0011
   identifier:
-    _type: pubid:iho:bibliographic
+    _type: pubid:iho:bathymetric
     number: '8'
     edition: 1.1.1
   representations:
     human: IHO B-8 1.1.1
-    urn: urn:iho:b:8:ed-1.1.1
+    urn: urn:mrn:iho:pub:bathy:b8:1.1.1
   style: v3
-- id: iho.bibliographic.0012
+- id: iho.bathymetric.0012
   identifier:
-    _type: pubid:iho:bibliographic
+    _type: pubid:iho:bathymetric
     number: '9'
     edition: 2.12.0
   representations:
     human: IHO B-9 2.12.0
-    urn: urn:iho:b:9:ed-2.12.0
+    urn: urn:mrn:iho:pub:bathy:b9:2.12.0
   style: v3

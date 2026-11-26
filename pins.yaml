@@ -67,33 +67,38 @@ grammar_ref_wmo: 588687ec7de76ed1e9e679b81b200d5c5ca72baf
 # the OTHER flavors is checked against the testsuite_ref pin above, the
 # wmo slice against this one.
 testsuite_ref_wmo: af9068bccb5a740240c6e56289949a0604576833
-# pubid-testsuite main (4a3b030feb34, the iho product-facet re-freeze
-# round at pubid 81b786888833, the 2.0.55 release span): the tests/iho
-# corpus was byte-copied from here (5 corpus files, _negative.yaml,
-# _status.yaml; status clean, known_mismatches 0 — the S-158 rows
-# re-keyed onto the `product` facet (the checks_for rename of gem
-# #783), the renamed rejection message in the fail fixture, and the
-# migrated urn:mrn:iho:pub: URNs of the #774/#775/#776 model). A
-# flavor-only testsuite pin, like the wmo one: the same span carries
-# the iala freeze, whose regenerated slice this repository does not
-# fold back yet.
-testsuite_ref_iho: 4a3b030feb349e922881cd987cffd062e5853384
+# pubid-testsuite main (80cd08a826ab, the iho B/C rename round freeze
+# at pubid 9c69f8d5c06e, the 2.0.56 release span): the tests/iho corpus
+# was byte-copied from here (5 corpus files, _negative.yaml,
+# _status.yaml; status clean, known_mismatches 0 — the B/C rows renamed
+# onto the honest types, `bibliographic.yaml` -> `bathymetric.yaml`
+# (`pubid:iho:bathymetric`) and `circular_letter.yaml` ->
+# `capacity_building.yaml` (`pubid:iho:capacity_building`), the URN
+# expectations re-frozen onto the bathy/cb MRN guidance codes of gem
+# #785; 184 gated cases). A flavor-only testsuite pin, like the wmo
+# one: the same span carries the iala freeze, whose regenerated slice
+# this repository does not fold back yet.
+testsuite_ref_iho: 80cd08a826ab0b2f880899322a761f903b8ba744
 # The eu/arxiv fixture slices are NOT testsuite copies, and the ansi
 # slice is REGENERATED ahead of the testsuite: the corpora live in (or
 # were generated in-process from) the gem's spec/fixtures - see the
 # fixtures VENDORED_FROM.md. When the testsuite exports the flavors at
 # the moved expectations, replace the slices with the byte copy and
 # fold them back into testsuite_ref.
-# pubid-grammar main (51f5c4b21a88, the S-158 member-facet rename
-# commit, grammar #148, mirroring the gem's rename round at pubid
-# 81b78688 / #783): the iho.json envelope was byte-copied from here
-# (the typed binding renames checks_for -> product — parse behavior
-# unchanged, the envelope re-baked at parsanol 1.5.1.0, artifact
-# edition 2; byte-identical to the gem's data/parg/iho.json provenance
-# twin at the same commit). A flavor-only pin, like the eu/arxiv/ansi/
-# wmo/iala ones. The flavor ships the renamed product model against
-# this envelope (pubid#774/#775/#776, renamed by #783).
-grammar_ref_iho: 51f5c4b21a88f124de8693b97e2eb3fc0569946f
+# pubid-grammar main (4ceffc7637d0, the iho B/C MRN-guidance emission
+# commit, grammar #149, mirroring the gem's B/C round at pubid
+# fe2b8b1f/c3ff8636 / 2.0.55+): the iho.json envelope was byte-copied
+# from here (the B/C series join the MRN-guidance emission — the
+# bathy/cb type codes bound beside spec/per/reg, the honest B/C series
+# names in the emission-notes header; the envelope re-baked at parsanol
+# 1.5.1.0, artifact edition 2; byte-identical to the gem's
+# data/parg/iho.json provenance twin at the same commit). A flavor-only
+# pin, like the eu/arxiv/ansi/wmo/iala ones. The flavor ships the
+# bathy/cb MRN codes and the renamed bathymetric/capacity_building
+# model against this envelope (gem #785; the pre-rename
+# pubid:iho:bibliographic / pubid:iho:circular-letter `_type` wire
+# names stay decode-only).
+grammar_ref_iho: 4ceffc7637d0a88d8e8a74d3ec4f4ad6ec0e4111
 # pubid-grammar main (c1a11bf1e54f, the IALA S-100-family
 # product-specification commit, mirroring the gem's round at pubid
 # a0f8e64f / 2.0.53, which rides on the iala slug hand-off at

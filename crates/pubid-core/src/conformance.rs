@@ -657,8 +657,8 @@ vendored_corpora!(
         ("_status.yaml", WMO_STATUS),
     ],
     "iho" => [
-        ("bibliographic.yaml", IHO_BIBLIOGRAPHIC),
-        ("circular_letter.yaml", IHO_CIRCULAR_LETTER),
+        ("bathymetric.yaml", IHO_BATHYMETRIC),
+        ("capacity_building.yaml", IHO_CAPACITY_BUILDING),
         ("miscellaneous.yaml", IHO_MISCELLANEOUS),
         ("publication.yaml", IHO_PUBLICATION),
         ("standard.yaml", IHO_STANDARD),

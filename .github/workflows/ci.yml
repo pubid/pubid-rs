@@ -139,8 +139,8 @@ jobs:
         run: |
           # The iho flavor (grammar_ref_iho) carries its own
           # flavor-only pin, like the eu/arxiv, ansi and wmo ones (see
-          # /pins.yaml): the re-bake with the product binding (the
-          # checks_for rename, grammar #148) moves the pin in the same
+          # /pins.yaml): the B/C MRN-guidance emission rebake (the
+          # bathy/cb codes, grammar #149) moves the pin in the same
           # change that re-vendors the envelope.
           cmp "pubid-grammar-iho/artifacts/iho.json" \
               "crates/pubid-core/artifacts/iho.json"
@@ -163,8 +163,9 @@ jobs:
             # VENDORED_FROM.md) - fold back when the testsuite exports
             # the ANSI year round.
             [ "$flavor" = "ansi" ] && continue
-            # The iho slice is a byte copy of the S-158 re-freeze round
-            # (the #776 re-keyed rows), which postdates the
+            # The iho slice is a byte copy of the B/C rename round
+            # (the bathymetric/capacity_building rows re-frozen onto
+            # the bathy/cb expectations), which postdates the
             # testsuite_ref pin - it carries its own flavor-only gate
             # below (see the fixtures VENDORED_FROM.md).
             [ "$flavor" = "iho" ] && continue
@@ -194,10 +195,11 @@ jobs:
 
       - name: Vendored iho slice matches its pinned testsuite ref (drift gate)
         run: |
-          # The iho corpus (the product-facet re-freeze round, the
-          # checks_for -> product re-keyed rows of gem #783) postdates
-          # the testsuite_ref pin and rides with the iala freeze - it
-          # carries its own flavor-only pin (see /pins.yaml).
+          # The iho corpus (the B/C rename round: the bathymetric/
+          # capacity_building rows re-frozen onto the bathy/cb MRN
+          # expectations) postdates the testsuite_ref pin and rides
+          # with the iala freeze - it carries its own flavor-only pin
+          # (see /pins.yaml).
           for file in crates/pubid-core/fixtures/testsuite/iho/*.yaml; do
             cmp "$file" "pubid-testsuite-iho/tests/iho/$(basename "$file")"
           done
@@ -254,10 +256,11 @@ jobs:
 
       - name: Conformance (iho, the pinned testsuite flavor ref)
         run: |
-          # The testsuite_ref checkout predates the S-158 re-freeze
+          # The testsuite_ref checkout predates the B/C rename
           # round, so the --all run above falls back to the vendored
           # slice for iho; this run gates the flavor against its own
-          # pinned corpus (the re-keyed rows, unmarked pendings).
+          # pinned corpus (the renamed bathymetric/capacity_building
+          # rows, unmarked pendings).
           cargo run -q -p conformance -- --testsuite pubid-testsuite-iho/tests --flavor iho
 
       - name: Conformance (iala, the pinned testsuite flavor ref)
