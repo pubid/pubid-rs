@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/pubid/pubid-rs/main/crates/differential/schema/differential-report.schema.json",
+  "title": "pubid differential report",
+  "description": "One run of the three-engine differential runner (crates/differential): the same randomized attested inputs through Ruby, Rust, and TS, each engine's verdict per case, and the classified drifts. The site's dashboard consumes this shape; drifts never gate, this is a data generator.",
+  "type": "object",
+  "required": ["schema", "generator", "engines", "summary", "cases"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "pubid-differential-report/1",
+      "description": "The report shape version. Bump on any breaking change here."
+    },
+    "generator": {
+      "type": "object",
+      "required": ["name", "crate", "seed", "rows", "mutants", "recombinations", "inputs", "stamp"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "const": "differential" },
+        "crate": { "const": "pubid-rs" },
+        "seed": {
+          "type": "integer",
+          "description": "The splitmix64 seed; a run replays byte-identically from it."
+        },
+        "rows": { "type": "integer", "minimum": 0 },
+        "mutants": { "type": "integer", "minimum": 0 },
+        "recombinations": { "type": "integer", "minimum": 0 },
+        "inputs": {
+          "enum": ["corpus-mined", "explicit"],
+          "description": "corpus-mined = generated from the vendored slices; explicit = a --inputs file."
+        },
+        "stamp": {
+          "type": ["string", "null"],
+          "description": "Optional run timestamp (--stamp); null keeps output byte-stable for fixture comparisons."
+        }
+      }
+    },
+    "engines": {
+      "type": "object",
+      "required": ["rust", "ruby", "ts"],
+      "additionalProperties": false,
+      "properties": {
+        "rust": { "$ref": "#/$defs/engine" },
+        "ruby": { "$ref": "#/$defs/engine" },
+        "ts": { "$ref": "#/$defs/engine" }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "required": ["cases", "drifts", "by_delta_class", "by_flavor"],
+      "additionalProperties": false,
+      "properties": {
+        "cases": { "type": "integer", "minimum": 0 },
+        "drifts": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Cases whose delta_class is acceptance_drift or output_drift."
+        },
+        "by_delta_class": {
+          "type": "object",
+          "additionalProperties": { "type": "integer", "minimum": 0 }
+        },
+        "by_flavor": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "cases": { "type": "integer", "minimum": 0 },
+              "agree": { "type": "integer", "minimum": 0 },
+              "drifts": { "type": "integer", "minimum": 0 }
+            }
+          }
+        }
+      }
+    },
+    "cases": {
+      "type": "array",
+      "description": "Per-case records. Default: drifts only (--include-agree adds every case).",
+      "items": { "$ref": "#/$defs/case" }
+    }
+  },
+  "$defs": {
+    "engine": {
+      "type": "object",
+      "required": ["available", "version", "detail"],
+      "additionalProperties": false,
+      "properties": {
+        "available": { "type": "boolean" },
+        "version": {
+          "type": ["string", "null"],
+          "description": "The engine's own version (gem version, npm version, crate version)."
+        },
+        "detail": {
+          "type": ["string", "null"],
+          "description": "Why an engine is unavailable, or null."
+        }
+      }
+    },
+    "verdict": {
+      "type": "object",
+      "required": ["status", "hash", "human", "urn", "detail"],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": ["ok", "reject", "unimplemented", "error"],
+          "description": "ok = parsed; reject = the engine refused the input; unimplemented = the engine has no such flavor; error = the engine crashed or panicked."
+        },
+        "hash": {
+          "description": "The canonical to_hash record, present only for ok. Compared deep-equal across engines."
+        },
+        "human": {
+          "type": ["string", "null"],
+          "description": "The canonical human spelling, present only for ok."
+        },
+        "urn": {
+          "type": ["string", "null"],
+          "description": "The emitted URN; null when the flavor emits none."
+        },
+        "detail": {
+          "type": ["string", "null"],
+          "description": "The reject error code (Ruby's neutral vocabulary, TS parse_failed, Rust's error text) or the crash detail."
+        }
+      }
+    },
+    "case": {
+      "type": "object",
+      "required": ["flavor", "input", "origin", "delta_class", "detail", "engines"],
+      "additionalProperties": false,
+      "properties": {
+        "flavor": { "type": "string" },
+        "input": { "type": "string" },
+        "origin": {
+          "enum": ["row", "mutant", "recombination", "explicit"],
+          "description": "row = a sampled canonical corpus row; mutant = a structurally mutated row; recombination = a mined facet template splice; explicit = from --inputs."
+        },
+        "delta_class": {
+          "enum": ["agree", "acceptance_drift", "output_drift", "single_engine"],
+          "description": "agree = every comparable engine gave the same verdict (both-reject included); acceptance_drift = the engines disagree on accept/reject; output_drift = all parsed but hash/human/urn differ; single_engine = fewer than two comparable engines."
+        },
+        "detail": {
+          "description": "output_drift: the differing field pairs; acceptance_drift: the per-engine statuses; single_engine: the statuses; agree: null."
+        },
+        "engines": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/$defs/verdict" },
+          "description": "Keyed by engine (rust, ruby, ts) for every engine that ran the case."
+        }
+      }
+    }
+  }
+}
