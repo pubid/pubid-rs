@@ -1,0 +1,1736 @@
+{
+  "schema": "pubid-differential-report/1",
+  "generator": {
+    "name": "differential",
+    "crate": "pubid-rs",
+    "seed": 0,
+    "rows": 3,
+    "mutants": 3,
+    "recombinations": 3,
+    "inputs": "corpus-mined",
+    "stamp": "2026-11-26"
+  },
+  "engines": {
+    "ruby": {
+      "available": true,
+      "version": "2.0.56",
+      "detail": null
+    },
+    "rust": {
+      "available": true,
+      "version": "pubid-rs 0.1.0",
+      "detail": null
+    },
+    "ts": {
+      "available": true,
+      "version": "0.1.52",
+      "detail": null
+    }
+  },
+  "summary": {
+    "cases": 252,
+    "drifts": 17,
+    "by_delta_class": {
+      "acceptance_drift": 3,
+      "agree": 217,
+      "output_drift": 14,
+      "single_engine": 18
+    },
+    "by_flavor": {
+      "amca": {
+        "agree": 9,
+        "cases": 9
+      },
+      "ansi": {
+        "agree": 1,
+        "cases": 9,
+        "drifts": 8
+      },
+      "api": {
+        "agree": 9,
+        "cases": 9
+      },
+      "arxiv": {
+        "agree": 9,
+        "cases": 9
+      },
+      "ccsds": {
+        "agree": 9,
+        "cases": 9
+      },
+      "cen_cenelec": {
+        "agree": 9,
+        "cases": 9
+      },
+      "doi": {
+        "agree": 9,
+        "cases": 9
+      },
+      "ecma": {
+        "agree": 9,
+        "cases": 9
+      },
+      "etsi": {
+        "agree": 8,
+        "cases": 9,
+        "drifts": 1
+      },
+      "eu": {
+        "agree": 9,
+        "cases": 9
+      },
+      "evs": {
+        "agree": 9,
+        "cases": 9
+      },
+      "gb": {
+        "agree": 9,
+        "cases": 9
+      },
+      "gost": {
+        "agree": 9,
+        "cases": 9
+      },
+      "iala": {
+        "agree": 8,
+        "cases": 9,
+        "drifts": 1
+      },
+      "iana": {
+        "agree": 9,
+        "cases": 9
+      },
+      "ietf": {
+        "agree": 9,
+        "cases": 9
+      },
+      "iho": {
+        "agree": 2,
+        "cases": 9,
+        "drifts": 7
+      },
+      "ire": {
+        "cases": 9
+      },
+      "isbn": {
+        "agree": 9,
+        "cases": 9
+      },
+      "jis": {
+        "agree": 9,
+        "cases": 9
+      },
+      "nesc": {
+        "cases": 9
+      },
+      "oasis": {
+        "agree": 9,
+        "cases": 9
+      },
+      "ogc": {
+        "agree": 9,
+        "cases": 9
+      },
+      "plateau": {
+        "agree": 9,
+        "cases": 9
+      },
+      "un": {
+        "agree": 9,
+        "cases": 9
+      },
+      "w3c": {
+        "agree": 9,
+        "cases": 9
+      },
+      "wmo": {
+        "agree": 9,
+        "cases": 9
+      },
+      "xsf": {
+        "agree": 9,
+        "cases": 9
+      }
+    }
+  },
+  "cases": [
+    {
+      "flavor": "ansi",
+      "input": "ANSI N42.28-2002",
+      "origin": "row",
+      "delta_class": "output_drift",
+      "detail": [
+        "ruby.hash vs ts.hash",
+        "ruby.urn vs ts.urn"
+      ],
+      "engines": {
+        "ruby": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "N42.28",
+            "year": "2002",
+            "publisher": {
+              "body": "ANSI"
+            },
+            "date_separator": "-"
+          },
+          "human": "ANSI N42.28-2002",
+          "urn": "urn:ansi:N42.28:2002",
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "N42.28",
+            "year": "2002",
+            "publisher": {
+              "body": "ANSI"
+            },
+            "date_separator": "-"
+          },
+          "human": "ANSI N42.28-2002",
+          "urn": "urn:ansi:N42.28:2002",
+          "detail": null
+        },
+        "ts": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "N42.28",
+            "part": "2002",
+            "publisher": {
+              "body": "ANSI"
+            }
+          },
+          "human": "ANSI N42.28-2002",
+          "urn": "urn:ansi:N42.28:-2002",
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "ansi",
+      "input": "ANSI C63.4-1992",
+      "origin": "row",
+      "delta_class": "output_drift",
+      "detail": [
+        "ruby.hash vs ts.hash",
+        "ruby.urn vs ts.urn"
+      ],
+      "engines": {
+        "ruby": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "C63.4",
+            "year": "1992",
+            "publisher": {
+              "body": "ANSI"
+            },
+            "date_separator": "-"
+          },
+          "human": "ANSI C63.4-1992",
+          "urn": "urn:ansi:C63.4:1992",
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "C63.4",
+            "year": "1992",
+            "publisher": {
+              "body": "ANSI"
+            },
+            "date_separator": "-"
+          },
+          "human": "ANSI C63.4-1992",
+          "urn": "urn:ansi:C63.4:1992",
+          "detail": null
+        },
+        "ts": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "C63.4",
+            "part": "1992",
+            "publisher": {
+              "body": "ANSI"
+            }
+          },
+          "human": "ANSI C63.4-1992",
+          "urn": "urn:ansi:C63.4:-1992",
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "ansi",
+      "input": "ANSI N42.6-1980",
+      "origin": "row",
+      "delta_class": "output_drift",
+      "detail": [
+        "ruby.hash vs ts.hash",
+        "ruby.urn vs ts.urn"
+      ],
+      "engines": {
+        "ruby": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "N42.6",
+            "year": "1980",
+            "publisher": {
+              "body": "ANSI"
+            },
+            "date_separator": "-"
+          },
+          "human": "ANSI N42.6-1980",
+          "urn": "urn:ansi:N42.6:1980",
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "N42.6",
+            "year": "1980",
+            "publisher": {
+              "body": "ANSI"
+            },
+            "date_separator": "-"
+          },
+          "human": "ANSI N42.6-1980",
+          "urn": "urn:ansi:N42.6:1980",
+          "detail": null
+        },
+        "ts": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "N42.6",
+            "part": "1980",
+            "publisher": {
+              "body": "ANSI"
+            }
+          },
+          "human": "ANSI N42.6-1980",
+          "urn": "urn:ansi:N42.6:-1980",
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "ansi",
+      "input": "ANSI C37.32-1996",
+      "origin": "mutant",
+      "delta_class": "output_drift",
+      "detail": [
+        "ruby.hash vs ts.hash",
+        "ruby.urn vs ts.urn"
+      ],
+      "engines": {
+        "ruby": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "C37.32",
+            "year": "1996",
+            "publisher": {
+              "body": "ANSI"
+            },
+            "date_separator": "-"
+          },
+          "human": "ANSI C37.32-1996",
+          "urn": "urn:ansi:C37.32:1996",
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "C37.32",
+            "year": "1996",
+            "publisher": {
+              "body": "ANSI"
+            },
+            "date_separator": "-"
+          },
+          "human": "ANSI C37.32-1996",
+          "urn": "urn:ansi:C37.32:1996",
+          "detail": null
+        },
+        "ts": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "C37.32",
+            "part": "1996",
+            "publisher": {
+              "body": "ANSI"
+            }
+          },
+          "human": "ANSI C37.32-1996",
+          "urn": "urn:ansi:C37.32:-1996",
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "ansi",
+      "input": "ANSI C6.2-1980",
+      "origin": "mutant",
+      "delta_class": "output_drift",
+      "detail": [
+        "ruby.hash vs ts.hash",
+        "ruby.urn vs ts.urn"
+      ],
+      "engines": {
+        "ruby": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "C6.2",
+            "year": "1980",
+            "publisher": {
+              "body": "ANSI"
+            },
+            "date_separator": "-"
+          },
+          "human": "ANSI C6.2-1980",
+          "urn": "urn:ansi:C6.2:1980",
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "C6.2",
+            "year": "1980",
+            "publisher": {
+              "body": "ANSI"
+            },
+            "date_separator": "-"
+          },
+          "human": "ANSI C6.2-1980",
+          "urn": "urn:ansi:C6.2:1980",
+          "detail": null
+        },
+        "ts": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "C6.2",
+            "part": "1980",
+            "publisher": {
+              "body": "ANSI"
+            }
+          },
+          "human": "ANSI C6.2-1980",
+          "urn": "urn:ansi:C6.2:-1980",
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "ansi",
+      "input": "ANSI/IEEE C57.12.00-1980",
+      "origin": "recombination",
+      "delta_class": "output_drift",
+      "detail": [
+        "ruby.hash vs ts.hash",
+        "ruby.urn vs ts.urn"
+      ],
+      "engines": {
+        "ruby": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "C57.12.00",
+            "year": "1980",
+            "publisher": {
+              "body": "ANSI"
+            },
+            "copublishers": [
+              {
+                "body": "IEEE"
+              }
+            ],
+            "date_separator": "-"
+          },
+          "human": "ANSI/IEEE C57.12.00-1980",
+          "urn": "urn:ansi-ieee:C57.12.00:1980",
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "C57.12.00",
+            "year": "1980",
+            "publisher": {
+              "body": "ANSI"
+            },
+            "copublishers": [
+              {
+                "body": "IEEE"
+              }
+            ],
+            "date_separator": "-"
+          },
+          "human": "ANSI/IEEE C57.12.00-1980",
+          "urn": "urn:ansi-ieee:C57.12.00:1980",
+          "detail": null
+        },
+        "ts": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "C57.12.00",
+            "part": "1980",
+            "publisher": {
+              "body": "ANSI"
+            },
+            "copublishers": [
+              {
+                "body": "IEEE"
+              }
+            ]
+          },
+          "human": "ANSI/IEEE C57.12.00-1980",
+          "urn": "urn:ansi-ieee:C57.12.00:-1980",
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "ansi",
+      "input": "ANSI 802.3-2012",
+      "origin": "recombination",
+      "delta_class": "output_drift",
+      "detail": [
+        "ruby.hash vs ts.hash",
+        "ruby.urn vs ts.urn"
+      ],
+      "engines": {
+        "ruby": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "802.3",
+            "year": "2012",
+            "publisher": {
+              "body": "ANSI"
+            },
+            "date_separator": "-"
+          },
+          "human": "ANSI 802.3-2012",
+          "urn": "urn:ansi:802.3:2012",
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "802.3",
+            "year": "2012",
+            "publisher": {
+              "body": "ANSI"
+            },
+            "date_separator": "-"
+          },
+          "human": "ANSI 802.3-2012",
+          "urn": "urn:ansi:802.3:2012",
+          "detail": null
+        },
+        "ts": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "802.3",
+            "part": "2012",
+            "publisher": {
+              "body": "ANSI"
+            }
+          },
+          "human": "ANSI 802.3-2012",
+          "urn": "urn:ansi:802.3:-2012",
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "ansi",
+      "input": "ANSI/NISO Z39.50-2004",
+      "origin": "recombination",
+      "delta_class": "acceptance_drift",
+      "detail": [
+        "ruby=ok",
+        "rust=ok",
+        "ts=reject"
+      ],
+      "engines": {
+        "ruby": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "Z39.50",
+            "year": "2004",
+            "publisher": {
+              "body": "ANSI"
+            },
+            "copublishers": [
+              {
+                "body": "NISO"
+              }
+            ],
+            "date_separator": "-"
+          },
+          "human": "ANSI/NISO Z39.50-2004",
+          "urn": "urn:ansi-niso:Z39.50:2004",
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ansi:standard",
+            "number": "Z39.50",
+            "year": "2004",
+            "publisher": {
+              "body": "ANSI"
+            },
+            "copublishers": [
+              {
+                "body": "NISO"
+              }
+            ],
+            "date_separator": "-"
+          },
+          "human": "ANSI/NISO Z39.50-2004",
+          "urn": "urn:ansi-niso:Z39.50:2004",
+          "detail": null
+        },
+        "ts": {
+          "status": "reject",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": "parse_failed"
+        }
+      }
+    },
+    {
+      "flavor": "etsi",
+      "input": "ETSI TBR 013 ed.3 (1999-09)",
+      "origin": "recombination",
+      "delta_class": "acceptance_drift",
+      "detail": [
+        "ruby=reject",
+        "rust=ok",
+        "ts=ok"
+      ],
+      "engines": {
+        "ruby": {
+          "status": "reject",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": "invalid_argument"
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:etsi:etsi-standard",
+            "type": "TBR",
+            "number": "013",
+            "version": "3",
+            "is_edition": true,
+            "year": "1999",
+            "month": "09"
+          },
+          "human": "ETSI TBR 013 ed.3 (1999-09)",
+          "urn": "urn:etsi:tbr:013:ed.3:1999-09",
+          "detail": null
+        },
+        "ts": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:etsi:etsi-standard",
+            "type": "TBR",
+            "number": "013",
+            "version": "3",
+            "is_edition": true,
+            "year": "1999",
+            "month": "09"
+          },
+          "human": "ETSI TBR 013 ed.3 (1999-09)",
+          "urn": "urn:etsi:tbr:013:ed.3:1999-09",
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "iala",
+      "input": "IALA risk-management-pawsa-iwrap-mk2-simulation",
+      "origin": "recombination",
+      "delta_class": "acceptance_drift",
+      "detail": [
+        "ruby=ok",
+        "rust=ok",
+        "ts=reject"
+      ],
+      "engines": {
+        "ruby": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iala:publication",
+            "number": "risk-management-pawsa-iwrap-mk2-simulation"
+          },
+          "human": "IALA risk-management-pawsa-iwrap-mk2-simulation",
+          "urn": null,
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iala:publication",
+            "number": "risk-management-pawsa-iwrap-mk2-simulation"
+          },
+          "human": "IALA risk-management-pawsa-iwrap-mk2-simulation",
+          "urn": null,
+          "detail": null
+        },
+        "ts": {
+          "status": "reject",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": "parse_failed"
+        }
+      }
+    },
+    {
+      "flavor": "iho",
+      "input": "IHO M-2 Sup 6",
+      "origin": "row",
+      "delta_class": "output_drift",
+      "detail": [
+        "ruby.urn vs ts.urn"
+      ],
+      "engines": {
+        "ruby": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:miscellaneous",
+            "number": "2",
+            "supplement": "6"
+          },
+          "human": "IHO M-2 Sup 6",
+          "urn": "urn:mrn:iho:pub:reg:m2:sup-6",
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:miscellaneous",
+            "number": "2",
+            "supplement": "6"
+          },
+          "human": "IHO M-2 Sup 6",
+          "urn": "urn:mrn:iho:pub:reg:m2:sup-6",
+          "detail": null
+        },
+        "ts": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:miscellaneous",
+            "number": "2",
+            "supplement": "6"
+          },
+          "human": "IHO M-2 Sup 6",
+          "urn": "urn:iho:m:2:sup-6",
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "iho",
+      "input": "IHO S-104 1.1.0",
+      "origin": "row",
+      "delta_class": "output_drift",
+      "detail": [
+        "ruby.urn vs ts.urn"
+      ],
+      "engines": {
+        "ruby": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:standard",
+            "number": "104",
+            "edition": "1.1.0"
+          },
+          "human": "IHO S-104 1.1.0",
+          "urn": "urn:mrn:iho:pub:spec:s104:1.1.0",
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:standard",
+            "number": "104",
+            "edition": "1.1.0"
+          },
+          "human": "IHO S-104 1.1.0",
+          "urn": "urn:mrn:iho:pub:spec:s104:1.1.0",
+          "detail": null
+        },
+        "ts": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:standard",
+            "number": "104",
+            "edition": "1.1.0"
+          },
+          "human": "IHO S-104 1.1.0",
+          "urn": "urn:iho:s:104:ed-1.1.0",
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "iho",
+      "input": "IHO P-1 1.0.0",
+      "origin": "row",
+      "delta_class": "output_drift",
+      "detail": [
+        "ruby.urn vs ts.urn"
+      ],
+      "engines": {
+        "ruby": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:publication",
+            "number": "1",
+            "edition": "1.0.0"
+          },
+          "human": "IHO P-1 1.0.0",
+          "urn": "urn:mrn:iho:pub:per:p1:1.0.0",
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:publication",
+            "number": "1",
+            "edition": "1.0.0"
+          },
+          "human": "IHO P-1 1.0.0",
+          "urn": "urn:mrn:iho:pub:per:p1:1.0.0",
+          "detail": null
+        },
+        "ts": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:publication",
+            "number": "1",
+            "edition": "1.0.0"
+          },
+          "human": "IHO P-1 1.0.0",
+          "urn": "urn:iho:p:1:ed-1.0.0",
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "iho",
+      "input": "IHO P-7 1.0.7",
+      "origin": "mutant",
+      "delta_class": "output_drift",
+      "detail": [
+        "ruby.urn vs ts.urn"
+      ],
+      "engines": {
+        "ruby": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:publication",
+            "number": "7",
+            "edition": "1.0.7"
+          },
+          "human": "IHO P-7 1.0.7",
+          "urn": "urn:mrn:iho:pub:per:p7:1.0.7",
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:publication",
+            "number": "7",
+            "edition": "1.0.7"
+          },
+          "human": "IHO P-7 1.0.7",
+          "urn": "urn:mrn:iho:pub:per:p7:1.0.7",
+          "detail": null
+        },
+        "ts": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:publication",
+            "number": "7",
+            "edition": "1.0.7"
+          },
+          "human": "IHO P-7 1.0.7",
+          "urn": "urn:iho:p:7:ed-1.0.7",
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "iho",
+      "input": "IHO S-4 4.10.0 B-401",
+      "origin": "recombination",
+      "delta_class": "output_drift",
+      "detail": [
+        "ruby.urn vs ts.urn"
+      ],
+      "engines": {
+        "ruby": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:standard",
+            "number": "4",
+            "edition": "4.10.0",
+            "part": "B",
+            "spec": "401"
+          },
+          "human": "IHO S-4 4.10.0 B-401",
+          "urn": "urn:mrn:iho:pub:spec:s4:4.10.0:part-B:spec-401",
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:standard",
+            "number": "4",
+            "edition": "4.10.0",
+            "part": "B",
+            "spec": "401"
+          },
+          "human": "IHO S-4 4.10.0 B-401",
+          "urn": "urn:mrn:iho:pub:spec:s4:4.10.0:part-B:spec-401",
+          "detail": null
+        },
+        "ts": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:standard",
+            "number": "4",
+            "part": "B",
+            "edition": "4.10.0",
+            "spec": "401"
+          },
+          "human": "IHO S-4 4.10.0 B-401",
+          "urn": "urn:iho:s:4:ed-4.10.0:part-B:spec-401",
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "iho",
+      "input": "IHO P-6 1.0.0 Part 3",
+      "origin": "recombination",
+      "delta_class": "output_drift",
+      "detail": [
+        "ruby.urn vs ts.urn"
+      ],
+      "engines": {
+        "ruby": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:publication",
+            "number": "6",
+            "edition": "1.0.0",
+            "part": "3"
+          },
+          "human": "IHO P-6 1.0.0 Part 3",
+          "urn": "urn:mrn:iho:pub:per:p6:1.0.0:part-3",
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:publication",
+            "number": "6",
+            "edition": "1.0.0",
+            "part": "3"
+          },
+          "human": "IHO P-6 1.0.0 Part 3",
+          "urn": "urn:mrn:iho:pub:per:p6:1.0.0:part-3",
+          "detail": null
+        },
+        "ts": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:publication",
+            "number": "6",
+            "part": "3",
+            "edition": "1.0.0"
+          },
+          "human": "IHO P-6 1.0.0 Part 3",
+          "urn": "urn:iho:p:6:ed-1.0.0:part-3",
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "iho",
+      "input": "IHO S-8 1.0.1 Part A",
+      "origin": "recombination",
+      "delta_class": "output_drift",
+      "detail": [
+        "ruby.urn vs ts.urn"
+      ],
+      "engines": {
+        "ruby": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:standard",
+            "number": "8",
+            "edition": "1.0.1",
+            "part": "A"
+          },
+          "human": "IHO S-8 1.0.1 Part A",
+          "urn": "urn:mrn:iho:pub:spec:s8:1.0.1:part-A",
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:standard",
+            "number": "8",
+            "edition": "1.0.1",
+            "part": "A"
+          },
+          "human": "IHO S-8 1.0.1 Part A",
+          "urn": "urn:mrn:iho:pub:spec:s8:1.0.1:part-A",
+          "detail": null
+        },
+        "ts": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:iho:standard",
+            "number": "8",
+            "part": "A",
+            "edition": "1.0.1"
+          },
+          "human": "IHO S-8 1.0.1 Part A",
+          "urn": "urn:iho:s:8:ed-1.0.1:part-A",
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "ire",
+      "input": "52 IRE 7.S2",
+      "origin": "row",
+      "delta_class": "single_engine",
+      "detail": {
+        "ruby": "unimplemented",
+        "rust": "ok",
+        "ts": "unimplemented"
+      },
+      "engines": {
+        "ruby": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ieee:ire",
+            "number": "7",
+            "separator": ".",
+            "year": "1952",
+            "parts": [
+              "S2"
+            ]
+          },
+          "human": "52 IRE 7.S2",
+          "urn": "urn:ieee:ire:7.S2:1952",
+          "detail": null
+        },
+        "ts": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "ire",
+      "input": "52 IRE 7.S2",
+      "origin": "row",
+      "delta_class": "single_engine",
+      "detail": {
+        "ruby": "unimplemented",
+        "rust": "ok",
+        "ts": "unimplemented"
+      },
+      "engines": {
+        "ruby": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ieee:ire",
+            "number": "7",
+            "separator": ".",
+            "year": "1952",
+            "parts": [
+              "S2"
+            ]
+          },
+          "human": "52 IRE 7.S2",
+          "urn": "urn:ieee:ire:7.S2:1952",
+          "detail": null
+        },
+        "ts": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "ire",
+      "input": "52 IRE 7.S2",
+      "origin": "row",
+      "delta_class": "single_engine",
+      "detail": {
+        "ruby": "unimplemented",
+        "rust": "ok",
+        "ts": "unimplemented"
+      },
+      "engines": {
+        "ruby": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ieee:ire",
+            "number": "7",
+            "separator": ".",
+            "year": "1952",
+            "parts": [
+              "S2"
+            ]
+          },
+          "human": "52 IRE 7.S2",
+          "urn": "urn:ieee:ire:7.S2:1952",
+          "detail": null
+        },
+        "ts": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "ire",
+      "input": "5IRE2 IRE 7.S2",
+      "origin": "mutant",
+      "delta_class": "single_engine",
+      "detail": {
+        "ruby": "unimplemented",
+        "rust": "reject",
+        "ts": "unimplemented"
+      },
+      "engines": {
+        "ruby": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        },
+        "rust": {
+          "status": "reject",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": "parse failed: Parse failed at offset 1 (line 1, column 2): expected [\\x30-\\x39]"
+        },
+        "ts": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "ire",
+      "input": ":::-52 IRE 7.S2",
+      "origin": "mutant",
+      "delta_class": "single_engine",
+      "detail": {
+        "ruby": "unimplemented",
+        "rust": "reject",
+        "ts": "unimplemented"
+      },
+      "engines": {
+        "ruby": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        },
+        "rust": {
+          "status": "reject",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": "parse failed: Parse failed at offset 0 (line 1, column 1): expected '191', '19', '196', [\\x31-\\x36], 'IEEE-IRE', 'IRE'"
+        },
+        "ts": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "ire",
+      "input": "52 IRE 7. 2",
+      "origin": "mutant",
+      "delta_class": "single_engine",
+      "detail": {
+        "ruby": "unimplemented",
+        "rust": "reject",
+        "ts": "unimplemented"
+      },
+      "engines": {
+        "ruby": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        },
+        "rust": {
+          "status": "reject",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": "parse failed: Parse failed at offset 9 (line 1, column 10): expected [\\x41-\\x5a], 'IRE'"
+        },
+        "ts": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "ire",
+      "input": "52 IRE 7.S2",
+      "origin": "recombination",
+      "delta_class": "single_engine",
+      "detail": {
+        "ruby": "unimplemented",
+        "rust": "ok",
+        "ts": "unimplemented"
+      },
+      "engines": {
+        "ruby": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ieee:ire",
+            "number": "7",
+            "separator": ".",
+            "year": "1952",
+            "parts": [
+              "S2"
+            ]
+          },
+          "human": "52 IRE 7.S2",
+          "urn": "urn:ieee:ire:7.S2:1952",
+          "detail": null
+        },
+        "ts": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "ire",
+      "input": "52 IRE 7.S2",
+      "origin": "recombination",
+      "delta_class": "single_engine",
+      "detail": {
+        "ruby": "unimplemented",
+        "rust": "ok",
+        "ts": "unimplemented"
+      },
+      "engines": {
+        "ruby": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ieee:ire",
+            "number": "7",
+            "separator": ".",
+            "year": "1952",
+            "parts": [
+              "S2"
+            ]
+          },
+          "human": "52 IRE 7.S2",
+          "urn": "urn:ieee:ire:7.S2:1952",
+          "detail": null
+        },
+        "ts": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "ire",
+      "input": "52 IRE 7.S2",
+      "origin": "recombination",
+      "delta_class": "single_engine",
+      "detail": {
+        "ruby": "unimplemented",
+        "rust": "ok",
+        "ts": "unimplemented"
+      },
+      "engines": {
+        "ruby": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ieee:ire",
+            "number": "7",
+            "separator": ".",
+            "year": "1952",
+            "parts": [
+              "S2"
+            ]
+          },
+          "human": "52 IRE 7.S2",
+          "urn": "urn:ieee:ire:7.S2:1952",
+          "detail": null
+        },
+        "ts": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "nesc",
+      "input": "C2-1997 National Electrical Safety Code",
+      "origin": "row",
+      "delta_class": "single_engine",
+      "detail": {
+        "ruby": "unimplemented",
+        "rust": "ok",
+        "ts": "unimplemented"
+      },
+      "engines": {
+        "ruby": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ieee:nesc-standard",
+            "number": "2",
+            "year": "1997",
+            "prefix": "C"
+          },
+          "human": "C2-1997 National Electrical Safety Code",
+          "urn": "urn:ieee:ieee:C2:1997",
+          "detail": null
+        },
+        "ts": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "nesc",
+      "input": "IEEE Std C2.2012.Preprint",
+      "origin": "row",
+      "delta_class": "single_engine",
+      "detail": {
+        "ruby": "unimplemented",
+        "rust": "ok",
+        "ts": "unimplemented"
+      },
+      "engines": {
+        "ruby": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ieee:nesc-preprint",
+            "number": "2",
+            "year": "2012",
+            "prefix": "C"
+          },
+          "human": "IEEE Std C2.2012.Preprint",
+          "urn": "urn:ieee:ieee:C2:2012:preprint",
+          "detail": null
+        },
+        "ts": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "nesc",
+      "input": "IEEE Std 2012 NESC Handbook, Seventh Edition",
+      "origin": "row",
+      "delta_class": "single_engine",
+      "detail": {
+        "ruby": "unimplemented",
+        "rust": "ok",
+        "ts": "unimplemented"
+      },
+      "engines": {
+        "ruby": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ieee:nesc-handbook",
+            "number": "2",
+            "year": "2012",
+            "edition": "Seventh Edition",
+            "variant": "Handbook",
+            "prefix": "C"
+          },
+          "human": "IEEE Std 2012 NESC Handbook, Seventh Edition",
+          "urn": "urn:ieee:ieee:C2:2012:ed.Seventh Edition",
+          "detail": null
+        },
+        "ts": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "nesc",
+      "input": "IEE-E Std 2012 NESC Handbook, Seventh Edition",
+      "origin": "mutant",
+      "delta_class": "single_engine",
+      "detail": {
+        "ruby": "unimplemented",
+        "rust": "reject",
+        "ts": "unimplemented"
+      },
+      "engines": {
+        "ruby": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        },
+        "rust": {
+          "status": "reject",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": "parse failed: Parse failed at offset 0 (line 1, column 1): expected 'Draft', 'Preprint', 'National Electrical Safety Code', 'National Electric Safety Code', 'C2', [\\x30-\\x39]"
+        },
+        "ts": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "nesc",
+      "input": "",
+      "origin": "mutant",
+      "delta_class": "single_engine",
+      "detail": {
+        "ruby": "unimplemented",
+        "rust": "reject",
+        "ts": "unimplemented"
+      },
+      "engines": {
+        "ruby": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        },
+        "rust": {
+          "status": "reject",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": "parse failed: Parse failed at offset 0 (line 1, column 1): expected 'Draft', 'Preprint', 'National Electrical Safety Code', 'National Electric Safety Code', 'C2', [\\x30-\\x39]"
+        },
+        "ts": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "nesc",
+      "input": "IEEE Std C0.2022.Preprint",
+      "origin": "mutant",
+      "delta_class": "single_engine",
+      "detail": {
+        "ruby": "unimplemented",
+        "rust": "reject",
+        "ts": "unimplemented"
+      },
+      "engines": {
+        "ruby": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        },
+        "rust": {
+          "status": "reject",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": "parse failed: Parse failed at offset 0 (line 1, column 1): expected 'Draft', 'Preprint', 'National Electrical Safety Code', 'National Electric Safety Code', 'C2', [\\x30-\\x39]"
+        },
+        "ts": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "nesc",
+      "input": "IEEE Std 2017 NESC(R) Handbook, Premier Edition",
+      "origin": "recombination",
+      "delta_class": "single_engine",
+      "detail": {
+        "ruby": "unimplemented",
+        "rust": "ok",
+        "ts": "unimplemented"
+      },
+      "engines": {
+        "ruby": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ieee:nesc-handbook",
+            "number": "2",
+            "year": "2017",
+            "registered": true,
+            "edition": "Premier Edition",
+            "variant": "Handbook",
+            "prefix": "C"
+          },
+          "human": "IEEE Std 2017 NESC(R) Handbook, Premier Edition",
+          "urn": "urn:ieee:ieee:C2:2017:ed.Premier Edition",
+          "detail": null
+        },
+        "ts": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "nesc",
+      "input": "IEEE Std 2017 NESC(R) Handbook, Premier Edition",
+      "origin": "recombination",
+      "delta_class": "single_engine",
+      "detail": {
+        "ruby": "unimplemented",
+        "rust": "ok",
+        "ts": "unimplemented"
+      },
+      "engines": {
+        "ruby": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ieee:nesc-handbook",
+            "number": "2",
+            "year": "2017",
+            "registered": true,
+            "edition": "Premier Edition",
+            "variant": "Handbook",
+            "prefix": "C"
+          },
+          "human": "IEEE Std 2017 NESC(R) Handbook, Premier Edition",
+          "urn": "urn:ieee:ieee:C2:2017:ed.Premier Edition",
+          "detail": null
+        },
+        "ts": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        }
+      }
+    },
+    {
+      "flavor": "nesc",
+      "input": "IEEE Std 2017 NESC(R) Handbook, Premier Edition",
+      "origin": "recombination",
+      "delta_class": "single_engine",
+      "detail": {
+        "ruby": "unimplemented",
+        "rust": "ok",
+        "ts": "unimplemented"
+      },
+      "engines": {
+        "ruby": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        },
+        "rust": {
+          "status": "ok",
+          "hash": {
+            "_type": "pubid:ieee:nesc-handbook",
+            "number": "2",
+            "year": "2017",
+            "registered": true,
+            "edition": "Premier Edition",
+            "variant": "Handbook",
+            "prefix": "C"
+          },
+          "human": "IEEE Std 2017 NESC(R) Handbook, Premier Edition",
+          "urn": "urn:ieee:ieee:C2:2017:ed.Premier Edition",
+          "detail": null
+        },
+        "ts": {
+          "status": "unimplemented",
+          "hash": null,
+          "human": null,
+          "urn": null,
+          "detail": null
+        }
+      }
+    }
+  ]
+}

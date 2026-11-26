@@ -5,6 +5,7 @@ members = [
     "crates/pubid-cli",
     "crates/conformance",
     "crates/pubid-wasm",
+    "crates/differential",
 ]
 
 [workspace.package]
