@@ -20,16 +20,102 @@ corpus runs fleet-wide.
 
 - `pubid-core` — artifact loading (embedded, checksum-verified),
   flavor semantics (canonical hash / human / URN), the conformance
-  checker, and the schema-driven materialization boundary
-  (`materialize_from_schema`).
-- `pubid-cli` — `pubid-cli parse <flavor> <input>` prints the canonical
-  forms; `pubid-cli smoke` runs every vendored slice.
+  checker, the resolver (the attested publisher-URL mapping), and the
+  schema-driven materialization boundary (`materialize_from_schema`).
+- `pubid-cli` — the `pubid` binary: `pubid parse`, `pubid urn`,
+  `pubid detect`, `pubid resolve`, plus `flavors` and `smoke`.
 - `conformance` — the pubid-testsuite runner: load a flavor's corpus,
   parse → render → compare, report the measured counts, gate on clean
   flavors only. `--all` runs every ported flavor. `--examples` emits
   the corpus-fed example set (the JSON the wasm bundle embeds).
 - `pubid-wasm` — the WebAssembly target: the pubid-core flavor layer
   compiled to wasm for the pubid.github.io playground.
+
+## The CLI (crates/pubid-cli, the `pubid` binary)
+
+```
+cargo install -p pubid-cli        # installs the `pubid` binary
+```
+
+```
+pubid parse "RFC 9110"            # the typed report (hash, human, urn)
+pubid parse "10.1000/182" --flavor doi --json
+pubid urn "IHO B-12 2.0.3"        # the URN / MRN form
+pubid detect "S-411 1.2.1"        # the ported flavors that accept it
+pubid resolve "RFC 9110"          # the canonical publisher URL
+pubid resolve "RFC 9110" --json   # url + alternates + doi + source
+pubid flavors                     # the ported flavor list
+pubid smoke                       # vendored artifacts + slices, green?
+```
+
+Without `--flavor`, detection picks the flavor: the grammars decide
+acceptance, and the leading-token rule orders the hits (a flavor whose
+grammar anchors on the input's designator — `RFC` → ietf,
+`XEP` → xsf, `ISBN` → isbn — outranks incidental generic parses; the
+`detect` command still lists every accepting flavor honestly). An
+input several flavors genuinely own (the IHO/WMO shared S-numbers,
+say) needs `--flavor`.
+
+Exit codes mirror the wasm verdict classes:
+
+| code | class | meaning |
+| ---: | ----- | ------- |
+| 0 | parse_ok | the command succeeded |
+| 1 | invalid | the flavor's grammar or semantics rejected the input (or `urn` named a flavor that emits no URN) |
+| 2 | unknown_flavor | the named flavor is not ported, or the input is ambiguous across flavors; clap usage errors exit 2 too |
+| 3 | artifact | a PARG envelope failed to load or verify |
+| 4 | unmapped | `resolve` parsed the input but the resolver table carries no attested mapping |
+
+The grammar artifacts are **bundled**: the binary embeds the same
+checksummed envelopes the library and the wasm target load, verifies
+each one's sha256 at first use, and consults no external artifact path
+at runtime.
+
+## The resolver
+
+`pubid resolve` maps an identifier to its canonical publisher URL —
+a data-driven, versioned table (`crates/pubid-core/data/resolver.json`,
+embedded by `pubid-core::resolver`) plus the small render layer that
+turns the canonical hash into the attested URLs (the `{slot}`
+templates and the documented derived slots — the arXiv abs/DOI ids,
+the EU ELI/CELEX pair, the IHO series pages, the UN symbol, the W3C
+dated TR path).
+
+The citation bar: **every entry cites its source** (the publisher's
+own site or a documented deep-link scheme, with the probe receipt and
+the date), and the suite re-parses each entry's example and re-asserts
+the attested URL (`crates/pubid-core/tests/resolver.rs`) — an entry
+whose pattern drifted from its citation fails the build. A URL
+pattern that cannot be attested stays out of the table; those flavors
+(`isbn`, `wmo`, `oasis`, `ogc`, `gb`, `gost`, `cen_cenelec`, `evs`,
+`ccsds`, `plateau`, `jis`, `etsi`, `ansi` and friends) resolve to
+`Unmapped` (exit 4) rather than to an invented link.
+
+Attested today (13 URL entries): `doi` (doi.org), `ietf` (RFC Editor
+docs/info + the datatracker alternates; the RFC/BCP/STD/FYI and
+Internet-Draft kinds), `w3c` (`/TR/{slug}/` latest + the dated
+companion), `eu` (EUR-Lex ELI canonical + the CELEX alternate), 
+`arxiv` (abs pages), `xsf` (the XEP pages), `un` (docs.un.org symbol
+resolution), `iana` (the assignments pages), `ecma` (the standards
+landing pages) and `iho` (the iho.int series pages). DOI mappings are
+attested for `ietf` (10.17487/RFCnnnn, cited on the RFC Editor info
+pages) and `arxiv` (10.48550/arXiv.…, printed on every abs page); the
+IEEE/ISO/IEC DOI patterns land with those flavors' port.
+
+## Layout
+
+```
+crates/pubid-core/
+  src/           lib, one module per flavor, conformance checker, resolver, errors
+  artifacts/     vendored PARG artifact(s)   (+ VENDORED_FROM.md)
+  fixtures/      vendored testsuite slice(s) (+ VENDORED_FROM.md)
+  data/          resolver.json — the versioned publisher-URL table
+crates/pubid-cli/    the `pubid` binary
+crates/conformance/  the `conformance` runner binary
+crates/pubid-wasm/   the wasm target (built pkg/ is gitignored)
+pins.yaml            pinned testsuite + grammar refs (single source)
+.github/workflows/   CI
+```
 
 ## The wasm target (crates/pubid-wasm)
 
@@ -77,20 +163,6 @@ plain static asset and the playground loads it with a dynamic import.
 
 The `pubid_examples` gate test re-parses every example row through its
 flavor, so a slice refresh that moves a row fails the suite.
-
-## Layout
-
-```
-crates/pubid-core/
-  src/           lib, one module per flavor, conformance checker, errors
-  artifacts/     vendored PARG artifact(s)   (+ VENDORED_FROM.md)
-  fixtures/      vendored testsuite slice(s) (+ VENDORED_FROM.md)
-crates/pubid-cli/    the `pubid-cli` binary
-crates/conformance/  the `conformance` runner binary
-crates/pubid-wasm/   the wasm target (built pkg/ is gitignored)
-pins.yaml            pinned testsuite + grammar refs (single source)
-.github/workflows/   CI
-```
 
 ## Conformance status (waves 1–3, measured)
 
@@ -218,9 +290,21 @@ cargo build --all-targets
 cargo test
 cargo run -p conformance -- --all
 cargo run -p conformance -- --flavor ietf --testsuite <checkout>/tests
-cargo run -p pubid-cli -- parse w3c "W3C REC-html40-19980424"
+cargo run -p pubid-cli -- parse "W3C REC-html40-19980424"
+cargo run -p pubid-cli -- resolve "RFC 9110" --json
 cargo run -p pubid-cli -- smoke
 ```
+
+Install the binary (it installs as `pubid`):
+
+```
+cargo install --path crates/pubid-cli
+# or from the published checkout:
+cargo install -p pubid-cli
+```
+
+The Homebrew formula rides the fleet's tap once the crate publishes;
+`cargo install` is the documented path today.
 
 `cargo test` needs no network: the artifacts and corpus slices are
 vendored. To run a flavor against a full pubid-testsuite checkout:
