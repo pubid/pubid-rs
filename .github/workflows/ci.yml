@@ -273,21 +273,41 @@ jobs:
 
       - name: CLI smoke
         run: |
-          cargo run -q -p pubid-cli -- parse doi "doi:10.1000/182"
-          cargo run -q -p pubid-cli -- parse isbn "ISBN 978-0-306-40615-7"
-          cargo run -q -p pubid-cli -- parse ogc "OGC 06-121r9"
-          cargo run -q -p pubid-cli -- parse ietf "draft-ietf-httpbis-messaging-19"
-          cargo run -q -p pubid-cli -- parse eu "EU Regulation 1227/2011"
-          cargo run -q -p pubid-cli -- parse eu "32014R2015"
-          cargo run -q -p pubid-cli -- parse arxiv "arXiv:math.GT/0309136"
-          cargo run -q -p pubid-cli -- parse wmo "WMO-No. 8"
-          cargo run -q -p pubid-cli -- parse wmo "S-411 1.2.1"
-          cargo run -q -p pubid-cli -- parse iho "IHO S-158:102 1.0.0"
-          cargo run -q -p pubid-cli -- parse iho "IHO S-158 0.2.0 Part S-102"
-          cargo run -q -p pubid-cli -- parse iala "IALA G1164 Ed 1.1"
-          cargo run -q -p pubid-cli -- parse iala "S-201 2.0.0"
-          cargo run -q -p pubid-cli -- parse iala "S-201 ANNEX B2"
-          cargo run -q -p pubid-cli -- parse iala "IALA arctic-seminar-report (E)"
+          # The parse surface (the #23 CLI): parse/urn/detect/resolve,
+          # every command once in text mode and once in JSON mode.
+          cargo run -q -p pubid-cli -- parse "doi:10.1000/182" --flavor doi
+          cargo run -q -p pubid-cli -- parse "doi:10.1000/182" --flavor doi --json
+          cargo run -q -p pubid-cli -- parse "ISBN 978-0-306-40615-7" --flavor isbn --json
+          cargo run -q -p pubid-cli -- parse "OGC 06-121r9" --flavor ogc
+          cargo run -q -p pubid-cli -- parse "draft-ietf-httpbis-messaging-19" --flavor ietf
+          cargo run -q -p pubid-cli -- parse "EU Regulation 1227/2011" --flavor eu
+          cargo run -q -p pubid-cli -- parse "32014R2015" --flavor eu
+          cargo run -q -p pubid-cli -- parse "arXiv:math.GT/0309136" --flavor arxiv
+          cargo run -q -p pubid-cli -- parse "WMO-No. 8" --flavor wmo
+          cargo run -q -p pubid-cli -- parse "S-411 1.2.1" --flavor wmo
+          cargo run -q -p pubid-cli -- parse "IHO S-158:102 1.0.0" --flavor iho
+          cargo run -q -p pubid-cli -- parse "IHO S-158 0.2.0 Part S-102" --flavor iho
+          cargo run -q -p pubid-cli -- parse "IALA G1164 Ed 1.1" --flavor iala
+          cargo run -q -p pubid-cli -- parse "S-201 2.0.0" --flavor iala
+          cargo run -q -p pubid-cli -- parse "S-201 ANNEX B2" --flavor iala
+          cargo run -q -p pubid-cli -- parse "IALA arctic-seminar-report (E)" --flavor iala
+          # The URN surface, both namespace classes.
+          cargo run -q -p pubid-cli -- urn "XEP 0004"
+          cargo run -q -p pubid-cli -- urn "IHO B-12 2.0.3"
+          cargo run -q -p pubid-cli -- urn "WMO-No. 8" --json
+          # Detection and the exit-code contract.
+          cargo run -q -p pubid-cli -- detect "RFC 9110" --json
+          ! cargo run -q -p pubid-cli -- parse "nothing accepts this" 2>/dev/null
+          ! cargo run -q -p pubid-cli -- parse "X" --flavor nosuchflavor 2>/dev/null
+          # The resolver layer (the #23 mapping): the canonical URL,
+          # the alternates and the attested DOI, plus the unmapped
+          # exit (isbn carries no attested landing page).
+          cargo run -q -p pubid-cli -- resolve "RFC 9110"
+          cargo run -q -p pubid-cli -- resolve "RFC 9110" --json
+          cargo run -q -p pubid-cli -- resolve "doi:10.1000/182"
+          cargo run -q -p pubid-cli -- resolve "IHO S-411 2.0.0"
+          cargo run -q -p pubid-cli -- resolve "EU Regulation 2016/679"
+          ! cargo run -q -p pubid-cli -- resolve "ISBN 978-0-306-40615-7" 2>/dev/null
           cargo run -q -p pubid-cli -- smoke
 
   wasm:
