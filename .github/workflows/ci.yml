@@ -381,6 +381,11 @@ jobs:
       # cargo-fuzz spawns rustc from PATH for its target probe; pin the
       # whole job to nightly (the libFuzzer passes need -Zsanitizer).
       RUSTUP_TOOLCHAIN: nightly
+      # cargo-fuzz 0.13 builds the ASAN runtime against the musl target
+      # on Linux; the musl std defaults to crt-static, which is
+      # incompatible with the sanitizer (cargo-fuzz appends its own
+      # instrumentation flags to this).
+      RUSTFLAGS: -C target-feature=-crt-static
     steps:
       - uses: actions/checkout@v4
 
