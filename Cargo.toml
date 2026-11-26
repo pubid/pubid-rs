@@ -16,6 +16,14 @@ authors = ["PubID contributors"]
 
 [workspace.dependencies]
 parsanol = "0.20"
+clap = { version = "4", default-features = false, features = [
+    "std",
+    "derive",
+    "help",
+    "usage",
+    "error-context",
+    "suggestions",
+] }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 yaml-rust2 = "0.13"

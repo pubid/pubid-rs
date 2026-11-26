@@ -116,8 +116,7 @@ impl ResolverEntry {
 pub fn resolver_table() -> &'static ResolverTable {
     static TABLE: OnceLock<ResolverTable> = OnceLock::new();
     TABLE.get_or_init(|| {
-        serde_json::from_str(RESOLVER_JSON)
-            .expect("the embedded resolver.json data file is valid")
+        serde_json::from_str(RESOLVER_JSON).expect("the embedded resolver.json data file is valid")
     })
 }
 
@@ -155,6 +154,11 @@ pub struct Resolved {
 /// attested mapping covers it.
 #[derive(Debug)]
 pub enum ResolveError {
+    /// The named flavor is not ported.
+    UnknownFlavor {
+        /// The flavor name that has no ported implementation.
+        name: String,
+    },
     /// No ported flavor accepts the input (or the `--flavor`-chosen
     /// flavor rejected it); carries the underlying error and, when
     /// detection picked a flavor, its name.
@@ -189,6 +193,7 @@ pub enum ResolveError {
 impl fmt::Display for ResolveError {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         match self {
+            ResolveError::UnknownFlavor { name } => write!(f, "unimplemented flavor {name:?}"),
             ResolveError::Rejected { flavor: Some(flavor), error } => {
                 write!(f, "flavor {flavor} rejected the input: {error}")
             }
@@ -207,17 +212,111 @@ impl fmt::Display for ResolveError {
     }
 }
 
+/// The flavors that accept the input, in the canonical flavor order.
+pub fn accepting_flavors(input: &str) -> Vec<&'static str> {
+    implemented_flavors()
+        .into_iter()
+        .filter(|name| {
+            flavor_impl(name)
+                .map(|impl_| impl_.parse(input).is_ok())
+                .unwrap_or(false)
+        })
+        .collect()
+}
+
+/// Detect the flavor for an input: the ported flavors that accept it,
+/// resolved by the leading-token rule. The grammars decide acceptance;
+/// this only orders the hits — a flavor whose grammar anchors on the
+/// input's leading designator (`RFC 9110` → ietf, `XEP 0004` → xsf,
+/// `ISBN …` → isbn) outranks the incidental generic parses (the gb
+/// artifact, for instance, accepts any `<publisher> <number>` shape,
+/// so bare detection alone would collide with nearly every anchored
+/// input). Exactly one owner wins; several owners (or none, with
+/// several hits) stay ambiguous.
+pub fn detect_identifier(input: &str) -> Result<(String, Identifier), ResolveError> {
+    let hits = accepting_flavors(input);
+    let owner = match hits.len() {
+        0 => {
+            return Err(ResolveError::Rejected {
+                flavor: None,
+                error: Error::InvalidHash {
+                    detail: "no ported flavor parses the input".to_string(),
+                },
+            });
+        }
+        1 => Some(hits[0]),
+        _ => {
+            let owners: Vec<&'static str> = hits
+                .iter()
+                .copied()
+                .filter(|name| owns_leading_token(name, input))
+                .collect();
+            match owners.len() {
+                1 => Some(owners[0]),
+                _ => None,
+            }
+        }
+    };
+    let Some(flavor) = owner else {
+        return Err(ResolveError::Ambiguous {
+            flavors: hits.into_iter().map(str::to_string).collect(),
+        });
+    };
+    let identifier = flavor_impl(flavor)
+        .expect("a flavor from the implemented set")
+        .parse(input)
+        .expect("an accepting flavor re-parses");
+    Ok((flavor.to_string(), identifier))
+}
+
+/// Whether `flavor` owns the input's leading designator. The table
+/// carries the flavors with a clean anchor token; it exists to order
+/// detection hits, never to define membership (the grammars decide
+/// acceptance).
+fn owns_leading_token(flavor: &str, input: &str) -> bool {
+    let upper = input.to_uppercase();
+    let word = upper
+        .split_whitespace()
+        .next()
+        .unwrap_or_default()
+        .trim_end_matches(|c: char| !c.is_alphanumeric() && c != '/');
+    let word = word.trim_end_matches('/');
+    match flavor {
+        "ietf" => matches!(word, "RFC" | "BCP" | "STD" | "FYI") || upper.starts_with("DRAFT-"),
+        "doi" => upper.starts_with("DOI:"),
+        "arxiv" => upper.starts_with("ARXIV:"),
+        "isbn" => word == "ISBN",
+        "xsf" => word == "XEP",
+        "oasis" => word == "OASIS",
+        "iana" => word == "IANA",
+        "w3c" => word == "W3C",
+        "ecma" => word == "ECMA",
+        "eu" => word == "EU",
+        "iho" => word == "IHO",
+        "iala" => word == "IALA",
+        "wmo" => word == "WMO" || upper.starts_with("WMO-"),
+        "gb" => word == "GB" || word == "GB/T" || word == "GB/Z",
+        "ansi" => word == "ANSI",
+        "api" => word == "API",
+        "amca" => word == "AMCA",
+        "ccsds" => word == "CCSDS",
+        "etsi" => word == "ETSI",
+        "evs" => word == "EVS",
+        "gost" => word == "GOST",
+        "jis" => word == "JIS" || word == "WES",
+        "plateau" => word == "PLATEAU",
+        _ => false,
+    }
+}
+
 /// Resolve one input to its canonical publisher URL: parse (detection
 /// picks the flavor when `flavor` is `None`), match the table, render.
 pub fn resolve(input: &str, flavor: Option<&str>) -> Result<Resolved, ResolveError> {
     let (flavor_name, identifier) = match flavor {
         Some(name) => {
             let Some(impl_) = flavor_impl(name) else {
-                return Err(ResolveError::Rejected {
-                    flavor: Some(name.to_string()),
-                    error: Error::InvalidHash {
-                        detail: format!("unimplemented flavor {name:?}"),
-                    },
+                return Err(ResolveError::UnknownFlavor {
+                    name: name.to_string(),
                 });
             };
             match impl_.parse(input) {
@@ -230,7 +329,7 @@ pub fn resolve(input: &str, flavor: Option<&str>) -> Result<Resolved, ResolveErr
                 }
             }
         }
-        None => detect(input)?,
+        None => detect_identifier(input)?,
     };
 
     let type_tag = identifier
@@ -262,10 +361,11 @@ pub fn resolve(input: &str, flavor: Option<&str>) -> Result<Resolved, ResolveErr
         .iter()
         .filter_map(|template| render(template, &slots))
         .collect();
-    let doi = entry.doi.as_ref().and_then(|template| render(template, &slots));
-    let doi_url = doi
+    let doi = entry
+        .doi
         .as_ref()
-        .map(|name| format!("https://doi.org/{name}"));
+        .and_then(|template| render(template, &slots));
+    let doi_url = doi.as_ref().map(|name| format!("https://doi.org/{name}"));
 
     Ok(Resolved {
         flavor: flavor_name,
@@ -276,37 +376,6 @@ pub fn resolve(input: &str, flavor: Option<&str>) -> Result<Resolved, ResolveErr
         doi_url,
         source: entry.source.clone(),
     })
-}
-
-/// The flavors that accept the input, then the parse. One hit is the
-/// answer; zero hits is a rejection; several hits are ambiguous.
-fn detect(input: &str) -> Result<(String, Identifier), ResolveError> {
-    let mut hits = Vec::new();
-    let mut last_error = None;
-    for name in implemented_flavors() {
-        let Some(impl_) = flavor_impl(name) else {
-            continue;
-        };
-        match impl_.parse(input) {
-            Ok(identifier) => hits.push((name, identifier)),
-            Err(error) => last_error = Some(error),
-        }
-    }
-    match hits.len() {
-        1 => {
-            let (name, identifier) = hits.pop().expect("exactly one hit");
-            Ok((name.to_string(), identifier))
-        }
-        0 => Err(ResolveError::Rejected {
-            flavor: None,
-            error: last_error.unwrap_or_else(|| Error::InvalidHash {
-                detail: "no ported flavor parses the input".to_string(),
-            }),
-        }),
-        _ => Err(ResolveError::Ambiguous {
-            flavors: hits.into_iter().map(|(name, _)| name.to_string()).collect(),
-        }),
-    }
 }
 
 // ---------------------------------------------------------------------------
@@ -409,10 +478,7 @@ fn derive_eu(slots: &mut BTreeMap<String, String>, suffix: &str, hash: &Value) {
     ) else {
         return;
     };
-    slots.insert(
-        "celex".to_string(),
-        format!("3{year}{letter}{number:0>4}"),
-    );
+    slots.insert("celex".to_string(), format!("3{year}{letter}{number:0>4}"));
 }
 
 /// `{un_symbol}`: the full symbol, the path tokens joined with the
