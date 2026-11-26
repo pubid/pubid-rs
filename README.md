@@ -61,14 +61,19 @@ envelopes are the vendored checksummed ones from `pubid-core`
 (`/pins.yaml`), and the 11 MB corpus fixtures stay out of the bundle
 (the linker GCs the unreferenced slice data; only the distilled
 `examples.json` rides along). Release bundle at `wasm-opt -O3`: ~2.6 MB
-raw, ~850 KB gzipped.
+raw, ~850 KB gzipped. CI uploads the built pkg as the
+`pubid-wasm-web-<sha>` workflow artifact the site pins.
 
 Build and test:
 
 ```
-wasm-pack build crates/pubid-wasm --target bundler --release --out-dir pkg
+wasm-pack build crates/pubid-wasm --target web --release
 wasm-pack test --node crates/pubid-wasm
 ```
+
+The target is `web`: the glue fetches the `.wasm` through its own
+`init()` with no bundler assumptions, so the built pkg serves as a
+plain static asset and the playground loads it with a dynamic import.
 
 The `pubid_examples` gate test re-parses every example row through its
 flavor, so a slice refresh that moves a row fails the suite.

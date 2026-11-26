@@ -315,8 +315,13 @@ jobs:
           # ships (not only on the native suite).
           wasm-pack test --node crates/pubid-wasm
 
-      - name: The release bundle (bundler target, the playground artifact)
-        run: wasm-pack build crates/pubid-wasm --target bundler --release
+      - name: The release bundle (web target, the playground artifact)
+        run: |
+          # The web target fetches the .wasm through the glue's own
+          # init() (no bundler assumptions), so the site serves the pkg
+          # as a plain static asset and the playground loads it
+          # client-side with a dynamic import.
+          wasm-pack build crates/pubid-wasm --target web --release
 
       - name: Bundle receipts (size and the shipped files)
         run: |
@@ -325,6 +330,6 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: pubid-wasm-bundler-${{ github.sha }}
+          name: pubid-wasm-web-${{ github.sha }}
           path: crates/pubid-wasm/pkg
           retention-days: 30
