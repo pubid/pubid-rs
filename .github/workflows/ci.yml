@@ -377,11 +377,18 @@ jobs:
     name: Fuzz targets build + smoke
     runs-on: ubuntu-latest
     timeout-minutes: 25
+    env:
+      # cargo-fuzz spawns rustc from PATH for its target probe; pin the
+      # whole job to nightly (the libFuzzer passes need -Zsanitizer).
+      RUSTUP_TOOLCHAIN: nightly
     steps:
       - uses: actions/checkout@v4
 
-      # libFuzzer coverage instrumentation needs nightly.
+      # libFuzzer coverage instrumentation needs nightly; cargo-fuzz 0.13
+      # builds the ASAN runtime against the musl target on Linux.
       - uses: dtolnay/rust-toolchain@nightly
+        with:
+          targets: x86_64-unknown-linux-musl
 
       - uses: taiki-e/install-action@v2
         with:
